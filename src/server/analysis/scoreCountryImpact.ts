@@ -11,6 +11,7 @@ import type {
 } from '../../domain/analysis'
 import { downgrade } from './confidence'
 import { CAUSAL_METHODOLOGIES } from './methodologies'
+import { causalClause } from './renderClaim'
 
 const POLITICAL = /tax|cost of living|protest|unrest|subsid/i
 
@@ -27,6 +28,10 @@ export interface ScoreContext {
 
 // Produces one country's divergent effect(s) under a shock. May return more than
 // one effect when channels diverge in tone (e.g. debt positive, consumers negative).
+// The `why` prose is NOT authored here — it is rendered deterministically from the
+// structured (shock, tone, channels) so the published claim text can be recomputed
+// and verified by the publish gate. This module owns the analysis (tone, channels,
+// confidence, evidence); renderClaim owns the words.
 export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
   const { shock, direction, event, profile, figureIds, baseConfidence } = ctx
   const cc = profile.code
@@ -57,7 +62,6 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
   const push = (
     tone: Tone,
     channels: TransmissionChannel[],
-    why: string,
     confidence: Confidence,
     profileFields: CountryProfileEvidenceField[],
   ) =>
@@ -65,7 +69,7 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       countryCode: cc,
       tone,
       channels,
-      why,
+      why: causalClause(shock, tone, channels),
       confidence,
       evidence: evidence(profileFields),
     })
@@ -76,33 +80,16 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       const tone: Tone = direction === 'unclear' ? 'neutral' : direction === 'up' ? 'pos' : 'neg'
       const conf = direction === 'unclear' ? downgrade(baseConfidence) : baseConfidence
       if (profile.oilStance === 'exporter') {
-        push(
-          tone,
-          ['fiscal_revenue', 'trade_balance'],
-          direction === 'down'
-            ? 'lower crude prices cut export revenue and strain the budget'
-            : 'higher crude prices lift export revenue and the fiscal position',
-          conf,
-          ['oilStance'],
-        )
+        push(tone, ['fiscal_revenue', 'trade_balance'], conf, ['oilStance'])
       } else if (profile.oilStance === 'importer') {
         push(
           direction === 'unclear' ? 'neutral' : direction === 'up' ? 'neg' : 'pos',
           ['trade_balance', 'inflation', 'consumers'],
-          direction === 'down'
-            ? 'a cheaper import bill narrows the trade gap and eases inflation'
-            : 'a costlier import bill widens the trade gap and lifts fuel-driven inflation',
           conf,
           ['oilStance'],
         )
       } else {
-        push(
-          'neutral',
-          ['trade_balance'],
-          'roughly balanced oil exposure',
-          downgrade(baseConfidence),
-          ['oilStance'],
-        )
+        push('neutral', ['trade_balance'], downgrade(baseConfidence), ['oilStance'])
       }
       break
     }
@@ -114,13 +101,7 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       // exists on the profile — rather than guess.
       if (profile.dollarDebtExposure === undefined) break
       if (profile.dollarDebtExposure === 'low') {
-        push(
-          'neutral',
-          ['debt_service', 'fx'],
-          'little hard-currency debt, so limited sensitivity',
-          downgrade(baseConfidence),
-          ['dollarDebtExposure'],
-        )
+        push('neutral', ['debt_service', 'fx'], downgrade(baseConfidence), ['dollarDebtExposure'])
         break
       }
       const relief = direction === 'down'
@@ -131,19 +112,11 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       const managed = profile.currencyRegime === 'managed' || profile.currencyRegime === 'peg'
       if (managed) conf = downgrade(conf)
       // Currency regime is optional; without it we know less, so trim confidence
-      // and make no claim about pass-through.
+      // and cite one fewer field.
       if (!hasRegime) conf = downgrade(conf)
-      const regimeNote = !hasRegime
-        ? ''
-        : managed
-          ? ' — though a managed regime mutes the pass-through'
-          : ' and a floating currency passes the move through directly'
       push(
         tone,
         ['debt_service', 'fx'],
-        (relief
-          ? 'a softer dollar trims the local-currency cost of hard-currency debt'
-          : 'a firmer dollar raises the local-currency cost of hard-currency debt') + regimeNote,
         conf,
         hasRegime ? ['dollarDebtExposure', 'currencyRegime'] : ['dollarDebtExposure'],
       )
@@ -152,22 +125,10 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
 
     case 'inflation_shock': {
       const up = direction !== 'down'
-      push(
-        up ? 'neg' : 'pos',
-        ['inflation', 'consumers'],
-        up ? 'higher prices squeeze households' : 'cooling prices ease the squeeze on households',
-        baseConfidence,
-        [],
-      )
+      push(up ? 'neg' : 'pos', ['inflation', 'consumers'], baseConfidence, [])
       const sens = profile.politicalSensitivities
       if (up && sens && POLITICAL.test(sens.join(' '))) {
-        push(
-          'neg',
-          ['political_risk'],
-          `cost-of-living pressure raises political risk (${sens.join(', ')})`,
-          downgrade(baseConfidence),
-          ['politicalSensitivities'],
-        )
+        push('neg', ['political_risk'], downgrade(baseConfidence), ['politicalSensitivities'])
       }
       break
     }
@@ -177,9 +138,6 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       push(
         hike ? 'neutral' : 'pos',
         hike ? ['fx', 'growth', 'consumers', 'debt_service'] : ['growth', 'consumers'],
-        hike
-          ? 'higher rates support the currency but weigh on growth and borrowers'
-          : 'lower rates support growth and ease the burden on borrowers',
         baseConfidence,
         [],
       )
@@ -188,27 +146,15 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
 
     case 'fx_move': {
       const depreciation = direction === 'down'
-      push(
-        depreciation ? 'neg' : 'pos',
-        ['inflation', 'consumers'],
-        depreciation
-          ? 'a weaker currency lifts import costs and inflation'
-          : 'a firmer currency eases import costs',
-        baseConfidence,
-        ['currencyRegime'],
-      )
+      push(depreciation ? 'neg' : 'pos', ['inflation', 'consumers'], baseConfidence, [
+        'currencyRegime',
+      ])
       if (
         depreciation &&
         profile.oilStance === 'exporter' &&
         (profile.keyExports?.length ?? 0) > 0
       ) {
-        push(
-          'pos',
-          ['trade_balance'],
-          'exporters gain some competitiveness from a weaker currency',
-          downgrade(baseConfidence),
-          ['keyExports'],
-        )
+        push('pos', ['trade_balance'], downgrade(baseConfidence), ['keyExports'])
       }
       break
     }
@@ -225,43 +171,24 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       push(
         'pos',
         ['debt_service', 'fiscal_revenue'],
-        'a credible programme stabilises financing and the debt outlook',
         downgrade(baseConfidence),
         debtField ? [debtField] : [],
       )
       const sens = profile.politicalSensitivities
       if (sens && POLITICAL.test(sens.join(' '))) {
-        push(
-          'neg',
-          ['consumers', 'political_risk'],
-          `austerity or new taxes raise the cost of living and the risk of unrest (${sens.join(', ')})`,
-          baseConfidence,
-          ['politicalSensitivities'],
-        )
+        push('neg', ['consumers', 'political_risk'], baseConfidence, ['politicalSensitivities'])
       }
       break
     }
 
     case 'trade_integration_event': {
       if ((profile.keyExports?.length ?? 0) === 0) break
-      push(
-        'pos',
-        ['trade_balance', 'growth'],
-        'deeper trade integration supports exports and growth',
-        downgrade(baseConfidence),
-        ['keyExports'],
-      )
+      push('pos', ['trade_balance', 'growth'], downgrade(baseConfidence), ['keyExports'])
       break
     }
 
     case 'deal_investment_event': {
-      push(
-        'pos',
-        ['growth', 'fiscal_revenue'],
-        'new investment supports growth and the fiscal position',
-        downgrade(baseConfidence),
-        [],
-      )
+      push('pos', ['growth', 'fiscal_revenue'], downgrade(baseConfidence), [])
       break
     }
 
@@ -270,9 +197,6 @@ export function scoreCountryImpact(ctx: ScoreContext): CausalEffect[] {
       push(
         'neg',
         ['political_risk', 'growth'],
-        sens?.length
-          ? `heightened political risk (${sens.join(', ')})`
-          : 'heightened political risk',
         baseConfidence,
         sens?.length ? ['politicalSensitivities'] : [],
       )

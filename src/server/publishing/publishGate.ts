@@ -3,6 +3,9 @@ import type { CountryProfileEvidenceField } from '../../domain/country'
 import type { GateRule, GateViolation, PublishGateResult } from '../../domain/gate'
 import { isInventedSpread } from '../verification/spreads'
 import { unknownIds } from '../verification/sources'
+import { figureContractReasons } from '../verification/figureContracts'
+import { expectedClaimText } from '../analysis/renderClaim'
+import { GLOBAL_SHOCKS } from '../analysis/generateCausalLinks'
 import {
   countryProfileFieldReasons,
   DERIVED_COUNTRY_PROFILE_FIELDS,
@@ -73,6 +76,16 @@ export function runPublishGate(
         ref: f.id,
       })
     }
+    // A registered source is necessary but not sufficient: the figure's metric
+    // family must be supplied by the source its contract declares (e.g. fx.* only
+    // from src.open_er_api), so a registered-but-wrong source is rejected.
+    for (const reason of figureContractReasons(f)) {
+      violations.push({
+        rule: 'figure_source_contract_mismatch',
+        detail: reason,
+        ref: f.id,
+      })
+    }
     if (known) {
       for (const id of unknownIds(f.sourceIds, known)) {
         violations.push({
@@ -139,6 +152,22 @@ export function runPublishGate(
         ref: c.id,
       })
       continue
+    }
+    // Claim text must be the CANONICAL rendering of the claim's structured evidence —
+    // not free prose. The gate re-derives it (from country/shock/tone/channels for a
+    // causal claim, the resolved figure for a figure claim, the event title for an
+    // event claim) and rejects any text that does not match, so valid evidence refs
+    // alone cannot license an unrelated/invented sentence or a future LLM rephrase.
+    const expectedText = expectedClaimText(c, { figureById: figById, eventById: evById })
+    if (expectedText === undefined || expectedText !== c.text) {
+      violations.push({
+        rule: 'claim_text_not_canonical',
+        detail:
+          expectedText === undefined
+            ? `claim ${c.id} text cannot be re-derived from its structured evidence (missing inputs or unresolved references)`
+            : `claim ${c.id} text is not the canonical rendering of its structured evidence`,
+        ref: c.id,
+      })
     }
     const hasBacking = c.figureIds.length > 0 || c.eventIds.length > 0
     const figuresOk = c.figureIds.every((id) => figById.get(id)?.status === 'verified')
@@ -297,6 +326,77 @@ export function runPublishGate(
         violations.push({
           rule,
           detail: `claim ${c.id} causal methodology ${expectedCausalId} failed registry audit (${rule})`,
+          ref: c.id,
+        })
+      }
+    }
+
+    // Canonical text is only as trustworthy as the structured fields it is rendered
+    // from, so those fields must themselves be validated, not merely self-consistent:
+    //  (a) every channel must be one the approved causal rule licenses (no empty,
+    //      duplicate, or unsupported channel) — channels are bound to the methodology;
+    //  (b) the country must resolve to a profile the brief carries;
+    //  (c) every cited profile field must belong to that same country;
+    //  (d) for non-global shocks, a cited corroborated event must name the country
+    //      (global shocks fan out across the bloc, so a carried profile country is
+    //      allowed even when the global event names no country).
+    const claimCountry = c.countryCode
+    const claimChannels = c.channels ?? []
+    const licensedChannels = new Set(registryEntry?.channels ?? [])
+    if (claimChannels.length === 0) {
+      violations.push({
+        rule: 'causal_channel_not_methodology_bound',
+        detail: `claim ${c.id} carries no transmission channels`,
+        ref: c.id,
+      })
+    }
+    const seenChannels = new Set<string>()
+    for (const ch of claimChannels) {
+      if (seenChannels.has(ch)) {
+        violations.push({
+          rule: 'causal_channel_not_methodology_bound',
+          detail: `claim ${c.id} repeats channel ${ch}`,
+          ref: c.id,
+        })
+      }
+      seenChannels.add(ch)
+      if (!licensedChannels.has(ch)) {
+        violations.push({
+          rule: 'causal_channel_not_methodology_bound',
+          detail: `claim ${c.id} channel ${ch} is not licensed by its causal methodology ${expectedCausalId ?? '(none)'}`,
+          ref: c.id,
+        })
+      }
+    }
+
+    if (claimCountry === undefined || !profileByCode.has(claimCountry)) {
+      violations.push({
+        rule: 'claim_country_not_grounded',
+        detail: `claim ${c.id} country ${claimCountry ?? '(none)'} does not resolve to a profile carried by the brief`,
+        ref: c.id,
+      })
+    }
+    for (const cited of c.profileFields) {
+      const prefix = cited.includes('.') ? cited.slice(0, cited.indexOf('.')) : ''
+      if (prefix !== claimCountry) {
+        violations.push({
+          rule: 'claim_profile_country_mismatch',
+          detail: `claim ${c.id} cites profile field ${cited} (country ${prefix || 'none'}), which is not its own country ${claimCountry ?? 'none'}`,
+          ref: c.id,
+        })
+      }
+    }
+
+    const globalShock = c.shockType !== undefined && GLOBAL_SHOCKS.has(c.shockType)
+    if (!globalShock && claimCountry !== undefined) {
+      const namedByEvent = c.eventIds.some((id) => {
+        const ev = evById.get(id)
+        return ev?.status === 'corroborated' && ev.countryCodes.includes(claimCountry)
+      })
+      if (!namedByEvent) {
+        violations.push({
+          rule: 'claim_event_country_mismatch',
+          detail: `claim ${c.id} country ${claimCountry} is not named by any cited corroborated event (non-global shock ${c.shockType ?? 'none'})`,
           ref: c.id,
         })
       }

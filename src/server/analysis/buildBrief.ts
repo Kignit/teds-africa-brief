@@ -6,6 +6,7 @@ import type { AnalysisDraft } from '../../domain/analysis'
 import type { CountryProfile } from '../../domain/country'
 import type { Methodology } from '../../domain/methodology'
 import { CAUSAL_METHODOLOGY_BY_ID } from './methodologies'
+import { renderFigureClaimText } from './renderClaim'
 
 // The EXACT set of methodologies the claims rely on — causal rules (from the
 // registry) and banding methodologies (from the profiles), resolved by the ids the
@@ -44,7 +45,8 @@ export function composeDeterministicBrief(input: ComposeInput): BriefDraft {
   const claims: Claim[] = figures.map((f, i) => ({
     id: `claim_fig_${i}`,
     kind: 'figure',
-    text: `${f.label} is ${f.value} ${f.unit}.`,
+    // Canonical text: the gate recomputes this from the resolved figure.
+    text: renderFigureClaimText(f),
     figureIds: [f.id],
     eventIds: [],
     profileFields: [],

@@ -8,8 +8,9 @@ import { downgrade } from './confidence'
 import { CAUSAL_METHODOLOGIES } from './methodologies'
 
 // Shocks that fan out across the whole covered set, producing divergent effects.
-// Other shocks apply only to the countries the event names.
-const GLOBAL_SHOCKS = new Set<ShockType>([
+// Other shocks apply only to the countries the event names. Exported so the publish
+// gate uses the SAME definition when binding a claim's country to its event.
+export const GLOBAL_SHOCKS = new Set<ShockType>([
   'oil_shock',
   'dollar_rates_shock',
   'trade_integration_event',

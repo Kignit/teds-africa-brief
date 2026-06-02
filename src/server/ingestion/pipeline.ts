@@ -10,6 +10,7 @@ import type { CorroborateOptions } from '../verification/corroborate'
 import { validateFigures } from '../verification/validateFigure'
 import { corroborateEvents } from '../verification/corroborate'
 import { knownSourceIds, unknownIds } from '../verification/sources'
+import { figureContractReasons } from '../verification/figureContracts'
 import {
   verifiedCountryProfiles,
   type RejectedCountryProfile,
@@ -56,6 +57,8 @@ export interface LiveIngestionDiagnostics {
   connectorFailures: ConnectorFailure[]
   rejectedFigures: RejectedFigure[]
   droppedUnknownSourceFigures: string[]
+  /** Figures dropped because their metric family's source contract was violated. */
+  droppedContractFigures: string[]
   droppedUnknownSourceNews: string[]
   figureCount: number
   eventCount: number
@@ -150,6 +153,20 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
     return true
   })
 
+  // Enforce the figure source contracts: a registered source is necessary but not
+  // sufficient — fx.* must come from src.open_er_api, commodity.brent from src.eia,
+  // etc. A registered-but-wrong source (or an uncontracted metric) is dropped here
+  // and re-checked by the gate. Mirrors the unknown-source resolution above.
+  const droppedContractFigures: string[] = []
+  figures = figures.filter((f) => {
+    const reasons = figureContractReasons(f)
+    if (reasons.length > 0) {
+      droppedContractFigures.push(`${f.metric} (${reasons.join('; ')})`)
+      return false
+    }
+    return true
+  })
+
   const droppedUnknownSourceNews: string[] = []
   const resolvedNews = dedupeNewsItems(rawNews).filter((n) => {
     if (!known.has(n.sourceId)) {
@@ -199,6 +216,7 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
       connectorFailures,
       rejectedFigures,
       droppedUnknownSourceFigures,
+      droppedContractFigures,
       droppedUnknownSourceNews,
       figureCount: figures.length,
       eventCount: events.length,

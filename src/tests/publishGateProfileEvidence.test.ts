@@ -3,6 +3,7 @@ import { runPublishGate } from '../server/publishing/publishGate'
 import { knownSourceIds } from '../server/verification/sources'
 import { SOURCES } from '../data/sources'
 import { CAUSAL_METHODOLOGIES } from '../server/analysis/methodologies'
+import { renderCausalClaimText } from '../server/analysis/renderClaim'
 import type { BriefDraft } from '../domain/brief'
 import type { Claim } from '../domain/claim'
 import type { CountryProfile } from '../domain/country'
@@ -55,7 +56,11 @@ function causalClaim(over: Partial<Claim> = {}): Claim {
   return {
     id: 'c1',
     kind: 'causal',
-    text: 'XX: a softer dollar trims hard-currency debt cost',
+    countryCode: 'XX',
+    tone: 'pos',
+    channels: ['debt_service', 'fx'],
+    // Canonical text, built with the same renderer the gate uses to re-derive it.
+    text: renderCausalClaimText('XX', SHOCK, 'pos', ['debt_service', 'fx']),
     figureIds: [],
     eventIds: ['e1'],
     profileFields: ['XX.dollarDebtExposure'],
@@ -297,5 +302,139 @@ describe('publish gate — methodologies are self-contained and registry-verifie
     // too would be an unused extra, so the brief carries exactly [CAUSAL].
     const res = runPublishGate(brief({ claims: [claim], methodologies: [CAUSAL] }), opts)
     expect(res.passed).toBe(true)
+  })
+})
+
+describe('publish gate — claim text is bound to its structured evidence', () => {
+  it('rejects a causal claim with valid evidence refs but tampered text', () => {
+    // Every id/source/methodology is still valid; only the prose is invented.
+    expect(
+      rules(brief({ claims: [causalClaim({ text: 'XX: oil exporters reap a windfall' })] })),
+    ).toContain('claim_text_not_canonical')
+  })
+
+  it('rejects a causal claim missing the structured inputs to re-derive its text', () => {
+    expect(
+      rules(brief({ claims: [causalClaim({ tone: undefined, channels: undefined })] })),
+    ).toContain('claim_text_not_canonical')
+  })
+
+  it('passes when a causal claim text is the canonical rendering of its evidence', () => {
+    // causalClaim() builds text via the shared renderer, so the brief stays valid.
+    expect(runPublishGate(brief({}), opts).passed).toBe(true)
+  })
+
+  it('rejects an event-only claim whose text is not the event title', () => {
+    const claim: Claim = {
+      id: 'ev1',
+      kind: 'event',
+      text: 'a fabricated headline',
+      figureIds: [],
+      eventIds: ['e1'],
+      profileFields: [],
+      profileSourceIds: [],
+      methodologyIds: [],
+      verified: true,
+    }
+    expect(rules(brief({ claims: [claim], methodologies: [] }))).toContain(
+      'claim_text_not_canonical',
+    )
+  })
+
+  it('passes an event-only claim whose text is exactly the event title', () => {
+    const ev = corroboratedEvent()
+    const claim: Claim = {
+      id: 'ev1',
+      kind: 'event',
+      text: ev.title,
+      figureIds: [],
+      eventIds: [ev.id],
+      profileFields: [],
+      profileSourceIds: [],
+      methodologyIds: [],
+      verified: true,
+    }
+    const res = runPublishGate(brief({ claims: [claim], events: [ev], methodologies: [] }), opts)
+    expect(res.passed).toBe(true)
+  })
+})
+
+describe('publish gate — structured fields are validated, not just self-consistent', () => {
+  const POLICY = CAUSAL_METHODOLOGIES.policy_rate_decision
+
+  // A fully valid NON-global-shock claim (policy-rate), used to isolate the
+  // event-country binding (dollar/rates, the default, is a global shock).
+  function policyClaim(over: Partial<Claim> = {}): Claim {
+    return {
+      id: 'p1',
+      kind: 'causal',
+      countryCode: 'XX',
+      tone: 'pos',
+      channels: ['growth', 'consumers'],
+      text: renderCausalClaimText('XX', 'policy_rate_decision', 'pos', ['growth', 'consumers']),
+      figureIds: [],
+      eventIds: ['e1'],
+      profileFields: [],
+      profileSourceIds: [],
+      methodologyIds: [POLICY.id],
+      shockType: 'policy_rate_decision',
+      verified: true,
+      ...over,
+    }
+  }
+
+  it('rejects a channel the causal methodology does not license, even with canonical text', () => {
+    // dollar_rates_shock licenses debt_service/fx/inflation — not growth — yet the
+    // text is the canonical rendering of ['growth'] and the methodology id is correct.
+    const claim = causalClaim({
+      channels: ['growth'],
+      text: renderCausalClaimText('XX', SHOCK, 'pos', ['growth']),
+    })
+    expect(rules(brief({ claims: [claim] }))).toContain('causal_channel_not_methodology_bound')
+  })
+
+  it('rejects empty channels', () => {
+    const claim = causalClaim({ channels: [], text: renderCausalClaimText('XX', SHOCK, 'pos', []) })
+    expect(rules(brief({ claims: [claim] }))).toContain('causal_channel_not_methodology_bound')
+  })
+
+  it('rejects duplicate channels', () => {
+    const claim = causalClaim({
+      channels: ['debt_service', 'debt_service'],
+      text: renderCausalClaimText('XX', SHOCK, 'pos', ['debt_service', 'debt_service']),
+    })
+    expect(rules(brief({ claims: [claim] }))).toContain('causal_channel_not_methodology_bound')
+  })
+
+  it('rejects a claim whose country is not carried and whose cited field country mismatches', () => {
+    // Text says YY: but the evidence cites XX.dollarDebtExposure.
+    const claim = causalClaim({
+      countryCode: 'YY',
+      text: renderCausalClaimText('YY', SHOCK, 'pos', ['debt_service', 'fx']),
+    })
+    const r = rules(brief({ claims: [claim] }))
+    expect(r).toContain('claim_country_not_grounded')
+    expect(r).toContain('claim_profile_country_mismatch')
+  })
+
+  it('rejects a non-global-shock claim whose country no cited event names', () => {
+    // corroboratedEvent() carries no country codes; policy_rate_decision is non-global.
+    expect(rules(brief({ claims: [policyClaim()], methodologies: [POLICY] }))).toContain(
+      'claim_event_country_mismatch',
+    )
+  })
+
+  it('passes a non-global-shock claim whose country a cited corroborated event names', () => {
+    const ev: Event = { ...corroboratedEvent(), countryCodes: ['XX'] }
+    const res = runPublishGate(
+      brief({ claims: [policyClaim()], methodologies: [POLICY], events: [ev] }),
+      opts,
+    )
+    expect(res.passed).toBe(true)
+  })
+
+  it('allows a global-shock claim country even when the cited event names no country', () => {
+    // dollar_rates_shock is global; corroboratedEvent() carries no country codes.
+    expect(runPublishGate(brief({}), opts).passed).toBe(true)
   })
 })

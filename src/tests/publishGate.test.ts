@@ -136,3 +136,25 @@ describe('publish gate', () => {
     expect(unverified.violations.map((v) => v.rule)).toContain('invalid_section_claim')
   })
 })
+
+describe('publish gate — figure source contracts', () => {
+  it('rejects a figure from a registered but contract-wrong source', () => {
+    const f = verifiedFigure() // fx.NGN_USD from its contracted source src.open_er_api
+    const wrong: VerifiedFigure = { ...f, sourceIds: ['src.fred'] } // registered, but not fx's source
+    const res = runPublishGate(draft({ figures: [wrong] }))
+    expect(res.passed).toBe(false)
+    expect(res.violations.map((v) => v.rule)).toContain('figure_source_contract_mismatch')
+  })
+
+  it('rejects a figure whose metric family has no source contract', () => {
+    const uncontracted: VerifiedFigure = { ...verifiedFigure(), metric: 'mystery.metric' }
+    expect(
+      runPublishGate(draft({ figures: [uncontracted] })).violations.map((v) => v.rule),
+    ).toContain('figure_source_contract_mismatch')
+  })
+
+  it('accepts a figure supplied by its contracted source', () => {
+    const res = runPublishGate(draft({ figures: [verifiedFigure()] }))
+    expect(res.violations.map((v) => v.rule)).not.toContain('figure_source_contract_mismatch')
+  })
+})

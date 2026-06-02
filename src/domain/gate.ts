@@ -5,6 +5,7 @@ export type GateRule =
   | 'figure_missing_source'
   | 'figure_missing_timestamp'
   | 'figure_out_of_range'
+  | 'figure_source_contract_mismatch'
   | 'uncorroborated_event'
   | 'event_missing_source'
   | 'event_missing_news_item'
@@ -14,6 +15,7 @@ export type GateRule =
   | 'unbacked_provenance_claim'
   | 'single_source_verified_claim'
   | 'unverified_claim'
+  | 'claim_text_not_canonical'
   | 'invalid_section_claim'
   | 'profile_evidence_missing'
   | 'profile_field_contract_mismatch'
@@ -25,6 +27,10 @@ export type GateRule =
   | 'methodology_duplicate'
   | 'causal_methodology_missing'
   | 'causal_methodology_shock_mismatch'
+  | 'causal_channel_not_methodology_bound'
+  | 'claim_country_not_grounded'
+  | 'claim_profile_country_mismatch'
+  | 'claim_event_country_mismatch'
 
 export interface GateViolation {
   rule: GateRule

@@ -1,0 +1,11 @@
+dist
+coverage
+node_modules
+package-lock.json
+*.example
+# prototype reference artifacts (kept for reference, not part of the new app)
+*.jsx
+data.js
+Ted's Africa Brief*.html
+Ted's Africa Brief*.md
+screenshots

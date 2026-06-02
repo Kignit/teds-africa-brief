@@ -9,3 +9,9 @@ data.js
 Ted's Africa Brief*.html
 Ted's Africa Brief*.md
 screenshots
+
+# Vercel parses vercel.json and re-materializes it as compact one-line JSON in
+# its build workspace, so `prettier --check .` flags the materialized copy even
+# though the committed file is correctly formatted. The committed blob is checked
+# strictly and separately via the `format:check:vercel` npm script.
+vercel.json

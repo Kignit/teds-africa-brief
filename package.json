@@ -13,8 +13,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preverify": "bash scripts/vercel-diag.sh || true",
-    "verify": "npm run format:check && npm run typecheck && npm run lint && npm run test"
+    "format:check:vercel": "git show HEAD:vercel.json | prettier --check --stdin-filepath vercel.json --ignore-path /dev/null",
+    "verify": "npm run format:check && npm run format:check:vercel && npm run typecheck && npm run lint && npm run test"
   },
   "engines": {
     "node": "24.x"

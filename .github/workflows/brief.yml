@@ -1,0 +1,58 @@
+name: Generate brief artifact
+
+# Out-of-band brief generation. Runs the live pipeline (real connectors + network),
+# writes the gated artifact public/brief.json — or a cleared { brief: null } artifact
+# on failure — and commits it. The resulting push to main triggers the normal CI +
+# Vercel deploy that serves it. This is SEPARATE from the Vercel build, which stays
+# network/key-free.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *' # daily at 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      # Always operate on main, even when dispatched from another branch, so the
+      # generated artifact is only ever committed to main.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: npm
+      - run: npm ci
+      # Writes public/brief.json. Exits non-zero when no gate-passed brief was produced
+      # (having still written the cleared null artifact), so the run is flagged — but we
+      # let the commit step run regardless via continue-on-error.
+      - id: generate
+        run: npm run brief:generate
+        continue-on-error: true
+        # Keyed connectors read these from env; empty/missing secrets are fine —
+        # Brent/FRED/Comtrade fail closed and simply contribute nothing.
+        env:
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          COMTRADE_API_KEY: ${{ secrets.COMTRADE_API_KEY }}
+      - name: Commit artifact if changed
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/brief.json
+          if git diff --cached --quiet; then
+            echo "No artifact change."
+          else
+            git commit -m "chore: regenerate brief artifact ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push origin HEAD:main
+          fi
+      - name: Fail the run if generation did not pass the gate
+        if: steps.generate.outcome == 'failure'
+        run: |
+          echo "Brief generation produced no gate-passed brief; wrote a cleared null artifact."
+          exit 1

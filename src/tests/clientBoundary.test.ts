@@ -9,7 +9,7 @@ import { describe, it, expect } from 'vitest'
 // gate (src/server/publishing) is intentionally allowed: the client re-runs it for
 // defense-in-depth.
 
-const SOURCES = import.meta.glob('/src/**/*.{ts,tsx}', {
+const SOURCES = import.meta.glob(['/src/**/*.{ts,tsx}', '/scripts/**/*.{ts,tsx}'], {
   query: '?raw',
   import: 'default',
   eager: true,
@@ -49,13 +49,16 @@ function isForbidden(key: string): boolean {
     key.startsWith('/src/server/ingestion/') ||
     key.startsWith('/src/server/runtime/') ||
     key.startsWith('/src/server/config/') ||
-    key === '/src/server/config.ts'
+    key === '/src/server/config.ts' ||
+    key.startsWith('/scripts/')
   )
 }
 
 describe('client import boundary', () => {
   it('client code never reaches connectors, ingestion, the producer, or key config', () => {
     expect(Object.keys(SOURCES)).toContain('/src/main.tsx')
+    // The generator is in the analyzed graph, so a client import of it would be caught.
+    expect(Object.keys(SOURCES)).toContain('/scripts/generateBrief.ts')
 
     const roots = Object.keys(SOURCES).filter(
       (k) => k === '/src/main.tsx' || k.startsWith('/src/app/'),

@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach, vi } from 'vitest'
-import { produceGatedBrief, serializeBrief } from '../server/runtime/produceBrief'
+import { produceGatedBrief, serializeArtifact } from '../server/runtime/produceBrief'
 import { resetRuntimeModeForTests } from '../server/runtimeMode'
 import { SOURCES } from '../data/sources'
 import { CONTRACT_VALID_PROFILES } from './fixtures/countryProfiles'
@@ -60,11 +60,13 @@ describe('produceGatedBrief (server-side runtime producer)', () => {
     expect(brief).not.toBeNull()
     expect(brief!.dataMode).toBe('live')
     expect(brief!.figures.map((f) => f.metric)).toContain('fx.NGN_USD')
-    // round-trips through the artifact serialization the runtime loads
-    expect(JSON.parse(serializeBrief(brief))).toMatchObject({ dataMode: 'live' })
+    // round-trips through the { generatedAt, brief } artifact the runtime loads
+    const parsed = JSON.parse(serializeArtifact(brief, NOW))
+    expect(parsed.generatedAt).toBe(NOW)
+    expect(parsed.brief).toMatchObject({ dataMode: 'live' })
   })
 
-  it('serializes an absent brief as JSON null (runtime renders empty state)', () => {
-    expect(serializeBrief(null)).toBe('null')
+  it('serializes an absent brief as a { generatedAt, brief: null } envelope', () => {
+    expect(JSON.parse(serializeArtifact(null, NOW))).toEqual({ generatedAt: NOW, brief: null })
   })
 })

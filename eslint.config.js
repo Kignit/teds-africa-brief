@@ -62,9 +62,10 @@ export default defineConfig([
                 '**/server/ingestion/**',
                 '**/server/runtime/**',
                 '**/server/config',
+                '**/scripts/**',
               ],
               message:
-                'Client code must not import connectors, the ingestion pipeline, the brief producer, or key config. The runtime only renders a gate-passed BriefDraft loaded at runtime.',
+                'Client code must not import connectors, the ingestion pipeline, the brief producer/generator, or key config. The runtime only renders a gate-passed BriefDraft loaded at runtime.',
             },
           ],
         },

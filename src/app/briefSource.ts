@@ -12,6 +12,12 @@ const DEFAULT_BRIEF_URL = '/brief.json'
 // product data), so the runtime may know it; it lets the client re-run the gate fully.
 const KNOWN_SOURCE_IDS = knownSourceIds(SOURCES)
 
+// Maximum age the runtime will render as current intelligence. A brief whose artifact
+// is older than this — e.g. because the generation job stalled — expires to the empty
+// state rather than showing stale data as current. (Judged against the client clock;
+// best-effort, as a static site has no server to assert time.)
+const MAX_ARTIFACT_AGE_MS = 36 * 60 * 60 * 1000 // 36h
+
 const DATE_YMD = /^\d{4}-\d{2}-\d{2}$/
 
 function isValidDate(value: unknown): boolean {
@@ -42,15 +48,18 @@ function isBriefShape(value: unknown): value is BriefDraft {
   )
 }
 
-// Loads the runtime brief and returns it ONLY if it is well-formed AND re-passes the
-// publish gate. The gate is the final authority even at the render boundary: a served
-// artifact that is missing, unparseable, malformed, or does not pass the gate yields
-// null, and the runtime shows its empty state. The browser never runs connectors or
-// the ingestion pipeline — it only re-validates an already-produced brief (the gate
-// and its dependencies are pure: no network, keys, or connectors).
+// Loads the runtime brief from the `{ generatedAt, brief }` artifact and returns it
+// ONLY if the artifact is fresh AND the brief is well-formed AND it re-passes the
+// publish gate. Anything else — missing/404, unparseable, a non-object envelope, a
+// missing/invalid/stale `generatedAt`, `brief: null`, a malformed brief, or a brief
+// that fails the gate — yields null, and the runtime shows its empty state. The browser
+// never runs connectors or the ingestion pipeline; it only re-validates an
+// already-produced brief (the gate and its dependencies are pure: no network, keys, or
+// connectors). `now` is injectable for tests.
 export async function loadBrief(
   url: string = DEFAULT_BRIEF_URL,
   fetchImpl: typeof fetch = fetch,
+  now: () => number = () => Date.now(),
 ): Promise<BriefDraft | null> {
   let payload: unknown
   try {
@@ -60,10 +69,21 @@ export async function loadBrief(
   } catch {
     return null
   }
-  if (!isBriefShape(payload)) return null
+
+  // Envelope must be an object carrying a valid, fresh generatedAt.
+  if (typeof payload !== 'object' || payload === null) return null
+  const envelope = payload as { generatedAt?: unknown; brief?: unknown }
+  if (typeof envelope.generatedAt !== 'string') return null
+  const generatedAtMs = Date.parse(envelope.generatedAt)
+  if (Number.isNaN(generatedAtMs)) return null
+  if (now() - generatedAtMs > MAX_ARTIFACT_AGE_MS) return null // stale → empty state
+
+  // The brief must be present and strictly well-formed, then re-pass the gate.
+  const brief = envelope.brief
+  if (!isBriefShape(brief)) return null
   try {
-    const gate = runPublishGate(payload, { knownSourceIds: KNOWN_SOURCE_IDS })
-    return gate.passed ? payload : null
+    const gate = runPublishGate(brief, { knownSourceIds: KNOWN_SOURCE_IDS })
+    return gate.passed ? brief : null
   } catch {
     return null
   }

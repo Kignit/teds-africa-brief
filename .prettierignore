@@ -15,3 +15,8 @@ screenshots
 # though the committed file is correctly formatted. The committed blob is checked
 # strictly and separately via the `format:check:vercel` npm script.
 vercel.json
+
+# Generated runtime artifact (a { generatedAt, brief } envelope written by the brief
+# generator). It is machine-generated data, not formatted source, so it must not fail
+# format:check when the generator commits it.
+public/brief.json

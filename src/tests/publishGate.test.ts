@@ -27,11 +27,13 @@ function draft(overrides: Partial<BriefDraft>): BriefDraft {
     date: '2026-05-29',
     edition: 'daily',
     status: 'draft',
-    dataMode: 'sample',
+    dataMode: 'live',
     sections: [],
     claims: [],
     figures: [],
     events: [],
+    profiles: [],
+    methodologies: [],
     ...overrides,
   }
 }
@@ -42,7 +44,7 @@ describe('publish gate', () => {
       id: 'b',
       date: '2026-05-29',
       edition: 'daily',
-      dataMode: 'sample',
+      dataMode: 'live',
       figures: [verifiedFigure()],
       events: [],
     })
@@ -73,6 +75,9 @@ describe('publish gate', () => {
             text: 'x',
             figureIds: ['missing'],
             eventIds: [],
+            profileFields: [],
+            profileSourceIds: [],
+            methodologyIds: [],
             verified: true,
           },
         ],
@@ -80,5 +85,54 @@ describe('publish gate', () => {
     )
     expect(res.passed).toBe(false)
     expect(res.violations.map((v) => v.rule)).toContain('unbacked_provenance_claim')
+  })
+
+  it('rejects a brief that contains an unverified claim', () => {
+    const res = runPublishGate(
+      draft({
+        claims: [
+          {
+            id: 'u1',
+            kind: 'causal',
+            text: 'unverified analysis',
+            figureIds: [],
+            eventIds: [],
+            profileFields: [],
+            profileSourceIds: [],
+            methodologyIds: [],
+            verified: false,
+          },
+        ],
+      }),
+    )
+    expect(res.passed).toBe(false)
+    expect(res.violations.map((v) => v.rule)).toContain('unverified_claim')
+  })
+
+  it('rejects a section that references a missing or unverified claim', () => {
+    const missing = runPublishGate(
+      draft({ sections: [{ id: 's', kicker: '', title: '', body: '', claimIds: ['nope'] }] }),
+    )
+    expect(missing.violations.map((v) => v.rule)).toContain('invalid_section_claim')
+
+    const unverified = runPublishGate(
+      draft({
+        claims: [
+          {
+            id: 'c1',
+            kind: 'figure',
+            text: 'x',
+            figureIds: [],
+            eventIds: [],
+            profileFields: [],
+            profileSourceIds: [],
+            methodologyIds: [],
+            verified: false,
+          },
+        ],
+        sections: [{ id: 's', kicker: '', title: '', body: '', claimIds: ['c1'] }],
+      }),
+    )
+    expect(unverified.violations.map((v) => v.rule)).toContain('invalid_section_claim')
   })
 })

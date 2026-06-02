@@ -19,6 +19,14 @@ export const SOURCES: Source[] = [
     accessMethod: 'api',
   },
   {
+    id: 'src.comtrade',
+    name: 'UN Comtrade',
+    tier: 'multilateral',
+    credibility: 'primary',
+    url: 'https://comtradeplus.un.org',
+    accessMethod: 'api',
+  },
+  {
     id: 'src.gdelt',
     name: 'GDELT Project',
     tier: 'aggregator',

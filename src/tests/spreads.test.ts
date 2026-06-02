@@ -44,11 +44,13 @@ describe('invented spreads', () => {
       date: '2026-05-29',
       edition: 'daily',
       status: 'draft',
-      dataMode: 'sample',
+      dataMode: 'live',
       sections: [],
       claims: [],
       figures: [fig],
       events: [],
+      profiles: [],
+      methodologies: [],
     }
     const res = runPublishGate(brief)
     expect(res.passed).toBe(false)

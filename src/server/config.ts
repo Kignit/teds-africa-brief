@@ -4,11 +4,13 @@
 export interface AppConfig {
   fredApiKey?: string
   eiaApiKey?: string
+  comtradeApiKey?: string
 }
 
 export function getConfig(env: Record<string, string | undefined> = {}): AppConfig {
   return {
     fredApiKey: env.FRED_API_KEY,
     eiaApiKey: env.EIA_API_KEY,
+    comtradeApiKey: env.COMTRADE_API_KEY,
   }
 }

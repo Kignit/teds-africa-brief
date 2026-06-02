@@ -1,0 +1,27 @@
+name: CI
+
+# Deploy/preview gate: a commit may only ship once it passes the full trust suite
+# (format, typecheck, lint, tests) and the production build — the same commands
+# Vercel runs (see vercel.json). A green build alone is not enough.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # Single source of truth for the Node version (matches .nvmrc + package.json engines).
+          node-version-file: '.nvmrc'
+          cache: npm
+      # npm ci installs exactly from package-lock.json and fails if the lockfile is out of sync.
+      - run: npm ci
+      # format:check + typecheck + lint + test — fails the build on any gate.
+      - run: npm run verify
+      # Production build runs without live connector API keys or network access.
+      - run: npm run build

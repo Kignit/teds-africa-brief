@@ -48,7 +48,7 @@ export function corroborateEvents(items: NewsItem[], opts: CorroborateOptions = 
       title: first.title,
       summary: first.summary,
       occurredAt: first.publishedAt,
-      countryCodes: [],
+      countryCodes: [...new Set(group.flatMap((g) => g.countryCodes ?? []))],
       topic: key,
       status,
       corroboration: {

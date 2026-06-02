@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ted's Africa Brief — Economist Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #d9dde3; }
+  * { -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+  .ab-scroll::-webkit-scrollbar, .ab-scroll *::-webkit-scrollbar { width: 0; height: 0; display: none; }
+  #stage { min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 24px; }
+</style>
+</head>
+<body>
+<div id="stage"><div id="root"></div></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- ───────────────────────── DATA (Economist-voice) ───────────────────────── -->
+<script>
+window.TAB = (function () {
+  const meta = {
+    edition: "Morning Brief",
+    dateLong: "Thursday, 29 May 2026",
+    dateShort: "29 MAY",
+    issue: "No. 412",
+    readTime: "6 min read",
+  };
+
+  // Trust signal — every brief is drafted by AI and cross-checked
+  const provenance = { sources: 18, time: "06:00 GMT" };
+
+  // ── Africa today — terse daily digest, Economist "world this week" style
+  const thisWeek = {
+    politics: [
+      "The US Federal Reserve held rates and signalled a single cut by the third quarter; the dollar duly slipped 0.8%.",
+      "Kenya returned to international markets with a $900m seven-year Eurobond at 9.2%, 60 basis points inside its 2024 deal.",
+      "Ethiopia's birr drifted weaker as the central bank kept rationing dollars a year into the float.",
+      "Ghana's headline inflation fell for a fifth straight month, to 18.2%.",
+      "The AfCFTA secretariat reported intra-African trade up 14% year on year — a record.",
+    ],
+    business: [
+      "Nigeria's central bank cleared roughly $1.8bn of verified foreign-exchange claims; the naira firmed 2.1%.",
+      "Brent crude slipped below $71 on fresh OPEC+ supply talk — a headache for exporters, a balm for importers.",
+      "Morocco's OCP agreed a $7bn green-ammonia complex, the continent's largest energy-transition deal this year.",
+      "South Africa's Reserve Bank left its repo rate at 7.25% for a third meeting running.",
+      "Cocoa climbed on renewed supply jitters, brightening the outlook for Ghana and Cote d'Ivoire.",
+    ],
+  };
+
+  // ── Today's lead — the AI's flagship analysis of the day's defining driver
+  const leader = {
+    kicker: "Today's lead",
+    title: "A window, not a door",
+    dek: "A softer dollar has handed Africa's central banks a rare reprieve — but the relief is uneven, and temporary.",
+    take: [
+      "The most consequential driver for African economies this week came not from Lagos, Nairobi or Pretoria but from Washington. The Federal Reserve's dovish hold lifts local currencies, cools imported inflation and shrinks the local-currency cost of servicing dollar debt across the bloc.",
+      "But the windfall is not shared equally. It flows fastest to the economies carrying the heaviest dollar debt — Nigeria and Kenya — while a managed-float Ethiopia sees only muted relief. And it is borrowed from the rate cycle: when the dollar's yield advantage returns, the buffers built now are what will separate the resilient from the exposed.",
+    ],
+    stance: "Net effect: a genuine but fleeting reprieve. The economies that rebuild reserves now will weather the dollar's return; those that spend the windfall will not.",
+  };
+
+  // ── Briefing — the deep read
+  const briefing = {
+    kicker: "Briefing",
+    title: "How Washington's pause reaches African wallets",
+    body: [
+      "Chair Jerome Powell framed the hold as insurance against sticky services inflation. Markets heard something else — a dot-plot drifting towards easing. The dollar index fell 0.8% on the session, and frontier currencies followed it up.",
+      "The transmission is mechanical rather than mysterious. A weaker dollar raises the local value of commodity exports, lowers the price of imported food and fuel, and trims the coupon bill on debt priced in dollars. Kenya's well-timed return to the market — 60 basis points inside its 2024 issue — shows investors are willing to reward the story while it lasts.",
+    ],
+  };
+
+  // ── Causal chains — the signature device
+  const chains = [
+    {
+      title: "US rates to African FX relief",
+      nodes: [
+        { label: "Fed signals Q3 cut", kind: "cause" },
+        { label: "Dollar index -0.8%", kind: "delta", tone: "pos" },
+        { label: "Naira, rand, shilling firm", kind: "effect", tone: "pos" },
+        { label: "Cheaper dollar-debt service", kind: "outcome", tone: "pos" },
+      ],
+    },
+    {
+      title: "Oil's twin-track impact",
+      nodes: [
+        { label: "Brent -4% to $70.6", kind: "cause", tone: "neg" },
+        { label: "Exporters' revenue dips", kind: "effect", tone: "neg" },
+        { label: "Importers' fuel bill eases", kind: "effect", tone: "pos" },
+        { label: "Net: inflation relief", kind: "outcome", tone: "pos" },
+      ],
+    },
+  ];
+
+  // ── Signals — the intelligence layer. One global trigger, divergent
+  //    country-level consequences. This is the product's signature analysis.
+  const signals = [
+    {
+      tag: "COMMODITY",
+      trigger: "Oil jumps 12% on Strait of Hormuz risk",
+      mechanism: "A threatened disruption to the strait that carries a fifth of the world's seaborne oil pushes Brent sharply higher. For Africa the effect splits cleanly along the export-import line.",
+      gains: [
+        { flag: "🇳🇬", country: "Nigeria", note: "Higher crude receipts ease the fiscal and FX squeeze." },
+        { flag: "🇦🇴", country: "Angola", note: "An oil windfall rebuilds reserves and steadies the kwanza." },
+      ],
+      exposed: [
+        { flag: "🇰🇪", country: "Kenya", note: "A costlier fuel bill widens the import gap and stokes inflation." },
+        { flag: "🇪🇹", country: "Ethiopia", note: "Fuel-import strain hits an already thin FX buffer." },
+      ],
+    },
+    {
+      tag: "POLICY",
+      trigger: "A softer dollar after the Fed's dovish hold",
+      mechanism: "A weaker greenback is broadly a tailwind, but it reaches furthest where hard-currency debt is heaviest — and barely touches a managed-float economy.",
+      gains: [
+        { flag: "🇳🇬", country: "Nigeria", note: "The naira firms; the dollar-coupon bill shrinks." },
+        { flag: "🇰🇪", country: "Kenya", note: "Cheaper Eurobond service right after this week's issue." },
+      ],
+      exposed: [
+        { flag: "🇪🇹", country: "Ethiopia", note: "A managed-float birr still drifts weaker; the relief barely lands." },
+      ],
+    },
+    {
+      tag: "FISCAL",
+      trigger: "IMF presses Kenya on devaluation and new taxes",
+      mechanism: "Conditionality steadies the balance sheet but squeezes households — and Kenya's recent history shows the political fuse is short.",
+      gainsLabel: "Steadier balance sheet",
+      exposedLabel: "Squeezed households",
+      gains: [
+        { flag: "🇰🇪", country: "Kenya · markets", note: "A credible programme stabilises the shilling and unlocks financing." },
+      ],
+      exposed: [
+        { flag: "🇰🇪", country: "Kenya · society", note: "Higher taxes and pricier imports lift the cost of living — and the risk of unrest." },
+      ],
+    },
+  ];
+
+  const dimOrder = ["Growth", "Consumers", "Inflation", "FX", "Trade", "Debt"];
+
+  // ── The week in five — clever heds, analytical bodies
+  const top5 = [
+    {
+      rank: 1, country: "Nigeria", code: "NG", flag: "🇳🇬",
+      headline: "The naira's reprieve",
+      blurb: "By settling some $1.8bn of verified claims, the central bank has done what three years of rhetoric could not — convinced the market the official rate is real. The naira gained 2.1% on the week. Durability is another matter.",
+      source: "BusinessDay (Lagos)",
+      impact: { Growth: "pos", Consumers: "pos", Inflation: "pos", FX: "pos", Trade: "neutral", Debt: "pos" },
+      stat: { label: "NGN / USD", value: "1,452", chg: "+2.1%", tone: "pos", spark: [1530, 1522, 1510, 1498, 1486, 1470, 1452] },
+    },
+    {
+      rank: 2, country: "South Africa", code: "ZA", flag: "🇿🇦",
+      headline: "A central bank in no hurry",
+      blurb: "The Reserve Bank held at 7.25% for a third meeting, citing anchored expectations and a calmer rand. Dull, deliberate and — by the standards of the moment — rather enviable.",
+      source: "Business Day (Johannesburg)",
+      impact: { Growth: "neutral", Consumers: "neutral", Inflation: "pos", FX: "pos", Trade: "neutral", Debt: "neutral" },
+      stat: { label: "ZAR / USD", value: "18.04", chg: "+0.7%", tone: "pos", spark: [18.4, 18.3, 18.25, 18.2, 18.15, 18.1, 18.04] },
+    },
+    {
+      rank: 3, country: "Kenya", code: "KE", flag: "🇰🇪",
+      headline: "Back in the market's good books",
+      blurb: "Nairobi priced a seven-year note at 9.2%, a full 60 basis points inside its 2024 deal. Less a triumph than a reprieve: proof that fiscal consolidation, grudgingly pursued, is being grudgingly rewarded.",
+      source: "Daily Nation (Nairobi)",
+      impact: { Growth: "pos", Consumers: "neutral", Inflation: "neutral", FX: "pos", Trade: "neutral", Debt: "pos" },
+      stat: { label: "10y yield", value: "9.20%", chg: "-60bps", tone: "pos", spark: [9.9, 9.8, 9.7, 9.55, 9.4, 9.3, 9.2] },
+    },
+    {
+      rank: 4, country: "Ghana", code: "GH", flag: "🇬🇭",
+      headline: "Disinflation, at last",
+      blurb: "Headline prices fell for a fifth straight month, to 18.2%, handing the Bank of Ghana room to ease later this quarter. After two years of pain, the cedi's calm looks less like luck and more like policy.",
+      source: "Graphic Business (Accra)",
+      impact: { Growth: "pos", Consumers: "pos", Inflation: "pos", FX: "neutral", Trade: "neutral", Debt: "neutral" },
+      stat: { label: "CPI y/y", value: "18.2%", chg: "-1.1pp", tone: "pos", spark: [23, 22, 21, 20.3, 19.5, 19, 18.2] },
+    },
+    {
+      rank: 5, country: "Ethiopia", code: "ET", flag: "🇪🇹",
+      headline: "The birr's managed slide grinds on",
+      blurb: "A year into the float, the birr keeps drifting weaker as the central bank rations scarce dollars. A softer global dollar barely registers against a home-made FX shortage.",
+      source: "Addis Standard (Addis Ababa)",
+      impact: { Growth: "pos", Consumers: "neg", Inflation: "neg", FX: "neg", Trade: "neutral", Debt: "pos" },
+      stat: { label: "ETB / USD", value: "141.2", chg: "-0.4%", tone: "neg", spark: [140.6, 140.8, 141.0, 141.1, 141.15, 141.2] },
+    },
+  ];
+
+  // ── Markets data
+  const fx = [
+    { code: "NGN", value: "1,452", chg: "+2.1%", tone: "pos", spark: [1530, 1510, 1498, 1486, 1470, 1452] },
+    { code: "ZAR", value: "18.04", chg: "+0.7%", tone: "pos", spark: [18.4, 18.3, 18.2, 18.15, 18.1, 18.04] },
+    { code: "KES", value: "128.9", chg: "+0.3%", tone: "pos", spark: [129.5, 129.3, 129.1, 129.0, 128.95, 128.9] },
+    { code: "GHS", value: "13.40", chg: "0.0%", tone: "neutral", spark: [13.4, 13.4, 13.41, 13.4, 13.39, 13.4] },
+    { code: "ETB", value: "141.2", chg: "-0.4%", tone: "neg", spark: [140.6, 140.8, 141.0, 141.1, 141.15, 141.2] },
+  ];
+  const commods = [
+    { name: "Brent", value: "$70.6", chg: "-4.0%", tone: "neg", spark: [73.5, 73, 72.2, 71.4, 71, 70.6] },
+    { name: "Gold", value: "$2,388", chg: "+1.2%", tone: "pos", spark: [2360, 2368, 2372, 2378, 2382, 2388] },
+    { name: "Cocoa", value: "$8,910", chg: "+3.4%", tone: "pos", spark: [8600, 8680, 8740, 8800, 8870, 8910] },
+  ];
+  const spreads = [
+    { name: "Nigeria 2032", value: "642", chg: "-18bps", tone: "pos" },
+    { name: "Kenya 2031", value: "598", chg: "-42bps", tone: "pos" },
+    { name: "Egypt 2033", value: "711", chg: "+24bps", tone: "neg" },
+    { name: "Ghana 2030", value: "830", chg: "-9bps", tone: "pos" },
+  ];
+
+  const marketsRead = "The read: a softer dollar did the heavy lifting this week. The moves below owe less to local heroics than to Washington's pause — which makes them both welcome and fragile.";
+
+  const watch = [
+    { d: "Fri", t: "South Africa Q1 GDP", note: "Consensus a tepid +0.4% q/q" },
+    { d: "Tue", t: "Kenya CPI (May)", note: "The food basket holds the key" },
+    { d: "Wed", t: "ECB rate decision", note: "A cut is all but priced" },
+    { d: "Thu", t: "Nigeria MPC minutes", note: "Hawk or dove on reserves?" },
+  ];
+
+  const outlook =
+    "We expect the dollar-relief trade to run into June, with the naira and shilling its cleanest beneficiaries. The obvious risk is a hawkish surprise from the ECB that hands the dollar back its yield advantage. Oil's softness flatters importers but tightens the fiscal arithmetic in Luanda and Abuja should Brent settle below $68. Base case: constructive on Kenyan and Nigerian local rates; wary of the Egyptian pound until the new band finds a floor.";
+
+  // ── Africa Top 10 (weekly)
+  const top10extra = [
+    { rank: 6, country: "Morocco", flag: "🇲🇦", headline: "OCP signs $7bn green-ammonia deal", chg: "+1.4%", tone: "pos" },
+    { rank: 7, country: "Cote d'Ivoire", flag: "🇨🇮", headline: "Cocoa premium lifts farmgate price", chg: "+3.4%", tone: "pos" },
+    { rank: 8, country: "Angola", flag: "🇦🇴", headline: "Kwanza steadies as diesel subsidy trimmed", chg: "+0.6%", tone: "pos" },
+    { rank: 9, country: "Tanzania", flag: "🇹🇿", headline: "LNG talks resume with the majors", chg: "0.0%", tone: "neutral" },
+    { rank: 10, country: "Senegal", flag: "🇸🇳", headline: "First full year of oil output lifts GDP", chg: "+0.9%", tone: "pos" },
+  ];
+
+  // ── Auto-promoted alerts (rules-based)
+  const alerts = [
+    { tag: "FX MOVE", tone: "neg", title: "EGP -5.4% m/m", detail: "The Egyptian pound breaches the trigger as the managed band widens.", rule: "FX move > 5% m/m" },
+    { tag: "POLICY", tone: "pos", title: "Ghana cuts 200bps", detail: "The Bank of Ghana front-loads easing as inflation falls for a fifth month.", rule: "Policy rate >= 100bps" },
+    { tag: "DEAL", tone: "neutral", title: "OCP green ammonia, $7.0bn", detail: "Morocco anchors the largest African energy-transition deal of 2026.", rule: "Deal >= US$100m" },
+    { tag: "COMMODITY", tone: "pos", title: "Cocoa +11% w/w", detail: "Supply fears reignite — a clear tailwind for Ghana and Cote d'Ivoire.", rule: "Commodity shock +/-10%" },
+  ];
+
+  const dealwire = [
+    { co: "OCP", cc: "MA", title: "Green-ammonia complex", value: "$7.0bn", sector: "Energy" },
+    { co: "Dangote", cc: "NG", title: "Refinery output-ramp financing", value: "$1.2bn", sector: "Industrials" },
+    { co: "MTN", cc: "ZA", title: "Fibre carve-out stake sale", value: "$0.9bn", sector: "Telecom" },
+    { co: "Safaricom", cc: "KE", title: "Ethiopia network expansion", value: "$0.5bn", sector: "Telecom" },
+  ];
+
+  const pulseStats = [
+    { label: "Avg CPI (6)", value: "19.4%", chg: "-0.6pp", tone: "pos" },
+    { label: "Avg policy rate", value: "18.1%", chg: "-25bps", tone: "pos" },
+    { label: "FX reserves change", value: "+$2.1bn", chg: "w/w", tone: "pos" },
+    { label: "PMI (avg)", value: "50.7", chg: "+0.9", tone: "pos" },
+  ];
+
+  // ── Weekly editions (Economist voice)
+  const weekly = {
+    sat: {
+      label: "The week in review", range: "24-30 May 2026", day: "Saturday",
+      blocks: [
+        { type: "prose", kicker: "The big picture", title: "A softer dollar set the tone", text: "The week's defining move was made in Washington, not Africa. The Fed's dovish hold knocked 0.8% off the dollar, lifting frontier currencies and trimming hard-currency debt-service costs across the bloc. Oil's slide to the low-$70s added a second, importer-friendly tailwind. Enjoy it; windows like this rarely stay open long." },
+        { type: "top10", kicker: "The week in ten", title: "The biggest movers" },
+        { type: "pulse", kicker: "Economic indicators", title: "Inflation cools, rates begin to follow", items: pulseStats },
+        { type: "prose", kicker: "Integration", title: "AfCFTA quietly gathers pace", text: "Intra-African trade rose 14% year on year, and the Pan-African Payment and Settlement System now spans 15 markets. ECOWAS restated its single-currency ambitions — an aspiration still more honoured in communiques than in practice — while SADC advanced a regional grid pact with rather more substance." },
+        { type: "dealwire", kicker: "Dealwire", title: "Deals that crossed the wire" },
+        { type: "watchlist", kicker: "Market watchlist", title: "Levels we are tracking" },
+      ],
+    },
+    sun: {
+      label: "The week ahead", range: "31 May-6 Jun 2026", day: "Sunday",
+      blocks: [
+        { type: "prose", kicker: "The base case", title: "Where we land", text: outlook },
+        { type: "calendar", kicker: "The calendar", title: "What to watch", items: [
+          { d: "Mon", t: "Egypt PMI (May)", note: "New orders in focus" },
+          { d: "Tue", t: "Kenya CPI (May)", note: "Food basket the swing factor" },
+          { d: "Wed", t: "ECB rate decision", note: "A cut is all but priced" },
+          { d: "Thu", t: "SA Q1 GDP", note: "Consensus +0.4% q/q" },
+          { d: "Fri", t: "US payrolls", note: "The dollar-direction setter" },
+        ] },
+        { type: "prose", kicker: "Policy watch", title: "Central banks take centre stage", text: "The ECB headlines a crowded calendar; a cut would reinforce the soft-dollar trade that has flattered African currencies. Closer to home, the tone of the Bank of Ghana after its surprise 200bps cut, and Nigeria's MPC minutes, will set the mood for rate expectations." },
+        { type: "deals", kicker: "Deals outlook", title: "Pipeline to watch" },
+        { type: "focal", kicker: "Focal points", title: "Where attention turns", items: [
+          { cc: "NG", t: "The naira's durability after the FX-backlog clear-out" },
+          { cc: "ET", t: "Whether the birr's managed slide finds a floor" },
+          { cc: "KE", t: "Eurobond demand and yield follow-through" },
+          { cc: "GH", t: "The pace of easing after the surprise cut" },
+        ] },
+        { type: "risks", kicker: "Net assessment", title: "Where the risks lie", items: [
+          { tone: "pos", text: "Constructive on Kenyan and Nigerian local rates as disinflation extends." },
+          { tone: "neutral", text: "Neutral on oil exporters: importer relief offsets the revenue drag near term." },
+          { tone: "neg", text: "Wary of the Egyptian pound until the new band finds a clearing level." },
+        ] },
+        { type: "watchlist", kicker: "Market watchlist", title: "Levels we are tracking" },
+      ],
+    },
+  };
+
+  // ── Coverage — the five launch markets. More countries are added over time.
+  const countries = [
+    { cc: "ET", flag: "🇪🇹", name: "Ethiopia" },
+    { cc: "KE", flag: "🇰🇪", name: "Kenya" },
+    { cc: "NG", flag: "🇳🇬", name: "Nigeria" },
+    { cc: "GH", flag: "🇬🇭", name: "Ghana" },
+    { cc: "ZA", flag: "🇿🇦", name: "South Africa" },
+  ];
+  const defaultCoverage = ["ET", "KE", "NG", "GH", "ZA"];
+
+  // ── Focus areas — the lenses the AI runs every story through
+  const focusAreas = [
+    { id: "macro", label: "Macro & growth", desc: "GDP, output, the cycle" },
+    { id: "prices", label: "Inflation & cost of living", desc: "CPI, fuel, food, the consumer" },
+    { id: "fx", label: "FX & reserves", desc: "Currencies, buffers, the dollar" },
+    { id: "debt", label: "Debt & fiscal", desc: "Eurobonds, IMF, deficits" },
+    { id: "trade", label: "Trade & integration", desc: "AfCFTA, exports, corridors" },
+    { id: "energy", label: "Commodities & energy", desc: "Oil, gold, cocoa, power" },
+    { id: "politics", label: "Politics & stability", desc: "Elections, policy, unrest risk" },
+    { id: "deals", label: "Deals & investment", desc: "M&A, FDI, project finance" },
+  ];
+  const defaultFocus = ["fx", "prices", "debt", "energy"];
+
+  // ── Sources — the credibility stack; every brief is cross-checked across these
+  const sources = [
+    { tier: "Local & regional press", trust: "On-the-ground reporting", items: ["BusinessDay (Lagos)", "Daily Nation (Nairobi)", "Business Day (Johannesburg)", "Graphic Business (Accra)", "Ahram Online (Cairo)"] },
+    { tier: "Global newswires & analysis", trust: "Cross-checked for consensus", items: ["Bloomberg", "Reuters", "Financial Times", "The Economist"] },
+    { tier: "Central banks", trust: "Primary policy source", items: ["Central Bank of Nigeria", "SARB", "Central Bank of Kenya", "Bank of Ghana", "Central Bank of Egypt"] },
+    { tier: "Finance ministries & treasuries", trust: "Primary fiscal source", items: ["Budget & treasury statements", "Debt-management offices"] },
+    { tier: "Multilaterals & data", trust: "Benchmark data", items: ["IMF", "World Bank", "African Development Bank", "AfCFTA Secretariat", "OPEC"] },
+  ];
+
+  const nav = [
+    { id: "daily", label: "Daily" },
+    { id: "markets", label: "Markets" },
+    { id: "weekly", label: "Weekly" },
+    { id: "saved", label: "Saved" },
+  ];
+
+  const savable = {
+    lead: { title: leader.title, meta: "Today's lead · 29 May", kind: "Analysis", tone: "pos" },
+  };
+  top5.forEach((it) => {
+    savable[it.code.toLowerCase()] = { title: it.headline, meta: it.country + " · The week in five", kind: "Top 5", tone: it.stat.tone };
+  });
+  savable.weekly_sat = { title: "The week in review — 24-30 May", meta: "Weekly intelligence", kind: "Weekly", tone: "neutral" };
+  const savedSeed = ["lead", "ke"];
+
+  return {
+    meta, provenance, thisWeek, leader, briefing, chains, signals, dimOrder, top5,
+    fx, commods, spreads, marketsRead, watch, outlook, nav,
+    top10extra, alerts, dealwire, pulseStats, weekly, savable, savedSeed,
+    countries, defaultCoverage, focusAreas, defaultFocus, sources,
+  };
+})();
+</script>
+
+<!-- ───────────────────────── APP ───────────────────────── -->
+<script type="text/babel" data-presets="react">
+const { useState, useRef, useEffect, useCallback, useContext, Fragment } = React;
+const D = window.TAB;
+
+/* ───────── primitives ───────── */
+function Sparkline({ data, color = "#1E6F4C", width = 64, height = 22, strokeWidth = 1.6, fill = null, dot = false }) {
+  if (!data || data.length < 2) return null;
+  const min = Math.min(...data), max = Math.max(...data);
+  const span = max - min || 1;
+  const stepX = width / (data.length - 1);
+  const pts = data.map((v, i) => {
+    const x = i * stepX;
+    const y = height - ((v - min) / span) * (height - strokeWidth * 2) - strokeWidth;
+    return [x, y];
+  });
+  const d = pts.map((p, i) => (i === 0 ? "M" : "L") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+  const areaD = fill ? d + ` L ${width} ${height} L 0 ${height} Z` : null;
+  const last = pts[pts.length - 1];
+  return (
+    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{ display: "block", overflow: "visible" }}>
+      {fill && <path d={areaD} fill={fill} />}
+      <path d={d} fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      {dot && <circle cx={last[0]} cy={last[1]} r={strokeWidth + 0.8} fill={color} />}
+    </svg>
+  );
+}
+
+function TrendArrow({ tone, size = 10, c }) {
+  const col = c ? c(tone) : (tone === "pos" ? "#1E6F4C" : tone === "neg" ? "#B23B2E" : "#7C7C7C");
+  if (tone === "neutral") {
+    return <svg width={size} height={size} viewBox="0 0 10 10"><path d="M2 5h6" stroke={col} strokeWidth="1.6" strokeLinecap="round" /></svg>;
+  }
+  const up = tone === "pos";
+  return (
+    <svg width={size} height={size} viewBox="0 0 10 10">
+      {up ? <path d="M5 2l3 4H6v2H4V6H2z" fill={col} /> : <path d="M5 8l3-4H6V2H4v2H2z" fill={col} />}
+    </svg>
+  );
+}
+
+function ImpactPills({ impact, dimOrder, c, compact = false }) {
+  const dims = dimOrder.filter((d) => impact[d]);
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+      {dims.map((d) => {
+        const t = impact[d];
+        return (
+          <span key={d} style={{
+            display: "inline-flex", alignItems: "center", gap: 4,
+            fontSize: compact ? 10.5 : 11.5, fontWeight: 600, letterSpacing: 0.1,
+            padding: compact ? "3px 7px" : "4px 9px", borderRadius: 999,
+            color: c(t), background: c(t, "bg"), border: `1px solid ${c(t, "bd")}`,
+          }}>
+            {d}<TrendArrow tone={t} c={c} size={9} />
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
+function CausalChain({ chain, c }) {
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 6, rowGap: 8 }}>
+      {chain.nodes.map((n, i) => (
+        <Fragment key={i}>
+          <span style={{
+            display: "inline-flex", alignItems: "center", gap: 5,
+            fontSize: 12, fontWeight: n.kind === "cause" ? 700 : 600,
+            padding: "5px 10px", borderRadius: 7,
+            background: n.tone ? c(n.tone, "bg") : "var(--chipBg)",
+            color: n.tone ? c(n.tone) : "var(--ink)",
+            border: `1px solid ${n.tone ? c(n.tone, "bd") : "var(--hair)"}`,
+            whiteSpace: "nowrap",
+          }}>
+            {n.tone && <TrendArrow tone={n.tone} c={c} size={9} />}
+            {n.label}
+          </span>
+          {i < chain.nodes.length - 1 && (
+            <svg width="16" height="10" viewBox="0 0 16 10" style={{ flexShrink: 0, opacity: 0.55 }}>
+              <path d="M1 5h12M9 1l4 4-4 4" stroke="var(--muted)" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          )}
+        </Fragment>
+      ))}
+    </div>
+  );
+}
+
+/* ───────── iOS frame ───────── */
+function IOSStatusBar() {
+  const c = "#000";
+  return (
+    <div style={{ display: "flex", gap: 154, alignItems: "center", justifyContent: "center", padding: "21px 24px 19px", boxSizing: "border-box", position: "relative", zIndex: 20, width: "100%" }}>
+      <div style={{ flex: 1, height: 22, display: "flex", alignItems: "center", justifyContent: "center", paddingTop: 1.5 }}>
+        <span style={{ fontFamily: '-apple-system, "SF Pro", system-ui', fontWeight: 590, fontSize: 17, lineHeight: "22px", color: c }}>9:41</span>
+      </div>
+      <div style={{ flex: 1, height: 22, display: "flex", alignItems: "center", justifyContent: "center", gap: 7, paddingTop: 1, paddingRight: 1 }}>
+        <svg width="19" height="12" viewBox="0 0 19 12">
+          <rect x="0" y="7.5" width="3.2" height="4.5" rx="0.7" fill={c}/><rect x="4.8" y="5" width="3.2" height="7" rx="0.7" fill={c}/><rect x="9.6" y="2.5" width="3.2" height="9.5" rx="0.7" fill={c}/><rect x="14.4" y="0" width="3.2" height="12" rx="0.7" fill={c}/>
+        </svg>
+        <svg width="17" height="12" viewBox="0 0 17 12">
+          <path d="M8.5 3.2C10.8 3.2 12.9 4.1 14.4 5.6L15.5 4.5C13.7 2.7 11.2 1.5 8.5 1.5C5.8 1.5 3.3 2.7 1.5 4.5L2.6 5.6C4.1 4.1 6.2 3.2 8.5 3.2Z" fill={c}/><path d="M8.5 6.8C9.9 6.8 11.1 7.3 12 8.2L13.1 7.1C11.8 5.9 10.2 5.1 8.5 5.1C6.8 5.1 5.2 5.9 3.9 7.1L5 8.2C5.9 7.3 7.1 6.8 8.5 6.8Z" fill={c}/><circle cx="8.5" cy="10.5" r="1.5" fill={c}/>
+        </svg>
+        <svg width="27" height="13" viewBox="0 0 27 13">
+          <rect x="0.5" y="0.5" width="23" height="12" rx="3.5" stroke={c} strokeOpacity="0.35" fill="none"/><rect x="2" y="2" width="20" height="9" rx="2" fill={c}/><path d="M25 4.5V8.5C25.8 8.2 26.5 7.2 26.5 6.5C26.5 5.8 25.8 4.8 25 4.5Z" fill={c} fillOpacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function IOSDevice({ children, width = 402, height = 874 }) {
+  return (
+    <div style={{ width, height, borderRadius: 48, overflow: "hidden", position: "relative", background: "#F2F2F7", boxShadow: "0 40px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.12)", fontFamily: "-apple-system, system-ui, sans-serif", WebkitFontSmoothing: "antialiased" }}>
+      <div style={{ position: "absolute", top: 11, left: "50%", transform: "translateX(-50%)", width: 126, height: 37, borderRadius: 24, background: "#000", zIndex: 50 }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, zIndex: 10 }}><IOSStatusBar /></div>
+      <div style={{ height: "100%", display: "flex", flexDirection: "column" }}>{children}</div>
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 60, height: 34, display: "flex", justifyContent: "center", alignItems: "flex-end", paddingBottom: 8, pointerEvents: "none" }}>
+        <div style={{ width: 139, height: 5, borderRadius: 100, background: "rgba(0,0,0,0.25)" }} />
+      </div>
+    </div>
+  );
+}
+
+/* ───────── theme + kit ───────── */
+const PAL = {
+  pos: "#08A06A", neg: "#E5484D", neutral: "#75808F",
+  posBg: "rgba(8,160,106,.10)", negBg: "rgba(229,72,77,.10)", neuBg: "rgba(117,128,143,.10)",
+  posBd: "rgba(8,160,106,.20)", negBd: "rgba(229,72,77,.20)", neuBd: "rgba(117,128,143,.16)",
+};
+const c = (t, k) =>
+  k === "bg" ? (t === "pos" ? PAL.posBg : t === "neg" ? PAL.negBg : PAL.neuBg)
+  : k === "bd" ? (t === "pos" ? PAL.posBd : t === "neg" ? PAL.negBd : PAL.neuBd)
+  : (t === "pos" ? PAL.pos : t === "neg" ? PAL.neg : PAL.neutral);
+
+const VARS = {
+  "--bg": "#EEF1F5", "--ink": "#101722", "--muted": "#6B7686",
+  "--hair": "rgba(16,23,34,.08)", "--chipBg": "#EEF1F5", "--accent": "#3D4EE8",
+  "--card": "#FFFFFF", fontFamily: "'Schibsted Grotesk', system-ui, sans-serif",
+};
+const mono = "'Spline Sans Mono', ui-monospace, monospace";
+const serif = "'Newsreader', Georgia, serif";
+const SHADOW = "0 1px 2px rgba(16,23,34,.04), 0 6px 20px rgba(16,23,34,.05)";
+
+const SaveCtx = React.createContext({ ids: [], toggle: () => {}, has: () => false });
+const UICtx = React.createContext({ coverage: [], focus: [], openSources: () => {}, openDirectory: () => {}, editCoverage: () => {} });
+
+function Card({ children, style = {}, onClick }) {
+  return <div onClick={onClick} style={{ background: "var(--card)", borderRadius: 20, boxShadow: SHADOW, ...style }}>{children}</div>;
+}
+
+// Economist-style section divider: hairline rule + small-caps kicker
+function SectionHead({ kicker, title, action, onAction }) {
+  return (
+    <div style={{ padding: "26px 20px 10px" }}>
+      <div style={{ height: 1, background: "var(--hair)", marginBottom: 12 }} />
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between" }}>
+        <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: 1.3, textTransform: "uppercase", color: "var(--accent)" }}>{kicker}</span>
+        {action && <span onClick={onAction} style={{ fontSize: 12, fontWeight: 600, color: "var(--accent)", cursor: onAction ? "pointer" : "default" }}>{action}</span>}
+      </div>
+      {title && <h2 style={{ fontFamily: serif, fontSize: 22, fontWeight: 600, letterSpacing: -0.2, color: "var(--ink)", margin: "7px 0 0", lineHeight: 1.15 }}>{title}</h2>}
+    </div>
+  );
+}
+
+function SaveButton({ id, dark = false, size = 34 }) {
+  const ctx = useContext(SaveCtx);
+  const on = ctx.has(id);
+  const col = on ? "var(--accent)" : "transparent";
+  const line = on ? "var(--accent)" : (dark ? "rgba(255,255,255,.85)" : "var(--muted)");
+  return (
+    <button onClick={(e) => { e.stopPropagation(); ctx.toggle(id); }} aria-label="Save"
+      style={{ all: "unset", cursor: "pointer", width: size, height: size, borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", background: dark ? "rgba(255,255,255,.16)" : "var(--chipBg)", flexShrink: 0, transition: "transform .15s", transform: on ? "scale(1.04)" : "scale(1)" }}>
+      <svg width="15" height="17" viewBox="0 0 15 17" fill={col} style={{ transition: "fill .15s" }}>
+        <path d="M2 2.2A1.2 1.2 0 013.2 1h8.6A1.2 1.2 0 0113 2.2V16l-5.5-3.4L2 16V2.2z" stroke={line} strokeWidth="1.5" strokeLinejoin="round" />
+      </svg>
+    </button>
+  );
+}
+
+function Pill({ tone, children }) {
+  return (
+    <span style={{ display: "inline-flex", alignItems: "center", gap: 3, fontFamily: mono, fontSize: 12, fontWeight: 700, color: c(tone), background: c(tone, "bg"), padding: "4px 9px", borderRadius: 999 }}>
+      <TrendArrow tone={tone} c={c} size={9} />{children}
+    </span>
+  );
+}
+
+/* ───────── shared: provenance + causal map ───────── */
+function Provenance({ dark = false, style = {} }) {
+  const ui = useContext(UICtx);
+  const col = dark ? "rgba(255,255,255,.85)" : "var(--muted)";
+  return (
+    <button onClick={(e) => { e.stopPropagation(); ui.openSources(); }} style={{ all: "unset", cursor: "pointer", display: "flex", alignItems: "center", gap: 6, fontSize: 10.5, fontWeight: 600, color: col, ...style }}>
+      <svg width="12" height="13" viewBox="0 0 12 13"><path d="M6 1l4.5 1.8v3.4c0 2.7-1.9 5-4.5 5.8C3.4 11.2 1.5 8.9 1.5 6.2V2.8L6 1z" fill="none" stroke={col} strokeWidth="1.1"/><path d="M4 6.4l1.4 1.4L8.3 5" stroke={col} strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+      AI-drafted · {D.provenance.sources} sources cross-checked
+      <svg width="11" height="11" viewBox="0 0 11 11" style={{ opacity: 0.7 }}><path d="M3.5 2l4 3.5-4 3.5" stroke={col} strokeWidth="1.3" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+    </button>
+  );
+}
+
+function SplitGroup({ label, tone, items }) {
+  return (
+    <div style={{ background: c(tone, "bg"), border: `1px solid ${c(tone, "bd")}`, borderRadius: 14, padding: "11px 13px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 9 }}>
+        <TrendArrow tone={tone} c={c} size={12} />
+        <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: 0.6, textTransform: "uppercase", color: c(tone) }}>{label}</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        {items.map((it, i) => (
+          <div key={i} style={{ display: "flex", gap: 9, alignItems: "flex-start" }}>
+            <span style={{ fontSize: 18, lineHeight: 1, marginTop: 1, flexShrink: 0 }}>{it.flag}</span>
+            <div style={{ minWidth: 0 }}>
+              <span style={{ fontSize: 12.5, fontWeight: 700, color: "var(--ink)" }}>{it.country}</span>
+              <div style={{ fontSize: 12, lineHeight: 1.4, color: "var(--muted)", marginTop: 1 }}>{it.note}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ImpactSplit({ sig }) {
+  return (
+    <Card style={{ padding: 16, marginBottom: 11 }}>
+      <div style={{ marginBottom: 8 }}>
+        <span style={{ fontFamily: mono, fontSize: 9.5, fontWeight: 700, letterSpacing: 0.6, color: "var(--accent)", background: "rgba(61,78,232,.10)", padding: "3px 7px", borderRadius: 6 }}>{sig.tag}</span>
+      </div>
+      <h3 style={{ fontFamily: serif, fontSize: 18, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2, margin: "0 0 6px", lineHeight: 1.2 }}>{sig.trigger}</h3>
+      <p style={{ fontSize: 12.5, lineHeight: 1.5, color: "var(--muted)", margin: "0 0 13px" }}>{sig.mechanism}</p>
+      <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
+        <SplitGroup label={sig.gainsLabel || "Who gains"} tone="pos" items={sig.gains} />
+        <SplitGroup label={sig.exposedLabel || "Who's exposed"} tone="neg" items={sig.exposed} />
+      </div>
+    </Card>
+  );
+}
+
+function CausalMap() {
+  return (
+    <>
+      <SectionHead kicker="Causal map" title="One event, divergent effects" />
+      <div style={{ padding: "12px 18px 0" }}>
+        <p style={{ fontSize: 12.5, lineHeight: 1.5, color: "var(--muted)", margin: "0 0 13px" }}>How this week's global triggers ripple through the countries we cover — who benefits, and who carries the cost.</p>
+        {D.signals.map((s, i) => <ImpactSplit key={i} sig={s} />)}
+      </div>
+    </>
+  );
+}
+
+/* ───────── DAILY ───────── */
+function TopBar() {
+  const ui = useContext(UICtx);
+  const covFlags = ui.coverage.map((cc) => (D.countries.find((c) => c.cc === cc) || {}).flag).filter(Boolean);
+  return (
+    <div style={{ padding: "56px 18px 6px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 11 }}>
+        <div style={{ width: 40, height: 40, borderRadius: 13, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 4px 12px rgba(61,78,232,.35)" }}>
+          <span style={{ color: "#fff", fontWeight: 800, fontSize: 17, letterSpacing: -1 }}>tab</span>
+        </div>
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div style={{ fontSize: 15.5, fontWeight: 700, color: "var(--ink)", letterSpacing: -0.3, lineHeight: 1.15, whiteSpace: "nowrap" }}>Ted's Africa Brief</div>
+          <div style={{ fontSize: 11.5, color: "var(--muted)" }}>{D.meta.edition} · {D.meta.issue} · {D.meta.dateLong}</div>
+        </div>
+        <div style={{ width: 38, height: 38, borderRadius: 999, background: "var(--card)", boxShadow: SHADOW, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ position: "relative" }}>
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M8.5 1.5a5 5 0 00-5 5v3l-1.5 2.5h13L13.5 9.5v-3a5 5 0 00-5-5z" stroke="var(--ink)" strokeWidth="1.5" strokeLinejoin="round" /><path d="M6.5 15a2 2 0 004 0" stroke="var(--ink)" strokeWidth="1.5" /></svg>
+            <span style={{ position: "absolute", top: -2, right: -1, width: 7, height: 7, borderRadius: 7, background: "var(--accent)", border: "1.5px solid var(--card)" }} />
+          </div>
+        </div>
+      </div>
+      <Provenance style={{ marginTop: 10 }} />
+      <button onClick={ui.openDirectory} style={{ all: "unset", cursor: "pointer", display: "flex", alignItems: "center", gap: 7, marginTop: 8 }}>
+        <span style={{ fontSize: 10.5, fontWeight: 800, letterSpacing: 0.5, textTransform: "uppercase", color: "var(--muted)" }}>Covering</span>
+        <span style={{ fontSize: 14, letterSpacing: 1.5 }}>{covFlags.join("")}</span>
+        <span style={{ fontSize: 11, fontWeight: 700, color: "var(--accent)" }}>All Africa ›</span>
+      </button>
+    </div>
+  );
+}
+
+function Ticker({ go }) {
+  return (
+    <div style={{ display: "flex", gap: 9, overflowX: "auto", padding: "12px 18px 4px", scrollbarWidth: "none" }} className="ab-scroll">
+      {D.fx.map((r) => (
+        <div key={r.code} onClick={() => go("markets")} style={{ cursor: "pointer", flexShrink: 0, background: "var(--card)", borderRadius: 14, boxShadow: SHADOW, padding: "9px 12px", display: "flex", flexDirection: "column", gap: 3, minWidth: 92 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: "var(--ink)", letterSpacing: 0.3 }}>{r.code}</span>
+            <Sparkline data={r.spark} color={c(r.tone)} width={28} height={14} strokeWidth={1.6} />
+          </div>
+          <span style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: "var(--ink)" }}>{r.value}</span>
+          <span style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 600, color: c(r.tone) }}>{r.chg}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Africa today — terse digest grouped Politics / Business
+function DigestGroup({ heading, items }) {
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 8px", fontSize: 11, fontWeight: 700, letterSpacing: 0.5, textTransform: "uppercase", color: "var(--muted)" }}>{heading}</div>
+      {items.map((t, i) => (
+        <div key={i} style={{ display: "flex", gap: 11, padding: "10px 0", borderBottom: i < items.length - 1 ? "1px solid var(--hair)" : "none" }}>
+          <span style={{ width: 5, height: 5, borderRadius: 5, background: "var(--accent)", flexShrink: 0, marginTop: 7 }} />
+          <span style={{ fontSize: 13.5, lineHeight: 1.45, color: "var(--ink)" }}>{t}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function AfricaThisWeek() {
+  return (
+    <>
+      <SectionHead kicker="Africa today" />
+      <div style={{ padding: "0 18px" }}>
+        <DigestGroup heading="Politics & policy" items={D.thisWeek.politics} />
+        <DigestGroup heading="Business & finance" items={D.thisWeek.business} />
+      </div>
+    </>
+  );
+}
+
+// Leaders — the opinionated lead
+function Leader() {
+  return (
+    <>
+      <SectionHead kicker={D.leader.kicker} />
+      <div style={{ padding: "0 18px" }}>
+        <Card style={{ padding: 18, background: "linear-gradient(135deg, var(--accent), #6D5CF0)", color: "#fff", boxShadow: "0 10px 30px rgba(61,78,232,.32)" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 7, fontSize: 11, fontWeight: 600, letterSpacing: 0.5, textTransform: "uppercase", opacity: 0.9 }}>
+              <span style={{ width: 6, height: 6, borderRadius: 6, background: "#9FE7C6" }} />{D.leader.kicker} · {D.meta.readTime}
+            </div>
+            <div style={{ marginLeft: "auto" }}><SaveButton id="lead" dark /></div>
+          </div>
+          <h1 style={{ fontFamily: serif, fontSize: 27, fontWeight: 600, lineHeight: 1.12, letterSpacing: -0.4, margin: "12px 0 9px" }}>{D.leader.title}</h1>
+          <p style={{ fontSize: 13.5, lineHeight: 1.5, opacity: 0.94, margin: 0, fontStyle: "italic" }}>{D.leader.dek}</p>
+          <Provenance dark style={{ marginTop: 12 }} />
+          <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
+            <button style={{ all: "unset", cursor: "pointer", background: "#fff", color: "var(--accent)", fontSize: 12.5, fontWeight: 700, padding: "9px 16px", borderRadius: 999 }}>Read full analysis</button>
+            <button style={{ all: "unset", cursor: "pointer", background: "rgba(255,255,255,.18)", color: "#fff", fontSize: 12.5, fontWeight: 600, padding: "9px 16px", borderRadius: 999, display: "flex", alignItems: "center", gap: 6 }}>
+              <svg width="11" height="12" viewBox="0 0 11 12"><path d="M1 1l9 5-9 5z" fill="#fff" /></svg>Listen
+            </button>
+          </div>
+        </Card>
+        <Card style={{ padding: 18, marginTop: 11 }}>
+          {D.leader.take.map((p, i) => (
+            <p key={i} style={{ fontSize: 14, lineHeight: 1.6, color: "var(--ink)", opacity: 0.9, margin: i === 0 ? "0 0 12px" : "0 0 14px" }}>{p}</p>
+          ))}
+          <div style={{ display: "flex", gap: 10, paddingTop: 4, borderTop: "1px solid var(--hair)", marginTop: 2 }}>
+            <span style={{ width: 3, alignSelf: "stretch", background: "var(--accent)", borderRadius: 2, flexShrink: 0 }} />
+            <p style={{ fontSize: 14.5, lineHeight: 1.5, color: "var(--ink)", fontWeight: 700, margin: "12px 0 2px" }}>{D.leader.stance}</p>
+          </div>
+        </Card>
+      </div>
+    </>
+  );
+}
+
+// Briefing — deep read + causal chains
+function ChainCard({ chain }) {
+  return (
+    <Card style={{ padding: 15, marginBottom: 11 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 11 }}>
+        <span style={{ width: 26, height: 26, borderRadius: 8, background: c("pos", "bg"), display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <svg width="14" height="14" viewBox="0 0 13 13"><path d="M2 6.5h7M7 3l3.5 3.5L7 10" stroke={PAL.pos} strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        </span>
+        <span style={{ fontSize: 13, fontWeight: 700, color: "var(--ink)" }}>{chain.title}</span>
+      </div>
+      <CausalChain chain={chain} c={c} />
+    </Card>
+  );
+}
+
+function Briefing() {
+  return (
+    <>
+      <SectionHead kicker={D.briefing.kicker} title={D.briefing.title} />
+      <div style={{ padding: "0 18px" }}>
+        <Card style={{ padding: 18 }}>
+          {D.briefing.body.map((p, i) => (
+            <p key={i} style={{ fontSize: 14, lineHeight: 1.6, color: "var(--ink)", opacity: 0.9, margin: i === 0 ? "0 0 12px" : 0 }}>{p}</p>
+          ))}
+        </Card>
+      </div>
+    </>
+  );
+}
+
+function Top5Card({ item }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <Card style={{ minWidth: "calc(100% - 36px)", scrollSnapAlign: "center", padding: 16, marginRight: 11, boxSizing: "border-box" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 11 }}>
+        <span style={{ width: 30, height: 30, borderRadius: 10, background: "var(--accent)", color: "#fff", fontSize: 15, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center" }}>{item.rank}</span>
+        <span style={{ fontSize: 22 }}>{item.flag}</span>
+        <span style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{item.country}</span>
+        <span style={{ marginLeft: "auto" }}><Pill tone={item.stat.tone}>{item.stat.chg}</Pill></span>
+      </div>
+      <h3 style={{ fontFamily: serif, fontSize: 18, fontWeight: 600, lineHeight: 1.2, color: "var(--ink)", letterSpacing: -0.2, margin: "0 0 6px" }}>{item.headline}</h3>
+      <p style={{ fontSize: 12.5, lineHeight: 1.5, color: "var(--muted)", margin: "0 0 12px" }}>{item.blurb}</p>
+      <div style={{ background: "var(--chipBg)", borderRadius: 14, padding: "11px 13px", display: "flex", alignItems: "center", gap: 12 }}>
+        <div>
+          <div style={{ fontSize: 10.5, color: "var(--muted)", fontWeight: 600 }}>{item.stat.label}</div>
+          <div style={{ fontFamily: mono, fontSize: 18, fontWeight: 700, color: "var(--ink)" }}>{item.stat.value}</div>
+        </div>
+        <div style={{ marginLeft: "auto" }}><Sparkline data={item.stat.spark} color={c(item.stat.tone)} width={96} height={32} strokeWidth={2} fill={c(item.stat.tone, "bg")} dot /></div>
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 12 }}>
+        <button onClick={() => setOpen(!open)} style={{ all: "unset", cursor: "pointer", flex: 1, display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 12.5, fontWeight: 700, color: "var(--accent)" }}>
+          Impact map
+          <svg width="13" height="13" viewBox="0 0 13 13" style={{ transform: open ? "rotate(180deg)" : "none", transition: "transform .25s" }}><path d="M2 4l4.5 4.5L11 4" stroke="var(--accent)" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        </button>
+        <SaveButton id={item.code.toLowerCase()} size={30} />
+      </div>
+      <div style={{ maxHeight: open ? 200 : 0, overflow: "hidden", transition: "max-height .3s ease" }}>
+        <div style={{ paddingTop: 12 }}><ImpactPills impact={item.impact} dimOrder={D.dimOrder} c={c} /></div>
+        <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 11, fontWeight: 500 }}>Source · {item.source}</div>
+      </div>
+    </Card>
+  );
+}
+
+function Top5() {
+  const [idx, setIdx] = useState(0);
+  const ref = useRef(null);
+  const n = D.top5.length;
+  const onScroll = () => { const el = ref.current; if (!el) return; setIdx(Math.round(el.scrollLeft / (el.scrollWidth / n))); };
+  const goTo = (i) => { const el = ref.current; if (!el) return; const t = Math.max(0, Math.min(n - 1, i)); el.scrollTo({ left: t * (el.scrollWidth / n), behavior: "smooth" }); setIdx(t); };
+  const Arrow = ({ dir, off }) => (
+    <button onClick={() => goTo(idx + dir)} disabled={off} style={{ all: "unset", cursor: off ? "default" : "pointer", width: 36, height: 36, borderRadius: 999, background: "var(--card)", boxShadow: SHADOW, display: "flex", alignItems: "center", justifyContent: "center", opacity: off ? 0.4 : 1 }}>
+      <svg width="13" height="13" viewBox="0 0 13 13" style={{ transform: dir < 0 ? "rotate(180deg)" : "none" }}><path d="M4 2l5 4.5-5 4.5" stroke="var(--ink)" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+    </button>
+  );
+  return (
+    <>
+      <SectionHead kicker="The week in five" action={`${idx + 1} / ${n}`} />
+      <div ref={ref} onScroll={onScroll} className="ab-scroll" style={{ display: "flex", overflowX: "auto", scrollSnapType: "x mandatory", padding: "12px 18px 0", scrollbarWidth: "none" }}>
+        {D.top5.map((it) => <Top5Card key={it.rank} item={it} />)}
+      </div>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginTop: 14 }}>
+        <Arrow dir={-1} off={idx <= 0} />
+        <div style={{ display: "flex", gap: 6 }}>
+          {D.top5.map((_, i) => <span key={i} onClick={() => goTo(i)} style={{ cursor: "pointer", width: i === idx ? 20 : 6, height: 6, borderRadius: 6, background: i === idx ? "var(--accent)" : "var(--hair)", transition: "all .25s" }} />)}
+        </div>
+        <Arrow dir={1} off={idx >= n - 1} />
+      </div>
+    </>
+  );
+}
+
+function FinanceGlance({ go }) {
+  return (
+    <>
+      <SectionHead kicker="Finance & economics" action="Open markets →" onAction={() => go("markets")} />
+      <div style={{ padding: "12px 18px 0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+        {[D.commods[0], D.commods[1], D.commods[2], D.spreads[1]].map((r, i) => (
+          <Card key={i} style={{ padding: 13 }} onClick={() => go("markets")}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontSize: 12.5, fontWeight: 700, color: "var(--ink)" }}>{r.name}</span>
+              {r.spark && <Sparkline data={r.spark} color={c(r.tone)} width={40} height={16} strokeWidth={1.6} />}
+            </div>
+            <div style={{ fontFamily: mono, fontSize: 17, fontWeight: 700, color: "var(--ink)", marginTop: 5 }}>{r.value}{r.name.includes("20") ? "bp" : ""}</div>
+            <div style={{ fontFamily: mono, fontSize: 11.5, fontWeight: 700, color: c(r.tone), marginTop: 1 }}>{r.chg}</div>
+          </Card>
+        ))}
+      </div>
+    </>
+  );
+}
+
+function WeekAhead() {
+  return (
+    <>
+      <SectionHead kicker="The week ahead" title="The base case" />
+      <div style={{ padding: "12px 18px 0" }}>
+        <Card style={{ padding: 18 }}>
+          <p style={{ fontSize: 13.5, lineHeight: 1.6, color: "var(--ink)", margin: 0, opacity: 0.9 }}>{D.outlook}</p>
+        </Card>
+      </div>
+      <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 0.5, textTransform: "uppercase", color: "var(--muted)", margin: "16px 20px 9px" }}>On the calendar</div>
+      <div style={{ padding: "0 18px", display: "flex", flexDirection: "column", gap: 9 }}>
+        {D.watch.map((w, i) => (
+          <Card key={i} style={{ padding: "12px 14px", display: "flex", alignItems: "center", gap: 12 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: "var(--accent)", background: "rgba(61,78,232,.10)", padding: "5px 9px", borderRadius: 9, minWidth: 32, textAlign: "center" }}>{w.d}</span>
+            <span style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{w.t}</span>
+            <span style={{ marginLeft: "auto", fontSize: 11.5, color: "var(--muted)", textAlign: "right" }}>{w.note}</span>
+          </Card>
+        ))}
+      </div>
+      <div style={{ padding: "26px 24px 30px", textAlign: "center" }}>
+        <div style={{ fontFamily: serif, fontSize: 15, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2 }}>Facts. Context. Balance.</div>
+        <div style={{ fontSize: 11.5, color: "var(--muted)", marginTop: 6 }}>Drafted by Ted's AI · cross-checked across {D.provenance.sources} sources</div>
+      </div>
+    </>
+  );
+}
+
+function DailyScreen({ go }) {
+  return (
+    <>
+      <TopBar />
+      <Ticker go={go} />
+      <AfricaThisWeek />
+      <Leader />
+      <CausalMap />
+      <Briefing />
+      <Top5 />
+      <FinanceGlance go={go} />
+      <div style={{ padding: "30px 24px 32px", textAlign: "center" }}>
+        <div style={{ fontFamily: serif, fontSize: 15, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2 }}>Facts. Context. Balance.</div>
+        <div style={{ fontSize: 11.5, color: "var(--muted)", marginTop: 6 }}>Drafted by Ted's AI · cross-checked across {D.provenance.sources} sources</div>
+      </div>
+    </>
+  );
+}
+
+/* ───────── MARKETS ───────── */
+function ScreenHead({ title, sub }) {
+  return (
+    <div style={{ padding: "58px 20px 8px" }}>
+      <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{sub}</div>
+      <h1 style={{ fontFamily: serif, fontSize: 32, fontWeight: 600, letterSpacing: -0.6, color: "var(--ink)", margin: "3px 0 0" }}>{title}</h1>
+    </div>
+  );
+}
+
+function FeaturedChart() {
+  const ranges = ["1W", "1M", "3M", "1Y"];
+  const [r, setR] = useState("1W");
+  const f = D.fx[0];
+  return (
+    <div style={{ padding: "12px 18px 0" }}>
+      <Card style={{ padding: 16 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
+          <div>
+            <div style={{ fontSize: 12.5, color: "var(--muted)", fontWeight: 600, whiteSpace: "nowrap" }}>NGN / USD · spot</div>
+            <div style={{ fontFamily: mono, fontSize: 30, fontWeight: 700, color: "var(--ink)", lineHeight: 1.1, marginTop: 3 }}>{f.value}</div>
+          </div>
+          <Pill tone={f.tone}>{f.chg} w/w</Pill>
+        </div>
+        <div style={{ margin: "14px -2px 0" }}>
+          <Sparkline data={[1565, 1548, 1530, 1522, 1510, 1498, 1486, 1470, 1452]} color={c(f.tone)} width={326} height={92} strokeWidth={2.4} fill={c(f.tone, "bg")} dot />
+        </div>
+        <div style={{ display: "flex", gap: 7, marginTop: 14 }}>
+          {ranges.map((x) => (
+            <button key={x} onClick={() => setR(x)} style={{ all: "unset", cursor: "pointer", flex: 1, textAlign: "center", fontSize: 12, fontWeight: 700, padding: "7px 0", borderRadius: 9, color: r === x ? "#fff" : "var(--muted)", background: r === x ? "var(--ink)" : "var(--chipBg)" }}>{x}</button>
+          ))}
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+function Alerts() {
+  return (
+    <>
+      <SectionHead2 kicker="Auto-promoted intelligence" action="Rules-based" />
+      <div className="ab-scroll" style={{ display: "flex", gap: 11, overflowX: "auto", padding: "12px 18px 4px", scrollbarWidth: "none" }}>
+        {D.alerts.map((a, i) => (
+          <Card key={i} style={{ minWidth: 232, flexShrink: 0, padding: 14, borderLeft: `3px solid ${c(a.tone)}` }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 8 }}>
+              <span style={{ fontFamily: mono, fontSize: 9.5, fontWeight: 700, letterSpacing: 0.6, color: c(a.tone), background: c(a.tone, "bg"), padding: "3px 7px", borderRadius: 6 }}>{a.tag}</span>
+              <TrendArrow tone={a.tone} c={c} size={11} />
+            </div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: "var(--ink)", letterSpacing: -0.2 }}>{a.title}</div>
+            <p style={{ fontSize: 12, lineHeight: 1.42, color: "var(--muted)", margin: "5px 0 9px" }}>{a.detail}</p>
+            <div style={{ fontSize: 10.5, color: "var(--muted)", fontWeight: 600, borderTop: "1px solid var(--hair)", paddingTop: 8 }}>Rule · {a.rule}</div>
+          </Card>
+        ))}
+      </div>
+    </>
+  );
+}
+
+// lightweight kicker-only divider for sub-sections inside a screen
+function SectionHead2({ kicker, action, onAction }) {
+  return (
+    <div style={{ padding: "24px 20px 2px" }}>
+      <div style={{ height: 1, background: "var(--hair)", marginBottom: 12 }} />
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between" }}>
+        <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: 1.3, textTransform: "uppercase", color: "var(--accent)" }}>{kicker}</span>
+        {action && <span onClick={onAction} style={{ fontSize: 12, fontWeight: 600, color: "var(--accent)" }}>{action}</span>}
+      </div>
+    </div>
+  );
+}
+
+function MarketTable() {
+  const [tab, setTab] = useState("fx");
+  const tabs = [["fx", "FX"], ["commods", "Commodities"], ["spreads", "Spreads"]];
+  const rows = tab === "fx" ? D.fx.map(r => ({ k: r.code, label: r.code, ...r }))
+    : tab === "commods" ? D.commods.map(r => ({ k: r.name, label: r.name, ...r }))
+    : D.spreads.map(r => ({ k: r.name, label: r.name, value: r.value + "bp", ...r }));
+  return (
+    <>
+      <SectionHead2 kicker="The numbers" />
+      <div style={{ display: "flex", gap: 7, padding: "12px 18px 12px" }}>
+        {tabs.map(([k, l]) => (
+          <button key={k} onClick={() => setTab(k)} style={{ all: "unset", cursor: "pointer", fontSize: 12, fontWeight: 700, padding: "7px 14px", borderRadius: 999, color: tab === k ? "#fff" : "var(--muted)", background: tab === k ? "var(--ink)" : "var(--card)", boxShadow: tab === k ? "none" : SHADOW }}>{l}</button>
+        ))}
+      </div>
+      <div style={{ padding: "0 18px" }}>
+        <Card style={{ padding: "4px 16px" }}>
+          {rows.map((r, i) => (
+            <div key={r.k} style={{ display: "flex", alignItems: "center", gap: 12, padding: "13px 0", borderBottom: i < rows.length - 1 ? "1px solid var(--hair)" : "none" }}>
+              <span style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)", width: 70 }}>{r.label}</span>
+              {r.spark ? <Sparkline data={r.spark} color={c(r.tone)} width={56} height={20} strokeWidth={1.8} /> : <span style={{ width: 56 }} />}
+              <span style={{ fontFamily: mono, fontSize: 14, color: "var(--ink)", marginLeft: "auto" }}>{r.value}</span>
+              <span style={{ fontFamily: mono, fontSize: 12.5, fontWeight: 700, color: c(r.tone), width: 60, textAlign: "right" }}>{r.chg}</span>
+            </div>
+          ))}
+        </Card>
+      </div>
+    </>
+  );
+}
+
+function MarketsScreen() {
+  return (
+    <>
+      <ScreenHead sub="Finance & economics" title="Markets" />
+      <div style={{ padding: "10px 18px 0" }}>
+        <Card style={{ padding: 16, background: "var(--ink)", color: "#fff" }}>
+          <p style={{ fontSize: 14, lineHeight: 1.55, margin: 0, fontWeight: 500 }}>{D.marketsRead}</p>
+        </Card>
+      </div>
+      <SectionHead2 kicker="Graphic detail" />
+      <FeaturedChart />
+      <Alerts />
+      <MarketTable />
+      <div style={{ height: 30 }} />
+    </>
+  );
+}
+
+/* ───────── WEEKLY ───────── */
+function WeekProse({ b }) {
+  return (
+    <Card style={{ padding: 16, marginBottom: 11 }}>
+      <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)", marginBottom: 5 }}>{b.kicker}</div>
+      <h3 style={{ fontFamily: serif, fontSize: 18, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2, margin: "0 0 7px" }}>{b.title}</h3>
+      <p style={{ fontSize: 13.5, lineHeight: 1.6, color: "var(--ink)", opacity: 0.86, margin: 0 }}>{b.text}</p>
+    </Card>
+  );
+}
+
+function WeekTop10({ b }) {
+  const rows = [...D.top5.map(t => ({ rank: t.rank, country: t.country, flag: t.flag, headline: t.headline, chg: t.stat.chg, tone: t.stat.tone })), ...D.top10extra];
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 8px", fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{b.kicker}</div>
+      {rows.map((r, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "center", gap: 11, padding: "10px 0", borderBottom: i < rows.length - 1 ? "1px solid var(--hair)" : "none" }}>
+          <span style={{ fontFamily: mono, fontSize: 12, fontWeight: 700, color: "var(--muted)", width: 18 }}>{String(r.rank).padStart(2, "0")}</span>
+          <span style={{ fontSize: 17 }}>{r.flag}</span>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div style={{ fontSize: 11, color: "var(--muted)", fontWeight: 600 }}>{r.country}</div>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "var(--ink)", lineHeight: 1.25 }}>{r.headline}</div>
+          </div>
+          <span style={{ fontFamily: mono, fontSize: 11.5, fontWeight: 700, color: c(r.tone) }}>{r.chg}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function WeekPulse({ b }) {
+  return (
+    <Card style={{ padding: 16, marginBottom: 11 }}>
+      <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)", marginBottom: 4 }}>{b.kicker}</div>
+      <h3 style={{ fontFamily: serif, fontSize: 18, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2, margin: "0 0 12px" }}>{b.title}</h3>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+        {b.items.map((s, i) => (
+          <div key={i} style={{ background: "var(--chipBg)", borderRadius: 13, padding: "11px 13px" }}>
+            <div style={{ fontSize: 11, color: "var(--muted)", fontWeight: 600 }}>{s.label}</div>
+            <div style={{ fontFamily: mono, fontSize: 18, fontWeight: 700, color: "var(--ink)", marginTop: 3 }}>{s.value}</div>
+            <div style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, color: c(s.tone), marginTop: 1 }}>{s.chg}</div>
+          </div>
+        ))}
+      </div>
+    </Card>
+  );
+}
+
+function WeekDealwire({ b }) {
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 6px", fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{b.kicker}</div>
+      {D.dealwire.map((d, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 0", borderBottom: i < D.dealwire.length - 1 ? "1px solid var(--hair)" : "none" }}>
+          <div style={{ width: 34, height: 34, borderRadius: 10, background: "var(--chipBg)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 800, color: "var(--accent)", flexShrink: 0 }}>{d.cc}</div>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{d.co}</div>
+            <div style={{ fontSize: 11.5, color: "var(--muted)" }}>{d.title} · {d.sector}</div>
+          </div>
+          <span style={{ fontFamily: mono, fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{d.value}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function WeekWatchlist({ b }) {
+  const rows = [D.fx[0], D.fx[1], D.commods[0], D.spreads[1]];
+  const labels = ["NGN/USD", "ZAR/USD", "Brent", "KE 2031"];
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 6px", fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{b.kicker}</div>
+      {rows.map((r, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "11px 0", borderBottom: i < rows.length - 1 ? "1px solid var(--hair)" : "none" }}>
+          <span style={{ fontSize: 13, fontWeight: 700, color: "var(--ink)", width: 76 }}>{labels[i]}</span>
+          {r.spark && <Sparkline data={r.spark} color={c(r.tone)} width={50} height={18} />}
+          <span style={{ fontFamily: mono, fontSize: 13, color: "var(--ink)", marginLeft: "auto" }}>{r.value}{i === 3 ? "bp" : ""}</span>
+          <span style={{ fontFamily: mono, fontSize: 12, fontWeight: 700, color: c(r.tone), width: 56, textAlign: "right" }}>{r.chg}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function WeekCalendar({ b }) {
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 6px", fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{b.kicker}</div>
+      {b.items.map((w, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "11px 0", borderBottom: i < b.items.length - 1 ? "1px solid var(--hair)" : "none" }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: "var(--accent)", background: "rgba(61,78,232,.10)", padding: "5px 9px", borderRadius: 9, minWidth: 36, textAlign: "center" }}>{w.d}</span>
+          <span style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{w.t}</span>
+          <span style={{ marginLeft: "auto", fontSize: 11.5, color: "var(--muted)", textAlign: "right" }}>{w.note}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function WeekDeals({ b }) {
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 6px", fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{b.kicker}</div>
+      {D.dealwire.slice(0, 3).map((d, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 0", borderBottom: i < 2 ? "1px solid var(--hair)" : "none" }}>
+          <div style={{ width: 34, height: 34, borderRadius: 10, background: "var(--chipBg)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 800, color: "var(--accent)", flexShrink: 0 }}>{d.cc}</div>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{d.co} · {d.title}</div>
+            <div style={{ fontSize: 11.5, color: "var(--muted)" }}>Expected to price this week</div>
+          </div>
+          <span style={{ fontFamily: mono, fontSize: 13, fontWeight: 700, color: "var(--ink)" }}>{d.value}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function WeekFocal({ b }) {
+  return (
+    <Card style={{ padding: "6px 16px", marginBottom: 11 }}>
+      <div style={{ padding: "12px 0 6px", fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{b.kicker}</div>
+      {b.items.map((it, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "center", gap: 11, padding: "11px 0", borderBottom: i < b.items.length - 1 ? "1px solid var(--hair)" : "none" }}>
+          <div style={{ width: 30, height: 30, borderRadius: 9, background: "var(--chipBg)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 800, color: "var(--accent)", flexShrink: 0 }}>{it.cc}</div>
+          <span style={{ fontSize: 13, fontWeight: 600, color: "var(--ink)", lineHeight: 1.3 }}>{it.t}</span>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function WeekRisks({ b }) {
+  return (
+    <Card style={{ padding: 16, marginBottom: 11 }}>
+      <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)", marginBottom: 4 }}>{b.kicker}</div>
+      <h3 style={{ fontFamily: serif, fontSize: 18, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2, margin: "0 0 12px" }}>{b.title}</h3>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        {b.items.map((it, i) => (
+          <div key={i} style={{ display: "flex", gap: 10 }}>
+            <span style={{ width: 8, height: 8, borderRadius: 8, background: c(it.tone), flexShrink: 0, marginTop: 5 }} />
+            <span style={{ fontSize: 13.5, lineHeight: 1.5, color: "var(--ink)", opacity: 0.86 }}>{it.text}</span>
+          </div>
+        ))}
+      </div>
+    </Card>
+  );
+}
+
+const BLOCK = { prose: WeekProse, top10: WeekTop10, pulse: WeekPulse, dealwire: WeekDealwire, watchlist: WeekWatchlist, calendar: WeekCalendar, deals: WeekDeals, focal: WeekFocal, risks: WeekRisks };
+
+function WeeklyScreen() {
+  const [ed, setEd] = useState("sat");
+  const e = D.weekly[ed];
+  return (
+    <>
+      <ScreenHead sub="Weekly intelligence" title="Weekly" />
+      <div style={{ padding: "10px 18px 4px", display: "flex", gap: 8 }}>
+        {[["sat", "Sat · Review"], ["sun", "Sun · Ahead"]].map(([k, l]) => (
+          <button key={k} onClick={() => setEd(k)} style={{ all: "unset", cursor: "pointer", flex: 1, textAlign: "center", fontSize: 12.5, fontWeight: 700, padding: "10px 0", borderRadius: 12, color: ed === k ? "#fff" : "var(--muted)", background: ed === k ? "var(--accent)" : "var(--card)", boxShadow: ed === k ? "0 4px 12px rgba(61,78,232,.3)" : SHADOW }}>{l}</button>
+        ))}
+      </div>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px 8px" }}>
+        <div>
+          <div style={{ fontFamily: serif, fontSize: 19, fontWeight: 600, color: "var(--ink)", letterSpacing: -0.2 }}>{e.label}</div>
+          <div style={{ fontSize: 12, color: "var(--muted)" }}>{e.day} · {e.range}</div>
+        </div>
+        <SaveButton id="weekly_sat" />
+      </div>
+      <div style={{ padding: "0 18px" }}>
+        {e.blocks.map((b, i) => { const C = BLOCK[b.type]; return C ? <C key={i} b={b} /> : null; })}
+      </div>
+      <div style={{ padding: "8px 24px 30px", textAlign: "center" }}>
+        <div style={{ fontSize: 11.5, color: "var(--muted)" }}>— Ted's Africa Brief | Facts. Context. Balance.</div>
+      </div>
+    </>
+  );
+}
+
+/* ───────── SAVED ───────── */
+function SavedScreen({ go }) {
+  const ctx = useContext(SaveCtx);
+  const [filter, setFilter] = useState("All");
+  const items = ctx.ids.map((id) => ({ id, ...D.savable[id] })).filter((x) => x.title);
+  const kinds = ["All", "Analysis", "Top 5", "Weekly"];
+  const shown = filter === "All" ? items : items.filter((x) => x.kind === filter);
+  return (
+    <>
+      <ScreenHead sub={`${items.length} saved`} title="Saved" />
+      <div className="ab-scroll" style={{ display: "flex", gap: 8, overflowX: "auto", padding: "10px 18px 6px", scrollbarWidth: "none" }}>
+        {kinds.map((k) => (
+          <button key={k} onClick={() => setFilter(k)} style={{ all: "unset", cursor: "pointer", flexShrink: 0, fontSize: 12, fontWeight: 700, padding: "7px 14px", borderRadius: 999, color: filter === k ? "#fff" : "var(--muted)", background: filter === k ? "var(--ink)" : "var(--card)", boxShadow: filter === k ? "none" : SHADOW }}>{k}</button>
+        ))}
+      </div>
+      {shown.length === 0 ? (
+        <div style={{ padding: "70px 40px", textAlign: "center" }}>
+          <div style={{ width: 56, height: 56, borderRadius: 18, background: "var(--card)", boxShadow: SHADOW, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
+            <svg width="22" height="24" viewBox="0 0 15 17" fill="none"><path d="M2 2.2A1.2 1.2 0 013.2 1h8.6A1.2 1.2 0 0113 2.2V16l-5.5-3.4L2 16V2.2z" stroke="var(--muted)" strokeWidth="1.5" strokeLinejoin="round" /></svg>
+          </div>
+          <div style={{ fontSize: 15, fontWeight: 700, color: "var(--ink)" }}>Nothing saved yet</div>
+          <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.5, margin: "6px 0 16px" }}>Tap the bookmark on any leader, briefing or country card to keep it here for later.</p>
+          <button onClick={() => go("daily")} style={{ all: "unset", cursor: "pointer", background: "var(--accent)", color: "#fff", fontSize: 13, fontWeight: 700, padding: "10px 20px", borderRadius: 999 }}>Go to Daily</button>
+        </div>
+      ) : (
+        <div style={{ padding: "8px 18px 30px", display: "flex", flexDirection: "column", gap: 11 }}>
+          {shown.map((x) => (
+            <Card key={x.id} style={{ padding: 15, display: "flex", alignItems: "flex-start", gap: 12 }}>
+              <span style={{ width: 8, height: 8, borderRadius: 8, background: c(x.tone), flexShrink: 0, marginTop: 6 }} />
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: 0.4, textTransform: "uppercase", color: "var(--accent)" }}>{x.kind}</div>
+                <div style={{ fontSize: 14.5, fontWeight: 700, color: "var(--ink)", lineHeight: 1.25, margin: "3px 0 4px" }}>{x.title}</div>
+                <div style={{ fontSize: 11.5, color: "var(--muted)" }}>{x.meta}</div>
+              </div>
+              <SaveButton id={x.id} size={32} />
+            </Card>
+          ))}
+        </div>
+      )}
+    </>
+  );
+}
+
+/* ───────── coverage row (Daily) ───────── */
+function CoverageRow() {
+  const ui = useContext(UICtx);
+  const covCountries = ui.coverage.map((cc) => D.countries.find((c) => c.cc === cc)).filter(Boolean);
+  const focusLabels = ui.focus.map((f) => (D.focusAreas.find((x) => x.id === f) || {}).label).filter(Boolean);
+  return (
+    <div style={{ padding: "10px 18px 0" }}>
+      <Card style={{ padding: "12px 14px" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span style={{ fontSize: 10.5, fontWeight: 800, letterSpacing: 0.6, textTransform: "uppercase", color: "var(--muted)" }}>Your coverage</span>
+          <button onClick={ui.editCoverage} style={{ all: "unset", cursor: "pointer", fontSize: 12, fontWeight: 700, color: "var(--accent)" }}>Edit</button>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 7, marginTop: 9, flexWrap: "wrap" }}>
+          {covCountries.map((c) => (
+            <span key={c.cc} style={{ display: "inline-flex", alignItems: "center", gap: 5, fontSize: 12, fontWeight: 700, color: "var(--ink)", background: "var(--chipBg)", padding: "5px 9px", borderRadius: 999 }}><span style={{ fontSize: 14 }}>{c.flag}</span>{c.cc}</span>
+          ))}
+          <button onClick={ui.openDirectory} style={{ all: "unset", cursor: "pointer", fontSize: 12, fontWeight: 700, color: "var(--accent)", background: "rgba(61,78,232,.10)", padding: "5px 11px", borderRadius: 999 }}>All Africa →</button>
+        </div>
+        <div style={{ fontSize: 11.5, color: "var(--muted)", marginTop: 10, lineHeight: 1.45 }}>Focus · {focusLabels.join(" · ")}</div>
+      </Card>
+    </div>
+  );
+}
+
+/* ───────── bottom sheet + sources + directory ───────── */
+function Sheet({ title, sub, onClose, children }) {
+  return (
+    <div onClick={onClose} style={{ position: "absolute", inset: 0, zIndex: 80, background: "rgba(16,23,34,.40)", display: "flex", alignItems: "flex-end" }}>
+      <div onClick={(e) => e.stopPropagation()} className="ab-scroll" style={{ width: "100%", maxHeight: "86%", overflowY: "auto", background: "var(--bg)", borderTopLeftRadius: 26, borderTopRightRadius: 26, boxShadow: "0 -20px 60px rgba(0,0,0,.25)" }}>
+        <div style={{ position: "sticky", top: 0, background: "var(--bg)", padding: "14px 20px 12px", zIndex: 1 }}>
+          <div style={{ width: 40, height: 5, borderRadius: 5, background: "var(--hair)", margin: "0 auto 14px" }} />
+          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
+            <div>
+              <h2 style={{ fontFamily: serif, fontSize: 22, fontWeight: 600, color: "var(--ink)", margin: 0, letterSpacing: -0.3 }}>{title}</h2>
+              {sub && <div style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 4, lineHeight: 1.45 }}>{sub}</div>}
+            </div>
+            <button onClick={onClose} style={{ all: "unset", cursor: "pointer", width: 30, height: 30, borderRadius: 999, background: "var(--card)", boxShadow: SHADOW, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+              <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="var(--ink)" strokeWidth="1.6" strokeLinecap="round" /></svg>
+            </button>
+          </div>
+        </div>
+        <div style={{ padding: "4px 18px 28px" }}>{children}</div>
+      </div>
+    </div>
+  );
+}
+
+function SourcesSheet({ onClose }) {
+  return (
+    <Sheet title="Sources" sub={`Every brief is drafted by AI and cross-checked across ${D.provenance.sources} sources.`} onClose={onClose}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
+        {D.sources.map((s, i) => (
+          <Card key={i} style={{ padding: 15 }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10 }}>
+              <span style={{ fontSize: 13.5, fontWeight: 700, color: "var(--ink)" }}>{s.tier}</span>
+              <span style={{ fontFamily: mono, fontSize: 10, fontWeight: 600, color: "var(--accent)", background: "rgba(61,78,232,.10)", padding: "3px 8px", borderRadius: 999, whiteSpace: "nowrap" }}>{s.trust}</span>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 10 }}>
+              {s.items.map((it, j) => (
+                <span key={j} style={{ fontSize: 11.5, fontWeight: 600, color: "var(--ink)", background: "var(--chipBg)", border: "1px solid var(--hair)", padding: "5px 9px", borderRadius: 8 }}>{it}</span>
+              ))}
+            </div>
+          </Card>
+        ))}
+        <div style={{ display: "flex", gap: 9, alignItems: "flex-start", padding: "6px 4px 0" }}>
+          <svg width="14" height="15" viewBox="0 0 12 13" style={{ flexShrink: 0, marginTop: 2 }}><path d="M6 1l4.5 1.8v3.4c0 2.7-1.9 5-4.5 5.8C3.4 11.2 1.5 8.9 1.5 6.2V2.8L6 1z" fill="none" stroke="var(--muted)" strokeWidth="1.1" /><path d="M4 6.4l1.4 1.4L8.3 5" stroke="var(--muted)" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          <span style={{ fontSize: 12, lineHeight: 1.5, color: "var(--muted)" }}>Claims are verified against at least two independent sources before they appear. Primary data — central banks, finance ministries, multilaterals — outranks secondary reporting.</span>
+        </div>
+      </div>
+    </Sheet>
+  );
+}
+
+function CountryDirectory({ coverage, onToggle, onClose }) {
+  const ui = useContext(UICtx);
+  const [q, setQ] = useState("");
+  const list = D.countries.filter((c) => c.name.toLowerCase().includes(q.toLowerCase()));
+  return (
+    <Sheet title="Countries" sub="These five launch markets are live today. Add or remove any from your standing brief, or open one to read on its own." onClose={onClose}>
+      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search countries" style={{ width: "100%", boxSizing: "border-box", border: "1px solid var(--hair)", background: "var(--card)", borderRadius: 12, padding: "11px 14px", fontSize: 14, color: "var(--ink)", fontFamily: "inherit", marginBottom: 12, outline: "none" }} />
+      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        {list.map((c) => {
+          const on = coverage.includes(c.cc);
+          return (
+            <Card key={c.cc} style={{ padding: "11px 14px", display: "flex", alignItems: "center", gap: 11 }}>
+              <span style={{ fontSize: 22 }}>{c.flag}</span>
+              <span style={{ fontSize: 14, fontWeight: 700, color: "var(--ink)", flex: 1 }}>{c.name}</span>
+              <button style={{ all: "unset", cursor: "pointer", fontSize: 12, fontWeight: 700, color: "var(--muted)", marginRight: 4 }}>Read →</button>
+              <button onClick={() => onToggle(c.cc)} style={{ all: "unset", cursor: "pointer", fontSize: 11.5, fontWeight: 700, color: on ? "#fff" : "var(--accent)", background: on ? "var(--accent)" : "rgba(61,78,232,.10)", padding: "6px 11px", borderRadius: 999 }}>{on ? "In brief ✓" : "+ Add"}</button>
+            </Card>
+          );
+        })}
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 14, padding: "12px 14px", borderRadius: 14, border: "1px dashed var(--hair)", color: "var(--muted)" }}>
+        <span style={{ fontSize: 18 }}>🌍</span>
+        <span style={{ fontSize: 12, lineHeight: 1.45 }}>More countries are being added over time. Tell us which you'd like to see next.</span>
+      </div>
+      <button onClick={() => { onClose(); ui.editCoverage(); }} style={{ all: "unset", cursor: "pointer", display: "block", textAlign: "center", marginTop: 12, padding: "12px 0", borderRadius: 12, fontSize: 13, fontWeight: 700, color: "var(--accent)", background: "rgba(61,78,232,.10)" }}>Re-run setup</button>
+    </Sheet>
+  );
+}
+
+/* ───────── onboarding ───────── */
+function OnbChip({ on, onClick, children }) {
+  return (
+    <button onClick={onClick} style={{ all: "unset", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 7, fontSize: 13, fontWeight: 600, color: on ? "#fff" : "var(--ink)", background: on ? "var(--accent)" : "var(--card)", border: on ? "1px solid var(--accent)" : "1px solid var(--hair)", boxShadow: on ? "none" : SHADOW, padding: "10px 14px", borderRadius: 14 }}>{children}</button>
+  );
+}
+
+function Onboarding({ onDone, initialCov, initialFoc }) {
+  const [step, setStep] = useState(0);
+  const [cov, setCov] = useState((initialCov || D.defaultCoverage).slice());
+  const [foc, setFoc] = useState((initialFoc || D.defaultFocus).slice());
+  const tog = (arr, set, v) => set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+  const titles = ["Choose your countries", "Choose your focus"];
+  const subs = [
+    "Your brief always covers these five launch markets, so you get the full picture. You can read any one on its own — and we add more countries over time.",
+    "We run every story through the lenses you pick, and spell out what it means for your countries. Sources are aggregated and verified for you.",
+  ];
+  const canNext = step === 0 ? cov.length > 0 : foc.length > 0;
+  const next = () => (step < 1 ? setStep(step + 1) : onDone(cov, foc));
+  return (
+    <div style={{ ...VARS, height: "100%", display: "flex", flexDirection: "column", background: "var(--bg)", color: "var(--ink)" }}>
+      <div style={{ padding: "60px 22px 6px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ width: 34, height: 34, borderRadius: 11, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(61,78,232,.35)" }}><span style={{ color: "#fff", fontWeight: 800, fontSize: 14, letterSpacing: -1 }}>tab</span></div>
+          <span style={{ fontSize: 14, fontWeight: 700, color: "var(--ink)" }}>Ted's Africa Brief</span>
+          {step < 1 && <button onClick={() => onDone(cov, foc)} style={{ all: "unset", cursor: "pointer", marginLeft: "auto", fontSize: 12.5, fontWeight: 600, color: "var(--muted)" }}>Skip</button>}
+        </div>
+        <div style={{ display: "flex", gap: 6, marginTop: 18 }}>
+          {[0, 1].map((i) => <span key={i} style={{ flex: 1, height: 4, borderRadius: 4, background: i <= step ? "var(--accent)" : "var(--hair)", transition: "all .25s" }} />)}
+        </div>
+        <h1 style={{ fontFamily: serif, fontSize: 26, fontWeight: 600, letterSpacing: -0.4, margin: "18px 0 6px", lineHeight: 1.15 }}>{titles[step]}</h1>
+        <p style={{ fontSize: 13, lineHeight: 1.5, color: "var(--muted)", margin: 0 }}>{subs[step]}</p>
+      </div>
+      <div className="ab-scroll" style={{ flex: 1, overflowY: "auto", padding: "16px 18px 10px" }}>
+        {step === 0 && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 9 }}>
+            {D.countries.map((c) => (
+              <OnbChip key={c.cc} on={cov.includes(c.cc)} onClick={() => tog(cov, setCov, c.cc)}>
+                <span style={{ fontSize: 16 }}>{c.flag}</span>{c.name}
+              </OnbChip>
+            ))}
+          </div>
+        )}
+        {step === 1 && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {D.focusAreas.map((f) => {
+              const on = foc.includes(f.id);
+              return (
+                <button key={f.id} onClick={() => tog(foc, setFoc, f.id)} style={{ all: "unset", cursor: "pointer", display: "flex", alignItems: "center", gap: 12, padding: "13px 15px", borderRadius: 16, background: "var(--card)", border: on ? "1.5px solid var(--accent)" : "1.5px solid transparent", boxShadow: SHADOW }}>
+                  <div style={{ minWidth: 0, flex: 1 }}>
+                    <div style={{ fontSize: 14.5, fontWeight: 700, color: "var(--ink)" }}>{f.label}</div>
+                    <div style={{ fontSize: 12, color: "var(--muted)", marginTop: 1 }}>{f.desc}</div>
+                  </div>
+                  <span style={{ width: 24, height: 24, borderRadius: 999, border: on ? "none" : "1.5px solid var(--hair)", background: on ? "var(--accent)" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    {on && <svg width="13" height="13" viewBox="0 0 13 13"><path d="M3 6.8l2.4 2.4L10 4" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
+      <div style={{ padding: "10px 18px 26px", display: "flex", gap: 10, background: "var(--bg)", borderTop: "1px solid var(--hair)" }}>
+        {step > 0 && <button onClick={() => setStep(step - 1)} style={{ all: "unset", cursor: "pointer", padding: "13px 18px", borderRadius: 14, fontSize: 13.5, fontWeight: 700, color: "var(--ink)", background: "var(--card)", boxShadow: SHADOW }}>Back</button>}
+        <button onClick={next} disabled={!canNext} style={{ all: "unset", cursor: canNext ? "pointer" : "default", flex: 1, textAlign: "center", padding: "13px 0", borderRadius: 14, fontSize: 13.5, fontWeight: 700, color: "#fff", background: canNext ? "var(--accent)" : "var(--muted)", boxShadow: canNext ? "0 6px 16px rgba(61,78,232,.3)" : "none", opacity: canNext ? 1 : 0.6 }}>
+          {step === 0 ? `Continue · ${cov.length} countries` : "Build my brief"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/* ───────── TAB BAR + APP ───────── */
+const ICONS = {
+  daily: "M3 9.6L11 3l8 6.6V19a1 1 0 01-1 1h-4.2v-5.6H8.2V20H4a1 1 0 01-1-1z",
+  markets: "M3 18V9.5M8.3 18V4M13.6 18v-6.5M19 18V7",
+  weekly: "M4 6.2A1.2 1.2 0 015.2 5h11.6A1.2 1.2 0 0118 6.2V18a1 1 0 01-1 1H5a1 1 0 01-1-1zM4 9.4h14M8 4v3.2M14 4v3.2",
+  saved: "M6 3.3A1 1 0 017 2.4h8a1 1 0 011 .9V19l-5-3.1L6 19z",
+};
+
+function TabBar({ active, go }) {
+  return (
+    <nav style={{ display: "flex", justifyContent: "space-around", alignItems: "center", padding: "10px 8px 24px", background: "var(--card)", borderTop: "1px solid var(--hair)", flexShrink: 0, position: "relative", zIndex: 5 }}>
+      {D.nav.map((n) => {
+        const on = active === n.id;
+        const fill = n.id === "saved" && on;
+        return (
+          <button key={n.id} onClick={() => go(n.id)} style={{ all: "unset", cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, color: on ? "var(--accent)" : "var(--muted)", padding: "2px 14px" }}>
+            <svg width="23" height="23" viewBox="0 0 22 22" fill={fill ? "var(--accent)" : "none"}>
+              <path d={ICONS[n.id]} stroke="currentColor" strokeWidth={on ? 2 : 1.7} strokeLinejoin="round" strokeLinecap="round" />
+            </svg>
+            <span style={{ fontSize: 9.5, fontWeight: on ? 700 : 500 }}>{n.label}</span>
+          </button>
+        );
+      })}
+    </nav>
+  );
+}
+
+function PulseApp() {
+  const [onboarded, setOnboarded] = useState(false);
+  const [coverage, setCoverage] = useState(D.defaultCoverage.slice());
+  const [focus, setFocus] = useState(D.defaultFocus.slice());
+  const [active, setActive] = useState("daily");
+  const [ids, setIds] = useState(D.savedSeed.slice());
+  const [overlay, setOverlay] = useState(null); // "sources" | "directory" | null
+
+  const go = useCallback((t) => setActive(t), []);
+  const toggle = useCallback((id) => setIds((prev) => prev.includes(id) ? prev.filter((x) => x !== id) : [id, ...prev]), []);
+  const has = useCallback((id) => ids.includes(id), [ids]);
+  const togCoverage = useCallback((cc) => setCoverage((prev) => prev.includes(cc) ? prev.filter((x) => x !== cc) : [...prev, cc]), []);
+
+  if (!onboarded) {
+    return <Onboarding initialCov={coverage} initialFoc={focus} onDone={(cov, foc) => { setCoverage(cov); setFocus(foc); setActive("daily"); setOnboarded(true); }} />;
+  }
+
+  const ui = {
+    coverage, focus,
+    openSources: () => setOverlay("sources"),
+    openDirectory: () => setOverlay("directory"),
+    editCoverage: () => setOverlay(null) || setOnboarded(false),
+  };
+
+  const screens = [
+    ["daily", <DailyScreen go={go} />],
+    ["markets", <MarketsScreen go={go} />],
+    ["weekly", <WeeklyScreen go={go} />],
+    ["saved", <SavedScreen go={go} />],
+  ];
+
+  return (
+    <UICtx.Provider value={ui}>
+      <SaveCtx.Provider value={{ ids, toggle, has }}>
+        <div style={{ ...VARS, height: "100%", display: "flex", flexDirection: "column", background: "var(--bg)", color: "var(--ink)" }}>
+          <div style={{ flex: 1, position: "relative", minHeight: 0 }}>
+            {screens.map(([id, node]) => (
+              <div key={id} className="ab-scroll" style={{ position: "absolute", inset: 0, overflowY: "auto", WebkitOverflowScrolling: "touch", display: active === id ? "block" : "none" }}>
+                {node}
+              </div>
+            ))}
+          </div>
+          <TabBar active={active} go={go} />
+          {overlay === "sources" && <SourcesSheet onClose={() => setOverlay(null)} />}
+          {overlay === "directory" && <CountryDirectory coverage={coverage} onToggle={togCoverage} onClose={() => setOverlay(null)} />}
+        </div>
+      </SaveCtx.Provider>
+    </UICtx.Provider>
+  );
+}
+
+function Root() {
+  return (
+    <IOSDevice>
+      <PulseApp />
+    </IOSDevice>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Root />);
+</script>
+</body>
+</html>

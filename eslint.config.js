@@ -39,5 +39,37 @@ export default defineConfig([
       ],
     },
   },
+  {
+    // The CLIENT BUNDLE (src/app + the entry) must never pull in connectors, the
+    // ingestion pipeline, the brief producer, or key config — it may only RENDER a
+    // gate-passed brief loaded at runtime, never PRODUCE one (no network/keys in the
+    // browser). Importing the pure publish gate for defense-in-depth re-validation is
+    // allowed. This block also re-states the hardcoded-data ban it overrides for src/app.
+    files: ['src/app/**/*.{ts,tsx}', 'src/main.tsx'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['**/data/sampleData', '**/sampleData', '**/data/countryProfiles'],
+              message:
+                'Runtime code must not import hardcoded product data. Use connector-backed ingestion instead.',
+            },
+            {
+              group: [
+                '**/server/connectors/**',
+                '**/server/ingestion/**',
+                '**/server/runtime/**',
+                '**/server/config',
+              ],
+              message:
+                'Client code must not import connectors, the ingestion pipeline, the brief producer, or key config. The runtime only renders a gate-passed BriefDraft loaded at runtime.',
+            },
+          ],
+        },
+      ],
+    },
+  },
   prettier,
 ])

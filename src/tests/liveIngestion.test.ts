@@ -241,6 +241,20 @@ describe('live ingestion pipeline', () => {
     expect(res.brief?.figures ?? []).toHaveLength(0)
   })
 
+  it('drops a figure from a registered but contract-wrong source', async () => {
+    // src.eia is registered, but the fx.* contract permits only src.open_er_api,
+    // so a registered-but-wrong source is dropped (and recorded), not shown.
+    const res = await run(
+      [figureConn('src.eia', [fxFigure({ sourceIds: ['src.eia'] })])],
+      corroboratedOilConnectors(),
+    )
+
+    expect(res.diagnostics.droppedContractFigures).toHaveLength(1)
+    expect(res.diagnostics.droppedUnknownSourceFigures).toHaveLength(0)
+    expect(res.diagnostics.figureCount).toBe(0)
+    expect(res.brief?.figures ?? []).toHaveLength(0)
+  })
+
   it('rejects country profiles that lack registered field evidence', async () => {
     const res = await runLiveIngestion({
       ctx: baseCtx,

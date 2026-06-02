@@ -5,6 +5,7 @@ import type { AnalysisDraft, CausalLink, Confidence } from '../../domain/analysi
 import type { Claim } from '../../domain/claim'
 import { countryProfileEvidenceReasons } from '../verification/countryProfiles'
 import { generateCausalLinks } from './generateCausalLinks'
+import { renderCausalClaimText } from './renderClaim'
 
 export interface AnalyzeInput {
   figures: VerifiedFigure[]
@@ -28,13 +29,24 @@ function claimsFromLinks(links: CausalLink[], events: Event[]): Claim[] {
       claims.push({
         id: `claim_${li}_${ei}`,
         kind: 'causal',
-        text: `${effect.countryCode}: ${effect.why}`,
+        // Canonical text: rendered from the structured (country, shock, tone,
+        // channels) by the same function the gate uses to re-derive and verify it.
+        text: renderCausalClaimText(
+          effect.countryCode,
+          link.shockType,
+          effect.tone,
+          effect.channels,
+        ),
         figureIds: effect.evidence.figureIds,
         eventIds: effect.evidence.eventIds,
         // Carry profile + methodology evidence so the publish gate can re-check it.
         profileFields: effect.evidence.profileFields,
         profileSourceIds: effect.evidence.profileSourceIds,
         methodologyIds: effect.evidence.methodologyIds,
+        // Structured inputs the gate recomputes the canonical text from.
+        countryCode: effect.countryCode,
+        tone: effect.tone,
+        channels: effect.channels,
         // The shock binds the claim to its approved causal methodology at the gate.
         shockType: link.shockType,
         verified: event?.status === 'corroborated',

@@ -20,5 +20,24 @@ export default defineConfig([
       globals: { ...globals.browser },
     },
   },
+  {
+    // Runtime code must never import product-looking hardcoded data. Tests may
+    // use synthetic fixtures, but src/app and src/server must run on connectors.
+    files: ['src/{app,server}/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['**/data/sampleData', '**/sampleData', '**/data/countryProfiles'],
+              message:
+                'Runtime code must not import hardcoded product data. Use connector-backed ingestion instead.',
+            },
+          ],
+        },
+      ],
+    },
+  },
   prettier,
 ])

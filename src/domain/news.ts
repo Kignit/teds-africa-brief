@@ -9,4 +9,6 @@ export interface NewsItem {
   /** ISO-8601 publication timestamp. */
   publishedAt: string
   language: string
+  /** ISO country codes the item is tagged with (set during ingestion). */
+  countryCodes?: string[]
 }

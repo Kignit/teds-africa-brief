@@ -75,6 +75,33 @@ pass the **same trust suite as local development**.
   connectors (injectable `fetch`, keyed feeds disabled by default) are never invoked
   at build time.
 
+### Generated brief artifact is self-gated
+
+The runtime artifact `public/brief.json` is produced **out-of-band** by
+[`.github/workflows/brief.yml`](.github/workflows/brief.yml) (daily at 06:00 UTC +
+manual dispatch), which runs the live pipeline and commits the artifact to `main`.
+That commit is pushed with the workflow's `GITHUB_TOKEN`, and **a push made with
+`GITHUB_TOKEN` does not trigger other workflows** (GitHub's recursion guard) — so
+`ci.yml` does **not** run on the artifact commit.
+
+To keep that commit held to the same bar as every other commit, `brief.yml`
+**self-gates**: after `npm run brief:generate` writes `public/brief.json`, it runs
+`npm run verify` **and** `npm run build` on the exact workspace that will be
+committed (artifact included), and only then commits.
+
+- If `verify` or `build` fails, **no artifact commit is pushed** (the commit step is
+  `if: success()`).
+- If generation produces no gate-passed brief, the generator writes a cleared
+  `{ generatedAt, brief: null }` artifact; the self-gate still passes (it is
+  independent of brief content), so the cleared artifact is committed to remove stale
+  output, and the run is marked **red**.
+- **Vercel still deploys** on the artifact commit via its own Git integration
+  (independent of GitHub Actions), serving the new artifact; its build stays
+  network/key-free.
+
+No PAT is used — `GITHUB_TOKEN` with `contents: write` is sufficient because the
+trust gate runs inside the workflow rather than relying on a triggered CI run.
+
 ---
 
 ## Project structure

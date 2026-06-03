@@ -98,7 +98,18 @@ export const SOURCES: Source[] = [
     url: 'https://www.premiumtimesng.com',
     accessMethod: 'rss',
     countryCode: 'NG',
-    feedUrl: 'https://www.premiumtimesng.com/feed',
+    // Business/economy category feed (less non-economic noise than the site-wide feed).
+    feedUrl: 'https://www.premiumtimesng.com/business/feed',
+  },
+  {
+    id: 'src.nairametrics_ng',
+    name: 'Nairametrics',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://nairametrics.com',
+    accessMethod: 'rss',
+    countryCode: 'NG',
+    feedUrl: 'https://nairametrics.com/feed/',
   },
   {
     id: 'src.standardmedia_ke',
@@ -108,7 +119,18 @@ export const SOURCES: Source[] = [
     url: 'https://www.standardmedia.co.ke',
     accessMethod: 'rss',
     countryCode: 'KE',
-    feedUrl: 'https://www.standardmedia.co.ke/rss/headlines.php',
+    // Business section feed (less non-economic noise than the headlines feed).
+    feedUrl: 'https://www.standardmedia.co.ke/rss/business.php',
+  },
+  {
+    id: 'src.capitalfm_ke',
+    name: 'Capital FM (Business)',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://www.capitalfm.co.ke',
+    accessMethod: 'rss',
+    countryCode: 'KE',
+    feedUrl: 'https://www.capitalfm.co.ke/business/feed/',
   },
   {
     id: 'src.myjoyonline_gh',
@@ -118,7 +140,18 @@ export const SOURCES: Source[] = [
     url: 'https://www.myjoyonline.com',
     accessMethod: 'rss',
     countryCode: 'GH',
-    feedUrl: 'https://www.myjoyonline.com/feed/',
+    // Business category feed (the site-wide feed is heavily non-economic).
+    feedUrl: 'https://www.myjoyonline.com/business/feed/',
+  },
+  {
+    id: 'src.bft_gh',
+    name: 'Business & Financial Times (Ghana)',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://thebftonline.com',
+    accessMethod: 'rss',
+    countryCode: 'GH',
+    feedUrl: 'https://thebftonline.com/feed/',
   },
   {
     id: 'src.addisfortune_et',

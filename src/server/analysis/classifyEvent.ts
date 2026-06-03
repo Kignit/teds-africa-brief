@@ -10,10 +10,15 @@ const RULES: { type: ShockType; pattern: RegExp }[] = [
   },
   {
     type: 'policy_rate_decision',
+    // interest[- ]rates? also covers "interest-rate decision"; reference rate is a
+    // monetary benchmark (e.g. the Ghana Reference Rate).
     pattern:
-      /\b(policy rate|repo rate|\bmpc\b|reserve bank|central bank|interest-rate decision|sarb|cbk|cbn|bank of ghana)\b/i,
+      /\b(policy rate|repo rate|\bmpc\b|reserve bank|central bank|interest[- ]rates?|reference rate|sarb|cbk|cbn|bank of ghana)\b/i,
   },
-  { type: 'inflation_shock', pattern: /\b(inflation|\bcpi\b|consumer prices|cost of living)\b/i },
+  {
+    type: 'inflation_shock',
+    pattern: /\b(inflation|\bcpi\b|consumer prices|cost of living|fuel prices?|pump prices?)\b/i,
+  },
   {
     type: 'debt_fiscal_event',
     pattern:
@@ -30,7 +35,7 @@ const RULES: { type: ShockType; pattern: RegExp }[] = [
   },
   {
     type: 'deal_investment_event',
-    pattern: /\b(deal|acquisition|investment|\bfdi\b|financing|stake|merger)\b/i,
+    pattern: /\b(deal|acquisition|investment|\bfdi\b|financing|stake|merger|joint venture)\b/i,
   },
   {
     type: 'political_stability_event',

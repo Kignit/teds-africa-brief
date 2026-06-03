@@ -2,6 +2,8 @@ import { describe, it, expect, vi } from 'vitest'
 import { fetchAfricanFx } from '../server/connectors/fx'
 import { fetchWorldBankIndicator } from '../server/connectors/worldBank'
 import { fetchBrentEia } from '../server/connectors/marketData'
+import { fetchGdelt } from '../server/connectors/gdelt'
+import { fetchRss } from '../server/connectors/rss'
 import type { ConnectorContext } from '../server/connectors/types'
 import type { AppConfig } from '../server/config'
 
@@ -58,5 +60,43 @@ describe('connectors', () => {
   it('keyed connectors stay disabled until configured (never fabricate)', async () => {
     const res = await fetchBrentEia(ctxWith({}))
     expect(res.disabled).toBe(true)
+  })
+
+  it('gdelt fails loud on a rate-limit (429) — recorded as a connector failure, not silent-empty', async () => {
+    const ctx: ConnectorContext = {
+      fetch: vi.fn(
+        async () =>
+          ({
+            ok: false,
+            status: 429,
+            json: async () => ({}),
+            text: async () => '',
+          }) as unknown as Response,
+      ),
+      config: {},
+      now,
+    }
+    await expect(fetchGdelt(ctx, 'oil')).rejects.toThrow(/429/)
+  })
+
+  it('gdelt returns [] on a 200 with no articles (a legitimate empty, not a failure)', async () => {
+    expect(await fetchGdelt(ctxWith({ articles: [] }), 'oil')).toEqual([])
+  })
+
+  it('rss fails loud on a non-OK response', async () => {
+    const ctx: ConnectorContext = {
+      fetch: vi.fn(
+        async () =>
+          ({
+            ok: false,
+            status: 503,
+            json: async () => ({}),
+            text: async () => '',
+          }) as unknown as Response,
+      ),
+      config: {},
+      now,
+    }
+    await expect(fetchRss(ctx, 'src.businessday_ng', 'https://x.test/feed')).rejects.toThrow(/503/)
   })
 })

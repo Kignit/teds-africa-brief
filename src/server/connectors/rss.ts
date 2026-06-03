@@ -66,7 +66,9 @@ export async function fetchRss(
   url: string,
 ): Promise<NewsItem[]> {
   const res = await ctx.fetch(url)
-  if (!res.ok) return []
+  // Fail loud so a feed outage is recorded as a connector failure, not silently empty
+  // (same rationale as the GDELT connector).
+  if (!res.ok) throw new Error(`RSS request failed (${sourceId}): HTTP ${res.status}`)
   const xml = await res.text()
   return parseRss(xml, sourceId, ctx.now())
 }

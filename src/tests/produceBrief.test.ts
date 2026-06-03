@@ -1,5 +1,9 @@
 import { describe, it, expect, afterEach, vi } from 'vitest'
-import { produceGatedBrief, serializeArtifact } from '../server/runtime/produceBrief'
+import {
+  produceBriefResult,
+  produceGatedBrief,
+  serializeArtifact,
+} from '../server/runtime/produceBrief'
 import { resetRuntimeModeForTests } from '../server/runtimeMode'
 import { SOURCES } from '../data/sources'
 import { CONTRACT_VALID_PROFILES } from './fixtures/countryProfiles'
@@ -68,5 +72,33 @@ describe('produceGatedBrief (server-side runtime producer)', () => {
 
   it('serializes an absent brief as a { generatedAt, brief: null } envelope', () => {
     expect(JSON.parse(serializeArtifact(null, NOW))).toEqual({ generatedAt: NOW, brief: null })
+  })
+
+  it('produceBriefResult exposes the diagnostics audit trail alongside the brief', async () => {
+    const fx: RawFigure = {
+      metric: 'fx.NGN_USD',
+      label: 'NGN / USD',
+      value: 1452,
+      unit: 'NGN/USD',
+      asOf: NOW,
+      countryCode: 'NG',
+      sourceIds: ['src.open_er_api'],
+    }
+    const result = await produceBriefResult({
+      ctx,
+      figureConnectors: [{ id: 'src.open_er_api', run: async () => [fx] }],
+      newsConnectors: [
+        { id: 'src.businessday_ng', run: async () => [news('a', 'src.businessday_ng')] },
+        { id: 'src.nation_ke', run: async () => [news('b', 'src.nation_ke')] },
+      ],
+      profileConnectors: [{ id: 'test.profiles', run: async () => CONTRACT_VALID_PROFILES }],
+      sources: SOURCES,
+      brief: { id: 'live', date: '2026-05-29', edition: 'daily' },
+    })
+
+    expect(result.brief).not.toBeNull()
+    expect(result.diagnostics.figureCount).toBe(1)
+    expect(result.diagnostics.eventCount).toBe(1)
+    expect(result.diagnostics.connectorFailures).toHaveLength(0)
   })
 })

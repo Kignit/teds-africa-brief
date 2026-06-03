@@ -1,6 +1,6 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import process from 'node:process'
-import { produceGatedBrief, serializeArtifact } from '../src/server/runtime/produceBrief'
+import { produceBriefResult, serializeArtifact } from '../src/server/runtime/produceBrief'
 import {
   fxConnector,
   brentConnector,
@@ -11,6 +11,10 @@ import {
 import { getConfig } from '../src/server/config'
 import { SOURCES } from '../src/data/sources'
 import type { ConnectorContext } from '../src/server/connectors/types'
+import type {
+  LiveIngestionDiagnostics,
+  LiveIngestionResult,
+} from '../src/server/ingestion/pipeline'
 import type { BriefDraft } from '../src/domain/brief'
 
 // Out-of-band brief generator. Runs the live pipeline (real connectors, real network)
@@ -31,6 +35,25 @@ const OUT_DIR = 'public'
 const OUT_FILE = `${OUT_DIR}/brief.json`
 const NEWS_QUERY = 'Africa economy OR Africa currency OR Africa oil'
 
+// Surface the ingestion audit trail to the run log so a thin or null brief is
+// diagnosable from the workflow output: which connectors FAILED (e.g. a GDELT 429 —
+// now a loud failure rather than a silent empty list), what was dropped or rejected,
+// and the final counts. The brief and the published artifact carry no diagnostics.
+function logDiagnostics(d: LiveIngestionDiagnostics): void {
+  console.log(
+    `Ingestion diagnostics: connectors_failed=${d.connectorFailures.length}, figures=${d.figureCount}, events=${d.eventCount}, profiles=${d.profileCount}`,
+  )
+  for (const f of d.connectorFailures) console.warn(`  connector failed: ${f.id} — ${f.reason}`)
+  const dropped: string[] = [
+    ...d.rejectedFigures.map((r) => `figure invalid ${r.metric}: ${r.reasons.join(', ')}`),
+    ...d.droppedUnknownSourceFigures.map((x) => `figure unknown-source ${x}`),
+    ...d.droppedContractFigures.map((x) => `figure contract ${x}`),
+    ...d.droppedUnknownSourceNews.map((x) => `news unknown-source ${x}`),
+    ...d.rejectedProfiles.map((r) => `profile ${r.code}: ${r.reasons.join(', ')}`),
+  ]
+  for (const line of dropped) console.warn(`  dropped: ${line}`)
+}
+
 async function main(): Promise<void> {
   const generatedAt = new Date().toISOString()
   const date = generatedAt.slice(0, 10)
@@ -43,10 +66,11 @@ async function main(): Promise<void> {
   // Explicit, honest source set. fx + World Bank are keyless; Brent (EIA) + FRED
   // (US Treasuries) + Comtrade (via country profiles) are keyed and FAIL CLOSED when
   // their key is absent — they contribute nothing rather than fabricating.
+  let result: LiveIngestionResult | null = null
   let brief: BriefDraft | null = null
   let error: unknown = null
   try {
-    brief = await produceGatedBrief({
+    result = await produceBriefResult({
       ctx,
       figureConnectors: [fxConnector, brentConnector, fredConnector],
       newsConnectors: [gdeltConnector(NEWS_QUERY)],
@@ -54,12 +78,17 @@ async function main(): Promise<void> {
       sources: SOURCES,
       brief: { id: `live_${date}`, date, edition: 'daily' },
     })
+    brief = result.brief
   } catch (e) {
     error = e
   }
 
   mkdirSync(OUT_DIR, { recursive: true })
   writeFileSync(OUT_FILE, serializeArtifact(brief, generatedAt))
+
+  // Always surface the ingestion audit trail when we have one — connector failures,
+  // drops and counts — so the run log explains a thin or null brief.
+  if (result) logDiagnostics(result.diagnostics)
 
   if (brief && !error) {
     console.log(

@@ -28,7 +28,11 @@ export async function fetchGdelt(ctx: ConnectorContext, query: string): Promise<
     query,
   )}&mode=artlist&format=json&maxrecords=25`
   const res = await ctx.fetch(url)
-  if (!res.ok) return []
+  // Fail LOUD on a rate-limit/outage (GDELT's free endpoint 429s aggressively) so the
+  // pipeline records a connector failure instead of a silent empty list that is
+  // indistinguishable from "no news" and can quietly hollow out a brief. A 200 with no
+  // articles remains a legitimate empty.
+  if (!res.ok) throw new Error(`GDELT request failed: HTTP ${res.status}`)
   const body = (await res.json()) as GdeltResponse
   const articles = body.articles ?? []
   return articles

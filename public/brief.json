@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T05:39:45.487Z",
+  "generatedAt": "2026-06-03T09:28:16.795Z",
   "brief": {
     "id": "live_2026-06-03",
     "date": "2026-06-03",
@@ -113,7 +113,2407 @@
         }
       }
     ],
-    "events": [],
+    "events": [
+      {
+        "id": "evt_flights_suspended_as_iran_drone_attack_hits_kuwaiti_14wxw4b",
+        "title": "Flights suspended as Iran drone attack hits Kuwaiti airport, causing injuries",
+        "summary": "Kuwait said Wednesday it had suspended commercial flights after an Iranian drone attack hit the country’s airport, injuring a number\nread more Flights suspended as Iran drone attack hits Kuwaiti airport, causing injuries",
+        "occurredAt": "2026-06-03T09:16:00.000Z",
+        "countryCodes": [],
+        "topic": "flights suspended as iran drone attack hits kuwaiti",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1c5h972"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_banks_expand_naira_card_limits_abroad_as_fdis_1fji3d4",
+        "title": "Banks expand naira card limits abroad as FDIs, FX inflows rise",
+        "summary": "Deposit Money Banks (DMBs) are increasing the limit that naira cardholders can spend abroad, following improved dollar liquidity in the\nread more Banks expand naira card limits abroad as FDIs, FX inflows rise",
+        "occurredAt": "2026-06-03T09:07:38.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "banks expand naira card limits abroad as fdis",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1xba1e6"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_127m_nins_later_nigeria_still_faces_a_digital_491jmk",
+        "title": "127m NINs later, Nigeria still faces a digital identity usage gap",
+        "summary": "Nigeria has issued more than 127 million National Identification Numbers (NINs), making it one of Africa’s leading digital identity markets,\nread more 127m NINs later, Nigeria still faces a digital identity usage gap",
+        "occurredAt": "2026-06-03T09:02:38.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "127m nins later nigeria still faces a digital",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:vdyiak"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_trump_drops_controversial_plan_for_1_8bn_fund_xk99y6",
+        "title": "Trump drops controversial plan for $1.8bn fund to compensate cronies",
+        "summary": "Todd Blanche, the US acting attorney general, said on Tuesday the government was withdrawing a proposal to create a $1.8\nread more Trump drops controversial plan for $1.8bn fund to compensate cronies",
+        "occurredAt": "2026-06-03T09:01:04.000Z",
+        "countryCodes": [],
+        "topic": "trump drops controversial plan for 1 8bn fund",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:umb921",
+            "src.myjoyonline_gh:1ww2p44"
+          ],
+          "sourceIds": [
+            "src.businessday_ng",
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_wilmar_international_tgi_group_form_12bn_joint_venture_1y6s6fe",
+        "title": "Wilmar International, TGI Group form $12bn joint venture to build West Africa’s agri and food businesses",
+        "summary": "Wilmar International and TropicalGeneral Investments (TGI) Group have entered into definitive agreements to combine their respective operating businesses in Nigeria\nread more Wilmar International, TGI Group form $12bn joint venture to build West Africa’s agri and food businesses",
+        "occurredAt": "2026-06-03T08:56:52.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "wilmar international tgi group form 12bn joint venture",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:klivya"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_boycott_the_boycottables_by_eric_teniola_9lvnri",
+        "title": "Boycott the boycottables, By Eric Teniola",
+        "summary": "Let us imagine that the opposition parties will boycott the forthcoming elections scheduled for next year. How will such a boycott affect the country and our democracy. And is boycott the best option? Cameroun and Tanzania experienced election boycott by the opposition recently, but that has not affected the overall rating of the election results. [&#8230;]\nThe post Boycott the boycottables, By Er",
+        "occurredAt": "2026-06-03T09:04:39.000Z",
+        "countryCodes": [],
+        "topic": "boycott the boycottables by eric teniola",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:ixdjyw"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigerian_army_rotates_more_soldiers_fighting_boko_haram_5bqe5c",
+        "title": "Nigerian Army rotates more soldiers fighting Boko Haram &#8211; Official",
+        "summary": "The report said the first welfare flight for June conveyed 174 personnel into the Operation Hadin Kai theatre, while 158 personnel were airlifted out.\nThe post Nigerian Army rotates more soldiers fighting Boko Haram &#8211; Official appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T08:52:24.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigerian army rotates more soldiers fighting boko haram",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:b8xrd9"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_vandals_destroy_six_major_electricity_towers_in_nasarawa_1435rbs",
+        "title": "Vandals destroy six major electricity towers in Nasarawa",
+        "summary": "\"TCN engineers have been mobilised to site to assess the extent of damage and ascertain materials required to commence to restore normal transmission along the corridor.\"\nThe post Vandals destroy six major electricity towers in Nasarawa appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T08:45:08.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "vandals destroy six major electricity towers in nasarawa",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1q4h33g"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_court_set_to_decide_fate_of_five_defendants_d1u3cx",
+        "title": "Court set to decide fate of five defendants in Owo church attack trial",
+        "summary": "At about 9:15 a.m., the Judge Emeka Nwite is seated and ready to deliver judgement in the terrorism trial.\nThe post Court set to decide fate of five defendants in Owo church attack trial appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T08:43:08.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "court set to decide fate of five defendants",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:qarb06"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_insecurity_can_declares_3_day_national_mourning_supports_9reniu",
+        "title": "Insecurity: CAN declares 3-day national mourning, supports state police",
+        "summary": "\"Communities are under attack; citizens are kidnapped from their homes and places of work, travelers are abducted on highways, and farmers are driven from their lands.\"\nThe post Insecurity: CAN declares 3-day national mourning, supports state police appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T08:23:26.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "insecurity can declares 3 day national mourning supports",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1145ohk"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nimc_warns_nigerians_against_fake_nin_correction_portal_120iv71",
+        "title": "NIMC warns Nigerians against fake NIN correction portal",
+        "summary": "It advised Nigerians to disregard the post and avoid clicking on any suspicious links claiming to offer free modification of NIN details.\nThe post NIMC warns Nigerians against fake NIN correction portal appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T08:10:08.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nimc warns nigerians against fake nin correction portal",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1kh240h"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigerian_troops_kill_50_terrorists_top_iswap_commander_eqeo4w",
+        "title": "Nigerian troops kill 50 terrorists, top ISWAP commander in Borno &#8211; Official",
+        "summary": "The report said that the sustained air offensive had forced insurgents to abandon island enclaves and move towards the mainland under pressure.\nThe post Nigerian troops kill 50 terrorists, top ISWAP commander in Borno &#8211; Official appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T07:56:23.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigerian troops kill 50 terrorists top iswap commander",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:v69ag4"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_350_golfers_to_participate_in_ibom_open_tournament_1ijl1v8",
+        "title": "‎350 golfers to participate in Ibom open tournament",
+        "summary": "Usenobong Akpabio, the Organising Committee Chairman, said in Uyo on Tuesday that the tournament would hold between 4 June and 7 June.\nThe post ‎350 golfers to participate in Ibom open tournament appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T07:49:11.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "350 golfers to participate in ibom open tournament",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:4874bz"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_oborevwori_says_omo_agege_cannot_be_trusted_cites_1477ezl",
+        "title": "Oborevwori says Omo-Agege ‘cannot be trusted’, cites alleged political betrayals",
+        "summary": "Governor Sheriff Oborevwori says Ovie Omo-Agege's political troubles stem from a long history of falling out with allies, insisting the former deputy senate president is no longer a major force in Delta politics.\nThe post Oborevwori says Omo-Agege ‘cannot be trusted’, cites alleged political betrayals appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T07:48:06.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "oborevwori says omo agege cannot be trusted cites",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1oyqsdc"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_police_uncover_suspected_firearms_manufacturing_network_cehkqy",
+        "title": "Police uncover suspected firearms manufacturing network",
+        "summary": "Two suspects have been arrested in connection with the discovery, the police said.\nThe post Police uncover suspected firearms manufacturing network appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T07:32:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "police uncover suspected firearms manufacturing network",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:q7e6xp"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_abduction_oyo_nut_meets_makinde_as_teachers_8217_hhb4h8",
+        "title": "Abduction: Oyo NUT meets Makinde, as teachers&#8217; strike continues",
+        "summary": "The union said its meeting with the governor centred on its ongoing strike, demand for the rescue of the victims and strengthening of security across schools in the state.\nThe post Abduction: Oyo NUT meets Makinde, as teachers&#8217; strike continues appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T07:24:38.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "abduction oyo nut meets makinde as teachers 8217",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:zlscet"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigeria_8217_s_dying_healers_the_lassa_fever_14f1ibn",
+        "title": "Nigeria&#8217;s Dying Healers: The Lassa fever crisis killing those who save us",
+        "summary": "A nation that cannot protect the people who protect its citizens has a decision to make. It can summon the urgency this crisis deserves, or it can keep counting the dead and calling it an outbreak\nThe post Nigeria&#8217;s Dying Healers: The Lassa fever crisis killing those who save us appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T07:22:05.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigeria 8217 s dying healers the lassa fever",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1phyn3s"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_startimes_unveils_world_cup_coverage_plans_17cf9jw",
+        "title": "StarTimes unveils World Cup coverage plans",
+        "summary": "At a media briefing in Lagos, the pay-TV company announced that it would broadcast all 104 matches of the expanded World Cup\nThe post StarTimes unveils World Cup coverage plans appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T06:11:59.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "startimes unveils world cup coverage plans",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1vp0zhj"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_lgan_seeks_culture_ministry_partnership_to_boost_tourism_10d3j7p",
+        "title": "LGAN seeks culture ministry partnership to boost tourism through 2026 All-Africa Challenge Trophy",
+        "summary": "The 2026 All-Africa Challenge Trophy, sanctioned by the Royal and Ancient Golf Club of St Andrews, is scheduled to hold from 2 to 7 November at the IBB International Golf and Country Club in Abuja\nThe post LGAN seeks culture ministry partnership to boost tourism through 2026 All-Africa Challenge Trophy appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T06:11:32.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "lgan seeks culture ministry partnership to boost tourism",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1gvlcbk"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_telegram_8217_s_regulatory_failures_misinformation_fuel_d3rtuk",
+        "title": "How Telegram&#8217;s regulatory failures, misinformation fuel exploitative prostitution in Nigeria",
+        "summary": "While the group offers no protection for its members, it utilises Telegram’s privacy features extensively to protect itself.\nThe post How Telegram&#8217;s regulatory failures, misinformation fuel exploitative prostitution in Nigeria appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-03T05:00:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "how telegram 8217 s regulatory failures misinformation fuel",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:16t2x24"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_malala_s_2018_play_predicted_utumishi_fire_f74s56",
+        "title": "How Malala's 2018 play predicted Utumishi fire tragedy",
+        "summary": "A 2018 school play written by Cleophas Malala has drawn renewed attention after its fictional portrayal of a deadly girls school fire bore striking similarities to the recent Utumishi Girls&#039; fire.",
+        "occurredAt": "2026-06-03T09:00:00.000Z",
+        "countryCodes": [],
+        "topic": "how malala s 2018 play predicted utumishi fire",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:18xunh6"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_government_plans_diaspora_welfare_fund_to_support_kenyans_1mjnvc4",
+        "title": "Government plans Diaspora Welfare Fund to support Kenyans abroad",
+        "summary": "The government is developing a legal framework to establish a welfare fund for Kenyans living abroad, aimed at providing social protection, emergency assistance and repatriation support.",
+        "occurredAt": "2026-06-01T12:44:32.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "government plans diaspora welfare fund to support kenyans",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:h65ry4"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_linda_mwananchi_leaders_court_kalonzo_in_machakos_tour_18ouoga",
+        "title": "Linda Mwananchi leaders court Kalonzo in Machakos tour",
+        "summary": "The Linda Mwananchi faction of ODM party on Sunday sent the clearest signal of the possibility of a strategic alliance with the United Opposition team ahead of next years General Election.",
+        "occurredAt": "2026-05-31T15:06:42.000Z",
+        "countryCodes": [],
+        "topic": "linda mwananchi leaders court kalonzo in machakos tour",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1wd6g0i"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ipoa_begins_probe_into_deaths_shootings_linked_to_173jt9x",
+        "title": "IPOA begins probe into deaths, shootings linked to fuel protests",
+        "summary": "IPOA launches investigations into deaths of Brian Ndung&#039;u and Martin Rigii in Kiambu during recent fuel protests, and fatal shooting of an unidentified person in Nakuru.",
+        "occurredAt": "2026-05-30T12:10:36.000Z",
+        "countryCodes": [],
+        "topic": "ipoa begins probe into deaths shootings linked to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1u8o31l"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_missing_children_crisis_marred_by_contradictions_delays_165btz0",
+        "title": "Missing children crisis marred by contradictions, delays",
+        "summary": "Conflicting government statements on missing children cases have sparked concerns over Kenyas child protection systems and preparedness.",
+        "occurredAt": "2026-05-30T07:00:00.000Z",
+        "countryCodes": [],
+        "topic": "missing children crisis marred by contradictions delays",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1s8fbpx"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_government_dissolves_utumishi_girls_board_tsc_moves_against_12oqbos",
+        "title": "Government dissolves Utumishi Girls Board, TSC moves against principal",
+        "summary": "Utumishi Girls fire: Education CS Ogamba dissolves Board of Management over failure to ensure compliance with safety protocols; TSC to begin disciplinary action against principal.",
+        "occurredAt": "2026-05-29T10:56:06.000Z",
+        "countryCodes": [],
+        "topic": "government dissolves utumishi girls board tsc moves against",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1jn4j7v"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_civil_society_calls_for_ogamba_s_resignation_over_em4vmx",
+        "title": "Civil society calls for Ogamba's resignation over Utumishi school fire tragedy",
+        "summary": "Elimu Bora Working Group blamed the inferno that claimed the lives of 16 students on negligence and failure to enforce school safety standards by the senior Education Ministry officials.",
+        "occurredAt": "2026-05-28T15:18:34.000Z",
+        "countryCodes": [],
+        "topic": "civil society calls for ogamba s resignation over",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:19535qi"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_businessman_seeks_removal_of_nairobi_finance_boss_charles_c89vw1",
+        "title": "Businessman seeks removal of Nairobi Finance boss Charles Kerich from office",
+        "summary": "A petition has been filed at the High Court seeking the removal of Nairobi Executive Committee Member for Finance Charles Kerich following his sentencing to three months in prison.",
+        "occurredAt": "2026-05-27T16:31:01.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "businessman seeks removal of nairobi finance boss charles",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:142jz5e"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_uda_launches_scathing_attack_on_uhuru_kenyatta_e3ihmw",
+        "title": "UDA launches scathing attack on Uhuru Kenyatta",
+        "summary": "UDA accused Uhuru of bitterness, political sabotage, and leaving behind a struggling economy for President Ruto to fix.",
+        "occurredAt": "2026-05-26T17:20:41.000Z",
+        "countryCodes": [],
+        "topic": "uda launches scathing attack on uhuru kenyatta",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:16p5vqk"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_heavy_security_as_ruto_mingles_cautiously_with_crowds_1qeibn3",
+        "title": "Heavy security as Ruto mingles cautiously with crowds after Kilifi scare",
+        "summary": "President William Ruto avoided the frequent mingling and handshakes with the crowds on Monday in Kilifi after his security was bolstered following the Sunday incident.",
+        "occurredAt": "2026-05-25T14:12:24.000Z",
+        "countryCodes": [],
+        "topic": "heavy security as ruto mingles cautiously with crowds",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:nwdvz0"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ig_kanja_orders_police_changes_after_ruto_security_182v6ja",
+        "title": "IG Kanja orders police changes after Ruto security breach",
+        "summary": "Police IG Douglas Kanja orders changes, probe after security breach during President Ruto&#039;s tour of Ganze in Kilifi County.",
+        "occurredAt": "2026-05-24T16:00:51.000Z",
+        "countryCodes": [],
+        "topic": "ig kanja orders police changes after ruto security",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1uz6ruw"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_grapples_with_rising_femicide_as_central_leads_1tybxuz",
+        "title": "Kenya grapples with rising femicide as Central leads in cases",
+        "summary": "At least 27 gender-based violence cases are under investigation, police say, vow to intensify efforts against rising femicide cases across the country.",
+        "occurredAt": "2026-05-23T13:42:16.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya grapples with rising femicide as central leads",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:vgsm6x"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_duale_three_suspected_ebola_cases_tested_negative_surveillance_1qsmt69",
+        "title": "Duale: Three suspected Ebola cases tested negative, surveillance upped",
+        "summary": "I wish to reassure all Kenyans that, as of 21st May 2026, Kenya has not reported any confirmed case of Ebola Virus Disease, he said.",
+        "occurredAt": "2026-05-22T17:30:34.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "duale three suspected ebola cases tested negative surveillance",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:oqzbpy"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_orengo_protests_withdrawal_of_security_detail_1m1lbb2",
+        "title": "Orengo protests withdrawal of security detail",
+        "summary": "Orengo said the withdrawal of officers was carried out without prior notice, formal communication, or replacement.",
+        "occurredAt": "2026-05-20T16:11:15.000Z",
+        "countryCodes": [],
+        "topic": "orengo protests withdrawal of security detail",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:er9wsh"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_with_all_due_respect_kaunda_breaks_silence_after_1og420c",
+        "title": "With all due respect: Kaunda breaks silence after viral outburst",
+        "summary": "Kaunda said he never anticipated the attention that followed his remarks.",
+        "occurredAt": "2026-05-19T15:00:00.000Z",
+        "countryCodes": [],
+        "topic": "with all due respect kaunda breaks silence after",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:jscxqa"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mbadi_dismisses_matatu_strike_warns_against_emotional_decisions_el5vw0",
+        "title": "Mbadi dismisses matatu strike, warns against \"emotional decisions\"",
+        "summary": "UPDATE: Treasury, Transport and Energy ministries to meet matatu owners this evening to resolve ongoing crisis, CS Mbadi says.",
+        "occurredAt": "2026-05-18T11:51:11.000Z",
+        "countryCodes": [],
+        "topic": "mbadi dismisses matatu strike warns against emotional decisions",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1938yv8"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gideon_moi_promises_to_reveal_details_of_talks_18uxwma",
+        "title": "Gideon Moi promises to reveal details of talks with Ruto",
+        "summary": "Kanu Chairman&nbsp;Gideon&nbsp;Moi&nbsp;described the issues as sensitive and weighty and promised to address them publicly at the right moment.",
+        "occurredAt": "2026-05-17T14:48:11.000Z",
+        "countryCodes": [],
+        "topic": "gideon moi promises to reveal details of talks",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1y18oxx"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_staff_exits_loom_at_dp_kindiki_s_office_1p64yxf",
+        "title": "Staff exits loom at DP Kindiki's office as Sh95m set for gratuity payments",
+        "summary": "Resignations are looming at the Deputy President Kithure Kindiki ahead of the 2027 elections with the office now forced to set aside Sh95.4 million for gratuity payments.",
+        "occurredAt": "2026-05-16T13:00:00.000Z",
+        "countryCodes": [],
+        "topic": "staff exits loom at dp kindiki s office",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:ldncfn"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_motorists_hit_again_as_fuel_prices_rise_1qx78t3",
+        "title": "Motorists hit again as fuel prices rise",
+        "summary": "In Nairobi, Super Petrol will now retail at Sh214.25 per litre, Diesel at Sh242.92, and Kerosene at Sh152.78.",
+        "occurredAt": "2026-05-14T17:06:17.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "motorists hit again as fuel prices rise",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:ozf68v"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_why_you_could_start_paying_less_for_electricity_1v1c7w0",
+        "title": "Why you could start paying less for electricity",
+        "summary": "KenGen says strong water levels at key hydro dams could lead to lower electricity tariffs and a stable power supply for Kenyan households and businesses.",
+        "occurredAt": "2026-05-13T16:52:00.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "why you could start paying less for electricity",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:z2s5rj"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_a_total_lack_of_respect_macron_halts_africa_z9ajbn",
+        "title": "'A total lack of respect': Macron halts Africa Forward Summit youth forum over noise",
+        "summary": "French President Emmanuel Macron seized the microphone at a University of Nairobi youth forum on Monday and rebuked delegates for making noise during the Africa Forward Summit.",
+        "occurredAt": "2026-05-11T15:45:55.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "a total lack of respect macron halts africa",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1cebyl3"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_france_deepen_partnership_on_education_youth_innovation_13jcy7c",
+        "title": "Kenya, France deepen partnership on education, youth, innovation",
+        "summary": "President William Ruto and French President Emmanuel Macron have unveiled an ambitious Kenya-France partnership targeting education reforms",
+        "occurredAt": "2026-05-11T11:36:25.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya france deepen partnership on education youth innovation",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1lfie43"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_inside_kenya_s_battle_to_stop_goons_and_dmqx2j",
+        "title": "Inside Kenya's battle to stop 'goons and guns' as fears of political violence grow",
+        "summary": "The history of politically sponsored criminal gangs dates back to the reintroduction of multiparty democracy, unemployed youths are hired by politicians turn into tools of electoral intimidation.",
+        "occurredAt": "2026-05-10T12:35:00.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "inside kenya s battle to stop goons and",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:171f0pd"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nps_defends_dismissal_of_18_pregnant_recruits_amid_153xk10",
+        "title": "NPS defends dismissal of 18 pregnant recruits amid backlash",
+        "summary": "The National Police Service (NPS) has defended the dismissal of 18 female recruits at the National Police College, Kiganjo, who tested positive for pregnancy.",
+        "occurredAt": "2026-05-09T16:13:20.000Z",
+        "countryCodes": [],
+        "topic": "nps defends dismissal of 18 pregnant recruits amid",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1q2g865"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_court_to_rule_on_fresh_bid_to_halt_d67wfu",
+        "title": "Court to rule on fresh bid to halt Sh30b EABL shares sale",
+        "summary": "The fresh application by Bia Tosha comes barely a month after Justice Bahati Mwamuye dismissed a near-identical request on April 9, 2026.",
+        "occurredAt": "2026-05-08T17:50:00.000Z",
+        "countryCodes": [],
+        "topic": "court to rule on fresh bid to halt",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:162brwr"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_parliament_staff_under_probe_for_forging_academic_papers_130rgyt",
+        "title": "Parliament staff under probe for forging academic papers",
+        "summary": "Authorities are probing a senior Parliamentary Service Commission employee over alleged forgery of academic papers.",
+        "occurredAt": "2026-05-06T16:00:00.000Z",
+        "countryCodes": [],
+        "topic": "parliament staff under probe for forging academic papers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1kcnsvk"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_senator_cherargei_tables_motion_to_slash_uhuru_s_yrz7tk",
+        "title": "Senator Cherargei tables motion to slash Uhuru's retirement benefits",
+        "summary": "Cherargei recommends that any funds recovered be redirected to support public welfare programmes.",
+        "occurredAt": "2026-05-04T11:08:19.000Z",
+        "countryCodes": [],
+        "topic": "senator cherargei tables motion to slash uhuru s",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1bdrsr4"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_police_arrest_woman_over_death_of_dr_job_yua7dd",
+        "title": "Police arrest woman over death of Dr Job Obwaka",
+        "summary": "A 45-year-old woman has been arrested in connection with the death of veteran gynaecologist Dr Job Obwaka.",
+        "occurredAt": "2026-05-02T10:45:56.000Z",
+        "countryCodes": [],
+        "topic": "police arrest woman over death of dr job",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1bhz4r0"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fresh_twist_as_police_detain_woman_over_dr_1o2ijxm",
+        "title": "Fresh twist as police detain woman over Dr Obwaka's death",
+        "summary": "Tributes pour in for Dr Job Obwaka as leaders honour his legacy, while his death takes a new twist with the arrest of a woman linked to his final moments.",
+        "occurredAt": "2026-05-01T21:00:00.000Z",
+        "countryCodes": [],
+        "topic": "fresh twist as police detain woman over dr",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:iyleor"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nairobi_hospital_director_dr_job_obwaka_is_dead_14ilxbh",
+        "title": "Nairobi Hospital Director Dr Job Obwaka is dead",
+        "summary": "Veteran gynaecologist and Nairobi Hospital director Dr Job Obwaka dies at Nairobi Hospital at 83, family confirms.",
+        "occurredAt": "2026-05-01T16:41:16.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "nairobi hospital director dr job obwaka is dead",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1nhlns1"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_minority_criticises_ablakwa_over_pr_spectacle_around_evacuation_1p2lj2c",
+        "title": "Minority criticises Ablakwa over ‘PR spectacle’ around evacuation of Ghanaians from South Africa",
+        "summary": "The Minority in Parliament has criticised the Minister for Foreign Affairs, Samuel Okudzeto Ablakwa, over what it describes as excessive publicity surrounding the evacuation of Ghanaians from South Africa, urging the government to focus on providing relief to citizens still stranded there.\n\nThe comments by the Ranking Member on Parliament’s Foreign Affairs Committee, Samuel Abdulai Jinapor, follow",
+        "occurredAt": "2026-06-03T09:21:40.000Z",
+        "countryCodes": [
+          "GH",
+          "ZA"
+        ],
+        "topic": "minority criticises ablakwa over pr spectacle around evacuation",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1lsoqla"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ijm_netherlands_partner_with_police_to_combat_human_kxugva",
+        "title": "IJM, Netherlands partner with police to combat human trafficking in Ahafo Region",
+        "summary": "The International Justice Mission (IJM) Ghana, in partnership with the Embassy of the Kingdom of the Netherlands, has launched an intensive capacity-building workshop on tackling human trafficking for police officers in the Ahafo region.",
+        "occurredAt": "2026-06-03T08:52:01.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ijm netherlands partner with police to combat human",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:94pgaj"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_wa_regular_baptist_church_marks_70_years_calls_10qkmfi",
+        "title": "Wa Regular Baptist Church marks 70 years, calls for action against galamsey, drug abuse and occultism",
+        "summary": "The Wa Regular Baptist Church has marked its 70th anniversary with a call for collective action against illegal mining, drug abuse and the growing influence of occultism among young people.",
+        "occurredAt": "2026-06-03T08:17:32.000Z",
+        "countryCodes": [],
+        "topic": "wa regular baptist church marks 70 years calls",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:19ghhsm"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_we_don_t_see_inflation_increasing_above_5_174qsc4",
+        "title": "We don’t see inflation increasing above 5% by December 2026 &#8211; Ato Forson",
+        "summary": "According to him, the government has implemented measures to stabilise the economy, and so far, the country has managed those shocks well.",
+        "occurredAt": "2026-06-03T07:53:20.000Z",
+        "countryCodes": [],
+        "topic": "we don t see inflation increasing above 5",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:fp1bao"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_psinno_initiative_to_support_1_100_agribusinesses_and_indkgx",
+        "title": "PSInno Initiative to support 1,100+ agribusinesses and youth-led firms in Northern Ghana",
+        "summary": "The Government has underscored the importance of a vibrant and innovative private sector to Ghana’s economic future, as it launched a new partnership with Germany aimed at supporting businesses and creating jobs, particularly in northern Ghana.",
+        "occurredAt": "2026-06-03T07:34:48.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "psinno initiative to support 1 100 agribusinesses and",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:49prtc"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_energy_security_why_ghana_must_urgently_fast_track_1pkas24",
+        "title": "Energy security: Why Ghana must urgently fast-track the new mooring system project at Tema",
+        "summary": "Ghana’s downstream petroleum sector remains one of the most strategic pillars of the national economy. Virtually every major sector of the economy depends directly or indirectly on an uninterrupted supply of petroleum products.",
+        "occurredAt": "2026-06-03T07:30:23.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "energy security why ghana must urgently fast track",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1mv7s1r"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_leather_manufacturers_association_calls_for_zero_import_1lxvt6m",
+        "title": "Ghana Leather Manufacturers Association calls for zero import duty on raw materials",
+        "summary": "The Ghana Leather Manufacturers Association has mounted intense regulatory pressure on the government to eliminate import duties on crucial raw materials used across the leather industry.",
+        "occurredAt": "2026-06-03T07:23:45.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana leather manufacturers association calls for zero import",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1fb1vne"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_high_commission_releases_second_batch_of_evacuees_ixrofx",
+        "title": "Ghana High Commission releases second batch of evacuees set to return on June 7",
+        "summary": "Ghana’s High Commission in South Africa has published the official list of Ghanaian nationals approved to return home under the second phase of the ongoing voluntary evacuation exercise, with departure scheduled for Sunday, June 7, 2026.",
+        "occurredAt": "2026-06-03T07:14:27.000Z",
+        "countryCodes": [
+          "GH",
+          "ZA"
+        ],
+        "topic": "ghana high commission releases second batch of evacuees",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:3kmq1g"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_8217_s_forests_hold_key_to_jobs_16l1pgz",
+        "title": "Africa&#8217;s forests hold key to jobs, climate action and rural growth, new study finds",
+        "summary": "Africa&#8217;s forests are increasingly emerging as one of the continent&#8217;s strongest assets for economic growth, climate resilience and rural development, even as they face mounting pressure from deforestation, climate change and rising demand for natural resources. A new body of research commissioned by the African Forest Forum (AFF) reveals that forests are no longer viewed [&#8230;]",
+        "occurredAt": "2026-06-03T07:13:48.000Z",
+        "countryCodes": [],
+        "topic": "africa 8217 s forests hold key to jobs",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:ek83sz"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gov_8217_t_replaces_illegal_mining_with_cooperative_15q5e9t",
+        "title": "Gov&#8217;t replaces illegal mining with cooperative scheme in Ellembelle",
+        "summary": "The Ministry of Lands and Natural Resources is replacing illegal mining operations in the Ellembelle District of the Western Region with a Responsible Cooperative Mining and Skills Development Programme.",
+        "occurredAt": "2026-06-03T07:12:20.000Z",
+        "countryCodes": [],
+        "topic": "gov 8217 t replaces illegal mining with cooperative",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:conqqx"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_today_s_front_pages_wednesday_june_3_2026_1kq7mcd",
+        "title": "Today’s Front pages: Wednesday, June 3, 2026",
+        "summary": "Myjoyonline.com brings you the front pages of the various newspapers across the country.",
+        "occurredAt": "2026-06-03T07:11:01.000Z",
+        "countryCodes": [],
+        "topic": "today s front pages wednesday june 3 2026",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1e0bq2o"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_peabo_bryson_r_038_b_singer_behind_beauty_jwz6va",
+        "title": "Peabo Bryson, R&#038;B singer behind Beauty and the Beast, dies aged 75",
+        "summary": "R&#038;B singer Peabo Bryson, best known for his voice on Disney classics like A Whole New World and Beauty and the Beast, has died aged 75.",
+        "occurredAt": "2026-06-03T07:08:18.000Z",
+        "countryCodes": [],
+        "topic": "peabo bryson r 038 b singer behind beauty",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:5o0s20"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_knust_hosts_femstem_africa_2026_to_empower_women_1tb1gub",
+        "title": "KNUST hosts FemSTEM Africa 2026 to empower women health innovators",
+        "summary": "The Kwame Nkrumah University of Science and Technology (KNUST), in partnership with the Africa Health Collaborative (AHC) and the Mastercard Foundation, has hosted the maiden edition of FemSTEM Africa 2026.",
+        "occurredAt": "2026-06-03T06:38:39.000Z",
+        "countryCodes": [],
+        "topic": "knust hosts femstem africa 2026 to empower women",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1us9htd"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_chief_imam_calls_for_peace_reconciliation_over_eid_1l4kakf",
+        "title": "Chief Imam calls for peace, reconciliation over Eid-ul-Adha dispute",
+        "summary": "The National Chief Imam, Sheikh Dr Osman Nuhu Sharubutu, has appealed for calm, unity and reconciliation among members of the Ahlussunnah Wal Jamaah (ASWAJ) following disturbances that marred this year's Eid-ul-Adha celebrations in Accra.",
+        "occurredAt": "2026-06-03T06:30:43.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "chief imam calls for peace reconciliation over eid",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1dietuz"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bog_boosts_june_market_support_to_1_2bn_1pgz8w9",
+        "title": "BoG boosts June market support to $1.2bn as cedi faces renewed pressure",
+        "summary": "The Bank of Ghana (BoG) is increasing the amount of foreign exchange it will make available to the market under its Forex Intermediation Programme for June 2026, as the cedi continues to come under pressure.",
+        "occurredAt": "2026-06-03T06:04:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "bog boosts june market support to 1 2bn",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1mntkj5"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_reference_rate_drops_marginally_to_10_02_1c1p54d",
+        "title": "Ghana Reference Rate drops marginally to 10.02% in June 2026; interest rates set to reduce further",
+        "summary": "Ghana Reference Rate (GRR) for June 2026 has dropped marginally to 10.02%, down from 10.03% in May.",
+        "occurredAt": "2026-06-03T05:52:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana reference rate drops marginally to 10 02",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:pzk9f0"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kwame_sowu_the_normalisation_of_dysfunction_j55epb",
+        "title": "Kwame Sowu: The normalisation of dysfunction",
+        "summary": "One of the greatest obstacles to progress is the normalisation of dysfunction.\n\nThis occurs when people become so accustomed to poor conditions that they stop questioning them. The abnormal becomes normal. The unacceptable becomes acceptable. Instead of demanding solutions, society learns to live with problems.",
+        "occurredAt": "2026-06-03T05:41:06.000Z",
+        "countryCodes": [],
+        "topic": "kwame sowu the normalisation of dysfunction",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:3xztq6"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_man_who_returned_gh_4_000_found_at_1bhyhr2",
+        "title": "Man who returned GH¢4,000 found at ATM rewarded with GH¢10,000 by Fidelity Bank",
+        "summary": "Fidelity Bank has rewarded Emmanuel Appiah Boateng with GH¢10,000 after he demonstrated what the bank described as an outstanding act of honesty and integrity.",
+        "occurredAt": "2026-06-03T05:40:35.000Z",
+        "countryCodes": [],
+        "topic": "man who returned gh 4 000 found at",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:q7lz2q"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_any_attempt_to_promote_same_sex_relations_threatens_l7vli4",
+        "title": "Any attempt to promote same-sex relations threatens society’s foundation &#8211; Chief Imam’s Spokesperson",
+        "summary": "The spokesperson for the National Chief Imam, Sheikh Aremeyaw Shaibu, has warned that any attempt to promote same-sex relations amounts to an attack on the very foundation of society.",
+        "occurredAt": "2026-06-03T05:24:00.000Z",
+        "countryCodes": [],
+        "topic": "any attempt to promote same sex relations threatens",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:8g9xsv"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mahama_renews_advocacy_for_un_reform_to_grant_iiiqe7",
+        "title": "Mahama renews advocacy for UN reform to grant Africa permanent representation on Security Council",
+        "summary": "President John Mahama has renewed Ghana’s advocacy for the United Nations reform to grant Africa permanent representation on the UN Security Council.",
+        "occurredAt": "2026-06-03T05:03:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "mahama renews advocacy for un reform to grant",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:2nuxod"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_a_national_position_has_already_been_taken_8211_1f7op8h",
+        "title": "A national position has already been taken &#8211; Sheikh Shaibu questions renewed LGBTQ+ debate",
+        "summary": "Spokesperson for the National Chief Imam, Sheikh Aremeyaw Shaibu, has expressed disappointment over the renewed debate surrounding Ghana’s anti-LGBTQ+ bill.",
+        "occurredAt": "2026-06-03T04:52:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "a national position has already been taken 8211",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:y45m3v"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_anti_lgbtq_bill_don_t_turn_this_into_yi7sd8",
+        "title": "Anti-LGBTQ+ bill: Don’t turn this into a political football &#8211; Sheikh Shaibu warns NDC and NPP",
+        "summary": "Spokesperson for the National Chief Imam, Sheikh Aremeyaw Shaibu, has cautioned political actors against turning the controversial anti-LGBTQ+ bill into a partisan contest between the governing NDC and the opposition NPP.",
+        "occurredAt": "2026-06-03T04:33:00.000Z",
+        "countryCodes": [],
+        "topic": "anti lgbtq bill don t turn this into",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:162cxdi"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2026_world_cup_let_s_be_positive_about_194ikyn",
+        "title": "2026 World Cup: Let’s be positive about squad, manager – Jordan Ayew urges Ghanaians",
+        "summary": "Ghana captain Jordan Ayew has called on Ghanaians to rally behind the Black Stars and new head coach Carlos Queiroz as the team prepares for the 2026 FIFA World Cup.",
+        "occurredAt": "2026-06-03T04:13:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "2026 world cup let s be positive about",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:l7b3yq"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_washing_bay_attendant_remanded_over_alleged_theft_of_1jnzros",
+        "title": "Washing bay attendant remanded over alleged theft of friend’s GH¢46,306 for betting",
+        "summary": "The Nkawie Circuit Court has remanded a 21-year-old washing bay attendant into Police custody for allegedly stealing GH¢46,306.90 from his friend and using the money for betting.",
+        "occurredAt": "2026-06-03T04:03:00.000Z",
+        "countryCodes": [],
+        "topic": "washing bay attendant remanded over alleged theft of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1ah3wvq"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_eight_people_killed_in_mali_after_bus_hits_1m8met7",
+        "title": "Eight people killed in Mali after bus hits land mine, says union official",
+        "summary": "Eight people were killed, and 42 were injured in Mali after a ​passenger bus carrying civilians hit a ‌land mine west of the capital Bamako, a transport union official said on Tuesday.",
+        "occurredAt": "2026-06-03T03:52:00.000Z",
+        "countryCodes": [],
+        "topic": "eight people killed in mali after bus hits",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1h6ag7x"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ivory_coast_sees_strong_exports_of_cocoa_main_y72dfw",
+        "title": "Ivory Coast sees strong exports of cocoa main crop as El Nino looms over output",
+        "summary": "Ivory Coast has sold ‌about 1 million metric tons of cocoa in export contracts for the 2026-27 main crop, but has started to slow sales due to concerns about the impact of a looming El Niño weather pattern on output, four sources told Reuters.",
+        "occurredAt": "2026-06-03T03:42:00.000Z",
+        "countryCodes": [],
+        "topic": "ivory coast sees strong exports of cocoa main",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:13zzcuk"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dangote_refinery_can_be_global_jet_fuel_supplier_1aikbic",
+        "title": "Dangote refinery can be global jet fuel supplier, CEO says",
+        "summary": "Nigeria's 650,000-barrel-per-day (bpd) Dangote oil refinery has a large surplus of jet fuel and can supply the product worldwide, Chief Executive David Bird said on Tuesday.",
+        "occurredAt": "2026-06-03T03:34:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "dangote refinery can be global jet fuel supplier",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:o5aif1"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_oil_jumps_on_mideast_missiles_while_ai_bulls_1tw5o5n",
+        "title": "Oil jumps on Mideast missiles while AI bulls carry stocks higher",
+        "summary": "Oil prices rose for a third day running on Wednesday, and the dollar was on the brink of breaking above 160 yen as fresh hostilities flared in ​the Gulf after U.S.-Iran peace talks stalled.",
+        "occurredAt": "2026-06-03T03:24:00.000Z",
+        "countryCodes": [],
+        "topic": "oil jumps on mideast missiles while ai bulls",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1vydzd0"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_macron_kagame_inaugurate_rwanda_genocide_memorial_in_paris_1b0etxo",
+        "title": "Macron, Kagame inaugurate Rwanda genocide memorial in Paris",
+        "summary": "French President Emmanuel Macron and his Rwandan counterpart Paul Kagame on Tuesday inaugurated a memorial ​in Paris to honour the victims of ‌the 1994 genocide against the Tutsis in Rwanda.",
+        "occurredAt": "2026-06-03T03:16:00.000Z",
+        "countryCodes": [],
+        "topic": "macron kagame inaugurate rwanda genocide memorial in paris",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:ntor8p"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cbs_news_fires_scott_pelley_from_60_minutes_15czl37",
+        "title": "CBS News fires Scott Pelley from 60 Minutes, sources say",
+        "summary": "CBS News has terminated the contract of \"60 Minutes\" correspondent Scott Pelley, two sources at the network said on Tuesday, adding to more than half a dozen departures in recent weeks.",
+        "occurredAt": "2026-06-03T03:05:00.000Z",
+        "countryCodes": [],
+        "topic": "cbs news fires scott pelley from 60 minutes",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:bvr2jn"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_south_african_politician_seeks_us_refuge_on_fears_1o3deh8",
+        "title": "South African politician seeks US refuge on fears of future persecution",
+        "summary": "For SJ Du Venage, a provincial council member for a right-wing party in South Africa's governing coalition, the decision to leave his homeland under ​a U.S. refugee programme created by President Donald Trump was shaped by longstanding fears.",
+        "occurredAt": "2026-06-03T02:54:00.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "south african politician seeks us refuge on fears",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1l3mr2l"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_popular_nigerian_actor_okiki_adesina_is_dead_1ccxcy6",
+        "title": "Popular Nigerian actor, Okiki Adesina is dead",
+        "summary": "Veteran Nigerian filmmaker and comedian, Okiki Adesina, popularly known as Janmole, is dead.",
+        "occurredAt": "2026-06-03T02:42:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "popular nigerian actor okiki adesina is dead",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:qovz89"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_did_house_of_records_miss_this_8211_wq583k",
+        "title": "How did House of Records miss this? &#8211; Edem Senanu questions LGBTQ+ bill process",
+        "summary": "The Chairman of Advocates for Christ, Edem Senanu, has questioned how Parliament allowed procedural and drafting concerns to emerge after passing the Human Sexual Rights and Family Values Bill",
+        "occurredAt": "2026-06-03T02:20:00.000Z",
+        "countryCodes": [],
+        "topic": "how did house of records miss this 8211",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:10wrmyq"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_zimbabwe_presses_ahead_with_bill_that_would_extend_xpajdh",
+        "title": "Zimbabwe presses ahead with bill that would extend president&#8217;s term to 2030",
+        "summary": "Zimbabwe's government introduced a bill to parliament on Tuesday that ​would extend President Emmerson Mnangagwa's term by two years to ‌2030, despite criticism from a fractured opposition",
+        "occurredAt": "2026-06-03T00:33:00.000Z",
+        "countryCodes": [],
+        "topic": "zimbabwe presses ahead with bill that would extend",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:12ypbaw"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_zverev_to_face_mensik_after_ending_jodar_run_1mqlcl1",
+        "title": "Zverev to face Mensik after ending Jodar run",
+        "summary": "Alexander Zverev's pursuit of an elusive Grand Slam title remained on track with a comprehensive victory over highly-rated teenager Rafael Jodar, putting him into the French Open semi-finals.",
+        "occurredAt": "2026-06-03T00:23:00.000Z",
+        "countryCodes": [],
+        "topic": "zverev to face mensik after ending jodar run",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1i98keq"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bellingham_is_no_10_in_england_world_cup_fekgjc",
+        "title": "Bellingham is No 10 in England World Cup squad",
+        "summary": "England's squad numbers for this summer's World Cup have been announced - but how much do the choices hint at Thomas Tuchel's thinking when it comes to his starting XI?",
+        "occurredAt": "2026-06-03T00:14:00.000Z",
+        "countryCodes": [],
+        "topic": "bellingham is no 10 in england world cup",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:wzeuv"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_konate_in_advanced_talks_with_real_madrid_ksrg1i",
+        "title": "Konate in advanced talks with Real Madrid",
+        "summary": "France defender Ibrahima Konate is in advanced talks with Real Madrid about joining the La Liga club on a free transfer.",
+        "occurredAt": "2026-06-03T00:04:00.000Z",
+        "countryCodes": [],
+        "topic": "konate in advanced talks with real madrid",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:7ihrkz"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_silva_to_leave_fulham_as_he_closes_in_1g7zkqg",
+        "title": "Silva to leave Fulham as he closes in on Benfica move",
+        "summary": "Fulham manager Marco Silva has confirmed he will leave the Cottagers after five years in charge, with the 48-year-old close to agreeing a deal to take over at Benfica.",
+        "occurredAt": "2026-06-02T23:53:00.000Z",
+        "countryCodes": [],
+        "topic": "silva to leave fulham as he closes in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:yv6brv"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_man_utd_agree_35m_fee_for_atalanta_8217_1sma4c4",
+        "title": "Man Utd agree £35m fee for Atalanta&#8217;s Ederson",
+        "summary": "Manchester United have agreed a £35m (40.5m euros) deal with Italian side Atalanta for Brazil midfielder Ederson.",
+        "occurredAt": "2026-06-02T23:43:00.000Z",
+        "countryCodes": [],
+        "topic": "man utd agree 35m fee for atalanta 8217",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1te8jgr"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2026_world_cup_the_main_target_is_to_1sej7ry",
+        "title": "2026 World Cup: The main target is to qualify from the group stage &#8211; Queiroz",
+        "summary": "According to him, the realistic opportunity and the target of the team is to ensure at least they make it out of Group L, where they are drawn into alongside Panama, Croatia and England.",
+        "occurredAt": "2026-06-02T23:35:08.000Z",
+        "countryCodes": [],
+        "topic": "2026 world cup the main target is to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1stsr4l"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_liverpool_agree_deal_with_iraola_to_succeed_slot_1ght36l",
+        "title": "Liverpool agree deal with Iraola to succeed Slot",
+        "summary": "Liverpool have reached a verbal agreement with Andoni Iraola to take over as head coach following the sacking of Arne Slot.",
+        "occurredAt": "2026-06-02T23:34:00.000Z",
+        "countryCodes": [],
+        "topic": "liverpool agree deal with iraola to succeed slot",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:zgovmk"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mayor_cancels_dr_congo_friendly_over_ebola_concern_xou38h",
+        "title": "Mayor cancels DR Congo friendly over Ebola concern",
+        "summary": "Democratic Republic of Congo's international friendly against Chile in Spain next week has been cancelled after authorities raised health concerns over the Ebola outbreak in the African nation.",
+        "occurredAt": "2026-06-02T23:25:00.000Z",
+        "countryCodes": [],
+        "topic": "mayor cancels dr congo friendly over ebola concern",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:12xuk32"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_versus_wales_the_winners_and_losers_from_yxf255",
+        "title": "Ghana versus Wales: The winners and losers from Black Stars friendly",
+        "summary": "Ghana ended a run of five consecutive losses when they held Wales to a 1-1 draw at the Cardiff City Stadium. While Ghana did not win, the manner of their second-half performance suggests that new coach Carlos Queiroz may be able to get a tune out of this uber-talented group. The Black Stars played with [&#8230;]",
+        "occurredAt": "2026-06-02T23:15:55.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana versus wales the winners and losers from",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:15n9zzs"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_new_jersey_alleges_8216_unsanitary_8217_conditions_at_ymb8in",
+        "title": "New Jersey alleges &#8216;unsanitary&#8217; conditions at migrant facility rocked by protests",
+        "summary": "New Jersey has sued the operator of an immigration detention centre that has become a flashpoint over allegations of inhumane conditions for detainees.",
+        "occurredAt": "2026-06-02T23:14:00.000Z",
+        "countryCodes": [],
+        "topic": "new jersey alleges 8216 unsanitary 8217 conditions at",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:169quug"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_canada_formally_requests_16_year_renewal_of_north_1bj0m5v",
+        "title": "Canada formally requests 16-year renewal of North American free trade pact",
+        "summary": "Canada has formally requested renewal of the North American Free Trade Agreement with the US and Mexico, known as the USMCA, as the July deadline to renegotiate the pact looms.",
+        "occurredAt": "2026-06-02T23:04:00.000Z",
+        "countryCodes": [],
+        "topic": "canada formally requests 16 year renewal of north",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:owjokf"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_stephen_curry_signs_with_chinese_brand_after_under_1qzyvfi",
+        "title": "Stephen Curry signs with Chinese brand after Under Armour split",
+        "summary": "Golden State Warriors superstar Stephen Curry says he has signed an endorsement deal with Chinese sportswear giant Li-Ning.",
+        "occurredAt": "2026-06-02T22:53:00.000Z",
+        "countryCodes": [],
+        "topic": "stephen curry signs with chinese brand after under",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1r96ua3"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_trump_taps_housing_official_bill_pulte_to_be_xwku8o",
+        "title": "Trump taps housing official Bill Pulte to be US spymaster",
+        "summary": "US President Donald Trump has named a housing official to serve as acting Director of National Intelligence (DNI), the country's top spy chief who oversees 18 government intelligence agencies.",
+        "occurredAt": "2026-06-02T22:42:00.000Z",
+        "countryCodes": [],
+        "topic": "trump taps housing official bill pulte to be",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:13gwzto"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_white_house_correspondents_8217_dinner_rescheduled_after_shooting_1rql7js",
+        "title": "White House Correspondents&#8217; Dinner rescheduled after shooting incident",
+        "summary": "The annual White House Correspondents' Dinner has been rescheduled after the original event on April 25 was suspended after a gunman attempted to access the venue, resulting in an exchange of fire with Secret Service agents.",
+        "occurredAt": "2026-06-02T22:33:00.000Z",
+        "countryCodes": [],
+        "topic": "white house correspondents 8217 dinner rescheduled after shooting",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1rhbpuc"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_london_mayor_backs_social_media_ban_for_under_1nnh0gh",
+        "title": "London mayor backs social media ban for under-16s",
+        "summary": "London Mayor Sir Sadiq Khan is supporting a ban on under-16s from social media, casting it as the only realistic way to tackle the harms children already face online.",
+        "occurredAt": "2026-06-02T22:12:00.000Z",
+        "countryCodes": [],
+        "topic": "london mayor backs social media ban for under",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1iu2cjx"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_electoral_board_rushes_to_defend_vote_count_amid_td17cr",
+        "title": "Electoral Board Rushes to Defend Vote Count Amid Delays, Disputed Videos",
+        "summary": "The national electoral board has dismissed two employees for procedural violations while counting continues in the Amhara, Somali, Gambella and Sidama regional states as well...",
+        "occurredAt": "2026-06-02T18:22:46.000Z",
+        "countryCodes": [],
+        "topic": "electoral board rushes to defend vote count amid",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:1qohgz3"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_electoral_chief_reports_74pc_turnout_security_closures_ballot_1o230jt",
+        "title": "Electoral Chief Reports 74pc Turnout, Security Closures, Ballot Irregularities",
+        "summary": "Melatewerk Hailu, chief of the national electoral board, disclosed an election day defined by three competing realities of high turnout, security-related disruption, and irregularities serious...",
+        "occurredAt": "2026-06-02T05:03:38.000Z",
+        "countryCodes": [],
+        "topic": "electoral chief reports 74pc turnout security closures ballot",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:q1n7ui"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_addis_abeba_vote_ending_peacefully_despite_pressure_on_1jdzmwf",
+        "title": "Addis Abeba Vote Ending Peacefully Despite Pressure on Polling System",
+        "summary": "By the time the last light faded over Addis Abeba, the pressure at some polling stations had begun to ease. At Gerji Roba polling station...",
+        "occurredAt": "2026-06-01T20:14:34.000Z",
+        "countryCodes": [],
+        "topic": "addis abeba vote ending peacefully despite pressure on",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:eu93un"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_electoral_board_extends_voting_past_deadline_as_manual_usdxs0",
+        "title": "Electoral Board Extends Voting Past Deadline as Manual System Bottleneck Strands Voters",
+        "summary": "The order came as dusk settled over most polling stations, turning what should have been the close of polling into a test of endurance for...",
+        "occurredAt": "2026-06-01T17:08:44.000Z",
+        "countryCodes": [],
+        "topic": "electoral board extends voting past deadline as manual",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:1totqwz"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_civil_society_monitor_finds_polling_broadly_accessible_across_mqidi7",
+        "title": "Civil Society Monitor Finds Polling Broadly Accessible Across the Country",
+        "summary": "Kassaw Amsalu (MD) stood in the dust outside the Yeka Health Centre, on Fikremariam Abatechan St., not far from the British Embassy, checking his watch...",
+        "occurredAt": "2026-06-01T14:18:41.000Z",
+        "countryCodes": [],
+        "topic": "civil society monitor finds polling broadly accessible across",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:1e30jdv"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_logistical_triumphs_bursts_of_violence_shadow_as_voters_vnj25c",
+        "title": "Logistical Triumphs, Bursts of Violence Shadow as Voters Head to the Ballot Box",
+        "summary": "Inside the gleaming and high-ceilinged ballroom of the Skylight Hotel, on Africa Avenue (Bole Road), a delayed press conference became a window into the uneasy...",
+        "occurredAt": "2026-06-01T11:45:47.000Z",
+        "countryCodes": [],
+        "topic": "logistical triumphs bursts of violence shadow as voters",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:1vjikqv"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ethiopians_queue_for_hours_as_voters_seek_peace_1tfhscb",
+        "title": "Ethiopians Queue for Hours as Voters Seek Peace at the Ballot Box",
+        "summary": "The charcoal braziers were lit before the sun cleared the volcanic ridges surrounding Addis Abeba, sending a thin blue smoke over the traditional coffee ceremony...",
+        "occurredAt": "2026-06-01T09:05:48.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopians queue for hours as voters seek peace",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:zzeej9"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_voters_brave_cold_dawn_as_mayor_urges_for_rynes5",
+        "title": "Voters Brave Cold Dawn as Mayor Urges for Patience",
+        "summary": "By the time the first light settled over Addis Abeba’s high-altitude districts today, June 1, 2026, the verdict on election-day machinery was already forming in...",
+        "occurredAt": "2026-06-01T06:18:42.000Z",
+        "countryCodes": [],
+        "topic": "voters brave cold dawn as mayor urges for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:1p45tdq"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ethiopians_begin_voting_for_federal_regional_legislators_jo5re",
+        "title": "Ethiopians Begin Voting for Federal, Regional Legislators",
+        "summary": "Millions of Ethiopians began lining up before dawn on today, June 1, 2026, to cast ballots in a federal and regional elections whose first test...",
+        "occurredAt": "2026-06-01T04:33:32.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopians begin voting for federal regional legislators",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:165rxhh"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_new_customs_directive_seeks_to_remove_export_uncertainty_vo37f0",
+        "title": "New Customs Directive Seeks to Remove Export Uncertainty",
+        "summary": "The Ethiopian Customs Commission (ECC) has introduced a legally binding advance ruling system for determining the rules of origin of export goods, a move aimed...",
+        "occurredAt": "2026-05-31T02:09:04.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "new customs directive seeks to remove export uncertainty",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:3putn2"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_logistics_sector_opens_to_foreign_firms_with_one_1iplzrc",
+        "title": "Logistics Sector Opens to Foreign Firms With One-Million-Dollar Entry Requirement",
+        "summary": "The Ministry of Transport & Logistics has introduced new requirements for foreign multimodal transport operators, setting a paid-up capital threshold of one million dollars and...",
+        "occurredAt": "2026-05-31T02:07:07.000Z",
+        "countryCodes": [],
+        "topic": "logistics sector opens to foreign firms with one",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:dfkd78"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_eih_ditches_flat_board_pay_ties_rewards_to_sjiwga",
+        "title": "EIH Ditches Flat Board Pay, Ties Rewards to Profitability, Audit Results",
+        "summary": "Ethiopian Investment Holdings (EIH) has introduced a performance-linked remuneration framework for the board members of state-owned enterprises (SOEs), tying annual cash payouts directly to governance...",
+        "occurredAt": "2026-05-31T02:04:52.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "eih ditches flat board pay ties rewards to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.addisfortune_et:1oy4qrp"
+          ],
+          "sourceIds": [
+            "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_eu_risks_losing_more_than_1m_jobs_over_1wr6hea",
+        "title": "EU risks losing more than 1m jobs over global pressures",
+        "summary": "Around 560 000 jobs could be cut this year due to the energy costs, while around 600 000 jobs are under pressure in the automotive industry.",
+        "occurredAt": "2026-06-03T09:23:45.000Z",
+        "countryCodes": [],
+        "topic": "eu risks losing more than 1m jobs over",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1otsoas"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_crypto_to_stocks_a_digital_revolution_13fk2fv",
+        "title": "Crypto to stocks: A digital revolution",
+        "summary": "Christo de Wit of Luno says that since the launch of tokenised stocks and ETFs last year, ‘we've now crossed the 50 000 customer mark’ with particular interest from the younger generation.",
+        "occurredAt": "2026-06-03T09:18:30.000Z",
+        "countryCodes": [],
+        "topic": "crypto to stocks a digital revolution",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:11vy1po"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_canal_makes_strong_jse_debut_after_multichoice_deal_1gl97cm",
+        "title": "Canal+ makes strong JSE debut after MultiChoice deal",
+        "summary": "French media group's Johannesburg listing gives local investors access to its expanded African growth strategy.",
+        "occurredAt": "2026-06-03T08:44:26.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "canal makes strong jse debut after multichoice deal",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:ug53nb"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ninety_one_8217_s_assets_hit_record_r3_1hq1qsm",
+        "title": "Ninety One&#8217;s assets hit record R3.9trn as inflows return",
+        "summary": "Benefits from market gains and the Sanlam transaction, while raising its full-year dividend by 10%.",
+        "occurredAt": "2026-06-03T08:32:38.000Z",
+        "countryCodes": [],
+        "topic": "ninety one 8217 s assets hit record r3",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:y3y0gj"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_microsoft_launches_ai_that_works_like_an_executive_1xykcv5",
+        "title": "Microsoft launches AI that works like an executive assistant",
+        "summary": "New ‘Scout’ tool integrates with email and calendars, allowing businesses to automate tasks across the workplace",
+        "occurredAt": "2026-06-03T07:39:55.000Z",
+        "countryCodes": [],
+        "topic": "microsoft launches ai that works like an executive",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1rfpqdq"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bitcoin_s_break_with_tech_widens_15oo0ve",
+        "title": "Bitcoin’s break with tech widens",
+        "summary": "After strategy’s sale feeds rout.",
+        "occurredAt": "2026-06-03T07:33:35.000Z",
+        "countryCodes": [],
+        "topic": "bitcoin s break with tech widens",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:16oj0wc"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_trump_proposes_new_levies_of_at_least_10_1tfrs76",
+        "title": "Trump proposes new levies of at least 10% to rebuild tariff wall",
+        "summary": "New Section 301 duties of up to 12.5% could reshape global trade flows as Trump revives a key economic policy tool.",
+        "occurredAt": "2026-06-03T07:31:54.000Z",
+        "countryCodes": [],
+        "topic": "trump proposes new levies of at least 10",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1hv0i5q"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_traxtion_ramps_up_bid_to_build_africa_s_17ly9mt",
+        "title": "Traxtion ramps up bid to build Africa’s biggest rail company",
+        "summary": "The company’s $86m equity raise was heavily over-subscribed, indicating the appetite for the future of private rail in Africa.",
+        "occurredAt": "2026-06-03T07:03:46.000Z",
+        "countryCodes": [],
+        "topic": "traxtion ramps up bid to build africa s",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:bfs99b"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_canal_arrives_on_the_jse_8230_what_to_14tb0ww",
+        "title": "Canal+ arrives on the JSE &#8230; what to expect",
+        "summary": "Analysis of Canal+’s JSE listing and investor interest in the share, alongside the growing popularity of tokenised equity assets among younger investors.",
+        "occurredAt": "2026-06-03T05:20:22.000Z",
+        "countryCodes": [],
+        "topic": "canal arrives on the jse 8230 what to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:14tgjom"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_retirement_is_not_the_problem_fragility_is_16goy0y",
+        "title": "Retirement is not the problem; fragility is",
+        "summary": "Retirement outcomes are not a single plan, but the result of years of decisions – what was protected, saved, reviewed or neglected.",
+        "occurredAt": "2026-06-03T02:07:32.000Z",
+        "countryCodes": [],
+        "topic": "retirement is not the problem fragility is",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:18di3j7"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      }
+    ],
     "profiles": [
       {
         "code": "ET",

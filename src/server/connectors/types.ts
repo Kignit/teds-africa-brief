@@ -8,6 +8,11 @@ export interface ConnectorContext {
   config: AppConfig
   /** Injectable clock for deterministic output. */
   now: () => string
+  /**
+   * Injectable delay for retry/backoff. Defaults to a real timer in the connector;
+   * tests inject a no-op so retry paths run instantly.
+   */
+  sleep?: (ms: number) => Promise<void>
 }
 
 export function defaultNow(): string {

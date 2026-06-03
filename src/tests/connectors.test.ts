@@ -62,21 +62,54 @@ describe('connectors', () => {
     expect(res.disabled).toBe(true)
   })
 
-  it('gdelt fails loud on a rate-limit (429) — recorded as a connector failure, not silent-empty', async () => {
-    const ctx: ConnectorContext = {
-      fetch: vi.fn(
-        async () =>
-          ({
-            ok: false,
-            status: 429,
-            json: async () => ({}),
-            text: async () => '',
-          }) as unknown as Response,
-      ),
-      config: {},
-      now,
-    }
-    await expect(fetchGdelt(ctx, 'oil')).rejects.toThrow(/429/)
+  it('gdelt retries a 429 then FAILS CLOSED (never silent-empty), recording attempts', async () => {
+    const fetch = vi.fn(
+      async () =>
+        ({
+          ok: false,
+          status: 429,
+          json: async () => ({}),
+          text: async () => '',
+        }) as unknown as Response,
+    )
+    // no-op sleep so the retry/backoff path runs instantly in tests
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep: async () => {} }
+    await expect(fetchGdelt(ctx, 'oil')).rejects.toThrow(/after 3 attempt\(s\): HTTP 429/)
+    expect(fetch).toHaveBeenCalledTimes(3) // initial + 2 retries
+  })
+
+  it('gdelt recovers when a retry succeeds (429 then 200)', async () => {
+    let n = 0
+    const fetch = vi.fn(async () => {
+      n += 1
+      if (n === 1)
+        return {
+          ok: false,
+          status: 429,
+          json: async () => ({}),
+          text: async () => '',
+        } as unknown as Response
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({
+          articles: [
+            {
+              title: 'Naira steadies as CBN clears FX backlog',
+              url: 'https://x.test/n',
+              seendate: '20260603T060000Z',
+              language: 'English',
+            },
+          ],
+        }),
+        text: async () => '',
+      } as unknown as Response
+    })
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep: async () => {} }
+    const items = await fetchGdelt(ctx, 'naira')
+    expect(items).toHaveLength(1)
+    expect(items[0].countryCodes).toEqual(['NG'])
+    expect(fetch).toHaveBeenCalledTimes(2)
   })
 
   it('gdelt returns [] on a 200 with no articles (a legitimate empty, not a failure)', async () => {

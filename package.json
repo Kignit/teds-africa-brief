@@ -14,7 +14,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "format:check:vercel": "bash -o pipefail -c 'git show HEAD:vercel.json | prettier --check --stdin-filepath vercel.json --ignore-path /dev/null'",
-    "verify": "npm run format:check && npm run format:check:vercel && npm run typecheck && npm run lint && npm run test"
+    "verify": "npm run format:check && npm run format:check:vercel && npm run typecheck && npm run lint && npm run test",
+    "brief:generate": "vite-node scripts/generateBrief.ts"
   },
   "engines": {
     "node": "24.x"
@@ -42,6 +43,7 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12",
+    "vite-node": "6.0.0",
     "vitest": "^4.1.8"
   }
 }

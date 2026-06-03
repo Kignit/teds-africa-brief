@@ -1,6 +1,7 @@
 import { runLiveIngestion } from '../ingestion/pipeline'
 import type { LiveIngestionInput } from '../ingestion/pipeline'
 import type { BriefDraft } from '../../domain/brief'
+import type { BriefArtifact } from '../../domain/artifact'
 
 // Server-side producer: runs the live pipeline and returns ONLY a gate-passed brief
 // (null otherwise — runLiveIngestion already withholds the brief unless the publish
@@ -12,9 +13,11 @@ export async function produceGatedBrief(input: LiveIngestionInput): Promise<Brie
   return result.brief
 }
 
-// Serialize a gated brief (or its absence) to the JSON artifact the runtime loads.
-// A null brief serializes to "null", which the loader treats as "no brief" → the
-// runtime shows its empty state.
-export function serializeBrief(brief: BriefDraft | null): string {
-  return JSON.stringify(brief)
+// Serialize the runtime artifact: a { generatedAt, brief } envelope. A null brief
+// (gate did not pass / no brief) is written explicitly so it overwrites any stale
+// artifact → the runtime shows its empty state. Pretty-printed for readable, auditable
+// git diffs of the committed artifact.
+export function serializeArtifact(brief: BriefDraft | null, generatedAt: string): string {
+  const artifact: BriefArtifact = { generatedAt, brief }
+  return `${JSON.stringify(artifact, null, 2)}\n`
 }

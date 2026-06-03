@@ -1,6 +1,7 @@
 import type { CountryProfileConnector, FigureConnector, NewsConnector } from './pipeline'
 import { fetchAfricanFx } from '../connectors/fx'
-import { fetchBrentEia } from '../connectors/marketData'
+import { fetchBrentEia, fetchFredSeries } from '../connectors/marketData'
+import type { RawFigure } from '../../domain/figure'
 import { fetchGdelt } from '../connectors/gdelt'
 import { fetchRss } from '../connectors/rss'
 import { fetchCountryProfiles, type CountryProfileSpec } from '../connectors/countryProfile'
@@ -21,6 +22,24 @@ export const brentConnector: FigureConnector = {
   run: async (ctx) => {
     const res = await fetchBrentEia(ctx)
     return res.disabled ? [] : res.figures
+  },
+}
+
+// Market (keyed) — US Treasury yields from FRED, the dollar/rates-shock indicators.
+// Contributes nothing until FRED_API_KEY is set; it never fabricates a value.
+const FRED_SERIES: { id: string; label: string; unit: string }[] = [
+  { id: 'DGS10', label: 'US 10Y Treasury', unit: '%' },
+  { id: 'DGS2', label: 'US 2Y Treasury', unit: '%' },
+]
+export const fredConnector: FigureConnector = {
+  id: 'src.fred',
+  run: async (ctx) => {
+    const figures: RawFigure[] = []
+    for (const series of FRED_SERIES) {
+      const res = await fetchFredSeries(ctx, series.id, series.label, series.unit)
+      if (!res.disabled) figures.push(...res.figures)
+    }
+    return figures
   },
 }
 

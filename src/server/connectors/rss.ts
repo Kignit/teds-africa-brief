@@ -1,5 +1,6 @@
 import type { ConnectorContext } from './types'
 import type { NewsItem } from '../../domain/news'
+import { inferCountryCodes } from '../../data/countryKeywords'
 
 // Generic RSS reader. Lightweight, dependency-free parsing so it runs in any
 // environment. RSS is the integration path for local press and FT/Economist.
@@ -48,14 +49,17 @@ export function parseRss(xml: string, sourceId: string, now: string): NewsItem[]
   return blocks.map((block) => {
     const link = field(block, FIELD_RE.link)
     const title = field(block, FIELD_RE.title)
+    const summary = stripHtml(field(block, FIELD_RE.description)).slice(0, 400)
     return {
       id: `${sourceId}:${hash(link || title)}`,
       sourceId,
       title,
-      summary: stripHtml(field(block, FIELD_RE.description)).slice(0, 400),
+      summary,
       url: link,
       publishedAt: toIso(field(block, FIELD_RE.pubDate), now),
       language: 'en',
+      // Deterministic, conservative country tag from headline + summary.
+      countryCodes: inferCountryCodes(`${title} ${summary}`),
     }
   })
 }

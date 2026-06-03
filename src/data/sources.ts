@@ -58,6 +58,7 @@ export const SOURCES: Source[] = [
     url: 'https://www.cbn.gov.ng',
     accessMethod: 'rss',
     countryCode: 'NG',
+    // No verified public RSS feed found — intentionally NOT wired (no feedUrl).
   },
   {
     id: 'src.sarb',
@@ -67,6 +68,7 @@ export const SOURCES: Source[] = [
     url: 'https://www.resbank.co.za',
     accessMethod: 'api',
     countryCode: 'ZA',
+    // No verified public RSS feed found — intentionally NOT wired (no feedUrl).
   },
   {
     id: 'src.businessday_ng',
@@ -76,6 +78,7 @@ export const SOURCES: Source[] = [
     url: 'https://businessday.ng',
     accessMethod: 'rss',
     countryCode: 'NG',
+    feedUrl: 'https://businessday.ng/feed',
   },
   {
     id: 'src.nation_ke',
@@ -85,6 +88,57 @@ export const SOURCES: Source[] = [
     url: 'https://www.businessdailyafrica.com',
     accessMethod: 'rss',
     countryCode: 'KE',
+    // No verified public RSS feed found — intentionally NOT wired (no feedUrl).
+  },
+  {
+    id: 'src.premiumtimes_ng',
+    name: 'Premium Times',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://www.premiumtimesng.com',
+    accessMethod: 'rss',
+    countryCode: 'NG',
+    feedUrl: 'https://www.premiumtimesng.com/feed',
+  },
+  {
+    id: 'src.standardmedia_ke',
+    name: 'The Standard (Nairobi)',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://www.standardmedia.co.ke',
+    accessMethod: 'rss',
+    countryCode: 'KE',
+    feedUrl: 'https://www.standardmedia.co.ke/rss/headlines.php',
+  },
+  {
+    id: 'src.myjoyonline_gh',
+    name: 'MyJoyOnline',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://www.myjoyonline.com',
+    accessMethod: 'rss',
+    countryCode: 'GH',
+    feedUrl: 'https://www.myjoyonline.com/feed/',
+  },
+  {
+    id: 'src.addisfortune_et',
+    name: 'Addis Fortune',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://addisfortune.news',
+    accessMethod: 'rss',
+    countryCode: 'ET',
+    feedUrl: 'https://addisfortune.news/feed/',
+  },
+  {
+    id: 'src.moneyweb_za',
+    name: 'Moneyweb',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://www.moneyweb.co.za',
+    accessMethod: 'rss',
+    countryCode: 'ZA',
+    feedUrl: 'https://www.moneyweb.co.za/feed',
   },
 ]
 

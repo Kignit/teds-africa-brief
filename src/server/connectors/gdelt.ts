@@ -1,5 +1,6 @@
 import type { ConnectorContext } from './types'
 import type { NewsItem } from '../../domain/news'
+import { inferCountryCodes } from '../../data/countryKeywords'
 
 // GDELT DOC 2.0 API — free, no key. The broad global/continental backbone used
 // to surface triggers for the causal map. Returns links + metadata, not full text.
@@ -45,5 +46,7 @@ export async function fetchGdelt(ctx: ConnectorContext, query: string): Promise<
       url: a.url ?? '',
       publishedAt: parseGdeltDate(a.seendate) ?? ctx.now(),
       language: a.language ?? 'en',
+      // Deterministic, conservative country tag (empty when no launch market is named).
+      countryCodes: inferCountryCodes(a.title ?? ''),
     }))
 }

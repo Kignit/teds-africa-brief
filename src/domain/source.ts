@@ -23,6 +23,8 @@ export interface Source {
   accessMethod: AccessMethod
   /** ISO country code when the source is country-specific. */
   countryCode?: string
+  /** RSS/Atom feed URL, when this source is ingested as a news feed. */
+  feedUrl?: string
 }
 
 // A concrete document/payload retrieved from a Source at a point in time.

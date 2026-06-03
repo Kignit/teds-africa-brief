@@ -1,4 +1,5 @@
 import type { CountryProfileConnector, FigureConnector, NewsConnector } from './pipeline'
+import type { Source } from '../../domain/source'
 import { fetchAfricanFx } from '../connectors/fx'
 import { fetchBrentEia, fetchFredSeries } from '../connectors/marketData'
 import type { RawFigure } from '../../domain/figure'
@@ -51,6 +52,17 @@ export function gdeltConnector(query: string): NewsConnector {
 // News — a single RSS feed bound to a registered source id.
 export function rssConnector(sourceId: string, url: string): NewsConnector {
   return { id: sourceId, run: (ctx) => fetchRss(ctx, sourceId, url) }
+}
+
+// News — one RSS connector per registry Source that declares a feedUrl. Each is
+// bound to its REGISTERED source id, so a story it reports counts as exactly one
+// distinct registered source for corroboration (never a publisher-domain
+// pseudo-source). Sources without a feedUrl (e.g. a central bank with no public
+// feed) are simply not wired — they contribute nothing rather than being faked.
+export function rssConnectorsFromSources(sources: Source[]): NewsConnector[] {
+  return sources
+    .filter((s): s is Source & { feedUrl: string } => Boolean(s.feedUrl))
+    .map((s) => rssConnector(s.id, s.feedUrl))
 }
 
 // Country profiles — World Bank backbone (no key) + optional Comtrade enrichment

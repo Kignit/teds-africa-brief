@@ -7,6 +7,7 @@ import {
   fredConnector,
   gdeltConnector,
   countryProfileConnector,
+  rssConnectorsFromSources,
 } from '../src/server/ingestion/liveConnectors'
 import { getConfig } from '../src/server/config'
 import { SOURCES } from '../src/data/sources'
@@ -73,7 +74,10 @@ async function main(): Promise<void> {
     result = await produceBriefResult({
       ctx,
       figureConnectors: [fxConnector, brentConnector, fredConnector],
-      newsConnectors: [gdeltConnector(NEWS_QUERY)],
+      // GDELT (global aggregator) + every registry RSS feed that declares a
+      // feedUrl. Multiple INDEPENDENT registered sources are what make >= 2-source
+      // corroboration — and therefore publishable causal claims — possible at all.
+      newsConnectors: [gdeltConnector(NEWS_QUERY), ...rssConnectorsFromSources(SOURCES)],
       profileConnectors: [countryProfileConnector()],
       sources: SOURCES,
       brief: { id: `live_${date}`, date, edition: 'daily' },

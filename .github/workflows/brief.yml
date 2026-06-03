@@ -28,8 +28,9 @@ jobs:
           cache: npm
       - run: npm ci
       # Writes public/brief.json. Exits non-zero when no gate-passed brief was produced
-      # (having still written the cleared null artifact), so the run is flagged — but we
-      # let the commit step run regardless via continue-on-error.
+      # (having still written the cleared null artifact), so the run is flagged.
+      # continue-on-error lets the self-gate + commit steps still run, so the cleared null
+      # artifact is committed and stale output is removed; the final step marks the run red.
       - id: generate
         run: npm run brief:generate
         continue-on-error: true
@@ -39,8 +40,24 @@ jobs:
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           COMTRADE_API_KEY: ${{ secrets.COMTRADE_API_KEY }}
+      # Self-gate the EXACT workspace that will be committed — including the freshly
+      # generated public/brief.json. A GITHUB_TOKEN push does NOT trigger the normal CI
+      # workflow, so without this the artifact commit would reach main ungated. Running
+      # the full trust gate here (verify = format + vercel-format + typecheck + lint +
+      # test, then build) closes that gap. Neither step is continue-on-error: if either
+      # fails the job goes red and the commit step below is skipped via if: success(), so
+      # no ungated artifact is ever pushed. These steps pass independently of the brief
+      # content, so a cleared { brief: null } artifact still gates cleanly.
+      - name: Verify the workspace (self-gate — token pushes skip normal CI)
+        run: npm run verify
+      - name: Build the workspace (self-gate — token pushes skip normal CI)
+        run: npm run build
+      # Commit ONLY if verify + build passed. generate is continue-on-error, so a
+      # generation failure still reaches this step (success() stays true) and commits the
+      # cleared null artifact, clearing stale output; the final step then marks the run
+      # red. A verify/build failure skips this step entirely (success() is false).
       - name: Commit artifact if changed
-        if: always()
+        if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,5 +71,5 @@ jobs:
       - name: Fail the run if generation did not pass the gate
         if: steps.generate.outcome == 'failure'
         run: |
-          echo "Brief generation produced no gate-passed brief; wrote a cleared null artifact."
+          echo "Brief generation produced no gate-passed brief; committed the cleared null artifact."
           exit 1

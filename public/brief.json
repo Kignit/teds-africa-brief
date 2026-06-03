@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-06-03T05:39:45.487Z",
+  "brief": {
+    "id": "live_2026-06-03",
+    "date": "2026-06-03",
+    "edition": "daily",
+    "status": "draft",
+    "dataMode": "live",
+    "sections": [
+      {
+        "id": "analysis",
+        "kicker": "Causal map",
+        "title": "One event, divergent effects",
+        "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
+        "claimIds": []
+      }
+    ],
+    "claims": [],
+    "figures": [
+      {
+        "id": "fig_fx.NGN_USD_1",
+        "metric": "fx.NGN_USD",
+        "label": "NGN/USD",
+        "value": 1364.880819,
+        "unit": "NGN/USD",
+        "asOf": "2026-06-03T00:02:31.000Z",
+        "countryCode": "NG",
+        "sourceIds": [
+          "src.open_er_api"
+        ],
+        "status": "verified",
+        "validation": {
+          "hasSource": true,
+          "hasTimestamp": true,
+          "withinRange": true,
+          "reasons": []
+        }
+      },
+      {
+        "id": "fig_fx.KES_USD_2",
+        "metric": "fx.KES_USD",
+        "label": "KES/USD",
+        "value": 129.413809,
+        "unit": "KES/USD",
+        "asOf": "2026-06-03T00:02:31.000Z",
+        "countryCode": "KE",
+        "sourceIds": [
+          "src.open_er_api"
+        ],
+        "status": "verified",
+        "validation": {
+          "hasSource": true,
+          "hasTimestamp": true,
+          "withinRange": true,
+          "reasons": []
+        }
+      },
+      {
+        "id": "fig_fx.ETB_USD_3",
+        "metric": "fx.ETB_USD",
+        "label": "ETB/USD",
+        "value": 157.414315,
+        "unit": "ETB/USD",
+        "asOf": "2026-06-03T00:02:31.000Z",
+        "countryCode": "ET",
+        "sourceIds": [
+          "src.open_er_api"
+        ],
+        "status": "verified",
+        "validation": {
+          "hasSource": true,
+          "hasTimestamp": true,
+          "withinRange": true,
+          "reasons": []
+        }
+      },
+      {
+        "id": "fig_fx.GHS_USD_4",
+        "metric": "fx.GHS_USD",
+        "label": "GHS/USD",
+        "value": 11.784028,
+        "unit": "GHS/USD",
+        "asOf": "2026-06-03T00:02:31.000Z",
+        "countryCode": "GH",
+        "sourceIds": [
+          "src.open_er_api"
+        ],
+        "status": "verified",
+        "validation": {
+          "hasSource": true,
+          "hasTimestamp": true,
+          "withinRange": true,
+          "reasons": []
+        }
+      },
+      {
+        "id": "fig_fx.ZAR_USD_5",
+        "metric": "fx.ZAR_USD",
+        "label": "ZAR/USD",
+        "value": 16.240109,
+        "unit": "ZAR/USD",
+        "asOf": "2026-06-03T00:02:31.000Z",
+        "countryCode": "ZA",
+        "sourceIds": [
+          "src.open_er_api"
+        ],
+        "status": "verified",
+        "validation": {
+          "hasSource": true,
+          "hasTimestamp": true,
+          "withinRange": true,
+          "reasons": []
+        }
+      }
+    ],
+    "events": [],
+    "profiles": [
+      {
+        "code": "ET",
+        "name": "Ethiopia",
+        "externalDebtPctGni": 24.2638688064282,
+        "evidence": {
+          "externalDebtPctGni": {
+            "sourceIds": [
+              "src.worldbank"
+            ],
+            "asOf": "2022-12-31T00:00:00.000Z",
+            "indicator": "DT.DOD.DECT.GN.ZS"
+          }
+        }
+      },
+      {
+        "code": "KE",
+        "name": "Kenya",
+        "externalDebtPctGni": 34.992669732423,
+        "evidence": {
+          "externalDebtPctGni": {
+            "sourceIds": [
+              "src.worldbank"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "indicator": "DT.DOD.DECT.GN.ZS"
+          }
+        }
+      },
+      {
+        "code": "NG",
+        "name": "Nigeria",
+        "externalDebtPctGni": 60.0447244122839,
+        "evidence": {
+          "externalDebtPctGni": {
+            "sourceIds": [
+              "src.worldbank"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "indicator": "DT.DOD.DECT.GN.ZS"
+          }
+        }
+      },
+      {
+        "code": "GH",
+        "name": "Ghana",
+        "externalDebtPctGni": 46.9171668170777,
+        "evidence": {
+          "externalDebtPctGni": {
+            "sourceIds": [
+              "src.worldbank"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "indicator": "DT.DOD.DECT.GN.ZS"
+          }
+        }
+      },
+      {
+        "code": "ZA",
+        "name": "South Africa",
+        "externalDebtPctGni": 44.8309798829996,
+        "evidence": {
+          "externalDebtPctGni": {
+            "sourceIds": [
+              "src.worldbank"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "indicator": "DT.DOD.DECT.GN.ZS"
+          }
+        }
+      }
+    ],
+    "methodologies": []
+  }
+}

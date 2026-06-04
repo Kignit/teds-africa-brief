@@ -82,5 +82,10 @@ describe('client import boundary', () => {
     expect(reachable.some((k) => k.startsWith('/src/server/publishing/'))).toBe(true)
 
     expect(reachable.filter(isForbidden)).toEqual([])
+
+    // The rolling-window store + the generator that maintains it are server-side only:
+    // the store module (src/server/ingestion) and generator (scripts) are already in the
+    // forbidden set above, and no client-reachable module even references the store path.
+    expect(reachable.filter((k) => SOURCES[k].includes('news-window'))).toEqual([])
   })
 })

@@ -20,3 +20,8 @@ vercel.json
 # generator). It is machine-generated data, not formatted source, so it must not fail
 # format:check when the generator commits it.
 public/brief.json
+
+# Rolling news-window store: raw source-backed news items the generator persists across
+# runs (outside public/, never served, never read by the client). Machine-generated,
+# high-churn data — excluded from format:check for the same reason as the brief artifact.
+data/news-window.json

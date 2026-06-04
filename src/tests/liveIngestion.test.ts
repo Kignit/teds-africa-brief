@@ -378,3 +378,85 @@ describe('publish gate as the final authority on live briefs', () => {
     expect(after.violations.map((v) => v.rule)).toContain('unbacked_provenance_claim')
   })
 })
+
+describe('rolling-window persistence (priorNews across runs)', () => {
+  function runWithPrior(newsConnectors: NewsConnector[], priorNews: NewsItem[]) {
+    return runLiveIngestion({
+      ctx: baseCtx,
+      figureConnectors: [],
+      newsConnectors,
+      profileConnectors: [profileConn('test.profiles', CONTRACT_VALID_PROFILES)],
+      sources: SOURCES,
+      priorNews,
+      brief: briefMeta,
+    })
+  }
+
+  it('corroborates the same event from two registered sources reported across runs', async () => {
+    // Run 1 persisted a BusinessDay report; run 2 fetches a Premium Times report of the
+    // SAME event — the rolling window lets them corroborate even though they arrived in
+    // different runs.
+    const res = await runWithPrior(
+      [
+        newsConn('src.premiumtimes_ng', [
+          newsItem({ id: 'r2', sourceId: 'src.premiumtimes_ng', title: OIL_TITLE }),
+        ]),
+      ],
+      [newsItem({ id: 'r1', sourceId: 'src.businessday_ng', title: OIL_TITLE })],
+    )
+    expect(res.diagnostics.eventCount).toBe(1)
+    expect(res.brief!.events[0].status).toBe('corroborated')
+    expect(res.brief!.events[0].corroboration.independentSourceCount).toBe(2)
+    expect(res.newsWindow).toHaveLength(2) // both runs' items carried forward
+    expect(res.gate.passed).toBe(true) // the gate still governs the windowed event
+  })
+
+  it('does NOT corroborate the same source repeated across runs', async () => {
+    const res = await runWithPrior(
+      [
+        newsConn('src.businessday_ng', [
+          newsItem({ id: 'r2', sourceId: 'src.businessday_ng', title: OIL_TITLE }),
+        ]),
+      ],
+      [newsItem({ id: 'r1', sourceId: 'src.businessday_ng', title: OIL_TITLE })],
+    )
+    expect(res.diagnostics.eventCount).toBe(1)
+    expect(res.brief!.events[0].status).toBe('single_source')
+    expect(res.brief!.events[0].corroboration.independentSourceCount).toBe(1)
+  })
+
+  it('ignores expired prior evidence — no false corroboration from stale items', async () => {
+    const res = await runWithPrior(
+      [
+        newsConn('src.premiumtimes_ng', [
+          newsItem({ id: 'fresh', sourceId: 'src.premiumtimes_ng', title: OIL_TITLE }),
+        ]),
+      ],
+      // > 72h before NOW (2026-05-29) -> pruned out of the window before corroboration
+      [
+        newsItem({
+          id: 'old',
+          sourceId: 'src.businessday_ng',
+          title: OIL_TITLE,
+          publishedAt: '2026-05-20T06:00:00.000Z',
+        }),
+      ],
+    )
+    expect(res.diagnostics.eventCount).toBe(1)
+    expect(res.brief!.events[0].status).toBe('single_source')
+    expect(res.newsWindow.map((n) => n.id)).toEqual(['fresh'])
+  })
+
+  it('treats an empty prior window as current-run-only', async () => {
+    const res = await runWithPrior(
+      [
+        newsConn('src.premiumtimes_ng', [
+          newsItem({ id: 'x', sourceId: 'src.premiumtimes_ng', title: OIL_TITLE }),
+        ]),
+      ],
+      [],
+    )
+    expect(res.diagnostics.eventCount).toBe(1)
+    expect(res.brief!.events[0].status).toBe('single_source')
+  })
+})

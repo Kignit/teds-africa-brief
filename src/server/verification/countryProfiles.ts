@@ -55,10 +55,17 @@ export const FIELD_SOURCE_CONTRACTS: FieldSourceContracts = {
     allowedSourceIds: ['src.worldbank'],
     requiredIndicator: 'DT.DOD.DECT.GN.ZS',
   },
-  keyExports: { kind: 'sourced', allowedSourceIds: ['src.comtrade'], requireProductMetadata: true },
+  // Comtrade (primary) AND OEC (keyless, secondary/official-derived BACI/HS) are both
+  // accepted for the trade-product fields. Comtrade is NOT weakened — OEC is added
+  // explicitly; both must still carry full product-level metadata.
+  keyExports: {
+    kind: 'sourced',
+    allowedSourceIds: ['src.comtrade', 'src.oec'],
+    requireProductMetadata: true,
+  },
   importDependence: {
     kind: 'sourced',
-    allowedSourceIds: ['src.comtrade'],
+    allowedSourceIds: ['src.comtrade', 'src.oec'],
     requireProductMetadata: true,
   },
   dollarDebtExposure: {

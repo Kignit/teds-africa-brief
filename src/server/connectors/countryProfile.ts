@@ -1,6 +1,7 @@
 import type { ConnectorContext } from './types'
 import type { CountryProfile, CountryProfileEvidenceMap } from '../../domain/country'
 import { fetchComtradeTopProducts } from './comtrade'
+import { fetchOecTrade } from './oec'
 
 // Builds country profiles from real, machine-readable sources — no hardcoded
 // country facts and no analytical classification. World Bank (free, no key)
@@ -18,16 +19,18 @@ const EXT_DEBT_GNI = 'DT.DOD.DECT.GN.ZS' // external debt stocks, % of GNI
 // runtime. Codes match events/figures (ISO-3166 alpha-2) and World Bank.
 export interface CountryProfileSpec {
   code: string
-  /** UN M49 numeric code, for optional Comtrade enrichment. */
+  /** UN M49 numeric code, for optional Comtrade (keyed) enrichment. */
   comtradeCode?: string
+  /** OEC country id (continent prefix + ISO3), e.g. 'afnga' — for keyless OEC trade. */
+  oecCode?: string
 }
 
 export const LAUNCH_MARKETS: CountryProfileSpec[] = [
-  { code: 'ET', comtradeCode: '231' },
-  { code: 'KE', comtradeCode: '404' },
-  { code: 'NG', comtradeCode: '566' },
-  { code: 'GH', comtradeCode: '288' },
-  { code: 'ZA', comtradeCode: '710' },
+  { code: 'ET', comtradeCode: '231', oecCode: 'afeth' },
+  { code: 'KE', comtradeCode: '404', oecCode: 'afken' },
+  { code: 'NG', comtradeCode: '566', oecCode: 'afnga' },
+  { code: 'GH', comtradeCode: '288', oecCode: 'afgha' },
+  { code: 'ZA', comtradeCode: '710', oecCode: 'afzaf' },
 ]
 
 interface WbPoint {
@@ -119,6 +122,45 @@ async function buildProfile(
         productCodes: imports.productCodes,
         refYear: imports.refYear,
       }
+    }
+  }
+
+  // KEYLESS FALLBACK: OEC (BACI/HS, secondary / official-derived) fills any trade field
+  // Comtrade did not populate (e.g. no key). Resilient — an OEC failure simply omits the
+  // field (fail closed, never fabricated). Both sources are contracted for these fields;
+  // NO derived oil-stance label is produced here.
+  if (
+    spec.oecCode &&
+    (profile.keyExports === undefined || profile.importDependence === undefined)
+  ) {
+    try {
+      const oec = await fetchOecTrade(ctx, spec.oecCode)
+      if (profile.keyExports === undefined && oec.exports) {
+        profile.keyExports = oec.exports.products
+        evidence.keyExports = {
+          sourceIds: [oec.exports.sourceId],
+          asOf: oec.exports.asOf,
+          reporterCode: oec.exports.reporterCode,
+          flowCode: oec.exports.flowCode,
+          classification: oec.exports.classification,
+          productCodes: oec.exports.productCodes,
+          refYear: oec.exports.refYear,
+        }
+      }
+      if (profile.importDependence === undefined && oec.imports) {
+        profile.importDependence = oec.imports.products
+        evidence.importDependence = {
+          sourceIds: [oec.imports.sourceId],
+          asOf: oec.imports.asOf,
+          reporterCode: oec.imports.reporterCode,
+          flowCode: oec.imports.flowCode,
+          classification: oec.imports.classification,
+          productCodes: oec.imports.productCodes,
+          refYear: oec.imports.refYear,
+        }
+      }
+    } catch {
+      // OEC unreachable/failed → omit the trade fields (fail closed, no fabrication).
     }
   }
 

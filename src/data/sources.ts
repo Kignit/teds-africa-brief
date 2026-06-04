@@ -27,6 +27,17 @@ export const SOURCES: Source[] = [
     accessMethod: 'api',
   },
   {
+    // BACI/HS trade data via OEC (oec.world). Keyless. Secondary / official-DERIVED:
+    // BACI is CEPII's cleaned version of UN Comtrade, so it ranks below the primary
+    // src.comtrade for the same fields.
+    id: 'src.oec',
+    name: 'Observatory of Economic Complexity (BACI/HS)',
+    tier: 'multilateral',
+    credibility: 'secondary',
+    url: 'https://oec.world',
+    accessMethod: 'api',
+  },
+  {
     id: 'src.gdelt',
     name: 'GDELT Project',
     tier: 'aggregator',

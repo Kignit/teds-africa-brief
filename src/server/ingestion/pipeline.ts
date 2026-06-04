@@ -16,6 +16,7 @@ import {
   type RejectedCountryProfile,
 } from '../verification/countryProfiles'
 import { dedupeNewsItems } from './dedupe'
+import { mergeNewsWindow } from './newsWindow'
 import { composeAnalysisDraft } from '../analysis/composeAnalysisDraft'
 import { composeBriefFromAnalysis } from '../analysis/buildBrief'
 import { deriveCountryProfiles, METHODOLOGIES } from '../analysis/methodologies'
@@ -76,6 +77,11 @@ export interface LiveIngestionResult {
    * caller literally cannot render an ungated brief.
    */
   brief: BriefDraft | null
+  /**
+   * The merged + pruned rolling news window (registered, within-window items) for the
+   * caller to persist for the next run. Raw evidence only — never analysis.
+   */
+  newsWindow: NewsItem[]
 }
 
 export interface LiveIngestionInput {
@@ -87,6 +93,15 @@ export interface LiveIngestionInput {
   sources: Source[]
   brief: { id: string; date: string; edition: Edition }
   corroborate?: CorroborateOptions
+  /**
+   * Prior runs' registered news items (the rolling window), already pruned to the
+   * window by the caller. Merged with this run's fresh items so independent sources
+   * reporting the same event at different times can corroborate. Omitted/empty =>
+   * current-run-only behaviour (fail closed).
+   */
+  priorNews?: NewsItem[]
+  /** Rolling-window length in ms (defaults to the newsWindow module default). */
+  newsWindowMs?: number
 }
 
 function failureReason(e: unknown): string {
@@ -168,7 +183,7 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
   })
 
   const droppedUnknownSourceNews: string[] = []
-  const resolvedNews = dedupeNewsItems(rawNews).filter((n) => {
+  const freshNews = dedupeNewsItems(rawNews).filter((n) => {
     if (!known.has(n.sourceId)) {
       droppedUnknownSourceNews.push(`${n.id} (${n.sourceId})`)
       return false
@@ -176,8 +191,16 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
     return true
   })
 
-  // 4. Corroborate news into events (>= 2 independent sources => corroborated).
-  const events = corroborateEvents(resolvedNews, input.corroborate)
+  // 4. Corroborate news into events (>= 2 independent REGISTERED sources => corroborated).
+  //    First widen the evidence pool with the rolling window: prior runs' registered news
+  //    items (already pruned to the window by the caller) merged with this run's fresh
+  //    items, so independent sources reporting the same event at different TIMES still
+  //    line up. Prior items are re-filtered to the registry here (defense in depth — a
+  //    tampered store cannot inject unknown sources); the gate re-checks every event's
+  //    sources as the final authority. Corroboration RULES are unchanged.
+  const priorNews = (input.priorNews ?? []).filter((n) => known.has(n.sourceId))
+  const newsWindow = mergeNewsWindow(priorNews, freshNews, ctx.now(), input.newsWindowMs)
+  const events = corroborateEvents(newsWindow, input.corroborate)
 
   // 5. Country profiles. Connectors emit raw sourced inputs; an explicit,
   //    approved methodology turns them into derived labels (none ship approved by
@@ -212,6 +235,7 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
     gate,
     analysis,
     brief: gate.passed ? draft : null,
+    newsWindow,
     diagnostics: {
       connectorFailures,
       rejectedFigures,

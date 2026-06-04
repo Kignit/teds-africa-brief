@@ -1,6 +1,11 @@
-import { writeFileSync, mkdirSync } from 'node:fs'
+import { writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import process from 'node:process'
 import { produceBriefResult, serializeArtifact } from '../src/server/runtime/produceBrief'
+import {
+  readPriorWindow,
+  serializeNewsWindow,
+  DEFAULT_WINDOW_MS,
+} from '../src/server/ingestion/newsWindow'
 import {
   fxConnector,
   brentConnector,
@@ -17,6 +22,7 @@ import type {
   LiveIngestionResult,
 } from '../src/server/ingestion/pipeline'
 import type { BriefDraft } from '../src/domain/brief'
+import type { NewsItem } from '../src/domain/news'
 
 // Out-of-band brief generator. Runs the live pipeline (real connectors, real network)
 // OUTSIDE the Vercel build, and writes the runtime artifact `public/brief.json` as a
@@ -34,6 +40,11 @@ import type { BriefDraft } from '../src/domain/brief'
 
 const OUT_DIR = 'public'
 const OUT_FILE = `${OUT_DIR}/brief.json`
+// Rolling news-window store: committed, OUTSIDE public/ — never served, never read by
+// the client (whose only runtime artifact remains public/brief.json). It holds raw
+// source-backed news items so corroboration can accumulate across runs.
+const STORE_DIR = 'data'
+const STORE_FILE = `${STORE_DIR}/news-window.json`
 const NEWS_QUERY = 'Africa economy OR Africa currency OR Africa oil'
 
 // Surface the ingestion audit trail to the run log so a thin or null brief is
@@ -55,6 +66,17 @@ function logDiagnostics(d: LiveIngestionDiagnostics): void {
   for (const line of dropped) console.warn(`  dropped: ${line}`)
 }
 
+// Load the prior rolling window, FAILING CLOSED to current-run-only ([]) if the store
+// is missing/unreadable (readFileSync throws) or malformed/stale (readPriorWindow
+// returns []). A bad store can never inject fabricated or expired evidence.
+function loadPriorWindow(now: string): NewsItem[] {
+  try {
+    return readPriorWindow(readFileSync(STORE_FILE, 'utf8'), now, DEFAULT_WINDOW_MS)
+  } catch {
+    return []
+  }
+}
+
 async function main(): Promise<void> {
   const generatedAt = new Date().toISOString()
   const date = generatedAt.slice(0, 10)
@@ -63,6 +85,9 @@ async function main(): Promise<void> {
     config: getConfig(process.env),
     now: () => new Date().toISOString(),
   }
+
+  // Prior rolling window (fails closed to current-run-only — see loadPriorWindow).
+  const priorNews = loadPriorWindow(generatedAt)
 
   // Explicit, honest source set. fx + World Bank are keyless; Brent (EIA) + FRED
   // (US Treasuries) + Comtrade (via country profiles) are keyed and FAIL CLOSED when
@@ -80,6 +105,10 @@ async function main(): Promise<void> {
       newsConnectors: [gdeltConnector(NEWS_QUERY), ...rssConnectorsFromSources(SOURCES)],
       profileConnectors: [countryProfileConnector()],
       sources: SOURCES,
+      // Rolling 72h window: prior runs' registered news items widen the corroboration
+      // pool so independent sources reporting the same event at different times line up.
+      priorNews,
+      newsWindowMs: DEFAULT_WINDOW_MS,
       brief: { id: `live_${date}`, date, edition: 'daily' },
     })
     brief = result.brief
@@ -90,9 +119,25 @@ async function main(): Promise<void> {
   mkdirSync(OUT_DIR, { recursive: true })
   writeFileSync(OUT_FILE, serializeArtifact(brief, generatedAt))
 
+  // Persist the merged rolling window for the next run — ONLY when the pipeline ran
+  // (result present). On a pipeline throw we leave the prior store untouched rather than
+  // clobber it. Evidence only: raw news items, never generated analysis.
+  if (result) {
+    mkdirSync(STORE_DIR, { recursive: true })
+    writeFileSync(
+      STORE_FILE,
+      serializeNewsWindow(result.newsWindow, generatedAt, DEFAULT_WINDOW_MS),
+    )
+  }
+
   // Always surface the ingestion audit trail when we have one — connector failures,
   // drops and counts — so the run log explains a thin or null brief.
-  if (result) logDiagnostics(result.diagnostics)
+  if (result) {
+    logDiagnostics(result.diagnostics)
+    console.log(
+      `Rolling window: prior=${priorNews.length} -> persisted=${result.newsWindow.length} items (72h)`,
+    )
+  }
 
   if (brief && !error) {
     console.log(

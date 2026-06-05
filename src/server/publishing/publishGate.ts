@@ -477,6 +477,7 @@ function sameMethodology(a: Methodology, b: Methodology): boolean {
     a.status === b.status &&
     a.shockType === b.shockType &&
     a.mechanism === b.mechanism &&
+    a.minInputUsd === b.minInputUsd &&
     JSON.stringify(a.channels ?? null) === JSON.stringify(b.channels ?? null) &&
     JSON.stringify(a.inputs) === JSON.stringify(b.inputs) &&
     JSON.stringify(a.bands) === JSON.stringify(b.bands)

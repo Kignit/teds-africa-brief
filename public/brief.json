@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T12:44:48.174Z",
+  "generatedAt": "2026-06-05T14:36:27.871Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -170,6 +170,368 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_17w67p7",
+        "title": "EXIM Frozen Foods Association opposes proposed reintroduction of Smart Port Note system",
+        "summary": "The Exim Frozen Foods Association of Ghana (EFFAG) has urged the Ministry of Transport to reject any attempt to reintroduce the Cargo Tracking Note (CTN), also known as the Smart Port Note (SPN), arguing that the system would impose significant additional costs on businesses and consumers.",
+        "occurredAt": "2026-06-05T14:33:36.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "exim frozen foods association opposes proposed reintroduction of",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:yxfam6",
+            "src.bft_gh:1mdroei"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh",
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_signs_1_5bn_agriconnect_compact_with_world_187rxyp",
+        "title": "Ghana signs $1.5bn AgriConnect Compact with World Bank and IFAD to create 2.6m jobs",
+        "summary": "The Ministry Food and Agriculture Ghana has secured a major boost for its agricultural transformation agenda after signing a $1.5 billion Ghana AgriConnect Compact with the World Bank, the International Fund for Agricultural Development (IFAD), the International Finance Corporation (IFC), and other development partners. The compact is expected to create more than 2.6 million jobs [&#8230;]",
+        "occurredAt": "2026-06-05T14:32:32.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana signs 1 5bn agriconnect compact with world",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:j9p7rb"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_what_nigeria_s_floundering_anti_terror_campaign_can_1fb0yxt",
+        "title": "What Nigeria’s floundering anti-terror campaign can learn from Ukraine’s robot war",
+        "summary": "For over a decade, Nigeria has been locked in a gruelling war of attrition. From the blood-soaked plains of the\nread more What Nigeria’s floundering anti-terror campaign can learn from Ukraine’s robot war",
+        "occurredAt": "2026-06-05T14:16:54.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "what nigeria s floundering anti terror campaign can",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1y3s5qy"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_budget_2026_water_energy_health_and_education_win_lvcx4",
+        "title": "Budget 2026: Water, Energy, Health and Education Win Big as Treasury Cuts Spending in Push for Fiscal Discipline",
+        "summary": "The government has unveiled a budget strategy that significantly increases funding for water, energy, healthcare, education and agriculture while reducing allocations to several ministries and agencies as part of efforts to tighten public spending and focus resources on sectors considered critical to economic growth and household welfare. According to the Budget 2026, the spending plan [&#8230;]",
+        "occurredAt": "2026-06-05T14:12:26.000Z",
+        "countryCodes": [],
+        "topic": "budget 2026 water energy health and education win",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1k66he7"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenyan_students_scoop_historic_grand_prize_at_huawei_16i8rdr",
+        "title": "Kenyan students scoop historic Grand Prize at Huawei's ICT global competition",
+        "summary": "Team demonstrated exceptional technical expertise, innovation, teamwork, and problem-solving skills to emerge as Grand Prize winners, earning the highest distinction available in the competition.",
+        "occurredAt": "2026-06-05T14:08:40.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenyan students scoop historic grand prize at huawei",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1rnuh41"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_28_million_fingerlings_a_year_inside_govt_8217_71q0jo",
+        "title": "28 Million Fingerlings a Year: Inside Govt&#8217;s Plan to Rebuild Lake Victoria Economy",
+        "summary": "The government has intensified efforts to revive the Lake Victoria economy through major investments in the Blue Economy sector, with a new fisheries and aquaculture training hub in Kisumu expected to boost fish production, create jobs and restore livelihoods for thousands of families dependent on the lake. In a statement, Principal Secretary for Internal Security [&#8230;]",
+        "occurredAt": "2026-06-05T13:54:26.000Z",
+        "countryCodes": [],
+        "topic": "28 million fingerlings a year inside govt 8217",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:80vp0j"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_hfn_sees_new_bill_increasing_nigeria_s_health_18k4q7n",
+        "title": "HFN sees new bill increasing Nigeria’s health financing options",
+        "summary": "The Healthcare Federation of Nigeria (HFN) has applauded the passage of a pro-health tax reform bill by the Nigerian Senate,\nread more HFN sees new bill increasing Nigeria’s health financing options",
+        "occurredAt": "2026-06-05T13:52:17.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "hfn sees new bill increasing nigeria s health",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:5hhv97"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_money_stress_worries_most_south_africans_13nh83u",
+        "title": "Money stress worries most South Africans",
+        "summary": "Alex Cook, CEO of Wealthbit, weighs in ...",
+        "occurredAt": "2026-06-05T13:47:08.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "money stress worries most south africans",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:12feby3"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_re_posts_16m_profit_q1_maintains_strong_1a44wtr",
+        "title": "Africa Re posts $16m profit Q1, maintains strong capital position despite headwinds",
+        "summary": "The African Reinsurance Corporation (Africa Re) has reported its financial results for the first quarter ended 31 March 2026, achieving\nread more Africa Re posts $16m profit Q1, maintains strong capital position despite headwinds",
+        "occurredAt": "2026-06-05T13:33:24.000Z",
+        "countryCodes": [],
+        "topic": "africa re posts 16m profit q1 maintains strong",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1n689g0"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fitch_revises_oil_forecast_for_2026_to_us_152axyq",
+        "title": "Fitch revises oil forecast for 2026 to US$87 per barrel",
+        "summary": "Real oil prices reached US$170 per barrel in 1979 (measured in current prices) and OPEC played a very different role then.",
+        "occurredAt": "2026-06-05T13:31:09.000Z",
+        "countryCodes": [],
+        "topic": "fitch revises oil forecast for 2026 to us",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:bccdej"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_johann_rupert_turned_a_22m_gold_investment_1a0wgh3",
+        "title": "How Johann Rupert turned a €22m gold investment into an €80m holding",
+        "summary": "Johann Rupert’s long-term investment approach has once again paid off, with his investment vehicle, Reinet Investments, turning a €22 million\nread more How Johann Rupert turned a €22m gold investment into an €80m holding",
+        "occurredAt": "2026-06-05T13:20:45.000Z",
+        "countryCodes": [],
+        "topic": "how johann rupert turned a 22m gold investment",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1llxklc"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_army_airborne_graduates_charged_to_deploy_specialised_skills_1lgdovq",
+        "title": "Army Airborne graduates charged to deploy specialised skills against security threats",
+        "summary": "The Nigerian Army has charged newly qualified paratroopers and other specialised personnel to deploy the skills acquired during their training\nread more Army Airborne graduates charged to deploy specialised skills against security threats",
+        "occurredAt": "2026-06-05T13:19:08.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "army airborne graduates charged to deploy specialised skills",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:xo5h4"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_8216_our_engagements_continue_8217_8211_pick_n_5f5gs0",
+        "title": "&#8216;Our engagements continue&#8217; &#8211; Pick n Pay on halting retrenchments of 22,000 workers",
+        "summary": "Retrenchments are not completely off the table.",
+        "occurredAt": "2026-06-05T13:16:20.000Z",
+        "countryCodes": [],
+        "topic": "8216 our engagements continue 8217 8211 pick n",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:1s5t7i5"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sec_dg_young_nigerians_fintech_apps_now_driving_1wispi4",
+        "title": "SEC DG: Young Nigerians, fintech apps now driving capital market growth",
+        "summary": "Director-General of the Securities and Exchange Commission (SEC), Emomotimi Agama, says fintech apps, majorly used by a growing number of young Nigerians, are now driving capital market growth. \nThe post SEC DG: Young Nigerians, fintech apps now driving capital market growth appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T13:09:20.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "sec dg young nigerians fintech apps now driving",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:58ccb1"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fitch_lowers_2026_growth_forecast_to_2_4_1c0vu1p",
+        "title": "Fitch lowers 2026 growth forecast to 2.4%",
+        "summary": "“We have lowered 2026 growth forecasts since the March Global Economic Outlook (GEO) in the US and eurozone by 0.3 percentage points and 0.4 percentage points, respectively to 1.9% to 0.9%”, the UK-based firm said",
+        "occurredAt": "2026-06-05T13:06:24.000Z",
+        "countryCodes": [],
+        "topic": "fitch lowers 2026 growth forecast to 2 4",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:pxyzhq"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_government_says_its_computer_systems_are_secure_we_186w8wr",
+        "title": "Government says its computer systems are secure: We looked and they’re not",
+        "summary": "Sita internet services have more than 5 000 security flaws.",
+        "occurredAt": "2026-06-05T12:59:18.000Z",
+        "countryCodes": [],
+        "topic": "government says its computer systems are secure we",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:e16pad"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_anthropic_calls_for_coordinated_mechanism_to_pause_ai_5nn6dd",
+        "title": "Anthropic calls for coordinated mechanism to pause AI development",
+        "summary": "AI giant, Anthropic is calling on frontier AI developers to establish a coordinated, verifiable system for slowing down or temporarily pausing AI development if advanced systems begin improving themselves faster than society can manage the risks. \nThe post Anthropic calls for coordinated mechanism to pause AI development appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T12:48:47.000Z",
+        "countryCodes": [],
+        "topic": "anthropic calls for coordinated mechanism to pause ai",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:18hdps1"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dear_nkrumah_we_still_import_what_we_can_1m205vi",
+        "title": "Dear Nkrumah: We still import what we can produce",
+        "summary": "By: Enoch Young DOGBE More than six decades after independence, Ghana finds itself at an important crossroads. We have made remarkable progress in education, democracy, infrastructure, telecommunications, financial services, and regional influence. Yet beneath these achievements lies a difficult question that deserves honest national reflection. Imagine explaining this to Kwame Nkrumah. Imagine te",
+        "occurredAt": "2026-06-05T12:25:33.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "dear nkrumah we still import what we can",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1tpr1xj"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_the_african_journey_with_the_clock_the_challenge_rsb2wf",
         "title": "The African journey with the clock: The challenge of time precision",
@@ -687,29 +1049,6 @@
           "sourceIds": [
             "src.citizen_za",
             "src.moneyweb_za"
-          ],
-          "independentSourceCount": 2,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_17w67p7",
-        "title": "EXIM Frozen Foods Association opposes proposed reintroduction of Smart Port Note System",
-        "summary": "The Exim Frozen Foods Association of Ghana (EFFAG) has urged the Ministry of Transport to reject any efforts to reintroduce the Cargo Tracking Note (CTN), also known as the Smart Port Note (SPN), arguing that the system would impose significant additional costs on businesses and consumers. In a statement signed by its Executive Secretary, Michael [&#8230;]\nThe post EXIM Frozen Foods Association op",
-        "occurredAt": "2026-06-05T11:33:31.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "exim frozen foods association opposes proposed reintroduction of",
-        "status": "corroborated",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1mdroei",
-            "src.myjoyonline_gh:yxfam6"
-          ],
-          "sourceIds": [
-            "src.bft_gh",
-            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 2,
           "primarySourceCount": 0
@@ -1379,7 +1718,7 @@
         }
       },
       {
-        "id": "evt_nature_has_been_sending_us_signals_our_farmers_4zx3wz",
+        "id": "evt_nature_has_been_sending_us_signals_our_farmers_1n94ff",
         "title": "Nature has been sending us signals. Our Farmers read them first.",
         "summary": "As the world marks World Environment Day, the most consequential climate-finance decision Nigeria and much of West Africa can make\nread more Nature has been sending us signals. Our Farmers read them first.",
         "occurredAt": "2026-06-05T09:29:42.000Z",
@@ -1387,15 +1726,17 @@
           "NG"
         ],
         "topic": "nature has been sending us signals our farmers",
-        "status": "single_source",
+        "status": "corroborated",
         "corroboration": {
           "newsItemIds": [
-            "src.businessday_ng:wx7rux"
+            "src.businessday_ng:wx7rux",
+            "src.nairametrics_ng:x2kjji"
           ],
           "sourceIds": [
-            "src.businessday_ng"
+            "src.businessday_ng",
+            "src.nairametrics_ng"
           ],
-          "independentSourceCount": 1,
+          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -6139,27 +6480,6 @@
         }
       },
       {
-        "id": "evt_ghana_signs_1_5bn_agriconnect_compact_to_create_187rxyp",
-        "title": "Ghana signs $1.5bn AgriConnect Compact to create 2.6m jobs",
-        "summary": "The Ministry Food and Agriculture Ghana has secured a major boost for its agricultural transformation agenda after signing a $1.5 billion Ghana AgriConnect Compact with the World Bank, the International Fund for Agricultural Development (IFAD), the International Finance Corporation (IFC), and other development partners. The compact is expected to create more than 2.6 million jobs [&#8230;]",
-        "occurredAt": "2026-06-03T16:36:50.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ghana signs 1 5bn agriconnect compact to create",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:j9p7rb"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_binance_appoints_sammy_mutua_as_general_manager_for_14mk8ae",
         "title": "Binance appoints Sammy Mutua as General Manager for Africa",
         "summary": "Blockchain ecosystem and cryptocurrency exchange, Binance, has appointed Sammy Mutua as General Manager for Africa, reinforcing the company’s commitment to supporting the growth of digital asset markets across Sub-Saharan Africa.",
@@ -7404,44 +7724,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_ecowas_targets_rice_self_sufficiency_by_2035_seeks_y0k9hh",
-        "title": "ECOWAS targets rice self-sufficiency by 2035, seeks investment to close supply gap",
-        "summary": "The Economic Community of West African States (ECOWAS) has set an ambitious target of achieving regional rice self-sufficiency by 2035. It is therefore urging governments, investors and development partners to accelerate financing for a sector it says holds the key to West Africa's food security and agricultural transformation.",
-        "occurredAt": "2026-06-02T14:26:07.000Z",
-        "countryCodes": [],
-        "topic": "ecowas targets rice self sufficiency by 2035 seeks",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:13ob0xm"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_higher_food_prices_looming_tiger_brands_to_spend_1p3ujt4",
-        "title": "Higher food prices looming: Tiger Brands to spend R25m on fuel per month",
-        "summary": "The food producer anticipates difficult trading environment for the second half of its financial year.",
-        "occurredAt": "2026-06-02T13:47:54.000Z",
-        "countryCodes": [],
-        "topic": "higher food prices looming tiger brands to spend",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:sjxvu6"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -7486,6 +7768,18 @@
               "85"
             ],
             "refYear": 2023
+          },
+          "petroleumTrade": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2023-12-31T00:00:00.000Z",
+            "reporterCode": "231",
+            "classification": "HS",
+            "productCodes": [
+              "27"
+            ],
+            "refYear": 2023
           }
         },
         "keyExports": [
@@ -7497,7 +7791,12 @@
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
           "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
           "electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles"
-        ]
+        ],
+        "petroleumTrade": {
+          "exportValueUsd": 909240.131,
+          "importValueUsd": 2651161984.554,
+          "refYear": 2023
+        }
       },
       {
         "code": "KE",
@@ -7540,6 +7839,18 @@
               "10"
             ],
             "refYear": 2024
+          },
+          "petroleumTrade": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "reporterCode": "404",
+            "classification": "HS",
+            "productCodes": [
+              "27"
+            ],
+            "refYear": 2024
           }
         },
         "keyExports": [
@@ -7551,7 +7862,12 @@
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
           "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
           "cereals"
-        ]
+        ],
+        "petroleumTrade": {
+          "exportValueUsd": 1064675881.139,
+          "importValueUsd": 4756612420.396,
+          "refYear": 2024
+        }
       },
       {
         "code": "NG",
@@ -7594,6 +7910,18 @@
               "87"
             ],
             "refYear": 2024
+          },
+          "petroleumTrade": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "reporterCode": "566",
+            "classification": "HS",
+            "productCodes": [
+              "27"
+            ],
+            "refYear": 2024
           }
         },
         "keyExports": [
@@ -7605,7 +7933,12 @@
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
           "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
           "vehicles; other than railway or tramway rolling stock, and parts and accessories thereof"
-        ]
+        ],
+        "petroleumTrade": {
+          "exportValueUsd": 185601944390.434,
+          "importValueUsd": 62297880619.481995,
+          "refYear": 2024
+        }
       },
       {
         "code": "GH",
@@ -7648,6 +7981,18 @@
               "87"
             ],
             "refYear": 2023
+          },
+          "petroleumTrade": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2023-12-31T00:00:00.000Z",
+            "reporterCode": "288",
+            "classification": "HS",
+            "productCodes": [
+              "27"
+            ],
+            "refYear": 2023
           }
         },
         "keyExports": [
@@ -7659,7 +8004,12 @@
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
           "nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",
           "vehicles; other than railway or tramway rolling stock, and parts and accessories thereof"
-        ]
+        ],
+        "petroleumTrade": {
+          "exportValueUsd": 16196335470.652,
+          "importValueUsd": 21049010824.985,
+          "refYear": 2023
+        }
       },
       {
         "code": "ZA",
@@ -7702,6 +8052,18 @@
               "85"
             ],
             "refYear": 2025
+          },
+          "petroleumTrade": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2025-12-31T00:00:00.000Z",
+            "reporterCode": "710",
+            "classification": "HS",
+            "productCodes": [
+              "27"
+            ],
+            "refYear": 2025
           }
         },
         "keyExports": [
@@ -7713,7 +8075,12 @@
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
           "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
           "electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles"
-        ]
+        ],
+        "petroleumTrade": {
+          "exportValueUsd": 38039123807.82499,
+          "importValueUsd": 73986802217.773,
+          "refYear": 2025
+        }
       }
     ],
     "methodologies": [

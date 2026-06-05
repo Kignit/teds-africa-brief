@@ -5,7 +5,11 @@ import { fetchBrentEia, fetchFredSeries } from '../connectors/marketData'
 import type { RawFigure } from '../../domain/figure'
 import { fetchGdelt } from '../connectors/gdelt'
 import { fetchRss } from '../connectors/rss'
-import { fetchCountryProfiles, type CountryProfileSpec } from '../connectors/countryProfile'
+import {
+  fetchCountryProfiles,
+  type CountryProfileSpec,
+  type ProfileDiagSink,
+} from '../connectors/countryProfile'
 
 // Adapters that present the existing connectors as pipeline connectors. Each id
 // matches a registered Source so produced figures/events always resolve.
@@ -65,10 +69,14 @@ export function rssConnectorsFromSources(sources: Source[]): NewsConnector[] {
     .map((s) => rssConnector(s.id, s.feedUrl))
 }
 
-// Country profiles — World Bank backbone (no key) + optional Comtrade enrichment
-// (keyed). Field-level provenance; unsourceable fields are omitted.
-export function countryProfileConnector(specs?: CountryProfileSpec[]): CountryProfileConnector {
-  return { id: 'src.worldbank', run: (ctx) => fetchCountryProfiles(ctx, specs) }
+// Country profiles — World Bank backbone (no key) + optional Comtrade/OEC trade
+// enrichment. Field-level provenance; unsourceable fields are omitted. The optional
+// onDiag sink receives auditable trade-enrichment diagnostics (logged by the generator).
+export function countryProfileConnector(
+  specs?: CountryProfileSpec[],
+  onDiag?: ProfileDiagSink,
+): CountryProfileConnector {
+  return { id: 'src.worldbank', run: (ctx) => fetchCountryProfiles(ctx, specs, onDiag) }
 }
 
 // The default no-key live set: one market connector + one news connector, both

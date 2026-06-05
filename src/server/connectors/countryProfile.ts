@@ -33,6 +33,18 @@ export const LAUNCH_MARKETS: CountryProfileSpec[] = [
   { code: 'ZA', comtradeCode: '710', oecCode: 'afzaf' },
 ]
 
+// Auditable record of WHY a profile's trade fields (keyExports / importDependence) are
+// present or absent — surfaced in the generator logs so an omission is never silent.
+// PURE DIAGNOSTICS: emitting these never changes the enrichment outcome, the fields, the
+// fail-closed omission, or the publish gate.
+export interface ProfileTradeDiagnostic {
+  code: string
+  stage: 'comtrade' | 'oec'
+  outcome: 'skipped_no_key' | 'failed' | 'attempted' | 'non_ok' | 'empty' | 'populated'
+  detail?: string
+}
+export type ProfileDiagSink = (d: ProfileTradeDiagnostic) => void
+
 interface WbPoint {
   value: number
   asOf: string
@@ -75,6 +87,7 @@ async function fetchWbPoint(
 async function buildProfile(
   ctx: ConnectorContext,
   spec: CountryProfileSpec,
+  onDiag?: ProfileDiagSink,
 ): Promise<CountryProfile | null> {
   const debt = await fetchWbPoint(ctx, spec.code, EXT_DEBT_GNI)
 
@@ -93,8 +106,9 @@ async function buildProfile(
     evidence,
   }
 
-  // Optional: specific products from Comtrade (keyed; omitted when disabled).
+  // PRIMARY: specific products from Comtrade (keyed; contributes nothing without a key).
   if (spec.comtradeCode) {
+    const hasComtradeKey = Boolean(ctx.config.comtradeApiKey)
     const [exports, imports] = await Promise.all([
       fetchComtradeTopProducts(ctx, spec.comtradeCode, 'X'),
       fetchComtradeTopProducts(ctx, spec.comtradeCode, 'M'),
@@ -123,6 +137,11 @@ async function buildProfile(
         refYear: imports.refYear,
       }
     }
+    onDiag?.({
+      code: spec.code,
+      stage: 'comtrade',
+      outcome: !hasComtradeKey ? 'skipped_no_key' : exports || imports ? 'populated' : 'failed',
+    })
   }
 
   // KEYLESS FALLBACK: OEC (BACI/HS, secondary / official-derived) fills any trade field
@@ -133,8 +152,10 @@ async function buildProfile(
     spec.oecCode &&
     (profile.keyExports === undefined || profile.importDependence === undefined)
   ) {
+    onDiag?.({ code: spec.code, stage: 'oec', outcome: 'attempted' })
     try {
       const oec = await fetchOecTrade(ctx, spec.oecCode)
+      const filled: string[] = []
       if (profile.keyExports === undefined && oec.exports) {
         profile.keyExports = oec.exports.products
         evidence.keyExports = {
@@ -146,6 +167,7 @@ async function buildProfile(
           productCodes: oec.exports.productCodes,
           refYear: oec.exports.refYear,
         }
+        filled.push('keyExports')
       }
       if (profile.importDependence === undefined && oec.imports) {
         profile.importDependence = oec.imports.products
@@ -158,8 +180,20 @@ async function buildProfile(
           productCodes: oec.imports.productCodes,
           refYear: oec.imports.refYear,
         }
+        filled.push('importDependence')
       }
-    } catch {
+      onDiag?.(
+        filled.length
+          ? { code: spec.code, stage: 'oec', outcome: 'populated', detail: filled.join('+') }
+          : { code: spec.code, stage: 'oec', outcome: 'empty' },
+      )
+    } catch (e) {
+      onDiag?.({
+        code: spec.code,
+        stage: 'oec',
+        outcome: 'non_ok',
+        detail: e instanceof Error ? e.message : String(e),
+      })
       // OEC unreachable/failed → omit the trade fields (fail closed, no fabrication).
     }
   }
@@ -172,7 +206,8 @@ async function buildProfile(
 export async function fetchCountryProfiles(
   ctx: ConnectorContext,
   specs: CountryProfileSpec[] = LAUNCH_MARKETS,
+  onDiag?: ProfileDiagSink,
 ): Promise<CountryProfile[]> {
-  const built = await Promise.all(specs.map((spec) => buildProfile(ctx, spec)))
+  const built = await Promise.all(specs.map((spec) => buildProfile(ctx, spec, onDiag)))
   return built.filter((p): p is CountryProfile => p !== null)
 }

@@ -23,6 +23,7 @@ import type {
 } from '../src/server/ingestion/pipeline'
 import type { BriefDraft } from '../src/domain/brief'
 import type { NewsItem } from '../src/domain/news'
+import type { ProfileTradeDiagnostic } from '../src/server/connectors/countryProfile'
 
 // Out-of-band brief generator. Runs the live pipeline (real connectors, real network)
 // OUTSIDE the Vercel build, and writes the runtime artifact `public/brief.json` as a
@@ -66,6 +67,21 @@ function logDiagnostics(d: LiveIngestionDiagnostics): void {
   for (const line of dropped) console.warn(`  dropped: ${line}`)
 }
 
+// Surface WHY each country profile has or lacks trade fields (keyExports /
+// importDependence): the Comtrade/OEC enrichment path per country. Purely informational
+// — it never changes a field or the gate — so an omission is auditable, never silent.
+function logProfileTradeDiagnostics(diags: ProfileTradeDiagnostic[]): void {
+  if (diags.length === 0) return
+  const byCode = new Map<string, string[]>()
+  for (const d of diags) {
+    const arr = byCode.get(d.code) ?? []
+    arr.push(`${d.stage}=${d.outcome}${d.detail ? `(${d.detail})` : ''}`)
+    byCode.set(d.code, arr)
+  }
+  console.log('Profile trade enrichment (why trade fields are present/absent):')
+  for (const [code, parts] of byCode) console.log(`  ${code}: ${parts.join(', ')}`)
+}
+
 // Load the prior rolling window, FAILING CLOSED to current-run-only ([]) if the store
 // is missing/unreadable (readFileSync throws) or malformed/stale (readPriorWindow
 // returns []). A bad store can never inject fabricated or expired evidence.
@@ -89,6 +105,10 @@ async function main(): Promise<void> {
   // Prior rolling window (fails closed to current-run-only — see loadPriorWindow).
   const priorNews = loadPriorWindow(generatedAt)
 
+  // Collect auditable trade-enrichment diagnostics from the country-profile connector
+  // (Comtrade skipped/failed, OEC attempted/non-OK/empty/populated) — logged below.
+  const profileDiags: ProfileTradeDiagnostic[] = []
+
   // Explicit, honest source set. fx + World Bank are keyless; Brent (EIA) + FRED
   // (US Treasuries) + Comtrade (via country profiles) are keyed and FAIL CLOSED when
   // their key is absent — they contribute nothing rather than fabricating.
@@ -103,7 +123,7 @@ async function main(): Promise<void> {
       // feedUrl. Multiple INDEPENDENT registered sources are what make >= 2-source
       // corroboration — and therefore publishable causal claims — possible at all.
       newsConnectors: [gdeltConnector(NEWS_QUERY), ...rssConnectorsFromSources(SOURCES)],
-      profileConnectors: [countryProfileConnector()],
+      profileConnectors: [countryProfileConnector(undefined, (d) => profileDiags.push(d))],
       sources: SOURCES,
       // Rolling 72h window: prior runs' registered news items widen the corroboration
       // pool so independent sources reporting the same event at different times line up.
@@ -134,6 +154,7 @@ async function main(): Promise<void> {
   // drops and counts — so the run log explains a thin or null brief.
   if (result) {
     logDiagnostics(result.diagnostics)
+    logProfileTradeDiagnostics(profileDiags)
     console.log(
       `Rolling window: prior=${priorNews.length} -> persisted=${result.newsWindow.length} items (72h)`,
     )

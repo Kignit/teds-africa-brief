@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T05:32:40.342Z",
+  "generatedAt": "2026-06-05T07:17:13.361Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -144,6 +144,335 @@
     ],
     "events": [
       {
+        "id": "evt_10th_beauty_cosmetics_and_wellness_west_africa_exhibition_1l7mrzd",
+        "title": "10th Beauty, Cosmetics and Wellness West Africa exhibition expected to deepen trade links, support industry growth",
+        "summary": "The 10th Beauty, Cosmetics and Wellness West Africa Ghana exhibition organised by the Ace Group has brought together exhibitors and industry players from more than 10 countries. A move aimed at highlighting growing opportunities in Ghana’s beauty and cosmetics sector. The three-day international exhibition, being held at the University of Professional Studies (UPSA) Auditorium in [&#8230;]\nThe pos",
+        "occurredAt": "2026-06-05T06:57:39.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "10th beauty cosmetics and wellness west africa exhibition",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1rwidph"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_government_targets_herbal_and_flavored_shisha_in_expanded_bsr498",
+        "title": "Government Targets Herbal and Flavored Shisha in Expanded Tobacco Crackdown",
+        "summary": "NAIROBI, Kenya, June 5-The Ministry of Health has initiated a fresh push to tighten Kenya’s tobacco control framework with proposed rules that would completely ban shisha smoking and all waterpipe tobacco products, citing emerging public health risks and new product variations that have outpaced existing regulations. In a public notice, the Ministry says the draft [&#8230;]",
+        "occurredAt": "2026-06-05T06:54:01.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "government targets herbal and flavored shisha in expanded",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:1d2rdqr"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_parthian_8217_s_i_invest_broadens_offering_with_25kceb",
+        "title": "Parthian&#8217;s i-invest broadens offering with asset-backed loans",
+        "summary": "i-invest, Nigeria&#8217;s digital investment platform, has unveiled a significantly enhanced platform experience designed to make investing more intuitive, accessible, and\nread more Parthian&#8217;s i-invest broadens offering with asset-backed loans",
+        "occurredAt": "2026-06-05T06:45:15.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "parthian 8217 s i invest broadens offering with",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:qx2zoo"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ncr_nigeria_returns_to_profitability_after_four_years_5dj6r5",
+        "title": "NCR Nigeria returns to profitability after four years of losses",
+        "summary": "NCR Nigeria Plc has returned to profitability in its full-year financial statement of 2025, after four straight years of losses.\nread more NCR Nigeria returns to profitability after four years of losses",
+        "occurredAt": "2026-06-05T06:41:18.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "ncr nigeria returns to profitability after four years",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:xr0e9g"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sustyvibes_targets_250_000_funding_unveils_expansion_into_3w7yrz",
+        "title": "SustyVibes targets $250,000 funding, unveils expansion into Ghana, UK, US",
+        "summary": "Nigerian sustainability organisation SustyVibes has unveiled plans to expand its operations into Ghana, the United Kingdom and the United States,\nread more SustyVibes targets $250,000 funding, unveils expansion into Ghana, UK, US",
+        "occurredAt": "2026-06-05T06:32:59.000Z",
+        "countryCodes": [
+          "NG",
+          "GH"
+        ],
+        "topic": "sustyvibes targets 250 000 funding unveils expansion into",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:un1lsz"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_digital_must_be_default_8211_ssnit_pushes_members_k2i5kd",
+        "title": "Digital must be default &#8211; SSNIT pushes members online to end long queues",
+        "summary": "The Director-General of SSNIT, Kwasi Afreh Biney, says the pension scheme is aggressively pursuing digital service delivery to eliminate long queues, reduce paperwork, and improve efficiency.",
+        "occurredAt": "2026-06-05T06:31:25.000Z",
+        "countryCodes": [],
+        "topic": "digital must be default 8211 ssnit pushes members",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:5wpeal"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ncdc_urges_governors_to_increase_funding_for_ebola_4zv7ce",
+        "title": "NCDC urges governors to increase funding for Ebola preparedness",
+        "summary": "Jide Idris, Physician and Director-General of the Nigeria Centre for Disease Control (NCDC), has called on governors across the 36\nread more NCDC urges governors to increase funding for Ebola preparedness",
+        "occurredAt": "2026-06-05T06:28:07.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "ncdc urges governors to increase funding for ebola",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:wvrsga"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_un_demands_release_of_abducted_oyo_borno_pupils_1y83fuq",
+        "title": "UN demands release of abducted Oyo, Borno pupils, teachers",
+        "summary": "Mohammed Malick Fall, the United Nations Resident and Humanitarian Coordinator in Nigeria, has called for the immediate and unconditional release\nread more UN demands release of abducted Oyo, Borno pupils, teachers",
+        "occurredAt": "2026-06-05T06:19:52.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "un demands release of abducted oyo borno pupils",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:m27wl5"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_grenada_opens_visa_free_access_to_nigerian_entrepreneurs_3onvly",
+        "title": "Grenada opens visa-free access to Nigerian entrepreneurs, professionals",
+        "summary": "Entrepreneurs, investors, and professionals in Nigeria are set to gain easier access to the Caribbean following Grenada's decision to grant visa-free entry to Nigerians as part of efforts to deepen economic and business ties between both countries.\nThe post Grenada opens visa-free access to Nigerian entrepreneurs, professionals appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T06:18:37.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "grenada opens visa free access to nigerian entrepreneurs",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:14cathe"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nssf_defends_pension_system_after_court_refuses_stay_e1xws1",
+        "title": "NSSF Defends Pension System After Court Refuses Stay Bid",
+        "summary": "NAIROBI, Kenya, June 5 – The National Social Security Fund (NSSF) has moved to reassure employers that current pension contribution rates remain in force, dismissing calls to revert to the previous Sh200 employee and Sh200 employer deductions despite ongoing court disputes over the NSSF Act, 2013. In a public statement, the Fund said the Act [&#8230;]",
+        "occurredAt": "2026-06-05T06:10:38.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "nssf defends pension system after court refuses stay",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:aiztjs"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_from_months_to_days_ssnit_now_processes_pension_1awv7cl",
+        "title": "From months to days: SSNIT now processes pension claims in just 7 days",
+        "summary": "The Director-General of SSNIT, Kwasi Afreh Biney, says the scheme has significantly reduced the time it takes to process pension claims, bringing the average turnaround period down to just seven days.",
+        "occurredAt": "2026-06-05T06:05:20.000Z",
+        "countryCodes": [],
+        "topic": "from months to days ssnit now processes pension",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:nnc6of"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bitcoin_treasury_firms_shed_62bn_in_deepening_crypto_1b2ayb6",
+        "title": "Bitcoin treasury firms shed $62bn in deepening crypto rout",
+        "summary": "Bitcoin has dropped about 14% this week to trade around four-month lows.",
+        "occurredAt": "2026-06-05T06:00:27.000Z",
+        "countryCodes": [],
+        "topic": "bitcoin treasury firms shed 62bn in deepening crypto",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:iq8uhc"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_naira_strengthens_below_n1_360_first_time_in_rqkmuz",
+        "title": "Naira strengthens below N1,360/$, first time in four weeks",
+        "summary": "The Naira strengthened further against the United States dollar on Thursday, closing below the N1,360/$ mark for the first time in four weeks amid rising external reserves and sustained foreign exchange market reforms. \nThe post Naira strengthens below N1,360/$, first time in four weeks appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T05:53:12.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "naira strengthens below n1 360 first time in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:u4p67c"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_danish_chamber_taps_kepsa_network_to_expand_business_p3wefe",
+        "title": "Danish Chamber Taps KEPSA Network to Expand Business Footprint in East Africa",
+        "summary": "NAIROBI, Kenya, May 5-Kenyan businesses are set to gain stronger links with Danish investors and firms following a strategic cooperation agreement between the Danish Chamber of Commerce (DCC) and the Kenya Private Sector Alliance (KEPSA). According to the partners, the move is aimed at deepening trade, investment and business partnerships across East Africa. The agreement, [&#8230;]",
+        "occurredAt": "2026-06-05T05:50:00.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "danish chamber taps kepsa network to expand business",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:z85pi4"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_oil_steadies_after_first_drop_this_week_on_1plb1r3",
+        "title": "Oil steadies after first drop this week on peace talk optimism",
+        "summary": "Brent for August delivery added 0.4% to $95.36 a barrel at 11:49 a.m. in Singapore.",
+        "occurredAt": "2026-06-05T05:45:29.000Z",
+        "countryCodes": [],
+        "topic": "oil steadies after first drop this week on",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1b474sd"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_business_activity_dips_in_may_amid_deepening_economic_175djkw",
+        "title": "Business activity dips in May amid deepening economic crisis",
+        "summary": "Kenya's worsening economic slowdown has reduced consumers' purchasing power, leading to declining business sales, falling demand, reduced economic activity, and job losses across multiple sectors.",
+        "occurredAt": "2026-06-05T05:40:00.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "business activity dips in may amid deepening economic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1syy17f"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_great_dividend_payouts_from_asset_managers_1v7eenr",
         "title": "Great dividend payouts from asset managers",
         "summary": "A look at the market’s reaction to Ninety One’s latest results and what updated best-practice guidelines could mean for South Africa’s Reit sector.",
@@ -243,6 +572,46 @@
         }
       },
       {
+        "id": "evt_bn_daybreak_fri_5_june_2026_us_ukraine_1ypkfe6",
+        "title": "BN Daybreak - Fri 5 June 2026: US Ukraine aid; DRC Ebola outbreak; Athol Trollip on FMD; Cuba sanctions",
+        "summary": "",
+        "occurredAt": "2026-06-05T05:04:54.000Z",
+        "countryCodes": [],
+        "topic": "bn daybreak fri 5 june 2026 us ukraine",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:zx2mch"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_host_communities_back_gold_fields_lease_renewal_7fermt",
+        "title": "Host communities back Gold Fields lease renewal",
+        "summary": "By Juliet Aguiar DUGBARTEY, Huniso Traditional authorities and residents of communities hosting the Tarkwa Mine have thrown their support behind Gold Fields Ghana Limited and called on government to renew the company&#8217;s mining lease when it expires in 2027. They warned that any decision to deny the company a lease renewal could jeopardise thousands of [&#8230;]\nThe post Host communities back ",
+        "occurredAt": "2026-06-05T05:00:15.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "host communities back gold fields lease renewal",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:mxno9r"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_fg_vows_rescue_of_abducted_pupils_in_oyo_j40bm1",
         "title": "FG vows rescue of abducted pupils in Oyo, Borno as security agencies intensify operations",
         "summary": "The Federal Government has assured Nigerians that coordinated security operations are underway to secure the release of pupils and teachers\nread more FG vows rescue of abducted pupils in Oyo, Borno as security agencies intensify operations",
@@ -283,6 +652,27 @@
         }
       },
       {
+        "id": "evt_community_banks_critical_vehicle_in_deepening_financial_inclusion_8t039l",
+        "title": "Community banks critical vehicle in deepening financial inclusion &#8211; experts",
+        "summary": "By Ernest Bako WUBONTO and Christable Danso ABEAM Sector experts and policymakers at The Money Summit 2026 (TMS 2026) have strongly affirmed that Ghana&#8217;s newly rebranded community banks are the state’s most critical vehicle for deepening financial inclusion and driving sustainable grassroots economic transformation. Speaking during the summit&#8217;s third plenary session, high-level panelli",
+        "occurredAt": "2026-06-05T04:30:05.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "community banks critical vehicle in deepening financial inclusion",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:pw80g1"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_bog_s_latest_auction_mops_up_ghs_11_1reiwfl",
         "title": "BoG’s Latest Auction Mops Up GHS 11.28bn as 14-Day Bill Rate Hits 10.93%",
         "summary": "BoG’s Latest Auction Mops Up GHS 11.28bn as 14-Day Bill Rate Hits 10.93% The Bank of Ghana has mopped up GHS 11.28 billion from the market through the sale of its 14-day bills, as the central bank continues to manage liquidity conditions in the financial system. Results of Tender 864, held on June 3, 2026, [&#8230;]",
@@ -298,6 +688,27 @@
           ],
           "sourceIds": [
             "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_high_npls_blunt_monetary_policy_impact_as_loan_bjgm22",
+        "title": "High NPLs blunt monetary policy impact as loan default-induced credit risk drags",
+        "summary": "By Kingsley Webora TANKEH An economist and senior lecturer at the University of Ghana Business School, Professor Patrick Asuming, has argued that a falling monetary policy rate will achieve little for businesses unless the problem of elevated credit risk associated with the high non-performing loans (NPL) is tackled at the root. NPLs ratio in the [&#8230;]\nThe post High NPLs blunt monetary policy ",
+        "occurredAt": "2026-06-05T04:15:57.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "high npls blunt monetary policy impact as loan",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:vp8qul"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -386,6 +797,27 @@
         }
       },
       {
+        "id": "evt_infrastructure_regulation_key_to_unlocking_institutional_capital_for_t9chy6",
+        "title": "Infrastructure, regulation key to unlocking institutional capital for agriculture",
+        "summary": "By Kingsley Webora TANKEH The billions of cedis sitting in pension funds could be deployed to finance the country’s commodity value chains if there is market infrastructure, grading systems and regulatory safeguards, Head of Treasury-Ecobank Ghana, Peter Dzasa, has said. His remarks come at a time when there is a push by regulators and market [&#8230;]\nThe post Infrastructure, regulation key to un",
+        "occurredAt": "2026-06-05T04:00:31.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "infrastructure regulation key to unlocking institutional capital for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:17vdxmg"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_ghana_link_fires_back_at_icums_critics_demands_1fpbhli",
         "title": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime",
         "summary": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime Ghana Link Network Services Ltd, operators of the Integrated Customs Management System, has rejected recent allegations that the ICUMS platform is dysfunctional, describing the claims as false, misleading and unsupported by evidence. In a strongly worded statement issued by its Public Relations Department on [&#8230;]",
@@ -449,6 +881,27 @@
         }
       },
       {
+        "id": "evt_gse_urges_diaspora_to_tap_capital_market_revival_4koiel",
+        "title": "GSE urges diaspora to tap capital market revival",
+        "summary": "By Joshua Worlasi AMLANU The Ghana Stock Exchange (GSE) has called on the Ghanaian diaspora to increase participation in the country’s capital markets. The exchange cited a strong recovery in investor confidence, rising equity valuations and a resurgence of primary market activity that has already delivered the busiest period for initial public offerings (IPOs) in [&#8230;]\nThe post GSE urges dias",
+        "occurredAt": "2026-06-05T03:44:09.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "gse urges diaspora to tap capital market revival",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:i9u52o"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_ghanaians_feel_shortchanged_8211_steve_manteaw_explains_growing_lvylsi",
         "title": "Ghanaians feel shortchanged &#8211; Steve Manteaw explains growing backlash over Gold Fields lease",
         "summary": "Policy analyst and extractive governance expert Dr Steve Manteaw says the fierce public interest surrounding the renewal of Gold Fields’ Tarkwa mining lease reflects a growing belief among many Ghanaians that the country is not receiving enough value from its natural resources.",
@@ -485,27 +938,6 @@
           ],
           "sourceIds": [
             "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_business_activity_dips_in_may_amid_deepening_economic_175djkw",
-        "title": "Business activity dips in May amid deepening economic crisis",
-        "summary": "Kenya's worsening economic slowdown has reduced consumers' purchasing power, leading to declining business sales, falling demand, reduced economic activity, and job losses across multiple sectors.",
-        "occurredAt": "2026-06-05T03:00:00.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "business activity dips in may amid deepening economic",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1syy17f"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -704,6 +1136,27 @@
         }
       },
       {
+        "id": "evt_business_conditions_unchanged_in_may_while_job_creation_7ry6lk",
+        "title": "Business conditions unchanged in May, while job creation hits 11-month high",
+        "summary": "Solid increase in staffing levels New orders rise, but output ticks lower Inflationary pressures remain muted Business conditions were stable in Ghana&#8217;s private sector during May. New orders continued to rise, albeit at a softer pace, while business activity decreased fractionally. The main positive from the latest survey was a solid expansion of employment, with [&#8230;]\nThe post Business ",
+        "occurredAt": "2026-06-05T01:16:48.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "business conditions unchanged in may while job creation",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:npj08x"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_fifa_bans_vuvuzelas_and_loud_noise_devices_from_1pp3bq0",
         "title": "FIFA Bans Vuvuzelas and Loud Noise Devices from 2026 World Cup Stadiums",
         "summary": "FIFA Bans Vuvuzelas and Loud Noise Devices from 2026 World Cup Stadiums Fans attending the 2026 FIFA World Cup in the United States, Canada and Mexico will not be allowed to bring vuvuzelas into stadiums after FIFA officially banned the popular plastic horns as part of its tournament code of conduct. The decision means one [&#8230;]",
@@ -785,6 +1238,27 @@
         }
       },
       {
+        "id": "evt_ssnit_s_biggest_challenge_isn_t_technology_it_k232eh",
+        "title": "SSNIT’s biggest challenge isn’t technology, it’s getting Ghanaians to use it &#8211; Kwasi Afresh Biney",
+        "summary": "The Director-General of SSNIT, Kwasi Afresh Biney, says the pension scheme’s biggest challenge is no longer technology but getting more Ghanaians to embrace the digital platforms designed to make services faster and more convenient.",
+        "occurredAt": "2026-06-05T00:42:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ssnit s biggest challenge isn t technology it",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:5x9r2t"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_xenophobia_fallout_ramaphosa_turns_to_diplomacy_as_african_157bn0h",
         "title": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens",
         "summary": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens South African President Cyril Ramaphosa has announced plans to dispatch envoys across Africa and other parts of the world as Pretoria moves to contain the diplomatic fallout from renewed anti-immigrant violence. The attacks, which have targeted foreign nationals and triggered concern across the continent, [&#8230",
@@ -802,6 +1276,29 @@
             "src.norvanreports_gh"
           ],
           "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_abena_amoah_appointed_chair_of_icma_committee_of_1ehdmw6",
+        "title": "Abena Amoah appointed chair of ICMA committee of regional representatives",
+        "summary": "The Ghana Stock Exchange (GSE) has announced the appointment of its Managing Director, Abena Amoah, as Chair of the International Capital Market Association (ICMA) Committee of Regional Representatives (CRR). The appointment was announced at the 58th ICMA Annual General Meeting and Conference held in London last week and marks a significant recognition of Ghana’s growing [&#8230;]\nThe post Abena A",
+        "occurredAt": "2026-06-05T00:00:06.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "abena amoah appointed chair of icma committee of",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:121jxmz",
+            "src.myjoyonline_gh:1ker1bx"
+          ],
+          "sourceIds": [
+            "src.bft_gh",
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -2638,27 +3135,6 @@
           ],
           "sourceIds": [
             "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_gse_boss_abena_amoah_named_chair_of_icma_1odvdn9",
-        "title": "GSE boss Abena Amoah named chair of ICMA Regional Committee",
-        "summary": "The Managing Director of the Ghana Stock Exchange (GSE), Abena Amoah, has been appointed Chair of the International Capital Market Association (ICMA) Committee of Regional Representatives (CRR), a major leadership role within the global capital markets body.",
-        "occurredAt": "2026-06-04T07:24:37.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "gse boss abena amoah named chair of icma",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1ker1bx"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -5041,130 +5517,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_china_cites_ancient_ties_pledges_deeper_cooperation_with_1rroy2n",
-        "title": "China cites ancient ties, pledges deeper cooperation with Kenya",
-        "summary": "China will deepen its cooperation with Kenya, its ambassador said on Monday, highlighting major infrastructure projects and educational exchanges as pillars of a relationship",
-        "occurredAt": "2026-06-02T07:04:12.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "china cites ancient ties pledges deeper cooperation with",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:s74x2k"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ethiopia_s_debt_restructuring_talks_with_private_bondholders_17zvnfi",
-        "title": "Ethiopia’s Debt Restructuring Talks with Private Bondholders Hit Deadlock",
-        "summary": "Ethiopia’s negotiations with the private bondholders hit a deadlock due to a disagreement over newly proposed terms for debt restructuring. The Ministry of Finance announced that the end",
-        "occurredAt": "2026-06-02T07:00:00.000Z",
-        "countryCodes": [
-          "ET"
-        ],
-        "topic": "ethiopia s debt restructuring talks with private bondholders",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.ethiopianmonitor_et:1hpycn4"
-          ],
-          "sourceIds": [
-            "src.ethiopianmonitor_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_cambodia_begins_un_process_to_resolve_maritime_dispute_16hw9sk",
-        "title": "Cambodia begins UN process to resolve maritime dispute with Thailand",
-        "summary": "Cambodia initiated a UN-backed dispute resolution process on Tuesday with neighbour Thailand over overlapping maritime claims in the Gulf of Thailand.",
-        "occurredAt": "2026-06-02T06:38:04.000Z",
-        "countryCodes": [],
-        "topic": "cambodia begins un process to resolve maritime dispute",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1rnc6fx"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_cbn_redeploys_four_deputy_governors_f2tazi",
-        "title": "CBN redeploys four deputy governors",
-        "summary": "According to CBN, the redeployment is to make use of the experience of senior officials in different areas of responsibility and to support evolving institutional priorities.\nThe post CBN redeploys four deputy governors appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-02T06:20:25.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "cbn redeploys four deputy governors",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:ujipah"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_cbk_burns_through_forex_reserves_as_iran_war_1neoqvg",
-        "title": "CBK burns through forex reserves as Iran war hits homes",
-        "summary": "Rising fuel prices linked to the Iran conflict have pushed Kenya's inflation to a 16-month high.",
-        "occurredAt": "2026-06-02T06:00:00.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "cbk burns through forex reserves as iran war",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:hmawna"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_cbn_targets_95_financial_inclusion_faster_money_transfers_14mpghh",
-        "title": "CBN targets 95% financial inclusion, faster money transfers by 2028",
-        "summary": "CBN said the vision will modernise the national payments infrastructure in intra-African trade. The bank added that the vision will accelerate regional commerce and enhance export competitiveness.\nThe post CBN targets 95% financial inclusion, faster money transfers by 2028 appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-02T05:46:06.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "cbn targets 95 financial inclusion faster money transfers",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:1r8wqvu"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -5193,8 +5545,28 @@
             ],
             "asOf": "2024-12-31T00:00:00.000Z",
             "indicator": "DT.DOD.DECT.GN.ZS"
+          },
+          "keyExports": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "reporterCode": "404",
+            "flowCode": "X",
+            "classification": "HS",
+            "productCodes": [
+              "09",
+              "27",
+              "06"
+            ],
+            "refYear": 2024
           }
-        }
+        },
+        "keyExports": [
+          "coffee, tea, mate and spices",
+          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
+          "trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage"
+        ]
       },
       {
         "code": "NG",

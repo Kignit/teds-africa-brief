@@ -268,6 +268,40 @@ export const SOURCES: Source[] = [
     countryCode: 'ZA',
     feedUrl: 'https://www.citizen.co.za/business/feed/',
   },
+  // Kenya verified-feed expansion (probed live 2026-06-05): independent local
+  // business/economy publishers with working RSS + recent items, bringing KE to parity.
+  // Business Daily (src.nation_ke) still exposes no public RSS; aggregators are NOT added
+  // as corroborating sources.
+  {
+    id: 'src.businesstoday_ke',
+    name: 'Business Today (Kenya)',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://businesstoday.co.ke',
+    accessMethod: 'rss',
+    countryCode: 'KE',
+    feedUrl: 'https://businesstoday.co.ke/feed/',
+  },
+  {
+    id: 'src.biznakenya_ke',
+    name: 'Bizna Kenya',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://biznakenya.com',
+    accessMethod: 'rss',
+    countryCode: 'KE',
+    feedUrl: 'https://biznakenya.com/feed/',
+  },
+  {
+    id: 'src.sokodirectory_ke',
+    name: 'Soko Directory',
+    tier: 'local_press',
+    credibility: 'secondary',
+    url: 'https://sokodirectory.com',
+    accessMethod: 'rss',
+    countryCode: 'KE',
+    feedUrl: 'https://sokodirectory.com/feed/',
+  },
 ]
 
 export const SOURCE_BY_ID = new Map(SOURCES.map((s) => [s.id, s]))

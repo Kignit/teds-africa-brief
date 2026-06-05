@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T04:55:40.897Z",
+  "generatedAt": "2026-06-05T05:32:40.342Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -144,6 +144,145 @@
     ],
     "events": [
       {
+        "id": "evt_great_dividend_payouts_from_asset_managers_1v7eenr",
+        "title": "Great dividend payouts from asset managers",
+        "summary": "A look at the market’s reaction to Ninety One’s latest results and what updated best-practice guidelines could mean for South Africa’s Reit sector.",
+        "occurredAt": "2026-06-05T05:28:03.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "great dividend payouts from asset managers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1llg5cm"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gold_declines_as_uncertainty_surrounds_progress_in_us_1818lww",
+        "title": "Gold declines as uncertainty surrounds progress in US-Iran talks",
+        "summary": "Spot gold fell 0.6% to $4 447.22 an ounce as of 10:03 a.m. in Singapore.",
+        "occurredAt": "2026-06-05T05:26:10.000Z",
+        "countryCodes": [],
+        "topic": "gold declines as uncertainty surrounds progress in us",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:cckrof"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_bet_on_digital_procurement_initiative_to_minimize_2ghli3",
+        "title": "FG bet on digital procurement initiative to minimize corruption risks in governance",
+        "summary": "In a decisive move to plug financial leakages and restore public trust, the Federal Government is leveraging technology to overhaul\nread more FG bet on digital procurement initiative to minimize corruption risks in governance",
+        "occurredAt": "2026-06-05T05:11:44.000Z",
+        "countryCodes": [],
+        "topic": "fg bet on digital procurement initiative to minimize",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:rkn8uy"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigeria_s_kidnapping_crisis_and_the_dangerous_normalisation_1uiqund",
+        "title": "Nigeria’s kidnapping crisis and the dangerous normalisation of fear",
+        "summary": "Every kidnapping in Nigeria starts with an act of terror: armed men block roads, invade schools, and raid communities, causing\nread more Nigeria’s kidnapping crisis and the dangerous normalisation of fear",
+        "occurredAt": "2026-06-05T05:09:45.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigeria s kidnapping crisis and the dangerous normalisation",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:e6g1oi"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_world_in_brief_hezbollah_rejects_ceasefire_mali_offers_1lfrtnd",
+        "title": "WORLD IN BRIEF: Hezbollah rejects ceasefire, Mali offers rewards for militants, Ruto backs US Ebola facility and other stories",
+        "summary": "Hezbollah rejects renewed Israel-Lebanon ceasefire Hezbollah has rejected a renewed US-backed ceasefire agreement between Israel and Lebanon, raising fresh doubts\nread more WORLD IN BRIEF: Hezbollah rejects ceasefire, Mali offers rewards for militants, Ruto backs US Ebola facility and other stories",
+        "occurredAt": "2026-06-05T05:07:15.000Z",
+        "countryCodes": [],
+        "topic": "world in brief hezbollah rejects ceasefire mali offers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:wjkqf"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_vows_rescue_of_abducted_pupils_in_oyo_j40bm1",
+        "title": "FG vows rescue of abducted pupils in Oyo, Borno as security agencies intensify operations",
+        "summary": "The Federal Government has assured Nigerians that coordinated security operations are underway to secure the release of pupils and teachers\nread more FG vows rescue of abducted pupils in Oyo, Borno as security agencies intensify operations",
+        "occurredAt": "2026-06-05T04:50:44.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "fg vows rescue of abducted pupils in oyo",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:13s6fxt"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_uk_to_ban_substandard_universities_from_sponsoring_international_1u92ywy",
+        "title": "UK to ban substandard universities from sponsoring international students",
+        "summary": "The United Kingdom (UK) is tightening its oversight of international student recruitment. According to authorities, higher education institutions that fail\nread more UK to ban substandard universities from sponsoring international students",
+        "occurredAt": "2026-06-05T04:42:13.000Z",
+        "countryCodes": [],
+        "topic": "uk to ban substandard universities from sponsoring international",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:cd4uam"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_bog_s_latest_auction_mops_up_ghs_11_1reiwfl",
         "title": "BoG’s Latest Auction Mops Up GHS 11.28bn as 14-Day Bill Rate Hits 10.93%",
         "summary": "BoG’s Latest Auction Mops Up GHS 11.28bn as 14-Day Bill Rate Hits 10.93% The Bank of Ghana has mopped up GHS 11.28 billion from the market through the sale of its 14-day bills, as the central bank continues to manage liquidity conditions in the financial system. Results of Tender 864, held on June 3, 2026, [&#8230;]",
@@ -186,6 +325,25 @@
         }
       },
       {
+        "id": "evt_gov_8217_t_launches_agriconnect_compact_to_strengthen_hn1yl9",
+        "title": "Gov&#8217;t launches AgriConnect Compact to strengthen food security, create jobs, and mobilise investment",
+        "summary": "The government, with support from the World Bank Group and development partners, has launched its AgriConnect Compact.",
+        "occurredAt": "2026-06-05T04:08:00.000Z",
+        "countryCodes": [],
+        "topic": "gov 8217 t launches agriconnect compact to strengthen",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:2729ag"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_mtn_ghana_leads_gse_turnover_as_market_trades_1i6s0w9",
         "title": "MTN Ghana Leads GSE Turnover as Market Trades GHS 3.88m",
         "summary": "MTN Ghana Leads GSE Turnover as Market Trades GHS 3.88m The Ghana Stock Exchange recorded total turnover of GHS 3.88 million from 868,671 shares traded during the 7,225th trading session on Thursday, June 4, 2026. Trading activity was led by MTN Ghana, which recorded 338,412 shares traded, valued at GHS 2.19 million, making it the [&#8230;]",
@@ -198,6 +356,27 @@
         "corroboration": {
           "newsItemIds": [
             "src.norvanreports_gh:1jy2wyz"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_when_a_three_bedroom_house_costs_ghs_1_1jtkoou",
+        "title": "When a Three-Bedroom House Costs GHS 1.5 Million, Who Is Accra Building For?",
+        "summary": "When a Three-Bedroom House Costs GHS 1.5 Million, Who Is Accra Building For? Accra’s housing market may be booming, but the city is increasingly building homes that ordinary Ghanaian families cannot afford, real estate developer Curtis Tetteh Djaba has warned. In a thought-provoking article titled “The developer’s dilemma: When a three-bedroom house costs GHS 1.5 [&#8230;]",
+        "occurredAt": "2026-06-05T04:03:42.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "when a three bedroom house costs ghs 1",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1nfp7oz"
           ],
           "sourceIds": [
             "src.norvanreports_gh"
@@ -222,6 +401,27 @@
           ],
           "sourceIds": [
             "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_world_s_mining_winners_don_t_sit_imbxun",
+        "title": "The world’s mining winners don’t sit back &#8211; Steve Manteaw backs bigger Ghanaian stake in mining",
+        "summary": "Policy analyst and Extractive Industries Transparency Initiative (EITI) expert Dr Steve Manteaw has thrown his support behind efforts to increase Ghanaian participation in the mining sector.",
+        "occurredAt": "2026-06-05T03:59:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "the world s mining winners don t sit",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:2ustyi"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -621,6 +821,27 @@
           ],
           "sourceIds": [
             "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mps_ratify_bilateral_air_transport_deals_with_3_1vzyx72",
+        "title": "MPs Ratify Bilateral Air Transport Deals with 3 African nations, Bangladesh",
+        "summary": "ADDIS ABABA &#8211; The House of People’s Representatives (HoPR) has ratified bilateral air transport service agreements concluded with three African countries and Bangladesh. Fethi Mahdi (PhD), deputy chair",
+        "occurredAt": "2026-06-04T22:25:24.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "mps ratify bilateral air transport deals with 3",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:zdnufx"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -3069,6 +3290,27 @@
         }
       },
       {
+        "id": "evt_ethiopia_reaches_staff_level_deal_with_imf_to_1sc2sko",
+        "title": "Ethiopia Reaches Staff-Level Deal with IMF to unlock $468 million loan",
+        "summary": "Ethiopia has reached a staff level agreement with the International Monetary Fund (IMF) on the fifth review of its $3.4 billion economic program, the fund said on Wednesday,",
+        "occurredAt": "2026-06-03T20:25:12.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopia reaches staff level deal with imf to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:t064il"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_forests_are_now_investment_assets_not_just_conservation_1p33i90",
         "title": "Forests are now investment assets, not just conservation assets – Elikem Kotoko",
         "summary": "Deputy Chief Executive Officer of the Forestry Commission, Elikem Kotoko, says Ghana's forests must no longer be viewed solely as conservation assets but as strategic investment assets capable of attracting capital, generating jobs and driving sustainable economic growth.\n\nSpeaking at the Ghana-UK Business Summit in London, Elikem Kotoko said a major shift is taking place globally as investors inc",
@@ -3174,6 +3416,27 @@
         }
       },
       {
+        "id": "evt_election_conducted_peacefully_despite_challenges_au_igad_observers_1oa4xn1",
+        "title": "Election Conducted Peacefully Despite challenges: AU, Igad Observers",
+        "summary": "ADDIS ABABA &#8211; Ethiopia&#8217;s seventh general election, held on Monday, was marked by high voter turnout as well as orderly and peaceful participation, according to preliminary reports by",
+        "occurredAt": "2026-06-03T19:10:28.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "election conducted peacefully despite challenges au igad observers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:izenmu"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_cbn_approves_conversion_of_abbey_mortgage_bank_to_16s31sv",
         "title": "CBN approves conversion of Abbey Mortgage Bank to regional commercial bank",
         "summary": "“In addition, pursuant to he resolution of shareholders at the extra-ordinary general meeting of the bank held on Friday, 24th January 2025, the name of the bank has been changed from “Abbey Mortgage Bank Plc” to “Abbey Bank PLC,” it stated in a regulatory filing.\nThe post CBN approves conversion of Abbey Mortgage Bank to regional commercial bank appeared first on Premium Times Nigeria.",
@@ -3189,6 +3452,27 @@
           ],
           "sourceIds": [
             "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ethiopian_airlines_set_to_resume_flights_to_kuwait_1crbfp0",
+        "title": "Ethiopian Airlines Set to Resume Flights to Kuwait",
+        "summary": "Ethiopian Airlines is set to resume its passenger flight services to Kuwait in mid July after months of hiatus caused by the conflict in the Middle East. The",
+        "occurredAt": "2026-06-03T18:24:28.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopian airlines set to resume flights to kuwait",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:1rrryah"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -4184,6 +4468,25 @@
         }
       },
       {
+        "id": "evt_gold_surpasses_u_s_treasuries_euro_in_global_lpk1w6",
+        "title": "Gold Surpasses U.S. Treasuries, Euro in Global Official Reserves: ECB",
+        "summary": "FRANKFURT &#8211; Gold became the largest component of global official reserves in 2025, surpassing holdings of U.S. Treasuries and the euro as rising prices boosted its share, the",
+        "occurredAt": "2026-06-02T23:09:20.000Z",
+        "countryCodes": [],
+        "topic": "gold surpasses u s treasuries euro in global",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:19nsfi1"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_london_mayor_backs_social_media_ban_for_under_1nnh0gh",
         "title": "London mayor backs social media ban for under-16s",
         "summary": "London Mayor Sir Sadiq Khan is supporting a ban on under-16s from social media, casting it as the only realistic way to tackle the harms children already face online.",
@@ -4719,6 +5022,27 @@
         }
       },
       {
+        "id": "evt_ethiopian_airlines_to_start_direct_flights_to_mauritius_1llisfc",
+        "title": "Ethiopian Airlines to Start Direct Flights to Mauritius",
+        "summary": "Ethiopian Airlines Group is set to launch a new direct passenger flight service to Port Louis, Mauritius, further boosting regional connectivity. On Monday, Africa’s largest carrier announced the",
+        "occurredAt": "2026-06-02T07:35:42.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopian airlines to start direct flights to mauritius",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:dg0k32"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_china_cites_ancient_ties_pledges_deeper_cooperation_with_1rroy2n",
         "title": "China cites ancient ties, pledges deeper cooperation with Kenya",
         "summary": "China will deepen its cooperation with Kenya, its ambassador said on Monday, highlighting major infrastructure projects and educational exchanges as pillars of a relationship",
@@ -4734,6 +5058,27 @@
           ],
           "sourceIds": [
             "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ethiopia_s_debt_restructuring_talks_with_private_bondholders_17zvnfi",
+        "title": "Ethiopia’s Debt Restructuring Talks with Private Bondholders Hit Deadlock",
+        "summary": "Ethiopia’s negotiations with the private bondholders hit a deadlock due to a disagreement over newly proposed terms for debt restructuring. The Ministry of Finance announced that the end",
+        "occurredAt": "2026-06-02T07:00:00.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopia s debt restructuring talks with private bondholders",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:1hpycn4"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -4816,25 +5161,6 @@
           ],
           "sourceIds": [
             "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_electoral_chief_reports_74pc_turnout_security_closures_ballot_1o230jt",
-        "title": "Electoral Chief Reports 74pc Turnout, Security Closures, Ballot Irregularities",
-        "summary": "Melatewerk Hailu, chief of the national electoral board, disclosed an election day defined by three competing realities of high turnout, security-related disruption, and irregularities serious...",
-        "occurredAt": "2026-06-02T05:03:38.000Z",
-        "countryCodes": [],
-        "topic": "electoral chief reports 74pc turnout security closures ballot",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:q1n7ui"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

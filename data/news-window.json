@@ -1,7 +1,83 @@
 {
-  "updatedAt": "2026-06-05T04:55:40.897Z",
+  "updatedAt": "2026-06-05T05:32:40.342Z",
   "windowMs": 259200000,
   "items": [
+    {
+      "id": "src.moneyweb_za:1llg5cm",
+      "sourceId": "src.moneyweb_za",
+      "title": "Great dividend payouts from asset managers",
+      "summary": "A look at the market’s reaction to Ninety One’s latest results and what updated best-practice guidelines could mean for South Africa’s Reit sector.",
+      "url": "https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-now/great-dividend-payouts-from-asset-managers/",
+      "publishedAt": "2026-06-05T05:28:03.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ZA"
+      ]
+    },
+    {
+      "id": "src.moneyweb_za:cckrof",
+      "sourceId": "src.moneyweb_za",
+      "title": "Gold declines as uncertainty surrounds progress in US-Iran talks",
+      "summary": "Spot gold fell 0.6% to $4 447.22 an ounce as of 10:03 a.m. in Singapore.",
+      "url": "https://www.moneyweb.co.za/mineweb/gold-declines-as-uncertainty-surrounds-progress-in-us-iran-talks/",
+      "publishedAt": "2026-06-05T05:26:10.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.businessday_ng:rkn8uy",
+      "sourceId": "src.businessday_ng",
+      "title": "FG bet on digital procurement initiative to minimize corruption risks in governance",
+      "summary": "In a decisive move to plug financial leakages and restore public trust, the Federal Government is leveraging technology to overhaul\nread more FG bet on digital procurement initiative to minimize corruption risks in governance",
+      "url": "https://businessday.ng/news/article/fg-bet-on-digital-procurement-initiative-to-minimize-corruption-risks-in-governance/",
+      "publishedAt": "2026-06-05T05:11:44.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.businessday_ng:e6g1oi",
+      "sourceId": "src.businessday_ng",
+      "title": "Nigeria’s kidnapping crisis and the dangerous normalisation of fear",
+      "summary": "Every kidnapping in Nigeria starts with an act of terror: armed men block roads, invade schools, and raid communities, causing\nread more Nigeria’s kidnapping crisis and the dangerous normalisation of fear",
+      "url": "https://businessday.ng/editorial/article/nigerias-kidnapping-crisis-and-the-dangerous-normalisation-of-fear/",
+      "publishedAt": "2026-06-05T05:09:45.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businessday_ng:wjkqf",
+      "sourceId": "src.businessday_ng",
+      "title": "WORLD IN BRIEF: Hezbollah rejects ceasefire, Mali offers rewards for militants, Ruto backs US Ebola facility and other stories",
+      "summary": "Hezbollah rejects renewed Israel-Lebanon ceasefire Hezbollah has rejected a renewed US-backed ceasefire agreement between Israel and Lebanon, raising fresh doubts\nread more WORLD IN BRIEF: Hezbollah rejects ceasefire, Mali offers rewards for militants, Ruto backs US Ebola facility and other stories",
+      "url": "https://businessday.ng/world/article/world-in-brief-hezbollah-rejects-ceasefire-mali-offers-rewards-for-militants-ruto-backs-us-ebola-facility-and-other-stories/",
+      "publishedAt": "2026-06-05T05:07:15.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.businessday_ng:13s6fxt",
+      "sourceId": "src.businessday_ng",
+      "title": "FG vows rescue of abducted pupils in Oyo, Borno as security agencies intensify operations",
+      "summary": "The Federal Government has assured Nigerians that coordinated security operations are underway to secure the release of pupils and teachers\nread more FG vows rescue of abducted pupils in Oyo, Borno as security agencies intensify operations",
+      "url": "https://businessday.ng/news/article/fg-vows-rescue-of-abducted-pupils-in-oyo-borno-as-security-agencies-intensify-operations/",
+      "publishedAt": "2026-06-05T04:50:44.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businessday_ng:cd4uam",
+      "sourceId": "src.businessday_ng",
+      "title": "UK to ban substandard universities from sponsoring international students",
+      "summary": "The United Kingdom (UK) is tightening its oversight of international student recruitment. According to authorities, higher education institutions that fail\nread more UK to ban substandard universities from sponsoring international students",
+      "url": "https://businessday.ng/news/article/uk-to-ban-substandard-universities-from-sponsoring-international-students/",
+      "publishedAt": "2026-06-05T04:42:13.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
     {
       "id": "src.norvanreports_gh:fdgc9s",
       "sourceId": "src.norvanreports_gh",
@@ -27,6 +103,16 @@
       ]
     },
     {
+      "id": "src.myjoyonline_gh:2729ag",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Gov&#8217;t launches AgriConnect Compact to strengthen food security, create jobs, and mobilise investment",
+      "summary": "The government, with support from the World Bank Group and development partners, has launched its AgriConnect Compact.",
+      "url": "https://www.myjoyonline.com/govt-launches-agriconnect-compact-to-strengthen-food-security-create-jobs-and-mobilise-investment/",
+      "publishedAt": "2026-06-05T04:08:00.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
       "id": "src.norvanreports_gh:1jy2wyz",
       "sourceId": "src.norvanreports_gh",
       "title": "MTN Ghana Leads GSE Turnover as Market Trades GHS 3.88m",
@@ -39,12 +125,36 @@
       ]
     },
     {
+      "id": "src.norvanreports_gh:1nfp7oz",
+      "sourceId": "src.norvanreports_gh",
+      "title": "When a Three-Bedroom House Costs GHS 1.5 Million, Who Is Accra Building For?",
+      "summary": "When a Three-Bedroom House Costs GHS 1.5 Million, Who Is Accra Building For? Accra’s housing market may be booming, but the city is increasingly building homes that ordinary Ghanaian families cannot afford, real estate developer Curtis Tetteh Djaba has warned. In a thought-provoking article titled “The developer’s dilemma: When a three-bedroom house costs GHS 1.5 [&#8230;]",
+      "url": "https://norvanreports.com/when-a-three-bedroom-house-costs-ghs-1-5-million-who-is-accra-building-for/",
+      "publishedAt": "2026-06-05T04:03:42.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
       "id": "src.norvanreports_gh:1eozate",
       "sourceId": "src.norvanreports_gh",
       "title": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime",
       "summary": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime Ghana Link Network Services Ltd, operators of the Integrated Customs Management System, has rejected recent allegations that the ICUMS platform is dysfunctional, describing the claims as false, misleading and unsupported by evidence. In a strongly worded statement issued by its Public Relations Department on [&#8230;]",
       "url": "https://norvanreports.com/ghana-link-fires-back-at-icums-critics-demands-evidence-of-downtime/",
       "publishedAt": "2026-06-05T04:00:16.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
+      "id": "src.myjoyonline_gh:2ustyi",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "The world’s mining winners don’t sit back &#8211; Steve Manteaw backs bigger Ghanaian stake in mining",
+      "summary": "Policy analyst and Extractive Industries Transparency Initiative (EITI) expert Dr Steve Manteaw has thrown his support behind efforts to increase Ghanaian participation in the mining sector.",
+      "url": "https://www.myjoyonline.com/the-worlds-mining-winners-dont-sit-back-steve-manteaw-backs-bigger-ghanaian-stake-in-mining/",
+      "publishedAt": "2026-06-05T03:59:00.000Z",
       "language": "en",
       "countryCodes": [
         "GH"
@@ -267,6 +377,18 @@
       "language": "en",
       "countryCodes": [
         "NG"
+      ]
+    },
+    {
+      "id": "src.ethiopianmonitor_et:zdnufx",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "MPs Ratify Bilateral Air Transport Deals with 3 African nations, Bangladesh",
+      "summary": "ADDIS ABABA &#8211; The House of People’s Representatives (HoPR) has ratified bilateral air transport service agreements concluded with three African countries and Bangladesh. Fethi Mahdi (PhD), deputy chair",
+      "url": "https://ethiopianmonitor.com/2026/06/04/mps-ratify-bilateral-air-transport-deals-with-3-african-nations-bangladesh/",
+      "publishedAt": "2026-06-04T22:25:24.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
       ]
     },
     {
@@ -1689,6 +1811,18 @@
       ]
     },
     {
+      "id": "src.ethiopianmonitor_et:t064il",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "Ethiopia Reaches Staff-Level Deal with IMF to unlock $468 million loan",
+      "summary": "Ethiopia has reached a staff level agreement with the International Monetary Fund (IMF) on the fifth review of its $3.4 billion economic program, the fund said on Wednesday,",
+      "url": "https://ethiopianmonitor.com/2026/06/03/ethiopia-reaches-staff-level-deal-to-unlock-468-million-loan/",
+      "publishedAt": "2026-06-03T20:25:12.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
+      ]
+    },
+    {
       "id": "src.myjoyonline_gh:1ltlvg3",
       "sourceId": "src.myjoyonline_gh",
       "title": "Forests are now investment assets, not just conservation assets – Elikem Kotoko",
@@ -1749,6 +1883,18 @@
       ]
     },
     {
+      "id": "src.ethiopianmonitor_et:izenmu",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "Election Conducted Peacefully Despite challenges: AU, Igad Observers",
+      "summary": "ADDIS ABABA &#8211; Ethiopia&#8217;s seventh general election, held on Monday, was marked by high voter turnout as well as orderly and peaceful participation, according to preliminary reports by",
+      "url": "https://ethiopianmonitor.com/2026/06/03/election-conducted-peacefully-despite-challenges-au-igad-observers/",
+      "publishedAt": "2026-06-03T19:10:28.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
+      ]
+    },
+    {
       "id": "src.premiumtimes_ng:1uhoe77",
       "sourceId": "src.premiumtimes_ng",
       "title": "CBN approves conversion of Abbey Mortgage Bank to regional commercial bank",
@@ -1758,6 +1904,18 @@
       "language": "en",
       "countryCodes": [
         "NG"
+      ]
+    },
+    {
+      "id": "src.ethiopianmonitor_et:1rrryah",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "Ethiopian Airlines Set to Resume Flights to Kuwait",
+      "summary": "Ethiopian Airlines is set to resume its passenger flight services to Kuwait in mid July after months of hiatus caused by the conflict in the Middle East. The",
+      "url": "https://ethiopianmonitor.com/2026/06/03/ethiopian-airlines-set-to-resume-flights-to-kuwait/",
+      "publishedAt": "2026-06-03T18:24:28.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
       ]
     },
     {
@@ -2309,6 +2467,16 @@
       "countryCodes": []
     },
     {
+      "id": "src.ethiopianmonitor_et:19nsfi1",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "Gold Surpasses U.S. Treasuries, Euro in Global Official Reserves: ECB",
+      "summary": "FRANKFURT &#8211; Gold became the largest component of global official reserves in 2025, surpassing holdings of U.S. Treasuries and the euro as rising prices boosted its share, the",
+      "url": "https://ethiopianmonitor.com/2026/06/02/gold-surpasses-u-s-treasuries-euro-in-global-official-reserves-ecb/",
+      "publishedAt": "2026-06-02T23:09:20.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
       "id": "src.myjoyonline_gh:1iu2cjx",
       "sourceId": "src.myjoyonline_gh",
       "title": "London mayor backs social media ban for under-16s",
@@ -2601,6 +2769,18 @@
       "countryCodes": []
     },
     {
+      "id": "src.ethiopianmonitor_et:dg0k32",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "Ethiopian Airlines to Start Direct Flights to Mauritius",
+      "summary": "Ethiopian Airlines Group is set to launch a new direct passenger flight service to Port Louis, Mauritius, further boosting regional connectivity. On Monday, Africa’s largest carrier announced the",
+      "url": "https://ethiopianmonitor.com/2026/06/02/ethiopian-airlines-to-start-direct-flights-to-mauritius/",
+      "publishedAt": "2026-06-02T07:35:42.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
+      ]
+    },
+    {
       "id": "src.standardmedia_ke:s74x2k",
       "sourceId": "src.standardmedia_ke",
       "title": "China cites ancient ties, pledges deeper cooperation with Kenya",
@@ -2610,6 +2790,18 @@
       "language": "en",
       "countryCodes": [
         "KE"
+      ]
+    },
+    {
+      "id": "src.ethiopianmonitor_et:1hpycn4",
+      "sourceId": "src.ethiopianmonitor_et",
+      "title": "Ethiopia’s Debt Restructuring Talks with Private Bondholders Hit Deadlock",
+      "summary": "Ethiopia’s negotiations with the private bondholders hit a deadlock due to a disagreement over newly proposed terms for debt restructuring. The Ministry of Finance announced that the end",
+      "url": "https://ethiopianmonitor.com/2026/06/02/ethiopias-debt-restructuring-talks-with-private-bondholders-hit-deadlock/",
+      "publishedAt": "2026-06-02T07:00:00.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
       ]
     },
     {
@@ -2657,16 +2849,6 @@
       "countryCodes": [
         "NG"
       ]
-    },
-    {
-      "id": "src.addisfortune_et:q1n7ui",
-      "sourceId": "src.addisfortune_et",
-      "title": "Electoral Chief Reports 74pc Turnout, Security Closures, Ballot Irregularities",
-      "summary": "Melatewerk Hailu, chief of the national electoral board, disclosed an election day defined by three competing realities of high turnout, security-related disruption, and irregularities serious...",
-      "url": "https://addisfortune.news/electoral-chief-reports-74pc-turnout-security-closures-ballot-irregularities",
-      "publishedAt": "2026-06-02T05:03:38.000Z",
-      "language": "en",
-      "countryCodes": []
     }
   ]
 }

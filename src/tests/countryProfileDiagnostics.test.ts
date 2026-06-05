@@ -330,3 +330,69 @@ describe('Comtrade rate-limit handling', () => {
     expect(maxActive).toBe(1)
   })
 })
+
+describe('Comtrade product ranking (dedupe by HS code)', () => {
+  const ctxFor = (fetch: ReturnType<typeof vi.fn>): ConnectorContext => ({
+    fetch: fetch as unknown as FetchLike,
+    config: { comtradeApiKey: 'k' },
+    now,
+  })
+
+  it('collapses duplicate HS codes into one category, summing value for the ranking', async () => {
+    // 27 appears twice (30e9 + 30e9 = 60e9). Per row it would lose to 71 (50e9) and could
+    // even appear twice in the list; aggregated, it is one entry and outranks 71.
+    const rows: CRow[] = [
+      { cmdCode: '27', cmdDesc: 'Mineral fuels and oils', primaryValue: 30e9, refYear: 2023 },
+      { cmdCode: '27', cmdDesc: 'Mineral fuels and oils', primaryValue: 30e9, refYear: 2023 },
+      { cmdCode: '71', cmdDesc: 'Pearls and precious stones', primaryValue: 50e9, refYear: 2023 },
+    ]
+    const result = await fetchComtradeTopProducts(
+      ctxFor(vi.fn(async () => comtradeResponse(rows))),
+      '566',
+      'X',
+      3,
+      {},
+    )
+    expect(result?.productCodes).toEqual(['27', '71'])
+    expect(result?.products).toEqual(['mineral fuels and oils', 'pearls and precious stones'])
+  })
+
+  it('topN returns unique product codes when duplicates exceed topN', async () => {
+    const rows: CRow[] = [
+      { cmdCode: '27', cmdDesc: 'Fuels', primaryValue: 10e9, refYear: 2023 },
+      { cmdCode: '27', cmdDesc: 'Fuels', primaryValue: 9e9, refYear: 2023 },
+      { cmdCode: '84', cmdDesc: 'Machinery', primaryValue: 8e9, refYear: 2023 },
+      { cmdCode: '84', cmdDesc: 'Machinery', primaryValue: 7e9, refYear: 2023 },
+      { cmdCode: '87', cmdDesc: 'Vehicles', primaryValue: 6e9, refYear: 2023 },
+      { cmdCode: '10', cmdDesc: 'Cereals', primaryValue: 1e9, refYear: 2023 },
+    ]
+    const result = await fetchComtradeTopProducts(
+      ctxFor(vi.fn(async () => comtradeResponse(rows))),
+      '566',
+      'M',
+      3,
+      {},
+    )
+    expect(result?.productCodes).toHaveLength(3)
+    expect(new Set(result?.productCodes).size).toBe(3) // all unique
+    expect(result?.productCodes).toEqual(['27', '84', '87']) // top 3 by summed value
+  })
+
+  it('fails closed (null, empty) when no row carries a usable HS code', async () => {
+    // Rows pass isProductRow (valid desc + value) but carry no cmdCode -> nothing to rank.
+    const rows = [
+      { cmdDesc: 'Mystery good', primaryValue: 5e9, refYear: 2023 },
+      { cmdDesc: 'Another good', primaryValue: 4e9, refYear: 2023 },
+    ] as unknown as CRow[]
+    const diags: ComtradeFlowDiagnostic[] = []
+    const result = await fetchComtradeTopProducts(
+      ctxFor(vi.fn(async () => comtradeResponse(rows))),
+      '566',
+      'X',
+      3,
+      { onDiag: (d) => diags.push(d) },
+    )
+    expect(result).toBeNull()
+    expect(diags.at(-1)?.outcome).toBe('empty')
+  })
+})

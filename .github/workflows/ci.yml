@@ -9,6 +9,12 @@ on:
   pull_request:
     branches: [main]
 
+# Opt JavaScript-based actions (checkout, setup-node) into the Node 24 Actions
+# runtime, silencing the runner's Node-version deprecation warning. Runtime-only:
+# the trust gates (verify + build) are unchanged.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   verify:
     runs-on: ubuntu-latest

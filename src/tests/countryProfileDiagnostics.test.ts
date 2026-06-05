@@ -3,6 +3,12 @@ import {
   fetchCountryProfiles,
   type ProfileTradeDiagnostic,
 } from '../server/connectors/countryProfile'
+import {
+  fetchComtradeTopProducts,
+  createComtradeLimiter,
+  createComtradeRateLimit,
+  type ComtradeFlowDiagnostic,
+} from '../server/connectors/comtrade'
 import type { ConnectorContext, FetchLike } from '../server/connectors/types'
 
 const now = () => '2026-06-04T06:00:00.000Z'
@@ -47,6 +53,9 @@ const NG_EXPORTS: Row[] = [
 ]
 const NG_IMPORTS: Row[] = [['52710', 'Refined Petroleum', 2024, 21e9]]
 
+// Instant Comtrade rate limit for tests: no inter-request gap, no real backoff sleeps.
+const instantRate = () => createComtradeRateLimit({ minGapMs: 0, sleep: async () => {} })
+
 // Build NG's profile with a routed fetch (WB backbone always OK; OEC routed per test),
 // no Comtrade key, collecting the trade-enrichment diagnostics.
 async function runNG(oecFetch: (url: string) => Response) {
@@ -55,7 +64,7 @@ async function runNG(oecFetch: (url: string) => Response) {
     url.includes('worldbank.org') ? wbResponse(60) : oecFetch(url),
   )
   const ctx: ConnectorContext = { fetch: fetch as unknown as FetchLike, config: {}, now }
-  const profiles = await fetchCountryProfiles(ctx, [NG], (d) => diags.push(d))
+  const profiles = await fetchCountryProfiles(ctx, [NG], (d) => diags.push(d), instantRate())
   return { profile: profiles[0], diags: diags.filter((d) => d.code === 'NG') }
 }
 const has = (d: ProfileTradeDiagnostic[], stage: string, outcome: string) =>
@@ -104,6 +113,15 @@ const COMTRADE_MALFORMED = {
 // Find one diagnostic by stage (+ optional flow) to assert a per-flow outcome / detail.
 const findD = (d: ProfileTradeDiagnostic[], stage: string, flow?: 'X' | 'M') =>
   d.find((x) => x.stage === stage && x.flow === flow)
+// A 429 (rate-limited) response; optional Retry-After header (seconds, as a string).
+const comtrade429 = (retryAfter: string | null = null) =>
+  ({
+    ok: false,
+    status: 429,
+    headers: { get: (k: string) => (k.toLowerCase() === 'retry-after' ? retryAfter : null) },
+    json: async () => ({}),
+    text: async () => '',
+  }) as unknown as Response
 
 // Like runNG but with an explicit config (e.g. a Comtrade key) and a full URL router, so
 // the Comtrade-primary path and the Comtrade/OEC fallbacks can be exercised. The World
@@ -114,7 +132,7 @@ async function runNGRouted(config: ConnectorContext['config'], route: (url: stri
     url.includes('worldbank.org') ? wbResponse(60) : route(url),
   )
   const ctx: ConnectorContext = { fetch: fetch as unknown as FetchLike, config, now }
-  const profiles = await fetchCountryProfiles(ctx, [NG], (d) => diags.push(d))
+  const profiles = await fetchCountryProfiles(ctx, [NG], (d) => diags.push(d), instantRate())
   return { profile: profiles[0], diags: diags.filter((d) => d.code === 'NG'), fetch }
 }
 
@@ -221,5 +239,94 @@ describe('country-profile trade-enrichment diagnostics', () => {
     expect(profile.importDependence).toBeUndefined()
     expect(findD(diags, 'comtrade', 'X')?.outcome).toBe('malformed')
     expect(findD(diags, 'comtrade', 'M')?.outcome).toBe('malformed')
+  })
+})
+
+describe('Comtrade rate-limit handling', () => {
+  const keyedCtx = (fetch: ReturnType<typeof vi.fn>): ConnectorContext => ({
+    fetch: fetch as unknown as FetchLike,
+    config: { comtradeApiKey: 'k' },
+    now,
+  })
+
+  it('429 then success: retries and populates with src.comtrade provenance + metadata', async () => {
+    let n = 0
+    const fetch = vi.fn(async () => {
+      n += 1
+      return n < 3 ? comtrade429('0') : comtradeResponse(CT_EXPORTS)
+    })
+    const diags: ComtradeFlowDiagnostic[] = []
+    const result = await fetchComtradeTopProducts(keyedCtx(fetch), '566', 'X', 3, {
+      onDiag: (d) => diags.push(d),
+      rate: { sleep: async () => {}, maxAttempts: 4, backoffBaseMs: 1 },
+    })
+    expect(fetch).toHaveBeenCalledTimes(3)
+    expect(result?.products).toEqual(['mineral fuels and oils', 'oil seeds'])
+    expect(result?.sourceId).toBe('src.comtrade')
+    expect(result?.productCodes).toEqual(['27', '12'])
+    expect(result?.flowCode).toBe('X')
+    expect(result?.classification).toBe('HS')
+    expect(diags.at(-1)).toMatchObject({ flow: 'X', outcome: 'populated', attempts: 3 })
+  })
+
+  it('persistent 429: omits the field and reports status + attempts', async () => {
+    const fetch = vi.fn(async () => comtrade429('0'))
+    const diags: ComtradeFlowDiagnostic[] = []
+    const result = await fetchComtradeTopProducts(keyedCtx(fetch), '566', 'M', 3, {
+      onDiag: (d) => diags.push(d),
+      rate: { sleep: async () => {}, maxAttempts: 3, backoffBaseMs: 1 },
+    })
+    expect(result).toBeNull()
+    expect(fetch).toHaveBeenCalledTimes(3)
+    expect(diags).toEqual([{ flow: 'M', outcome: 'non_ok', status: 429, attempts: 3 }])
+  })
+
+  it('honours Retry-After before retrying', async () => {
+    const waits: number[] = []
+    let n = 0
+    const fetch = vi.fn(async () => {
+      n += 1
+      return n < 2 ? comtrade429('7') : comtradeResponse(CT_IMPORTS)
+    })
+    await fetchComtradeTopProducts(keyedCtx(fetch), '566', 'M', 3, {
+      rate: {
+        sleep: async (ms) => {
+          waits.push(ms)
+        },
+        maxAttempts: 4,
+        backoffBaseMs: 1,
+      },
+    })
+    expect(waits[0]).toBe(7000) // Retry-After: 7 honoured, not the 1ms backoff base
+  })
+
+  it('no-key path skips Comtrade cleanly (no fetch, skipped_no_key)', async () => {
+    const fetch = vi.fn(async () => comtradeResponse(CT_EXPORTS))
+    const diags: ComtradeFlowDiagnostic[] = []
+    const result = await fetchComtradeTopProducts(
+      { fetch: fetch as unknown as FetchLike, config: {}, now },
+      '566',
+      'X',
+      3,
+      { onDiag: (d) => diags.push(d) },
+    )
+    expect(result).toBeNull()
+    expect(fetch).not.toHaveBeenCalled()
+    expect(diags).toEqual([{ flow: 'X', outcome: 'skipped_no_key' }])
+  })
+
+  it('createComtradeLimiter runs scheduled tasks one at a time (concurrency 1)', async () => {
+    const limiter = createComtradeLimiter(0, async () => {})
+    let active = 0
+    let maxActive = 0
+    const task = () =>
+      limiter.schedule(async () => {
+        active += 1
+        maxActive = Math.max(maxActive, active)
+        await Promise.resolve()
+        active -= 1
+      })
+    await Promise.all([task(), task(), task(), task()])
+    expect(maxActive).toBe(1)
   })
 })

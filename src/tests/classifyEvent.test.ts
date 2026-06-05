@@ -55,3 +55,37 @@ describe('classifyEvent — PR-3 targeted economic keywords', () => {
     )
   })
 })
+
+describe('classifyEvent: policy_rate_decision precision (no bare central-bank false positives)', () => {
+  it('does not classify a bare central-bank mention as a rate decision', () => {
+    // The Access Bank appointment story only names "Bank of Ghana" for regulatory
+    // approval; there is no rate / monetary-policy language.
+    expect(
+      classifyEvent(
+        ev(
+          'Access Bank strengthens leadership team with two executive appointments',
+          'The appointments are subject to regulatory approval by the Bank of Ghana.',
+        ),
+      ),
+    ).toBe('unclassified')
+    expect(classifyEvent(ev('Bank of Ghana grants Access Bank regulatory approval'))).toBe(
+      'unclassified',
+    )
+    expect(classifyEvent(ev('Reserve Bank governor opens a new regional headquarters'))).toBe(
+      'unclassified',
+    )
+  })
+
+  it('still classifies genuine rate / monetary-policy events', () => {
+    for (const title of [
+      'Bank of Ghana cuts policy rate',
+      'MPC holds policy rate',
+      'CBK raises benchmark rate',
+      'central bank hikes interest rates',
+      'Reserve Bank adjusts the repo rate',
+      'Ghana Reference Rate falls to 10%',
+    ]) {
+      expect(classifyEvent(ev(title)), title).toBe('policy_rate_decision')
+    }
+  })
+})

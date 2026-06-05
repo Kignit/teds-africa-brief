@@ -10,10 +10,14 @@ const RULES: { type: ShockType; pattern: RegExp }[] = [
   },
   {
     type: 'policy_rate_decision',
+    // Match actual rate / monetary-policy LANGUAGE, never a bare central-bank name: a
+    // story that merely names "Bank of Ghana" / "central bank" (a lender receiving
+    // regulatory approval, a governor opening a building) is NOT a rate decision.
     // interest[- ]rates? also covers "interest-rate decision"; reference rate is a
-    // monetary benchmark (e.g. the Ghana Reference Rate).
+    // monetary benchmark (the Ghana Reference Rate); policy/repo/benchmark rate are the
+    // standard policy instruments; MPC is the deciding body.
     pattern:
-      /\b(policy rate|repo rate|\bmpc\b|reserve bank|central bank|interest[- ]rates?|reference rate|sarb|cbk|cbn|bank of ghana)\b/i,
+      /\b(monetary policy|policy rate|repo rate|reference rate|benchmark rate|interest[- ]rates?|\bmpc\b)\b/i,
   },
   {
     type: 'inflation_shock',

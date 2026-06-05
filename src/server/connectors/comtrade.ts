@@ -225,12 +225,24 @@ export async function fetchComtradeTopProducts(
 
     const latestYear = rows.reduce((max, r) => Math.max(max, rowYear(r)), 0)
     const ofYear = latestYear > 0 ? rows.filter((r) => rowYear(r) === latestYear) : rows
-    const top = [...ofYear]
-      .sort((a, b) => (b.primaryValue ?? 0) - (a.primaryValue ?? 0))
-      .slice(0, topN)
-      .filter((r) => (r.cmdDesc ?? '').trim().length > 0)
-    const products = top.map((r) => (r.cmdDesc ?? '').trim().toLowerCase())
-    const productCodes = top.map((r) => (r.cmdCode ?? '').trim()).filter((c) => c.length > 0)
+
+    // Aggregate duplicate HS codes within the latest year BEFORE ranking: the API can
+    // return several rows for the same cmdCode, which would otherwise repeat a category in
+    // the top list. Sum their value so each commodity code is ranked and listed exactly
+    // once (keeping the first description seen for that code). Rows without a usable code
+    // are dropped — nothing is fabricated.
+    const byCode = new Map<string, { cmdCode: string; cmdDesc: string; value: number }>()
+    for (const r of ofYear) {
+      const cmdCode = (r.cmdCode ?? '').trim()
+      const cmdDesc = (r.cmdDesc ?? '').trim()
+      if (cmdCode.length === 0 || cmdDesc.length === 0) continue
+      const existing = byCode.get(cmdCode)
+      if (existing) existing.value += r.primaryValue ?? 0
+      else byCode.set(cmdCode, { cmdCode, cmdDesc, value: r.primaryValue ?? 0 })
+    }
+    const top = [...byCode.values()].sort((a, b) => b.value - a.value).slice(0, topN)
+    const products = top.map((t) => t.cmdDesc.toLowerCase())
+    const productCodes = top.map((t) => t.cmdCode)
     if (products.length === 0 || productCodes.length === 0 || latestYear === 0) {
       onDiag?.({ flow, outcome: 'empty', attempts })
       return null

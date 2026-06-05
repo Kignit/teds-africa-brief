@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T07:17:13.361Z",
+  "generatedAt": "2026-06-05T07:57:01.623Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -143,6 +143,48 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_why_nigeria_8217_s_stock_market_is_falling_szh3qg",
+        "title": "Why Nigeria&#8217;s stock market is falling – and when analysts expect a rebound",
+        "summary": "For four consecutive trading sessions since June 1, 2026 — the very day Nigeria's capital market celebrated its historic transition to the T+1 settlement cycle, the NGX All-Share Index has fallen without interruption, shedding N5.14 trillion in market capitalisation from N160.50 trillion on Monday's open to N155.36 trillion at Thursday's close. \nThe post Why Nigeria&#8217;s stock market is falling",
+        "occurredAt": "2026-06-05T07:50:29.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "why nigeria 8217 s stock market is falling",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1k2qfn3"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cbi_insurtech_revolution_could_drive_insurance_adoption_among_oi078r",
+        "title": "CBI: Insurtech revolution could drive Insurance adoption among 200 million Nigerians by 2030",
+        "summary": "The National Insurance Commission’s (NAICOM) push to digitize insurance services through Insurtech could bring more than 200 million Nigerians into the insurance ecosystem by the year 2030.  \nThe post CBI: Insurtech revolution could drive Insurance adoption among 200 million Nigerians by 2030 appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T07:18:26.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "cbi insurtech revolution could drive insurance adoption among",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:n9p2fz"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_10th_beauty_cosmetics_and_wellness_west_africa_exhibition_1l7mrzd",
         "title": "10th Beauty, Cosmetics and Wellness West Africa exhibition expected to deepen trade links, support industry growth",
@@ -5496,27 +5538,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_ethiopian_airlines_to_start_direct_flights_to_mauritius_1llisfc",
-        "title": "Ethiopian Airlines to Start Direct Flights to Mauritius",
-        "summary": "Ethiopian Airlines Group is set to launch a new direct passenger flight service to Port Louis, Mauritius, further boosting regional connectivity. On Monday, Africa’s largest carrier announced the",
-        "occurredAt": "2026-06-02T07:35:42.000Z",
-        "countryCodes": [
-          "ET"
-        ],
-        "topic": "ethiopian airlines to start direct flights to mauritius",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.ethiopianmonitor_et:dg0k32"
-          ],
-          "sourceIds": [
-            "src.ethiopianmonitor_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -5531,8 +5552,28 @@
             ],
             "asOf": "2022-12-31T00:00:00.000Z",
             "indicator": "DT.DOD.DECT.GN.ZS"
+          },
+          "importDependence": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2023-12-31T00:00:00.000Z",
+            "reporterCode": "231",
+            "flowCode": "M",
+            "classification": "HS",
+            "productCodes": [
+              "27",
+              "84",
+              "85"
+            ],
+            "refYear": 2023
           }
-        }
+        },
+        "importDependence": [
+          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
+          "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
+          "electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles"
+        ]
       },
       {
         "code": "KE",

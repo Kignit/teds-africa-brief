@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T09:41:27.311Z",
+  "generatedAt": "2026-06-05T09:52:43.418Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -143,6 +143,48 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_unlocking_diaspora_remittances_for_investment_growth_1myjr2w",
+        "title": "Unlocking diaspora remittances for investment growth",
+        "summary": "By Dr. Richmond Akwasi Atuahene Diaspora remittances have become one of Africa’s most important sources of external financing, exceeding foreign direct investment (FDI) and official development assistance (ODA) in several countries, including Ghana. According to World Bank estimates, formal remittances to Africa reached about US$86 billion in 2019, while broader estimates including informal and in",
+        "occurredAt": "2026-06-05T09:44:01.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "unlocking diaspora remittances for investment growth",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1vo8l9s"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_thailand_donates_22_000_worth_of_rice_to_rlieln",
+        "title": "Thailand donates $22,000 worth of rice to tackle food insecurity in Nigeria",
+        "summary": "Thailand has donated 12 metric tonnes of rice valued at $22,000 to support communities affected by food insecurity in Nigeria, as humanitarian agencies warn of worsening hunger conditions across the country. \nThe post Thailand donates $22,000 worth of rice to tackle food insecurity in Nigeria   appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T09:43:38.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "thailand donates 22 000 worth of rice to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1ft7i5y"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_transforming_ghana_into_singapore_of_africa_why_domestic_186zv9h",
         "title": "Transforming Ghana into “Singapore of Africa”: Why domestic private capital reforms matter",
@@ -4865,6 +4907,25 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_joburg_audit_setback_exposes_r9_5bn_bad_debt_1aasz82",
+        "title": "Joburg audit setback exposes R9.5bn bad debt burden",
+        "summary": "",
+        "occurredAt": "2026-06-03T11:01:28.000Z",
+        "countryCodes": [],
+        "topic": "joburg audit setback exposes r9 5bn bad debt",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1da0spa"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

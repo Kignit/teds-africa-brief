@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-06-05T09:41:27.311Z",
+  "updatedAt": "2026-06-05T09:52:43.418Z",
   "windowMs": 259200000,
   "items": [
+    {
+      "id": "src.bft_gh:1vo8l9s",
+      "sourceId": "src.bft_gh",
+      "title": "Unlocking diaspora remittances for investment growth",
+      "summary": "By Dr. Richmond Akwasi Atuahene Diaspora remittances have become one of Africa’s most important sources of external financing, exceeding foreign direct investment (FDI) and official development assistance (ODA) in several countries, including Ghana. According to World Bank estimates, formal remittances to Africa reached about US$86 billion in 2019, while broader estimates including informal and in",
+      "url": "https://thebftonline.com/2026/06/05/unlocking-diaspora-remittances-for-investment-growth/",
+      "publishedAt": "2026-06-05T09:44:01.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:1ft7i5y",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Thailand donates $22,000 worth of rice to tackle food insecurity in Nigeria",
+      "summary": "Thailand has donated 12 metric tonnes of rice valued at $22,000 to support communities affected by food insecurity in Nigeria, as humanitarian agencies warn of worsening hunger conditions across the country. \nThe post Thailand donates $22,000 worth of rice to tackle food insecurity in Nigeria   appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/06/05/thailand-donates-22000-worth-of-rice-to-tackle-food-insecurity-in-nigeria/",
+      "publishedAt": "2026-06-05T09:43:38.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
     {
       "id": "src.myjoyonline_gh:j8ax3h",
       "sourceId": "src.myjoyonline_gh",
@@ -2716,6 +2740,16 @@
       "summary": "Fresh tomato prices have emerged as one of the most significant drivers of food inflation in May 2026, following sharp increases linked to supply disruptions and regional trade constraints. Government Statistician, Dr. Alhassan Iddrisu revealed that fresh tomato prices rose by 35.8% year-on-year and surged by a striking 38.8% month-on-month between April and May 2026. [&#8230;]",
       "url": "https://www.myjoyonline.com/supply-disruptions-push-fresh-tomato-prices-up-by-35-8-in-may-2026/",
       "publishedAt": "2026-06-03T11:06:39.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.biznews_za:1da0spa",
+      "sourceId": "src.biznews_za",
+      "title": "Joburg audit setback exposes R9.5bn bad debt burden",
+      "summary": "",
+      "url": "https://www.biznews.com/sarenewal/joburg-r95bn-bad-debt-burden",
+      "publishedAt": "2026-06-03T11:01:28.000Z",
       "language": "en",
       "countryCodes": []
     },

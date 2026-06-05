@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T12:01:05.236Z",
+  "generatedAt": "2026-06-05T12:44:48.174Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -14,38 +14,13 @@
         "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
         "claimIds": [
           "claim_0_0",
-          "claim_1_0",
-          "claim_2_0"
+          "claim_1_0"
         ]
       }
     ],
     "claims": [
       {
         "id": "claim_0_0",
-        "kind": "causal",
-        "text": "GH: the policy-rate decision is positive via growth and households",
-        "figureIds": [
-          "fig_fx.GHS_USD_4"
-        ],
-        "eventIds": [
-          "evt_access_bank_strengthens_leadership_team_with_two_executive_6gm7sd"
-        ],
-        "profileFields": [],
-        "profileSourceIds": [],
-        "methodologyIds": [
-          "method.causal.policy_rate_decision.v1"
-        ],
-        "countryCode": "GH",
-        "tone": "pos",
-        "channels": [
-          "growth",
-          "consumers"
-        ],
-        "shockType": "policy_rate_decision",
-        "verified": true
-      },
-      {
-        "id": "claim_1_0",
         "kind": "causal",
         "text": "GH: deeper trade integration is positive via the trade balance and growth",
         "figureIds": [],
@@ -71,7 +46,7 @@
         "verified": true
       },
       {
-        "id": "claim_2_0",
+        "id": "claim_1_0",
         "kind": "causal",
         "text": "GH: the debt and fiscal event is positive via debt service and fiscal revenue",
         "figureIds": [],
@@ -195,6 +170,269 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_the_african_journey_with_the_clock_the_challenge_rsb2wf",
+        "title": "The African journey with the clock: The challenge of time precision",
+        "summary": "By John S. QUAISIE In today’s African society, with all the benefits of time gadgets and the advantage of modern technology, many of us are finding it difficult to keep pace with precise time schedules. The common excuse Many public and private workers report to work late, with common excuses such as: I waited for [&#8230;]\nThe post The African journey with the clock: The challenge of time precisi",
+        "occurredAt": "2026-06-05T12:20:55.000Z",
+        "countryCodes": [],
+        "topic": "the african journey with the clock the challenge",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:14t7mj2"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_xenophobia_in_south_africa_a_betrayal_of_african_dka77u",
+        "title": "Xenophobia in South Africa: A betrayal of African unity",
+        "summary": "By Peter Justice GARIBA For decades, Africa has spoken passionately about unity, solidarity, and the shared destiny of its people. From the struggle against colonialism to the fight against apartheid, Africans stood together, believing that the freedom of one nation was tied to the freedom of all. It is therefore deeply painful and unacceptable that, [&#8230;]\nThe post Xenophobia in South Africa: ",
+        "occurredAt": "2026-06-05T12:19:06.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "xenophobia in south africa a betrayal of african",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:zwehj4"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_talstack_joins_idice_startup_bridge_founders_lab_as_uw1ook",
+        "title": "Talstack Joins iDICE Startup Bridge Founders Lab as Learning Platform Partner",
+        "summary": "Talstack has joined the iDICE Startup Bridge Founders Lab as its learning platform partner, providing the learning infrastructure and curriculum expertise to support a 12-week structured entrepreneurship programme for 185 early-stage Nigerian founders. The first cohort commenced in May 2026. The Founders Lab is designed for founders at the idea, prototype or early-MVP stage who [&#8230;]\nThe post ",
+        "occurredAt": "2026-06-05T12:18:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "talstack joins idice startup bridge founders lab as",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:zgzgqa"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_abigail_cudjoe_of_deloitte_sweeps_top_honours_at_16kkfwe",
+        "title": "Abigail Cudjoe of Deloitte sweeps top honours at CITG February 2026 graduation",
+        "summary": "An Associate at Deloitte Ghana, Abigail Cudjoe, has been adjudged the Overall Best Student in the February 2026 graduating class of the Chartered Institute of Taxation Ghana (CITG). Not only was she adjudged the Overall Best Student, but she also emerged as the Best Student in Advanced Taxation Practice and the Best Student in Tax [&#8230;]",
+        "occurredAt": "2026-06-05T12:17:27.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "abigail cudjoe of deloitte sweeps top honours at",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:ehxpld"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_arla_foods_marks_world_milk_day_with_nutrition_ss3mr6",
+        "title": "Arla Foods marks World Milk Day with Nutrition drive",
+        "summary": "For the hundreds of students who gathered at the Aggrey Memorial AME Zion Senior High School in Cape Coast, this year’s World Milk Day celebration was more than a ceremony. It was a reminder of the important role nutrition plays in helping young people learn, grow and achieve their dreams. Observed globally on June 1, [&#8230;]\nThe post Arla Foods marks World Milk Day with Nutrition drive appeared",
+        "occurredAt": "2026-06-05T12:16:15.000Z",
+        "countryCodes": [],
+        "topic": "arla foods marks world milk day with nutrition",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:187xo8c"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_artificial_intelligence_in_the_data_driven_world_317v1n",
+        "title": "Artificial Intelligence in the data driven world",
+        "summary": "By Prof. Samuel LARTEY, www.pefghana.org Artificial Intelligence has become one of the most powerful forces shaping the contemporary digital era. It represents a major shift in human civilisation where machines are no longer limited to executing instructions but are increasingly capable of learning, reasoning and adapting. Artificial Intelligence refers to the simulation of human intelligence in [",
+        "occurredAt": "2026-06-05T12:13:53.000Z",
+        "countryCodes": [],
+        "topic": "artificial intelligence in the data driven world",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:f1wrkp"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_today_is_world_environment_day_d9ytlz",
+        "title": "Today is World Environment Day",
+        "summary": "By Ama Kudom-Agyemang As Ghana joins the global community to mark World Environment Day – TODAY, focusing on climate change, Adenta’s natural water holes, the municipality’s hidden climate asserts come into context. This context highlights a known or unknown test the Assembly is currently facing of whether these water holes can be preserved as shields [&#8230;]\nThe post Today is World Environment ",
+        "occurredAt": "2026-06-05T12:07:17.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "today is world environment day",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:zf06bw"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bopp_spends_gh_107mi_on_3_030_hectares_g3ud1a",
+        "title": "BOPP spends GH¢107mi on 3,030 hectares, retains RSPO Certification",
+        "summary": "By Juliet Aguiar DUGBARTEY, Takoradi Benso Oil Palm Plantation PLC has invested GH¢107 million in the development of a 3,030-hectare Smallholder and Outgrower oil palm project. Out of the total hectares planted, 1,630 hectares have reached maturity stage, with the remaining 1,400 expected to reach maturity by the end of 2026. The Outgrower Value Chain [&#8230;]\nThe post BOPP spends GH¢107mi on 3,0",
+        "occurredAt": "2026-06-05T12:04:42.000Z",
+        "countryCodes": [],
+        "topic": "bopp spends gh 107mi on 3 030 hectares",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:bpg27"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_from_import_dependency_to_food_sovereignty_1hsjo2h",
+        "title": "From import dependency to food sovereignty",
+        "summary": "By Ben Brako (koBENa BRAKO) Ghana currently finds itself at a critical crossroads regarding its food security and economic stability. Nowhere is this more evident than in the rice sector. Despite favorable ecological conditions and a robust workforce of dedicated farmers, the nation is ensnared in a &#8220;paradox of plenty&#8221;. While local warehouses and farm [&#8230;]\nThe post From import dep",
+        "occurredAt": "2026-06-05T12:04:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "from import dependency to food sovereignty",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1m4148v"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_future_of_the_pension_system_sustainability_or_t0b4a9",
+        "title": "The future of the pension System: Sustainability or crisis?",
+        "summary": "By Nana Sifa TWUM, PhD Ghana’s pension system stands at a critical crossroads. As the nation grapples with economic uncertainty, demographic shifts, evolving labour market dynamics, and rising expectations among retirees, an important question emerges: Is Ghana’s pension system sustainable, or is it heading towards a crisis? The answer lies somewhere between the two extremes. [&#8230;]\nThe post Th",
+        "occurredAt": "2026-06-05T12:03:57.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "the future of the pension system sustainability or",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:17evfmo"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_does_not_suffer_from_excessive_debt_but_1kgrpn3",
+        "title": "Africa does not suffer from excessive debt, but from a deficit of financial strategy",
+        "summary": "By Cheikh Mbacké SENE African debt has become a central topic in international economic debates. The figures are striking: an average public debt ratio approaching 65% of GDP, external debt exceeding $1.1 trillion, and annual debt servicing costs that, in several countries, absorb more resources than health or education budgets. Yet reducing the debate to [&#8230;]\nThe post Africa does not suffer ",
+        "occurredAt": "2026-06-05T12:03:54.000Z",
+        "countryCodes": [],
+        "topic": "africa does not suffer from excessive debt but",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1qeo5bf"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_digital_future_is_being_built_right_now_1hljhfl",
+        "title": "The digital future is being built right now — and your voice matters",
+        "summary": "By Alain GBEASOR Ghana has poured hundreds of millions of cedis into government technology over the past two decades. Software platforms. Data systems. Digital registries. Connectivity infrastructure. Ask any procurement officer how many of those projects are still running as intended. Then ask any citizen if they can feel the difference. The silence that follows [&#8230;]\nThe post The digital fut",
+        "occurredAt": "2026-06-05T12:03:22.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "the digital future is being built right now",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1kcw4je"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_grenada_opens_doors_to_nigerians_with_visa_free_181xxdg",
+        "title": "Grenada opens doors to Nigerians with visa-free access, eyes trade, investment boom",
+        "summary": "The Caribbean nation of Grenada has approved visa-free entry for Nigerian passport holders and is awaiting a reciprocal decision from\nread more Grenada opens doors to Nigerians with visa-free access, eyes trade, investment boom",
+        "occurredAt": "2026-06-05T12:01:36.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "grenada opens doors to nigerians with visa free",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1hi8ule"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_why_millions_still_lack_access_to_life_saving_17bbjqu",
         "title": "Why millions still lack access to life-saving medical tests",
@@ -2789,9 +3027,9 @@
         }
       },
       {
-        "id": "evt_ssnit_s_biggest_challenge_isn_t_technology_it_k232eh",
-        "title": "SSNIT’s biggest challenge isn’t technology, it’s getting Ghanaians to use it &#8211; Kwasi Afresh Biney",
-        "summary": "The Director-General of SSNIT, Kwasi Afresh Biney, says the pension scheme’s biggest challenge is no longer technology but getting more Ghanaians to embrace the digital platforms designed to make services faster and more convenient.",
+        "id": "evt_ssnit_s_biggest_challenge_isn_t_technology_it_a3wrnf",
+        "title": "SSNIT’s biggest challenge isn’t technology, it’s getting Ghanaians to use it &#8211; Kwasi Afreh Biney",
+        "summary": "The Director-General of SSNIT, Kwasi Afreh Biney, says the pension scheme’s biggest challenge is no longer technology but getting more Ghanaians to embrace the digital platforms designed to make services faster and more convenient.",
         "occurredAt": "2026-06-05T00:42:00.000Z",
         "countryCodes": [
           "GH"
@@ -2800,6 +3038,7 @@
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
+            "src.myjoyonline_gh:t9g8c0",
             "src.myjoyonline_gh:5x9r2t"
           ],
           "sourceIds": [
@@ -7478,25 +7717,6 @@
       }
     ],
     "methodologies": [
-      {
-        "id": "method.causal.policy_rate_decision.v1",
-        "name": "Policy-rate decision mechanism",
-        "version": "1.0.0",
-        "description": "A policy-rate change trades currency support against growth and borrowers.",
-        "kind": "causal",
-        "inputs": [],
-        "bands": [],
-        "shockType": "policy_rate_decision",
-        "mechanism": "A policy-rate change trades currency support against growth and borrowers.",
-        "channels": [
-          "fx",
-          "growth",
-          "consumers",
-          "debt_service"
-        ],
-        "owner": "analysis-team",
-        "status": "approved"
-      },
       {
         "id": "method.causal.trade_integration_event.v1",
         "name": "Trade-integration mechanism",

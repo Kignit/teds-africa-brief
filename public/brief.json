@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T10:26:48.118Z",
+  "generatedAt": "2026-06-05T11:14:41.474Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -13,13 +13,148 @@
         "title": "One event, divergent effects",
         "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
         "claimIds": [
-          "claim_0_0"
+          "claim_0_0",
+          "claim_0_1",
+          "claim_0_2",
+          "claim_0_3",
+          "claim_0_4",
+          "claim_1_0"
         ]
       }
     ],
     "claims": [
       {
         "id": "claim_0_0",
+        "kind": "causal",
+        "text": "ET: deeper trade integration is positive via the trade balance and growth",
+        "figureIds": [],
+        "eventIds": [
+          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
+        ],
+        "profileFields": [
+          "ET.keyExports"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.causal.trade_integration_event.v1"
+        ],
+        "countryCode": "ET",
+        "tone": "pos",
+        "channels": [
+          "trade_balance",
+          "growth"
+        ],
+        "shockType": "trade_integration_event",
+        "verified": true
+      },
+      {
+        "id": "claim_0_1",
+        "kind": "causal",
+        "text": "KE: deeper trade integration is positive via the trade balance and growth",
+        "figureIds": [],
+        "eventIds": [
+          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
+        ],
+        "profileFields": [
+          "KE.keyExports"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.causal.trade_integration_event.v1"
+        ],
+        "countryCode": "KE",
+        "tone": "pos",
+        "channels": [
+          "trade_balance",
+          "growth"
+        ],
+        "shockType": "trade_integration_event",
+        "verified": true
+      },
+      {
+        "id": "claim_0_2",
+        "kind": "causal",
+        "text": "NG: deeper trade integration is positive via the trade balance and growth",
+        "figureIds": [],
+        "eventIds": [
+          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
+        ],
+        "profileFields": [
+          "NG.keyExports"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.causal.trade_integration_event.v1"
+        ],
+        "countryCode": "NG",
+        "tone": "pos",
+        "channels": [
+          "trade_balance",
+          "growth"
+        ],
+        "shockType": "trade_integration_event",
+        "verified": true
+      },
+      {
+        "id": "claim_0_3",
+        "kind": "causal",
+        "text": "GH: deeper trade integration is positive via the trade balance and growth",
+        "figureIds": [],
+        "eventIds": [
+          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
+        ],
+        "profileFields": [
+          "GH.keyExports"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.causal.trade_integration_event.v1"
+        ],
+        "countryCode": "GH",
+        "tone": "pos",
+        "channels": [
+          "trade_balance",
+          "growth"
+        ],
+        "shockType": "trade_integration_event",
+        "verified": true
+      },
+      {
+        "id": "claim_0_4",
+        "kind": "causal",
+        "text": "ZA: deeper trade integration is positive via the trade balance and growth",
+        "figureIds": [],
+        "eventIds": [
+          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
+        ],
+        "profileFields": [
+          "ZA.keyExports"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.causal.trade_integration_event.v1"
+        ],
+        "countryCode": "ZA",
+        "tone": "pos",
+        "channels": [
+          "trade_balance",
+          "growth"
+        ],
+        "shockType": "trade_integration_event",
+        "verified": true
+      },
+      {
+        "id": "claim_1_0",
         "kind": "causal",
         "text": "GH: the debt and fiscal event is positive via debt service and fiscal revenue",
         "figureIds": [],
@@ -144,6 +279,345 @@
     ],
     "events": [
       {
+        "id": "evt_world_environment_day_green_tax_sparks_debate_ahead_xis065",
+        "title": "World Environment Day: Green Tax sparks debate ahead of July 1 rollout",
+        "summary": "As the world commemorates World Environment Day 2026, Nigeria’s planned implementation of a new Green Tax on motor vehicles has generated widespread debate among environmental advocates, economists, automobile operators, and consumers. \nThe post World Environment Day: Green Tax sparks debate ahead of July 1 rollout  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T11:13:59.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "world environment day green tax sparks debate ahead",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1scqh7f"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h",
+        "title": "Ghana Link rejects claims against ICUMS, demands evidence of system downtime",
+        "summary": "Ghana Link Network Services Limited has refuted allegations that the Integrated Customs Management System (ICUMS) is experiencing frequent downtime. According to the company, the claims are false, misleading and unsupported by evidence. In a statement, Ghana Link said recent assertions by some groups identifying themselves as civil society organisations failed to provide any verifiable proof [&#82",
+        "occurredAt": "2026-06-05T11:08:59.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana link rejects claims against icums demands evidence",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:uksyh6",
+            "src.norvanreports_gh:1eozate"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh",
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mutual_benefits_unveils_new_website_expanding_digital_access_1blsffn",
+        "title": "Mutual Benefits unveils new website, expanding digital access to insurance solutions",
+        "summary": "Mutual Benefits Assurance Plc has announced the soft launch of its newly redesigned corporate website, marking a significant milestone in\nread more Mutual Benefits unveils new website, expanding digital access to insurance solutions",
+        "occurredAt": "2026-06-05T11:06:53.000Z",
+        "countryCodes": [],
+        "topic": "mutual benefits unveils new website expanding digital access",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1owgvfu"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bmw_sa_8217_s_8216_hidden_gem_8217_1v5kxhv",
+        "title": "BMW SA&#8217;s &#8216;hidden gem&#8217; business unit employs more staff than Rosslyn plant",
+        "summary": "BMW IT Hub is projected to contribute R4bn to the SA economy this year.",
+        "occurredAt": "2026-06-05T11:03:03.000Z",
+        "countryCodes": [],
+        "topic": "bmw sa 8217 s 8216 hidden gem 8217",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:hsjgwj",
+            "src.moneyweb_za:1evx6ym"
+          ],
+          "sourceIds": [
+            "src.citizen_za",
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_norfund_backs_ventures_platform_fund_ii_deepens_startup_6cpnzm",
+        "title": "Norfund backs Ventures Platform Fund II, deepens startup investment in Nigeria",
+        "summary": "The Norwegian Investment Fund for developing countries (Norfund) has committed capital to Ventures Platform Pan-African Fund II (VP PAF II),\nread more Norfund backs Ventures Platform Fund II, deepens startup investment in Nigeria",
+        "occurredAt": "2026-06-05T11:00:56.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "norfund backs ventures platform fund ii deepens startup",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:zrmqs5"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_top_10_most_expensive_private_universities_in_nigeria_wksmvr",
+        "title": "Top 10 most expensive private universities in Nigeria for 2025/2026",
+        "summary": "Across the sector, several institutions recorded updated fee structures for the current session, with variations across programmes and colleges. The figures reflect published undergraduate tuition rates for the 2025/2026 academic year. \nThe post Top 10 most expensive private universities in Nigeria for 2025/2026  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T10:59:32.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "top 10 most expensive private universities in nigeria",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1qe9hyf"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_social_listening_5_june_2026_1bifkfl",
+        "title": "Social listening 5 June 2026",
+        "summary": "1. Controversy and irony in the arrest of Ifechukwu Dennis as a whistleblower now claim the IGP arrested the wrong\nread more Social listening 5 June 2026",
+        "occurredAt": "2026-06-05T10:56:22.000Z",
+        "countryCodes": [],
+        "topic": "social listening 5 june 2026",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1oqdo29"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_shoe_brand_bathu_in_hot_water_gauteng_mall_7zl1fs",
+        "title": "Shoe brand Bathu in hot water: Gauteng Mall approaches court over unpaid rent",
+        "summary": "Owners of Springs Mall are seeking more than R1 million for a breach of contract by Bathu.",
+        "occurredAt": "2026-06-05T10:53:40.000Z",
+        "countryCodes": [],
+        "topic": "shoe brand bathu in hot water gauteng mall",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:1wc8ac7"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_euro_tumbles_below_n1_585_1_on_strong_vu3sr9",
+        "title": "Euro tumbles below N1,585/€1 on strong naira rally",
+        "summary": "The Nigerian naira strengthened against major European currencies during the week’s fourth trading session.  \nThe post Euro tumbles below N1,585/€1 on strong naira rally appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T10:52:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "euro tumbles below n1 585 1 on strong",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1oqh38y"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_editorial_when_the_environment_speaks_and_we_cover_96jfum",
+        "title": "Editorial: When the environment speaks and we cover our ears",
+        "summary": "Today, the world observes World Environment Day under the stirring theme, ‘Inspired by Nature. For Climate. For Our Future’. For Our Future. Governments will issue statements. Ministers will appear at podiums, freshly suited, to denounce environmental degradation with the conviction of men who have never signed a mining lease. Officials will plant trees for the [&#8230;]\nThe post Editorial: When t",
+        "occurredAt": "2026-06-05T10:50:36.000Z",
+        "countryCodes": [],
+        "topic": "editorial when the environment speaks and we cover",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:s1huvi"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sath_foundation_targets_youth_innovation_with_new_initiative_3z2mke",
+        "title": "SATH Foundation targets youth innovation with new initiative",
+        "summary": "Across Nigeria, thousands of young people are eager to participate in the digital economy, build technology solutions, and contribute to\nread more SATH Foundation targets youth innovation with new initiative",
+        "occurredAt": "2026-06-05T10:49:44.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "sath foundation targets youth innovation with new initiative",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:w57g9u"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_innovation_key_to_emerging_economies_says_creditpro_md_1us2vgl",
+        "title": "Innovation key to emerging economies, says CreditPRO MD",
+        "summary": "Innovation has been identified as a critical driver of growth and sustainable development in emerging economies, with stakeholders urged to\nread more Innovation key to emerging economies, says CreditPRO MD",
+        "occurredAt": "2026-06-05T10:47:53.000Z",
+        "countryCodes": [],
+        "topic": "innovation key to emerging economies says creditpro md",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:dff9fb"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_russia_africa_dialogue_untapped_prospects_for_economic_cooperation_8q8ij1",
+        "title": "Russia-Africa Dialogue: Untapped prospects for economic cooperation",
+        "summary": "By Kestér Kenn KLOMEGÂH At the St Petersburg International Economic Forum 2026, featured the traditional &#8220;Russia-Africa Business Dialogue&#8221;, which was initiated since 2016, to deliberate aspects of forging economic cooperation between Russia and African countries. For a decade since its creation, this platform has practically discussed most pertinent roadblocks, highlighted the economic",
+        "occurredAt": "2026-06-05T10:46:15.000Z",
+        "countryCodes": [],
+        "topic": "russia africa dialogue untapped prospects for economic cooperation",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:r2soyj"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dell_takes_aim_at_apple_with_a_699_lhazul",
+        "title": "Dell takes aim at Apple with a $699 touch-screen laptop",
+        "summary": "",
+        "occurredAt": "2026-06-05T10:41:53.000Z",
+        "countryCodes": [],
+        "topic": "dell takes aim at apple with a 699",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1150dp4"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_michael_saylor_s_bitcoin_strategy_is_unravelling_1k668ya",
+        "title": "Michael Saylor's Bitcoin strategy is unravelling",
+        "summary": "",
+        "occurredAt": "2026-06-05T10:41:21.000Z",
+        "countryCodes": [],
+        "topic": "michael saylor s bitcoin strategy is unravelling",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1xyxk0m"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_when_entitlement_replaces_enterprise_the_gen_z_economic_1oo8hlu",
+        "title": "When entitlement replaces enterprise: The Gen-Z economic threat",
+        "summary": "",
+        "occurredAt": "2026-06-05T10:39:19.000Z",
+        "countryCodes": [],
+        "topic": "when entitlement replaces enterprise the gen z economic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:epm3de"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_shoprite_ups_the_ante_on_customer_loyalty_with_12a9cur",
+        "title": "Shoprite ups the ante on customer loyalty with free pet insurance",
+        "summary": "",
+        "occurredAt": "2026-06-05T10:38:01.000Z",
+        "countryCodes": [],
+        "topic": "shoprite ups the ante on customer loyalty with",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:6i2tbp"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_pay_smes_in_30_days_or_admit_you_4h2raf",
         "title": "Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy",
         "summary": "Delayed payments by government agencies, counties and big brands are not an accounting inconvenience; they are an economic crime against &#8230; ContinuedThe post Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy appeared first on Soko Directory.",
@@ -159,6 +633,27 @@
           ],
           "sourceIds": [
             "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_telecel_invests_us_5m_in_1m_coders_programme_q7100w",
+        "title": "Telecel invests US$5m in 1m coders programme",
+        "summary": "By Elizabeth PUNSU, Kumasi Telecommunications giant Telecel Ghana has committed US$5million to support government&#8217;s flagship One Million Coders initiative, undertaking to train 100,000 beneficiaries under the programme as part of efforts to accelerate digital skills development and enhance employability. The company&#8217;s Director of External Affairs Manager, Komla Buami, disclosed this du",
+        "occurredAt": "2026-06-05T10:00:57.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "telecel invests us 5m in 1m coders programme",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:11gpa0x"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -1616,27 +2111,6 @@
         }
       },
       {
-        "id": "evt_ghana_link_fires_back_at_icums_critics_demands_1fpbhli",
-        "title": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime",
-        "summary": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime Ghana Link Network Services Ltd, operators of the Integrated Customs Management System, has rejected recent allegations that the ICUMS platform is dysfunctional, describing the claims as false, misleading and unsupported by evidence. In a strongly worded statement issued by its Public Relations Department on [&#8230;]",
-        "occurredAt": "2026-06-05T04:00:16.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ghana link fires back at icums critics demands",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.norvanreports_gh:1eozate"
-          ],
-          "sourceIds": [
-            "src.norvanreports_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_the_world_s_mining_winners_don_t_sit_imbxun",
         "title": "The world’s mining winners don’t sit back &#8211; Steve Manteaw backs bigger Ghanaian stake in mining",
         "summary": "Policy analyst and Extractive Industries Transparency Initiative (EITI) expert Dr Steve Manteaw has thrown his support behind efforts to increase Ghanaian participation in the mining sector.",
@@ -1887,25 +2361,6 @@
         "corroboration": {
           "newsItemIds": [
             "src.moneyweb_za:1h92gx6"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bmw_sa_s_hidden_gem_business_unit_employs_1s1vvvm",
-        "title": "BMW SA’s ‘hidden gem’ business unit employs more staff than Rosslyn plant",
-        "summary": "BMW IT Hub is projected to contribute R4bn to the SA economy this year.",
-        "occurredAt": "2026-06-05T02:02:52.000Z",
-        "countryCodes": [],
-        "topic": "bmw sa s hidden gem business unit employs",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:1evx6ym"
           ],
           "sourceIds": [
             "src.moneyweb_za"
@@ -6547,27 +7002,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_naicom_abia_partner_to_enhance_investors_confidence_mitigate_17d2ttf",
-        "title": "NAICOM, Abia partner to enhance investors’ confidence, mitigate risks",
-        "summary": "The Commissioner for Insurance and Chief Executive Officer of NAICOM, Olusegun Omosehin, said this when he led a delegation to Governor Alex Otti of Abia in Umuahia on Monday.\nThe post NAICOM, Abia partner to enhance investors’ confidence, mitigate risks appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-02T10:54:51.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "naicom abia partner to enhance investors confidence mitigate",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:1x36wgh"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -6843,6 +7277,23 @@
       }
     ],
     "methodologies": [
+      {
+        "id": "method.causal.trade_integration_event.v1",
+        "name": "Trade-integration mechanism",
+        "version": "1.0.0",
+        "description": "Deeper integration lifts trade and growth.",
+        "kind": "causal",
+        "inputs": [],
+        "bands": [],
+        "shockType": "trade_integration_event",
+        "mechanism": "Deeper integration lifts trade and growth.",
+        "channels": [
+          "trade_balance",
+          "growth"
+        ],
+        "owner": "analysis-team",
+        "status": "approved"
+      },
       {
         "id": "method.causal.debt_fiscal_event.v1",
         "name": "Debt / fiscal event mechanism",

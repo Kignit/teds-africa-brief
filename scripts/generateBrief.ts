@@ -24,6 +24,7 @@ import type {
 import type { BriefDraft } from '../src/domain/brief'
 import type { NewsItem } from '../src/domain/news'
 import type { ProfileTradeDiagnostic } from '../src/server/connectors/countryProfile'
+import type { ClaimYieldDiagnostic } from '../src/server/analysis/claimYieldDiagnostics'
 
 // Out-of-band brief generator. Runs the live pipeline (real connectors, real network)
 // OUTSIDE the Vercel build, and writes the runtime artifact `public/brief.json` as a
@@ -81,6 +82,24 @@ function logProfileTradeDiagnostics(diags: ProfileTradeDiagnostic[]): void {
   }
   console.log('Profile trade enrichment (why trade fields are present/absent):')
   for (const [code, parts] of byCode) console.log(`  ${code}: ${parts.join(', ')}`)
+}
+
+// Surface the corroborated-event -> claim funnel: per corroborated event, the classifier
+// result, scored-effect count, and the blocker when no claim resulted. Pure observability
+// (not in the artifact) — it explains why corroborated != claims in a run.
+function logClaimYieldDiagnostics(diags: ClaimYieldDiagnostic[]): void {
+  if (diags.length === 0) return
+  const producing = diags.filter((d) => d.blocker === null).length
+  console.log(
+    `Claim yield (corroborated events -> claims): ${diags.length} corroborated, ${producing} produced effects`,
+  )
+  for (const d of diags) {
+    const cc = d.countryCodes.join(',') || '—'
+    const outcome =
+      d.blocker === null ? `effects=${d.effectCount} -> CLAIM` : `blocked: ${d.blocker}`
+    const title = d.title.length > 60 ? `${d.title.slice(0, 57)}...` : d.title
+    console.log(`  [${cc}] ${d.shock}: ${outcome} — "${title}" (${d.sourceIds.join('+')})`)
+  }
 }
 
 // Load the prior rolling window, FAILING CLOSED to current-run-only ([]) if the store
@@ -156,6 +175,7 @@ async function main(): Promise<void> {
   if (result) {
     logDiagnostics(result.diagnostics)
     logProfileTradeDiagnostics(profileDiags)
+    logClaimYieldDiagnostics(result.diagnostics.claimYield)
     console.log(
       `Rolling window: prior=${priorNews.length} -> persisted=${result.newsWindow.length} items (72h)`,
     )

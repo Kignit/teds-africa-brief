@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-04T11:26:20.636Z",
+  "generatedAt": "2026-06-05T04:55:40.897Z",
   "brief": {
-    "id": "live_2026-06-04",
-    "date": "2026-06-04",
+    "id": "live_2026-06-05",
+    "date": "2026-06-05",
     "edition": "daily",
     "status": "draft",
     "dataMode": "live",
@@ -50,9 +50,9 @@
         "id": "fig_fx.NGN_USD_1",
         "metric": "fx.NGN_USD",
         "label": "NGN/USD",
-        "value": 1361.562746,
+        "value": 1360.607362,
         "unit": "NGN/USD",
-        "asOf": "2026-06-04T00:02:31.000Z",
+        "asOf": "2026-06-05T00:02:31.000Z",
         "countryCode": "NG",
         "sourceIds": [
           "src.open_er_api"
@@ -69,9 +69,9 @@
         "id": "fig_fx.KES_USD_2",
         "metric": "fx.KES_USD",
         "label": "KES/USD",
-        "value": 129.3727,
+        "value": 129.257225,
         "unit": "KES/USD",
-        "asOf": "2026-06-04T00:02:31.000Z",
+        "asOf": "2026-06-05T00:02:31.000Z",
         "countryCode": "KE",
         "sourceIds": [
           "src.open_er_api"
@@ -88,9 +88,9 @@
         "id": "fig_fx.ETB_USD_3",
         "metric": "fx.ETB_USD",
         "label": "ETB/USD",
-        "value": 159.896982,
+        "value": 160.001842,
         "unit": "ETB/USD",
-        "asOf": "2026-06-04T00:02:31.000Z",
+        "asOf": "2026-06-05T00:02:31.000Z",
         "countryCode": "ET",
         "sourceIds": [
           "src.open_er_api"
@@ -107,9 +107,9 @@
         "id": "fig_fx.GHS_USD_4",
         "metric": "fx.GHS_USD",
         "label": "GHS/USD",
-        "value": 11.787333,
+        "value": 11.786816,
         "unit": "GHS/USD",
-        "asOf": "2026-06-04T00:02:31.000Z",
+        "asOf": "2026-06-05T00:02:31.000Z",
         "countryCode": "GH",
         "sourceIds": [
           "src.open_er_api"
@@ -126,9 +126,9 @@
         "id": "fig_fx.ZAR_USD_5",
         "metric": "fx.ZAR_USD",
         "label": "ZAR/USD",
-        "value": 16.325586,
+        "value": 16.297778,
         "unit": "ZAR/USD",
-        "asOf": "2026-06-04T00:02:31.000Z",
+        "asOf": "2026-06-05T00:02:31.000Z",
         "countryCode": "ZA",
         "sourceIds": [
           "src.open_er_api"
@@ -143,6 +143,1489 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_bog_s_latest_auction_mops_up_ghs_11_1reiwfl",
+        "title": "BoG’s Latest Auction Mops Up GHS 11.28bn as 14-Day Bill Rate Hits 10.93%",
+        "summary": "BoG’s Latest Auction Mops Up GHS 11.28bn as 14-Day Bill Rate Hits 10.93% The Bank of Ghana has mopped up GHS 11.28 billion from the market through the sale of its 14-day bills, as the central bank continues to manage liquidity conditions in the financial system. Results of Tender 864, held on June 3, 2026, [&#8230;]",
+        "occurredAt": "2026-06-05T04:22:33.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "bog s latest auction mops up ghs 11",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:fdgc9s"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_zeepay_faces_imminent_closure_over_us_1_22m_smdjj5",
+        "title": "Zeepay Faces Imminent Closure Over US$1.22m Debt",
+        "summary": "Zeepay Faces Imminent Closure Over US$1.22m Debt Zeepay Ghana Ltd, one of Ghana’s prominent financial technology companies, is facing a creditor’s petition at the Commercial Division of the High Court in Accra seeking its official winding up over an alleged unpaid debt of US$1,223,250. The petition was filed by Obsidian Achernar Ltd, which describes itself [&#8230;]",
+        "occurredAt": "2026-06-05T04:08:52.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "zeepay faces imminent closure over us 1 22m",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:14y61ub"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mtn_ghana_leads_gse_turnover_as_market_trades_1i6s0w9",
+        "title": "MTN Ghana Leads GSE Turnover as Market Trades GHS 3.88m",
+        "summary": "MTN Ghana Leads GSE Turnover as Market Trades GHS 3.88m The Ghana Stock Exchange recorded total turnover of GHS 3.88 million from 868,671 shares traded during the 7,225th trading session on Thursday, June 4, 2026. Trading activity was led by MTN Ghana, which recorded 338,412 shares traded, valued at GHS 2.19 million, making it the [&#8230;]",
+        "occurredAt": "2026-06-05T04:05:57.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "mtn ghana leads gse turnover as market trades",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1jy2wyz"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_link_fires_back_at_icums_critics_demands_1fpbhli",
+        "title": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime",
+        "summary": "Ghana Link Fires Back at ICUMS Critics, Demands Evidence of Downtime Ghana Link Network Services Ltd, operators of the Integrated Customs Management System, has rejected recent allegations that the ICUMS platform is dysfunctional, describing the claims as false, misleading and unsupported by evidence. In a strongly worded statement issued by its Public Relations Department on [&#8230;]",
+        "occurredAt": "2026-06-05T04:00:16.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana link fires back at icums critics demands",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1eozate"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_no_trades_recorded_on_gfim_as_bills_bonds_1skgsyu",
+        "title": "No Trades Recorded on GFIM as Bills, Bonds and Corporate Debt Stay Quiet",
+        "summary": "No Trades Recorded on GFIM as Bills, Bonds and Corporate Debt Stay Quiet The Ghana Fixed Income Market recorded no trading activity on Thursday, June 4, 2026, as turnover across all major fixed income categories closed at zero. According to the GFIM trading report for the session, new Government of Ghana notes and bonds, DDEP [&#8230;]",
+        "occurredAt": "2026-06-05T03:58:23.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "no trades recorded on gfim as bills bonds",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:ht1vvn"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghanaians_feel_shortchanged_8211_steve_manteaw_explains_growing_lvylsi",
+        "title": "Ghanaians feel shortchanged &#8211; Steve Manteaw explains growing backlash over Gold Fields lease",
+        "summary": "Policy analyst and extractive governance expert Dr Steve Manteaw says the fierce public interest surrounding the renewal of Gold Fields’ Tarkwa mining lease reflects a growing belief among many Ghanaians that the country is not receiving enough value from its natural resources.",
+        "occurredAt": "2026-06-05T03:40:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghanaians feel shortchanged 8211 steve manteaw explains growing",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:9t3skw"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_new_law_allows_nigerians_sell_surplus_solar_power_iqogv0",
+        "title": "New law allows Nigerians sell surplus solar power to discos in historic shift",
+        "summary": "Nigeria&#8217;s electricity regulator has officially launched a framework allowing businesses and industrial customers to generate their own solar power and\nread more New law allows Nigerians sell surplus solar power to discos in historic shift",
+        "occurredAt": "2026-06-05T03:00:41.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "new law allows nigerians sell surplus solar power",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:12z08ds"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_business_activity_dips_in_may_amid_deepening_economic_175djkw",
+        "title": "Business activity dips in May amid deepening economic crisis",
+        "summary": "Kenya's worsening economic slowdown has reduced consumers' purchasing power, leading to declining business sales, falling demand, reduced economic activity, and job losses across multiple sectors.",
+        "occurredAt": "2026-06-05T03:00:00.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "business activity dips in may amid deepening economic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1syy17f"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_8217_s_world_cup_dream_meets_ebola_23w2xa",
+        "title": "Africa&#8217;s World Cup dream meets Ebola, U.S. visa roadblock",
+        "summary": "Africa is poised to make history at the 2026 FIFA World Cup, but this milestone is already being overshadowed by\nread more Africa&#8217;s World Cup dream meets Ebola, U.S. visa roadblock",
+        "occurredAt": "2026-06-05T02:45:33.000Z",
+        "countryCodes": [],
+        "topic": "africa 8217 s world cup dream meets ebola",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:qsq0wp"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kwara_plateau_reel_from_fresh_insecurity_attacks_174ww0y",
+        "title": "Kwara, Plateau reel from fresh insecurity attacks",
+        "summary": "Nigeria’s fragile security landscape is fracturing along familiar fault lines, as both Plateau and Kwara states grapple with the resurgence\nread more Kwara, Plateau reel from fresh insecurity attacks",
+        "occurredAt": "2026-06-05T02:30:51.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "kwara plateau reel from fresh insecurity attacks",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1fk82k1"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_ai_is_reshaping_local_music_production_16t4p98",
+        "title": "How AI is reshaping local music production",
+        "summary": "Artificial intelligence has firmly rooted itself in the music industry, allowing producers to churn out full Afrobeats tracks and concept\nread more How AI is reshaping local music production",
+        "occurredAt": "2026-06-05T02:15:01.000Z",
+        "countryCodes": [],
+        "topic": "how ai is reshaping local music production",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1quuk3"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_putin_wants_trump_deal_19qbnv8",
+        "title": "Putin wants Trump deal",
+        "summary": "Rebuffs Europe on Ukraine talks.",
+        "occurredAt": "2026-06-05T02:07:28.000Z",
+        "countryCodes": [],
+        "topic": "putin wants trump deal",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:h7nqiy"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sasol_s_ian_marsberg_named_bmr_unisa_economist_16uxrnz",
+        "title": "Sasol’s Ian Marsberg named BMR/Unisa Economist of the Year",
+        "summary": "And Moneyweb named as the new media partner of the competition.",
+        "occurredAt": "2026-06-05T02:06:42.000Z",
+        "countryCodes": [],
+        "topic": "sasol s ian marsberg named bmr unisa economist",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:b5o6p3"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_are_regulators_strangling_crypto_in_the_crib_lstac5",
+        "title": "Are regulators strangling crypto in the crib?",
+        "summary": "There’s been a ton of backlash against SA’s proposed new exchange control rules. AfriDax CEO Frank Leonette tells us why, and what he thinks will happen next.",
+        "occurredAt": "2026-06-05T02:06:09.000Z",
+        "countryCodes": [],
+        "topic": "are regulators strangling crypto in the crib",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:4f5se8"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_local_elections_become_the_next_big_test_for_1y0q82e",
+        "title": "Local elections become the next big test for SA’s investment case",
+        "summary": "Municipal stability, infrastructure reform and coalition politics emerge as key factors investors will watch ahead of November’s local government elections, RMB Think Summit hears.",
+        "occurredAt": "2026-06-05T02:04:59.000Z",
+        "countryCodes": [],
+        "topic": "local elections become the next big test for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1rjnq2n"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_voluntary_disclosure_programme_a_powerful_but_perilous_tax_1si9m1v",
+        "title": "Voluntary Disclosure Programme: A powerful but perilous tax weapon",
+        "summary": "Taxpayers need to tell a ‘cogent, well-supported and very consistent story’.",
+        "occurredAt": "2026-06-05T02:03:39.000Z",
+        "countryCodes": [],
+        "topic": "voluntary disclosure programme a powerful but perilous tax",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1h92gx6"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bmw_sa_s_hidden_gem_business_unit_employs_1s1vvvm",
+        "title": "BMW SA’s ‘hidden gem’ business unit employs more staff than Rosslyn plant",
+        "summary": "BMW IT Hub is projected to contribute R4bn to the SA economy this year.",
+        "occurredAt": "2026-06-05T02:02:52.000Z",
+        "countryCodes": [],
+        "topic": "bmw sa s hidden gem business unit employs",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1evx6ym"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_eskom_municipal_takeover_may_expand_to_30_municipalities_l2m9kw",
+        "title": "Eskom municipal takeover may expand to 30 municipalities",
+        "summary": "Legal compliance process to be expedited.",
+        "occurredAt": "2026-06-05T02:01:19.000Z",
+        "countryCodes": [],
+        "topic": "eskom municipal takeover may expand to 30 municipalities",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:2sa9a6"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fifa_bans_vuvuzelas_and_loud_noise_devices_from_1pp3bq0",
+        "title": "FIFA Bans Vuvuzelas and Loud Noise Devices from 2026 World Cup Stadiums",
+        "summary": "FIFA Bans Vuvuzelas and Loud Noise Devices from 2026 World Cup Stadiums Fans attending the 2026 FIFA World Cup in the United States, Canada and Mexico will not be allowed to bring vuvuzelas into stadiums after FIFA officially banned the popular plastic horns as part of its tournament code of conduct. The decision means one [&#8230;]",
+        "occurredAt": "2026-06-05T00:58:28.000Z",
+        "countryCodes": [],
+        "topic": "fifa bans vuvuzelas and loud noise devices from",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:d2q1an"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_world_cup_international_friendlies_ivory_coast_claim_famous_1tf9u4k",
+        "title": "World Cup International Friendlies: Ivory Coast Claim Famous Comeback Victory Over France",
+        "summary": "World Cup International Friendlies: Ivory Coast Claim Famous Comeback Victory Over France Ivory Coast produced one of the biggest surprises of the international warm-up matches ahead of the FIFA World Cup after fighting back to beat France 2-1 in Nantes on Thursday night, thanks to a late winner from Amad Diallo. The Elephants showed tremendous [&#8230;]",
+        "occurredAt": "2026-06-05T00:54:55.000Z",
+        "countryCodes": [],
+        "topic": "world cup international friendlies ivory coast claim famous",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:jn2t67"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_former_black_stars_boss_ck_akonnor_crowned_kenyan_106s6r",
+        "title": "Former Black Stars Boss CK Akonnor Crowned Kenyan Premier League Coach of the Season",
+        "summary": "Former Black Stars Boss CK Akonnor Crowned Kenyan Premier League Coach of the Season Former Black Stars head coach Charles “CK” Akonnor has been named the Kenyan Premier League Coach of the Season after leading Gor Mahia to a historic league triumph in his first campaign with the club. The Ghanaian tactician guided the Kenyan [&#8230;]",
+        "occurredAt": "2026-06-05T00:52:10.000Z",
+        "countryCodes": [
+          "KE",
+          "GH"
+        ],
+        "topic": "former black stars boss ck akonnor crowned kenyan",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:xkmt7s"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_targets_2_6m_jobs_under_new_agriconnect_1elviil",
+        "title": "Ghana Targets 2.6m Jobs Under New AgriConnect Compact",
+        "summary": "Ghana Targets 2.6m Jobs Under New AgriConnect Compact Ghana has launched the AgriConnect Compact, a national agricultural transformation framework aimed at strengthening food security, creating jobs, reducing food imports and mobilising investment across priority agricultural value chains. The initiative, launched in Accra on June 3, 2026, is being advanced by the Government of Ghana with [&#8230;",
+        "occurredAt": "2026-06-05T00:48:42.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana targets 2 6m jobs under new agriconnect",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1cfch7x"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_xenophobia_fallout_ramaphosa_turns_to_diplomacy_as_african_157bn0h",
+        "title": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens",
+        "summary": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens South African President Cyril Ramaphosa has announced plans to dispatch envoys across Africa and other parts of the world as Pretoria moves to contain the diplomatic fallout from renewed anti-immigrant violence. The attacks, which have targeted foreign nationals and triggered concern across the continent, [&#8230",
+        "occurredAt": "2026-06-05T00:37:24.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "xenophobia fallout ramaphosa turns to diplomacy as african",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:7i8d0v"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_apra_nampa_sign_mou_on_effective_communicators_conference_17zixsg",
+        "title": "APRA, NAMPA sign MoU on effective communicators conference in Namibia",
+        "summary": "The conference is co-organised with the Ministry of Information and Communication Technology of Namibia\nThe post APRA, NAMPA sign MoU on effective communicators conference in Namibia appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-04T22:53:32.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "apra nampa sign mou on effective communicators conference",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1wyojpm"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_see_rice_as_an_economic_asset_veep_opoku_f8o2ms",
+        "title": "See rice as an economic asset – Veep Opoku-Agyemang urges African countries",
+        "summary": "Vice President, Professor Naana Jane Opoku-Agyemang, has urged African leaders to view rice as a strategic economic asset.",
+        "occurredAt": "2026-06-04T22:16:00.000Z",
+        "countryCodes": [],
+        "topic": "see rice as an economic asset veep opoku",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:mcs24"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nff_expresses_sympathy_with_rivers_united_over_team_1vuul80",
+        "title": "NFF expresses sympathy with Rivers United over team bus accident",
+        "summary": "The Nigeria Football Federation (NFF) has expressed sympathy with players and officials of Rivers United FC of Port Harcourt following\nread more NFF expresses sympathy with Rivers United over team bus accident",
+        "occurredAt": "2026-06-04T22:08:20.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nff expresses sympathy with rivers united over team",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:h0trlb"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_consulting_to_offshore_companies_here_s_the_easiest_1r94v1y",
+        "title": "Consulting to offshore companies? Here’s the easiest, most cost-effective way to receive your income in SA",
+        "summary": "South African consultants earning in foreign currency are losing more to the banks than they should. Future Forex is changing that.",
+        "occurredAt": "2026-06-04T22:01:44.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "consulting to offshore companies here s the easiest",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1dao8ar"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw",
+        "title": "Dangote refinery raises processing capacity to 700,000 barrels per day",
+        "summary": "Dangote Petroleum Refinery has increased its crude processing capacity to 700,000 barrels per day following a performance test by process licensors, surpassing its nameplate capacity and advancing plans for future expansion.\nThe post Dangote refinery raises processing capacity to 700,000 barrels per day appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-04T21:38:26.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "dangote refinery raises processing capacity to 700 000",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:eutp87",
+            "src.nairametrics_ng:ltqhbo"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng",
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_state_police_fg_begins_constitution_amendment_engagements_amid_2wy6sq",
+        "title": "State police: FG begins constitution amendment engagements amid security concerns",
+        "summary": "The Federal Government has commenced formal engagement on constitutional amendments required to establish state police, marking a major step in efforts to restructure Nigeria’s internal security architecture amid rising security challenges across several states. The Chief of Staff to the President, Femi Gbajabiamila, disclosed this on Thursday while briefing State House correspondents after a cons",
+        "occurredAt": "2026-06-04T21:00:19.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "state police fg begins constitution amendment engagements amid",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:140teb8"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_treasury_bills_may_protect_wealth_but_these_four_r5fsk",
+        "title": "Treasury bills may protect wealth but these four strategies can grow it",
+        "summary": "By Mary Henewaa KARIKARI For many years, the average Ghanaian investor approached investing with one primary goal: SAFETY. Treasury bills, fixed deposits, savings accounts, and real estate became the preferred investment choices for many households. The objective was simple… preserve capital, earn modest returns, and avoid unnecessary risk. In many respects, this mindset was understandable. [&#823",
+        "occurredAt": "2026-06-04T20:40:34.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "treasury bills may protect wealth but these four",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:a91sz4"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_a_double_edged_sword_dilemma_1kmbzsv",
+        "title": "A double-edged sword dilemma",
+        "summary": "&#8230;The Bank of Ghana’s revised framework (Notice No. BG/GOV/SEC/2026/03) and brand equity threatens the restoration of GN Savings and Loans license By Abdul Muiz MUHAMMED The recent judgment delivered on May 21, 2026 in favour of GN Savings and Loans may appear, at first glance, to reopen the door for the institution’s return to Ghana’s [&#8230;]\nThe post A double-edged sword dilemma appeared ",
+        "occurredAt": "2026-06-04T20:36:10.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "a double edged sword dilemma",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1qoqj6m"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kuwait_fund_for_arab_economic_development_and_africa_1jow2jx",
+        "title": "Kuwait Fund for Arab economic development and Africa&#8217;s development future: Strengthening global partnerships",
+        "summary": "By Seade Caesar The story of Africa’s development is increasingly becoming a story of partnerships. For decades, many African countries relied heavily on traditional Western donors, multilateral institutions, and international aid agencies to finance major infrastructure and development projects. Today, however, a new chapter is emerging. Gulf countries, particularly the State of Kuwait through th",
+        "occurredAt": "2026-06-04T20:26:47.000Z",
+        "countryCodes": [],
+        "topic": "kuwait fund for arab economic development and africa",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1q2vxzs"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cowbell_marks_world_milk_day_with_nutrition_outreach_1ljnx7i",
+        "title": "Cowbell marks World Milk Day with nutrition outreach",
+        "summary": "By Elizabeth PUNSU, Kumasi Promasidor Ghana has marked this year’s World Milk Day with a large-scale nutrition outreach programme targeting more than 10,000 schoolchildren in the Ashanti Region, reaffirming the its commitment to child nutrition, health and education. As part of the initiative, the company, through its flagship dairy brand Cowbell, visited several schools, including [&#8230;]\nThe p",
+        "occurredAt": "2026-06-04T20:16:55.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "cowbell marks world milk day with nutrition outreach",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1sng1p8"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_skills_hub_transitions_to_ash_africa_in_1dle5ro",
+        "title": "Africa Skills Hub transitions to ASH Africa in commemoration of 10th anniversary",
+        "summary": "Africa Skills Hub (ASH), a Ghana-based enterprise support organisation focused on youth, women and SME development, has officially transitioned to ASH Africa, marking a significant milestone in its 10-year journey of expanding opportunity pathways across the continent. The rebrand reflects the organisation’s evolution from a skills development entity into a broader pan-African organisation driven ",
+        "occurredAt": "2026-06-04T20:11:35.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "africa skills hub transitions to ash africa in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1bv42sd"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_wacli_convenes_multi_stakeholder_platform_workshop_to_advance_1ivffqe",
+        "title": "WACLI convenes multi-stakeholder platform workshop to advance shared vision for Wassa Amenfi landscape",
+        "summary": "The Wassa Amenfi Cocoa Landscape Initiative (WACLI), led by Preferred by Nature in collaboration with consortium partners Ferrero Group, Rikolto Ghana, Solidaridad West Africa and the International Institute of Tropical Agriculture (IITA), has organised a multi-stakeholder meeting to advance a shared vision for the sustainable development of the Wassa Amenfi landscape.\n\nThe meeting reviewed progre",
+        "occurredAt": "2026-06-04T20:07:33.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "wacli convenes multi stakeholder platform workshop to advance",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1a45hz4"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_retirees_to_access_doctors_remotely_under_new_ssnit_2ej7rh",
+        "title": "Retirees to access doctors remotely under new SSNIT initiative",
+        "summary": "The Social Security and National Insurance Trust (SSNIT) has launched a telehealth service that will allow pensioners to access medical consultations remotely, marking an expansion of the institution’s role beyond pension administration into broader social protection and healthcare support. The initiative, developed in partnership with the National Health Insurance Authority (NHIA), Trust Hospital",
+        "occurredAt": "2026-06-04T19:56:12.000Z",
+        "countryCodes": [],
+        "topic": "retirees to access doctors remotely under new ssnit",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:ceossz"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_big_business_commits_to_fixing_the_city_of_1879t3i",
+        "title": "Big business commits to fixing the City of Joburg",
+        "summary": "‘This isn't just a city struggling at the margins; this is a national economic crisis’ – BLSA CEO Busi Mavuso.",
+        "occurredAt": "2026-06-04T19:53:24.000Z",
+        "countryCodes": [],
+        "topic": "big business commits to fixing the city of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:cnjwlp"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_beyond_salary_the_cost_of_performance_targets_on_9yqizt",
+        "title": "Beyond salary: The cost of performance targets on human worth",
+        "summary": "By Henry Atta NYAME There is a popular Akan proverb: “Nea ɔsua nsuo na ɔbo abuduru gu.” Literally, it means “the one who fetches water is the one likely to break the pot.” The proverb reflects effort, responsibility, and the risks that come with active work. Some employees genuinely strive to perform well, yet may [&#8230;]\nThe post Beyond salary: The cost of performance targets on human worth app",
+        "occurredAt": "2026-06-04T19:51:39.000Z",
+        "countryCodes": [],
+        "topic": "beyond salary the cost of performance targets on",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:sf515o"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_j_a_plant_pool_siaw_agyepong_to_contest_21c1wm",
+        "title": "J.A. Plant Pool, Siaw Agyepong to contest Attorney-General&#8217;s US$2m recovery suit",
+        "summary": "J.A. Plant Pool (GH) Limited (JAPP) and its Executive Chairman, Dr. Joseph Siaw Agyepong, have said they will vigorously challenge a lawsuit filed by Attorney-General, Dr. Dominic Ayine seeking the recovery of US$2 million under the District Road Improvement Programme (DRIP) contract, insisting they owe no money to the state. In a statement issued on [&#8230;]\nThe post J.A. Plant Pool, Siaw Agyepo",
+        "occurredAt": "2026-06-04T19:47:43.000Z",
+        "countryCodes": [],
+        "topic": "j a plant pool siaw agyepong to contest",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:blq0y6"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_aradel_eterna_drag_oil_038_gas_index_down_1w31yen",
+        "title": "Aradel, Eterna drag Oil &#038; Gas index down 4.9% as stocks lose N580 billion",
+        "summary": "The Nigerian equities market extended its losing streak to four consecutive trading sessions on Thursday, June 5, 2026, as heavy selloffs in Aradel Holdings Plc and Eterna Plc triggered a sharp 4.90% decline in the Oil &#038; Gas Index, helping erase N580.65 billion from investors' wealth. \nThe post Aradel, Eterna drag Oil &#038; Gas index down 4.9% as stocks lose N580 billion appeared first on Na",
+        "occurredAt": "2026-06-04T19:37:25.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "aradel eterna drag oil 038 gas index down",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:2xnq1m"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_umb_appoints_victoria_esinam_attipoe_as_division_head_245808",
+        "title": "UMB appoints Victoria Esinam Attipoe as Division Head to accelerate retail transformation and customer growth strategy",
+        "summary": "Universal Merchant Bank (UMB) has appointed accomplished banking executive Victoria Esinam Attipoe as Branch Network Head for its Greater Accra Division, in a strategic move that underscores the Bank’s renewed focus on retail banking excellence, operational transformation, and customer-centric growth. With over two decades of proven leadership across retail, personal, private banking, and banking ",
+        "occurredAt": "2026-06-04T19:28:08.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "umb appoints victoria esinam attipoe as division head",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1sb41k2",
+            "src.myjoyonline_gh:1crw9qj"
+          ],
+          "sourceIds": [
+            "src.bft_gh",
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_have_we_mistaken_csr_for_sustainability_why_businesses_1g31dqe",
+        "title": "Have we mistaken CSR for Sustainability?: Why businesses need to rethink ESG",
+        "summary": "By Nana Adwoa BAAFI For many organisations across Ghana, Environmental, Social and Governance (ESG) principles often look like corporate donations, tree planting exercises, school renovations, scholarship schemes or community outreach programmes. These initiatives although undeniably contribute to social development, risk reducing ESG to acts of corporate philanthropy hence missing the bigger pict",
+        "occurredAt": "2026-06-04T19:24:37.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "have we mistaken csr for sustainability why businesses",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:6bspkh"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kra_forgoes_sh9_1bn_in_taxes_to_cushion_gjq5rk",
+        "title": "KRA forgoes Sh9.1bn in taxes to cushion consumers from fuel price surge",
+        "summary": "KRA Commissioner for Customs and Border Control Dr. Lilian Nyawanda further revealed that taxes amounting to Sh5.1 billion paid by various Oil Marketing Companies through the principal importer of the MT PALOMA cargo will be transferred to customs declarations associated with subsequent fuel imports.",
+        "occurredAt": "2026-06-04T18:40:33.000Z",
+        "countryCodes": [],
+        "topic": "kra forgoes sh9 1bn in taxes to cushion",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:h4dvh4"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_shell_executives_ignored_warnings_over_niger_delta_pipeline_1wotg9u",
+        "title": "Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal",
+        "summary": "Newly released internal Shell documents have revealed that senior executives approved the continued operation of oil pipelines in Nigeria’s Niger Delta despite repeated warnings from engineers about environmental risks and the potential for oil spills. \nThe post Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T17:58:15.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "shell executives ignored warnings over niger delta pipeline",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:5vnz9"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_capital_movement_takes_centre_stage_at_islamic_economic_1bsmdt4",
+        "title": "Capital movement takes centre stage at Islamic economic summit",
+        "summary": "Hamza K Bawazir, secretary-general of the Council for Islamic Banks and Financial Institutions, on how Islamic finance supports financial stability, economic partnerships and sustainable growth.",
+        "occurredAt": "2026-06-04T17:56:45.000Z",
+        "countryCodes": [],
+        "topic": "capital movement takes centre stage at islamic economic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:kat0p4"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_youth_in_agribusiness_land_trust_fund_targets_500_x4kfwq",
+        "title": "Youth in Agribusiness Land Trust Fund Targets 500,000 Young Entrepreneurs",
+        "summary": "The Federal Ministry of Youth Development (FMYD), in partnership with the International Institute for Tropical Agriculture (IITA), has launched the National Youth in Agribusiness Land Trust Fund (YiALTF). This initiative aims to improve land access and unlock opportunities for over 500,000 young Nigerians building sustainable agribusiness enterprises. Supported by First City Monument Bank (FCMB), ",
+        "occurredAt": "2026-06-04T17:04:10.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "youth in agribusiness land trust fund targets 500",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1rhvc66"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_oluwatomisin_ashimolowo_building_the_systems_powering_african_commerce_1xavq80",
+        "title": "Oluwatomisin Ashimolowo: Building the Systems Powering African Commerce",
+        "summary": "Oluwatomisin “Tomi” Ashimolowo is a fintech entrepreneur, strategic partnerships leader, and advocate for African business growth whose work sits at the intersection of financial infrastructure, cross-border commerce, and economic development. His journey began long before founding Betaling. As a Nigerian student studying in Kenya, Tomi experienced firsthand the challenges of moving money across b",
+        "occurredAt": "2026-06-04T17:03:17.000Z",
+        "countryCodes": [
+          "NG",
+          "KE"
+        ],
+        "topic": "oluwatomisin ashimolowo building the systems powering african commerce",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:5kenne"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kibo_africa_targets_10_000_electric_motorcycles_in_1q2j08o",
+        "title": "Kibo Africa targets 10,000 electric motorcycles in Kenya within a year",
+        "summary": "Kibo Africa Director Felix Mulwa said the company has spent the past three years testing the motorcycles and is now ready for commercial deployment, beginning with Nairobi before expanding to other regions.",
+        "occurredAt": "2026-06-04T16:59:48.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kibo africa targets 10 000 electric motorcycles in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:16uli7h"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_flutterwave_partners_tempo_blockchain_to_power_stablecoin_settlements_8vn4o",
+        "title": "Flutterwave partners Tempo blockchain to power stablecoin settlements across Africa",
+        "summary": "African fintech giant, Flutterwave has entered a strategic partnership with Tempo, a blockchain settlement network, to build stablecoin-powered payment infrastructure across Africa. \nThe post Flutterwave partners Tempo blockchain to power stablecoin settlements across Africa  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T16:56:50.000Z",
+        "countryCodes": [],
+        "topic": "flutterwave partners tempo blockchain to power stablecoin settlements",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:9r381a"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_tana_river_mcas_go_three_months_without_salaries_ond9ev",
+        "title": "Tana River MCAs go three months without salaries amid budget dispute",
+        "summary": "TANA RIVER, Kenya, June 4 – Members of the Tana River County Assembly and staff have reportedly gone without salaries for three months, raising concerns over the assembly&#8217;s financial management and triggering tensions between the legislative and executive arms of the county government. Sources familiar with the matter say MCAs and assembly staff have not [&#8230;]",
+        "occurredAt": "2026-06-04T16:54:39.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "tana river mcas go three months without salaries",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:y7s259"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_naicom_advances_transition_to_risk_based_supervision_appoints_uf8vks",
+        "title": "NAICOM advances transition to risk-based supervision, appoints EY Consulting Actuary",
+        "summary": "The National Insurance Commission (NAICOM) has moved to accelerate the transition of Nigeria’s insurance industry to a risk-based supervisory and capital regime, as part of efforts to strengthen financial stability and enhance policyholder protection. \nThe post NAICOM advances transition to risk-based supervision, appoints EY Consulting Actuary  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T16:45:04.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "naicom advances transition to risk based supervision appoints",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1lqvd2t"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_launches_350_000_fao_backed_programme_to_pkcsxb",
+        "title": "FG launches $350,000 FAO-backed programme to tackle bird flu outbreaks",
+        "summary": "The Federal Government has launched a $350,000 Food and Agriculture Organization Technical Cooperation Programme (FAO-TCP) aimed at strengthening Nigeria’s response to recurring bird flu outbreaks. \nThe post FG launches $350,000 FAO-backed programme to tackle bird flu outbreaks    appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T16:27:28.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "fg launches 350 000 fao backed programme to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1biu8wu"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mtn_shuffles_continental_leadership_to_power_ambition_2030_1fjk56i",
+        "title": "MTN shuffles continental leadership to power Ambition 2030",
+        "summary": "MTN Group, Africa’s telecommunications powerhouse, has announced a sweeping overhaul of its top-tier executive leadership across the continent, tapping highly experienced internal talent to steer its multi-billion-dollar digital and financial expansion.",
+        "occurredAt": "2026-06-04T16:05:30.000Z",
+        "countryCodes": [],
+        "topic": "mtn shuffles continental leadership to power ambition 2030",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:xgfxuc"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_tech_firms_rush_to_put_small_shops_online_bo0o8d",
+        "title": "Tech firms rush to put small shops online as market race intensifies",
+        "summary": "Competition to digitise Kenya's MSMEs is intensifying as tech firms target an underserved market despite rising internet access, digital payments and e-commerce growth.",
+        "occurredAt": "2026-06-04T15:35:10.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "tech firms rush to put small shops online",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:11jq9y2"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_building_economic_resilience_how_filma_is_creating_dignified_14qk8tc",
+        "title": "Building Economic Resilience: How FILMA is creating dignified livelihoods in rural Ghana",
+        "summary": "In the landscape of rural development, the transition from subsistence to sustainability is often cited as a goal; however, it is rarely measured with the precision of a fintech operation. Reflecting on the insights shared during the inaugural Financial Inclusion for Last Mile Actors (FILMA) Learning Event at the Accra Marriott Hotel, which hosted over [&#8230;]",
+        "occurredAt": "2026-06-04T14:56:37.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "building economic resilience how filma is creating dignified",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:alwdli"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fao_strengthens_approach_to_accelerate_agrifood_systems_transformation_1e6rfka",
+        "title": "FAO strengthens approach to accelerate agrifood systems transformation in Africa",
+        "summary": "Senior leaders of the Food and Agriculture Organization of the United Nations (FAO) from across Africa gathered in Accra for the opening of the 15th FAO Regional Management Team (RMT15) Meeting, with a strong focus on innovation, improving efficiency, accelerating delivery and scaling impact for Members across the continent. Held under the theme “Driving Efficiency [&#8230;]",
+        "occurredAt": "2026-06-04T14:43:30.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "fao strengthens approach to accelerate agrifood systems transformation",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:um24l1"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_iibgroup_expands_chevening_partnership_to_ethiopia_as_part_1ko0bg4",
+        "title": "iibGroup Expands Chevening Partnership to Ethiopia as Part of Broader Regional Engagement",
+        "summary": "Building on its successful partnership with the Chevening Scholarships programme in Cabo Verde and Djibouti, iibGroup has renewed its support for the 2026–2027 academic year and expanded the initiative to Ethiopia. This year, three fully funded Chevening scholarships will be awarded across Africa, one each in Cabo Verde, Djibouti, and Ethiopia, reinforcing iib&#8217;s commitment to [&#8230;]",
+        "occurredAt": "2026-06-04T14:37:21.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "iibgroup expands chevening partnership to ethiopia as part",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:50v7mr"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_agric_minister_demands_10_budget_allocation_for_agriculture_1u9cail",
+        "title": "Agric Minister demands 10% budget allocation for agriculture in Africa",
+        "summary": "The Minister for Food and Agriculture, Eric Opoku, has criticised the low investment in agriculture across Africa and called on governments to allocate at least 10 percent of their annual budgets to the sector to boost food security and economic growth.",
+        "occurredAt": "2026-06-04T14:26:18.000Z",
+        "countryCodes": [],
+        "topic": "agric minister demands 10 budget allocation for agriculture",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1wrdf6p"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_must_gain_more_from_billion_dollar_cocoa_1s3rfzy",
+        "title": "Africa must gain more from billion-dollar cocoa-chocolate industry—Agric Minister",
+        "summary": "The Minister for Food and Agriculture, Eric Opoku, has called for Africa to derive greater value from the billion-dollar cocoa and chocolate industry, stressing the need for structural transformation in the continent’s agricultural systems to ensure producers benefit more from the value chain.",
+        "occurredAt": "2026-06-04T14:23:49.000Z",
+        "countryCodes": [],
+        "topic": "africa must gain more from billion dollar cocoa",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1saagq5"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_agriculture_can_eliminate_youth_unemployment_in_africa_agric_1chxym3",
+        "title": "Agriculture can eliminate youth unemployment in Africa—Agric Minister",
+        "summary": "The Minister for Food and Agriculture, Eric Opoku, has emphasised the transformative potential of agriculture in tackling youth unemployment across Africa, describing the sector as a critical pathway to economic growth, stability, and peace on the continent.",
+        "occurredAt": "2026-06-04T14:16:56.000Z",
+        "countryCodes": [],
+        "topic": "agriculture can eliminate youth unemployment in africa agric",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:qxzsxh"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_court_orders_final_forfeiture_of_n2_billion_assets_pafhwo",
+        "title": "Court orders final forfeiture of N2 billion assets linked to bank&#8217;s staff, others",
+        "summary": "The Federal High Court in Abuja has ordered the final forfeiture of assets worth N2 billion linked to a financial sector staff member, Alonge Opeyemi Yetunde and others. \nThe post Court orders final forfeiture of N2 billion assets linked to bank&#8217;s staff, others appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T14:16:06.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "court orders final forfeiture of n2 billion assets",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1avrdy3"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_three_days_in_sizekhaya_celebrates_strong_national_response_210j3k",
+        "title": "Three days in: Sizekhaya celebrates strong national response; first PowerBall multi-millionnaire and expanded National Lottery access",
+        "summary": "'Our first few days have delivered tremendous encouragement.'",
+        "occurredAt": "2026-06-04T14:08:41.000Z",
+        "countryCodes": [],
+        "topic": "three days in sizekhaya celebrates strong national response",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:1jp0t2y"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_maritime_development_key_to_africa_8217_s_economic_1773iic",
+        "title": "Maritime development key to Africa&#8217;s economic transformation – GEXIM",
+        "summary": "Mr Mensah made the remarks in a speech delivered on behalf of the Chief Executive Officer of GEXIM, Sylvester Adinam Mensah, at the opening of the Maritime Trade Fair in Accra on the theme: \"Shaping Africa's Maritime Future: Maritime, Technology and Finance.\"",
+        "occurredAt": "2026-06-04T13:39:43.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "maritime development key to africa 8217 s economic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:frwwol"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ethswitch_records_1_million_daily_ethiopay_ips_transactions_irsnix",
+        "title": "EthSwitch records 1 million daily EthioPay-IPS transactions, wins African financial inclusion award",
+        "summary": "EthSwitch, Ethiopia’s national payment switch, has recorded more than 1 million EthioPay-IPS transactions in a single day, with the value of transactions exceeding 5 billion birr, in what the company described as a major milestone for the country’s digital payments system. The achievement comes as EthSwitch and global payment software company BPC received The Asian [&#8230;]",
+        "occurredAt": "2026-06-04T13:14:21.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethswitch records 1 million daily ethiopay ips transactions",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:1h73mwi"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_interswitch_partners_with_temenos_to_scale_digital_banking_1lm9k9",
+        "title": "Interswitch Partners with Temenos to Scale Digital Banking Services Across Africa",
+        "summary": "Interswitch will use Temenos solutions to deliver managed services to banks and financial institutions across Africa Interswitch Group, one of Africa’s leading integrated payments and digital commerce companies, and Temenos (SIX: TEMN), a global leader in banking technology, today announced a collaboration, wherein Interswitch will adopt Temenos technology to enhance its digital banking capabiliti",
+        "occurredAt": "2026-06-04T13:06:49.000Z",
+        "countryCodes": [],
+        "topic": "interswitch partners with temenos to scale digital banking",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:119572j"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_us_targets_south_africa_with_proposed_12_5_1iex77u",
+        "title": "US targets South Africa with proposed 12.5% tariff over forced-labour import controls",
+        "summary": "The proposed tariffs come ahead of the expiry of the temporary 10% tariff on South Africa and other countries on 24 July 2026.",
+        "occurredAt": "2026-06-04T12:53:43.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "us targets south africa with proposed 12 5",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:efsk21"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenyan_elected_to_global_intellectual_property_enforcement_body_dmgrkc",
+        "title": "Kenyan elected to global intellectual property enforcement body",
+        "summary": "The unanimous election by WIPO member states places Kenya at the forefront of international efforts to combat counterfeiting and strengthen intellectual property rights enforcement.",
+        "occurredAt": "2026-06-04T12:51:26.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenyan elected to global intellectual property enforcement body",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:15p5s66"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_19_officials_charged_in_sh14bn_sacco_scandal_over_dniozl",
+        "title": "19 Officials Charged in Sh14bn Sacco Scandal Over Alleged Decade-Long Fraud",
+        "summary": "NAIROBI,Kenya,June 4-Nineteen individuals have been arraigned in connection with a suspected Sh14 billion fraud scheme involving a major Savings and Credit Cooperative (Sacco), in a case that has once again spotlighted governance and accountability risks within Kenya’s cooperative sector. Detectives from the Directorate of Criminal Investigations (DCI) brought the suspects before the Milimani Law ",
+        "occurredAt": "2026-06-04T12:47:26.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "19 officials charged in sh14bn sacco scandal over",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:b271uf"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bog_s_reforms_on_community_banking_aims_to_zld0wl",
+        "title": "BoG’s reforms on community banking aims to build well-capitalised banks &#8211; ARB Apex Bank MD",
+        "summary": "The Acting Managing Director of ARB Apex Bank, Curtis William Brantuo, says community banking sector is currently undergoing major reforms under the leadership of the Bank of Ghana (BoG) to build stronger, resilient, and well-capitalized banks capable of safeguarding depositor funds and supporting local economic development.",
+        "occurredAt": "2026-06-04T12:01:01.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "bog s reforms on community banking aims to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:16yixxu"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_uk_moves_to_ban_universities_from_sponsoring_international_3d7exh",
+        "title": "UK moves to ban universities from sponsoring international students",
+        "summary": "Universities in the United Kingdom could lose their ability to recruit international students under a new government policy aimed at curbing visa abuse and reducing asylum claims from foreign students, a move that could affect Nigerians seeking higher education opportunities in the country.\nThe post UK moves to ban universities from sponsoring international students appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T11:56:48.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "uk moves to ban universities from sponsoring international",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:13mfw03"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nerc_to_set_net_billing_regulations_boost_renewable_95dy75",
+        "title": "NERC to set net billing regulations, boost renewable energy",
+        "summary": "NERC stated that the new framework is designed to promote the adoption of renewable energy technologies, enhance energy security, and reliability for electricity consumers.\nThe post NERC to set net billing regulations, boost renewable energy appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-04T11:51:10.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nerc to set net billing regulations boost renewable",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:hyf2py"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_north_west_mine_shuts_down_temporarily_amid_retrenchment_1ozx01e",
+        "title": "North West mine shuts down temporarily amid retrenchment talks involving nearly 500 workers",
+        "summary": "Wesizwe Platinum says Bakubung Platinum Mine's temporary shutdown is intended to allow for meaningful engagement during retrenchment talks.",
+        "occurredAt": "2026-06-04T11:32:56.000Z",
+        "countryCodes": [],
+        "topic": "north west mine shuts down temporarily amid retrenchment",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:sctaq4"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africans_with_50_million_assets_turn_to_real_q40vs1",
+        "title": "Africans with $50 million assets turn to real estate for wealth preservation — Report",
+        "summary": "Africans with at least $50 million in investable assets are increasingly allocating capital to real estate as a strategy for wealth preservation, portfolio diversification, and long-term income generation, a new wealth report has stated. \nThe post Africans with $50 million assets turn to real estate for wealth preservation — Report appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T11:31:12.000Z",
+        "countryCodes": [],
+        "topic": "africans with 50 million assets turn to real",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1cnlv4y"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_capital_importation_10_sectors_that_attracted_the_most_ws5bnj",
         "title": "Capital Importation: 10 sectors that attracted the most inflows in Q1 2026",
@@ -269,27 +1752,6 @@
         }
       },
       {
-        "id": "evt_fcta_deploys_vein_finding_devices_to_boost_healthcare_ixbs42",
-        "title": "FCTA deploys vein-finding devices to boost healthcare delivery in Abuja hospitals",
-        "summary": "The Federal Capital Territory Administration (FCTA) has distributed 48 vein-finding devices to public hospitals in Abuja as part of efforts\nread more FCTA deploys vein-finding devices to boost healthcare delivery in Abuja hospitals",
-        "occurredAt": "2026-06-04T10:43:11.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "fcta deploys vein finding devices to boost healthcare",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:13g3378"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_nerc_approves_special_compensation_for_band_a_customers_12flon9",
         "title": "NERC approves special compensation for Band A customers affected by power shortfalls",
         "summary": "Nigeria’s electricity regulator has approved a special compensation framework for eligible Band A customers affected by prolonged generation shortfalls between February and March 2026, citing gas supply constraints and vandalism of critical infrastructure as major causes.\nThe post NERC approves special compensation for Band A customers affected by power shortfalls appeared first on Premium Times N",
@@ -309,6 +1771,27 @@
             "src.nairametrics_ng"
           ],
           "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fcta_deploys_vein_finding_devices_to_boost_healthcare_ixbs42",
+        "title": "FCTA deploys vein-finding devices to boost healthcare delivery in Abuja hospitals",
+        "summary": "The Federal Capital Territory Administration (FCTA) has distributed 48 vein-finding devices to public hospitals in Abuja as part of efforts\nread more FCTA deploys vein-finding devices to boost healthcare delivery in Abuja hospitals",
+        "occurredAt": "2026-06-04T10:43:11.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "fcta deploys vein finding devices to boost healthcare",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:13g3378"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
           "primarySourceCount": 0
         }
       },
@@ -517,6 +2000,25 @@
         }
       },
       {
+        "id": "evt_investors_thump_absa_with_astounding_43_vote_against_uvk85l",
+        "title": "Investors thump Absa, with astounding 43% vote against exec pay",
+        "summary": "This would've needed most of its top 10 shareholders to vote against it.",
+        "occurredAt": "2026-06-04T09:42:38.000Z",
+        "countryCodes": [],
+        "topic": "investors thump absa with astounding 43 vote against",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:51pf16"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_ncba_diplomats_map_trade_linked_sector_entry_strategies_d39jbw",
         "title": "NCBA, diplomats map trade-linked sector entry strategies across East Africa",
         "summary": "NAIROBI, Kenya, June 4-NCBA Group, alongside diplomatic trade commissioners, ambassadors and investors from more than 20 countries are exploring sector-driven entry strategies into East Africa’s fast-expanding trade economy, with discussions focusing on agribusiness, energy, manufacturing, fintech, technology, healthcare and education as key investment entry points. The deliberations focused on ho",
@@ -534,6 +2036,27 @@
             "src.capitalfm_ke"
           ],
           "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_rwc_will_be_on_supersport_and_we_didn_1etqweo",
+        "title": "RWC will be on SuperSport, and we didn&#8217;t cancel Winter Olympics &#8211; Canal+ CEO",
+        "summary": "As group lists, Saada is 'absolutely and totally confident' it will turn around ailing MultiChoice.",
+        "occurredAt": "2026-06-04T09:24:00.000Z",
+        "countryCodes": [],
+        "topic": "rwc will be on supersport and we didn",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:12tfjya",
+            "src.moneyweb_za:1yao83b"
+          ],
+          "sourceIds": [
+            "src.citizen_za",
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -1001,27 +2524,6 @@
         }
       },
       {
-        "id": "evt_umb_appoints_victoria_esinam_attipoe_as_branch_network_1ksr3f4",
-        "title": "UMB appoints Victoria Esinam Attipoe as Branch Network Head for its Greater Accra Division",
-        "summary": "Universal Merchant Bank (UMB) has appointed accomplished banking executive Victoria Esinam Attipoe as Branch Network Head for its Greater Accra Division.",
-        "occurredAt": "2026-06-04T06:26:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "umb appoints victoria esinam attipoe as branch network",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1crw9qj"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_development_bank_of_nigeria_disburses_over_n1_trillion_w49u67",
         "title": "Development Bank of Nigeria disburses over N1 trillion to MSMEs",
         "summary": "The Development Bank of Nigeria (DBN) Plc has disbursed more than N1 trillion to over one million Micro, Small and Medium Enterprises (MSMEs), supporting the creation of more than 1.6 million jobs since it commenced operations. \nThe post Development Bank of Nigeria disburses over N1 trillion to MSMEs   appeared first on Nairametrics.",
@@ -1354,25 +2856,6 @@
         "corroboration": {
           "newsItemIds": [
             "src.moneyweb_za:113szlp"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_rwc_will_be_on_supersport_and_we_didn_25yu8v",
-        "title": "RWC will be on SuperSport, and we didn’t cancel Winter Olympics – Canal+ CEO",
-        "summary": "As group lists, Saada is ‘absolutely and totally confident’ it will turn around ailing MultiChoice.",
-        "occurredAt": "2026-06-04T02:03:17.000Z",
-        "countryCodes": [],
-        "topic": "rwc will be on supersport and we didn",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:1yao83b"
           ],
           "sourceIds": [
             "src.moneyweb_za"
@@ -1832,6 +3315,27 @@
         }
       },
       {
+        "id": "evt_ethiopia_s_tight_monetary_policy_wins_imf_praise_lexfvu",
+        "title": "Ethiopia’s tight monetary policy wins IMF praise as key to inflation fight, paving way for nearly $500 million disbursement",
+        "summary": "Ethiopia’s commitment to a tight monetary policy stance—hailed by international partners as a critical safeguard against rising inflation—has taken center stage as the country secured a staff-level agreement with the International Monetary Fund (IMF) for the fifth review of its economic reform program. An IMF staff team led by Alvaro Piris visited Addis Ababa from [&#8230;]",
+        "occurredAt": "2026-06-03T16:11:30.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "ethiopia s tight monetary policy wins imf praise",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:1lfragj"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_ivory_coast_or_ghana_who_really_has_the_y04dpm",
         "title": "Ivory Coast or Ghana: who really has the best performing economy?",
         "summary": "For more than a decade, Côte d'Ivoire has recorded strong GDP growth, generally between 6% and 7% per year, making it one of the most successful economies in the world. Ghana also shows solid growth, around 5% to 6% in the last two years, but this is more volatile. After registering a strong expansion in the 2010s - up to 14% growth in 2011 - driven by the exploitation of hydrocarbons, the economy",
@@ -1847,6 +3351,27 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_outstanding_loans_surge_to_r2_7_trillion_as_1p5yqj5",
+        "title": "Outstanding loans surge to R2.7 trillion as South Africans open 875 000 loans in 3 months",
+        "summary": "The report examines consumer credit behaviour.",
+        "occurredAt": "2026-06-03T15:57:45.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "outstanding loans surge to r2 7 trillion as",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:u26ane"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -1874,6 +3399,25 @@
         }
       },
       {
+        "id": "evt_canal_listing_on_jse_signals_confidence_in_the_1nzitbj",
+        "title": "Canal+ listing on JSE signals confidence in the bourse&#8217;s African growth strategy",
+        "summary": "Canal+ is the first French company to list on the JSE.",
+        "occurredAt": "2026-06-03T15:31:45.000Z",
+        "countryCodes": [],
+        "topic": "canal listing on jse signals confidence in the",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:qa0f90"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_dangote_refinery_can_supply_jet_fuel_globally_official_c1ar1c",
         "title": "Dangote refinery can supply Jet Fuel Globally — Official",
         "summary": "The Dangote Petroleum Refinery says its growing surplus of aviation fuel positions it to become a major global supplier, amid rising international demand and ongoing pressure on fuel markets.\nThe post Dangote refinery can supply Jet Fuel Globally — Official appeared first on Premium Times Nigeria.",
@@ -1895,6 +3439,27 @@
         }
       },
       {
+        "id": "evt_igad_urges_urgent_overhaul_of_crowded_polling_stations_gbyx9e",
+        "title": "IGAD Urges Urgent Overhaul of Crowded Polling Stations to Meet International Standards",
+        "summary": "Following the conclusion of Ethiopia’s 7th General Election, the Intergovernmental Authority on Development (IGAD) Election Observation Mission (IGADEOM)has released its preliminary report. While the report praised the country&#8217;s major strides in technology, it conversely called for clear improvements to be made to the physical voting infrastructure. Chief among the mission&#8217;s primary re",
+        "occurredAt": "2026-06-03T15:16:47.000Z",
+        "countryCodes": [
+          "ET"
+        ],
+        "topic": "igad urges urgent overhaul of crowded polling stations",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:tip8zl"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_jitume_digital_hub_transforms_youths_livelihoods_in_bungoma_1lpm75u",
         "title": "Jitume Digital Hub transforms youths livelihoods in Bungoma",
         "summary": "Digital literacy experts believe more young people can embrace and access digital literacy and online work opportunities through the established Jitume Digital Hubs in many parts of the country.",
@@ -1908,6 +3473,25 @@
           ],
           "sourceIds": [
             "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_flysafair_is_cutting_its_fuel_surcharge_8211_here_1b2x1uy",
+        "title": "FlySafair is cutting its fuel surcharge &#8211; here is by how much",
+        "summary": "FlySafair in March added a surcharge to its most popular routes in response to expected spikes in the price of oil.",
+        "occurredAt": "2026-06-03T14:35:22.000Z",
+        "countryCodes": [],
+        "topic": "flysafair is cutting its fuel surcharge 8211 here",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:1564pao"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -1992,6 +3576,27 @@
           ],
           "sourceIds": [
             "src.addisfortune_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_9_ways_south_africans_can_earn_money_online_1bw1893",
+        "title": "9 ways South Africans can earn money online and how much they pay",
+        "summary": "'The online economy is opening doors for young people ‒ but success depends on using credible platforms and building the right skills.'",
+        "occurredAt": "2026-06-03T12:50:52.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "9 ways south africans can earn money online",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:15iqd0q"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2261,6 +3866,27 @@
         }
       },
       {
+        "id": "evt_coj_finances_8216_a_horror_show_8217_8211_1s9wodw",
+        "title": "CoJ finances &#8216;a horror show&#8217; &#8211; Scopa member",
+        "summary": "AG says CoJ wrote off R9bn in consumer debt, while City Power incurred R5.7bn in electricity losses and Johannesburg Water R2.8bn from water losses.",
+        "occurredAt": "2026-06-03T09:41:47.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "coj finances 8216 a horror show 8217 8211",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:zagkwn"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_how_young_graduate_turned_maggot_farming_into_a_1rqq64i",
         "title": "How young graduate turned maggot farming into a lucrative venture",
         "summary": "The communications graduate has built a maggot farming venture that feeds fish, trains farmers, supplies feed across multiple counties.",
@@ -2274,6 +3900,25 @@
           ],
           "sourceIds": [
             "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_traxtion_ramps_up_bid_to_build_africa_8217_wviw1g",
+        "title": "Traxtion ramps up bid to build Africa&#8217;s biggest rail company",
+        "summary": "The company's $86m equity raise was heavily over-subscribed, indicating the appetite for the future of private rail in Africa.",
+        "occurredAt": "2026-06-03T09:27:18.000Z",
+        "countryCodes": [],
+        "topic": "traxtion ramps up bid to build africa 8217",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:98n089"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2857,6 +4502,25 @@
         }
       },
       {
+        "id": "evt_higher_food_prices_looming_tiger_brands_to_spend_1p3ujt4",
+        "title": "Higher food prices looming: Tiger Brands to spend R25m on fuel per month",
+        "summary": "The food producer anticipates difficult trading environment for the second half of its financial year.",
+        "occurredAt": "2026-06-02T13:47:54.000Z",
+        "countryCodes": [],
+        "topic": "higher food prices looming tiger brands to spend",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:sjxvu6"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_gov_8217_t_to_crack_down_on_rice_hy796s",
         "title": "Gov&#8217;t to crack down on rice smuggling with new inter-ministerial task-force – Agric Minister",
         "summary": "The Minister for Food and Agriculture, Eric Opoku, has announced plans by government to establish an inter-ministerial taskforce to strengthen surveillance and enforcement against the illegal importation of rice through unauthorized border routes. Speaking at the West Africa Rice Investment Roundtable on the theme “Mobilising Transformational Capital to Support West Africa’s Rice Agenda,” the Mini",
@@ -2870,6 +4534,25 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_highest_paid_teachers_to_earn_r1_3m_8211_18qixme",
+        "title": "Highest-paid teachers to earn R1.3m &#8211; Here&#8217;s how much others will get paid",
+        "summary": "'The applicable salary adjustment effective from 01 April 2026 for the relevant categories of employees.'",
+        "occurredAt": "2026-06-02T11:43:37.000Z",
+        "countryCodes": [],
+        "topic": "highest paid teachers to earn r1 3m 8211",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:106coej"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2910,6 +4593,25 @@
           ],
           "sourceIds": [
             "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_huawei_nova_15_max_arrives_with_the_biggest_1jyduez",
+        "title": "Huawei nova 15 Max arrives with the biggest battery in its class and exceptional value",
+        "summary": "The Huawei nova 15 Max delivers more battery, more value and more for your money.",
+        "occurredAt": "2026-06-02T11:25:18.000Z",
+        "countryCodes": [],
+        "topic": "huawei nova 15 max arrives with the biggest",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:j0ohlv"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2958,6 +4660,25 @@
         }
       },
       {
+        "id": "evt_government_to_step_up_labour_law_enforcement_1yuomob",
+        "title": "Government to step up labour law enforcement",
+        "summary": "Construction, hospitality in the spotlight.",
+        "occurredAt": "2026-06-02T09:40:02.000Z",
+        "countryCodes": [],
+        "topic": "government to step up labour law enforcement",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:1eya4jo"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_supreme_court_upholds_providus_unity_banks_8217_merger_xxonah",
         "title": "Supreme Court upholds Providus, Unity banks&#8217; merger",
         "summary": "Beyond dismissing the appeal, the Supreme Court invoked Section 22 of the Supreme Court Act to directly sanction the merger, effectively clearing the way for the transaction to proceed without further legal obstruction.\nThe post Supreme Court upholds Providus, Unity banks&#8217; merger appeared first on Premium Times Nigeria.",
@@ -2973,6 +4694,25 @@
           ],
           "sourceIds": [
             "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_tribunal_finds_bogdanov_8217_s_false_phd_claim_1dwd2j3",
+        "title": "Tribunal finds Bogdanov&#8217;s false PhD claim was &#8216;intentional and fraudulent&#8217;",
+        "summary": "The former EOH director failed to overturn the JSE sanctions imposed after her claim to hold a London Business School doctorate unravelled.",
+        "occurredAt": "2026-06-02T09:22:17.000Z",
+        "countryCodes": [],
+        "topic": "tribunal finds bogdanov 8217 s false phd claim",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:19qca0j"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -3092,141 +4832,6 @@
         "corroboration": {
           "newsItemIds": [
             "src.addisfortune_et:q1n7ui"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_banks_to_step_up_loans_recovery_crackdown_as_cxnjvs",
-        "title": "Banks to step up loans recovery crackdown as NPLs climb in Q1",
-        "summary": "Commercial banks are preparing a sweeping crackdown on defaulters as non-performing loans (NPLs) climb to 15.6 per cent of gross loans in the first quarter.",
-        "occurredAt": "2026-06-02T03:00:00.000Z",
-        "countryCodes": [],
-        "topic": "banks to step up loans recovery crackdown as",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:14b1w67"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_traders_reject_proposed_vat_on_aircraft_parts_11st3oc",
-        "title": "Traders reject proposed VAT on aircraft parts",
-        "summary": "Importers and exporters have opposed the proposed 16 per cent VAT on aircraft spare parts in the 2026 Financial Bill, saying it would increase the cost of freight.",
-        "occurredAt": "2026-06-02T03:00:00.000Z",
-        "countryCodes": [],
-        "topic": "traders reject proposed vat on aircraft parts",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1j42p4u"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_addis_abeba_vote_ending_peacefully_despite_pressure_on_1jdzmwf",
-        "title": "Addis Abeba Vote Ending Peacefully Despite Pressure on Polling System",
-        "summary": "By the time the last light faded over Addis Abeba, the pressure at some polling stations had begun to ease. At Gerji Roba polling station...",
-        "occurredAt": "2026-06-01T20:14:34.000Z",
-        "countryCodes": [],
-        "topic": "addis abeba vote ending peacefully despite pressure on",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:eu93un"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_electoral_board_extends_voting_past_deadline_as_manual_usdxs0",
-        "title": "Electoral Board Extends Voting Past Deadline as Manual System Bottleneck Strands Voters",
-        "summary": "The order came as dusk settled over most polling stations, turning what should have been the close of polling into a test of endurance for...",
-        "occurredAt": "2026-06-01T17:08:44.000Z",
-        "countryCodes": [],
-        "topic": "electoral board extends voting past deadline as manual",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:1totqwz"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_how_weak_project_execution_threatens_kenya_s_sh4_ecsbz9",
-        "title": "How weak project execution threatens Kenya's Sh4.8 trillion budget",
-        "summary": "Project management experts warn weak execution could undermine Kenya's record Sh4.8 trillion 2026/27 budget as concerns grow over stalled projects and budget absorption challenges.",
-        "occurredAt": "2026-06-01T15:06:36.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "how weak project execution threatens kenya s sh4",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:17b33o6"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_civil_society_monitor_finds_polling_broadly_accessible_across_mqidi7",
-        "title": "Civil Society Monitor Finds Polling Broadly Accessible Across the Country",
-        "summary": "Kassaw Amsalu (MD) stood in the dust outside the Yeka Health Centre, on Fikremariam Abatechan St., not far from the British Embassy, checking his watch...",
-        "occurredAt": "2026-06-01T14:18:41.000Z",
-        "countryCodes": [],
-        "topic": "civil society monitor finds polling broadly accessible across",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:1e30jdv"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_logistical_triumphs_bursts_of_violence_shadow_as_voters_vnj25c",
-        "title": "Logistical Triumphs, Bursts of Violence Shadow as Voters Head to the Ballot Box",
-        "summary": "Inside the gleaming and high-ceilinged ballroom of the Skylight Hotel, on Africa Avenue (Bole Road), a delayed press conference became a window into the uneasy...",
-        "occurredAt": "2026-06-01T11:45:47.000Z",
-        "countryCodes": [],
-        "topic": "logistical triumphs bursts of violence shadow as voters",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:1vjikqv"
           ],
           "sourceIds": [
             "src.addisfortune_et"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T14:36:27.871Z",
+  "generatedAt": "2026-06-05T15:23:38.274Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -170,6 +170,183 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_ssnit_pension_scheme_is_sustainable_can_pay_benefits_1axopbk",
+        "title": "SSNIT pension scheme is sustainable, can pay benefits for next 40 years &#8211; Director General",
+        "summary": "The Director General of the Social Security and National Insurance Trust (SSNIT), Kwesi Afreh Biney, has revealed that the pension scheme is sustainable and can even pay benefits for the next 40 years. Mr. Biney noted that this is based on the latest actuarial report carried out by the UK Government Department of Actuarial Services [&#8230;]",
+        "occurredAt": "2026-06-05T15:07:59.000Z",
+        "countryCodes": [],
+        "topic": "ssnit pension scheme is sustainable can pay benefits",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:nopzv0"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2027_elections_umo_eno_says_voters_want_solutions_1ag7njl",
+        "title": "2027 Elections: Umo Eno says voters want solutions, not insults",
+        "summary": "‎‎As political activities gradually gather momentum ahead of the 2027 general elections, a profound message delivered by Akwa Ibom State\nread more 2027 Elections: Umo Eno says voters want solutions, not insults",
+        "occurredAt": "2026-06-05T15:06:09.000Z",
+        "countryCodes": [],
+        "topic": "2027 elections umo eno says voters want solutions",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1mist6m"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigerian_government_spent_n12_52trn_to_service_debt_p4etq",
+        "title": "Nigerian government spent N12.52trn to service debt in 9months",
+        "summary": "&#8230;exceeding budget target The federal government, in the first nine months of 2025, spent a total of N12.52 trillion on\nread more Nigerian government spent N12.52trn to service debt in 9months",
+        "occurredAt": "2026-06-05T14:57:30.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigerian government spent n12 52trn to service debt",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:ntednc"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_heavy_downpour_collapse_taraba_main_bridge_travelers_remain_4s8m4v",
+        "title": "Heavy downpour collapse Taraba Main bridge, travelers remain stranded",
+        "summary": "The heavy downpour that occurred in the early hours of Friday in Jalingo, Taraba state capital, has collapsed a major\nread more Heavy downpour collapse Taraba Main bridge, travelers remain stranded",
+        "occurredAt": "2026-06-05T14:56:34.000Z",
+        "countryCodes": [],
+        "topic": "heavy downpour collapse taraba main bridge travelers remain",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:wj8rbp"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_1_96_million_candidates_participate_as_fg_commends_16s41x5",
+        "title": "1.96 million candidates participate as FG commends 2026 CBT WASSCE conduct",
+        "summary": "The Federal Government has commended the smooth and credible conduct of the ongoing 2026 West African Senior School Certificate Examination\nread more 1.96 million candidates participate as FG commends 2026 CBT WASSCE conduct",
+        "occurredAt": "2026-06-05T14:52:48.000Z",
+        "countryCodes": [],
+        "topic": "1 96 million candidates participate as fg commends",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1oziay"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_we_must_not_allow_terrorism_take_root_in_14qgsg6",
+        "title": "We must not allow terrorism take root in Southwest, DAWN Commission warns",
+        "summary": "&#8230;.. Says fake news threatens Nigeria’s future Seye Oyeleye, the Director-General of the Development Agenda for Western Nigeria (DAWN) Commission,\nread more We must not allow terrorism take root in Southwest, DAWN Commission warns",
+        "occurredAt": "2026-06-05T14:52:24.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "we must not allow terrorism take root in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1ai1783"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_wastes_up_to_45_of_its_tomatoes_1dsceag",
+        "title": "Ghana wastes up to 45% of its tomatoes. A homegrown brand thinks it has the answer.",
+        "summary": "With domestic demand nearly double local production, and nearly half the harvest never reaching consumers, the tomato sector’s losses represent both a national crisis and an industrial opportunity. Ghana produces approximately 380,000 tonnes of tomatoes annually. It needs more than 800,000. And between 30 and 45 percent of what it does grow spoils before it [&#8230;]",
+        "occurredAt": "2026-06-05T14:47:23.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana wastes up to 45 of its tomatoes",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:tpgvp2"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_clicks_warehouse_system_delay_wipes_out_about_r175m_tg9zig",
+        "title": "Clicks warehouse system delay wipes out about R175m in sales",
+        "summary": "Clicks opened its 1 000th store during the period.",
+        "occurredAt": "2026-06-05T14:45:35.000Z",
+        "countryCodes": [],
+        "topic": "clicks warehouse system delay wipes out about r175m",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:21gvpx"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mr_price_generates_roughly_r16_4_million_a_vy5s9y",
+        "title": "Mr Price generates roughly R16.4 million a day in operating profit",
+        "summary": "Mr Price opened 196 new stores across its 15 trading chains, increasing its total store footprint to 3 182.",
+        "occurredAt": "2026-06-05T14:39:38.000Z",
+        "countryCodes": [],
+        "topic": "mr price generates roughly r16 4 million a",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:5wvjvt"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_17w67p7",
         "title": "EXIM Frozen Foods Association opposes proposed reintroduction of Smart Port Note system",
@@ -7699,27 +7876,6 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenyan_platform_workers_demand_protection_against_exploitation_zsf1zp",
-        "title": "Kenyan platform workers demand protection against exploitation",
-        "summary": "Kenyans working for digital platforms have called on the government to treat all workers with dignity, saying is a basic human right.",
-        "occurredAt": "2026-06-02T14:40:01.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kenyan platform workers demand protection against exploitation",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:6pv4nm"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

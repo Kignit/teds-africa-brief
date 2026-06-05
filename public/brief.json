@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T07:57:01.623Z",
+  "generatedAt": "2026-06-05T08:07:54.284Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -143,6 +143,27 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_fg_s_survey_shows_83_4_of_nigerians_j0y3g2",
+        "title": "FG’s survey shows 83.4% of Nigerians want social media restriction for children",
+        "summary": "A survey by the Ministry of Communications, innovation, and Digital Economy, has revealed that 83.4% of Nigerians support social media restriction to protect children. \nThe post FG’s survey shows 83.4% of Nigerians want social media restriction for children appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T07:59:43.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "fg s survey shows 83 4 of nigerians",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:afbknh"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_why_nigeria_8217_s_stock_market_is_falling_szh3qg",
         "title": "Why Nigeria&#8217;s stock market is falling – and when analysts expect a rebound",
@@ -5553,6 +5574,21 @@
             "asOf": "2022-12-31T00:00:00.000Z",
             "indicator": "DT.DOD.DECT.GN.ZS"
           },
+          "keyExports": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2023-12-31T00:00:00.000Z",
+            "reporterCode": "231",
+            "flowCode": "X",
+            "classification": "HS",
+            "productCodes": [
+              "09",
+              "07",
+              "12"
+            ],
+            "refYear": 2023
+          },
           "importDependence": {
             "sourceIds": [
               "src.comtrade"
@@ -5569,6 +5605,11 @@
             "refYear": 2023
           }
         },
+        "keyExports": [
+          "coffee, tea, mate and spices",
+          "vegetables and certain roots and tubers; edible",
+          "oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder"
+        ],
         "importDependence": [
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
           "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
@@ -5586,28 +5627,8 @@
             ],
             "asOf": "2024-12-31T00:00:00.000Z",
             "indicator": "DT.DOD.DECT.GN.ZS"
-          },
-          "keyExports": {
-            "sourceIds": [
-              "src.comtrade"
-            ],
-            "asOf": "2024-12-31T00:00:00.000Z",
-            "reporterCode": "404",
-            "flowCode": "X",
-            "classification": "HS",
-            "productCodes": [
-              "09",
-              "27",
-              "06"
-            ],
-            "refYear": 2024
           }
-        },
-        "keyExports": [
-          "coffee, tea, mate and spices",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage"
-        ]
+        }
       },
       {
         "code": "NG",

@@ -116,4 +116,18 @@ describe('claim-yield diagnostics', () => {
     expect(d.shock).toBe('fx_move')
     expect(d.blocker).toBe('no covered country in countryCodes')
   })
+
+  it('treats trade_integration_event as non-global: empty countryCodes -> no covered country', () => {
+    // Confirms the diagnostic reflects the updated GLOBAL_SHOCKS (trade is country-scoped):
+    // a trade/customs event naming no covered country yields no effects and is blocked,
+    // rather than fanning out across the bloc.
+    const event = corroborated({
+      id: 'evt_trade',
+      title: 'Regional customs corridor trade clearance dispute',
+      countryCodes: [],
+    })
+    const [d] = diagnoseClaimYield([event], [], [profile('NG')])
+    expect(d.shock).toBe('trade_integration_event')
+    expect(d.blocker).toBe('no covered country in countryCodes')
+  })
 })

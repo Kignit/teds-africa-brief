@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { composeAnalysisDraft } from '../server/analysis/composeAnalysisDraft'
 import { composeBriefFromAnalysis } from '../server/analysis/buildBrief'
 import { runPublishGate } from '../server/publishing/publishGate'
+import { GLOBAL_SHOCKS } from '../server/analysis/generateCausalLinks'
 import { validateFigure } from '../server/verification/validateFigure'
 import {
   TEST_COUNTRY_PROFILES,
@@ -224,5 +225,76 @@ describe('analysis engine V0', () => {
       profiles: TEST_COUNTRY_PROFILES,
     })
     expect(draft.causalLinks.find((l) => l.shockType === 'oil_shock')).toBeUndefined()
+  })
+
+  it('keeps oil_shock and dollar_rates_shock global, but not trade_integration_event', () => {
+    expect(GLOBAL_SHOCKS.has('oil_shock')).toBe(true)
+    expect(GLOBAL_SHOCKS.has('dollar_rates_shock')).toBe(true)
+    expect(GLOBAL_SHOCKS.has('trade_integration_event')).toBe(false)
+    // Behavioural: a dollar/rates shock with NO named country still fans to every profile.
+    const draft = composeAnalysisDraft({
+      figures: [],
+      events: [fed],
+      profiles: TEST_COUNTRY_PROFILES,
+    })
+    const link = draft.causalLinks.find((l) => l.shockType === 'dollar_rates_shock')
+    expect(link!.effects.map((e) => e.countryCode).sort()).toEqual(['XA', 'XB', 'XC'])
+  })
+
+  it('scopes a country-specific trade_integration_event to the named country only', () => {
+    // ICUMS-style: a single-country customs/platform story (names XA only). It must NOT
+    // fan out to XB/XC the way it did while trade_integration_event was a global shock.
+    const icums = ev({
+      id: 'icums',
+      title: 'XA customs clearance platform dispute over trade flows',
+      countryCodes: ['XA'],
+    })
+    const draft = composeAnalysisDraft({
+      figures: [],
+      events: [icums],
+      profiles: TEST_COUNTRY_PROFILES,
+    })
+    const link = draft.causalLinks.find((l) => l.shockType === 'trade_integration_event')
+    expect(link).toBeDefined()
+    expect(link!.effects.map((e) => e.countryCode).sort()).toEqual(['XA'])
+    expect(
+      draft.claims
+        .filter((c) => c.shockType === 'trade_integration_event')
+        .map((c) => c.countryCode),
+    ).toEqual(['XA'])
+  })
+
+  it('publish gate rejects a trade_integration_event claim for a country the cited event does not name', () => {
+    const icums = ev({
+      id: 'icums',
+      title: 'XA customs clearance platform dispute over trade flows',
+      countryCodes: ['XA'],
+    })
+    const gateOpts = { methodologyRegistry: [TEST_DEBT_METHODOLOGY] }
+    const backed = brief([icums])
+    const xaTrade = backed.claims.find((c) => c.shockType === 'trade_integration_event')
+    expect(xaTrade?.countryCode).toBe('XA')
+    // The country-correct claim passes.
+    expect(runPublishGate(backed, gateOpts).passed).toBe(true)
+    // Re-point the SAME claim to XB, which the cited event does not name -> must be rejected.
+    const tampered = {
+      ...backed,
+      claims: [
+        ...backed.claims,
+        {
+          ...xaTrade!,
+          id: 'bad_trade_xb',
+          countryCode: 'XB',
+          profileFields: xaTrade!.profileFields.map((f) => f.replace('XA', 'XB')),
+          text: xaTrade!.text.replace(/^XA/, 'XB'),
+        },
+      ],
+    }
+    const res = runPublishGate(tampered, gateOpts)
+    expect(res.passed).toBe(false)
+    expect(res.violations.map((v) => v.rule)).toContain('claim_event_country_mismatch')
+    expect(res.violations.find((v) => v.rule === 'claim_event_country_mismatch')!.ref).toBe(
+      'bad_trade_xb',
+    )
   })
 })

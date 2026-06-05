@@ -68,6 +68,46 @@ const oecOk = (url: string) =>
       ? oecResponse(NG_IMPORTS)
       : NOT_OK
 
+// Comtrade (keyed PRIMARY) response shape — see src/server/connectors/comtrade.ts. It is
+// the reliable CI trade source: oec.world is Cloudflare-blocked from GitHub runner IPs
+// (uniform HTTP 403), so the keyed Comtrade path is how trade fields reach a CI artifact.
+interface CRow {
+  cmdCode: string
+  cmdDesc: string
+  primaryValue: number
+  refYear: number
+}
+function comtradeResponse(rows: CRow[]): Response {
+  return {
+    ok: true,
+    status: 200,
+    json: async () => ({ data: rows }),
+    text: async () => '',
+  } as unknown as Response
+}
+const CT_EXPORTS: CRow[] = [
+  { cmdCode: '27', cmdDesc: 'Mineral fuels and oils', primaryValue: 52e9, refYear: 2023 },
+  { cmdCode: '12', cmdDesc: 'Oil seeds', primaryValue: 4e9, refYear: 2023 },
+]
+const CT_IMPORTS: CRow[] = [
+  { cmdCode: '84', cmdDesc: 'Machinery', primaryValue: 18e9, refYear: 2023 },
+]
+const comtradeOk = (url: string) =>
+  url.includes('flowCode=X') ? comtradeResponse(CT_EXPORTS) : comtradeResponse(CT_IMPORTS)
+
+// Like runNG but with an explicit config (e.g. a Comtrade key) and a full URL router, so
+// the Comtrade-primary path and the Comtrade/OEC fallbacks can be exercised. The World
+// Bank backbone is always OK; everything else is routed by the test.
+async function runNGRouted(config: ConnectorContext['config'], route: (url: string) => Response) {
+  const diags: ProfileTradeDiagnostic[] = []
+  const fetch = vi.fn(async (url: string) =>
+    url.includes('worldbank.org') ? wbResponse(60) : route(url),
+  )
+  const ctx: ConnectorContext = { fetch: fetch as unknown as FetchLike, config, now }
+  const profiles = await fetchCountryProfiles(ctx, [NG], (d) => diags.push(d))
+  return { profile: profiles[0], diags: diags.filter((d) => d.code === 'NG'), fetch }
+}
+
 describe('country-profile trade-enrichment diagnostics', () => {
   it('OEC success: Comtrade skipped (no key) -> OEC attempted -> populated', async () => {
     const { profile, diags } = await runNG(oecOk)
@@ -107,5 +147,37 @@ describe('country-profile trade-enrichment diagnostics', () => {
     expect(profile.keyExports).toBeUndefined()
     expect(profile.oilStance).toBeUndefined()
     expect(profile.dollarDebtExposure).toBeUndefined()
+  })
+
+  it('Comtrade populated (key present): comtrade=populated, OEC not attempted, src.comtrade', async () => {
+    const { profile, diags, fetch } = await runNGRouted({ comtradeApiKey: 'k' }, (url) =>
+      url.includes('comtradeapi.un.org') ? comtradeOk(url) : NOT_OK,
+    )
+    expect(profile.keyExports).toEqual(['mineral fuels and oils', 'oil seeds'])
+    expect(profile.evidence.keyExports!.sourceIds).toEqual(['src.comtrade'])
+    expect(profile.evidence.importDependence!.sourceIds).toEqual(['src.comtrade'])
+    expect(has(diags, 'comtrade', 'populated')).toBe(true)
+    // Comtrade filled both fields, so OEC (Cloudflare-blocked from CI) is never consulted.
+    expect(diags.some((d) => d.stage === 'oec')).toBe(false)
+    expect(fetch.mock.calls.some((c) => String(c[0]).includes('olap-proxy'))).toBe(false)
+  })
+
+  it('Comtrade fails (key present, non-OK) -> OEC fallback: comtrade=failed, oec=attempted', async () => {
+    const { profile, diags } = await runNGRouted({ comtradeApiKey: 'k' }, (url) =>
+      url.includes('comtradeapi.un.org') ? NOT_OK : oecOk(url),
+    )
+    expect(has(diags, 'comtrade', 'failed')).toBe(true)
+    expect(has(diags, 'oec', 'attempted')).toBe(true)
+    // OEC succeeds in this unit test, so the fields are sourced from src.oec.
+    expect(profile.evidence.keyExports!.sourceIds).toEqual(['src.oec'])
+  })
+
+  it('both Comtrade and OEC fail (key present): trade fields omitted fail-closed', async () => {
+    const { profile, diags } = await runNGRouted({ comtradeApiKey: 'k' }, () => NOT_OK)
+    expect(profile.externalDebtPctGni).toBe(60) // WB backbone intact, nothing fabricated
+    expect(profile.keyExports).toBeUndefined()
+    expect(profile.importDependence).toBeUndefined()
+    expect(has(diags, 'comtrade', 'failed')).toBe(true)
+    expect(has(diags, 'oec', 'non_ok')).toBe(true)
   })
 })

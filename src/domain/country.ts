@@ -13,7 +13,7 @@ export type Exposure = 'high' | 'medium' | 'low'
 export type CurrencyRegime = 'float' | 'managed' | 'peg'
 
 // Raw sourced inputs — published numbers, no interpretation.
-export type RawCountryProfileField = 'externalDebtPctGni'
+export type RawCountryProfileField = 'externalDebtPctGni' | 'petroleumTrade'
 
 // Derived labels — classifications. Each requires an approved methodology.
 export type DerivedCountryProfileField = 'dollarDebtExposure' | 'oilStance'
@@ -62,6 +62,11 @@ export interface CountryProfile {
 
   // Raw sourced input (number as published by the source).
   externalDebtPctGni?: number
+
+  // Raw sourced input: signed HS-27 (petroleum) trade for ONE common reference year,
+  // from ONE source (Comtrade primary, OEC fallback). Feeds a FUTURE oilStance
+  // methodology; this is NOT a derived label, so it carries no methodology id.
+  petroleumTrade?: { exportValueUsd: number; importValueUsd: number; refYear: number }
 
   // Derived classifications — present only with an approved methodology.
   dollarDebtExposure?: Exposure

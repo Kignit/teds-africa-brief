@@ -7,7 +7,11 @@ import type {
 } from '../../domain/country'
 import { unknownIds } from './sources'
 
-export const RAW_COUNTRY_PROFILE_FIELDS: RawCountryProfileField[] = ['externalDebtPctGni']
+export const RAW_COUNTRY_PROFILE_FIELDS: RawCountryProfileField[] = [
+  'externalDebtPctGni',
+  'petroleumTrade',
+]
+// externalDebtPctGni remains the ONLY required raw backbone; petroleumTrade is optional.
 export const REQUIRED_COUNTRY_PROFILE_FIELDS: RawCountryProfileField[] = ['externalDebtPctGni']
 
 export const DERIVED_COUNTRY_PROFILE_FIELDS: DerivedCountryProfileField[] = [
@@ -45,6 +49,9 @@ export interface FieldSourceContract {
   methodologyInputs?: string[]
   /** For product-level trade fields: require reporter/flow/scheme/products/year. */
   requireProductMetadata?: boolean
+  /** For the raw petroleumTrade field: require HS classification, HS chapter-27 product
+   *  codes, a reference year, and BOTH export+import values (no flow code; combined). */
+  requirePetroleumMetadata?: boolean
 }
 
 export type FieldSourceContracts = Partial<Record<CountryProfileEvidenceField, FieldSourceContract>>
@@ -67,6 +74,14 @@ export const FIELD_SOURCE_CONTRACTS: FieldSourceContracts = {
     kind: 'sourced',
     allowedSourceIds: ['src.comtrade', 'src.oec'],
     requireProductMetadata: true,
+  },
+  // Raw signed petroleum (HS-27) trade. Comtrade primary, OEC fallback; both must carry
+  // HS classification, HS chapter-27 product codes, a reference year, and BOTH export and
+  // import values at that year. No methodology (a raw input, not a derived label).
+  petroleumTrade: {
+    kind: 'raw',
+    allowedSourceIds: ['src.comtrade', 'src.oec'],
+    requirePetroleumMetadata: true,
   },
   dollarDebtExposure: {
     kind: 'derived',
@@ -91,6 +106,8 @@ function hasValue(profile: CountryProfile, field: CountryProfileEvidenceField): 
   switch (field) {
     case 'externalDebtPctGni':
       return profile.externalDebtPctGni !== undefined
+    case 'petroleumTrade':
+      return profile.petroleumTrade !== undefined
     case 'dollarDebtExposure':
       return profile.dollarDebtExposure !== undefined
     case 'oilStance':
@@ -186,6 +203,31 @@ function contractReasons(
     if (!evidence.classification) reasons.push(`${field} missing commodity classification`)
     if ((evidence.productCodes?.length ?? 0) === 0) reasons.push(`${field} missing product codes`)
     if (evidence.refYear === undefined) reasons.push(`${field} missing reference year`)
+  }
+
+  if (contract.requirePetroleumMetadata) {
+    // A single-source, single-year signed position: EXACTLY ONE source, a reporter, HS
+    // classification, numeric HS chapter-27 product codes, a reference year, and both
+    // export+import values. A code is HS-27 only if it is '27' or an even-length numeric
+    // code beginning with '27' (e.g. 2709 / 2710 / 270900); '27abc' and '84' are rejected.
+    if (evidence.sourceIds.length !== 1) reasons.push(`${field} must use exactly one source`)
+    if (!evidence.reporterCode) reasons.push(`${field} missing reporter code`)
+    if (evidence.classification !== 'HS') reasons.push(`${field} requires HS classification`)
+    const codes = evidence.productCodes ?? []
+    if (codes.length === 0) reasons.push(`${field} missing product codes`)
+    else if (!codes.every((c) => /^27(?:\d{2})*$/.test(c)))
+      reasons.push(`${field} product codes are not numeric HS chapter 27`)
+    if (evidence.refYear === undefined) reasons.push(`${field} missing reference year`)
+    const value = profile.petroleumTrade
+    if (
+      !value ||
+      typeof value.exportValueUsd !== 'number' ||
+      typeof value.importValueUsd !== 'number'
+    ) {
+      reasons.push(`${field} requires both export and import values`)
+    } else if (evidence.refYear !== undefined && value.refYear !== evidence.refYear) {
+      reasons.push(`${field} value reference year does not match its evidence`)
+    }
   }
 
   if (contract.kind === 'derived') {

@@ -1,4 +1,10 @@
 import type { ConnectorContext } from './types'
+import {
+  resolvePetroleumPosition,
+  petroleumTradeEvidence,
+  type PetroleumFlow,
+  type PetroleumTradeEvidence,
+} from './petroleumTrade'
 
 // UN Comtrade — specific traded products by value. Keyed: disabled until
 // COMTRADE_API_KEY is set, and it never fabricates trade structure. Used to
@@ -262,4 +268,77 @@ export async function fetchComtradeTopProducts(
   }
 
   return rate?.limiter ? rate.limiter.schedule(run) : run()
+}
+
+// Why a dedicated HS-27 petroleum capture did or did not populate (for diagnostics).
+export type ComtradePetroleumReason =
+  | 'populated'
+  | 'skipped_no_key'
+  | 'flow_failed'
+  | 'cross_year'
+  | 'no_data'
+
+export interface ComtradePetroleumResult {
+  evidence: PetroleumTradeEvidence | null
+  reason: ComtradePetroleumReason
+}
+
+// Dedicated HS chapter-27 export/import totals for one country - the signed petroleum
+// trade position, NOT a ranked product list (it does NOT reuse fetchComtradeTopProducts).
+// Queries the export and import flows separately for cmdCode=27, sums the chapter-27 value
+// per year, and resolves to a single COMMON year. A failed flow (non-OK / malformed) makes
+// the whole field omit (a failure is never treated as zero); a successful query that
+// returns no HS-27 rows is a genuine zero. Paced + 429-retried via the shared rate limiter.
+export async function fetchComtradePetroleum(
+  ctx: ConnectorContext,
+  reporterCode: string,
+  options: ComtradeCallOptions = {},
+): Promise<ComtradePetroleumResult> {
+  const { rate } = options
+  const key = ctx.config.comtradeApiKey
+  if (!key) return { evidence: null, reason: 'skipped_no_key' }
+
+  const sleep = rate?.sleep ?? realSleep
+  const maxAttempts = rate?.maxAttempts ?? COMTRADE_MAX_ATTEMPTS
+  const backoffBaseMs = rate?.backoffBaseMs ?? COMTRADE_BACKOFF_BASE_MS
+
+  const fetchFlow = (flow: ComtradeFlow): Promise<PetroleumFlow> => {
+    const url =
+      `https://comtradeapi.un.org/data/v1/get/C/A/HS?reporterCode=${reporterCode}` +
+      `&flowCode=${flow}&partnerCode=0&cmdCode=27&includeDesc=true`
+    const run = async (): Promise<PetroleumFlow> => {
+      const { res } = await comtradeFetch(ctx, url, key, sleep, maxAttempts, backoffBaseMs)
+      if (!res.ok) return { ok: false, byYear: new Map() } // failed flow -> not zero
+      let parsed: unknown
+      try {
+        parsed = await res.json()
+      } catch {
+        return { ok: false, byYear: new Map() } // malformed -> failed, not zero
+      }
+      const data = (parsed as ComtradeResponse | null)?.data
+      if (!Array.isArray(data)) return { ok: false, byYear: new Map() }
+      // Query succeeded: sum the chapter-27 value per year (empty map = genuine zero).
+      const byYear = new Map<number, number>()
+      for (const r of data) {
+        if ((r.cmdCode ?? '').trim() !== '27') continue
+        if (typeof r.primaryValue !== 'number') continue
+        const y = rowYear(r)
+        if (y > 0) byYear.set(y, (byYear.get(y) ?? 0) + r.primaryValue)
+      }
+      return { ok: true, byYear }
+    }
+    return rate?.limiter ? rate.limiter.schedule(run) : run()
+  }
+
+  const [ex, im] = await Promise.all([fetchFlow('X'), fetchFlow('M')])
+  if (!ex.ok || !im.ok) return { evidence: null, reason: 'flow_failed' }
+  const position = resolvePetroleumPosition(ex, im)
+  if (!position) {
+    const noData = ex.byYear.size === 0 && im.byYear.size === 0
+    return { evidence: null, reason: noData ? 'no_data' : 'cross_year' }
+  }
+  return {
+    evidence: petroleumTradeEvidence(SOURCE_ID, reporterCode, position, ['27']),
+    reason: 'populated',
+  }
 }

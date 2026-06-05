@@ -1,4 +1,10 @@
 import type { ConnectorContext } from './types'
+import {
+  resolvePetroleumPosition,
+  petroleumTradeEvidence,
+  type PetroleumFlow,
+  type PetroleumTradeEvidence,
+} from './petroleumTrade'
 
 // UN/CEPII BACI trade via OEC (oec.world) — KEYLESS, secondary / official-derived
 // (BACI is CEPII's cleaned version of UN Comtrade). A keyless source for a country
@@ -167,4 +173,54 @@ export async function fetchOecTrade(
       : null
 
   return { exports, imports, petroleum }
+}
+
+// Chapter-27 (petroleum) value + HS4 codes per YEAR for one flow, across the FULL response
+// (not only the latest year, so a common export/import year can be found). Throws on a
+// non-OK response (fail loud; the caller catches and omits).
+interface OecPetroleumFlow extends PetroleumFlow {
+  codesByYear: Map<number, Set<string>>
+}
+async function oecPetroleumFlow(
+  ctx: ConnectorContext,
+  reporterCode: string,
+  flow: OecFlow,
+): Promise<OecPetroleumFlow> {
+  const res = await ctx.fetch(buildUrl(reporterCode, flow))
+  if (!res.ok) {
+    throw new Error(`OEC request failed (${reporterCode} ${flow}): HTTP ${res.status}`)
+  }
+  const data = ((await res.json()) as { data?: OecRow[] }).data ?? []
+  const byYear = new Map<number, number>()
+  const codesByYear = new Map<number, Set<string>>()
+  for (const r of data) {
+    if (chapterOf(r['HS4 ID']) !== PETROLEUM_CHAPTER) continue
+    if (typeof r['Trade Value'] !== 'number' || typeof r.Year !== 'number') continue
+    byYear.set(r.Year, (byYear.get(r.Year) ?? 0) + r['Trade Value'])
+    const codes = codesByYear.get(r.Year) ?? new Set<string>()
+    codes.add(hs4Of(r['HS4 ID']))
+    codesByYear.set(r.Year, codes)
+  }
+  return { ok: true, byYear, codesByYear }
+}
+
+// Keyless OEC fallback for the raw petroleumTrade field: the signed HS-27 position for a
+// single COMMON export/import year (never max(ex.year, im.year)). Returns null when there
+// is no common year or no data; throws on a non-OK response (the caller catches and omits).
+export async function fetchOecPetroleum(
+  ctx: ConnectorContext,
+  reporterCode: string,
+): Promise<PetroleumTradeEvidence | null> {
+  const [ex, im] = await Promise.all([
+    oecPetroleumFlow(ctx, reporterCode, 'X'),
+    oecPetroleumFlow(ctx, reporterCode, 'M'),
+  ])
+  const position = resolvePetroleumPosition(ex, im)
+  if (!position) return null
+  const codes = new Set<string>([
+    ...(ex.codesByYear.get(position.refYear) ?? []),
+    ...(im.codesByYear.get(position.refYear) ?? []),
+  ])
+  const productCodes = codes.size > 0 ? [...codes] : [PETROLEUM_CHAPTER]
+  return petroleumTradeEvidence(SOURCE_ID, reporterCode, position, productCodes)
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T11:14:41.474Z",
+  "generatedAt": "2026-06-05T12:01:05.236Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -14,11 +14,8 @@
         "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
         "claimIds": [
           "claim_0_0",
-          "claim_0_1",
-          "claim_0_2",
-          "claim_0_3",
-          "claim_0_4",
-          "claim_1_0"
+          "claim_1_0",
+          "claim_2_0"
         ]
       }
     ],
@@ -26,83 +23,29 @@
       {
         "id": "claim_0_0",
         "kind": "causal",
-        "text": "ET: deeper trade integration is positive via the trade balance and growth",
-        "figureIds": [],
+        "text": "GH: the policy-rate decision is positive via growth and households",
+        "figureIds": [
+          "fig_fx.GHS_USD_4"
+        ],
         "eventIds": [
-          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
+          "evt_access_bank_strengthens_leadership_team_with_two_executive_6gm7sd"
         ],
-        "profileFields": [
-          "ET.keyExports"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
+        "profileFields": [],
+        "profileSourceIds": [],
         "methodologyIds": [
-          "method.causal.trade_integration_event.v1"
+          "method.causal.policy_rate_decision.v1"
         ],
-        "countryCode": "ET",
+        "countryCode": "GH",
         "tone": "pos",
         "channels": [
-          "trade_balance",
-          "growth"
+          "growth",
+          "consumers"
         ],
-        "shockType": "trade_integration_event",
+        "shockType": "policy_rate_decision",
         "verified": true
       },
       {
-        "id": "claim_0_1",
-        "kind": "causal",
-        "text": "KE: deeper trade integration is positive via the trade balance and growth",
-        "figureIds": [],
-        "eventIds": [
-          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
-        ],
-        "profileFields": [
-          "KE.keyExports"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.causal.trade_integration_event.v1"
-        ],
-        "countryCode": "KE",
-        "tone": "pos",
-        "channels": [
-          "trade_balance",
-          "growth"
-        ],
-        "shockType": "trade_integration_event",
-        "verified": true
-      },
-      {
-        "id": "claim_0_2",
-        "kind": "causal",
-        "text": "NG: deeper trade integration is positive via the trade balance and growth",
-        "figureIds": [],
-        "eventIds": [
-          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
-        ],
-        "profileFields": [
-          "NG.keyExports"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.causal.trade_integration_event.v1"
-        ],
-        "countryCode": "NG",
-        "tone": "pos",
-        "channels": [
-          "trade_balance",
-          "growth"
-        ],
-        "shockType": "trade_integration_event",
-        "verified": true
-      },
-      {
-        "id": "claim_0_3",
+        "id": "claim_1_0",
         "kind": "causal",
         "text": "GH: deeper trade integration is positive via the trade balance and growth",
         "figureIds": [],
@@ -128,33 +71,7 @@
         "verified": true
       },
       {
-        "id": "claim_0_4",
-        "kind": "causal",
-        "text": "ZA: deeper trade integration is positive via the trade balance and growth",
-        "figureIds": [],
-        "eventIds": [
-          "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h"
-        ],
-        "profileFields": [
-          "ZA.keyExports"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.causal.trade_integration_event.v1"
-        ],
-        "countryCode": "ZA",
-        "tone": "pos",
-        "channels": [
-          "trade_balance",
-          "growth"
-        ],
-        "shockType": "trade_integration_event",
-        "verified": true
-      },
-      {
-        "id": "claim_1_0",
+        "id": "claim_2_0",
         "kind": "causal",
         "text": "GH: the debt and fiscal event is positive via debt service and fiscal revenue",
         "figureIds": [],
@@ -279,6 +196,349 @@
     ],
     "events": [
       {
+        "id": "evt_why_millions_still_lack_access_to_life_saving_17bbjqu",
+        "title": "Why millions still lack access to life-saving medical tests",
+        "summary": "Artificial intelligence can now detect diseases faster. Genomic technology is making personalised treatment possible. Digital health records are improving patient\nread more Why millions still lack access to life-saving medical tests",
+        "occurredAt": "2026-06-05T11:59:50.000Z",
+        "countryCodes": [],
+        "topic": "why millions still lack access to life saving",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:2sxi9i"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_8220_call_of_my_life_8221_rakes_n396_1vy4m0v",
+        "title": "&#8220;Call of My Life&#8221; rakes N396.1M as Nollywood dominates May Box Office",
+        "summary": "Nollywood films led the Nigerian cinema charts for the weekend of May 29-31, underscoring local productions&#8217; strong audience appeal over\nread more &#8220;Call of My Life&#8221; rakes N396.1M as Nollywood dominates May Box Office",
+        "occurredAt": "2026-06-05T11:56:58.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "8220 call of my life 8221 rakes n396",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:fv5mil"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_world_media_organisation_editor_in_chief_calls_for_1f2t7i5",
+        "title": "World Media Organisation Editor-in-Chief calls for global action to protect biodiversity",
+        "summary": "By Gautam Karve, Editor-in-Chief, World Media Organisation On the occasion of World Environment Day, I urge citizens across the globe to recognise that biodiversity is the foundation of life on Earth. Every species, ecosystem, and natural habitat plays a vital role in maintaining the balance of our planet. The loss of biodiversity threatens food security, [&#8230;]\nThe post World Media Organisatio",
+        "occurredAt": "2026-06-05T11:55:40.000Z",
+        "countryCodes": [],
+        "topic": "world media organisation editor in chief calls for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1ez7i1v"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nkusi_it_siyasebenza_launches_epwp_smart_track_a_1o7spai",
+        "title": "Nkusi IT Siyasebenza launches EPWP Smart Track, a digital workforce management platform built on Microsoft Power Platform",
+        "summary": "At the heart of the platform is a mobile-first check-in experience built on Microsoft Power Apps.",
+        "occurredAt": "2026-06-05T11:55:33.000Z",
+        "countryCodes": [],
+        "topic": "nkusi it siyasebenza launches epwp smart track a",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:qnoua6"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_hidden_arms_trade_tracking_west_a_frica_13xxzzh",
+        "title": "The hidden arms trade: Tracking West A\\frica&#8217;s illicit weapons networks",
+        "summary": "Discussions about the security crisis unfolding across West Africa often focus on terrorism, banditry, insurgency, and organised crime. Yet beneath\nread more The hidden arms trade: Tracking West A\\frica&#8217;s illicit weapons networks",
+        "occurredAt": "2026-06-05T11:53:56.000Z",
+        "countryCodes": [],
+        "topic": "the hidden arms trade tracking west a frica",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1a3qs3o"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_lagos_moves_to_shield_public_data_as_ai_1bm3cb1",
+        "title": "Lagos moves to shield public data as AI-driven cyber threats rise",
+        "summary": "The Lagos state government has intensified efforts to protect public data and digital services through a new cybersecurity capacity-building programme\nread more Lagos moves to shield public data as AI-driven cyber threats rise",
+        "occurredAt": "2026-06-05T11:51:55.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "lagos moves to shield public data as ai",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1owxyah"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_yango_group_hosts_innovation_day_2026_in_abidjan_7sje9w",
+        "title": "Yango Group hosts Innovation Day 2026 in Abidjan",
+        "summary": "More than 200 business leaders,  entrepreneurs, policymakers, and technology experts gathered in Abidjan on 4 June for Yango Innovation Day 2026, where Yango Group, a UAE-based technology company, showcased technologies used across its global markets, discussed the future of urban digital services in Africa, announced new local partnerships and recognised graduates of its Fellowship Programme. [&#",
+        "occurredAt": "2026-06-05T11:49:17.000Z",
+        "countryCodes": [],
+        "topic": "yango group hosts innovation day 2026 in abidjan",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:nqju5k"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigeria_loses_jobs_billions_to_90_raw_semi_67n1l0",
+        "title": "Nigeria loses jobs, billions to 90% raw, semi-processed leather exports",
+        "summary": "Nigeria continues to lose millions of dollars in potential export earnings and thousands of manufacturing jobs as nearly 90% of\nread more Nigeria loses jobs, billions to 90% raw, semi-processed leather exports",
+        "occurredAt": "2026-06-05T11:46:34.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigeria loses jobs billions to 90 raw semi",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:zifqka"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_we_have_built_required_reserves_to_withstand_oil_1pmgmxe",
+        "title": "We have built required reserves to withstand oil price shocks  &#8211; BoG Governor",
+        "summary": "Asked about what will happen if the current shocks should drag, Dr. Asiama said “if it should continue, then the outlook could be impacted”.",
+        "occurredAt": "2026-06-05T11:46:01.000Z",
+        "countryCodes": [],
+        "topic": "we have built required reserves to withstand oil",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1mz71o4"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_emperor_the_premium_and_his_vision_q4sav0",
+        "title": "The Emperor, the premium, and his vision",
+        "summary": "Total premium paid in the Nigerian Insurance industry for 2025 stood at about N2. 3 trillion, a 47% increase from the N1.5 trillion it did the previous year. Let me give you some more breakdown. Non-life (general Insurance) contributed approximately 68.4% (N1). 5trillion with the oil and gas, fire and motor insurance driving that. Life [&#8230;]\nThe post The Emperor, the premium, and his vision ap",
+        "occurredAt": "2026-06-05T11:42:56.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "the emperor the premium and his vision",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1e1z4xg"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_minister_seeks_investigation_into_r70m_lease_deal_for_1ucl1ws",
+        "title": "Minister seeks investigation into R70m lease deal for empty building",
+        "summary": "SA tops Africa’s digital fraud rankings as criminals get smarter. SA companies are spending billions on benefits employees don’t use. And in conversation with author Lidia Rauch on her new book, Apartheid’s Granddaughter.",
+        "occurredAt": "2026-06-05T11:40:46.000Z",
+        "countryCodes": [],
+        "topic": "minister seeks investigation into r70m lease deal for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1jrdgrt"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_rising_illness_burden_among_elderly_and_children_deepens_en5dsm",
+        "title": "Rising Illness Burden Among Elderly and Children Deepens Kenya’s Health Financing Gap",
+        "summary": "NAIROBI,Kenya,June 5-Kenya’s healthcare financing challenge is increasingly being shaped by the needs of school-going children and older adults, with new expert views suggesting that healthcare products and coverage models have not kept pace with the distinct risks facing the country’s youngest and oldest populations. The findings point to mounting pressure on households already grappling with [&#",
+        "occurredAt": "2026-06-05T11:36:09.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "rising illness burden among elderly and children deepens",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:bqmjos"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_eskom_municipal_takeover_may_expand_to_30_municipalities_1vpwaf5",
+        "title": "Eskom municipal takeover may expand to 30 municipalities",
+        "summary": "Legal compliance process to be expedited.",
+        "occurredAt": "2026-06-05T11:33:57.000Z",
+        "countryCodes": [],
+        "topic": "eskom municipal takeover may expand to 30 municipalities",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:1r15v3o",
+            "src.moneyweb_za:2sa9a6"
+          ],
+          "sourceIds": [
+            "src.citizen_za",
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_17w67p7",
+        "title": "EXIM Frozen Foods Association opposes proposed reintroduction of Smart Port Note System",
+        "summary": "The Exim Frozen Foods Association of Ghana (EFFAG) has urged the Ministry of Transport to reject any efforts to reintroduce the Cargo Tracking Note (CTN), also known as the Smart Port Note (SPN), arguing that the system would impose significant additional costs on businesses and consumers. In a statement signed by its Executive Secretary, Michael [&#8230;]\nThe post EXIM Frozen Foods Association op",
+        "occurredAt": "2026-06-05T11:33:31.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "exim frozen foods association opposes proposed reintroduction of",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1mdroei",
+            "src.myjoyonline_gh:yxfam6"
+          ],
+          "sourceIds": [
+            "src.bft_gh",
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_flags_off_n1_245_trillion_gombe_biu_lhuniq",
+        "title": "FG flags off N1.245 trillion Gombe-Biu Highway reconstruction, awards project to Hi-tech",
+        "summary": "The Federal Government has flagged off the N1.245 trillion reconstruction and dualisation of the 125km Gombe-Biu Highway, awarding the project to Hi-Tech Construction Company. \nThe post FG flags off N1.245 trillion Gombe-Biu Highway reconstruction, awards project to Hi-tech appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T11:32:18.000Z",
+        "countryCodes": [],
+        "topic": "fg flags off n1 245 trillion gombe biu",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:fn9z98"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_access_bank_strengthens_leadership_team_with_two_executive_6gm7sd",
+        "title": "Access Bank strengthens leadership team with two executive appointments",
+        "summary": "Access Bank (Ghana) Plc has appointed two accomplished banking executives to its senior leadership team, following regulatory approval by the Bank of Ghana. Eugene Ocansey joins the Bank as Executive Director, Retail and SME Banking, and Nana Kwabena Afoom as Executive Director, Wholesale Banking. The appointments underscore the Bank&#8217;s commitment to attracting exceptional talent in [&#8230;]",
+        "occurredAt": "2026-06-05T11:30:19.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "access bank strengthens leadership team with two executive",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:fj5o6t",
+            "src.myjoyonline_gh:lo0jp5"
+          ],
+          "sourceIds": [
+            "src.bft_gh",
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mr_price_posts_record_r6bn_operating_profit_l9wo2c",
+        "title": "Mr Price posts record R6bn operating profit",
+        "summary": "But cost of controversial NKD acquisition weighed on group's earnings.",
+        "occurredAt": "2026-06-05T11:23:41.000Z",
+        "countryCodes": [],
+        "topic": "mr price posts record r6bn operating profit",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:3agup6"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_world_environment_day_green_tax_sparks_debate_ahead_xis065",
         "title": "World Environment Day: Green Tax sparks debate ahead of July 1 rollout",
         "summary": "As the world commemorates World Environment Day 2026, Nigeria’s planned implementation of a new Green Tax on motor vehicles has generated widespread debate among environmental advocates, economists, automobile operators, and consumers. \nThe post World Environment Day: Green Tax sparks debate ahead of July 1 rollout  appeared first on Nairametrics.",
@@ -294,6 +554,25 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sa_business_warn_government_over_xenophobia_backlash_lalc95",
+        "title": "SA business warn government over xenophobia backlash",
+        "summary": "Calls on the state to 'get on top of the situation and restore order'.",
+        "occurredAt": "2026-06-05T11:10:04.000Z",
+        "countryCodes": [],
+        "topic": "sa business warn government over xenophobia backlash",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:3bojj7"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -336,6 +615,25 @@
           ],
           "sourceIds": [
             "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_world_environment_day_2026_happy_world_environment_day_160k0v",
+        "title": "World Environment Day 2026: Happy World Environment Day",
+        "summary": "By Kofi SAMUELS World Environment Day serves as a global reminder that the future of humanity depends on the health of our planet. It is a call to action for individuals, businesses, and governments to reflect on their daily decisions and work collectively to protect the environment. This year’s commemoration comes at a critical time [&#8230;]\nThe post World Environment Day 2026: Happy World Envir",
+        "occurredAt": "2026-06-05T11:06:20.000Z",
+        "countryCodes": [],
+        "topic": "world environment day 2026 happy world environment day",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:b3r7mv"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -523,6 +821,27 @@
         }
       },
       {
+        "id": "evt_nssf_defends_pension_system_after_court_rejects_stay_12e99nm",
+        "title": "NSSF Defends Pension System After Court Rejects Stay Application",
+        "summary": "Employers and workers across Kenya have been told to continue making pension contributions under the current National Social Security Fund (NSSF) rates, even as court battles over the 2013 pension reforms continue to unfold. The Fund has moved to calm growing confusion in the labour market after reports suggested a return to the old system [&#8230;]",
+        "occurredAt": "2026-06-05T10:47:02.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "nssf defends pension system after court rejects stay",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:z7fgjv"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_russia_africa_dialogue_untapped_prospects_for_economic_cooperation_8q8ij1",
         "title": "Russia-Africa Dialogue: Untapped prospects for economic cooperation",
         "summary": "By Kestér Kenn KLOMEGÂH At the St Petersburg International Economic Forum 2026, featured the traditional &#8220;Russia-Africa Business Dialogue&#8221;, which was initiated since 2016, to deliberate aspects of forging economic cooperation between Russia and African countries. For a decade since its creation, this platform has practically discussed most pertinent roadblocks, highlighted the economic",
@@ -654,6 +973,25 @@
           ],
           "sourceIds": [
             "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_yango_group_hosts_innovation_day_2026_in_abidjan_1o3z1jt",
+        "title": "Yango Group hosts Innovation Day 2026 in Abidjan",
+        "summary": "Yango Group, a UAE-based technology company,&#160; brought together more than 200 representatives from business, government and the technology sector for Innovation Day 2026 in Abidjan. The event featured demonstrations of technologies used across Yango Group’s markets globally, discussions on the development of digital services for African cities, the signing of a partnership agreement with GUDE-",
+        "occurredAt": "2026-06-05T10:00:00.000Z",
+        "countryCodes": [],
+        "topic": "yango group hosts innovation day 2026 in abidjan",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1jrpmes"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -981,27 +1319,6 @@
           ],
           "sourceIds": [
             "src.sokodirectory_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_1g9xsdq",
-        "title": "EXIM Frozen Foods Association opposes proposed reintroduction of Smart Port Note system",
-        "summary": "The Exim Frozen Foods Association of Ghana (EFFAG) has urged the Ministry of Transport to reject any attempt to reintroduce the Cargo Tracking Note (CTN), also known as the Smart Port Note (SPN), arguing that the system would impose significant additional costs on businesses and consumers.",
-        "occurredAt": "2026-06-05T08:37:58.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "exim frozen foods association opposes proposed reintroduction of",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:yxfam6"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2370,25 +2687,6 @@
         }
       },
       {
-        "id": "evt_eskom_municipal_takeover_may_expand_to_30_municipalities_l2m9kw",
-        "title": "Eskom municipal takeover may expand to 30 municipalities",
-        "summary": "Legal compliance process to be expedited.",
-        "occurredAt": "2026-06-05T02:01:19.000Z",
-        "countryCodes": [],
-        "topic": "eskom municipal takeover may expand to 30 municipalities",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:2sa9a6"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_business_conditions_unchanged_in_may_while_job_creation_7ry6lk",
         "title": "Business conditions unchanged in May, while job creation hits 11-month high",
         "summary": "Solid increase in staffing levels New orders rise, but output ticks lower Inflationary pressures remain muted Business conditions were stable in Ghana&#8217;s private sector during May. New orders continued to rise, albeit at a softer pace, while business activity decreased fractionally. The main positive from the latest survey was a solid expansion of employment, with [&#8230;]\nThe post Business ",
@@ -3721,6 +4019,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ecowas_rice_forum_ends_with_agriconnect_compact_renewed_je0mq8",
+        "title": "ECOWAS Rice Forum Ends with AgriConnect Compact, Renewed Push for Rice Self-Sufficiency",
+        "summary": "A two-day West Africa Rice Investment Roundtable in Accra ended with a renewed push to boost local rice production, as Ghana unveiled a new import quota policy and development partners signed a financing agreement aimed at accelerating investment in the sector. The forum brought together governments, development institutions and private investors from across the region [&#8230;]",
+        "occurredAt": "2026-06-04T11:14:13.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ecowas rice forum ends with agriconnect compact renewed",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:4ja660"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -5867,27 +6186,6 @@
         }
       },
       {
-        "id": "evt_access_bank_ghana_appoints_two_executive_directors_to_19yg9d9",
-        "title": "Access Bank Ghana appoints two Executive Directors to strengthen leadership team",
-        "summary": "Access Bank (Ghana) PLC has announced the appointment of two accomplished banking executives to its senior leadership team, following regulatory approval from the Bank of Ghana.",
-        "occurredAt": "2026-06-03T13:57:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "access bank ghana appoints two executive directors to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:lo0jp5"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_ethiopians_voted_in_the_millions_but_not_everywhere_1ncy2vb",
         "title": "Ethiopians Voted in the Millions, But Not Everywhere: IGAD",
         "summary": "Millions cast ballots, while security concerns prevented elections from being conducted in 38 constituencies in the Tigray and eight in the Amhara regional states, leaving...",
@@ -6905,103 +7203,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_gov_8217_t_to_crack_down_on_rice_hy796s",
-        "title": "Gov&#8217;t to crack down on rice smuggling with new inter-ministerial task-force – Agric Minister",
-        "summary": "The Minister for Food and Agriculture, Eric Opoku, has announced plans by government to establish an inter-ministerial taskforce to strengthen surveillance and enforcement against the illegal importation of rice through unauthorized border routes. Speaking at the West Africa Rice Investment Roundtable on the theme “Mobilising Transformational Capital to Support West Africa’s Rice Agenda,” the Mini",
-        "occurredAt": "2026-06-02T11:47:39.000Z",
-        "countryCodes": [],
-        "topic": "gov 8217 t to crack down on rice",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1j9ftg"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_highest_paid_teachers_to_earn_r1_3m_8211_18qixme",
-        "title": "Highest-paid teachers to earn R1.3m &#8211; Here&#8217;s how much others will get paid",
-        "summary": "'The applicable salary adjustment effective from 01 April 2026 for the relevant categories of employees.'",
-        "occurredAt": "2026-06-02T11:43:37.000Z",
-        "countryCodes": [],
-        "topic": "highest paid teachers to earn r1 3m 8211",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:106coej"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_edward_effah_calls_for_ceo_gov_t_compact_kkht68",
-        "title": "Edward Effah calls for CEO-gov’t compact to drive economic transformation at CEO Summit 2026",
-        "summary": "Edward Effah, founder of Fidelity Bank Ghana, has called for a structured and ambitious partnership between Ghana's business community and government.",
-        "occurredAt": "2026-06-02T11:41:57.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "edward effah calls for ceo gov t compact",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:6ygnkf"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_blow_to_bia_tosha_as_court_rejects_fresh_ewjlrj",
-        "title": "Blow to Bia Tosha as court rejects fresh bid to stop Sh300b EABL shares sale",
-        "summary": "Bia Tosha Distributors Limited has suffered a major setback after the court dismissed its second attempt to stop the sale of Sh300 billion EABL shares to Asahi Group Holdings.",
-        "occurredAt": "2026-06-02T11:31:42.000Z",
-        "countryCodes": [],
-        "topic": "blow to bia tosha as court rejects fresh",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:18g11hu"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_huawei_nova_15_max_arrives_with_the_biggest_1jyduez",
-        "title": "Huawei nova 15 Max arrives with the biggest battery in its class and exceptional value",
-        "summary": "The Huawei nova 15 Max delivers more battery, more value and more for your money.",
-        "occurredAt": "2026-06-02T11:25:18.000Z",
-        "countryCodes": [],
-        "topic": "huawei nova 15 max arrives with the biggest",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:j0ohlv"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -7277,6 +7478,25 @@
       }
     ],
     "methodologies": [
+      {
+        "id": "method.causal.policy_rate_decision.v1",
+        "name": "Policy-rate decision mechanism",
+        "version": "1.0.0",
+        "description": "A policy-rate change trades currency support against growth and borrowers.",
+        "kind": "causal",
+        "inputs": [],
+        "bands": [],
+        "shockType": "policy_rate_decision",
+        "mechanism": "A policy-rate change trades currency support against growth and borrowers.",
+        "channels": [
+          "fx",
+          "growth",
+          "consumers",
+          "debt_service"
+        ],
+        "owner": "analysis-team",
+        "status": "approved"
+      },
       {
         "id": "method.causal.trade_integration_event.v1",
         "name": "Trade-integration mechanism",

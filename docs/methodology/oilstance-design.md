@@ -82,8 +82,12 @@ petroleumTrade: { exportValueUsd: number, importValueUsd: number, refYear: numbe
 
 - `method.oilStance.banding.v1`, owner analysis-team, `status: 'draft'` (modeled on
   `DEBT_EXPOSURE_BANDING_V1`). `inputs: ['petroleumTrade']`.
-- Metric (preferred): `normalizedNet = (exportValueUsd - importValueUsd) / (exportValueUsd
-  - importValueUsd)`, in `[-1, +1]`.
+- Metric (preferred): the normalized net petroleum position, in `[-1, +1]`:
+
+  ```text
+  normalizedNet = (exportValueUsd - importValueUsd) / (exportValueUsd + importValueUsd)
+  ```
+
 - Normalization guard: before banding, require the denominator `(exports + imports)` to
   clear a minimum petroleum-trade threshold; below it, fall back to `neutral` (or omit)
   rather than letting a tiny one-sided flow read as a confident exporter / importer. The

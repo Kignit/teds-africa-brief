@@ -297,4 +297,41 @@ describe('analysis engine V0', () => {
       'bad_trade_xb',
     )
   })
+
+  it('produces no claim for a central-bank mention that is not a rate decision', () => {
+    // "Bank of Ghana" appears only for regulatory approval, so classifyEvent must not
+    // treat it as a policy-rate decision and the engine produces nothing.
+    const appointment = ev({
+      id: 'access',
+      title: 'Access Bank strengthens leadership team with two executive appointments',
+      summary: 'The appointments are subject to regulatory approval by the Bank of Ghana.',
+      countryCodes: ['XA'],
+    })
+    const draft = composeAnalysisDraft({
+      figures: [],
+      events: [appointment],
+      profiles: TEST_COUNTRY_PROFILES,
+    })
+    expect(draft.causalLinks).toHaveLength(0)
+    expect(draft.claims).toHaveLength(0)
+  })
+
+  it('still produces a policy_rate_decision effect for a genuine rate event in a named country', () => {
+    const rateCut = ev({
+      id: 'rate',
+      title: 'Bank of Ghana cuts the policy rate',
+      countryCodes: ['XA'],
+    })
+    const draft = composeAnalysisDraft({
+      figures: [],
+      events: [rateCut],
+      profiles: TEST_COUNTRY_PROFILES,
+    })
+    const link = draft.causalLinks.find((l) => l.shockType === 'policy_rate_decision')
+    expect(link).toBeDefined()
+    expect(link!.effects.map((e) => e.countryCode)).toEqual(['XA'])
+    expect(
+      draft.claims.some((c) => c.shockType === 'policy_rate_decision' && c.countryCode === 'XA'),
+    ).toBe(true)
+  })
 })

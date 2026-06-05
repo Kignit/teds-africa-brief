@@ -130,4 +130,16 @@ describe('claim-yield diagnostics', () => {
     expect(d.shock).toBe('trade_integration_event')
     expect(d.blocker).toBe('no covered country in countryCodes')
   })
+
+  it('logs a bare central-bank mention (not a rate decision) as blocked by unclassified', () => {
+    const event = corroborated({
+      id: 'evt_access',
+      title: 'Access Bank strengthens leadership team with two executive appointments',
+      summary: 'The appointments are subject to regulatory approval by the Bank of Ghana.',
+      countryCodes: ['GH'],
+    })
+    const [d] = diagnoseClaimYield([event], [], [profile('GH')])
+    expect(d.shock).toBe('unclassified')
+    expect(d.blocker).toBe('unclassified')
+  })
 })

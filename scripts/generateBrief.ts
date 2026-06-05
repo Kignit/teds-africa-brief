@@ -75,7 +75,8 @@ function logProfileTradeDiagnostics(diags: ProfileTradeDiagnostic[]): void {
   const byCode = new Map<string, string[]>()
   for (const d of diags) {
     const arr = byCode.get(d.code) ?? []
-    arr.push(`${d.stage}=${d.outcome}${d.detail ? `(${d.detail})` : ''}`)
+    const stage = d.flow ? `${d.stage}[${d.flow}]` : d.stage
+    arr.push(`${stage}=${d.outcome}${d.detail ? `(${d.detail})` : ''}`)
     byCode.set(d.code, arr)
   }
   console.log('Profile trade enrichment (why trade fields are present/absent):')

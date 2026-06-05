@@ -2,11 +2,13 @@ import type { ConnectorContext } from './types'
 import type { CountryProfile, CountryProfileEvidenceMap } from '../../domain/country'
 import {
   fetchComtradeTopProducts,
+  fetchComtradePetroleum,
   createComtradeRateLimit,
   type ComtradeFlowDiagnostic,
   type ComtradeRateLimit,
 } from './comtrade'
-import { fetchOecTrade } from './oec'
+import { fetchOecTrade, fetchOecPetroleum } from './oec'
+import type { PetroleumTradeEvidence } from './petroleumTrade'
 
 // Builds country profiles from real, machine-readable sources — no hardcoded
 // country facts and no analytical classification. World Bank (free, no key)
@@ -44,8 +46,8 @@ export const LAUNCH_MARKETS: CountryProfileSpec[] = [
 // fail-closed omission, or the publish gate.
 export interface ProfileTradeDiagnostic {
   code: string
-  stage: 'comtrade' | 'oec'
-  /** Comtrade is diagnosed per flow (X export / M import); OEC leaves this unset. */
+  stage: 'comtrade' | 'oec' | 'petroleum'
+  /** Comtrade is diagnosed per flow (X export / M import); OEC/petroleum leave this unset. */
   flow?: 'X' | 'M'
   outcome: 'skipped_no_key' | 'attempted' | 'non_ok' | 'empty' | 'malformed' | 'populated'
   detail?: string
@@ -222,6 +224,58 @@ async function buildProfile(
         detail: e instanceof Error ? e.message : String(e),
       })
       // OEC unreachable/failed → omit the trade fields (fail closed, no fabrication).
+    }
+  }
+
+  // RAW signed petroleum (HS-27) trade for a FUTURE oilStance methodology; NOT a label.
+  // Comtrade primary; OEC fallback ONLY when Comtrade did not populate. Both export and
+  // import values come from the SAME source and SAME refYear (resolved in the connectors);
+  // a missing/failed flow or a cross-year mismatch omits the field (fail closed). oilStance
+  // is NOT derived here, so oil_shock stays blocked downstream.
+  if (spec.comtradeCode || spec.oecCode) {
+    let petroleum: PetroleumTradeEvidence | null = null
+    const notes: string[] = []
+    if (spec.comtradeCode) {
+      const ct = await fetchComtradePetroleum(ctx, spec.comtradeCode, { rate })
+      if (ct.evidence) petroleum = ct.evidence
+      else notes.push(`comtrade ${ct.reason}`)
+    }
+    if (!petroleum && spec.oecCode) {
+      try {
+        const oec = await fetchOecPetroleum(ctx, spec.oecCode)
+        if (oec) petroleum = oec
+        else notes.push('oec no common year')
+      } catch (e) {
+        notes.push(`oec ${e instanceof Error ? e.message : String(e)}`)
+      }
+    }
+    if (petroleum) {
+      profile.petroleumTrade = {
+        exportValueUsd: petroleum.exportValueUsd,
+        importValueUsd: petroleum.importValueUsd,
+        refYear: petroleum.refYear,
+      }
+      evidence.petroleumTrade = {
+        sourceIds: [petroleum.sourceId],
+        asOf: petroleum.asOf,
+        reporterCode: petroleum.reporterCode,
+        classification: petroleum.classification,
+        productCodes: petroleum.productCodes,
+        refYear: petroleum.refYear,
+      }
+      onDiag?.({
+        code: spec.code,
+        stage: 'petroleum',
+        outcome: 'populated',
+        detail: `${petroleum.sourceId} ${petroleum.refYear}`,
+      })
+    } else {
+      onDiag?.({
+        code: spec.code,
+        stage: 'petroleum',
+        outcome: 'empty',
+        detail: notes.join('; ') || 'no source',
+      })
     }
   }
 

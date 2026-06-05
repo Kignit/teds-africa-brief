@@ -19,6 +19,7 @@ import { dedupeNewsItems } from './dedupe'
 import { mergeNewsWindow } from './newsWindow'
 import { composeAnalysisDraft } from '../analysis/composeAnalysisDraft'
 import { composeBriefFromAnalysis } from '../analysis/buildBrief'
+import { diagnoseClaimYield, type ClaimYieldDiagnostic } from '../analysis/claimYieldDiagnostics'
 import { deriveCountryProfiles, METHODOLOGIES } from '../analysis/methodologies'
 import { runPublishGate } from '../publishing/publishGate'
 import { engageLiveMode } from '../runtimeMode'
@@ -65,6 +66,8 @@ export interface LiveIngestionDiagnostics {
   eventCount: number
   profileCount: number
   rejectedProfiles: RejectedCountryProfile[]
+  /** Per corroborated event: classifier result, scored-effect count, and blocker (if any). */
+  claimYield: ClaimYieldDiagnostic[]
 }
 
 export interface LiveIngestionResult {
@@ -218,6 +221,11 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
     now: ctx.now,
   })
 
+  // Claim-yield audit trail: for each corroborated event, why it did or didn't produce
+  // scored effects. A pure read over the generated links — no effect on the analysis,
+  // the claims, or the gate.
+  const claimYield = diagnoseClaimYield(events, analysis.causalLinks, profiles)
+
   // 7. Assemble a live brief, then 8. let the publish gate decide.
   const draft = composeBriefFromAnalysis({
     id: input.brief.id,
@@ -246,6 +254,7 @@ export async function runLiveIngestion(input: LiveIngestionInput): Promise<LiveI
       eventCount: events.length,
       profileCount: profiles.length,
       rejectedProfiles,
+      claimYield,
     },
   }
 }

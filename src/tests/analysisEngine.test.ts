@@ -75,7 +75,8 @@ describe('analysis engine V0', () => {
   })
 
   it('refuses profiles that fail the strict source contracts (production default)', () => {
-    // oil stance has no accepted source contract — even with a methodology.
+    // oil stance now has a derived-field contract, and this profile violates it (wrong source,
+    // a debt methodology, no petroleumTrade), so the strict production default still refuses it.
     const withOilStance: CountryProfile = {
       ...TEST_COUNTRY_PROFILES[0],
       oilStance: 'exporter',

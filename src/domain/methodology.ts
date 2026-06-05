@@ -32,6 +32,9 @@ export interface Methodology {
   inputs: string[]
   /** Banding thresholds, as explicit reviewable data (empty for causal rules). */
   bands: MethodologyBand[]
+  /** Optional minimum total raw-input magnitude (USD) below which a banding rule yields its
+   *  neutral band instead of classifying a tiny signal. Reviewable data, not hidden code. */
+  minInputUsd?: number
   // For causal rules: the shock the rule applies to, and the mechanism + channels
   // it licenses — so the deterministic analysis is described by the rule itself,
   // not anonymous hardcoded logic wrapped by a generic description.

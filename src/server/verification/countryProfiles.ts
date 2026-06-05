@@ -35,8 +35,8 @@ export const COUNTRY_PROFILE_EVIDENCE_FIELDS: CountryProfileEvidenceField[] = [
 // A field-source contract says exactly which provenance is acceptable for a field.
 // A registered source is necessary but NOT sufficient — the source must be the one
 // declared for that specific field, with the right indicator/methodology metadata.
-// A field with NO contract cannot be accepted at all (e.g. oil stance, currency
-// regime, and political sensitivities have no accepted live source yet).
+// A field with NO contract cannot be accepted at all (e.g. currency regime and
+// political sensitivities have no accepted live source yet).
 export type FieldContractKind = 'raw' | 'sourced' | 'derived'
 
 export interface FieldSourceContract {
@@ -88,7 +88,16 @@ export const FIELD_SOURCE_CONTRACTS: FieldSourceContracts = {
     allowedSourceIds: ['src.worldbank'],
     methodologyInputs: ['externalDebtPctGni'],
   },
-  // oilStance, currencyRegime, politicalSensitivities: no accepted contract yet.
+  // Derived oil stance: an approved petroleumTrade banding methodology must produce it, and
+  // the underlying raw petroleumTrade (Comtrade primary / OEC fallback) must itself be present
+  // and contract-valid. Until that methodology is approved no oilStance is emitted, so this
+  // contract is the gate's backstop for the approved path, never an unlock on its own.
+  oilStance: {
+    kind: 'derived',
+    allowedSourceIds: ['src.comtrade', 'src.oec'],
+    methodologyInputs: ['petroleumTrade'],
+  },
+  // currencyRegime, politicalSensitivities: no accepted contract yet.
 }
 
 export interface RejectedCountryProfile {

@@ -1,4 +1,4 @@
-import type { CountryProfile, Exposure } from '../../domain/country'
+import type { CountryProfile, Exposure, OilStance } from '../../domain/country'
 import type { Methodology } from '../../domain/methodology'
 import { applyBands } from '../../domain/methodology'
 import type { ShockType, TransmissionChannel } from '../../domain/analysis'
@@ -20,6 +20,31 @@ export const DEBT_EXPOSURE_BANDING_V1: Methodology = {
     { label: 'medium', gte: 25, lt: 50 },
     { label: 'low', lt: 25 },
   ],
+  owner: 'analysis-team',
+  status: 'draft',
+}
+
+// The oil-stance banding rule: derives a country's exporter / neutral / importer stance
+// PURELY from the raw signed petroleum (HS-27) trade already captured, never from
+// keyExports, top-product presence, or any hardcoded country list. The metric is the
+// normalized net petroleum position (exportValueUsd - importValueUsd) / (exportValueUsd +
+// importValueUsd), in [-1, +1]; total petroleum trade below minInputUsd is treated as
+// neutral so a tiny flow is not over-read. Like the debt rule it ships 'draft': until a
+// human approves it no oilStance label is emitted and oil_shock stays blocked downstream.
+export const OILSTANCE_BANDING_V1: Methodology = {
+  id: 'method.oilStance.banding.v1',
+  name: 'Oil-stance banding',
+  version: '1.0.0',
+  description:
+    'Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.',
+  kind: 'banding',
+  inputs: ['petroleumTrade'],
+  bands: [
+    { label: 'exporter', gte: 0.2 },
+    { label: 'neutral', gte: -0.2, lt: 0.2 },
+    { label: 'importer', lt: -0.2 },
+  ],
+  minInputUsd: 1_000_000_000,
   owner: 'analysis-team',
   status: 'draft',
 }
@@ -118,11 +143,13 @@ export const CAUSAL_METHODOLOGY_BY_ID = new Map(
 // causal rules plus banding methodologies. The gate treats this (not a brief's
 // self-declared status) as the authority; tests may inject extra entries.
 export const METHODOLOGY_REGISTRY: Map<string, Methodology> = new Map(
-  [...Object.values(CAUSAL_METHODOLOGIES), DEBT_EXPOSURE_BANDING_V1].map((m) => [m.id, m]),
+  [...Object.values(CAUSAL_METHODOLOGIES), DEBT_EXPOSURE_BANDING_V1, OILSTANCE_BANDING_V1].map(
+    (m) => [m.id, m],
+  ),
 )
 
 // Methodologies the system knows about. Only `approved` ones ever derive a label.
-export const METHODOLOGIES: Methodology[] = [DEBT_EXPOSURE_BANDING_V1]
+export const METHODOLOGIES: Methodology[] = [DEBT_EXPOSURE_BANDING_V1, OILSTANCE_BANDING_V1]
 
 export function approvedMethodologies(methodologies: Methodology[] = METHODOLOGIES): Methodology[] {
   return methodologies.filter((m) => m.status === 'approved')
@@ -130,6 +157,94 @@ export function approvedMethodologies(methodologies: Methodology[] = METHODOLOGI
 
 function isExposure(label: string | undefined): label is Exposure {
   return label === 'high' || label === 'medium' || label === 'low'
+}
+
+function isOilStance(label: string | undefined): label is OilStance {
+  return label === 'exporter' || label === 'importer' || label === 'neutral'
+}
+
+// The raw signed-petroleum position banded into an oil stance, per an approved banding
+// methodology. Total petroleum trade below the methodology's minInputUsd is neutral (a tiny
+// flow is not over-read); otherwise the normalized net position is banded. Pure and total;
+// reads nothing but the petroleumTrade values handed to it (never keyExports or a country
+// list).
+function deriveOilStance(
+  petroleumTrade: { exportValueUsd: number; importValueUsd: number },
+  methodology: Methodology,
+): OilStance | undefined {
+  const total = petroleumTrade.exportValueUsd + petroleumTrade.importValueUsd
+  if (methodology.minInputUsd !== undefined && total < methodology.minInputUsd) return 'neutral'
+  if (!(total > 0)) return undefined
+  const normalizedNet = (petroleumTrade.exportValueUsd - petroleumTrade.importValueUsd) / total
+  const label = applyBands(normalizedNet, methodology.bands)
+  return isOilStance(label) ? label : undefined
+}
+
+// Bands the raw external-debt figure into a dollar-debt exposure label when an approved debt
+// methodology is supplied. Never overwrites an existing label; requires the raw figure and
+// its evidence, and carries that source provenance onto the derived label.
+function applyDollarDebtExposure(
+  profile: CountryProfile,
+  methodology: Methodology | undefined,
+): CountryProfile {
+  if (
+    !methodology ||
+    profile.dollarDebtExposure !== undefined ||
+    profile.externalDebtPctGni === undefined
+  ) {
+    return profile
+  }
+  const rawEvidence = profile.evidence.externalDebtPctGni
+  if (!rawEvidence) return profile
+
+  const label = applyBands(profile.externalDebtPctGni, methodology.bands)
+  if (!isExposure(label)) return profile
+
+  return {
+    ...profile,
+    dollarDebtExposure: label,
+    evidence: {
+      ...profile.evidence,
+      dollarDebtExposure: {
+        sourceIds: rawEvidence.sourceIds,
+        asOf: rawEvidence.asOf,
+        methodologyId: methodology.id,
+      },
+    },
+    methodologies: [...(profile.methodologies ?? []), methodology],
+  }
+}
+
+// Bands the raw petroleumTrade into an oilStance label when an approved oil methodology is
+// supplied. Never overwrites an existing label; requires the raw petroleumTrade and its
+// evidence, and carries that same source provenance onto the derived label. Without an
+// approved methodology this is a no-op, so oilStance stays absent and oil_shock stays blocked.
+function applyOilStance(
+  profile: CountryProfile,
+  methodology: Methodology | undefined,
+): CountryProfile {
+  if (!methodology || profile.oilStance !== undefined || profile.petroleumTrade === undefined) {
+    return profile
+  }
+  const rawEvidence = profile.evidence.petroleumTrade
+  if (!rawEvidence) return profile
+
+  const label = deriveOilStance(profile.petroleumTrade, methodology)
+  if (!isOilStance(label)) return profile
+
+  return {
+    ...profile,
+    oilStance: label,
+    evidence: {
+      ...profile.evidence,
+      oilStance: {
+        sourceIds: rawEvidence.sourceIds,
+        asOf: rawEvidence.asOf,
+        methodologyId: methodology.id,
+      },
+    },
+    methodologies: [...(profile.methodologies ?? []), methodology],
+  }
 }
 
 // Applies approved methodologies to a profile's raw inputs, attaching derived
@@ -143,33 +258,11 @@ export function deriveCountryProfiles(
   const debtMethodology = methodologies.find(
     (m) => m.status === 'approved' && m.inputs.includes('externalDebtPctGni'),
   )
+  const oilMethodology = methodologies.find(
+    (m) => m.status === 'approved' && m.inputs.includes('petroleumTrade'),
+  )
 
-  return profiles.map((profile) => {
-    if (
-      !debtMethodology ||
-      profile.dollarDebtExposure !== undefined ||
-      profile.externalDebtPctGni === undefined
-    ) {
-      return profile
-    }
-    const rawEvidence = profile.evidence.externalDebtPctGni
-    if (!rawEvidence) return profile
-
-    const label = applyBands(profile.externalDebtPctGni, debtMethodology.bands)
-    if (!isExposure(label)) return profile
-
-    return {
-      ...profile,
-      dollarDebtExposure: label,
-      evidence: {
-        ...profile.evidence,
-        dollarDebtExposure: {
-          sourceIds: rawEvidence.sourceIds,
-          asOf: rawEvidence.asOf,
-          methodologyId: debtMethodology.id,
-        },
-      },
-      methodologies: [...(profile.methodologies ?? []), debtMethodology],
-    }
-  })
+  return profiles.map((profile) =>
+    applyOilStance(applyDollarDebtExposure(profile, debtMethodology), oilMethodology),
+  )
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T09:00:45.046Z",
+  "generatedAt": "2026-06-05T09:41:27.311Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -143,6 +143,105 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_transforming_ghana_into_singapore_of_africa_why_domestic_186zv9h",
+        "title": "Transforming Ghana into “Singapore of Africa”: Why domestic private capital reforms matter",
+        "summary": "At the Ghana-UK Investment Summit in London, Governor of the Bank of Ghana, Johnson Pandit Asiama, outlined an ambitious vision for Ghana to become an International Financial Services Centre and the \"Singapore of Africa.\"",
+        "occurredAt": "2026-06-05T09:34:45.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "transforming ghana into singapore of africa why domestic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:j8ax3h"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_tfg_takes_earnings_hit_despite_sales_growth_1d2t7i2",
+        "title": "TFG takes earnings hit despite sales growth",
+        "summary": "Heps plunge 33.5% and the final dividend is cut after margin compression and international brand impairments weighed on its annual results.",
+        "occurredAt": "2026-06-05T09:29:49.000Z",
+        "countryCodes": [],
+        "topic": "tfg takes earnings hit despite sales growth",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:my4u83"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_anti_foreigner_sentiment_surges_as_south_africa_braces_q6hw6t",
+        "title": "Anti-foreigner sentiment surges as South Africa braces for unrest",
+        "summary": "",
+        "occurredAt": "2026-06-05T09:29:09.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "anti foreigner sentiment surges as south africa braces",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:19oeeca"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ivo_vegter_fifa_power_greed_and_the_world_q0jxau",
+        "title": "Ivo Vegter: FIFA — Power, greed and the world's most untouchable monopoly",
+        "summary": "",
+        "occurredAt": "2026-06-05T09:28:13.000Z",
+        "countryCodes": [],
+        "topic": "ivo vegter fifa power greed and the world",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:19dkbb5"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_jeremy_s_weekly_wrap_saps_in_crisis_while_188k9wn",
+        "title": "Jeremy’s weekly wrap: SAPS in crisis while criminals think outside the box",
+        "summary": "This week on Moneyweb@Midday we examined the leadership and governance crisis facing the SAPS, organised crime syndicates targeting household solar panels, smart glasses exposing weaknesses in SA's privacy laws, and government's animal disease strategy leaning towards vaccination.",
+        "occurredAt": "2026-06-05T09:03:23.000Z",
+        "countryCodes": [],
+        "topic": "jeremy s weekly wrap saps in crisis while",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:e492jw"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_nigeria_receives_multiple_funding_offers_from_investors_lenders_17so1es",
         "title": "Nigeria receives multiple funding offers from investors, lenders — Minister",
@@ -5764,65 +5863,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_government_to_step_up_labour_law_enforcement_1yuomob",
-        "title": "Government to step up labour law enforcement",
-        "summary": "Construction, hospitality in the spotlight.",
-        "occurredAt": "2026-06-02T09:40:02.000Z",
-        "countryCodes": [],
-        "topic": "government to step up labour law enforcement",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:1eya4jo"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_supreme_court_upholds_providus_unity_banks_8217_merger_xxonah",
-        "title": "Supreme Court upholds Providus, Unity banks&#8217; merger",
-        "summary": "Beyond dismissing the appeal, the Supreme Court invoked Section 22 of the Supreme Court Act to directly sanction the merger, effectively clearing the way for the transaction to proceed without further legal obstruction.\nThe post Supreme Court upholds Providus, Unity banks&#8217; merger appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-02T09:24:41.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "supreme court upholds providus unity banks 8217 merger",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:1brlx2i"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_tribunal_finds_bogdanov_8217_s_false_phd_claim_1dwd2j3",
-        "title": "Tribunal finds Bogdanov&#8217;s false PhD claim was &#8216;intentional and fraudulent&#8217;",
-        "summary": "The former EOH director failed to overturn the JSE sanctions imposed after her claim to hold a London Business School doctorate unravelled.",
-        "occurredAt": "2026-06-02T09:22:17.000Z",
-        "countryCodes": [],
-        "topic": "tribunal finds bogdanov 8217 s false phd claim",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:19qca0j"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -5956,8 +5996,8 @@
             "classification": "HS",
             "productCodes": [
               "27",
-              "27",
-              "27"
+              "18",
+              "31"
             ],
             "refYear": 2024
           },
@@ -5971,21 +6011,21 @@
             "classification": "HS",
             "productCodes": [
               "27",
-              "27",
-              "27"
+              "84",
+              "87"
             ],
             "refYear": 2024
           }
         },
         "keyExports": [
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes"
+          "cocoa and cocoa preparations",
+          "fertilizers"
         ],
         "importDependence": [
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes"
+          "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
+          "vehicles; other than railway or tramway rolling stock, and parts and accessories thereof"
         ]
       },
       {
@@ -6010,8 +6050,8 @@
             "classification": "HS",
             "productCodes": [
               "71",
-              "71",
-              "71"
+              "27",
+              "18"
             ],
             "refYear": 2023
           },
@@ -6025,21 +6065,21 @@
             "classification": "HS",
             "productCodes": [
               "27",
-              "27",
-              "27"
+              "84",
+              "87"
             ],
             "refYear": 2023
           }
         },
         "keyExports": [
           "natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",
-          "natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",
-          "natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin"
+          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
+          "cocoa and cocoa preparations"
         ],
         "importDependence": [
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes"
+          "nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",
+          "vehicles; other than railway or tramway rolling stock, and parts and accessories thereof"
         ]
       },
       {
@@ -6064,8 +6104,8 @@
             "classification": "HS",
             "productCodes": [
               "71",
-              "71",
-              "26"
+              "26",
+              "87"
             ],
             "refYear": 2025
           },
@@ -6079,21 +6119,21 @@
             "classification": "HS",
             "productCodes": [
               "27",
-              "27",
-              "27"
+              "84",
+              "85"
             ],
             "refYear": 2025
           }
         },
         "keyExports": [
           "natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",
-          "natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",
-          "ores, slag and ash"
+          "ores, slag and ash",
+          "vehicles; other than railway or tramway rolling stock, and parts and accessories thereof"
         ],
         "importDependence": [
           "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
-          "mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes"
+          "machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
+          "electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles"
         ]
       }
     ],

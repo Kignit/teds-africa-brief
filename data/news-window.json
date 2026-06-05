@@ -1,7 +1,61 @@
 {
-  "updatedAt": "2026-06-05T09:00:45.046Z",
+  "updatedAt": "2026-06-05T09:41:27.311Z",
   "windowMs": 259200000,
   "items": [
+    {
+      "id": "src.myjoyonline_gh:j8ax3h",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Transforming Ghana into “Singapore of Africa”: Why domestic private capital reforms matter",
+      "summary": "At the Ghana-UK Investment Summit in London, Governor of the Bank of Ghana, Johnson Pandit Asiama, outlined an ambitious vision for Ghana to become an International Financial Services Centre and the \"Singapore of Africa.\"",
+      "url": "https://www.myjoyonline.com/transforming-ghana-into-singapore-of-africa-why-domestic-private-capital-reforms-matter/",
+      "publishedAt": "2026-06-05T09:34:45.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
+      "id": "src.moneyweb_za:my4u83",
+      "sourceId": "src.moneyweb_za",
+      "title": "TFG takes earnings hit despite sales growth",
+      "summary": "Heps plunge 33.5% and the final dividend is cut after margin compression and international brand impairments weighed on its annual results.",
+      "url": "https://www.moneyweb.co.za/news/companies-and-deals/tfg-takes-earnings-hit-despite-sales-growth/",
+      "publishedAt": "2026-06-05T09:29:49.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.biznews_za:19oeeca",
+      "sourceId": "src.biznews_za",
+      "title": "Anti-foreigner sentiment surges as South Africa braces for unrest",
+      "summary": "",
+      "url": "https://www.biznews.com/africa/anti-foreigner-sentiment-surges-sa",
+      "publishedAt": "2026-06-05T09:29:09.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ZA"
+      ]
+    },
+    {
+      "id": "src.biznews_za:19dkbb5",
+      "sourceId": "src.biznews_za",
+      "title": "Ivo Vegter: FIFA — Power, greed and the world's most untouchable monopoly",
+      "summary": "",
+      "url": "https://www.biznews.com/rational-perspective/ivo-vegter-fifa",
+      "publishedAt": "2026-06-05T09:28:13.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:e492jw",
+      "sourceId": "src.moneyweb_za",
+      "title": "Jeremy’s weekly wrap: SAPS in crisis while criminals think outside the box",
+      "summary": "This week on Moneyweb@Midday we examined the leadership and governance crisis facing the SAPS, organised crime syndicates targeting household solar panels, smart glasses exposing weaknesses in SA's privacy laws, and government's animal disease strategy leaning towards vaccination.",
+      "url": "https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-midday/jeremys-weekly-wrap-saps-in-crisis-while-criminals-think-outside-the-box/",
+      "publishedAt": "2026-06-05T09:03:23.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
     {
       "id": "src.premiumtimes_ng:13p806r",
       "sourceId": "src.premiumtimes_ng",
@@ -3208,38 +3262,6 @@
       "countryCodes": [
         "NG"
       ]
-    },
-    {
-      "id": "src.citizen_za:1eya4jo",
-      "sourceId": "src.citizen_za",
-      "title": "Government to step up labour law enforcement",
-      "summary": "Construction, hospitality in the spotlight.",
-      "url": "https://www.citizen.co.za/business/government-to-step-up-labour-law-enforcement/",
-      "publishedAt": "2026-06-02T09:40:02.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.premiumtimes_ng:1brlx2i",
-      "sourceId": "src.premiumtimes_ng",
-      "title": "Supreme Court upholds Providus, Unity banks&#8217; merger",
-      "summary": "Beyond dismissing the appeal, the Supreme Court invoked Section 22 of the Supreme Court Act to directly sanction the merger, effectively clearing the way for the transaction to proceed without further legal obstruction.\nThe post Supreme Court upholds Providus, Unity banks&#8217; merger appeared first on Premium Times Nigeria.",
-      "url": "https://www.premiumtimesng.com/business/business-news/884535-supreme-court-upholds-providus-unity-banks-merger.html",
-      "publishedAt": "2026-06-02T09:24:41.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.citizen_za:19qca0j",
-      "sourceId": "src.citizen_za",
-      "title": "Tribunal finds Bogdanov&#8217;s false PhD claim was &#8216;intentional and fraudulent&#8217;",
-      "summary": "The former EOH director failed to overturn the JSE sanctions imposed after her claim to hold a London Business School doctorate unravelled.",
-      "url": "https://www.citizen.co.za/business/tribunal-finds-bogdanovs-false-phd-claim-was-intentional-and-fraudulent/",
-      "publishedAt": "2026-06-02T09:22:17.000Z",
-      "language": "en",
-      "countryCodes": []
     }
   ]
 }

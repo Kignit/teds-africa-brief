@@ -1,6 +1,11 @@
 import type { ConnectorContext } from './types'
 import type { CountryProfile, CountryProfileEvidenceMap } from '../../domain/country'
-import { fetchComtradeTopProducts, type ComtradeFlowDiagnostic } from './comtrade'
+import {
+  fetchComtradeTopProducts,
+  createComtradeRateLimit,
+  type ComtradeFlowDiagnostic,
+  type ComtradeRateLimit,
+} from './comtrade'
 import { fetchOecTrade } from './oec'
 
 // Builds country profiles from real, machine-readable sources — no hardcoded
@@ -82,6 +87,19 @@ async function fetchWbPoint(
   }
 }
 
+// Compose the human-readable detail for a relayed Comtrade flow diagnostic, surfacing the
+// HTTP status and — when a 429 was retried — the attempt count, e.g. "HTTP 429, attempts=4".
+function comtradeDetail(d: ComtradeFlowDiagnostic): string | undefined {
+  const attempts = d.attempts ?? 1
+  const suffix = attempts > 1 ? `, attempts=${attempts}` : ''
+  if (d.outcome === 'non_ok') return `HTTP ${d.status}${suffix}`
+  if (d.outcome === 'populated')
+    return `${d.flow === 'X' ? 'keyExports' : 'importDependence'}${suffix}`
+  if (d.outcome === 'malformed') return `${d.detail ?? 'malformed'}${suffix}`
+  if (d.outcome === 'empty') return attempts > 1 ? `attempts=${attempts}` : undefined
+  return d.detail
+}
+
 // One country's profile from real sources. Returns null when the required
 // external-debt backbone cannot be sourced — we omit the country rather than
 // guess. The raw debt value is stored as-published; classification into an
@@ -89,6 +107,7 @@ async function fetchWbPoint(
 async function buildProfile(
   ctx: ConnectorContext,
   spec: CountryProfileSpec,
+  rate: ComtradeRateLimit,
   onDiag?: ProfileDiagSink,
 ): Promise<CountryProfile | null> {
   const debt = await fetchWbPoint(ctx, spec.code, EXT_DEBT_GNI)
@@ -120,18 +139,11 @@ async function buildProfile(
         stage: 'comtrade',
         flow: d.flow,
         outcome: d.outcome,
-        detail:
-          d.outcome === 'non_ok'
-            ? `HTTP ${d.status}`
-            : d.outcome === 'populated'
-              ? d.flow === 'X'
-                ? 'keyExports'
-                : 'importDependence'
-              : d.detail,
+        detail: comtradeDetail(d),
       })
     const [exports, imports] = await Promise.all([
-      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'X', 3, relayComtradeDiag),
-      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'M', 3, relayComtradeDiag),
+      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'X', 3, { onDiag: relayComtradeDiag, rate }),
+      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'M', 3, { onDiag: relayComtradeDiag, rate }),
     ])
     if (exports) {
       profile.keyExports = exports.products
@@ -222,7 +234,10 @@ export async function fetchCountryProfiles(
   ctx: ConnectorContext,
   specs: CountryProfileSpec[] = LAUNCH_MARKETS,
   onDiag?: ProfileDiagSink,
+  rate: ComtradeRateLimit = createComtradeRateLimit(),
 ): Promise<CountryProfile[]> {
-  const built = await Promise.all(specs.map((spec) => buildProfile(ctx, spec, onDiag)))
+  // One shared Comtrade rate limiter for the whole run, so the up-to-10-call fan-out is
+  // paced (concurrency 1 + min gap) instead of bursting and tripping HTTP 429.
+  const built = await Promise.all(specs.map((spec) => buildProfile(ctx, spec, rate, onDiag)))
   return built.filter((p): p is CountryProfile => p !== null)
 }

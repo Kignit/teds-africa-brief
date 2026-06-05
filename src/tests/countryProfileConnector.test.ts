@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { fetchCountryProfiles, LAUNCH_MARKETS } from '../server/connectors/countryProfile'
-import { fetchComtradeTopProducts } from '../server/connectors/comtrade'
+import { fetchComtradeTopProducts, createComtradeRateLimit } from '../server/connectors/comtrade'
 import { verifiedCountryProfiles } from '../server/verification/countryProfiles'
 import { knownSourceIds } from '../server/verification/sources'
 import { SOURCES } from '../data/sources'
@@ -116,9 +116,12 @@ describe('World Bank country-profile connector', () => {
       ],
       comtradeM: [{ cmdCode: '84', cmdDesc: 'Machinery', primaryValue: 500, refYear: 2022 }],
     })
-    const [p] = await fetchCountryProfiles(ctx(fetch, { comtradeApiKey: 'k' }), [
-      { code: 'NG', comtradeCode: '566' },
-    ])
+    const [p] = await fetchCountryProfiles(
+      ctx(fetch, { comtradeApiKey: 'k' }),
+      [{ code: 'NG', comtradeCode: '566' }],
+      undefined,
+      createComtradeRateLimit({ minGapMs: 0, sleep: async () => {} }),
+    )
     // aggregate / vague buckets excluded; ranked by value
     expect(p.keyExports).toEqual(['mineral fuels, oils'])
     const exportEvidence = p.evidence.keyExports

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T09:52:43.418Z",
+  "generatedAt": "2026-06-05T10:26:48.118Z",
   "brief": {
     "id": "live_2026-06-05",
     "date": "2026-06-05",
@@ -144,6 +144,67 @@
     ],
     "events": [
       {
+        "id": "evt_pay_smes_in_30_days_or_admit_you_4h2raf",
+        "title": "Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy",
+        "summary": "Delayed payments by government agencies, counties and big brands are not an accounting inconvenience; they are an economic crime against &#8230; ContinuedThe post Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T10:01:10.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "pay smes in 30 days or admit you",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:16xfzq5"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_s_ai_growth_must_priorities_disability_access_kc4xmh",
+        "title": "Africa’s AI Growth Must Priorities Disability Access, Experts Tell Inclusive Tech Summit",
+        "summary": "NAIROBI, Kenya, June 5 – Global technology leaders and disability rights advocates at the 2026 Inclusive Africa Conference (IAC) have called for urgent reforms to ensure Artificial Intelligence (AI) and digital technologies are designed to include persons with disabilities, warning that Africa’s rapid digital transformation could deepen inequality if inclusivity is not prioritized. Stakeholders sa",
+        "occurredAt": "2026-06-05T09:56:09.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "africa s ai growth must priorities disability access",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:nri40t"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_simon_s_weekly_wrap_emerging_markets_ai_and_15acwpg",
+        "title": "Simon’s weekly wrap: Emerging markets, AI and SA&#8217;s tokenised stock boom",
+        "summary": "This week on MoneywebNOW we looked at whether emerging markets are emerging as the new safe haven for investors, how AI is helping banks assess excluded clients, the growth of tokenised stocks in SA, and the SA Reit Association accounting and JSE committee ensuring best practice in Reit reporting.",
+        "occurredAt": "2026-06-05T09:55:10.000Z",
+        "countryCodes": [],
+        "topic": "simon s weekly wrap emerging markets ai and",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:176i9ek"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_unlocking_diaspora_remittances_for_investment_growth_1myjr2w",
         "title": "Unlocking diaspora remittances for investment growth",
         "summary": "By Dr. Richmond Akwasi Atuahene Diaspora remittances have become one of Africa’s most important sources of external financing, exceeding foreign direct investment (FDI) and official development assistance (ODA) in several countries, including Ghana. According to World Bank estimates, formal remittances to Africa reached about US$86 billion in 2019, while broader estimates including informal and in",
@@ -180,6 +241,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_cooler_city_why_lagos_cannot_afford_to_1annuqb",
+        "title": "The cooler city: Why Lagos cannot afford to wait",
+        "summary": "At 2 A.M. on a dry-season night in Lagos, the air in Mushin does not cool. The asphalt on Agege\nread more The cooler city: Why Lagos cannot afford to wait",
+        "occurredAt": "2026-06-05T09:38:33.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "the cooler city why lagos cannot afford to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1o9eu4p"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -226,6 +308,27 @@
         }
       },
       {
+        "id": "evt_nature_has_been_sending_us_signals_our_farmers_4zx3wz",
+        "title": "Nature has been sending us signals. Our Farmers read them first.",
+        "summary": "As the world marks World Environment Day, the most consequential climate-finance decision Nigeria and much of West Africa can make\nread more Nature has been sending us signals. Our Farmers read them first.",
+        "occurredAt": "2026-06-05T09:29:42.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nature has been sending us signals our farmers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:wx7rux"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_anti_foreigner_sentiment_surges_as_south_africa_braces_q6hw6t",
         "title": "Anti-foreigner sentiment surges as South Africa braces for unrest",
         "summary": "",
@@ -266,6 +369,46 @@
         }
       },
       {
+        "id": "evt_world_cup_warning_for_france_ivory_coast_upset_1oo8j84",
+        "title": "World Cup Warning for France: Ivory Coast Upset Exposes Cracks Ahead of Senegal Clash",
+        "summary": "The result may have come in a friendly match, but France&#8217;s 2-1 defeat to Ivory Coast has provided an important &#8230; ContinuedThe post World Cup Warning for France: Ivory Coast Upset Exposes Cracks Ahead of Senegal Clash appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T09:27:30.000Z",
+        "countryCodes": [],
+        "topic": "world cup warning for france ivory coast upset",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:m9r1o4"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_cooking_oil_sugar_salt_bread_and_everyday_1017910",
+        "title": "How Cooking Oil, Sugar, Salt, Bread and Everyday Household Essentials Are Quietly Crushing the Purchasing Power of Kenyans",
+        "summary": "For many Kenyan households, the cost-of-living crisis does not begin at the Central Bank. It begins at the shopkeeper’s counter. &#8230; ContinuedThe post How Cooking Oil, Sugar, Salt, Bread and Everyday Household Essentials Are Quietly Crushing the Purchasing Power of Kenyans appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T09:14:50.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "how cooking oil sugar salt bread and everyday",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:7vhmye"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_jeremy_s_weekly_wrap_saps_in_crisis_while_188k9wn",
         "title": "Jeremy’s weekly wrap: SAPS in crisis while criminals think outside the box",
         "summary": "This week on Moneyweb@Midday we examined the leadership and governance crisis facing the SAPS, organised crime syndicates targeting household solar panels, smart glasses exposing weaknesses in SA's privacy laws, and government's animal disease strategy leaning towards vaccination.",
@@ -279,6 +422,27 @@
           ],
           "sourceIds": [
             "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_a_researched_comparison_of_kenya_s_supermarkets_and_3hg8ef",
+        "title": "A Researched Comparison Of Kenya’s Supermarkets and the Most Pocket-Friendly Places to Shop",
+        "summary": "The Kenyan shopper is no longer choosing a supermarket by beauty, lighting, music, parking space or brand name alone. The &#8230; ContinuedThe post A Researched Comparison Of Kenya’s Supermarkets and the Most Pocket-Friendly Places to Shop appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T08:59:51.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "a researched comparison of kenya s supermarkets and",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:14umhtr"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -301,6 +465,27 @@
           ],
           "sourceIds": [
             "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_the_ready_to_drink_revolution_is_redefining_q6zn0v",
+        "title": "How the Ready-to-Drink Revolution is Redefining Kenya’s Social Spaces",
+        "summary": "Kenya&#8217;s ready-to-drink (RTD) category is evolving in step with a broader shift in how people connect: social moments are becoming &#8230; ContinuedThe post How the Ready-to-Drink Revolution is Redefining Kenya’s Social Spaces appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T08:40:38.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "how the ready to drink revolution is redefining",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1dticrj"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -364,6 +549,46 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_when_geniuses_hesitate_fools_take_the_throne_omdpoe",
+        "title": "When Geniuses Hesitate, Fools Take the Throne",
+        "summary": "Every nation has a moment when its future stops depending on resources, slogans, manifestos, or speeches, and starts depending on &#8230; ContinuedThe post When Geniuses Hesitate, Fools Take the Throne appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T08:34:20.000Z",
+        "countryCodes": [],
+        "topic": "when geniuses hesitate fools take the throne",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1ajl1o2"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_why_elon_musk_s_ad_astra_experiment_should_1mt7pr2",
+        "title": "Why Elon Musk’s Ad Astra Experiment Should Terrify Kenya Into Rethinking Education Before AI, Automation and a New Economy Leave Our Children Behind",
+        "summary": "Elon Musk’s children did not simply leave a normal school. They became part of a private experiment in what education &#8230; ContinuedThe post Why Elon Musk’s Ad Astra Experiment Should Terrify Kenya Into Rethinking Education Before AI, Automation and a New Economy Leave Our Children Behind appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T08:30:44.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "why elon musk s ad astra experiment should",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:gyu9p4"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -572,6 +797,27 @@
         }
       },
       {
+        "id": "evt_co_op_bank_south_sudan_hosts_cooperatives_forum_1xvdk68",
+        "title": "Co-op Bank South Sudan Hosts Cooperatives Forum",
+        "summary": "The Co-operative Bank of South Sudan (CBSS) hosted 41 cooperative societies based in Northern Bahr el Ghazal State (NBG) for a capacity-building forum to deepen the impact of the cooperative model in farming and business in the State and across South Sudan.",
+        "occurredAt": "2026-06-05T07:41:39.000Z",
+        "countryCodes": [],
+        "topic": "co op bank south sudan hosts cooperatives forum",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:3voasc",
+            "src.biznakenya_ke:1t2zmxv"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke",
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_cbi_insurtech_revolution_could_drive_insurance_adoption_among_oi078r",
         "title": "CBI: Insurtech revolution could drive Insurance adoption among 200 million Nigerians by 2030",
         "summary": "The National Insurance Commission’s (NAICOM) push to digitize insurance services through Insurtech could bring more than 200 million Nigerians into the insurance ecosystem by the year 2030.  \nThe post CBI: Insurtech revolution could drive Insurance adoption among 200 million Nigerians by 2030 appeared first on Nairametrics.",
@@ -593,6 +839,48 @@
         }
       },
       {
+        "id": "evt_the_housing_levy_has_become_a_payslip_heist_syn51k",
+        "title": "The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages",
+        "summary": "The housing levy was sold to Kenyans as a national answer to a real problem: the shortage of decent and &#8230; ContinuedThe post The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T07:11:38.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "the housing levy has become a payslip heist",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1jq2puk"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_urgently_needs_a_three_week_national_pause_tiemw2",
+        "title": "Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely &#038; Burn The Country",
+        "summary": "Kenya does not need a one-week school break. Kenya needs a serious three-week national pause, because what is happening in &#8230; ContinuedThe post Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely &#038; Burn The Country appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T06:57:52.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya urgently needs a three week national pause",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1m80ylm"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_10th_beauty_cosmetics_and_wellness_west_africa_exhibition_1l7mrzd",
         "title": "10th Beauty, Cosmetics and Wellness West Africa exhibition expected to deepen trade links, support industry growth",
         "summary": "The 10th Beauty, Cosmetics and Wellness West Africa Ghana exhibition organised by the Ace Group has brought together exhibitors and industry players from more than 10 countries. A move aimed at highlighting growing opportunities in Ghana’s beauty and cosmetics sector. The three-day international exhibition, being held at the University of Professional Studies (UPSA) Auditorium in [&#8230;]\nThe pos",
@@ -608,6 +896,27 @@
           ],
           "sourceIds": [
             "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_second_term_unrest_list_of_over_30_schools_1obg2g4",
+        "title": "Second term unrest: List of over 30 schools closed indefinitely",
+        "summary": "A fresh wave of student unrest has swept across Kenyan secondary schools since the beginning of the second term, disrupting learning, destroying property, and forcing the indefinite closure of several institutions across the country. The disturbances, which have been reported in schools in various regions, have manifested in different forms, including dormitory fires, arson attacks, [&#8230;]\nSeco",
+        "occurredAt": "2026-06-05T06:54:55.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "second term unrest list of over 30 schools",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:cggcs6"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -671,6 +980,25 @@
           ],
           "sourceIds": [
             "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_second_liberation_for_africa_must_not_become_2s2nyr",
+        "title": "The Second Liberation For Africa Must Not Become The New Betrayal",
+        "summary": "Africa is living through a painful historical moment. The continent is no longer merely asking why it is poor despite &#8230; ContinuedThe post The Second Liberation For Africa Must Not Become The New Betrayal appeared first on Soko Directory.",
+        "occurredAt": "2026-06-05T06:40:41.000Z",
+        "countryCodes": [],
+        "topic": "the second liberation for africa must not become",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:13fhr0y"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -815,6 +1143,27 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_teaching_career_how_much_do_tsc_teachers_earn_3xg6r8",
+        "title": "Teaching career: How much do TSC teachers earn in Kenya?",
+        "summary": "Teaching remains one of the most sought-after professions in Kenya, playing a critical role in shaping the country&#8217;s future through education and skills development. Teachers serve as the backbone of the education system, nurturing learners, imparting knowledge, and helping prepare the next generation of leaders, professionals, and innovators. Beyond the classroom, teachers contribute signif",
+        "occurredAt": "2026-06-05T06:02:26.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "teaching career how much do tsc teachers earn",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:1r5s7z7"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2164,6 +2513,27 @@
         }
       },
       {
+        "id": "evt_kenya_safari_by_season_the_best_time_to_1sugqbw",
+        "title": "Kenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration &#038; Perfect Weather",
+        "summary": "So you have decided Kenya is your next adventure. Smart choice. But now comes the question that trips up almost every traveller: When exactly should you go? The truth is, Kenya does not have a bad time to visit. What it has is different seasons that each deliver a completely different experience. Your job is [&#8230;]\nKenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration &#0",
+        "occurredAt": "2026-06-04T18:57:15.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya safari by season the best time to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:lxvbyl"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_kra_forgoes_sh9_1bn_in_taxes_to_cushion_gjq5rk",
         "title": "KRA forgoes Sh9.1bn in taxes to cushion consumers from fuel price surge",
         "summary": "KRA Commissioner for Customs and Border Control Dr. Lilian Nyawanda further revealed that taxes amounting to Sh5.1 billion paid by various Oil Marketing Companies through the principal importer of the MT PALOMA cargo will be transferred to customs declarations associated with subsequent fuel imports.",
@@ -2198,6 +2568,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_patrick_analo_akivaga_man_busted_with_sh65_million_1u4x7h3",
+        "title": "Patrick Analo Akivaga: Man busted with Sh65 million cash at his home",
+        "summary": "Nairobi County chief officer Patrick Analo Akivaga was on Thursday busted by detectives from the Ethics and Anti-Corruption Commission (EACC) with millions of cash at his home. Analo was busted with Sh65.3 million at his residence in Syokimau, Machakos County. According to the EACC, the money was in batches of Sh51,300,000 and USD130,000 (equivalent to Sh14,605,250). [&#8230;]\nPatrick Analo Akivag",
+        "occurredAt": "2026-06-04T17:58:15.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "patrick analo akivaga man busted with sh65 million",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:opfkrb"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2342,6 +2733,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kra_reveals_ksh9_1b_revenue_loss_after_fuel_v9fpzt",
+        "title": "KRA Reveals Ksh9.1B Revenue Loss After Fuel VAT Reduction",
+        "summary": "Kenya Revenue Authority (KRA) has revealed that it gave up Ksh9.1 billion in tax revenue between April and May 2026 after the government reduced Value Added Tax (VAT) on fuel from 16 per cent to 8 per cent. The tax cut was introduced as part of measures aimed at shielding consumers and businesses from the [&#8230;]",
+        "occurredAt": "2026-06-04T16:43:04.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kra reveals ksh9 1b revenue loss after fuel",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:ise7m2"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2672,6 +3084,28 @@
         }
       },
       {
+        "id": "evt_kenyatta_family_ndegwa_family_to_pocket_sh21_9_1bgcp0j",
+        "title": "Kenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal",
+        "summary": "The prominent Kenyatta family and the family of former Central Bank of Kenya Governor Philip Ndegwa are set to receive up to Sh21.9 billion from a trading deal involving the sale of NCBA Group to South Africa’s Nedbank Group. In the deal, the Kenyatta family and the Ndegwa family have agreed to sell 66 percent [&#8230;]\nKenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal first app",
+        "occurredAt": "2026-06-04T12:48:27.000Z",
+        "countryCodes": [
+          "KE",
+          "ZA"
+        ],
+        "topic": "kenyatta family ndegwa family to pocket sh21 9",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:16ptw9o"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_19_officials_charged_in_sh14bn_sacco_scandal_over_dniozl",
         "title": "19 Officials Charged in Sh14bn Sacco Scandal Over Alleged Decade-Long Fraud",
         "summary": "NAIROBI,Kenya,June 4-Nineteen individuals have been arraigned in connection with a suspected Sh14 billion fraud scheme involving a major Savings and Credit Cooperative (Sacco), in a case that has once again spotlighted governance and accountability risks within Kenya’s cooperative sector. Detectives from the Directorate of Criminal Investigations (DCI) brought the suspects before the Milimani Law ",
@@ -2687,6 +3121,27 @@
           ],
           "sourceIds": [
             "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_5_issues_dominating_finance_bill_2026_conversations_tvhck2",
+        "title": "5 Issues Dominating Finance Bill 2026 Conversations",
+        "summary": "As Parliament continues to scrutinise the Finance Bill 2026, debate has shifted from broad concerns about new taxes to a handful of specific proposals that could affect millions of Kenyans, businesses and investors. The Bill, which the National Treasury says is aimed at broadening the tax base and improving compliance rather than introducing sweeping tax [&#8230;]",
+        "occurredAt": "2026-06-04T12:11:28.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "5 issues dominating finance bill 2026 conversations",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:fuhgkw"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2731,6 +3186,29 @@
             "src.nairametrics_ng"
           ],
           "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_britam_pays_ksh97_3_million_in_climate_claims_11hkoi1",
+        "title": "Britam Pays KSh97.3 Million in Climate Claims as Agricultural Insurance Coverage Surges",
+        "summary": "Britam paid out KSh97.3 million in insurance claims in 2025 to support 402,681 farmers and pastoralists across East Africa affected by climate-related shocks, highlighting the growing role of financial protection in mitigating the impact of extreme weather events. According to the insurer&#8217;s 2025 Sustainability Report, the payouts were made through crop and livestock insurance programmes [&#8",
+        "occurredAt": "2026-06-04T11:51:31.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "britam pays ksh97 3 million in climate claims",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1yasd1i",
+            "src.capitalfm_ke:180bnow"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke",
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -2892,6 +3370,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_inside_east_africa_8217_s_2025_trade_boom_12klsmo",
+        "title": "Inside East Africa&#8217;s 2025 trade boom: Key takeaways from the NCBA forum",
+        "summary": "NCBA convened diplomatic trade commissioners and ambassadors from over 20 countries and missions, alongside development partners and investors, for a high-level forum in Nairobi aimed at deepening trade and investment across East Africa. The engagement underscored the importance of coordinated action in unlocking economic growth, expanding market access, and supporting East African businesses in n",
+        "occurredAt": "2026-06-04T10:45:46.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "inside east africa 8217 s 2025 trade boom",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:5k0qkc"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -3146,27 +3645,6 @@
         }
       },
       {
-        "id": "evt_britam_pays_sh97_3m_in_climate_linked_claims_1pyi79z",
-        "title": "Britam pays Sh97.3m in climate-linked claims in 2025",
-        "summary": "NAIROBI, Kenya, June 4-Britam paid out Sh97.3 million in insurance claims in 2025 to cushion more than 402,681 farmers and pastoralists affected by climate-related shocks across East Africa, highlighting the rising role of insurance in managing climate risk in the region’s agriculture-dependent economies. According to the group’s 2025 Sustainability Report, the payouts were largely driven [&#8230;",
-        "occurredAt": "2026-06-04T09:57:07.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "britam pays sh97 3m in climate linked claims",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:180bnow"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_investors_thump_absa_with_astounding_43_vote_against_uvk85l",
         "title": "Investors thump Absa, with astounding 43% vote against exec pay",
         "summary": "This would've needed most of its top 10 shareholders to vote against it.",
@@ -3310,6 +3788,27 @@
         }
       },
       {
+        "id": "evt_kenya_s_tea_sector_sees_14_increase_in_11wd6di",
+        "title": "Kenya’s Tea Sector Sees 14% Increase in Export Volumes",
+        "summary": "Kenya’s tea export earnings are holding firm, but new trade figures point to a quiet reshaping of global demand that is increasingly narrowing around a few dominant buyers while other traditional markets weaken under political and economic pressure. Data covering the January to March period shows Pakistan extending its dominance as Kenya’s biggest tea destination. [&#8230;]",
+        "occurredAt": "2026-06-04T08:17:19.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya s tea sector sees 14 increase in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:wu82bx"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_spanish_gastronomic_and_trade_exhibition_taste_spain_returns_1qoarqf",
         "title": "Spanish Gastronomic and Trade Exhibition “Taste Spain” returns on June 18",
         "summary": "The event will serve as a meeting point for professionals from the food and beverage sector, and other specialised operators interested in discovering Spanish products and developing new commercial partnerships. Alongside the product exhibition, “Taste Spain Accra” 2026 will include tasting and networking activities designed to strengthen commercial connections between Spanish producers and the Gh",
@@ -3420,6 +3919,27 @@
           ],
           "sourceIds": [
             "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gachagua_to_unveil_dcp_alternative_budget_amid_finance_187crqf",
+        "title": "Gachagua to Unveil DCP Alternative Budget Amid Finance Bill 2026 Debate",
+        "summary": "A fresh political battle over the Finance Bill 2026 is taking shape after former Deputy President and Democracy for the Citizens Party (DCP) leader Rigathi Gachagua announced plans to unveil an alternative budget proposal and rally Kenyans against the government&#8217;s tax measures. Gachagua, who has been one of the most vocal critics of the Kenya [&#8230;]",
+        "occurredAt": "2026-06-04T07:58:40.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "gachagua to unveil dcp alternative budget amid finance",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:116my41"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -3689,6 +4209,27 @@
         }
       },
       {
+        "id": "evt_from_starting_cereal_business_with_sh5_000_to_1amz7an",
+        "title": "From starting cereal business with Sh5,000 to making over Sh800,000 monthly",
+        "summary": "The cereals business remains one of the most lucrative agribusiness ventures in Kenya, particularly in regions with strong agricultural production. By connecting farmers to reliable markets and ensuring a steady supply of staple grains to consumers, traders play a critical role in the food value chain while creating sustainable income streams for themselves. For 39-year-old [&#8230;]\nFrom starting",
+        "occurredAt": "2026-06-04T06:23:36.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "from starting cereal business with sh5 000 to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:14ygqe5"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_development_bank_of_nigeria_disburses_over_n1_trillion_w49u67",
         "title": "Development Bank of Nigeria disburses over N1 trillion to MSMEs",
         "summary": "The Development Bank of Nigeria (DBN) Plc has disbursed more than N1 trillion to over one million Micro, Small and Medium Enterprises (MSMEs), supporting the creation of more than 1.6 million jobs since it commenced operations. \nThe post Development Bank of Nigeria disburses over N1 trillion to MSMEs   appeared first on Nairametrics.",
@@ -3843,6 +4384,25 @@
           ],
           "sourceIds": [
             "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ksh14b_mamboleo_miwani_chemelil_muhoroni_kipsitet_road_takes_zdzvw9",
+        "title": "Ksh14B Mamboleo–Miwani–Chemelil–Muhoroni–Kipsitet Road Takes Shape",
+        "summary": "The government has highlighted the strategic importance of the Mamboleo–Miwani–Chemelil–Muhoroni–Kipsitet Road, saying the 122-kilometre highway is expected to transform trade, ease transport costs and improve connectivity across three counties in the country&#8217;s sugar-growing belt. Interior Principal Secretary Raymond Omollo said the corridor, designated as Road C674, links Kisumu, Nandi and ",
+        "occurredAt": "2026-06-04T03:49:26.000Z",
+        "countryCodes": [],
+        "topic": "ksh14b mamboleo miwani chemelil muhoroni kipsitet road takes",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:jipt4"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -4234,6 +4794,27 @@
         }
       },
       {
+        "id": "evt_kenya_s_automotive_leap_kvm_commissions_shs2_3b_1urk5ek",
+        "title": "Kenya’s automotive leap: KVM commissions shs2.3B Toyota Hiace assembly line in Thika",
+        "summary": "Kenya Vehicle Manufacturers (KVM) today officially commissioned a new Toyota Hiace assembly line at its Thika manufacturing facility, marking a significant milestone in Kenya’s automotive industrialization journey and reinforcing the country&#8217;s position as a leading vehicle manufacturing hub in East Africa. The new assembly line forms part of a broader modernization and expansion programme su",
+        "occurredAt": "2026-06-03T20:42:45.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya s automotive leap kvm commissions shs2 3b",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:pzm83y"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_ethiopia_reaches_staff_level_deal_with_imf_to_1sc2sko",
         "title": "Ethiopia Reaches Staff-Level Deal with IMF to unlock $468 million loan",
         "summary": "Ethiopia has reached a staff level agreement with the International Monetary Fund (IMF) on the fifth review of its $3.4 billion economic program, the fund said on Wednesday,",
@@ -4381,6 +4962,27 @@
         }
       },
       {
+        "id": "evt_finance_bill_2026_what_it_has_introduced_new_6nykqt",
+        "title": "Finance Bill 2026: What It Has Introduced, new taxes",
+        "summary": "A finance bill is simply an annual legislative proposal submitted to the National Assembly by the National Treasury to introduce new taxes or amend existing revenue laws to fund the national budget. Published around early May 2026, the Kenya Finance Bill 2026 mainly focuses on widening the tax base, improving compliance, and raising revenue without [&#8230;]",
+        "occurredAt": "2026-06-03T18:56:51.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "finance bill 2026 what it has introduced new",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:5tuqew"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_cbn_approves_conversion_of_abbey_mortgage_bank_to_16s31sv",
         "title": "CBN approves conversion of Abbey Mortgage Bank to regional commercial bank",
         "summary": "“In addition, pursuant to he resolution of shareholders at the extra-ordinary general meeting of the bank held on Friday, 24th January 2025, the name of the bank has been changed from “Abbey Mortgage Bank Plc” to “Abbey Bank PLC,” it stated in a regulatory filing.\nThe post CBN approves conversion of Abbey Mortgage Bank to regional commercial bank appeared first on Premium Times Nigeria.",
@@ -4465,6 +5067,27 @@
         }
       },
       {
+        "id": "evt_paypal_freezes_kenyan_accounts_over_money_laundering_5camvf",
+        "title": "PayPal Freezes Kenyan Accounts Over Money Laundering",
+        "summary": "PayPal has frozen funds held in numerous Kenyan accounts and permanently closed others, prompting widespread frustration among freelancers, small businesses and creatives who rely on the platform for overseas payments. The US-based payments giant is requiring users receiving money from abroad to provide extensive verification, including work contracts, bank statements and proof of a physical [&#82",
+        "occurredAt": "2026-06-03T18:03:58.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "paypal freezes kenyan accounts over money laundering",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1u64xhu"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_west_africa_8217_s_5bn_rice_import_bill_1ojz3o1",
         "title": "West Africa&#8217;s $5bn rice import bill a &#8216;strategic vulnerability&#8217;, World Bank VP warns",
         "summary": "The World Bank Group has warned that West Africa's continuous dependence on imported rice is not only draining billions of dollars from the region's economies but also exposing countries to growing food security risks.",
@@ -4537,6 +5160,27 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_duale_on_ebola_we_are_not_going_to_uf54ox",
+        "title": "Duale on Ebola: We Are Not Going to Consult Citizens",
+        "summary": "Health Cabinet Secretary Aden Duale on Wednesday pushed back against calls for greater public consultation on the government’s Ebola preparedness measures, saying authorities have a constitutional duty to act decisively to protect the country from a potential outbreak. Speaking in Parliament, Duale emphasized that Kenyan law empowers the government to move quickly in response to [&#8230;]",
+        "occurredAt": "2026-06-03T16:24:19.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "duale on ebola we are not going to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:gzb99x"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -4888,6 +5532,27 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nairobi_partners_with_bloomberg_philanthropies_to_tackle_traffic_4fxi7u",
+        "title": "Nairobi partners with bloomberg philanthropies to tackle traffic fatalities",
+        "summary": "The Nairobi City County Government has today announced a new collaboration with the Bloomberg Philanthropies Initiative for Global Road Safety (BIGRS) aimed at promoting and enhancing road safety across Nairobi County.Nairobi joins more than 30 cities globally that will participate in this initiative, which is part of Bloomberg Philanthropies’ $350 million global commitment to prevent traffic [&#8",
+        "occurredAt": "2026-06-03T11:07:56.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "nairobi partners with bloomberg philanthropies to tackle traffic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:1s8g85i"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -5896,27 +6561,6 @@
         "corroboration": {
           "newsItemIds": [
             "src.premiumtimes_ng:1x36wgh"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_supreme_court_annuls_order_freezing_nestoil_neconde_assets_7njiaa",
-        "title": "Supreme Court annuls order freezing Nestoil, Neconde assets",
-        "summary": "A five-member panel of the court on Monday in Abuja ruled that the appeal court exceeded the limits of its power when it issued an ex parte application against the oil firms.\nThe post Supreme Court annuls order freezing Nestoil, Neconde assets appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-02T10:06:02.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "supreme court annuls order freezing nestoil neconde assets",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:g6h8ia"
           ],
           "sourceIds": [
             "src.premiumtimes_ng"

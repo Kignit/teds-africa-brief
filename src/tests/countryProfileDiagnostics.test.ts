@@ -94,6 +94,16 @@ const CT_IMPORTS: CRow[] = [
 ]
 const comtradeOk = (url: string) =>
   url.includes('flowCode=X') ? comtradeResponse(CT_EXPORTS) : comtradeResponse(CT_IMPORTS)
+// A 200 body with no `data` array — MALFORMED (distinct from an empty {data:[]}).
+const COMTRADE_MALFORMED = {
+  ok: true,
+  status: 200,
+  json: async () => ({ message: 'service notice, no data' }),
+  text: async () => '',
+} as unknown as Response
+// Find one diagnostic by stage (+ optional flow) to assert a per-flow outcome / detail.
+const findD = (d: ProfileTradeDiagnostic[], stage: string, flow?: 'X' | 'M') =>
+  d.find((x) => x.stage === stage && x.flow === flow)
 
 // Like runNG but with an explicit config (e.g. a Comtrade key) and a full URL router, so
 // the Comtrade-primary path and the Comtrade/OEC fallbacks can be exercised. The World
@@ -156,28 +166,60 @@ describe('country-profile trade-enrichment diagnostics', () => {
     expect(profile.keyExports).toEqual(['mineral fuels and oils', 'oil seeds'])
     expect(profile.evidence.keyExports!.sourceIds).toEqual(['src.comtrade'])
     expect(profile.evidence.importDependence!.sourceIds).toEqual(['src.comtrade'])
-    expect(has(diags, 'comtrade', 'populated')).toBe(true)
+    expect(findD(diags, 'comtrade', 'X')?.outcome).toBe('populated')
+    expect(findD(diags, 'comtrade', 'M')?.outcome).toBe('populated')
     // Comtrade filled both fields, so OEC (Cloudflare-blocked from CI) is never consulted.
     expect(diags.some((d) => d.stage === 'oec')).toBe(false)
     expect(fetch.mock.calls.some((c) => String(c[0]).includes('olap-proxy'))).toBe(false)
   })
 
-  it('Comtrade fails (key present, non-OK) -> OEC fallback: comtrade=failed, oec=attempted', async () => {
+  it('Comtrade partial: export-only populated, import non_ok(status) -> keyExports only', async () => {
+    // Mirrors the live Kenya result: X returns products, M is rejected (e.g. rate-limited).
     const { profile, diags } = await runNGRouted({ comtradeApiKey: 'k' }, (url) =>
-      url.includes('comtradeapi.un.org') ? NOT_OK : oecOk(url),
+      !url.includes('comtradeapi.un.org')
+        ? NOT_OK // OEC (fallback for the missing import) is 403 in CI
+        : url.includes('flowCode=X')
+          ? comtradeResponse(CT_EXPORTS)
+          : NOT_OK,
     )
-    expect(has(diags, 'comtrade', 'failed')).toBe(true)
-    expect(has(diags, 'oec', 'attempted')).toBe(true)
-    // OEC succeeds in this unit test, so the fields are sourced from src.oec.
-    expect(profile.evidence.keyExports!.sourceIds).toEqual(['src.oec'])
+    expect(profile.keyExports).toEqual(['mineral fuels and oils', 'oil seeds'])
+    expect(profile.evidence.keyExports!.sourceIds).toEqual(['src.comtrade'])
+    expect(profile.importDependence).toBeUndefined() // import flow failed, OEC 403 -> omitted
+    expect(findD(diags, 'comtrade', 'X')?.outcome).toBe('populated')
+    const m = findD(diags, 'comtrade', 'M')
+    expect(m?.outcome).toBe('non_ok')
+    expect(m?.detail).toBe('HTTP 503')
   })
 
-  it('both Comtrade and OEC fail (key present): trade fields omitted fail-closed', async () => {
+  it('Comtrade non_ok both flows + OEC fail: per-flow non_ok(status); fields omitted fail-closed', async () => {
     const { profile, diags } = await runNGRouted({ comtradeApiKey: 'k' }, () => NOT_OK)
     expect(profile.externalDebtPctGni).toBe(60) // WB backbone intact, nothing fabricated
     expect(profile.keyExports).toBeUndefined()
     expect(profile.importDependence).toBeUndefined()
-    expect(has(diags, 'comtrade', 'failed')).toBe(true)
+    expect(findD(diags, 'comtrade', 'X')?.outcome).toBe('non_ok')
+    expect(findD(diags, 'comtrade', 'X')?.detail).toBe('HTTP 503')
+    expect(findD(diags, 'comtrade', 'M')?.outcome).toBe('non_ok')
     expect(has(diags, 'oec', 'non_ok')).toBe(true)
+  })
+
+  it('Comtrade empty (key present): per-flow empty; trade fields omitted', async () => {
+    const { profile, diags } = await runNGRouted({ comtradeApiKey: 'k' }, (url) =>
+      url.includes('comtradeapi.un.org') ? comtradeResponse([]) : NOT_OK,
+    )
+    expect(profile.keyExports).toBeUndefined()
+    expect(profile.importDependence).toBeUndefined()
+    expect(findD(diags, 'comtrade', 'X')?.outcome).toBe('empty')
+    expect(findD(diags, 'comtrade', 'M')?.outcome).toBe('empty')
+  })
+
+  it('Comtrade malformed (key present): per-flow malformed; fails closed without throwing', async () => {
+    const { profile, diags } = await runNGRouted({ comtradeApiKey: 'k' }, (url) =>
+      url.includes('comtradeapi.un.org') ? COMTRADE_MALFORMED : NOT_OK,
+    )
+    expect(profile.externalDebtPctGni).toBe(60) // resolved — malformed did not throw
+    expect(profile.keyExports).toBeUndefined()
+    expect(profile.importDependence).toBeUndefined()
+    expect(findD(diags, 'comtrade', 'X')?.outcome).toBe('malformed')
+    expect(findD(diags, 'comtrade', 'M')?.outcome).toBe('malformed')
   })
 })

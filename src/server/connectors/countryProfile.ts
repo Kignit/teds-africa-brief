@@ -1,6 +1,6 @@
 import type { ConnectorContext } from './types'
 import type { CountryProfile, CountryProfileEvidenceMap } from '../../domain/country'
-import { fetchComtradeTopProducts } from './comtrade'
+import { fetchComtradeTopProducts, type ComtradeFlowDiagnostic } from './comtrade'
 import { fetchOecTrade } from './oec'
 
 // Builds country profiles from real, machine-readable sources — no hardcoded
@@ -40,7 +40,9 @@ export const LAUNCH_MARKETS: CountryProfileSpec[] = [
 export interface ProfileTradeDiagnostic {
   code: string
   stage: 'comtrade' | 'oec'
-  outcome: 'skipped_no_key' | 'failed' | 'attempted' | 'non_ok' | 'empty' | 'populated'
+  /** Comtrade is diagnosed per flow (X export / M import); OEC leaves this unset. */
+  flow?: 'X' | 'M'
+  outcome: 'skipped_no_key' | 'attempted' | 'non_ok' | 'empty' | 'malformed' | 'populated'
   detail?: string
 }
 export type ProfileDiagSink = (d: ProfileTradeDiagnostic) => void
@@ -108,10 +110,28 @@ async function buildProfile(
 
   // PRIMARY: specific products from Comtrade (keyed; contributes nothing without a key).
   if (spec.comtradeCode) {
-    const hasComtradeKey = Boolean(ctx.config.comtradeApiKey)
+    // Relay the connector's PER-FLOW diagnostics (skipped_no_key / non_ok(status) /
+    // empty / malformed / populated) tagged with this country + flow, so a partial
+    // result (e.g. exports populated, imports rate-limited) is visible. Pure diagnostics:
+    // the field-setting and fail-closed omission below are unchanged.
+    const relayComtradeDiag = (d: ComtradeFlowDiagnostic) =>
+      onDiag?.({
+        code: spec.code,
+        stage: 'comtrade',
+        flow: d.flow,
+        outcome: d.outcome,
+        detail:
+          d.outcome === 'non_ok'
+            ? `HTTP ${d.status}`
+            : d.outcome === 'populated'
+              ? d.flow === 'X'
+                ? 'keyExports'
+                : 'importDependence'
+              : d.detail,
+      })
     const [exports, imports] = await Promise.all([
-      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'X'),
-      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'M'),
+      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'X', 3, relayComtradeDiag),
+      fetchComtradeTopProducts(ctx, spec.comtradeCode, 'M', 3, relayComtradeDiag),
     ])
     if (exports) {
       profile.keyExports = exports.products
@@ -137,11 +157,6 @@ async function buildProfile(
         refYear: imports.refYear,
       }
     }
-    onDiag?.({
-      code: spec.code,
-      stage: 'comtrade',
-      outcome: !hasComtradeKey ? 'skipped_no_key' : exports || imports ? 'populated' : 'failed',
-    })
   }
 
   // KEYLESS FALLBACK: OEC (BACI/HS, secondary / official-derived) fills any trade field

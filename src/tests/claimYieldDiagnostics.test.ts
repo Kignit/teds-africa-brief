@@ -73,11 +73,12 @@ describe('claim-yield diagnostics', () => {
   it('classified oil_shock with no effects is logged as blocked by missing oilStance', () => {
     const event = corroborated({
       id: 'evt_oil',
-      title: 'Dangote refinery raises crude oil processing capacity',
+      title: 'Oil prices jump on supply fears',
       countryCodes: ['NG'],
     })
-    // No link for this event; oil_shock is global, so all profiles are targets — none of
-    // which carry an oilStance label (no approved methodology produces one).
+    // No link for this event; oil_shock is global, so all profiles are targets - none of
+    // which carries an oilStance label (these diagnostic profiles have no petroleumTrade to
+    // derive one from), so the shock is blocked on missing oilStance.
     const [d] = diagnoseClaimYield([event], [], [profile('NG'), profile('GH')])
     expect(d.shock).toBe('oil_shock')
     expect(d.effectCount).toBe(0)

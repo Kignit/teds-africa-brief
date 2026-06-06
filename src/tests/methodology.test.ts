@@ -159,13 +159,11 @@ describe('methodology-gated derivation', () => {
   })
 })
 
-// The real oil-stance banding methodology, but approved, to exercise the derive path.
-const APPROVED_OIL: Methodology = { ...OILSTANCE_BANDING_V1, status: 'approved' }
-
 type PetroleumValue = Partial<{ exportValueUsd: number; importValueUsd: number; refYear: number }>
 
-// A profile carrying contract-valid raw petroleumTrade (Comtrade) and nothing derived. The
-// export/import values are overridable to drive the banding (net exporter by default).
+// A profile carrying contract-valid raw petroleumTrade (Comtrade). Only the export/import
+// values vary across cases; the code stays 'NG' on purpose, so the tests prove the label is
+// driven by the raw numbers and never by country identity.
 function petroleumProfile(value: PetroleumValue = {}): CountryProfile {
   return {
     code: 'NG',
@@ -208,9 +206,11 @@ function oilEvent(): Event {
   }
 }
 
-describe('oilStance methodology-gated derivation', () => {
+// The oil-stance methodology is APPROVED as of this PR, so these tests exercise the real
+// shipped METHODOLOGIES / METHODOLOGY_REGISTRY directly - no injected or synthetic approval.
+describe('oilStance methodology-gated derivation (approved)', () => {
   const stance = (v: PetroleumValue) =>
-    deriveCountryProfiles([petroleumProfile(v)], [APPROVED_OIL])[0].oilStance
+    deriveCountryProfiles([petroleumProfile(v)], METHODOLOGIES)[0].oilStance
 
   it('bands the normalized net petroleum position into exporter / neutral / importer', () => {
     expect(stance({ exportValueUsd: 50e9, importValueUsd: 20e9 })).toBe('exporter') // +0.43
@@ -224,40 +224,46 @@ describe('oilStance methodology-gated derivation', () => {
     expect(stance({ exportValueUsd: 0.6e9, importValueUsd: 0.1e9 })).toBe('neutral')
   })
 
-  it('emits no oilStance without an approved methodology (the shipped rule is draft)', () => {
-    const [shipped] = deriveCountryProfiles([petroleumProfile()], METHODOLOGIES)
-    expect(shipped.oilStance).toBeUndefined()
-    expect(shipped.petroleumTrade).toBeDefined() // raw input remains
-
-    expect(
-      deriveCountryProfiles([petroleumProfile()], [OILSTANCE_BANDING_V1])[0].oilStance,
-    ).toBeUndefined()
-    expect(deriveCountryProfiles([petroleumProfile()], [])[0].oilStance).toBeUndefined()
+  it('assigns each launch market the label its raw petroleum position implies', () => {
+    // Real HS-27 magnitudes from the current artifact (origin/main 1272605). Each label is
+    // COMPUTED from the numbers by the approved methodology; identity never enters it (every
+    // case runs on a profile still coded 'NG'). GH is the borderline case and stays neutral
+    // under the approved thresholds - it must not be silently tuned into importer.
+    const labelOf = (exportValueUsd: number, importValueUsd: number) =>
+      stance({ exportValueUsd, importValueUsd })
+    const byMarket = {
+      NG: labelOf(185.602e9, 62.298e9),
+      ET: labelOf(0.001e9, 2.651e9),
+      KE: labelOf(1.065e9, 4.757e9),
+      ZA: labelOf(38.039e9, 73.987e9),
+      GH: labelOf(16.196e9, 21.049e9),
+    }
+    expect(byMarket).toEqual({
+      NG: 'exporter',
+      ET: 'importer',
+      KE: 'importer',
+      ZA: 'importer',
+      GH: 'neutral',
+    })
   })
 
-  it('derives oilStance with source + methodology provenance once approved', () => {
-    const [p] = deriveCountryProfiles([petroleumProfile()], [APPROVED_OIL])
+  it('derives oilStance from the shipped methodology with source + methodology provenance', () => {
+    const [p] = deriveCountryProfiles([petroleumProfile()], METHODOLOGIES)
     expect(p.oilStance).toBe('exporter')
     expect(p.evidence.oilStance?.sourceIds).toEqual(['src.comtrade']) // carried from petroleumTrade
-    expect(p.evidence.oilStance?.methodologyId).toBe(APPROVED_OIL.id)
-    expect(p.methodologies?.some((m) => m.id === APPROVED_OIL.id)).toBe(true)
+    expect(p.evidence.oilStance?.methodologyId).toBe(OILSTANCE_BANDING_V1.id)
+    expect(p.methodologies?.some((m) => m.id === OILSTANCE_BANDING_V1.id)).toBe(true)
     expect(verifiedCountryProfiles([p], known).rejected).toHaveLength(0)
   })
 
-  it('makes no oil-shock claim while the methodology is draft (oil_shock stays blocked)', () => {
-    const [p] = deriveCountryProfiles([petroleumProfile()], METHODOLOGIES) // draft -> no oilStance
-    const draft = composeAnalysisDraft({
-      figures: [],
-      events: [oilEvent()],
-      profiles: [p],
-      now: () => AS_OF,
-    })
-    expect(draft.causalLinks.find((l) => l.shockType === 'oil_shock')).toBeUndefined()
-    expect(draft.claims).toHaveLength(0)
+  it('still derives no oilStance when no methodology is supplied', () => {
+    const [p] = deriveCountryProfiles([petroleumProfile()], [])
+    expect(p.oilStance).toBeUndefined()
+    expect(p.petroleumTrade).toBeDefined() // raw input remains
   })
 
-  it('makes a methodology-backed, gate-valid oil-shock claim once oilStance exists', () => {
-    const [p] = deriveCountryProfiles([petroleumProfile()], [APPROVED_OIL])
+  it('unlocks a gate-valid oil-shock claim with full methodology + provenance evidence', () => {
+    const [p] = deriveCountryProfiles([petroleumProfile()], METHODOLOGIES)
     const analysis = composeAnalysisDraft({
       figures: [],
       events: [oilEvent()],
@@ -268,10 +274,17 @@ describe('oilStance methodology-gated derivation', () => {
     expect(link).toBeDefined()
     const effect = link!.effects.find((e) => e.countryCode === 'NG')
     expect(effect?.evidence.profileFields).toContain('NG.oilStance')
-    expect(effect?.evidence.methodologyIds).toContain(APPROVED_OIL.id)
+    expect(effect?.evidence.methodologyIds).toContain(OILSTANCE_BANDING_V1.id)
 
-    // The full path is gate-valid: injecting the approved methodology into the gate registry
-    // (overriding the shipped draft) lets the composed brief pass the publish gate.
+    const claim = analysis.claims.find((c) => c.shockType === 'oil_shock' && c.countryCode === 'NG')
+    expect(claim).toBeDefined()
+    expect(claim!.methodologyIds).toContain(OILSTANCE_BANDING_V1.id) // banding methodology cited
+    expect(claim!.methodologyIds).toContain('method.causal.oil_shock.v1') // causal rule cited
+    expect(claim!.profileFields).toContain('NG.oilStance')
+    expect(claim!.profileSourceIds).toContain('src.comtrade')
+
+    // The shipped methodology is approved in the real METHODOLOGY_REGISTRY, so the brief
+    // passes the publish gate with NO injected registry override.
     const brief = composeBriefFromAnalysis({
       id: 'b',
       date: '2026-05-29',
@@ -282,6 +295,6 @@ describe('oilStance methodology-gated derivation', () => {
       events: [oilEvent()],
       profiles: [p],
     })
-    expect(runPublishGate(brief, { methodologyRegistry: [APPROVED_OIL] }).passed).toBe(true)
+    expect(runPublishGate(brief).passed).toBe(true)
   })
 })

@@ -144,8 +144,9 @@ describe('live ingestion pipeline', () => {
     expect(res.diagnostics.eventCount).toBe(1)
     expect(res.brief!.figures.map((f) => f.metric)).toContain('fx.NGN_USD')
 
-    // Oil-shock country effects are skipped: no approved oilStance methodology, so no
-    // oilStance label is derived and the verified pipeline never carries one into analysis.
+    // Oil-shock country effects are skipped: these fixtures carry no raw petroleumTrade, so
+    // the (now approved) oilStance methodology derives no label and the pipeline carries none
+    // into analysis. The approved methodology emitting labels is covered in methodology.test.ts.
     expect(res.analysis.causalLinks.find((l) => l.shockType === 'oil_shock')).toBeUndefined()
   })
 

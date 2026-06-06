@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-05T15:23:38.274Z",
+  "generatedAt": "2026-06-06T08:07:44.033Z",
   "brief": {
-    "id": "live_2026-06-05",
-    "date": "2026-06-05",
+    "id": "live_2026-06-06",
+    "date": "2026-06-06",
     "edition": "daily",
     "status": "draft",
     "dataMode": "live",
@@ -14,7 +14,12 @@
         "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
         "claimIds": [
           "claim_0_0",
-          "claim_1_0"
+          "claim_1_0",
+          "claim_1_1",
+          "claim_1_2",
+          "claim_1_3",
+          "claim_1_4",
+          "claim_2_0"
         ]
       }
     ],
@@ -48,6 +53,143 @@
       {
         "id": "claim_1_0",
         "kind": "causal",
+        "text": "ET: the oil-price move is mixed via the trade balance, inflation, and households",
+        "figureIds": [],
+        "eventIds": [
+          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
+        ],
+        "profileFields": [
+          "ET.oilStance"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.oilStance.banding.v1",
+          "method.causal.oil_shock.v1"
+        ],
+        "countryCode": "ET",
+        "tone": "neutral",
+        "channels": [
+          "trade_balance",
+          "inflation",
+          "consumers"
+        ],
+        "shockType": "oil_shock",
+        "verified": true
+      },
+      {
+        "id": "claim_1_1",
+        "kind": "causal",
+        "text": "KE: the oil-price move is mixed via the trade balance, inflation, and households",
+        "figureIds": [],
+        "eventIds": [
+          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
+        ],
+        "profileFields": [
+          "KE.oilStance"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.oilStance.banding.v1",
+          "method.causal.oil_shock.v1"
+        ],
+        "countryCode": "KE",
+        "tone": "neutral",
+        "channels": [
+          "trade_balance",
+          "inflation",
+          "consumers"
+        ],
+        "shockType": "oil_shock",
+        "verified": true
+      },
+      {
+        "id": "claim_1_2",
+        "kind": "causal",
+        "text": "NG: the oil-price move is mixed via fiscal revenue and the trade balance",
+        "figureIds": [],
+        "eventIds": [
+          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
+        ],
+        "profileFields": [
+          "NG.oilStance"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.oilStance.banding.v1",
+          "method.causal.oil_shock.v1"
+        ],
+        "countryCode": "NG",
+        "tone": "neutral",
+        "channels": [
+          "fiscal_revenue",
+          "trade_balance"
+        ],
+        "shockType": "oil_shock",
+        "verified": true
+      },
+      {
+        "id": "claim_1_3",
+        "kind": "causal",
+        "text": "GH: the oil-price move is mixed via the trade balance",
+        "figureIds": [],
+        "eventIds": [
+          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
+        ],
+        "profileFields": [
+          "GH.oilStance"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.oilStance.banding.v1",
+          "method.causal.oil_shock.v1"
+        ],
+        "countryCode": "GH",
+        "tone": "neutral",
+        "channels": [
+          "trade_balance"
+        ],
+        "shockType": "oil_shock",
+        "verified": true
+      },
+      {
+        "id": "claim_1_4",
+        "kind": "causal",
+        "text": "ZA: the oil-price move is mixed via the trade balance, inflation, and households",
+        "figureIds": [],
+        "eventIds": [
+          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
+        ],
+        "profileFields": [
+          "ZA.oilStance"
+        ],
+        "profileSourceIds": [
+          "src.comtrade"
+        ],
+        "methodologyIds": [
+          "method.oilStance.banding.v1",
+          "method.causal.oil_shock.v1"
+        ],
+        "countryCode": "ZA",
+        "tone": "neutral",
+        "channels": [
+          "trade_balance",
+          "inflation",
+          "consumers"
+        ],
+        "shockType": "oil_shock",
+        "verified": true
+      },
+      {
+        "id": "claim_2_0",
+        "kind": "causal",
         "text": "GH: the debt and fiscal event is positive via debt service and fiscal revenue",
         "figureIds": [],
         "eventIds": [
@@ -77,9 +219,9 @@
         "id": "fig_fx.NGN_USD_1",
         "metric": "fx.NGN_USD",
         "label": "NGN/USD",
-        "value": 1360.607362,
+        "value": 1360.678512,
         "unit": "NGN/USD",
-        "asOf": "2026-06-05T00:02:31.000Z",
+        "asOf": "2026-06-06T00:02:32.000Z",
         "countryCode": "NG",
         "sourceIds": [
           "src.open_er_api"
@@ -96,9 +238,9 @@
         "id": "fig_fx.KES_USD_2",
         "metric": "fx.KES_USD",
         "label": "KES/USD",
-        "value": 129.257225,
+        "value": 129.27467,
         "unit": "KES/USD",
-        "asOf": "2026-06-05T00:02:31.000Z",
+        "asOf": "2026-06-06T00:02:32.000Z",
         "countryCode": "KE",
         "sourceIds": [
           "src.open_er_api"
@@ -115,9 +257,9 @@
         "id": "fig_fx.ETB_USD_3",
         "metric": "fx.ETB_USD",
         "label": "ETB/USD",
-        "value": 160.001842,
+        "value": 159.914209,
         "unit": "ETB/USD",
-        "asOf": "2026-06-05T00:02:31.000Z",
+        "asOf": "2026-06-06T00:02:32.000Z",
         "countryCode": "ET",
         "sourceIds": [
           "src.open_er_api"
@@ -134,9 +276,9 @@
         "id": "fig_fx.GHS_USD_4",
         "metric": "fx.GHS_USD",
         "label": "GHS/USD",
-        "value": 11.786816,
+        "value": 11.787442,
         "unit": "GHS/USD",
-        "asOf": "2026-06-05T00:02:31.000Z",
+        "asOf": "2026-06-06T00:02:32.000Z",
         "countryCode": "GH",
         "sourceIds": [
           "src.open_er_api"
@@ -153,9 +295,9 @@
         "id": "fig_fx.ZAR_USD_5",
         "metric": "fx.ZAR_USD",
         "label": "ZAR/USD",
-        "value": 16.297778,
+        "value": 16.448846,
         "unit": "ZAR/USD",
-        "asOf": "2026-06-05T00:02:31.000Z",
+        "asOf": "2026-06-06T00:02:32.000Z",
         "countryCode": "ZA",
         "sourceIds": [
           "src.open_er_api"
@@ -170,6 +312,960 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_naira_weakens_to_n1_365_as_external_reserves_1xvc35o",
+        "title": "Naira weakens to N1,365/$ as external reserves cross $50 billion",
+        "summary": "The naira weakened slightly against the United States dollar at the close of trading on Friday, settling at N1,365/$ in the official foreign exchange market after a largely stable performance throughout the week. \nThe post Naira weakens to N1,365/$ as external reserves cross $50 billion  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T07:52:37.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "naira weakens to n1 365 as external reserves",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:83kuj7"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ngx_targets_broader_capital_market_participation_ahead_of_y8jxox",
+        "title": "NGX targets broader capital market participation ahead of major listings",
+        "summary": "The Nigerian Exchange Group (NGX Group) says it is intensifying efforts to attract more Nigerians to the capital market, leveraging a pipeline of major public offerings expected to hit the market in the coming months. \nThe post NGX targets broader capital market participation ahead of major listings   appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T07:47:39.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "ngx targets broader capital market participation ahead of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1v5mnfp"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_hospitality_jobs_boom_as_us_prepares_for_world_k3c82o",
+        "title": "Hospitality jobs boom as US prepares for World Cup",
+        "summary": "Rehan Alam, who owns The Red Lion pub and restaurant in downtown New York City, has hired seven extra bartenders to manage an expected surge in attendance when the World Cup begins next week.",
+        "occurredAt": "2026-06-06T07:39:37.000Z",
+        "countryCodes": [],
+        "topic": "hospitality jobs boom as us prepares for world",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:nbi2li"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_south_africa_business_leaders_call_for_deeper_d6i7kc",
+        "title": "Kenya, South Africa business leaders call for deeper African integration",
+        "summary": "The calls were made on Thursday during the Kenya-South Africa Business Forum in Johannesburg, held as part of Kenyan President William Ruto's state visit to South Africa.",
+        "occurredAt": "2026-06-06T07:33:36.000Z",
+        "countryCodes": [
+          "KE",
+          "ZA"
+        ],
+        "topic": "kenya south africa business leaders call for deeper",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:1g0bfau"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_strategy_execution_turning_ideas_into_action_30wctj",
+        "title": "Strategy execution: Turning ideas into action",
+        "summary": "While ideas may seem promising on paper, they remain just that, ideas, without effective execution. Implementation is the crucial step that transforms vision into reality. When strategies are communicated clearly to teams, execution becomes more manageable, even without constant supervision, as everyone understands their importance and direction. For successful execution, communication must align ",
+        "occurredAt": "2026-06-06T07:26:12.000Z",
+        "countryCodes": [],
+        "topic": "strategy execution turning ideas into action",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:1nvkoal"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_tables_turned_32pzkc",
+        "title": "Tables Turned",
+        "summary": "Mege had always loved peace. He was the kind of man who avoided unnecessary trouble and believed that life was\nread more Tables Turned",
+        "occurredAt": "2026-06-06T07:00:19.000Z",
+        "countryCodes": [],
+        "topic": "tables turned",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:u6zgfp"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_watch_inside_sa_s_black_market_for_number_1b0rafb",
+        "title": "WATCH: Inside SA’s black market for number plates | Special Feature",
+        "summary": "",
+        "occurredAt": "2026-06-06T07:00:00.000Z",
+        "countryCodes": [],
+        "topic": "watch inside sa s black market for number",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1g1tzz0"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_when_fela_took_afrobeat_to_berlin_the_night_1vvvw41",
+        "title": "When Fela Took Afrobeat to Berlin: The Night Africa 70 Reached Its Fiery Summit",
+        "summary": "At the 1978 Berliner Jazztage, Fela Kuti did not simply perform; he staged a political, spiritual and musical confrontation that\nread more When Fela Took Afrobeat to Berlin: The Night Africa 70 Reached Its Fiery Summit",
+        "occurredAt": "2026-06-06T06:37:55.000Z",
+        "countryCodes": [],
+        "topic": "when fela took afrobeat to berlin the night",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:h2qb02"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_here_are_7_businesses_you_can_start_in_1xdo1ld",
+        "title": "Here are 7 businesses you can start in under 14 hours a week",
+        "summary": "Many people want to start a business but struggle to find the time. Between full-time jobs, family responsibilities and other\nread more Here are 7 businesses you can start in under 14 hours a week",
+        "occurredAt": "2026-06-06T06:17:53.000Z",
+        "countryCodes": [],
+        "topic": "here are 7 businesses you can start in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:iuki1d"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_10_hardest_languages_for_english_speakers_to_learn_7mrr1",
+        "title": "10 hardest languages for English speakers to learn",
+        "summary": "Learning a new language can create opportunities for travel, business and cultural exchange, but some languages require significantly more time\nread more 10 hardest languages for English speakers to learn",
+        "occurredAt": "2026-06-06T06:16:23.000Z",
+        "countryCodes": [],
+        "topic": "10 hardest languages for english speakers to learn",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:o5kawd"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_banking_sector_splits_into_winners_and_losers_after_5fjgas",
+        "title": "Banking sector splits into winners and losers after CBN stress tests &#8211; Rewane",
+        "summary": "Nigeria&#8217;s banking sector is increasingly divided between lenders with strong enough balance sheets to reward shareholders and those struggling with\nread more Banking sector splits into winners and losers after CBN stress tests &#8211; Rewane",
+        "occurredAt": "2026-06-06T06:15:34.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "banking sector splits into winners and losers after",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:xtcies"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_agi_pushes_for_tax_reliefs_credit_support_ahead_1m42bms",
+        "title": "AGI Pushes for Tax Reliefs, Credit Support Ahead of Polystyrene Ban",
+        "summary": "AGI Pushes for Tax Reliefs, Credit Support Ahead of Polystyrene Ban The Association of Ghana Industries has warned of possible industrial disruption, supply chain pressures and job losses if Ghana’s planned ban on polystyrene foam, commonly known as Styrofoam, is implemented without a clear and practical transition plan. The ban is scheduled to take effect [&#8230;]",
+        "occurredAt": "2026-06-06T05:14:59.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "agi pushes for tax reliefs credit support ahead",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1sc327x"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_prestea_sankofa_eyes_revival_after_securing_new_strategic_skotub",
+        "title": "Prestea Sankofa Eyes Revival After Securing New Strategic Investor",
+        "summary": "Prestea Sankofa Eyes Revival After Securing New Strategic Investor Prestea Sankofa Gold Limited is seeking a major operational turnaround after securing new investment from Guangzhou Hozdo Group, in a move expected to help stabilise the state-owned mining company and revive production capacity. The company, a subsidiary of the Ghana National Petroleum Corporation, has faced years [&#8230;]",
+        "occurredAt": "2026-06-06T05:07:59.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "prestea sankofa eyes revival after securing new strategic",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:14v2mbd"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_targets_1_7_million_jobs_under_24_1hvk4j5",
+        "title": "Ghana Targets 1.7 Million Jobs Under 24-Hour Economy Programme",
+        "summary": "Ghana Targets 1.7 Million Jobs Under 24-Hour Economy Programme Ghana’s flagship 24-Hour Economy and Accelerated Export Development Programme is projected to create 1.7 million productive jobs by 2028, according to Presidential Adviser on the initiative, Augustus Goosie Tanoh. Speaking at the Ghana Diaspora Townhall Meeting with President John Dramani Mahama at the Ghana High Commission [&#8230;]",
+        "occurredAt": "2026-06-06T04:58:17.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana targets 1 7 million jobs under 24",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1jcdh9y"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gse_composite_index_slips_as_market_records_broad_16cfgze",
+        "title": "GSE Composite Index Slips as Market Records Broad-Based Sell-Off",
+        "summary": "GSE Composite Index Slips as Market Records Broad-Based Sell-Off The Ghana Stock Exchange ended the week in negative territory as cautious investor sentiment and weak trading activity triggered a broad-based pullback in equities. According to SIC Brokerage’s weekly market report dated June 5, 2026, the GSE Composite Index declined by 54.82 points to close at [&#8230;]",
+        "occurredAt": "2026-06-06T04:46:13.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "gse composite index slips as market records broad",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:9tnv1k"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2026_fifa_world_cup_diaries_united_states_face_1ka808a",
+        "title": "2026 FIFA World Cup Diaries: United States Face Tough Test as Türkiye, Paraguay and Australia Eye Breakthrough in Group D",
+        "summary": "2026 FIFA World Cup Diaries: United States Face Tough Test as Türkiye, Paraguay and Australia Eye Breakthrough in Group D Group D of the 2026 FIFA World Cup is shaping up to be one of the most competitive pools of the tournament, with all four nations carrying realistic hopes of reaching the knockout rounds. Hosts [&#8230;]",
+        "occurredAt": "2026-06-06T04:39:26.000Z",
+        "countryCodes": [],
+        "topic": "2026 fifa world cup diaries united states face",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1og9ig5"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_zverev_powers_into_french_open_final_to_face_16cycot",
+        "title": "Zverev Powers Into French Open Final to Face Cobolli After Defeating Mensik",
+        "summary": "Zverev Powers Into French Open Final to Face Cobolli After Defeating Mensik Second seed Alexander Zverev moved within touching distance of a long-awaited first Grand Slam title after defeating rising Czech star Jakub Mensik in four sets to book his place in the 2026 French Open final. The German battled past the 20-year-old 7-5, 6-2, [&#8230;]",
+        "occurredAt": "2026-06-06T04:36:02.000Z",
+        "countryCodes": [],
+        "topic": "zverev powers into french open final to face",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:9umgf0"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_hamilton_sparks_ferrari_surge_with_monaco_practice_masterclass_7kutv",
+        "title": "Hamilton Sparks Ferrari Surge with Monaco Practice Masterclass",
+        "summary": "Hamilton Sparks Ferrari Surge with Monaco Practice Masterclass Seven-time Formula One world champion Lewis Hamilton delivered a vintage performance on Friday as Ferrari dominated second practice for the Monaco Grand Prix with a commanding one-two finish on the famous Monte Carlo streets. The 41-year-old Briton topped the timesheets ahead of Ferrari teammate Charles Leclerc, underlining [&#8230;]",
+        "occurredAt": "2026-06-06T04:31:51.000Z",
+        "countryCodes": [],
+        "topic": "hamilton sparks ferrari surge with monaco practice masterclass",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:vulsjz"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_200mw_floating_coastal_power_plant_plan_faces_stiff_brvru6",
+        "title": "200MW floating coastal power plant plan faces stiff resistance",
+        "summary": "Industry players say the proposed facility would drive up electricity costs, with the country working to cut reliance on thermal generation.",
+        "occurredAt": "2026-06-06T03:00:00.000Z",
+        "countryCodes": [],
+        "topic": "200mw floating coastal power plant plan faces stiff",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:11qpsa9"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_new_hub_for_creative_entrepreneurs_at_cape_town_1azaznk",
+        "title": "New hub for creative entrepreneurs at Cape Town Cruise Terminal",
+        "summary": "Small enterprises and creatives get a boost at the V&#038;A Waterfront.",
+        "occurredAt": "2026-06-06T02:05:22.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "new hub for creative entrepreneurs at cape town",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:ijhrvy"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_rhinos_return_to_billionaire_backed_zimbabwe_park_1j56d7f",
+        "title": "Rhinos return to billionaire-backed Zimbabwe park",
+        "summary": "... after 1990s wipe out.",
+        "occurredAt": "2026-06-06T02:05:19.000Z",
+        "countryCodes": [],
+        "topic": "rhinos return to billionaire backed zimbabwe park",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:zs9bls"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_secretive_deals_aggressive_demands_are_new_us_foreign_1g8zchn",
+        "title": "Secretive deals, aggressive demands are new US foreign aid tactics",
+        "summary": "For Lesotho, a nation of 2.4 million people with the unhappy distinction of having the world’s second-highest HIV rate and the fourth-highest tuberculosis rate, the loss of support threatened thousands of lives.",
+        "occurredAt": "2026-06-06T02:01:46.000Z",
+        "countryCodes": [],
+        "topic": "secretive deals aggressive demands are new us foreign",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:tni547"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_these_ai_gurus_are_charging_wall_street_banks_19hmiwh",
+        "title": "These AI gurus are charging Wall Street banks $25 000 a day",
+        "summary": "As big banks, caught up in AI angst, are looking to hire more AI specialists and shrink traditional banking roles.",
+        "occurredAt": "2026-06-06T02:00:26.000Z",
+        "countryCodes": [],
+        "topic": "these ai gurus are charging wall street banks",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:fetf6d"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_billionaire_glazer_family_members_debating_manchester_united_stake_1thfbql",
+        "title": "Billionaire Glazer family members debating Manchester United stake sale",
+        "summary": "Deliberations come as the owners of the English Premier League football club face a potential multibillion-pound bill to redevelop the club’s famous Old Trafford stadium in the coming years.",
+        "occurredAt": "2026-06-06T01:03:21.000Z",
+        "countryCodes": [],
+        "topic": "billionaire glazer family members debating manchester united stake",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1hwnolj"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_brent_crude_forecast_raised_to_us_87_as_1kjsw7j",
+        "title": "Brent Crude Forecast Raised to US$87 as Fitch Warns of Growth Risks",
+        "summary": "Brent Crude Forecast Raised to US$87 as Fitch Warns of Growth Risks Fitch Ratings has raised its 2026 Brent crude oil forecast to US$87 per barrel, warning that rising geopolitical tensions and persistent disruptions to global energy supply routes could weigh on global growth. The revised forecast represents a sharp increase from the agency’s earlier [&#8230;]",
+        "occurredAt": "2026-06-06T00:30:12.000Z",
+        "countryCodes": [],
+        "topic": "brent crude forecast raised to us 87 as",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:1q9emk6"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_unilever_ghana_rewards_shareholders_with_gh_62_5m_1g4877e",
+        "title": "Unilever Ghana rewards shareholders with GH¢62.5m dividend",
+        "summary": "Unilever Ghana PLC has declared a final dividend of GH¢1.00 per share, translating into a total payout of GH¢62.5 million to shareholders, following approval at the company's 52nd Annual General Meeting (AGM) on Friday, June 5.",
+        "occurredAt": "2026-06-06T00:20:00.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "unilever ghana rewards shareholders with gh 62 5m",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:ymybew"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_from_zero_to_hero_senegalese_midfielder_ndiaye_8217_1qgxxxp",
+        "title": "From Zero to Hero: Senegalese Midfielder Ndiaye&#8217;s Breathtaking Sx-month Journey to Top",
+        "summary": "BERLIN &#8211; Senegalese international Bara Sapoko Ndiaye might still feel caught in the middle of a strange journey after an unprecedented upswing at light speed. The 18-year-old&#8217;s story",
+        "occurredAt": "2026-06-05T20:17:58.000Z",
+        "countryCodes": [],
+        "topic": "from zero to hero senegalese midfielder ndiaye 8217",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:np1r3r"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_cdc_who_launch_joint_518m_response_plan_1e8nfyw",
+        "title": "Africa CDC, WHO Launch Joint $518m Response Plan for Ebola Outbreak",
+        "summary": "African Union and United Nations health agencies on Friday launched a joint continental preparedness and response plan for the ongoing Ebola outbreak caused by the Bundibugyo virus. The",
+        "occurredAt": "2026-06-05T19:51:06.000Z",
+        "countryCodes": [],
+        "topic": "africa cdc who launch joint 518m response plan",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianmonitor_et:1uvrwiu"
+          ],
+          "sourceIds": [
+            "src.ethiopianmonitor_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_central_bank_of_kenya_raises_ksh_34_4_ujexdt",
+        "title": "Central Bank of Kenya Raises KSh 34.4 Bn for Budget Spending in June",
+        "summary": "Central Bank of Kenya(CBK) received bids worth KSh 34.4 billion from the sale of a 15-year Treasury Bond and a 25-year Treasury Bond, during the June 3rd Auction, an undersubscription of 85.97%. This is out of KSh 40 billion that the state fiscal agent sought for budget spending in June 2026. The 15-year Treasury Bond [&#8230;]",
+        "occurredAt": "2026-06-05T19:09:18.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "central bank of kenya raises ksh 34 4",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:hbz3pf"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dbg_marks_5th_anniversary_with_focus_on_scaling_js33ur",
+        "title": "DBG marks 5th Anniversary with focus on scaling up activities in key target areas",
+        "summary": "Development Bank Ghana (DBG) is marking its fifth anniversary with a focus on scaling up activities in key areas that have significantly impacted economic growth and the livelihoods of Ghanaians. The bank is expanding lending to women-led businesses and young entrepreneurs to create jobs and help improve household living conditions. Ahead of the media launch [&#8230;]",
+        "occurredAt": "2026-06-05T19:09:08.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "dbg marks 5th anniversary with focus on scaling",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:5dqxuw"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kra_steps_up_push_for_tax_compliance_ahead_tkxxwu",
+        "title": "KRA Steps Up Push for Tax Compliance Ahead of June 30 Deadline",
+        "summary": "As the June 30 tax return deadline draws closer, the Kenya Revenue Authority (KRA) has stepped up its nationwide campaign urging Kenyans to file their returns on time and avoid penalties associated with late compliance. The tax agency says the annual filing season is not just a routine requirement but a key pillar in sustaining [&#8230;]",
+        "occurredAt": "2026-06-05T18:44:18.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kra steps up push for tax compliance ahead",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:fbcalh"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_npa_commends_ssnit_for_telehealth_service_initiative_1psh023",
+        "title": "NPA commends SSNIT for Telehealth Service initiative",
+        "summary": "The leadership of the National Pensioners Association (NPA-SSNIT) has commended the Social Security and National Insurance Trust (SSNIT) for the introduction of its telehealth service, which was launched on Tuesday.",
+        "occurredAt": "2026-06-05T18:42:15.000Z",
+        "countryCodes": [],
+        "topic": "npa commends ssnit for telehealth service initiative",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1nf3jyo"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_paypal_and_hetzner_squeeze_african_businesses_1x4te4k",
+        "title": "PayPal and Hetzner Squeeze African Businesses",
+        "summary": "As a Kenyan entrepreneur who has relied on PayPal since 2019, I once enjoyed a straightforward relationship with the platform while living and working in the Cayman Islands. But since returning home, that experience has soured. What began as a convenient tool for paying for servers, software subscriptions and online services has become a source [&#8230;]",
+        "occurredAt": "2026-06-05T18:10:20.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "paypal and hetzner squeeze african businesses",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1dk875z"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_rsg_geldsake_met_moneyweb_vrydag_5_junie_2026_1xpi4uh",
+        "title": "RSG Geldsake met Moneyweb – Vrydag 5 Junie 2026",
+        "summary": "Ryk van Niekerk – Moneyweb.",
+        "occurredAt": "2026-06-05T18:09:44.000Z",
+        "countryCodes": [],
+        "topic": "rsg geldsake met moneyweb vrydag 5 junie 2026",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1s7c6fy"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenners_antwoord_luisteraarsvrae_1w5t0dw",
+        "title": "Kenners antwoord luisteraarsvrae",
+        "summary": "Nico Matthee, welvaartbeplanner by Portfolium, en Corné Welman, welvaartbeplanner by Portfolium, beantwoord die vrae wat luisteraars se sakke raak.",
+        "occurredAt": "2026-06-05T18:08:25.000Z",
+        "countryCodes": [],
+        "topic": "kenners antwoord luisteraarsvrae",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1nly04t"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2026_fifa_world_cup_diaries_brazil_face_pressure_1vn18rp",
+        "title": "2026 FIFA World Cup Diaries: Brazil Face Pressure as Morocco, Scotland and Haiti Eye Group C Upsets",
+        "summary": "2026 FIFA World Cup Diaries: Brazil Face Pressure as Morocco, Scotland and Haiti Eye Group C Upsets Group C of the 2026 FIFA World Cup promises a fascinating mix of history, expectation and ambition, with five-time champions Brazil entering the tournament under intense scrutiny while Morocco, Scotland and Haiti all aim to make a significant [&#8230;]",
+        "occurredAt": "2026-06-05T18:06:31.000Z",
+        "countryCodes": [],
+        "topic": "2026 fifa world cup diaries brazil face pressure",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:od649n"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_trudie_broekmann_kla_oor_hoe_banke_bedriegde_kli_17dyykp",
+        "title": "Trudie Broekmann kla oor hoe banke bedriegde kliënte behandel",
+        "summary": "Trudie Broekmann, verbruikersprokureur by Trudie Broekmann Prokureurs, gesels oor haar ope brief aan die regering en reguleerders oor hoe kliënte deur banke behandel word nadat hulle bedrog op hul bankrekeninge ervaar het.",
+        "occurredAt": "2026-06-05T18:06:18.000Z",
+        "countryCodes": [],
+        "topic": "trudie broekmann kla oor hoe banke bedriegde kli",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:awawf1"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_rykes_het_s_ryk_geword_1c0cq1v",
+        "title": "Rykes het só ryk geword",
+        "summary": "Jacques Els, hoof van welvaart en belegging by Standard Bank, gesels oor Standard Bank se verslag oor hoe Afrika se ryk individue hul fortuine opgebou het.",
+        "occurredAt": "2026-06-05T18:03:46.000Z",
+        "countryCodes": [],
+        "topic": "rykes het s ryk geword",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:m1tm8l"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fitch_se_goeie_vrydag_nuus_1r5vknx",
+        "title": "Fitch se goeie Vrydag-nuus",
+        "summary": "Mia Kriegler, direkteur vir batebestuur by Kruger Internasionaal, deel haar mening oor Fitch se kredietgradering vir Suid-Afrika, Bitcoin wat sy laagste vlak van die jaar bereik het, asook Mr Price en TFG se finansiële resultate.",
+        "occurredAt": "2026-06-05T18:00:14.000Z",
+        "countryCodes": [],
+        "topic": "fitch se goeie vrydag nuus",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1czpb9n"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_power_kicks_off_tariff_transition_for_electric_4qlpft",
+        "title": "Kenya Power Kicks Off Tariff Transition for Electric Vehicle Customers",
+        "summary": "Kenya Power, the state-owned electricity distributor, has commenced an exercise to mop up all customers utilising electricity to charge their electric vehicles (EVs) with the aim of metering them under the E-mobility tariff. The tariff allows users to enjoy electricity at a discounted rate of KSh16 per unit during peak hours and KSh.8 per  unit [&#8230;]",
+        "occurredAt": "2026-06-05T17:56:38.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya power kicks off tariff transition for electric",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1rqg4n"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_pfag_calls_for_immediate_rice_import_quota_as_14cygxi",
+        "title": "PFAG Calls for Immediate Rice Import Quota as Local Farmers Face Heavy Losses",
+        "summary": "PFAG Calls for Immediate Rice Import Quota as Local Farmers Face Heavy Losses The Peasant Farmers Association of Ghana has urged the government to immediately implement the proposed rice import quota system, warning that thousands of local farmers may abandon rice production if the current glut of unsold stocks is not addressed. In a strongly [&#8230;]",
+        "occurredAt": "2026-06-05T17:52:43.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "pfag calls for immediate rice import quota as",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.norvanreports_gh:721awe"
+          ],
+          "sourceIds": [
+            "src.norvanreports_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sovereign_trust_insurance_remits_n1_5_billion_statutory_os1dz8",
+        "title": "Sovereign Trust Insurance remits N1.5 billion statutory capital deposit to CBN",
+        "summary": "Sovereign Trust Insurance Plc has announced the successful remittance of a N1.5 billion statutory capital deposit to the Central Bank of Nigeria (CBN), in compliance with regulatory requirements introduced under the Nigerian Insurance Industry Reform Act (NIIRA) 2025. The disclosure was contained in a statement issued by the company’s Deputy General Manager and Head of [&#8230;]\nThe post Sovereign",
+        "occurredAt": "2026-06-05T17:30:21.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "sovereign trust insurance remits n1 5 billion statutory",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:ml8g6b"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_family_bank_strengthens_credentials_ahead_of_listing_1b0n7o8",
+        "title": "Family Bank Strengthens Credentials Ahead of Listing",
+        "summary": "Family Bank, considered the 4th largest in Kenya in terms of geographical reach, has received national-scale issuer ratings of BBB+(KE) and A2(KE) with a Stable Outlook from GCR ahead of its anticipated NSE listing. More importantly, GCR highlighted improving capital strength, with the Core Capital Ratio rising to 16.9% from 15.0% a year earlier and [&#8230;]",
+        "occurredAt": "2026-06-05T17:07:08.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "family bank strengthens credentials ahead of listing",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:15t81i0"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_russian_language_day_celebrated_at_uneca_ahead_of_ipvnav",
+        "title": "Russian language day celebrated at UNECA ahead of global observanceBy our staff reporter",
+        "summary": "The headquarters of the United Nations Economic Commission for Africa (UNECA) hosted a high-profile diplomatic and cultural event on June 4, 2026, to mark Russian Language Day. Held ahead of the official global observance on June 6, the event was noted for strengthening the growing diplomatic, educational, and cultural ties between the Russian Federation and [&#8230;]",
+        "occurredAt": "2026-06-05T17:01:32.000Z",
+        "countryCodes": [],
+        "topic": "russian language day celebrated at uneca ahead of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:1fpbm2v"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_police_launch_coordinated_raids_stop_and_search_operations_vyisah",
+        "title": "Police launch coordinated raids, stop-and-search operations in Oyo",
+        "summary": "The Oyo State Police Command has launched coordinated raids, stop-and-search operations, and intelligence-led patrols across the state as part of renewed efforts to strengthen security and combat criminal activities. \nThe post Police launch coordinated raids, stop-and-search operations in Oyo appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T17:01:27.000Z",
+        "countryCodes": [],
+        "topic": "police launch coordinated raids stop and search operations",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1oygop0"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sanlamallianz_holdings_kenya_appoints_dr_martin_oduor_otieno_5adk2o",
+        "title": "SanlamAllianz Holdings Kenya Appoints Dr Martin Oduor Otieno as New Board Chairman",
+        "summary": "SanlamAllianz Holdings Kenya has appointed Dr Martin-Oduor Otieno as its new board chairman, effective 4th June 2026, succeeding Dr John Simba, who retires after more than two decades in the corner office. It is during his tenure that SanlamAllianz navigated several milestones, including strategic mergers and acquisitions, recapitalization initiatives and the transition from Pan African [&#8230;]",
+        "occurredAt": "2026-06-05T16:24:31.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "sanlamallianz holdings kenya appoints dr martin oduor otieno",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1soct4n"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_to_repatriate_1_000_nigerians_from_south_4vx8j6",
+        "title": "FG to repatriate 1,000 Nigerians from South Africa as xenophobic tensions rise",
+        "summary": "The Federal Government has commenced plans to repatriate more than 1,000 Nigerians from South Africa amid growing concerns over rising anti-immigrant sentiments and renewed xenophobic tensions in the southern African nation. \nThe post FG to repatriate 1,000 Nigerians from South Africa as xenophobic tensions rise appeared first on Nairametrics.",
+        "occurredAt": "2026-06-05T16:22:03.000Z",
+        "countryCodes": [
+          "NG",
+          "ZA"
+        ],
+        "topic": "fg to repatriate 1 000 nigerians from south",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:16sx6dt"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_jkia_ksh_272_bn_expansion_project_kicks_off_wsm2gk",
+        "title": "JKIA KSh 272 Bn Expansion Project Kicks Off this Month",
+        "summary": "JKIA (Jomo Kenyatta International Airport) expansion and modernization construction works projected to cost some KSh 272 billion are set to begin this month after the completion of the procurement process. The JKIA project, which is part of a 20-year master plan, will be the first to be financed under the National Infrastructure Fund Act. President [&#8230;]",
+        "occurredAt": "2026-06-05T15:30:06.000Z",
+        "countryCodes": [],
+        "topic": "jkia ksh 272 bn expansion project kicks off",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:lznpl8"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_ssnit_pension_scheme_is_sustainable_can_pay_benefits_1axopbk",
         "title": "SSNIT pension scheme is sustainable, can pay benefits for next 40 years &#8211; Director General",
@@ -1327,6 +2423,25 @@
           ],
           "sourceIds": [
             "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_s_new_path_to_online_income_how_1nj233m",
+        "title": "Africa’s New Path to Online Income: How Affiliate Africa Institute is empowering a generation to earn from web",
+        "summary": "Across the African continent, young people, side hustlers, and aspiring digital entrepreneurs are turning to online income models that don’t require inventory, large start-up capital, or advanced technical skills. At the center of this shift is affiliate marketing — and one campaign driving it forward is Affiliate Africa Institute(AAI).",
+        "occurredAt": "2026-06-05T11:09:00.000Z",
+        "countryCodes": [],
+        "topic": "africa s new path to online income how",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1ikoh3d"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2839,6 +3954,27 @@
         }
       },
       {
+        "id": "evt_keiyo_professionals_rally_behind_kaptagat_conservation_agenda_ahead_hwup00",
+        "title": "Keiyo Professionals Rally Behind Kaptagat Conservation Agenda Ahead of 10th Edition",
+        "summary": "NAIROBI, Kenya, June 4 &#8211; Keiyo professionals under the banner “Kokwo”, a term loosely translated as neighbourhood, have reaffirmed their commitment to supporting the Kaptagat Integrated Conservation Programme (KICP) as the initiative marks a decade of ecosystem restoration and community transformation. The professionals converged in Nairobi for a stakeholder engagement meeting aimed at stren",
+        "occurredAt": "2026-06-05T05:38:22.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "keiyo professionals rally behind kaptagat conservation agenda ahead",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:k0q12w"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_great_dividend_payouts_from_asset_managers_1v7eenr",
         "title": "Great dividend payouts from asset managers",
         "summary": "A look at the market’s reaction to Ninety One’s latest results and what updated best-practice guidelines could mean for South Africa’s Reit sector.",
@@ -4063,27 +5199,6 @@
         }
       },
       {
-        "id": "evt_shell_executives_ignored_warnings_over_niger_delta_pipeline_1wotg9u",
-        "title": "Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal",
-        "summary": "Newly released internal Shell documents have revealed that senior executives approved the continued operation of oil pipelines in Nigeria’s Niger Delta despite repeated warnings from engineers about environmental risks and the potential for oil spills. \nThe post Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T17:58:15.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "shell executives ignored warnings over niger delta pipeline",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:5vnz9"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_patrick_analo_akivaga_man_busted_with_sh65_million_1u4x7h3",
         "title": "Patrick Analo Akivaga: Man busted with Sh65 million cash at his home",
         "summary": "Nairobi County chief officer Patrick Analo Akivaga was on Thursday busted by detectives from the Ethics and Anti-Corruption Commission (EACC) with millions of cash at his home. Analo was busted with Sh65.3 million at his residence in Syokimau, Machakos County. According to the EACC, the money was in batches of Sh51,300,000 and USD130,000 (equivalent to Sh14,605,250). [&#8230;]\nPatrick Analo Akivag",
@@ -4099,6 +5214,27 @@
           ],
           "sourceIds": [
             "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_shell_executives_ignored_warnings_over_niger_delta_pipeline_1wotg9u",
+        "title": "Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal",
+        "summary": "Newly released internal Shell documents have revealed that senior executives approved the continued operation of oil pipelines in Nigeria’s Niger Delta despite repeated warnings from engineers about environmental risks and the potential for oil spills. \nThe post Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-04T17:58:15.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "shell executives ignored warnings over niger delta pipeline",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:5vnz9"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -7324,562 +8460,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_we_don_t_see_inflation_increasing_above_5_174qsc4",
-        "title": "We don’t see inflation increasing above 5% by December 2026 &#8211; Ato Forson",
-        "summary": "According to him, the government has implemented measures to stabilise the economy, and so far, the country has managed those shocks well.",
-        "occurredAt": "2026-06-03T07:53:20.000Z",
-        "countryCodes": [],
-        "topic": "we don t see inflation increasing above 5",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:fp1bao"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ghana_leather_manufacturers_association_calls_for_zero_import_1lxvt6m",
-        "title": "Ghana Leather Manufacturers Association calls for zero import duty on raw materials",
-        "summary": "The Ghana Leather Manufacturers Association has mounted intense regulatory pressure on the government to eliminate import duties on crucial raw materials used across the leather industry.",
-        "occurredAt": "2026-06-03T07:23:45.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ghana leather manufacturers association calls for zero import",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1fb1vne"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_embrace_data_for_sustainable_growth_policymakers_urged_1t7taw2",
-        "title": "Embrace data for sustainable growth, policymakers urged",
-        "summary": "Improved data collection has strengthened support programmes for persons with disabilities and other vulnerable groups.",
-        "occurredAt": "2026-06-03T07:13:37.000Z",
-        "countryCodes": [],
-        "topic": "embrace data for sustainable growth policymakers urged",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:tulipv"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_itc_equity_partner_to_unlock_trade_finance_for_1v2j0m6",
-        "title": "ITC, Equity partner to unlock trade finance for coffee, leather and creative industries",
-        "summary": "The partnership will initially be implemented in Kenya through a pilot phase running until December 2026, with plans to expand into other East African markets from 2027.",
-        "occurredAt": "2026-06-03T07:04:47.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "itc equity partner to unlock trade finance for",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:xrvv06"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_how_i_navigated_turbulence_to_build_a_sh1b_18w2434",
-        "title": "How I navigated turbulence to build a Sh1b fashion brand",
-        "summary": "This month, Vivo Fashion Group will be 15 years in business. And last year, the business surpassed the Sh1 billion revenue mark.",
-        "occurredAt": "2026-06-03T06:30:00.000Z",
-        "countryCodes": [],
-        "topic": "how i navigated turbulence to build a sh1b",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1y1y0zh"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bog_boosts_june_market_support_to_1_2bn_1pgz8w9",
-        "title": "BoG boosts June market support to $1.2bn as cedi faces renewed pressure",
-        "summary": "The Bank of Ghana (BoG) is increasing the amount of foreign exchange it will make available to the market under its Forex Intermediation Programme for June 2026, as the cedi continues to come under pressure.",
-        "occurredAt": "2026-06-03T06:04:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "bog boosts june market support to 1 2bn",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1mntkj5"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_why_most_kenyans_prefer_self_employment_to_looking_1pg7sqz",
-        "title": "Why most Kenyans prefer self employment to looking for jobs",
-        "summary": "More Kenyans prefer self employment over employment",
-        "occurredAt": "2026-06-03T06:00:00.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "why most kenyans prefer self employment to looking",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:n8xjiz"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ghana_reference_rate_drops_marginally_to_10_02_1c1p54d",
-        "title": "Ghana Reference Rate drops marginally to 10.02% in June 2026; interest rates set to reduce further",
-        "summary": "Ghana Reference Rate (GRR) for June 2026 has dropped marginally to 10.02%, down from 10.03% in May.",
-        "occurredAt": "2026-06-03T05:52:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ghana reference rate drops marginally to 10 02",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:pzk9f0"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_experts_cut_corporate_tax_to_spur_kenya_s_12pski9",
-        "title": "Experts: Cut corporate tax to spur Kenya's economic growth",
-        "summary": "Cutting the rate to at least 25 per cent from the current 30 per cent, they argue, would stimulate foreign direct investments.",
-        "occurredAt": "2026-06-03T05:40:00.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "experts cut corporate tax to spur kenya s",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1l0pep5"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_right_policy_will_make_ai_real_tool_for_1oetl72",
-        "title": "Right policy will make AI real tool for development in Africa",
-        "summary": "In the world of business, AI does not scale in isolation but inside the guardrails, incentives, and direction set by policy.",
-        "occurredAt": "2026-06-03T05:20:00.000Z",
-        "countryCodes": [],
-        "topic": "right policy will make ai real tool for",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:jpxb4t"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_state_the_master_collector_but_accountability_rookie_133ka74",
-        "title": "State: The master collector but accountability rookie",
-        "summary": "Taxpayers finance the entire machinery of the State, yet they do not enjoy anything close to equivalent information rights.",
-        "occurredAt": "2026-06-03T05:00:00.000Z",
-        "countryCodes": [],
-        "topic": "state the master collector but accountability rookie",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1kj52d5"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_how_to_collaborate_without_losing_control_of_your_10aem8e",
-        "title": "How to collaborate without losing control of your business",
-        "summary": "Small businesses can collaborate in sourcing and purchasing, logistics and delivery, supplying large contracts, and accessing new markets.",
-        "occurredAt": "2026-06-03T03:00:00.000Z",
-        "countryCodes": [],
-        "topic": "how to collaborate without losing control of your",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:7rm9i2"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_state_the_master_tax_collector_but_accountability_rookie_e8dc0q",
-        "title": "State: The master tax collector but accountability rookie",
-        "summary": "State has mastered the art of taking revenue quickly, predictably, and almost unavoidably but does not account for it .",
-        "occurredAt": "2026-06-03T03:00:00.000Z",
-        "countryCodes": [],
-        "topic": "state the master tax collector but accountability rookie",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:189p3dg"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_gold_surpasses_u_s_treasuries_euro_in_global_lpk1w6",
-        "title": "Gold Surpasses U.S. Treasuries, Euro in Global Official Reserves: ECB",
-        "summary": "FRANKFURT &#8211; Gold became the largest component of global official reserves in 2025, surpassing holdings of U.S. Treasuries and the euro as rising prices boosted its share, the",
-        "occurredAt": "2026-06-02T23:09:20.000Z",
-        "countryCodes": [],
-        "topic": "gold surpasses u s treasuries euro in global",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.ethiopianmonitor_et:19nsfi1"
-          ],
-          "sourceIds": [
-            "src.ethiopianmonitor_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_london_mayor_backs_social_media_ban_for_under_1nnh0gh",
-        "title": "London mayor backs social media ban for under-16s",
-        "summary": "London Mayor Sir Sadiq Khan is supporting a ban on under-16s from social media, casting it as the only realistic way to tackle the harms children already face online.",
-        "occurredAt": "2026-06-02T22:12:00.000Z",
-        "countryCodes": [],
-        "topic": "london mayor backs social media ban for under",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1iu2cjx"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_instagram_ai_chatbot_tricked_by_hackers_to_give_177sn6p",
-        "title": "Instagram AI chatbot tricked by hackers to give access to others&#8217; accounts",
-        "summary": "Instagram says it has resolved an issue which saw hackers trick its AI support tool into giving them access to other users' accounts.",
-        "occurredAt": "2026-06-02T22:01:00.000Z",
-        "countryCodes": [],
-        "topic": "instagram ai chatbot tricked by hackers to give",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:h6acr8"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_microsoft_says_new_quantum_chip_1_000_times_1920eax",
-        "title": "Microsoft says new quantum chip 1,000 times more reliable than predecessor",
-        "summary": "Microsoft says its new quantum chip is vastly more reliable than its previous version, paving the way for aquantum computer solving commercially useful problems within three years.",
-        "occurredAt": "2026-06-02T21:50:00.000Z",
-        "countryCodes": [],
-        "topic": "microsoft says new quantum chip 1 000 times",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:l2njlh"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_uba_engages_gold_board_to_deepen_strategic_partnership_f4l9wk",
-        "title": "UBA engages Gold Board to deepen strategic partnership",
-        "summary": "United Bank for Africa (UBA) Plc has reaffirmed its commitment to supporting Ghana’s economic transformation and the growth of the country’s gold ecosystem through strategic partnerships and innovative financial solutions.",
-        "occurredAt": "2026-06-02T21:40:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "uba engages gold board to deepen strategic partnership",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:g7v1z"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_stanbic_bank_calls_for_responsible_digital_lending_to_1o1i6pu",
-        "title": "Stanbic Bank calls for responsible digital lending to protect Africa’s financial future",
-        "summary": "The Head of Strategy and Enablement at Stanbic Bank, Darwin Mireku, has called for a more balanced approach to digital lending across Africa.",
-        "occurredAt": "2026-06-02T21:17:16.000Z",
-        "countryCodes": [],
-        "topic": "stanbic bank calls for responsible digital lending to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1jnahgx"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bog_fears_inflation_could_inch_above_10_by_kxvzg8",
-        "title": "BoG fears inflation could inch above 10% by year-end due to rising crude prices",
-        "summary": "This was captured in an internal projection model that often guides the monetary policy decisions of the Bank of Ghana, as well as its Inflation Targeting Framework.",
-        "occurredAt": "2026-06-02T21:09:51.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "bog fears inflation could inch above 10 by",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:964t6f"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_deputy_cocobod_ceo_for_finance_ato_boateng_outlines_1e1tcmd",
-        "title": "Deputy COCOBOD CEO for Finance, Ato Boateng, outlines new financing framework at Ghana-UK Investment Summit",
-        "summary": "The Ghana Cocoa Board (COCOBOD) is at an advanced stage of implementing a new locally financed funding regime that will enable the institution to raise working capital from domestic investors through a commercial paper programme.",
-        "occurredAt": "2026-06-02T21:02:55.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "deputy cocobod ceo for finance ato boateng outlines",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:ubnus9"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_how_corporate_self_sabotage_cripples_customer_experience_1mmg39v",
-        "title": "How corporate self-sabotage cripples customer experience",
-        "summary": "When policies become more important than people, companies unintentionally create \"bound feet\" in their customer journey.",
-        "occurredAt": "2026-06-02T21:00:00.000Z",
-        "countryCodes": [],
-        "topic": "how corporate self sabotage cripples customer experience",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:fww3lt"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_premium_motors_raises_the_bar_with_new_futuristic_xliqlv",
-        "title": "Premium Motors raises the bar with new futuristic Renault Koleos Hybrid and smart Renault Kardian vehicles",
-        "summary": "Premium Motors Limited, the exclusive distributor of Renault vehicles in Ghana, has unveiled the all-new Renault Grand Koleos Hybrid HEV and Renault Kardian, signalling a major boost to Ghana's automotive market.",
-        "occurredAt": "2026-06-02T20:14:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "premium motors raises the bar with new futuristic",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:12rtld9"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_west_africa_can_no_longer_import_its_way_l80k42",
-        "title": "West Africa can no longer import its way to food security – ECOWAS",
-        "summary": "&#160;The President of the ECOWAS Commission, Dr. Omar Alieu Touray, has warned that West Africa&#8217;s continued dependence on imported rice threatens the region&#8217;s food sovereignty, urging governments and investors to accelerate efforts towards rice self-sufficiency. Speaking at the West Africa Rice Investment Roundtable in Accra, Dr. Touray said the region&#8217;s growing appetite for ric",
-        "occurredAt": "2026-06-02T18:34:02.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "west africa can no longer import its way",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:8fb3q9"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_electoral_board_rushes_to_defend_vote_count_amid_td17cr",
-        "title": "Electoral Board Rushes to Defend Vote Count Amid Delays, Disputed Videos",
-        "summary": "The national electoral board has dismissed two employees for procedural violations while counting continues in the Amhara, Somali, Gambella and Sidama regional states as well...",
-        "occurredAt": "2026-06-02T18:22:46.000Z",
-        "countryCodes": [],
-        "topic": "electoral board rushes to defend vote count amid",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:1qohgz3"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_government_to_tie_rice_imports_to_local_production_1pdxnir",
-        "title": "Government to tie rice imports to local production in major policy shift",
-        "summary": "Government is preparing to link rice import permits directly to investment in the country’s own rice farms and mills - a policy shift that the Agric Ministry hopes will accelerate progress toward self-sufficiency and trim a growing import bill.",
-        "occurredAt": "2026-06-02T16:22:00.000Z",
-        "countryCodes": [],
-        "topic": "government to tie rice imports to local production",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1micx51"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_we_are_fully_committed_to_protecting_current_gains_1tanedg",
-        "title": "We are fully committed to protecting current gains – BoG Governor",
-        "summary": "According to him, this is very critical in these times to help reinforce trust in the financial system, as well as assure the country’s development partners and investors that the government is committed to fiscal discipline.",
-        "occurredAt": "2026-06-02T15:43:57.000Z",
-        "countryCodes": [],
-        "topic": "we are fully committed to protecting current gains",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1w3ai5o"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_vra_ceo_named_energy_sector_chief_executive_of_16oedlm",
-        "title": "VRA CEO named energy sector Chief Executive of the Year at 10th Ghana CEO Summit",
-        "summary": "The Chief Executive of the Volta River Authority (VRA), Mr Edward Ekow Obeng-Kenzo, has been honoured as Energy Sector Chief Executive of the Year at the 10th Ghana CEO Summit held at the Kempinski Hotel Gold Coast City in Accra. This marks the second consecutive time Mr Obeng-Kenzo has received the accolade at the Summit, [&#8230;]",
-        "occurredAt": "2026-06-02T15:30:50.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "vra ceo named energy sector chief executive of",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:eq9qe0"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -7936,6 +8516,13 @@
               "27"
             ],
             "refYear": 2023
+          },
+          "oilStance": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2023-12-31T00:00:00.000Z",
+            "methodologyId": "method.oilStance.banding.v1"
           }
         },
         "keyExports": [
@@ -7952,7 +8539,38 @@
           "exportValueUsd": 909240.131,
           "importValueUsd": 2651161984.554,
           "refYear": 2023
-        }
+        },
+        "oilStance": "importer",
+        "methodologies": [
+          {
+            "id": "method.oilStance.banding.v1",
+            "name": "Oil-stance banding",
+            "version": "1.0.0",
+            "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
+            "kind": "banding",
+            "inputs": [
+              "petroleumTrade"
+            ],
+            "bands": [
+              {
+                "label": "exporter",
+                "gte": 0.2
+              },
+              {
+                "label": "neutral",
+                "gte": -0.2,
+                "lt": 0.2
+              },
+              {
+                "label": "importer",
+                "lt": -0.2
+              }
+            ],
+            "minInputUsd": 1000000000,
+            "owner": "analysis-team",
+            "status": "approved"
+          }
+        ]
       },
       {
         "code": "KE",
@@ -8007,6 +8625,13 @@
               "27"
             ],
             "refYear": 2024
+          },
+          "oilStance": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "methodologyId": "method.oilStance.banding.v1"
           }
         },
         "keyExports": [
@@ -8023,7 +8648,38 @@
           "exportValueUsd": 1064675881.139,
           "importValueUsd": 4756612420.396,
           "refYear": 2024
-        }
+        },
+        "oilStance": "importer",
+        "methodologies": [
+          {
+            "id": "method.oilStance.banding.v1",
+            "name": "Oil-stance banding",
+            "version": "1.0.0",
+            "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
+            "kind": "banding",
+            "inputs": [
+              "petroleumTrade"
+            ],
+            "bands": [
+              {
+                "label": "exporter",
+                "gte": 0.2
+              },
+              {
+                "label": "neutral",
+                "gte": -0.2,
+                "lt": 0.2
+              },
+              {
+                "label": "importer",
+                "lt": -0.2
+              }
+            ],
+            "minInputUsd": 1000000000,
+            "owner": "analysis-team",
+            "status": "approved"
+          }
+        ]
       },
       {
         "code": "NG",
@@ -8078,6 +8734,13 @@
               "27"
             ],
             "refYear": 2024
+          },
+          "oilStance": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2024-12-31T00:00:00.000Z",
+            "methodologyId": "method.oilStance.banding.v1"
           }
         },
         "keyExports": [
@@ -8094,7 +8757,38 @@
           "exportValueUsd": 185601944390.434,
           "importValueUsd": 62297880619.481995,
           "refYear": 2024
-        }
+        },
+        "oilStance": "exporter",
+        "methodologies": [
+          {
+            "id": "method.oilStance.banding.v1",
+            "name": "Oil-stance banding",
+            "version": "1.0.0",
+            "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
+            "kind": "banding",
+            "inputs": [
+              "petroleumTrade"
+            ],
+            "bands": [
+              {
+                "label": "exporter",
+                "gte": 0.2
+              },
+              {
+                "label": "neutral",
+                "gte": -0.2,
+                "lt": 0.2
+              },
+              {
+                "label": "importer",
+                "lt": -0.2
+              }
+            ],
+            "minInputUsd": 1000000000,
+            "owner": "analysis-team",
+            "status": "approved"
+          }
+        ]
       },
       {
         "code": "GH",
@@ -8149,6 +8843,13 @@
               "27"
             ],
             "refYear": 2023
+          },
+          "oilStance": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2023-12-31T00:00:00.000Z",
+            "methodologyId": "method.oilStance.banding.v1"
           }
         },
         "keyExports": [
@@ -8165,7 +8866,38 @@
           "exportValueUsd": 16196335470.652,
           "importValueUsd": 21049010824.985,
           "refYear": 2023
-        }
+        },
+        "oilStance": "neutral",
+        "methodologies": [
+          {
+            "id": "method.oilStance.banding.v1",
+            "name": "Oil-stance banding",
+            "version": "1.0.0",
+            "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
+            "kind": "banding",
+            "inputs": [
+              "petroleumTrade"
+            ],
+            "bands": [
+              {
+                "label": "exporter",
+                "gte": 0.2
+              },
+              {
+                "label": "neutral",
+                "gte": -0.2,
+                "lt": 0.2
+              },
+              {
+                "label": "importer",
+                "lt": -0.2
+              }
+            ],
+            "minInputUsd": 1000000000,
+            "owner": "analysis-team",
+            "status": "approved"
+          }
+        ]
       },
       {
         "code": "ZA",
@@ -8220,6 +8952,13 @@
               "27"
             ],
             "refYear": 2025
+          },
+          "oilStance": {
+            "sourceIds": [
+              "src.comtrade"
+            ],
+            "asOf": "2025-12-31T00:00:00.000Z",
+            "methodologyId": "method.oilStance.banding.v1"
           }
         },
         "keyExports": [
@@ -8236,7 +8975,38 @@
           "exportValueUsd": 38039123807.82499,
           "importValueUsd": 73986802217.773,
           "refYear": 2025
-        }
+        },
+        "oilStance": "importer",
+        "methodologies": [
+          {
+            "id": "method.oilStance.banding.v1",
+            "name": "Oil-stance banding",
+            "version": "1.0.0",
+            "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
+            "kind": "banding",
+            "inputs": [
+              "petroleumTrade"
+            ],
+            "bands": [
+              {
+                "label": "exporter",
+                "gte": 0.2
+              },
+              {
+                "label": "neutral",
+                "gte": -0.2,
+                "lt": 0.2
+              },
+              {
+                "label": "importer",
+                "lt": -0.2
+              }
+            ],
+            "minInputUsd": 1000000000,
+            "owner": "analysis-team",
+            "status": "approved"
+          }
+        ]
       }
     ],
     "methodologies": [
@@ -8253,6 +9023,54 @@
         "channels": [
           "trade_balance",
           "growth"
+        ],
+        "owner": "analysis-team",
+        "status": "approved"
+      },
+      {
+        "id": "method.oilStance.banding.v1",
+        "name": "Oil-stance banding",
+        "version": "1.0.0",
+        "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
+        "kind": "banding",
+        "inputs": [
+          "petroleumTrade"
+        ],
+        "bands": [
+          {
+            "label": "exporter",
+            "gte": 0.2
+          },
+          {
+            "label": "neutral",
+            "gte": -0.2,
+            "lt": 0.2
+          },
+          {
+            "label": "importer",
+            "lt": -0.2
+          }
+        ],
+        "minInputUsd": 1000000000,
+        "owner": "analysis-team",
+        "status": "approved"
+      },
+      {
+        "id": "method.causal.oil_shock.v1",
+        "name": "Oil-price shock mechanism",
+        "version": "1.0.0",
+        "description": "An oil-price move splits the bloc along the export–import line.",
+        "kind": "causal",
+        "inputs": [],
+        "bands": [],
+        "shockType": "oil_shock",
+        "mechanism": "An oil-price move splits the bloc along the export–import line.",
+        "channels": [
+          "fiscal_revenue",
+          "trade_balance",
+          "inflation",
+          "fx",
+          "consumers"
         ],
         "owner": "analysis-team",
         "status": "approved"

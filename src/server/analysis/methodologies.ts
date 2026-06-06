@@ -29,8 +29,9 @@ export const DEBT_EXPOSURE_BANDING_V1: Methodology = {
 // keyExports, top-product presence, or any hardcoded country list. The metric is the
 // normalized net petroleum position (exportValueUsd - importValueUsd) / (exportValueUsd +
 // importValueUsd), in [-1, +1]; total petroleum trade below minInputUsd is treated as
-// neutral so a tiny flow is not over-read. Like the debt rule it ships 'draft': until a
-// human approves it no oilStance label is emitted and oil_shock stays blocked downstream.
+// neutral so a tiny flow is not over-read. APPROVED as of the oilStance approval PR, with
+// thresholds reviewed against the current raw HS-27 data: it now emits exporter / neutral /
+// importer labels and unlocks oil_shock for any profile carrying contract-valid petroleumTrade.
 export const OILSTANCE_BANDING_V1: Methodology = {
   id: 'method.oilStance.banding.v1',
   name: 'Oil-stance banding',
@@ -46,7 +47,7 @@ export const OILSTANCE_BANDING_V1: Methodology = {
   ],
   minInputUsd: 1_000_000_000,
   owner: 'analysis-team',
-  status: 'draft',
+  status: 'approved',
 }
 
 // First-class causal rules: the deterministic mechanism + channel mapping for each

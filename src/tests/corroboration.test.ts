@@ -27,6 +27,30 @@ describe('inferCountryCodes — conservative, deterministic', () => {
     expect(inferCountryCodes('Oil prices jump on supply fears')).toEqual([])
     expect(inferCountryCodes('Niger coup unsettles the Sahel')).toEqual([]) // not Nigeria
   })
+
+  it('tags ZA from unambiguous domestic institutions / market identity', () => {
+    expect(inferCountryCodes('Eskom municipal takeover may expand to 30 municipalities')).toEqual([
+      'ZA',
+    ])
+    expect(inferCountryCodes('SARB keeps policy stance unchanged')).toEqual(['ZA'])
+    expect(inferCountryCodes('Transnet rail bottlenecks hit exporters')).toEqual(['ZA'])
+    expect(inferCountryCodes('NERSA approves electricity tariff increase')).toEqual(['ZA'])
+    expect(inferCountryCodes('JSE-listed shares rally')).toEqual(['ZA'])
+    // Spelled-out forms already tag ZA via the existing demonym / place patterns.
+    expect(inferCountryCodes('South African Reserve Bank holds rates')).toEqual(['ZA'])
+    expect(inferCountryCodes('Johannesburg Stock Exchange closes higher')).toEqual(['ZA'])
+  })
+
+  it('does not tag ZA without a strong ZA token (no source-country guessing)', () => {
+    expect(inferCountryCodes('Oil company profits surge after refinery upgrade')).toEqual([])
+    expect(inferCountryCodes('Rand weakens against the dollar')).toEqual([]) // bare "rand" excluded
+    expect(inferCountryCodes('SARS outbreak prompts a health warning')).toEqual([]) // SARS is not SARB
+    expect(inferCountryCodes('Wall Street banks hire AI consultants')).toEqual([])
+    expect(inferCountryCodes('Rhinos return to billionaire-backed Zimbabwe park')).toEqual([])
+    expect(
+      inferCountryCodes('RWC on SuperSport as Canal+ CEO comments on Winter Olympics'),
+    ).toEqual([])
+  })
 })
 
 describe('sameEvent — strict grouping (clusters matches, never merges unrelated)', () => {

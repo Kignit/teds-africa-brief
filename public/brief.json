@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T08:34:34.517Z",
+  "generatedAt": "2026-06-06T13:30:36.599Z",
   "brief": {
     "id": "live_2026-06-06",
     "date": "2026-06-06",
@@ -14,12 +14,7 @@
         "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
         "claimIds": [
           "claim_0_0",
-          "claim_1_0",
-          "claim_1_1",
-          "claim_1_2",
-          "claim_1_3",
-          "claim_1_4",
-          "claim_2_0"
+          "claim_1_0"
         ]
       }
     ],
@@ -52,143 +47,6 @@
       },
       {
         "id": "claim_1_0",
-        "kind": "causal",
-        "text": "ET: the oil-price move is mixed via the trade balance, inflation, and households",
-        "figureIds": [],
-        "eventIds": [
-          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
-        ],
-        "profileFields": [
-          "ET.oilStance"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.oilStance.banding.v1",
-          "method.causal.oil_shock.v1"
-        ],
-        "countryCode": "ET",
-        "tone": "neutral",
-        "channels": [
-          "trade_balance",
-          "inflation",
-          "consumers"
-        ],
-        "shockType": "oil_shock",
-        "verified": true
-      },
-      {
-        "id": "claim_1_1",
-        "kind": "causal",
-        "text": "KE: the oil-price move is mixed via the trade balance, inflation, and households",
-        "figureIds": [],
-        "eventIds": [
-          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
-        ],
-        "profileFields": [
-          "KE.oilStance"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.oilStance.banding.v1",
-          "method.causal.oil_shock.v1"
-        ],
-        "countryCode": "KE",
-        "tone": "neutral",
-        "channels": [
-          "trade_balance",
-          "inflation",
-          "consumers"
-        ],
-        "shockType": "oil_shock",
-        "verified": true
-      },
-      {
-        "id": "claim_1_2",
-        "kind": "causal",
-        "text": "NG: the oil-price move is mixed via fiscal revenue and the trade balance",
-        "figureIds": [],
-        "eventIds": [
-          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
-        ],
-        "profileFields": [
-          "NG.oilStance"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.oilStance.banding.v1",
-          "method.causal.oil_shock.v1"
-        ],
-        "countryCode": "NG",
-        "tone": "neutral",
-        "channels": [
-          "fiscal_revenue",
-          "trade_balance"
-        ],
-        "shockType": "oil_shock",
-        "verified": true
-      },
-      {
-        "id": "claim_1_3",
-        "kind": "causal",
-        "text": "GH: the oil-price move is mixed via the trade balance",
-        "figureIds": [],
-        "eventIds": [
-          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
-        ],
-        "profileFields": [
-          "GH.oilStance"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.oilStance.banding.v1",
-          "method.causal.oil_shock.v1"
-        ],
-        "countryCode": "GH",
-        "tone": "neutral",
-        "channels": [
-          "trade_balance"
-        ],
-        "shockType": "oil_shock",
-        "verified": true
-      },
-      {
-        "id": "claim_1_4",
-        "kind": "causal",
-        "text": "ZA: the oil-price move is mixed via the trade balance, inflation, and households",
-        "figureIds": [],
-        "eventIds": [
-          "evt_dangote_refinery_raises_processing_capacity_to_700_000_1uzugrw"
-        ],
-        "profileFields": [
-          "ZA.oilStance"
-        ],
-        "profileSourceIds": [
-          "src.comtrade"
-        ],
-        "methodologyIds": [
-          "method.oilStance.banding.v1",
-          "method.causal.oil_shock.v1"
-        ],
-        "countryCode": "ZA",
-        "tone": "neutral",
-        "channels": [
-          "trade_balance",
-          "inflation",
-          "consumers"
-        ],
-        "shockType": "oil_shock",
-        "verified": true
-      },
-      {
-        "id": "claim_2_0",
         "kind": "causal",
         "text": "GH: the debt and fiscal event is positive via debt service and fiscal revenue",
         "figureIds": [],
@@ -313,9 +171,504 @@
     ],
     "events": [
       {
+        "id": "evt_the_future_of_retail_banking_customer_engagement_in_1oiniux",
+        "title": "The Future of Retail Banking Customer Engagement in Africa",
+        "summary": "African retail banking is undergoing a profound transformation linked to customer engagement and there is a need for promoting instant rewards to the loyal customer. Customers are becoming increasingly digital, competition from fintechs is intensifying, and traditional loyalty programs are struggling to maintain engagement. The Shift from “Earn Later” to “Reward Now” Modern consumers are [&#8230;]",
+        "occurredAt": "2026-06-06T13:14:27.000Z",
+        "countryCodes": [],
+        "topic": "the future of retail banking customer engagement in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.ethiopianbusinessreview_et:139o143"
+          ],
+          "sourceIds": [
+            "src.ethiopianbusinessreview_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_full_list_seplat_mtn_nigeria_uba_emerge_top_1wwv4y8",
+        "title": "FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards",
+        "summary": "FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards\nThe post FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T13:12:20.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "full list seplat mtn nigeria uba emerge top",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:62ufzs"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cut_nigeria_8217_s_ghg_emissions_by_35_1dz8ya",
+        "title": "Cut Nigeria&#8217;s GHG emissions by 35% and end gas flaring, MAJI urges FG",
+        "summary": "Despite ratifying the Paris Agreement in May 2017, experts say Nigeria presently shows little sign of meeting its unconditional target\nread more Cut Nigeria&#8217;s GHG emissions by 35% and end gas flaring, MAJI urges FG",
+        "occurredAt": "2026-06-06T13:02:06.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "cut nigeria 8217 s ghg emissions by 35",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:pckqhm"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_naira_gains_as_external_reserves_hit_new_high_17qdg2r",
+        "title": "Naira gains as external reserves hit new high of $50.04bn",
+        "summary": "The naira strengthened against the dollar ending the week strong as Nigeria&#8217;s gross external reserves climbed to a record $50.04\nread more Naira gains as external reserves hit new high of $50.04bn",
+        "occurredAt": "2026-06-06T12:48:10.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "naira gains as external reserves hit new high",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1gs7mq5"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_best_performing_nigerian_stocks_for_the_week_ended_uius3n",
+        "title": "Best performing Nigerian stocks for the week ended June 5, 2026",
+        "summary": "Nigerian equities closed the first trading week of June 2026 on a negative note as sustained profit-taking across banking, industrial, and oil and gas counters dragged the NGX All-Share Index (ASI) down 3.11% to settle at 242,593.31 points.\nThe post Best performing Nigerian stocks for the week ended June 5, 2026 appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T12:45:41.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "best performing nigerian stocks for the week ended",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:ynzoet"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_from_bitcoin_to_blockchain_key_cryptocurrency_terms_and_1rt9o8p",
+        "title": "From Bitcoin to blockchain: Key cryptocurrency terms and what they mean",
+        "summary": "Bitcoin is a cryptocurrency, which is to say a type of digital currency. Unlike traditional currencies, Bitcoin is not controlled by centralised financial institutions.",
+        "occurredAt": "2026-06-06T12:30:39.000Z",
+        "countryCodes": [],
+        "topic": "from bitcoin to blockchain key cryptocurrency terms and",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:4le82z"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ex_unilorin_vc_prof_ambali_dies_at_68_1ye64xw",
+        "title": "Ex-Unilorin VC, Prof. Ambali, dies at 68",
+        "summary": "Ex-Unilorin VC, Prof. Ambali, dies at 68\nThe post Ex-Unilorin VC, Prof. Ambali, dies at 68 appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T12:29:01.000Z",
+        "countryCodes": [],
+        "topic": "ex unilorin vc prof ambali dies at 68",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:9874fd"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kra_wins_sh2_36bn_tax_dispute_against_kengen_1tkqrqn",
+        "title": "KRA wins Sh2.36bn tax dispute against KenGen",
+        "summary": "The dispute arose after KRA reviewed KenGen's tax affairs for the period between 2019 and 2024 and assessed additional taxes amounting to Sh2.95 billion. The assessment comprised Sh2.36 billion in compensating tax and Sh586.2 million in withholding tax.",
+        "occurredAt": "2026-06-06T12:22:57.000Z",
+        "countryCodes": [],
+        "topic": "kra wins sh2 36bn tax dispute against kengen",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:8e3m7y"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ecobank_pays_first_dividend_since_2022_as_shareholders_1k8x4t8",
+        "title": "Ecobank pays first dividend since 2022 as shareholders approve $40m payout",
+        "summary": "Shareholders of Ecobank Group have given the green light for a $40 million dividend payment – the first time the pan-African lender is paying out to investors since 2022. The decision was made at the Group’s 2026 Annual General Meeting (AGM) held in Lomé, Togo, on Wednesday, June 3, 2026.",
+        "occurredAt": "2026-06-06T12:13:18.000Z",
+        "countryCodes": [],
+        "topic": "ecobank pays first dividend since 2022 as shareholders",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:1bo75f1"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_petroleum_tax_revenue_misses_target_by_n17_4_iaub0l",
+        "title": "Petroleum tax revenue misses target by N17.4 trillion on weak oil earnings",
+        "summary": "Petroleum tax revenue misses target by N17.4 trillion on weak oil earnings\nThe post Petroleum tax revenue misses target by N17.4 trillion on weak oil earnings appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T12:02:55.000Z",
+        "countryCodes": [],
+        "topic": "petroleum tax revenue misses target by n17 4",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:a84qfm"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_jandel_launches_30_years_anniversary_with_message_of_193y9r3",
+        "title": "Jandel launches 30 years anniversary with message of faith, resilience and giving back",
+        "summary": "Jandel Limited has launched its 30th anniversary celebrations, marking three decades of shaping Ghana's event styling and floral design industry while inspiring a new generation of entrepreneurs.",
+        "occurredAt": "2026-06-06T11:51:32.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "jandel launches 30 years anniversary with message of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:l6a9vh"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2026_economic_outlook_risks_and_opportunities_as_nigeria_nb5osy",
+        "title": "2026 Economic Outlook: Risks and opportunities as Nigeria moves into H2",
+        "summary": "The first five months of the year were shaped by domestic macroeconomic adjustments, global shocks, and fiscal pressures.\nThe post 2026 Economic Outlook: Risks and opportunities as Nigeria moves into H2 appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T11:36:36.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "2026 economic outlook risks and opportunities as nigeria",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:jgpxdg"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_meet_the_cfos_of_nigeria_8217_s_largest_3vncwj",
+        "title": "Meet the CFOs of Nigeria&#8217;s largest companies by market Cap –May 2026",
+        "summary": "This profile feature spotlights the CFOs of the 10 most valuable companies listed on the NGX as of May 2026, highlighting the finance executives overseeing some of the largest corporate balance sheets in Nigeria and helping navigate a market that continues to reach new highs, even as the pace of gains begins to moderate. \nThe post Meet the CFOs of Nigeria&#8217;s largest companies by market Cap –M",
+        "occurredAt": "2026-06-06T11:35:49.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "meet the cfos of nigeria 8217 s largest",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1639q1h"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_el_rufai_says_icpc_denying_him_care_for_1w13s82",
+        "title": "El-Rufai says ICPC denying him care for worsening eye condition in custody",
+        "summary": "Nasir El-Rufai, former Governor of Kaduna State, has accused the Independent Corrupt Practices and Other Related Offences Commission (ICPC) of\nread more El-Rufai says ICPC denying him care for worsening eye condition in custody",
+        "occurredAt": "2026-06-06T11:30:33.000Z",
+        "countryCodes": [],
+        "topic": "el rufai says icpc denying him care for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:fzahna"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_iran_players_granted_u_s_visas_officials_denied_18ialb",
+        "title": "Iran players granted U.S. visas, officials denied entry",
+        "summary": "Iran’s national football team has been granted visas to enter the United States ahead of the 2026 FIFA World Cup,\nread more Iran players granted U.S. visas, officials denied entry",
+        "occurredAt": "2026-06-06T11:23:07.000Z",
+        "countryCodes": [],
+        "topic": "iran players granted u s visas officials denied",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:oxmci5"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fccpc_expands_airtime_credit_operator_list_despite_ongoing_1esfnz3",
+        "title": "FCCPC expands airtime credit operator list despite ongoing court injunction, DEON suspension",
+        "summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has expanded its list of approved airtime and data credit operators from\nread more FCCPC expands airtime credit operator list despite ongoing court injunction, DEON suspension",
+        "occurredAt": "2026-06-06T11:07:45.000Z",
+        "countryCodes": [],
+        "topic": "fccpc expands airtime credit operator list despite ongoing",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1vnwmfz"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_no_peace_without_us_ta_sis_alliance_rejects_m4s9fy",
+        "title": "No Peace Without Us: Ta’sis Alliance Rejects Islamists and Warns Against Exclusion in Sudan Talks",
+        "summary": "The Ta&#8217;sis (Sudan Founding Alliance) alliance announced ahead of its meeting with the five-party mechanism that it firmly rejects any political or negotiation arrangements outside established international frameworks, declaring that any peace process bypassing its involvement will be nothing more than a futile &#8220;public relations project.&#8221; Prior to the start of the anticipated cons",
+        "occurredAt": "2026-06-06T10:48:29.000Z",
+        "countryCodes": [],
+        "topic": "no peace without us ta sis alliance rejects",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:1mvrybb"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_rising_costs_take_shine_off_annual_flowers_showcase_19q6wab",
+        "title": "Rising costs take shine off annual flowers showcase",
+        "summary": "A striking floral installation in the shape of a butterfly was one of the main attractions at the International Flower Trade Expo 2026",
+        "occurredAt": "2026-06-06T10:35:00.000Z",
+        "countryCodes": [],
+        "topic": "rising costs take shine off annual flowers showcase",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1yj3m0e"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_naicom_8211_big_blind_regulator_by_duke_of_u2i4oq",
+        "title": "NAICOM &#8211; big blind regulator, by Duke of Shomolu",
+        "summary": "In an earlier submission, I gleefully reeled out some astounding figures. I had posited a 47% increase in industry premium for the Insurance Industry which stood at N2. 3 trillion and a claims payout of N882 billion which I had labelled impressive. \nThe post NAICOM &#8211; big blind regulator, by Duke of Shomolu appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T10:33:30.000Z",
+        "countryCodes": [],
+        "topic": "naicom 8211 big blind regulator by duke of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1kypsu7"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_blood_bath_nigerian_stocks_gold_bitcoin_and_us_uzl22v",
+        "title": "Blood bath: Nigerian stocks, gold, Bitcoin, and US equities crash",
+        "summary": "The Nigerian, U.S. markets, metals, and Bitcoin have seen sudden selloff mainly due to a massive \"macro shock' impacting global markets. \nThe post Blood bath: Nigerian stocks, gold, Bitcoin, and US equities crash appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T10:10:20.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "blood bath nigerian stocks gold bitcoin and us",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1mwuwoc"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cross_border_payment_fragmentation_is_slowing_africa_s_uk103t",
+        "title": "Cross-border payment fragmentation is slowing Africa’s digital economy—Maplerad CEO",
+        "summary": "In this interview with Nairametrics, Founder and CEO of Maplerad, Obinna Chukwujioke, speaks on the challenges slowing cross border payments in Africa, the future of banking infrastructure, the changing funding environment for startups, and why interoperability will determine the success of Africa’s digital commerce ambitions. \nThe post Cross-border payment fragmentation is slowing Africa’s digita",
+        "occurredAt": "2026-06-06T09:53:52.000Z",
+        "countryCodes": [],
+        "topic": "cross border payment fragmentation is slowing africa s",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1lzn6dp"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_who_unveils_518_million_plan_to_contain_ebola_s8ay1w",
+        "title": "WHO unveils $518 million plan to contain Ebola outbreak in Congo, Uganda",
+        "summary": "The World Health Organization (WHO) has unveiled a $518 million six-month emergency response plan aimed at containing ongoing Ebola outbreaks in the Democratic Republic of Congo (DRC) and Uganda.  \nThe post WHO unveils $518 million plan to contain Ebola outbreak in Congo, Uganda  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T09:19:09.000Z",
+        "countryCodes": [],
+        "topic": "who unveils 518 million plan to contain ebola",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:tu8hir"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_basic_tips_for_would_be_commercial_goat_keepers_1s8g8vq",
+        "title": "Basic tips for would-be commercial goat keepers",
+        "summary": "Goats are particularly advantageous for households with limited land and resources but eager to enter farming and generate some income.",
+        "occurredAt": "2026-06-06T09:18:22.000Z",
+        "countryCodes": [],
+        "topic": "basic tips for would be commercial goat keepers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:t5d3n6"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_insurance_banking_stocks_drive_ngx_rebound_with_n234_osv25k",
+        "title": "Insurance, banking stocks drive NGX rebound with N234.73 billion gain on Friday",
+        "summary": "The Nigerian equities market rebounded on Friday, June 6, 2026, snapping a four-session losing streak as strong buying interest in insurance and banking stocks lifted the NGX All-Share Index (ASI) by 0.15% to 242,593.31 points, adding N234.73 billion to investors’ wealth. \nThe post Insurance, banking stocks drive NGX rebound with N234.73 billion gain on Friday appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T08:54:47.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "insurance banking stocks drive ngx rebound with n234",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1b95uhr"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cbn_to_fine_banks_n100_million_for_inadequate_13wdte",
+        "title": "CBN to fine banks N100 million for inadequate forex documents",
+        "summary": "The Central Bank of Nigeria (CBN) has introduced a N100 million penalty for banks that process foreign exchange transactions with inadequate documentation, as part of a sweeping revision of its foreign exchange regulatory framework aimed at tightening compliance and improving market transparency.\nThe post CBN to fine banks N100 million for inadequate forex documents  appeared first on Nairametrics",
+        "occurredAt": "2026-06-06T08:44:00.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "cbn to fine banks n100 million for inadequate",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:106jsx4"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_rotus_oddiri_olumide_adesina_win_at_2026_nairametrics_qd2zap",
-        "title": "Rotus Oddiri, Olumide Adesina win at 2026 Nairametrics Capital Market Awards",
-        "summary": "Business correspondent and host of Global Business Report on Arise TV, Rotus Oddiri, and financial writer Olumide Adesina have been named Nairametrics Capital Market Journalist of the Year 2026 and Capital Market Influencer of the Year 2026, respectively.  \nThe post Rotus Oddiri, Olumide Adesina win at 2026 Nairametrics Capital Market Awards  appeared first on Nairametrics.",
+        "title": "Rotus Oddiri, Olumide Adesina win at 2026 Nairametrics Capital Market Awards",
+        "summary": "Business correspondent and host of Global Business Report on Arise TV, Rotus Oddiri, and financial writer Olumide Adesina have been named Nairametrics Capital Market Journalist of the Year 2026 and Capital Market Influencer of the Year 2026, respectively.  \nThe post Rotus Oddiri, Olumide Adesina win at 2026 Nairametrics Capital Market Awards appeared first on Nairametrics.",
         "occurredAt": "2026-06-06T08:18:22.000Z",
         "countryCodes": [],
         "topic": "rotus oddiri olumide adesina win at 2026 nairametrics",
@@ -8193,410 +8546,6 @@
           "independentSourceCount": 1,
           "primarySourceCount": 0
         }
-      },
-      {
-        "id": "evt_ethiopians_voted_in_the_millions_but_not_everywhere_1ncy2vb",
-        "title": "Ethiopians Voted in the Millions, But Not Everywhere: IGAD",
-        "summary": "Millions cast ballots, while security concerns prevented elections from being conducted in 38 constituencies in the Tigray and eight in the Amhara regional states, leaving...",
-        "occurredAt": "2026-06-03T13:18:02.000Z",
-        "countryCodes": [
-          "ET"
-        ],
-        "topic": "ethiopians voted in the millions but not everywhere",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.addisfortune_et:nb924b"
-          ],
-          "sourceIds": [
-            "src.addisfortune_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_9_ways_south_africans_can_earn_money_online_1bw1893",
-        "title": "9 ways South Africans can earn money online and how much they pay",
-        "summary": "'The online economy is opening doors for young people ‒ but success depends on using credible platforms and building the right skills.'",
-        "occurredAt": "2026-06-03T12:50:52.000Z",
-        "countryCodes": [
-          "ZA"
-        ],
-        "topic": "9 ways south africans can earn money online",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:15iqd0q"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_huniso_residents_back_gold_fields_lease_renewal_urge_jigyeu",
-        "title": "Huniso residents back Gold Fields lease renewal, urge government to include communities in negotiations",
-        "summary": "Residents of Huniso, one of the host communities of Gold Fields Ghana Limited, have expressed support for the renewal of the company’s mining lease, arguing that its operations have contributed significantly to the socio-economic development of the area. At a press conference, youth leaders and community members called on government to approach discussions surrounding the [&#8230;]",
-        "occurredAt": "2026-06-03T11:41:12.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "huniso residents back gold fields lease renewal urge",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:4rd7hb"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_rent_food_and_school_fees_drive_inflation_for_1liakq1",
-        "title": "Rent, food, and school fees drive inflation for May 2026",
-        "summary": "Ghana’s inflation dynamics in May 2026 were largely shaped by food prices, locally produced goods, and uneven regional price developments, according to the Government Statistician Dr. Alhassan Iddrisu. Addressing journalists on June 3, 2026, he explained that locally produced items accounted for about 92% of total inflation, underscoring the dominance of domestic supply conditions in [&#8230;]",
-        "occurredAt": "2026-06-03T11:33:32.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "rent food and school fees drive inflation for",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1ecdwyk"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_transport_fares_remain_stable_despite_fuel_market_volatility_16pnqut",
-        "title": "Transport fares remain stable despite fuel market volatility – Gov&#8217;t Statistician",
-        "summary": "Fuel prices in Ghana showed mixed movements in May 2026, as global oil market shocks gradually filtered into domestic pricing, according to the Ghana Statistical Service. Government Statistician Dr. Alhassan Iddrisu explained that earlier global developments had contributed to fluctuations in petroleum prices. &#8220;Following geopolitical tensions and rising global crude oil prices, we began to [",
-        "occurredAt": "2026-06-03T11:23:51.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "transport fares remain stable despite fuel market volatility",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:g4at8b"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_nairobi_partners_with_bloomberg_philanthropies_to_tackle_traffic_4fxi7u",
-        "title": "Nairobi partners with bloomberg philanthropies to tackle traffic fatalities",
-        "summary": "The Nairobi City County Government has today announced a new collaboration with the Bloomberg Philanthropies Initiative for Global Road Safety (BIGRS) aimed at promoting and enhancing road safety across Nairobi County.Nairobi joins more than 30 cities globally that will participate in this initiative, which is part of Bloomberg Philanthropies’ $350 million global commitment to prevent traffic [&#8",
-        "occurredAt": "2026-06-03T11:07:56.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "nairobi partners with bloomberg philanthropies to tackle traffic",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznakenya_ke:1s8g85i"
-          ],
-          "sourceIds": [
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_supply_disruptions_push_fresh_tomato_prices_up_by_15tgg5p",
-        "title": "Supply disruptions push fresh tomato prices up by 35.8% in May 2026",
-        "summary": "Fresh tomato prices have emerged as one of the most significant drivers of food inflation in May 2026, following sharp increases linked to supply disruptions and regional trade constraints. Government Statistician, Dr. Alhassan Iddrisu revealed that fresh tomato prices rose by 35.8% year-on-year and surged by a striking 38.8% month-on-month between April and May 2026. [&#8230;]",
-        "occurredAt": "2026-06-03T11:06:39.000Z",
-        "countryCodes": [],
-        "topic": "supply disruptions push fresh tomato prices up by",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:e7ob1n"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_joburg_audit_setback_exposes_r9_5bn_bad_debt_1aasz82",
-        "title": "Joburg audit setback exposes R9.5bn bad debt burden",
-        "summary": "",
-        "occurredAt": "2026-06-03T11:01:28.000Z",
-        "countryCodes": [],
-        "topic": "joburg audit setback exposes r9 5bn bad debt",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznews_za:1da0spa"
-          ],
-          "sourceIds": [
-            "src.biznews_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_inflation_for_may_2026_increases_to_3_7_10shvt5",
-        "title": "Inflation for May 2026 increases to 3.7%, second consecutive time this year",
-        "summary": "Ghana&#8217;s inflation rate increased to 3.7% in May 2026, marking a second consecutive monthly rise, although overall price pressures remain significantly lower than a year ago. Speaking at the release of the May Consumer Price Index (CPI), Government Statistician Dr. Alhassan Iddrisu said the country&#8217;s year-on-year inflation rate rose from 3.4% in April to 3.7% [&#8230;]",
-        "occurredAt": "2026-06-03T10:57:14.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "inflation for may 2026 increases to 3 7",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:19l9wew"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_new_incubation_platform_offers_guaranteed_funding_for_african_14wrb33",
-        "title": "New incubation platform offers guaranteed funding for African ideas",
-        "summary": "African entrepreneurs with only an idea may soon access guaranteed funding, opening doors for innovators long locked out of capital markets that traditionally demanded proof of concept first.",
-        "occurredAt": "2026-06-03T10:52:00.000Z",
-        "countryCodes": [],
-        "topic": "new incubation platform offers guaranteed funding for african",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1ocdfz0"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_shell_operated_nigeria_pipeline_for_years_despite_internal_b0kg0q",
-        "title": "Shell operated Nigeria pipeline for years despite internal pollution warnings — Report",
-        "summary": "Internal documents reveal Shell executives repeatedly raised concerns over the integrity of a major Nigerian pipeline years before widespread pollution incidents triggered lawsuits and international scrutiny.\nThe post Shell operated Nigeria pipeline for years despite internal pollution warnings — Report appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-03T10:50:55.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "shell operated nigeria pipeline for years despite internal",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:12ewv2d"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenya_bets_sh598bn_on_galana_kulalu_revival_to_11r2s1z",
-        "title": "Kenya bets Sh598bn on Galana Kulalu revival to end food imports",
-        "summary": "Kenya is staking Sh598 billion on a 10-year irrigation overhaul anchored on the revival of the Galana Kulalu Food Security Project, a scheme long written off as a costly failure.",
-        "occurredAt": "2026-06-03T10:41:00.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kenya bets sh598bn on galana kulalu revival to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:1hmkzzz"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_mahama_urges_stronger_uk_africa_partnership_beyond_aid_i3neik",
-        "title": "Mahama urges stronger UK–Africa partnership beyond aid dependency",
-        "summary": "President John Dramani Mahama has called for a redefinition of UK–Africa relations, urging a shift from aid-based cooperation to investment-driven partnerships.\n\nSpeaking at the 12th Africa Debate, he said both Africa and the United Kingdom stand to benefit from deeper economic collaboration.",
-        "occurredAt": "2026-06-03T10:24:14.000Z",
-        "countryCodes": [],
-        "topic": "mahama urges stronger uk africa partnership beyond aid",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:366n2h"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_feed_the_industry_programme_targets_chronic_raw_material_xwdq8b",
-        "title": "‘Feed the Industry’ programme targets chronic raw material shortages in agro-processing sector",
-        "summary": "The Ministry of Trade, Agribusiness and Industry is rolling out a “Feed the Industry” programme to address persistent raw material shortages in Ghana’s agro-processing sector.\n\nThe initiative is designed to ensure a consistent supply of agricultural produce to local factories, many of which currently operate below capacity due to seasonal fluctuations.\n\nDirector for Agribusiness, Kwame Oppong-Ntim",
-        "occurredAt": "2026-06-03T10:04:02.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "feed the industry programme targets chronic raw material",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:13i08n5"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_government_explores_traditional_land_equity_system_to_unlock_k22zit",
-        "title": "Government explores traditional land equity system to unlock large-scale farming",
-        "summary": "The Ministry of Trade, Agribusiness and Industry is introducing a land equity model aimed at improving investor access to farmland while reducing disputes between investors and local communities.\n\nDirector for Agribusiness, Kwame Oppong-Ntim, on Joy FM's Super Morning Show as part of activities marking Agribusiness Month, says the approach, being piloted in the Yeji traditional area, involves trad",
-        "occurredAt": "2026-06-03T09:58:28.000Z",
-        "countryCodes": [],
-        "topic": "government explores traditional land equity system to unlock",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:78y06h"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ishmael_yamson_038_associates_marks_12th_business_roundtable_19wbsb7",
-        "title": "Ishmael Yamson &#038; Associates marks 12th Business Roundtable with foundation launch",
-        "summary": "Ishmael Yamson &#38; Associates today formally launched the Ishmael Yamson Foundation at the 12th edition of the Ishmael Yamson &#38; Associates Business Roundtable, held at the Mövenpick Ambassador Hotel in Accra. The launch marked a defining moment for Business Roundtable 2026, positioning the Foundation as a dedicated vehicle for generational strategy, leadership development, and the [&#8230;]",
-        "occurredAt": "2026-06-03T09:54:55.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ishmael yamson 038 associates marks 12th business roundtable",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:lk4s8b"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_trade_ministry_secures_40_000_acres_in_yeji_1cevd33",
-        "title": "Trade Ministry secures 40,000 acres in Yeji to support commercial farming",
-        "summary": "he Ministry of Trade, Agribusiness and Industry says it has secured access to about 40,000 acres of land in the Yeji traditional area to support large-scale commercial farming and agribusiness investment.\n\nDirector for Agribusiness, Kwame Oppong-Ntim, said the initiative forms part of efforts to address one of the biggest challenges facing investors in agriculture — access to litigation-free land.",
-        "occurredAt": "2026-06-03T09:47:09.000Z",
-        "countryCodes": [],
-        "topic": "trade ministry secures 40 000 acres in yeji",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:qshmiv"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_coj_finances_8216_a_horror_show_8217_8211_1s9wodw",
-        "title": "CoJ finances &#8216;a horror show&#8217; &#8211; Scopa member",
-        "summary": "AG says CoJ wrote off R9bn in consumer debt, while City Power incurred R5.7bn in electricity losses and Johannesburg Water R2.8bn from water losses.",
-        "occurredAt": "2026-06-03T09:41:47.000Z",
-        "countryCodes": [
-          "ZA"
-        ],
-        "topic": "coj finances 8216 a horror show 8217 8211",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:zagkwn"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_how_young_graduate_turned_maggot_farming_into_a_1rqq64i",
-        "title": "How young graduate turned maggot farming into a lucrative venture",
-        "summary": "The communications graduate has built a maggot farming venture that feeds fish, trains farmers, supplies feed across multiple counties.",
-        "occurredAt": "2026-06-03T09:29:22.000Z",
-        "countryCodes": [],
-        "topic": "how young graduate turned maggot farming into a",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:qqzhdz"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_traxtion_ramps_up_bid_to_build_africa_8217_wviw1g",
-        "title": "Traxtion ramps up bid to build Africa&#8217;s biggest rail company",
-        "summary": "The company's $86m equity raise was heavily over-subscribed, indicating the appetite for the future of private rail in Africa.",
-        "occurredAt": "2026-06-03T09:27:18.000Z",
-        "countryCodes": [],
-        "topic": "traxtion ramps up bid to build africa 8217",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:98n089"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
       }
     ],
     "profiles": [
@@ -9160,54 +9109,6 @@
         "channels": [
           "trade_balance",
           "growth"
-        ],
-        "owner": "analysis-team",
-        "status": "approved"
-      },
-      {
-        "id": "method.oilStance.banding.v1",
-        "name": "Oil-stance banding",
-        "version": "1.0.0",
-        "description": "Bands the normalized net petroleum (HS-27) trade position (export - import) / (export + import) into exporter / neutral / importer; total petroleum trade below the minimum is neutral.",
-        "kind": "banding",
-        "inputs": [
-          "petroleumTrade"
-        ],
-        "bands": [
-          {
-            "label": "exporter",
-            "gte": 0.2
-          },
-          {
-            "label": "neutral",
-            "gte": -0.2,
-            "lt": 0.2
-          },
-          {
-            "label": "importer",
-            "lt": -0.2
-          }
-        ],
-        "minInputUsd": 1000000000,
-        "owner": "analysis-team",
-        "status": "approved"
-      },
-      {
-        "id": "method.causal.oil_shock.v1",
-        "name": "Oil-price shock mechanism",
-        "version": "1.0.0",
-        "description": "An oil-price move splits the bloc along the export–import line.",
-        "kind": "causal",
-        "inputs": [],
-        "bands": [],
-        "shockType": "oil_shock",
-        "mechanism": "An oil-price move splits the bloc along the export–import line.",
-        "channels": [
-          "fiscal_revenue",
-          "trade_balance",
-          "inflation",
-          "fx",
-          "consumers"
         ],
         "owner": "analysis-team",
         "status": "approved"

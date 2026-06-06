@@ -1,7 +1,41 @@
 {
-  "updatedAt": "2026-06-06T13:30:36.599Z",
+  "updatedAt": "2026-06-06T14:14:18.416Z",
   "windowMs": 259200000,
   "items": [
+    {
+      "id": "src.nairametrics_ng:luwh2x",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Elon Musks’s SpaceX gets $30 billion Google computing deal",
+      "summary": "Elon Musks’s SpaceX gets $30B  Google computing deal\nThe post Elon Musks’s SpaceX gets $30 billion Google computing deal appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/06/06/elon-muskss-spacex-gets-30-billion-google-computing-deal/",
+      "publishedAt": "2026-06-06T14:10:58.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.nairametrics_ng:8lgou3",
+      "sourceId": "src.nairametrics_ng",
+      "title": "MTN Nigeria wins company of the year at Nairametrics awards",
+      "summary": "MTN Nigeria has been named Capital Market Company of the Year at the 2026 Nairametrics Capital Market Choice Awards, emerging as the biggest winner in one of the night's most prestigious categories.\nThe post MTN Nigeria wins company of the year at Nairametrics awards appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/06/06/mtn-nigeria-wins-company-of-the-year-at-nairametrics-awards-2/",
+      "publishedAt": "2026-06-06T13:58:54.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:hfgfub",
+      "sourceId": "src.nairametrics_ng",
+      "title": "FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards",
+      "summary": "FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards\nThe post FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/06/06/full-list-seplat-mtn-nigeria-uba-emerge-top-winners-at-2026-nairametrics-capital-market-awards-2/",
+      "publishedAt": "2026-06-06T13:53:02.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
     {
       "id": "src.ethiopianbusinessreview_et:139o143",
       "sourceId": "src.ethiopianbusinessreview_et",
@@ -1446,7 +1480,9 @@
       "url": "https://www.citizen.co.za/business/eskom-municipal-takeover-may-expand-to-30-municipalities/",
       "publishedAt": "2026-06-05T11:33:57.000Z",
       "language": "en",
-      "countryCodes": []
+      "countryCodes": [
+        "ZA"
+      ]
     },
     {
       "id": "src.bft_gh:1mdroei",
@@ -4732,7 +4768,9 @@
       "url": "https://www.citizen.co.za/business/canal-jse-multichoice-dstv-listing/",
       "publishedAt": "2026-06-03T15:31:45.000Z",
       "language": "en",
-      "countryCodes": []
+      "countryCodes": [
+        "ZA"
+      ]
     },
     {
       "id": "src.premiumtimes_ng:14js2vk",
@@ -4788,30 +4826,6 @@
       "language": "en",
       "countryCodes": [
         "NG"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:e2nhps",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "BoG Governor pushes digital credit, bankable projects to boost private sector lending",
-      "summary": "Dr. Johnson Pandit Asiama, Governor of the Bank of Ghana (BoG), says improving access to credit for businesses and individuals remains a major priority as the country seeks to consolidate economic stability and accelerate growth. Addressing participants at the Ghana-UK Investment Summit in London, he acknowledged that private sector credit as a share of Gross [&#8230;]",
-      "url": "https://www.myjoyonline.com/bog-governor-pushes-digital-credit-bankable-projects-to-boost-private-sector-lending/",
-      "publishedAt": "2026-06-03T13:58:39.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:lo0jp5",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Access Bank Ghana appoints two Executive Directors to strengthen leadership team",
-      "summary": "Access Bank (Ghana) PLC has announced the appointment of two accomplished banking executives to its senior leadership team, following regulatory approval from the Bank of Ghana.",
-      "url": "https://www.myjoyonline.com/access-bank-ghana-appoints-two-executive-directors-to-strengthen-leadership-team/",
-      "publishedAt": "2026-06-03T13:57:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
       ]
     }
   ]

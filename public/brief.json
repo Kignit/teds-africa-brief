@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:30:36.599Z",
+  "generatedAt": "2026-06-06T14:14:18.416Z",
   "brief": {
     "id": "live_2026-06-06",
     "date": "2026-06-06",
@@ -171,6 +171,48 @@
     ],
     "events": [
       {
+        "id": "evt_elon_musks_s_spacex_gets_30_billion_google_oh25re",
+        "title": "Elon Musks’s SpaceX gets $30 billion Google computing deal",
+        "summary": "Elon Musks’s SpaceX gets $30B  Google computing deal\nThe post Elon Musks’s SpaceX gets $30 billion Google computing deal appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T14:10:58.000Z",
+        "countryCodes": [],
+        "topic": "elon musks s spacex gets 30 billion google",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:luwh2x"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mtn_nigeria_wins_company_of_the_year_at_9vnuo0",
+        "title": "MTN Nigeria wins company of the year at Nairametrics awards",
+        "summary": "MTN Nigeria has been named Capital Market Company of the Year at the 2026 Nairametrics Capital Market Choice Awards, emerging as the biggest winner in one of the night's most prestigious categories.\nThe post MTN Nigeria wins company of the year at Nairametrics awards appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T13:58:54.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "mtn nigeria wins company of the year at",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:8lgou3",
+            "src.nairametrics_ng:hfgfub",
+            "src.nairametrics_ng:62ufzs"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_the_future_of_retail_banking_customer_engagement_in_1oiniux",
         "title": "The Future of Retail Banking Customer Engagement in Africa",
         "summary": "African retail banking is undergoing a profound transformation linked to customer engagement and there is a need for promoting instant rewards to the loyal customer. Customers are becoming increasingly digital, competition from fintechs is intensifying, and traditional loyalty programs are struggling to maintain engagement. The Shift from “Earn Later” to “Reward Now” Modern consumers are [&#8230;]",
@@ -184,27 +226,6 @@
           ],
           "sourceIds": [
             "src.ethiopianbusinessreview_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_full_list_seplat_mtn_nigeria_uba_emerge_top_1wwv4y8",
-        "title": "FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards",
-        "summary": "FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards\nThe post FULL LIST: Seplat, MTN Nigeria, UBA emerge top winners at 2026 Nairametrics Capital Market Awards appeared first on Nairametrics.",
-        "occurredAt": "2026-06-06T13:12:20.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "full list seplat mtn nigeria uba emerge top",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:62ufzs"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -2801,7 +2822,9 @@
         "title": "Eskom municipal takeover may expand to 30 municipalities",
         "summary": "Legal compliance process to be expedited.",
         "occurredAt": "2026-06-05T11:33:57.000Z",
-        "countryCodes": [],
+        "countryCodes": [
+          "ZA"
+        ],
         "topic": "eskom municipal takeover may expand to 30 municipalities",
         "status": "corroborated",
         "corroboration": {
@@ -2837,7 +2860,7 @@
         }
       },
       {
-        "id": "evt_access_bank_strengthens_leadership_team_with_two_executive_6gm7sd",
+        "id": "evt_access_bank_strengthens_leadership_team_with_two_executive_3vdw8s",
         "title": "Access Bank strengthens leadership team with two executive appointments",
         "summary": "Access Bank (Ghana) Plc has appointed two accomplished banking executives to its senior leadership team, following regulatory approval by the Bank of Ghana. Eugene Ocansey joins the Bank as Executive Director, Retail and SME Banking, and Nana Kwabena Afoom as Executive Director, Wholesale Banking. The appointments underscore the Bank&#8217;s commitment to attracting exceptional talent in [&#8230;]",
         "occurredAt": "2026-06-05T11:30:19.000Z",
@@ -2845,17 +2868,15 @@
           "GH"
         ],
         "topic": "access bank strengthens leadership team with two executive",
-        "status": "corroborated",
+        "status": "single_source",
         "corroboration": {
           "newsItemIds": [
-            "src.bft_gh:fj5o6t",
-            "src.myjoyonline_gh:lo0jp5"
+            "src.bft_gh:fj5o6t"
           ],
           "sourceIds": [
-            "src.bft_gh",
-            "src.myjoyonline_gh"
+            "src.bft_gh"
           ],
-          "independentSourceCount": 2,
+          "independentSourceCount": 1,
           "primarySourceCount": 0
         }
       },
@@ -8411,7 +8432,9 @@
         "title": "Canal+ listing on JSE signals confidence in the bourse&#8217;s African growth strategy",
         "summary": "Canal+ is the first French company to list on the JSE.",
         "occurredAt": "2026-06-03T15:31:45.000Z",
-        "countryCodes": [],
+        "countryCodes": [
+          "ZA"
+        ],
         "topic": "canal listing on jse signals confidence in the",
         "status": "single_source",
         "corroboration": {
@@ -8521,27 +8544,6 @@
           ],
           "sourceIds": [
             "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bog_governor_pushes_digital_credit_bankable_projects_to_15qp05x",
-        "title": "BoG Governor pushes digital credit, bankable projects to boost private sector lending",
-        "summary": "Dr. Johnson Pandit Asiama, Governor of the Bank of Ghana (BoG), says improving access to credit for businesses and individuals remains a major priority as the country seeks to consolidate economic stability and accelerate growth. Addressing participants at the Ghana-UK Investment Summit in London, he acknowledged that private sector credit as a share of Gross [&#8230;]",
-        "occurredAt": "2026-06-03T13:58:39.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "bog governor pushes digital credit bankable projects to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:e2nhps"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

@@ -33,14 +33,23 @@ const KEYWORDS: CountryKeywords[] = [
   },
   {
     code: 'ZA',
-    // "rand" alone is too ambiguous (a common word/name) — rely on unambiguous
-    // place/identity tokens instead.
+    // ZA needs domestic-identity tokens beyond place names: unlike NG/KE/ET/GH, its currency
+    // ("rand") is excluded as ambiguous, and SA outlets rarely write "South Africa" in domestic
+    // copy. So we add a few SA-only national institutions / market identities (a state-owned
+    // enterprise, the central bank, the energy regulator, the national exchange) as IDENTITY
+    // tokens, never analytical facts. Still excluded as ambiguous: "rand" (a common word/name),
+    // "SARS" (the disease; note SARB is a different token), and a bare "SA".
     patterns: [
       /\bsouth\s+africa\b/i,
-      /\bsouth\s+africans?\b/i,
-      /\bjohannesburg\b/i,
+      /\bsouth\s+africans?\b/i, // also matches "South African Reserve Bank", etc.
+      /\bjohannesburg\b/i, // also matches "Johannesburg Stock Exchange"
       /\bpretoria\b/i,
       /\bcape\s+town\b/i,
+      /\beskom\b/i, // state power utility
+      /\btransnet\b/i, // state rail / ports / pipelines SOE
+      /\bnersa\b/i, // National Energy Regulator of South Africa
+      /\bsarb\b/i, // South African Reserve Bank
+      /\bjse\b/i, // Johannesburg Stock Exchange
     ],
   },
 ]

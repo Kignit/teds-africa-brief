@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:14:18.416Z",
+  "generatedAt": "2026-06-06T15:06:38.873Z",
   "brief": {
     "id": "live_2026-06-06",
     "date": "2026-06-06",
@@ -171,6 +171,25 @@
     ],
     "events": [
       {
+        "id": "evt_top_10_fastest_growing_economies_in_africa_in_1vzo63x",
+        "title": "Top 10 fastest-growing economies in Africa in 2026 by IMF projections",
+        "summary": "Several African economies are expected to maintain strong growth momentum in 2026, with countries projected to expand at rates well above the global average\nThe post Top 10 fastest-growing economies in Africa in 2026 by IMF projections appeared first on Nairametrics.",
+        "occurredAt": "2026-06-06T14:47:50.000Z",
+        "countryCodes": [],
+        "topic": "top 10 fastest growing economies in africa in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:44k9zo"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_elon_musks_s_spacex_gets_30_billion_google_oh25re",
         "title": "Elon Musks’s SpaceX gets $30 billion Google computing deal",
         "summary": "Elon Musks’s SpaceX gets $30B  Google computing deal\nThe post Elon Musks’s SpaceX gets $30 billion Google computing deal appeared first on Nairametrics.",
@@ -207,6 +226,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_thailand_steps_in_with_rice_as_hunger_crisis_192ddhz",
+        "title": "Thailand steps in with rice as hunger crisis deepens in Northeast",
+        "summary": "The Kingdom of Thailand has donated 12 metric tonnes of Thai long-grain rice to support humanitarian efforts in northeast Nigeria,\nread more Thailand steps in with rice as hunger crisis deepens in Northeast",
+        "occurredAt": "2026-06-06T13:54:57.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "thailand steps in with rice as hunger crisis",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1jla3ms"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -8485,65 +8525,6 @@
           ],
           "sourceIds": [
             "src.capitalethiopia_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_jitume_digital_hub_transforms_youths_livelihoods_in_bungoma_1lpm75u",
-        "title": "Jitume Digital Hub transforms youths livelihoods in Bungoma",
-        "summary": "Digital literacy experts believe more young people can embrace and access digital literacy and online work opportunities through the established Jitume Digital Hubs in many parts of the country.",
-        "occurredAt": "2026-06-03T14:43:20.000Z",
-        "countryCodes": [],
-        "topic": "jitume digital hub transforms youths livelihoods in bungoma",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:dza4gb"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_flysafair_is_cutting_its_fuel_surcharge_8211_here_1b2x1uy",
-        "title": "FlySafair is cutting its fuel surcharge &#8211; here is by how much",
-        "summary": "FlySafair in March added a surcharge to its most popular routes in response to expected spikes in the price of oil.",
-        "occurredAt": "2026-06-03T14:35:22.000Z",
-        "countryCodes": [],
-        "topic": "flysafair is cutting its fuel surcharge 8211 here",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:1564pao"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_20_million_to_benefit_from_china_8217_s_14u9f62",
-        "title": "20 million to benefit from China&#8217;s connectivity support to Nigeria",
-        "summary": "In his post announcing the CIB’s support, Mr Tijani said the NUCAP initiative will deploy 3,700 telecommunications towers across the country.\nThe post 20 million to benefit from China&#8217;s connectivity support to Nigeria appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-03T14:27:38.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "20 million to benefit from china 8217 s",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:1qeooll"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

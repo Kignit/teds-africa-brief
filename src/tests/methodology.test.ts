@@ -206,6 +206,26 @@ function oilEvent(): Event {
   }
 }
 
+// A refinery capacity / throughput story: names crude/petroleum but is not an oil-price move.
+function dangoteEvent(): Event {
+  return {
+    id: 'dangote',
+    title: 'Dangote refinery raises processing capacity to 700,000 barrels per day',
+    summary:
+      'Dangote Petroleum Refinery has increased its crude processing capacity to 700,000 barrels per day following a performance test by process licensors.',
+    occurredAt: AS_OF,
+    countryCodes: ['NG'],
+    topic: '',
+    status: 'corroborated',
+    corroboration: {
+      newsItemIds: ['n1', 'n2'],
+      sourceIds: ['src.a', 'src.b'],
+      independentSourceCount: 2,
+      primarySourceCount: 0,
+    },
+  }
+}
+
 // The oil-stance methodology is APPROVED as of this PR, so these tests exercise the real
 // shipped METHODOLOGIES / METHODOLOGY_REGISTRY directly - no injected or synthetic approval.
 describe('oilStance methodology-gated derivation (approved)', () => {
@@ -296,5 +316,20 @@ describe('oilStance methodology-gated derivation (approved)', () => {
       profiles: [p],
     })
     expect(runPublishGate(brief).passed).toBe(true)
+  })
+
+  it('does not produce an oil-price claim for a refinery capacity story, even with oilStance', () => {
+    // Semantic guard: the profile HAS oilStance (exporter), but a refinery-capacity event is
+    // not an oil-price move, so it must yield no oil_shock link or claim.
+    const [p] = deriveCountryProfiles([petroleumProfile()], METHODOLOGIES)
+    expect(p.oilStance).toBe('exporter')
+    const analysis = composeAnalysisDraft({
+      figures: [],
+      events: [dangoteEvent()],
+      profiles: [p],
+      now: () => AS_OF,
+    })
+    expect(analysis.causalLinks.find((l) => l.shockType === 'oil_shock')).toBeUndefined()
+    expect(analysis.claims.some((c) => c.shockType === 'oil_shock')).toBe(false)
   })
 })

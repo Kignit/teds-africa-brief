@@ -109,4 +109,45 @@ describe('App', () => {
     expect(within(watchlist).getByText(/Unconfirmed headline/)).toBeInTheDocument()
     expect(within(watchlist).queryByText(/Corroborated headline/)).not.toBeInTheDocument()
   })
+
+  it('renders a verified causal claim with its event, source, and methodology provenance', () => {
+    const b = brief()
+    b.methodologies.push({
+      id: 'method.causal.trade_integration_event.v1',
+      name: 'Trade-integration mechanism',
+      version: '1.0.0',
+      description: 'test',
+      kind: 'causal',
+      inputs: [],
+      bands: [],
+      owner: 'analysis-team',
+      status: 'approved',
+    })
+    b.claims.push({
+      id: 'claim-causal',
+      kind: 'causal',
+      text: 'XX: deeper trade integration is positive via the trade balance and growth',
+      figureIds: [],
+      eventIds: ['evt-corr'], // resolves to the corroborated event's title
+      profileFields: ['XX.keyExports'],
+      profileSourceIds: ['src.worldbank'], // a registered source -> readable name
+      methodologyIds: ['method.causal.trade_integration_event.v1'],
+      shockType: 'trade_integration_event',
+      countryCode: 'XX',
+      tone: 'pos',
+      channels: ['trade_balance', 'growth'],
+      verified: true,
+    })
+
+    render(<App brief={b} />)
+    const claims = screen.getByRole('region', { name: 'Claims' })
+    // the claim text itself
+    expect(within(claims).getByText(/deeper trade integration is positive/i)).toBeInTheDocument()
+    // the cited event title, resolved from claim.eventIds against brief.events
+    expect(within(claims).getByText(/Corroborated headline/)).toBeInTheDocument()
+    // at least one source name, resolved from the event + profile source ids
+    expect(within(claims).getByText(/World Bank Open Data/)).toBeInTheDocument()
+    // the methodology name, resolved from brief.methodologies
+    expect(within(claims).getByText(/Trade-integration mechanism/)).toBeInTheDocument()
+  })
 })

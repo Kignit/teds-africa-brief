@@ -1,5 +1,9 @@
 import type { BriefDraft } from '../domain/brief'
+import type { Claim } from '../domain/claim'
+import type { Event } from '../domain/event'
+import type { Methodology } from '../domain/methodology'
 import { FigureCard } from '../components/FigureCard'
+import { sourceName } from '../data/sources'
 import { theme } from './theme'
 
 export interface AppProps {
@@ -9,6 +13,35 @@ export interface AppProps {
 function statusText(brief: BriefDraft | null): string {
   if (!brief) return 'No connector-backed brief loaded'
   return brief.status === 'published' ? 'Live brief published' : 'Live brief awaiting QA'
+}
+
+// A claim's provenance, built ONLY from data the brief already carries: the cited
+// corroborated event title(s), the source names behind those events plus the claim's
+// profile fields, and the methodology names (falling back to the id when no name is
+// carried). A category with no data is omitted; nothing is invented, and nothing is
+// labelled "cross-checked" (that would need an existing corroboration/source count).
+function claimProvenance(
+  claim: Claim,
+  eventById: Map<string, Event>,
+  methodologyById: Map<string, Methodology>,
+): { label: string; value: string }[] {
+  const lines: { label: string; value: string }[] = []
+
+  const citedEvents = claim.eventIds.map((id) => eventById.get(id)).filter((e): e is Event => !!e)
+  if (citedEvents.length) {
+    lines.push({ label: 'Event', value: citedEvents.map((e) => e.title).join('; ') })
+  }
+
+  const eventSourceIds = citedEvents.flatMap((e) => e.corroboration.sourceIds)
+  const sourceNames = [...new Set([...eventSourceIds, ...claim.profileSourceIds])].map(sourceName)
+  if (sourceNames.length) lines.push({ label: 'Sources', value: sourceNames.join(', ') })
+
+  const methodologyNames = claim.methodologyIds.map((id) => methodologyById.get(id)?.name ?? id)
+  if (methodologyNames.length) {
+    lines.push({ label: 'Methodology', value: methodologyNames.join(', ') })
+  }
+
+  return lines
 }
 
 // Runtime shell: renders user-facing facts only when a connector-backed BriefDraft
@@ -23,6 +56,11 @@ export default function App({ brief = null }: AppProps) {
   const watchlistEvents = (brief?.events ?? []).filter((e) => e.status !== 'corroborated')
   // Runtime view shows verified analysis only — never unverified claims from a draft.
   const claims = (brief?.claims ?? []).filter((c) => c.verified)
+  // Lookups to resolve a claim's evidence ids to readable provenance (carried data only).
+  const eventById = new Map((brief?.events ?? []).map((e): [string, Event] => [e.id, e]))
+  const methodologyById = new Map(
+    (brief?.methodologies ?? []).map((m): [string, Methodology] => [m.id, m]),
+  )
 
   return (
     <div
@@ -199,21 +237,45 @@ export default function App({ brief = null }: AppProps) {
                 Claims
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {claims.map((claim) => (
-                  <div
-                    key={claim.id}
-                    style={{
-                      background: theme.card,
-                      borderRadius: 14,
-                      padding: 14,
-                      boxShadow: theme.shadow,
-                      fontSize: 13,
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    {claim.text}
-                  </div>
-                ))}
+                {claims.map((claim) => {
+                  const provenance = claimProvenance(claim, eventById, methodologyById)
+                  return (
+                    <div
+                      key={claim.id}
+                      style={{
+                        background: theme.card,
+                        borderRadius: 14,
+                        padding: 14,
+                        boxShadow: theme.shadow,
+                        fontSize: 13,
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      <div>{claim.text}</div>
+                      {provenance.length > 0 && (
+                        <div
+                          style={{
+                            marginTop: 8,
+                            paddingTop: 8,
+                            borderTop: `1px solid ${theme.hair}`,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 2,
+                          }}
+                        >
+                          {provenance.map((line) => (
+                            <div
+                              key={line.label}
+                              style={{ fontSize: 11, color: theme.muted, lineHeight: 1.4 }}
+                            >
+                              <span style={{ fontWeight: 700 }}>{line.label}:</span> {line.value}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
               </div>
             </section>
           </>

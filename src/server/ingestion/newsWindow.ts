@@ -1,5 +1,6 @@
 import type { NewsItem } from '../../domain/news'
 import { dedupeNewsItems } from './dedupe'
+import { decodeEntities } from '../connectors/decodeEntities'
 
 // Rolling news window. Persists RAW, source-backed NewsItems across runs so that
 // independent registered sources reporting the same event at DIFFERENT TIMES can still
@@ -26,6 +27,19 @@ export interface NewsWindowStore {
 function withinWindow(publishedAt: string, cutoffMs: number): boolean {
   const t = Date.parse(publishedAt)
   return !Number.isNaN(t) && t >= cutoffMs
+}
+
+// Sanitise the USER-FACING text fields of a persisted news item by decoding any HTML
+// entities the connectors did not decode at ingestion time (this is the carryover path for
+// items written to the rolling store before PR #29). Decoding ONLY title and summary so id /
+// sourceId / url / publishedAt / language / countryCodes are preserved verbatim (an "&amp;"
+// in a URL is a meaningful query-param separator and must not be touched). Pure + idempotent: once
+// an item is clean, re-decoding is a no-op (decoder leaves bare & and unknown entities alone).
+function decodeNewsItemText(item: NewsItem): NewsItem {
+  const title = decodeEntities(item.title)
+  const summary = item.summary === undefined ? undefined : decodeEntities(item.summary)
+  if (title === item.title && summary === item.summary) return item
+  return { ...item, title, ...(summary !== undefined && { summary }) }
 }
 
 // Merge this run's fresh items into the prior window: union (fresh first, so the newest
@@ -87,6 +101,7 @@ export function readPriorWindow(
   return store.items
     .filter((it): it is NewsItem => isNewsItem(it))
     .filter((it) => withinWindow(it.publishedAt, cutoff))
+    .map(decodeNewsItemText)
 }
 
 // Serialize the store as a pretty-printed { updatedAt, windowMs, items } envelope —

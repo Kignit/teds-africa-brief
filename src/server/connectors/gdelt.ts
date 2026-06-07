@@ -1,6 +1,7 @@
 import type { ConnectorContext } from './types'
 import type { NewsItem } from '../../domain/news'
 import { inferCountryCodes } from '../../data/countryKeywords'
+import { decodeEntities } from './decodeEntities'
 
 // GDELT DOC 2.0 API — free, no key. The broad global/continental backbone used
 // to surface triggers for the causal map. Returns links + metadata, not full text.
@@ -38,17 +39,20 @@ function toNewsItems(body: GdeltResponse, now: () => string): NewsItem[] {
   const articles = body.articles ?? []
   return articles
     .filter((a) => a.url && a.title)
-    .map((a, i) => ({
-      id: `${SOURCE_ID}:${i}:${a.url}`,
-      sourceId: SOURCE_ID,
-      title: a.title ?? '',
-      summary: '',
-      url: a.url ?? '',
-      publishedAt: parseGdeltDate(a.seendate) ?? now(),
-      language: a.language ?? 'en',
-      // Deterministic, conservative country tag (empty when no launch market is named).
-      countryCodes: inferCountryCodes(a.title ?? ''),
-    }))
+    .map((a, i) => {
+      const title = decodeEntities(a.title ?? '')
+      return {
+        id: `${SOURCE_ID}:${i}:${a.url}`,
+        sourceId: SOURCE_ID,
+        title,
+        summary: '',
+        url: a.url ?? '',
+        publishedAt: parseGdeltDate(a.seendate) ?? now(),
+        language: a.language ?? 'en',
+        // Deterministic, conservative country tag (empty when no launch market is named).
+        countryCodes: inferCountryCodes(title),
+      }
+    })
 }
 
 export async function fetchGdelt(ctx: ConnectorContext, query: string): Promise<NewsItem[]> {

@@ -3,7 +3,7 @@ import { fetchAfricanFx } from '../server/connectors/fx'
 import { fetchWorldBankIndicator } from '../server/connectors/worldBank'
 import { fetchBrentEia } from '../server/connectors/marketData'
 import { fetchGdelt } from '../server/connectors/gdelt'
-import { fetchRss } from '../server/connectors/rss'
+import { fetchRss, parseRss } from '../server/connectors/rss'
 import type { ConnectorContext } from '../server/connectors/types'
 import type { AppConfig } from '../server/config'
 
@@ -131,5 +131,42 @@ describe('connectors', () => {
       now,
     }
     await expect(fetchRss(ctx, 'src.businessday_ng', 'https://x.test/feed')).rejects.toThrow(/503/)
+  })
+
+  it('rss decodes HTML entities (incl. numeric) in title and summary', () => {
+    const xml = `<rss><channel><item>
+      <title>85% of budget released &#8211; Finance Ministry</title>
+      <link>https://x.test/a</link>
+      <description>Eskom&#8217;s plan &amp; more</description>
+      <pubDate>Wed, 03 Jun 2026 06:00:00 GMT</pubDate>
+    </item></channel></rss>`
+    const [item] = parseRss(xml, 'src.bft_gh', now())
+    expect(item.title).toBe(
+      `85% of budget released ${String.fromCodePoint(0x2013)} Finance Ministry`,
+    )
+    expect(item.title).not.toContain('&#8211;')
+    expect(item.summary).toBe(`Eskom${String.fromCodePoint(0x2019)}s plan & more`)
+    // classification is not broadened: 'Eskom' still tags ZA; the entity adds no spurious tag
+    expect(item.countryCodes).toEqual(['ZA'])
+  })
+
+  it('gdelt decodes HTML entities in the title', async () => {
+    const items = await fetchGdelt(
+      ctxWith({
+        articles: [
+          {
+            title: 'Nigeria&#8217;s naira firms &amp; holds',
+            url: 'https://x.test/g',
+            seendate: '20260603T060000Z',
+            language: 'English',
+          },
+        ],
+      }),
+      'naira',
+    )
+    expect(items[0].title).toBe(`Nigeria${String.fromCodePoint(0x2019)}s naira firms & holds`)
+    expect(items[0].title).not.toContain('&#8217;')
+    // classification is not broadened: 'Nigeria'/'naira' tag NG as before
+    expect(items[0].countryCodes).toEqual(['NG'])
   })
 })

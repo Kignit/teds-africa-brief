@@ -16,7 +16,8 @@
     "format:check:vercel": "bash -o pipefail -c 'git show HEAD:vercel.json | prettier --check --stdin-filepath vercel.json --ignore-path /dev/null'",
     "verify": "npm run format:check && npm run format:check:vercel && npm run typecheck && npm run lint && npm run test",
     "brief:generate": "vite-node scripts/generateBrief.ts",
-    "brief:validate": "vite-node scripts/validateBriefArtifact.ts"
+    "brief:validate": "vite-node scripts/validateBriefArtifact.ts",
+    "brief:audit": "BRIEF_VALIDATE_AS_LIBRARY=1 vite-node scripts/auditBriefArtifact.ts"
   },
   "engines": {
     "node": "24.x"

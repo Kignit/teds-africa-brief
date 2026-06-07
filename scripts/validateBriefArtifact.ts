@@ -710,10 +710,13 @@ export function main(argv: string[] = process.argv.slice(2)): number {
   return summary.exitCode
 }
 
-// Run as CLI unless invoked from the vitest runner (which imports the named exports above
-// and would otherwise trigger main() as a module side effect). vite-node strips the script
-// path from process.argv before evaluating, so checking argv is not reliable; gating on
-// process.env.VITEST is the standard pattern.
-if (!process.env.VITEST) {
+// Run as CLI unless EITHER (a) invoked from the vitest runner (which imports the named
+// exports above and would otherwise trigger main() as a module side effect), OR (b)
+// another script imported this module as a library and set BRIEF_VALIDATE_AS_LIBRARY=1
+// to suppress the import-time CLI (e.g. scripts/auditBriefArtifact.ts, which reuses
+// validateArtifact + summarise but emits its own report). vite-node strips the script
+// path from process.argv before evaluating, so checking argv is not reliable; env-var
+// sentinels are the practical workaround.
+if (!process.env.VITEST && !process.env.BRIEF_VALIDATE_AS_LIBRARY) {
   process.exit(main())
 }

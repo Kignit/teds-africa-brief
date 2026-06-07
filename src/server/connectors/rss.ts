@@ -1,6 +1,7 @@
 import type { ConnectorContext } from './types'
 import type { NewsItem } from '../../domain/news'
 import { inferCountryCodes } from '../../data/countryKeywords'
+import { decodeEntities } from './decodeEntities'
 
 // Generic RSS reader. Lightweight, dependency-free parsing so it runs in any
 // environment. RSS is the integration path for local press and FT/Economist.
@@ -12,21 +13,14 @@ const FIELD_RE = {
   pubDate: /<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i,
 }
 
-function decodeEntities(s: string): string {
-  return s
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&apos;/g, "'")
-    .replace(/&amp;/g, '&')
-    .trim()
-}
-
+// Unwrap RSS/XML CDATA, then decode HTML entities to plain text. CDATA stripping is
+// XML-specific; entity decoding (including numeric entities like &#8211;) is the shared
+// decoder, so titles/summaries reach the artifact as clean text, not "&#8211;".
 function field(block: string, re: RegExp): string {
   const m = block.match(re)
-  return m ? decodeEntities(m[1]) : ''
+  if (!m) return ''
+  const cdataUnwrapped = m[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+  return decodeEntities(cdataUnwrapped).trim()
 }
 
 function stripHtml(s: string): string {

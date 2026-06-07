@@ -46,6 +46,18 @@ jobs:
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           COMTRADE_API_KEY: ${{ secrets.COMTRADE_API_KEY }}
+      # Pre-production audit of the FRESHLY generated public/brief.json + persisted
+      # data/news-window.json: blocks malformed shape, unresolved claim/section refs, and
+      # decodable HTML-entity residue from reaching main (unrecoverable fragments are
+      # warnings only). Runs ONLY when generation succeeded: a generation failure writes
+      # the cleared { brief: null } artifact, which would fail the validator's shape check
+      # and break the existing fail-and-clear commit path. Skipping on failure preserves
+      # that path; the final step still marks the run red. Not continue-on-error: a
+      # validate failure here propagates so verify/build/commit auto-skip (default if:
+      # success()) and the cleared/invalid artifact is never pushed.
+      - name: Validate the freshly generated artifact before commit
+        if: steps.generate.outcome == 'success'
+        run: npm run brief:validate
       # Self-gate the EXACT workspace that will be committed — including the freshly
       # generated public/brief.json. A GITHUB_TOKEN push does NOT trigger the normal CI
       # workflow, so without this the artifact commit would reach main ungated. Running

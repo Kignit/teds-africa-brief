@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T10:10:38.789Z",
+  "generatedAt": "2026-06-07T14:03:38.222Z",
   "brief": {
     "id": "live_2026-06-07",
     "date": "2026-06-07",
@@ -143,6 +143,419 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_court_declares_n110_billion_suvs_allowances_for_lawmakers_10fozys",
+        "title": "Court declares N110 billion SUVs, allowances for lawmakers unlawful",
+        "summary": "The Federal High Court in Lagos has declared unlawful the National Assembly's controversial N110 billion expenditure on vehicles and allowances for lawmakers, ruling that the spending violated procurement laws, constitutional obligations and the public trust. \nThe post Court declares N110 billion SUVs, allowances for lawmakers unlawful appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T13:53:49.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "court declares n110 billion suvs allowances for lawmakers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1yhklt1"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_things_got_worse_under_dada_morero_as_mayor_urtwq4",
+        "title": "Things got worse under Dada Morero as mayor, says BLSA CEO",
+        "summary": "Dada Morero was elected as City of Joburg Mayor in August 2024 for the second time.",
+        "occurredAt": "2026-06-07T13:53:07.000Z",
+        "countryCodes": [],
+        "topic": "things got worse under dada morero as mayor",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.citizen_za:3j8xlo"
+          ],
+          "sourceIds": [
+            "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_why_unlimited_mobile_data_is_not_feasible_in_jnppt1",
+        "title": "Why unlimited mobile data is not feasible in Nigeria—MTN CEO",
+        "summary": "MTN Nigeria Chief Executive Officer Karl Toriola has dismissed calls for unlimited mobile data plans in Nigeria, explaining that no operator anywhere in the world can sustain quality service if every customer has unrestricted access to data at a low cost. \nThe post Why unlimited mobile data is not feasible in Nigeria—MTN CEO appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T13:52:46.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "why unlimited mobile data is not feasible in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:d41a61"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ian_bremmer_on_biznews_forces_moving_markets_right_m7b4ou",
+        "title": "Ian Bremmer on BizNews: Forces moving markets right now — and what to do about them",
+        "summary": "",
+        "occurredAt": "2026-06-07T13:43:59.000Z",
+        "countryCodes": [],
+        "topic": "ian bremmer on biznews forces moving markets right",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:11d9ghd"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_openai_plots_biggest_chatgpt_overhaul_since_launch_ncf5bx",
+        "title": "OpenAI plots biggest ChatGPT overhaul since launch",
+        "summary": "",
+        "occurredAt": "2026-06-07T13:29:17.000Z",
+        "countryCodes": [],
+        "topic": "openai plots biggest chatgpt overhaul since launch",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:13opcj7"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_troops_foil_kidnap_attempts_rescue_victims_in_plateau_17a2p98",
+        "title": "Troops foil kidnap attempts, rescue victims in Plateau, Kaduna",
+        "summary": "Troops of Operation ENDURING PEACE have foiled multiple kidnapping attempts and rescued several victims in coordinated operations carried out across\nread more Troops foil kidnap attempts, rescue victims in Plateau, Kaduna",
+        "occurredAt": "2026-06-07T13:26:07.000Z",
+        "countryCodes": [],
+        "topic": "troops foil kidnap attempts rescue victims in plateau",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:2s2b0g"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gen_z_socialism_rises_on_cost_of_living_12gtwlp",
+        "title": "Gen-Z socialism rises on cost-of-living anger and AI anxiety",
+        "summary": "",
+        "occurredAt": "2026-06-07T13:23:02.000Z",
+        "countryCodes": [],
+        "topic": "gen z socialism rises on cost of living",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:85ockw"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_section_89_report_decoded_the_charges_against_1dqnvol",
+        "title": "The Section 89 report decoded: the charges against Ramaphosa that could end his presidency",
+        "summary": "",
+        "occurredAt": "2026-06-07T13:08:53.000Z",
+        "countryCodes": [],
+        "topic": "the section 89 report decoded the charges against",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1ki8y5z"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_boardroom_talk_when_the_hungry_fight_the_hungry_1deiqgm",
+        "title": "Boardroom Talk: When the hungry fight the hungry – SA's xenophobia problem",
+        "summary": "",
+        "occurredAt": "2026-06-07T13:04:46.000Z",
+        "countryCodes": [],
+        "topic": "boardroom talk when the hungry fight the hungry",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1jptdon"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigerian_army_rescues_360_hostages_from_boko_haram_1y34wfb",
+        "title": "Nigerian Army rescues 360 hostages from Boko Haram stronghold in Borno",
+        "summary": "The Nigerian Army says its troops have rescued 360 kidnapped victims from a Boko Haram stronghold in the Mandara Mountains area of southern Borno State.\nThe post Nigerian Army rescues 360 hostages from Boko Haram stronghold in Borno appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T12:54:50.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigerian army rescues 360 hostages from boko haram",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:7b524i"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dangote_salt_deepens_community_footprint_across_craft_consumer_1uit5kd",
+        "title": "Dangote Salt deepens community footprint across craft, consumer spaces",
+        "summary": "As part of its pre-Eid engagement activities, Dangote Salt undertook a series of field visits to highlight the often-unseen role\nread more Dangote Salt deepens community footprint across craft, consumer spaces",
+        "occurredAt": "2026-06-07T12:22:53.000Z",
+        "countryCodes": [],
+        "topic": "dangote salt deepens community footprint across craft consumer",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:e6iciw"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_aiico_delivers_strong_shareholder_confidence_with_n4_39bn_184gy4m",
+        "title": "AIICO delivers strong shareholder confidence with N4.39bn dividend pay-out FY",
+        "summary": "AIICO Insurance Plc has reinforced its position as a leading player in Nigeria’s insurance and financial services sector with dividend\nread more AIICO delivers strong shareholder confidence with N4.39bn dividend pay-out FY",
+        "occurredAt": "2026-06-07T12:16:09.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "aiico delivers strong shareholder confidence with n4 39bn",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1hljgn6"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_modern_lifestyle_ancient_bodies_why_our_bones_are_lv8epq",
+        "title": "Modern Lifestyle, Ancient Bodies: Why our bones are struggling",
+        "summary": "In the 1990s, most bone-related complaints not linked to injury were commonly described under one word: rheumatism. As time progressed\nread more Modern Lifestyle, Ancient Bodies: Why our bones are struggling",
+        "occurredAt": "2026-06-07T12:13:33.000Z",
+        "countryCodes": [],
+        "topic": "modern lifestyle ancient bodies why our bones are",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:19le1pr"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ara_r_nt_tosin_junaid_s_exploration_of_5z3kvf",
+        "title": "Ara Rántí: Tosin Junaid’s exploration of memory beyond soul with photography",
+        "summary": "In today’s fast-paced world where many creative hands seek to be multidisciplinary in their practice, there is a talent who\nread more Ara Rántí: Tosin Junaid’s exploration of memory beyond soul with photography",
+        "occurredAt": "2026-06-07T12:10:44.000Z",
+        "countryCodes": [],
+        "topic": "ara r nt tosin junaid s exploration of",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:yz7adp"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sakeliga_proposes_off_ramp_to_shield_compliant_businesses_pth7gb",
+        "title": "Sakeliga proposes ‘off-ramp’ to shield compliant businesses from US tariffs and ANC policy fallout",
+        "summary": "",
+        "occurredAt": "2026-06-07T11:54:06.000Z",
+        "countryCodes": [],
+        "topic": "sakeliga proposes off ramp to shield compliant businesses",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:18vodry"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_melcom_debunks_reports_of_collapsed_building_1qeh28",
+        "title": "Melcom debunks reports of collapsed building",
+        "summary": "Management of Melcom Limited has debunked reports that a building which collapsed at Avenor in Accra belongs to the company. According to the company, the collapsed structure is located within the vicinity of Ashfoam and Melcom Plus but is not owned by Melcom. “While we express our sympathies to all those who may have been […]\nThe post Melcom debunks reports of collapsed building appeared first on",
+        "occurredAt": "2026-06-07T11:28:49.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "melcom debunks reports of collapsed building",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:awsbx3"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mogo_ordered_to_refund_tuk_tuk_owner_after_kuzr5m",
+        "title": "Mogo ordered to refund tuk-tuk owner after unlawful repossession",
+        "summary": "Court documents show the customer made payments of between Sh479,609 and Sh549,246 before falling into arrears. Mogo later repossessed the tuk-tuk and sold it to a third party for Sh413,400, arguing that it was exercising its rights under an asset finance agreement.",
+        "occurredAt": "2026-06-07T11:00:17.000Z",
+        "countryCodes": [],
+        "topic": "mogo ordered to refund tuk tuk owner after",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:q945yd"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_president_ramaphosa_to_address_nation_on_illegal_migration_1qdb6yn",
+        "title": "President Ramaphosa to address nation on illegal migration and action plan",
+        "summary": "The address will be broadcast at 6pm in the capital, Pretoria, the presidency said in a statement.",
+        "occurredAt": "2026-06-07T10:55:02.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "president ramaphosa to address nation on illegal migration",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:1bg3nnn"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_ndb_sunday_show_lauren_evanthia_tender_tycoons_1uswk2s",
+        "title": "The NdB Sunday Show: Lauren Evanthia - Tender tycoons, political treachery & human tragedy…",
+        "summary": "",
+        "occurredAt": "2026-06-07T10:54:45.000Z",
+        "countryCodes": [],
+        "topic": "the ndb sunday show lauren evanthia tender tycoons",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:rnuze8"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_dangote_s_nigeria_gamble_succeeds_as_wealth_reaches_vuumv8",
+        "title": "Dangote’s Nigeria gamble succeeds as wealth reaches $37 billion",
+        "summary": "Aliko Dangote's net worth has risen to a historic $36.7 billion, according to real-time Bloomberg data.\nThe post Dangote’s Nigeria gamble succeeds as wealth reaches $37 billion appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T10:20:13.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "dangote s nigeria gamble succeeds as wealth reaches",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1orqr70"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_proposed_advisory_council_to_strengthen_cooperatives_governance_chovby",
+        "title": "Proposed advisory council to strengthen cooperatives' governance",
+        "summary": "Leaders in the cooperative movement are considering the establishment of an economic advisory council of chairpersons to enhance governance, coordination and policy engagement in the sector.",
+        "occurredAt": "2026-06-07T10:13:53.000Z",
+        "countryCodes": [],
+        "topic": "proposed advisory council to strengthen cooperatives governance",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:13d0ucx"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_africa_s_forest_foods_under_threat_as_traditional_1cx6zl1",
         "title": "Africa’s forest foods under threat as traditional knowledge fades",
@@ -470,6 +883,44 @@
         }
       },
       {
+        "id": "evt_sadc_launches_landmark_initiative_to_build_sustainable_energy_1l5u30j",
+        "title": "SADC launches landmark initiative to build sustainable energy transition mineral value chains",
+        "summary": "The Southern African Development Community (SADC) region has many of the sought after critical energy transition minerals. Now a five-year regional project is working to retain the mineral wealth locally while promoting livelihoods and driving industrialization. The SADC region holds vast reserves of cobalt, lithium, manganese, nickel, and platinum group metals which have for many […]",
+        "occurredAt": "2026-06-07T08:22:44.000Z",
+        "countryCodes": [],
+        "topic": "sadc launches landmark initiative to build sustainable energy",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:4pd9xw"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_financial_summit_2026_chooses_luanda_to_continue_1memmh5",
+        "title": "Africa Financial Summit 2026 chooses Luanda to continue its mission of integrating African finance",
+        "summary": "The Africa Financial Summit – AFIS, the leading platform for African finance, announces that its annual summit will be held on November 3 and 4, 2026, in Luanda, Angola. For the first time, the summit will take place in Southern Africa, confirming its pan-African reach and its ambition to connect all of the continent’s financial […]",
+        "occurredAt": "2026-06-07T08:22:18.000Z",
+        "countryCodes": [],
+        "topic": "africa financial summit 2026 chooses luanda to continue",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:7dqevk"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_sharks_lose_another_bok_to_japan_5wnpu3",
         "title": "Sharks lose another Bok to Japan",
         "summary": "Fassi's pending departure will leave the Sharks and coach JP Pietersen light in the fullback position.",
@@ -483,6 +934,46 @@
           ],
           "sourceIds": [
             "src.citizen_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_loses_92_million_in_afdb_shares_after_1u69tya",
+        "title": "Kenya loses $92 million in AfDB shares after missing critical payment",
+        "summary": "Kenya has forfeited African Development Bank (AfDB) shares worth approximately $92 million after failing to make its annual subscription payment. This development comes at a time when Kenya’s borrowing from the bank has risen significantly, raising concerns that the loss will severely weaken its clout and influence in the bank’s governance and decision-making processes. According […]",
+        "occurredAt": "2026-06-07T08:21:51.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya loses 92 million in afdb shares after",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:168q5u3"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_african_island_states_seek_stronger_credit_ratings_for_7hdncb",
+        "title": "African island states seek stronger credit ratings for climate and blue economy finance",
+        "summary": "Experts, policymakers, and financial practitioners from across African Island States will gather in Mombasa on 12–13 June 2026 for a high-level workshop to enhance sovereign credit ratings and unlock access to sustainable climate and blue economy financing. Jointly organized by the Economic Commission for Africa (ECA) and the African Island States Coordination Committee (AISCC) under […]",
+        "occurredAt": "2026-06-07T08:21:08.000Z",
+        "countryCodes": [],
+        "topic": "african island states seek stronger credit ratings for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalethiopia_et:asarbw"
+          ],
+          "sourceIds": [
+            "src.capitalethiopia_et"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -6302,7 +6793,7 @@
       {
         "id": "evt_xenophobia_fallout_ramaphosa_turns_to_diplomacy_as_african_157bn0h",
         "title": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens",
-        "summary": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens South African President Cyril Ramaphosa has announced plans to dispatch envoys across Africa and other parts of the world as Pretoria moves to contain the diplomatic fallout from renewed anti-immigrant violence. The attacks, which have targeted foreign nationals and triggered concern across the continent, [&#8230",
+        "summary": "Xenophobia Fallout: Ramaphosa Turns to Diplomacy as African Nations Evacuate Citizens South African President Cyril Ramaphosa has announced plans to dispatch envoys across Africa and other parts of the world as Pretoria moves to contain the diplomatic fallout from renewed anti-immigrant violence. The attacks, which have targeted foreign nationals and triggered concern across the continent, […",
         "occurredAt": "2026-06-05T00:37:24.000Z",
         "countryCodes": [
           "ZA"
@@ -7214,661 +7705,6 @@
           ],
           "sourceIds": [
             "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_maritime_development_key_to_africa_s_economic_transformation_1773iic",
-        "title": "Maritime development key to Africa’s economic transformation – GEXIM",
-        "summary": "Mr Mensah made the remarks in a speech delivered on behalf of the Chief Executive Officer of GEXIM, Sylvester Adinam Mensah, at the opening of the Maritime Trade Fair in Accra on the theme: \"Shaping Africa's Maritime Future: Maritime, Technology and Finance.\"",
-        "occurredAt": "2026-06-04T13:39:43.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "maritime development key to africa s economic transformation",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:frwwol"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ethswitch_records_1_million_daily_ethiopay_ips_transactions_irsnix",
-        "title": "EthSwitch records 1 million daily EthioPay-IPS transactions, wins African financial inclusion award",
-        "summary": "EthSwitch, Ethiopia’s national payment switch, has recorded more than 1 million EthioPay-IPS transactions in a single day, with the value of transactions exceeding 5 billion birr, in what the company described as a major milestone for the country’s digital payments system. The achievement comes as EthSwitch and global payment software company BPC received The Asian […]",
-        "occurredAt": "2026-06-04T13:14:21.000Z",
-        "countryCodes": [
-          "ET"
-        ],
-        "topic": "ethswitch records 1 million daily ethiopay ips transactions",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalethiopia_et:1h73mwi"
-          ],
-          "sourceIds": [
-            "src.capitalethiopia_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_interswitch_partners_with_temenos_to_scale_digital_banking_1lm9k9",
-        "title": "Interswitch Partners with Temenos to Scale Digital Banking Services Across Africa",
-        "summary": "Interswitch will use Temenos solutions to deliver managed services to banks and financial institutions across Africa Interswitch Group, one of Africa’s leading integrated payments and digital commerce companies, and Temenos (SIX: TEMN), a global leader in banking technology, today announced a collaboration, wherein Interswitch will adopt Temenos technology to enhance its digital banking capabiliti",
-        "occurredAt": "2026-06-04T13:06:49.000Z",
-        "countryCodes": [],
-        "topic": "interswitch partners with temenos to scale digital banking",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:119572j"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_us_targets_south_africa_with_proposed_12_5_1iex77u",
-        "title": "US targets South Africa with proposed 12.5% tariff over forced-labour import controls",
-        "summary": "The proposed tariffs come ahead of the expiry of the temporary 10% tariff on South Africa and other countries on 24 July 2026.",
-        "occurredAt": "2026-06-04T12:53:43.000Z",
-        "countryCodes": [
-          "ZA"
-        ],
-        "topic": "us targets south africa with proposed 12 5",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:efsk21"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenyan_elected_to_global_intellectual_property_enforcement_body_dmgrkc",
-        "title": "Kenyan elected to global intellectual property enforcement body",
-        "summary": "The unanimous election by WIPO member states places Kenya at the forefront of international efforts to combat counterfeiting and strengthen intellectual property rights enforcement.",
-        "occurredAt": "2026-06-04T12:51:26.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kenyan elected to global intellectual property enforcement body",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:15p5s66"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenyatta_family_ndegwa_family_to_pocket_sh21_9_1bgcp0j",
-        "title": "Kenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal",
-        "summary": "The prominent Kenyatta family and the family of former Central Bank of Kenya Governor Philip Ndegwa are set to receive up to Sh21.9 billion from a trading deal involving the sale of NCBA Group to South Africa’s Nedbank Group. In the deal, the Kenyatta family and the Ndegwa family have agreed to sell 66 percent […]\nKenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal first appeared ",
-        "occurredAt": "2026-06-04T12:48:27.000Z",
-        "countryCodes": [
-          "KE",
-          "ZA"
-        ],
-        "topic": "kenyatta family ndegwa family to pocket sh21 9",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznakenya_ke:16ptw9o"
-          ],
-          "sourceIds": [
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_19_officials_charged_in_sh14bn_sacco_scandal_over_dniozl",
-        "title": "19 Officials Charged in Sh14bn Sacco Scandal Over Alleged Decade-Long Fraud",
-        "summary": "NAIROBI,Kenya,June 4-Nineteen individuals have been arraigned in connection with a suspected Sh14 billion fraud scheme involving a major Savings and Credit Cooperative (Sacco), in a case that has once again spotlighted governance and accountability risks within Kenya’s cooperative sector. Detectives from the Directorate of Criminal Investigations (DCI) brought the suspects before the Milimani Law ",
-        "occurredAt": "2026-06-04T12:47:26.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "19 officials charged in sh14bn sacco scandal over",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:b271uf"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_5_issues_dominating_finance_bill_2026_conversations_tvhck2",
-        "title": "5 Issues Dominating Finance Bill 2026 Conversations",
-        "summary": "As Parliament continues to scrutinise the Finance Bill 2026, debate has shifted from broad concerns about new taxes to a handful of specific proposals that could affect millions of Kenyans, businesses and investors. The Bill, which the National Treasury says is aimed at broadening the tax base and improving compliance rather than introducing sweeping tax […]",
-        "occurredAt": "2026-06-04T12:11:28.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "5 issues dominating finance bill 2026 conversations",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businesstoday_ke:fuhgkw"
-          ],
-          "sourceIds": [
-            "src.businesstoday_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bog_s_reforms_on_community_banking_aims_to_zld0wl",
-        "title": "BoG’s reforms on community banking aims to build well-capitalised banks – ARB Apex Bank MD",
-        "summary": "The Acting Managing Director of ARB Apex Bank, Curtis William Brantuo, says community banking sector is currently undergoing major reforms under the leadership of the Bank of Ghana (BoG) to build stronger, resilient, and well-capitalized banks capable of safeguarding depositor funds and supporting local economic development.",
-        "occurredAt": "2026-06-04T12:01:01.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "bog s reforms on community banking aims to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:16yixxu"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_uk_moves_to_ban_universities_from_sponsoring_international_3d7exh",
-        "title": "UK moves to ban universities from sponsoring international students",
-        "summary": "Universities in the United Kingdom could lose their ability to recruit international students under a new government policy aimed at curbing visa abuse and reducing asylum claims from foreign students, a move that could affect Nigerians seeking higher education opportunities in the country.\nThe post UK moves to ban universities from sponsoring international students appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T11:56:48.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "uk moves to ban universities from sponsoring international",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:13mfw03"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_britam_pays_ksh97_3_million_in_climate_claims_7x81ze",
-        "title": "Britam Pays KSh97.3 Million in Climate Claims as Agricultural Insurance Coverage Surges",
-        "summary": "Britam paid out KSh97.3 million in insurance claims in 2025 to support 402,681 farmers and pastoralists across East Africa affected by climate-related shocks, highlighting the growing role of financial protection in mitigating the impact of extreme weather events. According to the insurer’s 2025 Sustainability Report, the payouts were made through crop and livestock insurance programmes [&#8",
-        "occurredAt": "2026-06-04T11:51:31.000Z",
-        "countryCodes": [],
-        "topic": "britam pays ksh97 3 million in climate claims",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businesstoday_ke:1yasd1i"
-          ],
-          "sourceIds": [
-            "src.businesstoday_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_nerc_to_set_net_billing_regulations_boost_renewable_95dy75",
-        "title": "NERC to set net billing regulations, boost renewable energy",
-        "summary": "NERC stated that the new framework is designed to promote the adoption of renewable energy technologies, enhance energy security, and reliability for electricity consumers.\nThe post NERC to set net billing regulations, boost renewable energy appeared first on Premium Times Nigeria.",
-        "occurredAt": "2026-06-04T11:51:10.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "nerc to set net billing regulations boost renewable",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:hyf2py"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_north_west_mine_shuts_down_temporarily_amid_retrenchment_1ozx01e",
-        "title": "North West mine shuts down temporarily amid retrenchment talks involving nearly 500 workers",
-        "summary": "Wesizwe Platinum says Bakubung Platinum Mine's temporary shutdown is intended to allow for meaningful engagement during retrenchment talks.",
-        "occurredAt": "2026-06-04T11:32:56.000Z",
-        "countryCodes": [],
-        "topic": "north west mine shuts down temporarily amid retrenchment",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:sctaq4"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_africans_with_50_million_assets_turn_to_real_q40vs1",
-        "title": "Africans with $50 million assets turn to real estate for wealth preservation — Report",
-        "summary": "Africans with at least $50 million in investable assets are increasingly allocating capital to real estate as a strategy for wealth preservation, portfolio diversification, and long-term income generation, a new wealth report has stated. \nThe post Africans with $50 million assets turn to real estate for wealth preservation — Report appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T11:31:12.000Z",
-        "countryCodes": [],
-        "topic": "africans with 50 million assets turn to real",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1cnlv4y"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ecowas_rice_forum_ends_with_agriconnect_compact_renewed_je0mq8",
-        "title": "ECOWAS Rice Forum Ends with AgriConnect Compact, Renewed Push for Rice Self-Sufficiency",
-        "summary": "A two-day West Africa Rice Investment Roundtable in Accra ended with a renewed push to boost local rice production, as Ghana unveiled a new import quota policy and development partners signed a financing agreement aimed at accelerating investment in the sector. The forum brought together governments, development institutions and private investors from across the region […]",
-        "occurredAt": "2026-06-04T11:14:13.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ecowas rice forum ends with agriconnect compact renewed",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:4ja660"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_capital_importation_10_sectors_that_attracted_the_most_1khpnc",
-        "title": "Capital Importation: 10 sectors that attracted the most inflows in Q1 2026",
-        "summary": "Nigeria’s capital importation recorded a strong rebound in the first quarter of 2026, rising to $10.37 billion as foreign investors increased exposure to the country’s financial sector. \nThe post Capital Importation: 10 sectors that attracted the most inflows in Q1 2026 appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T11:05:47.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "capital importation 10 sectors that attracted the most",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:115pe7o"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_cbn_raises_tuition_fee_remittance_limit_to_25_uyhe2s",
-        "title": "CBN raises tuition fee remittance limit to $25,000 for Nigerians studying abroad",
-        "summary": "The Central Bank of Nigeria (CBN) has increased the maximum tuition fee remittance for Nigerian students pursuing undergraduate and postgraduate studies abroad to $25,000 per semester, up from the previous $15,000.  \nThe post CBN raises tuition fee remittance limit to $25,000 for Nigerians studying abroad appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T10:59:28.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "cbn raises tuition fee remittance limit to 25",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:zlhrt2"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_senate_moves_to_establish_malaria_elimination_agency_1t1e5df",
-        "title": "Senate moves to establish malaria elimination agency",
-        "summary": "…as Nwoko insists Nigeria can be malaria-free The Senate, on Tuesday, took a decisive step toward reshaping Nigeria’s fight against\nread more Senate moves to establish malaria elimination agency",
-        "occurredAt": "2026-06-04T10:52:47.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "senate moves to establish malaria elimination agency",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:b2f236"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_shareholders_applaud_greenwich_s_performance_at_maiden_agm_k4xjq2",
-        "title": "Shareholders applaud Greenwich’s Performance at maiden AGM.",
-        "summary": "Shareholders of Greenwich Holdings Limited have commended the board and management for the company’s strong financial performance in 2025 and successful transition into a financial holding company. According to a statement by the company’s Head of Corporate Communications, Ozena Utulu, at the company’s maiden Annual General Meeting (AGM) in Lagos, shareholders approved all resolutions presented, i",
-        "occurredAt": "2026-06-04T10:50:01.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "shareholders applaud greenwich s performance at maiden agm",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:cpxvaf"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_rmb_leads_paras_energy_s_n15bn_five_year_k5uk47",
-        "title": "RMB Leads Paras Energy’s N15bn Five-Year Bond Offering",
-        "summary": "Paras Energy and Natural Resources Development Limited (“Paras Energy” or the “Company“) through its funding vehicle Paras Energy Funding SPV Plc (the “Issuer“) is pleased to announce the successful issuance of the inaugural ₦15.00 billion 5-year Fixed Rate Senior Unsecured Bond at a coupon of 18.00% per annum (the “Bond Issue” or the “Transact",
-        "occurredAt": "2026-06-04T10:46:34.000Z",
-        "countryCodes": [],
-        "topic": "rmb leads paras energy s n15bn five year",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:crnn97"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_inside_east_africa_s_2025_trade_boom_key_12klsmo",
-        "title": "Inside East Africa’s 2025 trade boom: Key takeaways from the NCBA forum",
-        "summary": "NCBA convened diplomatic trade commissioners and ambassadors from over 20 countries and missions, alongside development partners and investors, for a high-level forum in Nairobi aimed at deepening trade and investment across East Africa. The engagement underscored the importance of coordinated action in unlocking economic growth, expanding market access, and supporting East African businesses in n",
-        "occurredAt": "2026-06-04T10:45:46.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "inside east africa s 2025 trade boom key",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznakenya_ke:5k0qkc"
-          ],
-          "sourceIds": [
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenya_power_moves_to_regularize_ev_charging_customers_lbchnt",
-        "title": "Kenya Power moves to Regularize EV charging customers as e-mobility tariff revenues surge",
-        "summary": "NAIROBI, Kenya, June 4-Kenya Power has begun a countrywide exercise to identify and migrate all customers using electricity to charge electric vehicles (EVs) onto its dedicated e-mobility tariff, in a move aimed at improving revenue tracking and strengthening planning for the fast-growing sector. The utility says the transition will target customers currently charging EVs outside […]",
-        "occurredAt": "2026-06-04T10:44:44.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kenya power moves to regularize ev charging customers",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:1vstqvz"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_nerc_approves_special_compensation_for_band_a_customers_zv1hux",
-        "title": "NERC approves special compensation for Band A customers affected by power shortfalls",
-        "summary": "Nigeria’s electricity regulator has approved a special compensation framework for eligible Band A customers affected by prolonged generation shortfalls between February and March 2026, citing gas supply constraints and vandalism of critical infrastructure as major causes.\nThe post NERC approves special compensation for Band A customers affected by power shortfalls appeared first on Premium Times N",
-        "occurredAt": "2026-06-04T10:43:11.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "nerc approves special compensation for band a customers",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.premiumtimes_ng:1fv3bcw"
-          ],
-          "sourceIds": [
-            "src.premiumtimes_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_fcta_deploys_vein_finding_devices_to_boost_healthcare_ixbs42",
-        "title": "FCTA deploys vein-finding devices to boost healthcare delivery in Abuja hospitals",
-        "summary": "The Federal Capital Territory Administration (FCTA) has distributed 48 vein-finding devices to public hospitals in Abuja as part of efforts\nread more FCTA deploys vein-finding devices to boost healthcare delivery in Abuja hospitals",
-        "occurredAt": "2026-06-04T10:43:11.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "fcta deploys vein finding devices to boost healthcare",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:13g3378"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bumpy_path_to_2027_endless_rumbles_at_inec_1l7idwl",
-        "title": "Bumpy path to 2027; Endless rumbles at INEC; Rivers’ ‘Wuruwuru’ politics, and 1000 forest guards",
-        "summary": "From hateful political rhetoric to manipulation of party primaries, and to outright impunity, the path to 2027 appears jarring. The\nread more Bumpy path to 2027; Endless rumbles at INEC; Rivers’ ‘Wuruwuru’ politics, and 1000 forest guards",
-        "occurredAt": "2026-06-04T10:38:18.000Z",
-        "countryCodes": [],
-        "topic": "bumpy path to 2027 endless rumbles at inec",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:hk3dm"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_rising_cybersecurity_breaches_in_nigeria_digital_encode_issues_pqv4vy",
-        "title": "Rising Cybersecurity Breaches in Nigeria: Digital Encode Issues Urgent Advisory on Widespread Security Weaknesses",
-        "summary": "Digital Encode Limited, a leading information security and governance, risk, and compliance (GRC) advisory firm, has issued an urgent cybersecurity advisory following a surge in security breaches affecting financial institutions, government agencies, fintechs, and other organizations across Nigeria. Cyber threat actors have recently exposed data purportedly from both private and public institution",
-        "occurredAt": "2026-06-04T10:29:26.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "rising cybersecurity breaches in nigeria digital encode issues",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:olc7m0"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_police_refute_reports_claiming_release_of_abducted_oyo_1xew3hk",
-        "title": "Police refute reports claiming release of abducted Oyo pupils and teachers",
-        "summary": "The Nigeria Police Force has dismissed reports claiming that abducted pupils and teachers in Oyo State have been released by their captors, describing the information as false and misleading. \nThe post Police refute reports claiming release of abducted Oyo pupils and teachers appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T10:24:25.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "police refute reports claiming release of abducted oyo",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:74nqnl"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_85_of_agriculture_ministry_s_2026_budget_released_1gng87z",
-        "title": "85% of agriculture ministry’s 2026 budget released – Finance Ministry",
-        "summary": "The Ministry of Finance has released GH¢1.677 billion to the Ministry of Food and Agriculture in 2026, representing 85 percent of the ministry’s approved budget for Goods and Services and Capital Expenditure (CAPEX). The disclosure was made by the Deputy Minister for Finance, Thomas Nyarko Ampem, during the launch of Ghana’s National Pact for Agricultural […]\nThe post 85% of agriculture mini",
-        "occurredAt": "2026-06-04T10:22:44.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "85 of agriculture ministry s 2026 budget released",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1ie93y1"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_analysts_predict_a_turning_point_for_digital_assets_j2n30n",
-        "title": "Analysts Predict a Turning Point for Digital Assets in 2026",
-        "summary": "Predictions about the future of digital assets have become increasingly ambitious as 2026 approaches. Investors seeking to understand the latest\nread more Analysts Predict a Turning Point for Digital Assets in 2026",
-        "occurredAt": "2026-06-04T10:19:49.000Z",
-        "countryCodes": [],
-        "topic": "analysts predict a turning point for digital assets",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:13oechx"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_investors_reward_reform_as_sa_s_outlook_improves_1q1n8r5",
-        "title": "Investors reward reform as SA’s outlook improves",
-        "summary": "Isaah Mhlanga, chief economist and head of research at RMB, explains why reforms, improving credit ratings and investor confidence are strengthening South Africa’s investment case despite rising geopolitical risks and economic uncertainty.",
-        "occurredAt": "2026-06-04T10:17:29.000Z",
-        "countryCodes": [
-          "ZA"
-        ],
-        "topic": "investors reward reform as sa s outlook improves",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:1c1jxcy"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_six_killed_as_military_truck_commercial_bus_collide_13wcast",
-        "title": "Six killed as military truck, commercial bus collide in Adamawa",
-        "summary": "The Adamawa State Police Command has confirmed the death of six persons, including four members of the National Youth Service\nread more Six killed as military truck, commercial bus collide in Adamawa",
-        "occurredAt": "2026-06-04T10:14:42.000Z",
-        "countryCodes": [],
-        "topic": "six killed as military truck commercial bus collide",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1a26fhw"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_netflix_deploys_ai_to_solve_content_overload_as_mlzjll",
-        "title": "Netflix deploys AI to solve content overload as streaming choices multiply",
-        "summary": "Netflix is using generative AI to help subscribers decide what to watch on its platform, as the streaming company looks to ease the frustration of navigating an ever-growing content library. \nThe post Netflix deploys AI to solve content overload as streaming choices multiply  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T10:13:35.000Z",
-        "countryCodes": [],
-        "topic": "netflix deploys ai to solve content overload as",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:hy9tjm"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

@@ -116,6 +116,14 @@ in the same commit, so any persisted-window contamination clears in the same reg
 Run this after every "Generate brief artifact" dispatch (or after the daily cron). The
 goal is to confirm the workflow took Path A and produced a pre-production safe artifact.
 
+Steps 2-6 below can be automated: `npm run brief:audit` reads the committed artifact +
+window, reuses the validator's checks, and emits a deterministic JSON report covering
+counts, validator failures / warnings, oilStance labels by country, and each verified
+claim's resolved provenance (events, methodologies, source ids, figures, plus any
+unresolved refs). It exits 1 on validator failures and 0 otherwise - useful for CI
+archival or piping into a triage doc. Step 1 (workflow-log inspection) and step 7
+(verdict) still want a human.
+
 1. **Workflow log**: confirm step order in the run is
    `generate -> validate -> verify -> build -> commit`. The "Validate the freshly
    generated artifact before commit" step must show non-skipped output (Path A, not C).

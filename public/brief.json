@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T14:03:38.222Z",
+  "generatedAt": "2026-06-07T19:31:23.926Z",
   "brief": {
     "id": "live_2026-06-07",
     "date": "2026-06-07",
@@ -143,6 +143,452 @@
       }
     ],
     "events": [
+      {
+        "id": "evt_seven_opec_countries_to_raise_oil_output_in_cb5l6b",
+        "title": "Seven OPEC+ countries to raise oil output in July",
+        "summary": "The decision was announced following a virtual meeting attended by Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman, which reviewed global market conditions and outlook.",
+        "occurredAt": "2026-06-07T18:50:36.000Z",
+        "countryCodes": [],
+        "topic": "seven opec countries to raise oil output in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:1e5c6ch"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ruto_begins_europe_tour_to_woo_investors_expand_jtumx1",
+        "title": "Ruto begins Europe tour to woo investors, expand Kenya exports",
+        "summary": "The visit will take the President to Belgium, Norway and Finland, where he is expected to hold bilateral talks with government leaders, engage investors and participate in business forums focused on trade, manufacturing, renewable energy and technology.",
+        "occurredAt": "2026-06-07T18:44:57.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "ruto begins europe tour to woo investors expand",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:1som25n"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_2027_accord_party_unveils_lagos_governorship_senatorial_candidates_174u14o",
+        "title": "2027: Accord Party unveils Lagos governorship, Senatorial candidates, reaffirms Gbenga Hashim’s presidential bid",
+        "summary": "The Lagos State chapter of the Accord Party has officially unveiled its candidates for the 2027 general election, presenting its\nread more 2027: Accord Party unveils Lagos governorship, Senatorial candidates, reaffirms Gbenga Hashim’s presidential bid",
+        "occurredAt": "2026-06-07T18:43:36.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "2027 accord party unveils lagos governorship senatorial candidates",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1fipar9"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_wind_powers_energy_security_as_global_tensions_shake_19o68rx",
+        "title": "Wind powers energy security as global tensions shake fuel markets",
+        "summary": "The global wind energy industry is increasingly being viewed as a strategic tool for energy security as geopolitical tensions, fossil\nread more Wind powers energy security as global tensions shake fuel markets",
+        "occurredAt": "2026-06-07T17:57:58.000Z",
+        "countryCodes": [],
+        "topic": "wind powers energy security as global tensions shake",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1kv5wm0"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_government_reiterates_tougher_scrutiny_for_renewal_of_mining_kba7dm",
+        "title": "Government reiterates tougher scrutiny for renewal of mining licenses",
+        "summary": "The government has reiterated its commitment to subjecting the renewal of mining concessions to stricter scrutiny as part of efforts to ensure responsible and sustainable mining in the country. Speaking at the Annual General Meeting of the Ghana Chamber of Mines, the Minister for Lands and Natural Resources, Emmanuel Armah Kofi Buah, said both local […]",
+        "occurredAt": "2026-06-07T17:55:58.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "government reiterates tougher scrutiny for renewal of mining",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:6j1dck"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_south_africa_to_crack_down_on_illegal_migrants_1gw7ppv",
+        "title": "South Africa to crack down on illegal migrants as protests surge",
+        "summary": "And will act against those who are ‘exploiting the concerns’ of its people to further their own agendas.",
+        "occurredAt": "2026-06-07T17:53:58.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "south africa to crack down on illegal migrants",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:uyq07u"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_tetracore_energy_is_driving_nigeria_s_power_gq496q",
+        "title": "How Tetracore Energy is driving Nigeria’s power infrastructure",
+        "summary": "At a time when Nigeria’s industrial sector is struggling with high energy costs and unreliable grid supply, Tetracore Energy is\nread more How Tetracore Energy is driving Nigeria’s power infrastructure",
+        "occurredAt": "2026-06-07T17:52:55.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "how tetracore energy is driving nigeria s power",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:10417up"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_meet_the_ceos_of_africa_s_largest_refineries_1xg0fgv",
+        "title": "Meet the CEOs of Africa’s largest refineries in 2026",
+        "summary": "A new class of seasoned energy executives is steering Africa’s downstream transformation in 2026, bringing together decades of experience across global oil, gas, and petrochemicals. Many have worked across major international operators, led refinery start-ups, and managed large-scale production and supply chain systems spanning Europe, Asia, the Middle East, and Africa. Now leading some of […]\nThe",
+        "occurredAt": "2026-06-07T17:31:29.000Z",
+        "countryCodes": [],
+        "topic": "meet the ceos of africa s largest refineries",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:76ovt3"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_openai_plans_biggest_chatgpt_overhaul_targets_superapp_status_l2yybq",
+        "title": "OpenAI plans biggest ChatGPT overhaul, targets “superapp” status ahead of IPO",
+        "summary": "OpenAI is planning the biggest redesign of ChatGPT since its 2022 launch, with plans to transform the chatbot into a \"superapp\" combining coding tools, AI agents, and third-party integrations, according to a report by the Financial Times. \nThe post OpenAI plans biggest ChatGPT overhaul, targets “superapp” status ahead of IPO appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T17:29:53.000Z",
+        "countryCodes": [],
+        "topic": "openai plans biggest chatgpt overhaul targets superapp status",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:er7yxe"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cppe_urges_house_of_representatives_to_reject_sugar_lkfj0s",
+        "title": "CPPE urges House of Representatives to reject Sugar-Sweetened Beverage Tax Bill",
+        "summary": "The Centre for the Promotion of Private Enterprise Centre for the Promotion of Private Enterprise has called on the House of Representatives to reject the Sugar-Sweetened Beverage Tax Bill recently passed by the Senate, warning that the proposal could worsen Nigeria’s business environment. \nThe post CPPE urges House of Representatives to reject Sugar-Sweetened Beverage Tax Bill appeared first on N",
+        "occurredAt": "2026-06-07T16:57:30.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "cppe urges house of representatives to reject sugar",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:fqni8t"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_deputy_md_of_gse_retires_ygc16a",
+        "title": "Deputy MD of GSE retires",
+        "summary": "The Deputy Managing Director of the Ghana Stock Exchange (GSE), Frank Yoofi Mensa Berle, has retires, effective June 3, 2026. Mr. Berle joined the Exchange as Manager, Finance and Operations, in January 2004 and rose through the ranks to become the Deputy Managing Director. Over his distinguished 22-year career at the Exchange, he played a […]",
+        "occurredAt": "2026-06-07T16:51:46.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "deputy md of gse retires",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:16096ti"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_launches_agriconnect_compact_to_strengthen_food_security_wmxs1o",
+        "title": "Ghana launches AgriConnect Compact to strengthen food security, create jobs, mobilise investment",
+        "summary": "“Ghana’s AgriConnect Compact is a bold step toward building a more productive, resilient, and jobs-rich food system. By linking policy reform with investment and delivery, Ghana is creating the conditions to strengthen food security, support farmers and agribusinesses, and unlock private capital at scale,” said Guangzhe Chen, World Bank Group Vice President for Planet.",
+        "occurredAt": "2026-06-07T16:44:10.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana launches agriconnect compact to strengthen food security",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:123y6a9"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_okpebholo_courts_investors_as_skyewise_unveils_n9bn_investments_mvyn9",
+        "title": "Okpebholo courts investors as Skyewise unveils N9bn investments in Edo",
+        "summary": "The Edo State Government has inaugurated Skyewise Group’s N9 billion investments, assuring investors of a business-friendly environment backed by improved\nread more Okpebholo courts investors as Skyewise unveils N9bn investments in Edo",
+        "occurredAt": "2026-06-07T16:39:52.000Z",
+        "countryCodes": [],
+        "topic": "okpebholo courts investors as skyewise unveils n9bn investments",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:p2cf7c"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ndlea_intercepts_large_opioids_consignments_in_taraba_1wvo98i",
+        "title": "NDLEA intercepts large opioids consignments in Taraba",
+        "summary": "The National Drug Law Enforcement Agency NDLEA, on Sunday, said it has intercepted  large consignments of various opioids and illicit\nread more NDLEA intercepts large opioids consignments in Taraba",
+        "occurredAt": "2026-06-07T16:30:45.000Z",
+        "countryCodes": [],
+        "topic": "ndlea intercepts large opioids consignments in taraba",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:hu5x9w"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fccpc_denies_a_hand_in_the_reported_airtime_13nxb25",
+        "title": "FCCPC denies a hand in the reported airtime credit overhaul",
+        "summary": "In a statement issued on Saturday, Ondaje Ijagwu, the commission's spokesperson, disclosed that the commission played no part in the development as alleged in recent media reports.\nThe post FCCPC denies a hand in the reported airtime credit overhaul appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-07T16:28:48.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "fccpc denies a hand in the reported airtime",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1p7os40"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigeria_airlines_record_africa_s_fastest_domestic_seat_thd94c",
+        "title": "Nigeria airlines record Africa’s fastest domestic seat capacity growth in June",
+        "summary": "Nigeria airlines recorded Africa’s fastest domestic seat capacity growth in June 2026, rising 21.7% year-on-year. \nThe post Nigeria airlines record Africa’s fastest domestic seat capacity growth in June appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T15:39:28.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigeria airlines record africa s fastest domestic seat",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:whua05"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_watch_ramaphosa_speaks_to_the_nation_about_illegal_14934p4",
+        "title": "WATCH: Ramaphosa speaks to the nation about illegal migration",
+        "summary": "Catch the replay or read the president’s full speech here.",
+        "occurredAt": "2026-06-07T15:34:03.000Z",
+        "countryCodes": [],
+        "topic": "watch ramaphosa speaks to the nation about illegal",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:13p0m5d"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_wema_bank_suspends_engagements_on_x_amid_concerns_aqjf8d",
+        "title": "Wema Bank suspends engagements on X amid concerns over fraud, impersonation",
+        "summary": "The lender disclosed the suspension of its engagements on X in a post on Sunday, urging customers to halt interactions with its ‘Wema’ and ‘Alat’ accounts on the platform till further notice.\nThe post Wema Bank suspends engagements on X amid concerns over fraud, impersonation appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-07T14:47:16.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "wema bank suspends engagements on x amid concerns",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:11rphcq"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_gachagua_impeachment_case_verdict_could_reshape_opposition_190yyka",
+        "title": "How Gachagua Impeachment Case Verdict Could Reshape Opposition Power Matrix Ahead of 2027",
+        "summary": "As Kenya awaits a court ruling on former Deputy President Rigathi Gachagua’s impeachment case, attention is increasingly shifting from the legal outcome itself to its potential political consequences. Whether the court upholds or overturns his impeachment, the bigger question is what Gachagua’s return to the political centre stage could mean for an opposition coalition that […]",
+        "occurredAt": "2026-06-07T14:42:14.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "how gachagua impeachment case verdict could reshape opposition",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:11lk2ml"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_5th_west_africa_pharma_healthcare_expo_takes_off_1e6uk2l",
+        "title": "5th West Africa Pharma & Healthcare Expo takes off June 8, 2026",
+        "summary": "The conference will bring together industry leaders, policymakers, healthcare professionals, researchers, manufacturers, investors, and innovators to discuss emerging healthcare trends, pharmaceutical innovation, local manufacturing capabilities, healthcare accessibility, medical technologies, regulatory developments, and collaborative opportunities for sustainable sector growth across West Africa",
+        "occurredAt": "2026-06-07T14:29:02.000Z",
+        "countryCodes": [],
+        "topic": "5th west africa pharma healthcare expo takes off",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:um5obb"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ps_omollo_assures_kenyans_of_ebola_preparedness_7zgvvk",
+        "title": "PS Omollo Assures Kenyans of Ebola Preparedness",
+        "summary": "Kenyans should not panic over the threat of Ebola, as the government has put in place robust surveillance, screening and emergency response measures at all border entry points to prevent and contain any potential outbreak, Principal Secretary for Internal Security and National Administration Raymond Omollo has said. Speaking during an inspection tour of the Taveta-Holili […]",
+        "occurredAt": "2026-06-07T14:27:12.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "ps omollo assures kenyans of ebola preparedness",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1yg989s"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_companies_paid_dividends_last_week_see_their_dividend_prb49a",
+        "title": "Companies paid dividends last week, see their dividend yields",
+        "summary": "BUA Foods Plc emerged as the highest-yielding stock among the seven companies that paid dividends to shareholders last week, with a dividend yield of 2.98%, according to a Nairametrics analysis of the price adjustment data published by the Nigerian Exchange (NGX).\nThe post Companies paid dividends last week, see their dividend yields appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T14:05:26.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "companies paid dividends last week see their dividend",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:olzvit"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
       {
         "id": "evt_court_declares_n110_billion_suvs_allowances_for_lawmakers_10fozys",
         "title": "Court declares N110 billion SUVs, allowances for lawmakers unlawful",
@@ -294,6 +740,27 @@
           ],
           "sourceIds": [
             "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_sacco_led_youth_credit_expands_as_informal_finance_11vedps",
+        "title": "Sacco-led youth credit expands as informal finance fills lending gap",
+        "summary": "Kenya's youth credit market is shifting toward Sacco-led lending models as traditional banking continues to exclude young borrowers with limited collateral and informal income streams.",
+        "occurredAt": "2026-06-07T13:08:00.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "sacco led youth credit expands as informal finance",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:1hugqgm"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -5568,23 +6035,21 @@
         }
       },
       {
-        "id": "evt_co_op_bank_south_sudan_hosts_cooperatives_forum_1xvdk68",
+        "id": "evt_co_op_bank_south_sudan_hosts_cooperatives_forum_5qurod",
         "title": "Co-op Bank South Sudan Hosts Cooperatives Forum",
         "summary": "The Co-operative Bank of South Sudan (CBSS) hosted 41 cooperative societies based in Northern Bahr el Ghazal State (NBG) for a capacity-building forum to deepen the impact of the cooperative model in farming and business in the State and across South Sudan.",
         "occurredAt": "2026-06-05T07:41:39.000Z",
         "countryCodes": [],
         "topic": "co op bank south sudan hosts cooperatives forum",
-        "status": "corroborated",
+        "status": "single_source",
         "corroboration": {
           "newsItemIds": [
-            "src.businesstoday_ke:3voasc",
-            "src.biznakenya_ke:1t2zmxv"
+            "src.businesstoday_ke:3voasc"
           ],
           "sourceIds": [
-            "src.businesstoday_ke",
-            "src.biznakenya_ke"
+            "src.businesstoday_ke"
           ],
-          "independentSourceCount": 2,
+          "independentSourceCount": 1,
           "primarySourceCount": 0
         }
       },
@@ -7195,516 +7660,6 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_umb_appoints_victoria_esinam_attipoe_as_division_head_1lc5tms",
-        "title": "UMB appoints Victoria Esinam Attipoe as Division Head to accelerate retail transformation and customer growth strategy",
-        "summary": "Universal Merchant Bank (UMB) has appointed accomplished banking executive Victoria Esinam Attipoe as Branch Network Head for its Greater Accra Division, in a strategic move that underscores the Bank’s renewed focus on retail banking excellence, operational transformation, and customer-centric growth. With over two decades of proven leadership across retail, personal, private banking, and banking ",
-        "occurredAt": "2026-06-04T19:28:08.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "umb appoints victoria esinam attipoe as division head",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1sb41k2"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_have_we_mistaken_csr_for_sustainability_why_businesses_1g31dqe",
-        "title": "Have we mistaken CSR for Sustainability?: Why businesses need to rethink ESG",
-        "summary": "By Nana Adwoa BAAFI For many organisations across Ghana, Environmental, Social and Governance (ESG) principles often look like corporate donations, tree planting exercises, school renovations, scholarship schemes or community outreach programmes. These initiatives although undeniably contribute to social development, risk reducing ESG to acts of corporate philanthropy hence missing the bigger pict",
-        "occurredAt": "2026-06-04T19:24:37.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "have we mistaken csr for sustainability why businesses",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:6bspkh"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenya_safari_by_season_the_best_time_to_1sugqbw",
-        "title": "Kenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration & Perfect Weather",
-        "summary": "So you have decided Kenya is your next adventure. Smart choice. But now comes the question that trips up almost every traveller: When exactly should you go? The truth is, Kenya does not have a bad time to visit. What it has is different seasons that each deliver a completely different experience. Your job is […]\nKenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration & Perfect",
-        "occurredAt": "2026-06-04T18:57:15.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kenya safari by season the best time to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznakenya_ke:lxvbyl"
-          ],
-          "sourceIds": [
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kra_forgoes_sh9_1bn_in_taxes_to_cushion_gjq5rk",
-        "title": "KRA forgoes Sh9.1bn in taxes to cushion consumers from fuel price surge",
-        "summary": "KRA Commissioner for Customs and Border Control Dr. Lilian Nyawanda further revealed that taxes amounting to Sh5.1 billion paid by various Oil Marketing Companies through the principal importer of the MT PALOMA cargo will be transferred to customs declarations associated with subsequent fuel imports.",
-        "occurredAt": "2026-06-04T18:40:33.000Z",
-        "countryCodes": [],
-        "topic": "kra forgoes sh9 1bn in taxes to cushion",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:h4dvh4"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_patrick_analo_akivaga_man_busted_with_sh65_million_1u4x7h3",
-        "title": "Patrick Analo Akivaga: Man busted with Sh65 million cash at his home",
-        "summary": "Nairobi County chief officer Patrick Analo Akivaga was on Thursday busted by detectives from the Ethics and Anti-Corruption Commission (EACC) with millions of cash at his home. Analo was busted with Sh65.3 million at his residence in Syokimau, Machakos County. According to the EACC, the money was in batches of Sh51,300,000 and USD130,000 (equivalent to Sh14,605,250). […]\nPatrick Analo Akivaga: Man",
-        "occurredAt": "2026-06-04T17:58:15.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "patrick analo akivaga man busted with sh65 million",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznakenya_ke:opfkrb"
-          ],
-          "sourceIds": [
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_shell_executives_ignored_warnings_over_niger_delta_pipeline_1wotg9u",
-        "title": "Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal",
-        "summary": "Newly released internal Shell documents have revealed that senior executives approved the continued operation of oil pipelines in Nigeria’s Niger Delta despite repeated warnings from engineers about environmental risks and the potential for oil spills. \nThe post Shell executives ignored warnings over Niger Delta pipeline risks, internal documents reveal  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T17:58:15.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "shell executives ignored warnings over niger delta pipeline",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:5vnz9"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_capital_movement_takes_centre_stage_at_islamic_economic_1bsmdt4",
-        "title": "Capital movement takes centre stage at Islamic economic summit",
-        "summary": "Hamza K Bawazir, secretary-general of the Council for Islamic Banks and Financial Institutions, on how Islamic finance supports financial stability, economic partnerships and sustainable growth.",
-        "occurredAt": "2026-06-04T17:56:45.000Z",
-        "countryCodes": [],
-        "topic": "capital movement takes centre stage at islamic economic",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:kat0p4"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_youth_in_agribusiness_land_trust_fund_targets_500_x4kfwq",
-        "title": "Youth in Agribusiness Land Trust Fund Targets 500,000 Young Entrepreneurs",
-        "summary": "The Federal Ministry of Youth Development (FMYD), in partnership with the International Institute for Tropical Agriculture (IITA), has launched the National Youth in Agribusiness Land Trust Fund (YiALTF). This initiative aims to improve land access and unlock opportunities for over 500,000 young Nigerians building sustainable agribusiness enterprises. Supported by First City Monument Bank (FCMB), ",
-        "occurredAt": "2026-06-04T17:04:10.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "youth in agribusiness land trust fund targets 500",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1rhvc66"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_oluwatomisin_ashimolowo_building_the_systems_powering_african_commerce_1xavq80",
-        "title": "Oluwatomisin Ashimolowo: Building the Systems Powering African Commerce",
-        "summary": "Oluwatomisin “Tomi” Ashimolowo is a fintech entrepreneur, strategic partnerships leader, and advocate for African business growth whose work sits at the intersection of financial infrastructure, cross-border commerce, and economic development. His journey began long before founding Betaling. As a Nigerian student studying in Kenya, Tomi experienced firsthand the challenges of moving money across b",
-        "occurredAt": "2026-06-04T17:03:17.000Z",
-        "countryCodes": [
-          "NG",
-          "KE"
-        ],
-        "topic": "oluwatomisin ashimolowo building the systems powering african commerce",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:5kenne"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kibo_africa_targets_10_000_electric_motorcycles_in_1q2j08o",
-        "title": "Kibo Africa targets 10,000 electric motorcycles in Kenya within a year",
-        "summary": "Kibo Africa Director Felix Mulwa said the company has spent the past three years testing the motorcycles and is now ready for commercial deployment, beginning with Nairobi before expanding to other regions.",
-        "occurredAt": "2026-06-04T16:59:48.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kibo africa targets 10 000 electric motorcycles in",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:16uli7h"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_flutterwave_partners_tempo_blockchain_to_power_stablecoin_settlements_8vn4o",
-        "title": "Flutterwave partners Tempo blockchain to power stablecoin settlements across Africa",
-        "summary": "African fintech giant, Flutterwave has entered a strategic partnership with Tempo, a blockchain settlement network, to build stablecoin-powered payment infrastructure across Africa. \nThe post Flutterwave partners Tempo blockchain to power stablecoin settlements across Africa  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T16:56:50.000Z",
-        "countryCodes": [],
-        "topic": "flutterwave partners tempo blockchain to power stablecoin settlements",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:9r381a"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_tana_river_mcas_go_three_months_without_salaries_ond9ev",
-        "title": "Tana River MCAs go three months without salaries amid budget dispute",
-        "summary": "TANA RIVER, Kenya, June 4 – Members of the Tana River County Assembly and staff have reportedly gone without salaries for three months, raising concerns over the assembly’s financial management and triggering tensions between the legislative and executive arms of the county government. Sources familiar with the matter say MCAs and assembly staff have not […]",
-        "occurredAt": "2026-06-04T16:54:39.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "tana river mcas go three months without salaries",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:y7s259"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_naicom_advances_transition_to_risk_based_supervision_appoints_uf8vks",
-        "title": "NAICOM advances transition to risk-based supervision, appoints EY Consulting Actuary",
-        "summary": "The National Insurance Commission (NAICOM) has moved to accelerate the transition of Nigeria’s insurance industry to a risk-based supervisory and capital regime, as part of efforts to strengthen financial stability and enhance policyholder protection. \nThe post NAICOM advances transition to risk-based supervision, appoints EY Consulting Actuary  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T16:45:04.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "naicom advances transition to risk based supervision appoints",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1lqvd2t"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kra_reveals_ksh9_1b_revenue_loss_after_fuel_v9fpzt",
-        "title": "KRA Reveals Ksh9.1B Revenue Loss After Fuel VAT Reduction",
-        "summary": "Kenya Revenue Authority (KRA) has revealed that it gave up Ksh9.1 billion in tax revenue between April and May 2026 after the government reduced Value Added Tax (VAT) on fuel from 16 per cent to 8 per cent. The tax cut was introduced as part of measures aimed at shielding consumers and businesses from the […]",
-        "occurredAt": "2026-06-04T16:43:04.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kra reveals ksh9 1b revenue loss after fuel",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businesstoday_ke:ise7m2"
-          ],
-          "sourceIds": [
-            "src.businesstoday_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_fg_launches_350_000_fao_backed_programme_to_pkcsxb",
-        "title": "FG launches $350,000 FAO-backed programme to tackle bird flu outbreaks",
-        "summary": "The Federal Government has launched a $350,000 Food and Agriculture Organization Technical Cooperation Programme (FAO-TCP) aimed at strengthening Nigeria’s response to recurring bird flu outbreaks. \nThe post FG launches $350,000 FAO-backed programme to tackle bird flu outbreaks    appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T16:27:28.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "fg launches 350 000 fao backed programme to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1biu8wu"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_mtn_shuffles_continental_leadership_to_power_ambition_2030_1fjk56i",
-        "title": "MTN shuffles continental leadership to power Ambition 2030",
-        "summary": "MTN Group, Africa’s telecommunications powerhouse, has announced a sweeping overhaul of its top-tier executive leadership across the continent, tapping highly experienced internal talent to steer its multi-billion-dollar digital and financial expansion.",
-        "occurredAt": "2026-06-04T16:05:30.000Z",
-        "countryCodes": [],
-        "topic": "mtn shuffles continental leadership to power ambition 2030",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:xgfxuc"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_tech_firms_rush_to_put_small_shops_online_bo0o8d",
-        "title": "Tech firms rush to put small shops online as market race intensifies",
-        "summary": "Competition to digitise Kenya's MSMEs is intensifying as tech firms target an underserved market despite rising internet access, digital payments and e-commerce growth.",
-        "occurredAt": "2026-06-04T15:35:10.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "tech firms rush to put small shops online",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.standardmedia_ke:11jq9y2"
-          ],
-          "sourceIds": [
-            "src.standardmedia_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_building_economic_resilience_how_filma_is_creating_dignified_14qk8tc",
-        "title": "Building Economic Resilience: How FILMA is creating dignified livelihoods in rural Ghana",
-        "summary": "In the landscape of rural development, the transition from subsistence to sustainability is often cited as a goal; however, it is rarely measured with the precision of a fintech operation. Reflecting on the insights shared during the inaugural Financial Inclusion for Last Mile Actors (FILMA) Learning Event at the Accra Marriott Hotel, which hosted over […]",
-        "occurredAt": "2026-06-04T14:56:37.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "building economic resilience how filma is creating dignified",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:alwdli"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_fao_strengthens_approach_to_accelerate_agrifood_systems_transformation_1e6rfka",
-        "title": "FAO strengthens approach to accelerate agrifood systems transformation in Africa",
-        "summary": "Senior leaders of the Food and Agriculture Organization of the United Nations (FAO) from across Africa gathered in Accra for the opening of the 15th FAO Regional Management Team (RMT15) Meeting, with a strong focus on innovation, improving efficiency, accelerating delivery and scaling impact for Members across the continent. Held under the theme “Driving Efficiency […]",
-        "occurredAt": "2026-06-04T14:43:30.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "fao strengthens approach to accelerate agrifood systems transformation",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:um24l1"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_iibgroup_expands_chevening_partnership_to_ethiopia_as_part_1ko0bg4",
-        "title": "iibGroup Expands Chevening Partnership to Ethiopia as Part of Broader Regional Engagement",
-        "summary": "Building on its successful partnership with the Chevening Scholarships programme in Cabo Verde and Djibouti, iibGroup has renewed its support for the 2026–2027 academic year and expanded the initiative to Ethiopia. This year, three fully funded Chevening scholarships will be awarded across Africa, one each in Cabo Verde, Djibouti, and Ethiopia, reinforcing iib’s commitment to […]",
-        "occurredAt": "2026-06-04T14:37:21.000Z",
-        "countryCodes": [
-          "ET"
-        ],
-        "topic": "iibgroup expands chevening partnership to ethiopia as part",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalethiopia_et:50v7mr"
-          ],
-          "sourceIds": [
-            "src.capitalethiopia_et"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_agric_minister_demands_10_budget_allocation_for_agriculture_1u9cail",
-        "title": "Agric Minister demands 10% budget allocation for agriculture in Africa",
-        "summary": "The Minister for Food and Agriculture, Eric Opoku, has criticised the low investment in agriculture across Africa and called on governments to allocate at least 10 percent of their annual budgets to the sector to boost food security and economic growth.",
-        "occurredAt": "2026-06-04T14:26:18.000Z",
-        "countryCodes": [],
-        "topic": "agric minister demands 10 budget allocation for agriculture",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1wrdf6p"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_africa_must_gain_more_from_billion_dollar_cocoa_1s3rfzy",
-        "title": "Africa must gain more from billion-dollar cocoa-chocolate industry—Agric Minister",
-        "summary": "The Minister for Food and Agriculture, Eric Opoku, has called for Africa to derive greater value from the billion-dollar cocoa and chocolate industry, stressing the need for structural transformation in the continent’s agricultural systems to ensure producers benefit more from the value chain.",
-        "occurredAt": "2026-06-04T14:23:49.000Z",
-        "countryCodes": [],
-        "topic": "africa must gain more from billion dollar cocoa",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1saagq5"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_agriculture_can_eliminate_youth_unemployment_in_africa_agric_1chxym3",
-        "title": "Agriculture can eliminate youth unemployment in Africa—Agric Minister",
-        "summary": "The Minister for Food and Agriculture, Eric Opoku, has emphasised the transformative potential of agriculture in tackling youth unemployment across Africa, describing the sector as a critical pathway to economic growth, stability, and peace on the continent.",
-        "occurredAt": "2026-06-04T14:16:56.000Z",
-        "countryCodes": [],
-        "topic": "agriculture can eliminate youth unemployment in africa agric",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:qxzsxh"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_court_orders_final_forfeiture_of_n2_billion_assets_pafhwo",
-        "title": "Court orders final forfeiture of N2 billion assets linked to bank’s staff, others",
-        "summary": "The Federal High Court in Abuja has ordered the final forfeiture of assets worth N2 billion linked to a financial sector staff member, Alonge Opeyemi Yetunde and others. \nThe post Court orders final forfeiture of N2 billion assets linked to bank’s staff, others appeared first on Nairametrics.",
-        "occurredAt": "2026-06-04T14:16:06.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "court orders final forfeiture of n2 billion assets",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1avrdy3"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_three_days_in_sizekhaya_celebrates_strong_national_response_210j3k",
-        "title": "Three days in: Sizekhaya celebrates strong national response; first PowerBall multi-millionnaire and expanded National Lottery access",
-        "summary": "'Our first few days have delivered tremendous encouragement.'",
-        "occurredAt": "2026-06-04T14:08:41.000Z",
-        "countryCodes": [],
-        "topic": "three days in sizekhaya celebrates strong national response",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:1jp0t2y"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

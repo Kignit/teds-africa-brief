@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T08:57:04.490Z",
+  "generatedAt": "2026-06-07T09:40:55.869Z",
   "brief": {
     "id": "live_2026-06-07",
     "date": "2026-06-07",
@@ -144,6 +144,130 @@
     ],
     "events": [
       {
+        "id": "evt_healthcare_entrepreneurship_is_key_to_unlocking_nigeria_s_1xdbctz",
+        "title": "Healthcare entrepreneurship is key to unlocking Nigeria’s healthcare future – Mbelu",
+        "summary": "With over two decades of medical practice, healthcare advocacy, and entrepreneurship, Dr Chijioke Mbelu has emerged as one of Nigeria’s\nread more Healthcare entrepreneurship is key to unlocking Nigeria’s healthcare future – Mbelu",
+        "occurredAt": "2026-06-07T09:25:54.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "healthcare entrepreneurship is key to unlocking nigeria s",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:iv8kq4"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_healthy_living_dettol_hygiene_quest_phase_3_organisers_1ui735t",
+        "title": "Healthy living: Dettol Hygiene Quest Phase 3 organisers target 800,000 beneficiaries",
+        "summary": "Dettol, in partnership with The Wellbeing Foundation Africa (WBFA), has officially flagged off Phase 3 of the Dettol Hygiene Quest\nread more Healthy living: Dettol Hygiene Quest Phase 3 organisers target 800,000 beneficiaries",
+        "occurredAt": "2026-06-07T09:19:33.000Z",
+        "countryCodes": [],
+        "topic": "healthy living dettol hygiene quest phase 3 organisers",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:e5g3a2"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_mining_firm_advances_cocoa_rehabilitation_programme_launches_plantain_1vfe8ek",
+        "title": "Mining firm advances Cocoa rehabilitation programme, launches plantain rehabilitation to strengthen livelihoods in host communities",
+        "summary": "Nigeria’s first large-scale gold mining company, Segilola Resources Operating Limited (SROL), has expanded its Livelihood Restoration Programme by launching the\nread more Mining firm advances Cocoa rehabilitation programme, launches plantain rehabilitation to strengthen livelihoods in host communities",
+        "occurredAt": "2026-06-07T09:13:09.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "mining firm advances cocoa rehabilitation programme launches plantain",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:eqqj5h"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigerian_woman_foluke_areola_assumes_office_as_first_1cwn6pk",
+        "title": "Nigerian woman, Foluke Areola, assumes office as first African president of World Aquaculture Society",
+        "summary": "The global aquaculture community is celebrating a historic milestone as Nigerian aquaculture Expert, Foluke Omotayo Areola, officially assumed office as\nread more Nigerian woman, Foluke Areola, assumes office as first African president of World Aquaculture Society",
+        "occurredAt": "2026-06-07T09:09:20.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigerian woman foluke areola assumes office as first",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1ronkjk"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_cbn_s_new_fx_manual_to_raise_dollar_1l94ilm",
+        "title": "CBN’s new FX manual to raise dollar liquidity, enhance market confidence",
+        "summary": "The implementation of the fourth edition of the Foreign Exchange Manual by the Central Bank of Nigeria (CBN) was recently\nread more CBN’s new FX manual to raise dollar liquidity, enhance market confidence",
+        "occurredAt": "2026-06-07T09:08:18.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "cbn s new fx manual to raise dollar",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:kgrjr"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_japa_10_countries_making_it_easier_for_nigerians_s8gcis",
+        "title": "Japa: 10 countries making it easier for Nigerians to relocate in 2026",
+        "summary": "In this article, Nairametrics highlights 10 countries that announced immigration, visa, or travel reforms in the first half of 2026 that could make it easier for Nigerians to travel, work, relocate, or secure long-term residency opportunities. \nThe post Japa: 10 countries making it easier for Nigerians to relocate in 2026 appeared first on Nairametrics.",
+        "occurredAt": "2026-06-07T08:58:16.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "japa 10 countries making it easier for nigerians",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:v6a8qt"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_nigeria_s_domestic_air_passenger_traffic_hits_13_vq0csh",
         "title": "Nigeria’s domestic air passenger traffic hits 13.09 million in 2025 – FAAN",
         "summary": "Nigeria’s domestic air passenger traffic hit 13.09 million in 2025, reflecting steady growth in local air travel demand across the country. \nThe post Nigeria’s domestic air passenger traffic hits 13.09 million in 2025 – FAAN appeared first on Nairametrics.",
@@ -186,14 +310,14 @@
         }
       },
       {
-        "id": "evt_nestl_launches_8216_nido_iron_for_focus_8217_1fudc1e",
-        "title": "Nestlé launches &#8216;NIDO Iron for Focus&#8217; campaign to tackle childhood iron deficiency",
-        "summary": "Nestlé Ghana has officially launched its &#8216;NIDO Iron for Focus&#8217; campaign as part of efforts to raise awareness on the importance of iron in children’s nutrition and cognitive development. The campaign, launched on Thursday, May 28, 2026, is part of Nestlé’s flagship NIDO brand initiative aimed at promoting healthy growth, improved concentration and better learning [&#8230;]\nThe post Nes",
+        "id": "evt_nestl_launches_nido_iron_for_focus_campaign_to_1fudc1e",
+        "title": "Nestlé launches ‘NIDO Iron for Focus’ campaign to tackle childhood iron deficiency",
+        "summary": "Nestlé Ghana has officially launched its ‘NIDO Iron for Focus’ campaign as part of efforts to raise awareness on the importance of iron in children’s nutrition and cognitive development. The campaign, launched on Thursday, May 28, 2026, is part of Nestlé’s flagship NIDO brand initiative aimed at promoting healthy growth, improved concentration and better learning […]\nThe post Nestlé launches ‘NIDO",
         "occurredAt": "2026-06-07T08:42:28.000Z",
         "countryCodes": [
           "GH"
         ],
-        "topic": "nestl launches 8216 nido iron for focus 8217",
+        "topic": "nestl launches nido iron for focus campaign to",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -209,7 +333,7 @@
       {
         "id": "evt_living_with_finesse_the_most_elegant_people_know_tq6sj5",
         "title": "Living with Finesse: The most elegant people know how to pause",
-        "summary": "&#8220;Maturity is often revealed in the moments when you almost reacted… but chose composure instead.&#8221; One of the clearest signs of maturity is not intelligence. It is restraint. It is the ability to pause before reacting, interrupting or speaking emotionally. We live in a world that rewards quick replies, fast opinions and speedy reactions. This [&#8230;]\nThe post Living with Finesse: The ",
+        "summary": "“Maturity is often revealed in the moments when you almost reacted… but chose composure instead.” One of the clearest signs of maturity is not intelligence. It is restraint. It is the ability to pause before reacting, interrupting or speaking emotionally. We live in a world that rewards quick replies, fast opinions and speedy reactions. This […]\nThe post Living with Finesse: The most elegant peopl",
         "occurredAt": "2026-06-07T08:36:22.000Z",
         "countryCodes": [],
         "topic": "living with finesse the most elegant people know",
@@ -247,7 +371,7 @@
       {
         "id": "evt_why_ethiopia_should_stop_calling_road_crashes_accidents_nxwqwf",
         "title": "Why Ethiopia should stop calling road crashes “Accidents”",
-        "summary": "The night of May 30, 2026 was an important night for football fans across the globe. English Premiership champions Arsenal battled French League One Champions Paris Saint Germain for the UEFA Champions League final.  This match had a particularly high anticipation in Addis Ababa where there is a large Arsenal fan base. The week of [&#8230;]",
+        "summary": "The night of May 30, 2026 was an important night for football fans across the globe. English Premiership champions Arsenal battled French League One Champions Paris Saint Germain for the UEFA Champions League final.  This match had a particularly high anticipation in Addis Ababa where there is a large Arsenal fan base. The week of […]",
         "occurredAt": "2026-06-07T08:17:41.000Z",
         "countryCodes": [
           "ET"
@@ -268,7 +392,7 @@
       {
         "id": "evt_poetry_corner_with_kwesi_bissue_our_climate_changed_tg4pdq",
         "title": "Poetry Corner with Kwesi BISSUE: Our climate changed",
-        "summary": "See what we have done See what we have done to our cli-mate Our earth mate See what we have changed See what has changed In our cli-mate Our earth mate &#160; See how we changed our climate Chlorofluorocarbons we emitted Emissions from aerosls and cannisters Emissions from refrigerators and freezers Emissions from the industrialised [&#8230;]\nThe post Poetry Corner with Kwesi BISSUE: Our climate c",
+        "summary": "See what we have done See what we have done to our cli-mate Our earth mate See what we have changed See what has changed In our cli-mate Our earth mate   See how we changed our climate Chlorofluorocarbons we emitted Emissions from aerosls and cannisters Emissions from refrigerators and freezers Emissions from the industrialised […]\nThe post Poetry Corner with Kwesi BISSUE: Our climate changed appe",
         "occurredAt": "2026-06-07T08:16:57.000Z",
         "countryCodes": [],
         "topic": "poetry corner with kwesi bissue our climate changed",
@@ -325,7 +449,7 @@
       {
         "id": "evt_name_rahel_nigussie_cy2c6f",
         "title": "Name:Rahel Nigussie",
-        "summary": "2 Education : ( የት/ት ደረጃ) 10 3 Company Name ( የካምፓኒ ስም) Rich Coffee 4 Title; : ( የስራ ድርሻህ) Owner 5 Founded in; ( መቼ ተመሰረተ ) 2013 6 What it do; (ምንድነው የምትሰሩት)Coffee and Tea services 7 Head quarter ( መስሪያቤት )Addis Ababa 8 Start up capital ( በምን ያህል ገንዘብ ስራዉን [&#8230;]",
+        "summary": "2 Education : ( የት/ት ደረጃ) 10 3 Company Name ( የካምፓኒ ስም) Rich Coffee 4 Title; : ( የስራ ድርሻህ) Owner 5 Founded in; ( መቼ ተመሰረተ ) 2013 6 What it do; (ምንድነው የምትሰሩት)Coffee and Tea services 7 Head quarter ( መስሪያቤት )Addis Ababa 8 Start up capital ( በምን ያህል ገንዘብ ስራዉን […]",
         "occurredAt": "2026-06-07T08:13:49.000Z",
         "countryCodes": [
           "ET"
@@ -346,7 +470,7 @@
       {
         "id": "evt_invest_in_ethiopian_cities_startup_ecosystems_for_a_9raumn",
         "title": "Invest in Ethiopian cities startup ecosystems for a transformational and sustainable private sector led economy",
-        "summary": "Government versus Private Sector Led Economies State led command and mixed economies are characterized by government owning major means of production. The state allocates resources via directs investments. The government directly controls prices be it for inputs, goods, services, Foreign Exchange (FX) or interest rates. They feature dominance of State Owned Enterprises (SOEs) and substantial [&#82",
+        "summary": "Government versus Private Sector Led Economies State led command and mixed economies are characterized by government owning major means of production. The state allocates resources via directs investments. The government directly controls prices be it for inputs, goods, services, Foreign Exchange (FX) or interest rates. They feature dominance of State Owned Enterprises (SOEs) and substantial […]",
         "occurredAt": "2026-06-07T08:12:19.000Z",
         "countryCodes": [
           "ET"
@@ -367,7 +491,7 @@
       {
         "id": "evt_prosperity_gospel_false_prophets_and_the_money_scam_jps5d4",
         "title": "Prosperity gospel, false prophets and the money scam",
-        "summary": "Religion has historically functioned as a source of moral guidance, spiritual meaning, and social cohesion. Across centuries, faith institutions have offered comfort to the poor, challenged injustice, and shaped ethical values within society. Yet religion has also repeatedly been exploited by individuals who weaponise belief for personal gain. In contemporary Christianity, the rise of the [&#8230;",
+        "summary": "Religion has historically functioned as a source of moral guidance, spiritual meaning, and social cohesion. Across centuries, faith institutions have offered comfort to the poor, challenged injustice, and shaped ethical values within society. Yet religion has also repeatedly been exploited by individuals who weaponise belief for personal gain. In contemporary Christianity, the rise of the […]",
         "occurredAt": "2026-06-07T08:11:27.000Z",
         "countryCodes": [],
         "topic": "prosperity gospel false prophets and the money scam",
@@ -386,7 +510,7 @@
       {
         "id": "evt_football_fever_grips_accra_as_odonkor_junior_claims_1d34l3h",
         "title": "Football fever grips Accra as Odonkor Junior claims GH₵100,000 prize",
-        "summary": "Football, entertainment and raw talent came together in spectacular fashion last Sunday as Myres Manuel Odonkor Junior emerged champion of the Accra edition of the 1v1 Africa Football Challenge, walking away with the coveted ₵100,000 top prize. Held at the AIS Astro Turf in East Legon, the competition transformed the venue into a festival of [&#8230;]\nThe post Football fever grips Accra as Odonkor",
+        "summary": "Football, entertainment and raw talent came together in spectacular fashion last Sunday as Myres Manuel Odonkor Junior emerged champion of the Accra edition of the 1v1 Africa Football Challenge, walking away with the coveted ₵100,000 top prize. Held at the AIS Astro Turf in East Legon, the competition transformed the venue into a festival of […]\nThe post Football fever grips Accra as Odonkor Junio",
         "occurredAt": "2026-06-07T08:09:21.000Z",
         "countryCodes": [
           "GH"
@@ -428,7 +552,7 @@
       {
         "id": "evt_new_renault_models_bring_style_technology_and_smarter_2m3b9u",
         "title": "New Renault models bring style, technology and smarter mobility",
-        "summary": "By Sandra Agyeiwaa OTOO The future of driving arrived in Accra this week as Premium Motors Limited unveiled two of Renault’s latest models—the All-New Renault Grand Koleos HEV and the All-New Renault Kardian—offering Ghanaian motorists a blend of innovation, comfort and modern mobility. The launch, held at the company’s showroom in Accra, brought together business [&#8230;]\nThe post New Renault mo",
+        "summary": "By Sandra Agyeiwaa OTOO The future of driving arrived in Accra this week as Premium Motors Limited unveiled two of Renault’s latest models—the All-New Renault Grand Koleos HEV and the All-New Renault Kardian—offering Ghanaian motorists a blend of innovation, comfort and modern mobility. The launch, held at the company’s showroom in Accra, brought together business […]\nThe post New Renault models b",
         "occurredAt": "2026-06-07T08:04:36.000Z",
         "countryCodes": [
           "GH"
@@ -485,12 +609,12 @@
         }
       },
       {
-        "id": "evt_me_038_my_jazz_by_yomi_sower_episode_4xcs72",
-        "title": "Me &#038; My Jazz by Yomi Sower: Episode 14- MILES DAVIS Pt 2: Miles the Chaos, Miles the Cool",
-        "summary": "Everybody said he could play, the Trumpet his tool, on stage he’d display He was non- conformist, unapologetic, he made Jazz do what they do and say; Miles the Chaos, Miles the cool, He saw opportunity, took it cos he was no fool For Decades, five or so, the world had to deal with his [&#8230;]\nThe post Me &#038; My Jazz by Yomi Sower: Episode 14- MILES DAVIS Pt 2: Miles the Chaos, Miles the Cool ",
+        "id": "evt_me_my_jazz_by_yomi_sower_episode_14_4xcs72",
+        "title": "Me & My Jazz by Yomi Sower: Episode 14- MILES DAVIS Pt 2: Miles the Chaos, Miles the Cool",
+        "summary": "Everybody said he could play, the Trumpet his tool, on stage he’d display He was non- conformist, unapologetic, he made Jazz do what they do and say; Miles the Chaos, Miles the cool, He saw opportunity, took it cos he was no fool For Decades, five or so, the world had to deal with his […]\nThe post Me & My Jazz by Yomi Sower: Episode 14- MILES DAVIS Pt 2: Miles the Chaos, Miles the Cool appeared fi",
         "occurredAt": "2026-06-07T07:56:05.000Z",
         "countryCodes": [],
-        "topic": "me 038 my jazz by yomi sower episode",
+        "topic": "me my jazz by yomi sower episode 14",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -525,7 +649,7 @@
       {
         "id": "evt_the_woman_who_held_the_microphone_first_1he55g9",
         "title": "The woman who held the microphone first",
-        "summary": "Rosalind Koramah Amoh has spent thirty years being the only woman in the room. She made sure the next generation never has to do that. There is a photograph that does not exist, but should. Kumasi, 1994. A young intern sits in a stadium that is almost empty of journalists. The Black Queens are about [&#8230;]\nThe post The woman who held the microphone first appeared first on The Business & Financi",
+        "summary": "Rosalind Koramah Amoh has spent thirty years being the only woman in the room. She made sure the next generation never has to do that. There is a photograph that does not exist, but should. Kumasi, 1994. A young intern sits in a stadium that is almost empty of journalists. The Black Queens are about […]\nThe post The woman who held the microphone first appeared first on The Business & Financial Tim",
         "occurredAt": "2026-06-07T07:21:43.000Z",
         "countryCodes": [],
         "topic": "the woman who held the microphone first",
@@ -542,14 +666,14 @@
         }
       },
       {
-        "id": "evt_nigeria_8217_s_q3_2025_budget_report_a_t1mjl5",
-        "title": "Nigeria&#8217;s Q3 2025 budget report: A glass half full, but leaking",
-        "summary": "Prepared By: Alliance for Economic Research and Ethics LTD/GTE  In the solemn annals of fiscal governance, there comes a moment when a government must choose between the shadow of opacity and the light of accountability. The Federal Government of Nigeria, after eight months of deafening silence, has finally released the 2025 Third Quarter Budget Implementation [&#8230;]\nThe post Nigeria&#8217;s Q3",
+        "id": "evt_nigeria_s_q3_2025_budget_report_a_glass_t1mjl5",
+        "title": "Nigeria’s Q3 2025 budget report: A glass half full, but leaking",
+        "summary": "Prepared By: Alliance for Economic Research and Ethics LTD/GTE  In the solemn annals of fiscal governance, there comes a moment when a government must choose between the shadow of opacity and the light of accountability. The Federal Government of Nigeria, after eight months of deafening silence, has finally released the 2025 Third Quarter Budget Implementation […]\nThe post Nigeria’s Q3 2025 budget",
         "occurredAt": "2026-06-07T07:05:29.000Z",
         "countryCodes": [
           "NG"
         ],
-        "topic": "nigeria 8217 s q3 2025 budget report a",
+        "topic": "nigeria s q3 2025 budget report a glass",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -647,7 +771,7 @@
       {
         "id": "evt_any_hope_for_pan_africanism_any_future_for_1m59k64",
         "title": "Any hope for Pan-Africanism: Any future for continental free trade?",
-        "summary": "By Fiifi NETTEY For some time now, I have been reflecting deeply on our beloved continent, Africa and the growing wave of xenophobic sentiments. What is even more worrying is how social media commentators have amplified these divisions, often fueling hostility and mistrust among Africans. If this trend is not addressed with urgency and responsibility, [&#8230;]\nThe post Any hope for Pan-Africanism",
+        "summary": "By Fiifi NETTEY For some time now, I have been reflecting deeply on our beloved continent, Africa and the growing wave of xenophobic sentiments. What is even more worrying is how social media commentators have amplified these divisions, often fueling hostility and mistrust among Africans. If this trend is not addressed with urgency and responsibility, […]\nThe post Any hope for Pan-Africanism: Any ",
         "occurredAt": "2026-06-07T06:46:30.000Z",
         "countryCodes": [],
         "topic": "any hope for pan africanism any future for",
@@ -687,7 +811,7 @@
       {
         "id": "evt_cbn_withdraws_n3_04_trillion_in_single_omo_tvnhwy",
         "title": "CBN withdraws N3.04 trillion in single OMO session in first week of June 2026",
-        "summary": "The Central Bank of Nigeria (CBN) absorbed N3.04 trillion from the banking system through a single Open Market Operations (OMO) auction conducted on June 5, 2026, as investor demand across three tenors significantly exceeded the N600 billion offered by the apex bank. According to a Nairametrics analysis of CBN OMO auction results and daily financial market data between [&#8230;]\nThe post CBN withd",
+        "summary": "The Central Bank of Nigeria (CBN) absorbed N3.04 trillion from the banking system through a single Open Market Operations (OMO) auction conducted on June 5, 2026, as investor demand across three tenors significantly exceeded the N600 billion offered by the apex bank. According to a Nairametrics analysis of CBN OMO auction results and daily financial market data between […]\nThe post CBN withdraws N",
         "occurredAt": "2026-06-07T05:47:00.000Z",
         "countryCodes": [
           "NG"
@@ -788,12 +912,12 @@
         }
       },
       {
-        "id": "evt_somali_piracy_is_back_8230_1aa9cd8",
-        "title": "Somali piracy is back &#8230;",
+        "id": "evt_somali_piracy_is_back_1aa9cd8",
+        "title": "Somali piracy is back …",
         "summary": "Fuelled by political turmoil, aid cuts and the Iran war.",
         "occurredAt": "2026-06-07T02:01:01.000Z",
         "countryCodes": [],
-        "topic": "somali piracy is back 8230",
+        "topic": "somali piracy is back",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -914,7 +1038,7 @@
       {
         "id": "evt_second_lady_dr_joyce_kithure_calls_for_community_iw7a8e",
         "title": "Second Lady Dr. Joyce Kithure Calls for Community-Led Climate Action",
-        "summary": "JUNE 6  &#8211; Dr. Joyce Kithure, the Second Lady of the Republic of Kenya, has called on Kenyans to embrace community-driven environmental action, saying meaningful climate solutions begin with simple but deliberate actions at the grassroots level. Speaking during a World Environment Day clean-up exercise in Kibra, Nairobi, Dr. Kithure said environmental conservation should not [&#8230;]",
+        "summary": "JUNE 6  – Dr. Joyce Kithure, the Second Lady of the Republic of Kenya, has called on Kenyans to embrace community-driven environmental action, saying meaningful climate solutions begin with simple but deliberate actions at the grassroots level. Speaking during a World Environment Day clean-up exercise in Kibra, Nairobi, Dr. Kithure said environmental conservation should not […]",
         "occurredAt": "2026-06-06T16:18:45.000Z",
         "countryCodes": [
           "KE"
@@ -934,8 +1058,8 @@
       },
       {
         "id": "evt_finance_commissioner_anchoria_capital_group_md_others_to_tg0wwz",
-        "title": "Finance Commissioner, Anchoria Capital Group MD, others to speak at UNILAG&#8217;s student-led conference",
-        "summary": "The Finance Students Association of the University of Lagos (FINSA) is bringing back one of Nigeria&#8217;s most recognised student-led finance events. The Finance Symposium 5.0 is scheduled to be held on June 9, 2026, at the J.F. Ade Ajayi Auditorium, University of Lagos. Themed &#8220;Africa&#8217;s Financial Renaissance: Unlocking Potentials for Growth,&#8221; this year&#8217;s edition centres ",
+        "title": "Finance Commissioner, Anchoria Capital Group MD, others to speak at UNILAG’s student-led conference",
+        "summary": "The Finance Students Association of the University of Lagos (FINSA) is bringing back one of Nigeria’s most recognised student-led finance events. The Finance Symposium 5.0 is scheduled to be held on June 9, 2026, at the J.F. Ade Ajayi Auditorium, University of Lagos. Themed “Africa’s Financial Renaissance: Unlocking Potentials for Growth,” this year’s edition centres […]\nThe post Finance Commissio",
         "occurredAt": "2026-06-06T15:34:18.000Z",
         "countryCodes": [
           "NG"
@@ -1255,14 +1379,14 @@
         }
       },
       {
-        "id": "evt_meet_the_cfos_of_nigeria_8217_s_largest_3vncwj",
-        "title": "Meet the CFOs of Nigeria&#8217;s largest companies by market Cap –May 2026",
-        "summary": "This profile feature spotlights the CFOs of the 10 most valuable companies listed on the NGX as of May 2026, highlighting the finance executives overseeing some of the largest corporate balance sheets in Nigeria and helping navigate a market that continues to reach new highs, even as the pace of gains begins to moderate. \nThe post Meet the CFOs of Nigeria&#8217;s largest companies by market Cap –M",
+        "id": "evt_meet_the_cfos_of_nigeria_s_largest_companies_3vncwj",
+        "title": "Meet the CFOs of Nigeria’s largest companies by market Cap –May 2026",
+        "summary": "This profile feature spotlights the CFOs of the 10 most valuable companies listed on the NGX as of May 2026, highlighting the finance executives overseeing some of the largest corporate balance sheets in Nigeria and helping navigate a market that continues to reach new highs, even as the pace of gains begins to moderate. \nThe post Meet the CFOs of Nigeria’s largest companies by market Cap –May 202",
         "occurredAt": "2026-06-06T11:35:49.000Z",
         "countryCodes": [
           "NG"
         ],
-        "topic": "meet the cfos of nigeria 8217 s largest",
+        "topic": "meet the cfos of nigeria s largest companies",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -1371,12 +1495,12 @@
         }
       },
       {
-        "id": "evt_naicom_8211_big_blind_regulator_by_duke_of_u2i4oq",
-        "title": "NAICOM &#8211; big blind regulator, by Duke of Shomolu",
-        "summary": "In an earlier submission, I gleefully reeled out some astounding figures. I had posited a 47% increase in industry premium for the Insurance Industry which stood at N2. 3 trillion and a claims payout of N882 billion which I had labelled impressive. \nThe post NAICOM &#8211; big blind regulator, by Duke of Shomolu appeared first on Nairametrics.",
+        "id": "evt_naicom_big_blind_regulator_by_duke_of_shomolu_u2i4oq",
+        "title": "NAICOM – big blind regulator, by Duke of Shomolu",
+        "summary": "In an earlier submission, I gleefully reeled out some astounding figures. I had posited a 47% increase in industry premium for the Insurance Industry which stood at N2. 3 trillion and a claims payout of N882 billion which I had labelled impressive. \nThe post NAICOM – big blind regulator, by Duke of Shomolu appeared first on Nairametrics.",
         "occurredAt": "2026-06-06T10:33:30.000Z",
         "countryCodes": [],
-        "topic": "naicom 8211 big blind regulator by duke of",
+        "topic": "naicom big blind regulator by duke of shomolu",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -1531,7 +1655,7 @@
       {
         "id": "evt_households_risk_jail_sh50_000_fine_for_paying_1bbieu6",
         "title": "Households risk jail, Sh50,000 fine for paying house helps less than Sh18,000",
-        "summary": "Households and other employers who underpay domestic workers risk prosecution, including fines of up to Sh50,000, the government has warned. The latest directive is in line with the Ministry of Labour, which increases the minimum monthly pay for domestic workers, including house helpers, gardeners, and watchmen. Labour Cabinet Secretary Alfred Mutua announced the new wage [&#8230;]\nHouseholds risk",
+        "summary": "Households and other employers who underpay domestic workers risk prosecution, including fines of up to Sh50,000, the government has warned. The latest directive is in line with the Ministry of Labour, which increases the minimum monthly pay for domestic workers, including house helpers, gardeners, and watchmen. Labour Cabinet Secretary Alfred Mutua announced the new wage […]\nHouseholds risk jail,",
         "occurredAt": "2026-06-06T08:13:56.000Z",
         "countryCodes": [],
         "topic": "households risk jail sh50 000 fine for paying",
@@ -1867,7 +1991,7 @@
       {
         "id": "evt_from_factory_floor_to_fashion_mood_the_cinnamon_94jte6",
         "title": "From factory floor to fashion mood: The Cinnamon story",
-        "summary": "There are places where fashion begins quietly—not on runways or glossy billboards, but in the steady hum of sewing machines, the cutting of fabric and the discipline of production lines. In those quiet places, Afua Gyekyewaa Prempeh has spent the last six years building something solid. As Managing Director of New Havenn Garments, she has [&#8230;]\nThe post From factory floor to fashion mood: The ",
+        "summary": "There are places where fashion begins quietly—not on runways or glossy billboards, but in the steady hum of sewing machines, the cutting of fabric and the discipline of production lines. In those quiet places, Afua Gyekyewaa Prempeh has spent the last six years building something solid. As Managing Director of New Havenn Garments, she has […]\nThe post From factory floor to fashion mood: The Cinnam",
         "occurredAt": "2026-06-06T06:10:10.000Z",
         "countryCodes": [],
         "topic": "from factory floor to fashion mood the cinnamon",
@@ -2046,7 +2170,7 @@
       {
         "id": "evt_new_hub_for_creative_entrepreneurs_at_cape_town_1azaznk",
         "title": "New hub for creative entrepreneurs at Cape Town Cruise Terminal",
-        "summary": "Small enterprises and creatives get a boost at the V&#038;A Waterfront.",
+        "summary": "Small enterprises and creatives get a boost at the V&A Waterfront.",
         "occurredAt": "2026-06-06T02:05:22.000Z",
         "countryCodes": [
           "ZA"
@@ -2221,7 +2345,7 @@
       {
         "id": "evt_central_bank_of_kenya_raises_ksh_34_4_ujexdt",
         "title": "Central Bank of Kenya Raises KSh 34.4 Bn for Budget Spending in June",
-        "summary": "Central Bank of Kenya(CBK) received bids worth KSh 34.4 billion from the sale of a 15-year Treasury Bond and a 25-year Treasury Bond, during the June 3rd Auction, an undersubscription of 85.97%. This is out of KSh 40 billion that the state fiscal agent sought for budget spending in June 2026. The 15-year Treasury Bond [&#8230;]",
+        "summary": "Central Bank of Kenya(CBK) received bids worth KSh 34.4 billion from the sale of a 15-year Treasury Bond and a 25-year Treasury Bond, during the June 3rd Auction, an undersubscription of 85.97%. This is out of KSh 40 billion that the state fiscal agent sought for budget spending in June 2026. The 15-year Treasury Bond […]",
         "occurredAt": "2026-06-05T19:09:18.000Z",
         "countryCodes": [
           "KE"
@@ -2242,7 +2366,7 @@
       {
         "id": "evt_dbg_marks_5th_anniversary_with_focus_on_scaling_js33ur",
         "title": "DBG marks 5th Anniversary with focus on scaling up activities in key target areas",
-        "summary": "Development Bank Ghana (DBG) is marking its fifth anniversary with a focus on scaling up activities in key areas that have significantly impacted economic growth and the livelihoods of Ghanaians. The bank is expanding lending to women-led businesses and young entrepreneurs to create jobs and help improve household living conditions. Ahead of the media launch [&#8230;]",
+        "summary": "Development Bank Ghana (DBG) is marking its fifth anniversary with a focus on scaling up activities in key areas that have significantly impacted economic growth and the livelihoods of Ghanaians. The bank is expanding lending to women-led businesses and young entrepreneurs to create jobs and help improve household living conditions. Ahead of the media launch […]",
         "occurredAt": "2026-06-05T19:09:08.000Z",
         "countryCodes": [
           "GH"
@@ -2263,7 +2387,7 @@
       {
         "id": "evt_kra_steps_up_push_for_tax_compliance_ahead_tkxxwu",
         "title": "KRA Steps Up Push for Tax Compliance Ahead of June 30 Deadline",
-        "summary": "As the June 30 tax return deadline draws closer, the Kenya Revenue Authority (KRA) has stepped up its nationwide campaign urging Kenyans to file their returns on time and avoid penalties associated with late compliance. The tax agency says the annual filing season is not just a routine requirement but a key pillar in sustaining [&#8230;]",
+        "summary": "As the June 30 tax return deadline draws closer, the Kenya Revenue Authority (KRA) has stepped up its nationwide campaign urging Kenyans to file their returns on time and avoid penalties associated with late compliance. The tax agency says the annual filing season is not just a routine requirement but a key pillar in sustaining […]",
         "occurredAt": "2026-06-05T18:44:18.000Z",
         "countryCodes": [
           "KE"
@@ -2303,7 +2427,7 @@
       {
         "id": "evt_paypal_and_hetzner_squeeze_african_businesses_1x4te4k",
         "title": "PayPal and Hetzner Squeeze African Businesses",
-        "summary": "As a Kenyan entrepreneur who has relied on PayPal since 2019, I once enjoyed a straightforward relationship with the platform while living and working in the Cayman Islands. But since returning home, that experience has soured. What began as a convenient tool for paying for servers, software subscriptions and online services has become a source [&#8230;]",
+        "summary": "As a Kenyan entrepreneur who has relied on PayPal since 2019, I once enjoyed a straightforward relationship with the platform while living and working in the Cayman Islands. But since returning home, that experience has soured. What began as a convenient tool for paying for servers, software subscriptions and online services has become a source […]",
         "occurredAt": "2026-06-05T18:10:20.000Z",
         "countryCodes": [
           "KE"
@@ -2438,7 +2562,7 @@
       {
         "id": "evt_kenya_power_kicks_off_tariff_transition_for_electric_4qlpft",
         "title": "Kenya Power Kicks Off Tariff Transition for Electric Vehicle Customers",
-        "summary": "Kenya Power, the state-owned electricity distributor, has commenced an exercise to mop up all customers utilising electricity to charge their electric vehicles (EVs) with the aim of metering them under the E-mobility tariff. The tariff allows users to enjoy electricity at a discounted rate of KSh16 per unit during peak hours and KSh.8 per  unit [&#8230;]",
+        "summary": "Kenya Power, the state-owned electricity distributor, has commenced an exercise to mop up all customers utilising electricity to charge their electric vehicles (EVs) with the aim of metering them under the E-mobility tariff. The tariff allows users to enjoy electricity at a discounted rate of KSh16 per unit during peak hours and KSh.8 per  unit […]",
         "occurredAt": "2026-06-05T17:56:38.000Z",
         "countryCodes": [
           "KE"
@@ -2501,7 +2625,7 @@
       {
         "id": "evt_family_bank_strengthens_credentials_ahead_of_listing_1b0n7o8",
         "title": "Family Bank Strengthens Credentials Ahead of Listing",
-        "summary": "Family Bank, considered the 4th largest in Kenya in terms of geographical reach, has received national-scale issuer ratings of BBB+(KE) and A2(KE) with a Stable Outlook from GCR ahead of its anticipated NSE listing. More importantly, GCR highlighted improving capital strength, with the Core Capital Ratio rising to 16.9% from 15.0% a year earlier and [&#8230;]",
+        "summary": "Family Bank, considered the 4th largest in Kenya in terms of geographical reach, has received national-scale issuer ratings of BBB+(KE) and A2(KE) with a Stable Outlook from GCR ahead of its anticipated NSE listing. More importantly, GCR highlighted improving capital strength, with the Core Capital Ratio rising to 16.9% from 15.0% a year earlier and […]",
         "occurredAt": "2026-06-05T17:07:08.000Z",
         "countryCodes": [
           "KE"
@@ -2560,7 +2684,7 @@
       {
         "id": "evt_sanlamallianz_holdings_kenya_appoints_dr_martin_oduor_otieno_5adk2o",
         "title": "SanlamAllianz Holdings Kenya Appoints Dr Martin Oduor Otieno as New Board Chairman",
-        "summary": "SanlamAllianz Holdings Kenya has appointed Dr Martin-Oduor Otieno as its new board chairman, effective 4th June 2026, succeeding Dr John Simba, who retires after more than two decades in the corner office. It is during his tenure that SanlamAllianz navigated several milestones, including strategic mergers and acquisitions, recapitalization initiatives and the transition from Pan African [&#8230;]",
+        "summary": "SanlamAllianz Holdings Kenya has appointed Dr Martin-Oduor Otieno as its new board chairman, effective 4th June 2026, succeeding Dr John Simba, who retires after more than two decades in the corner office. It is during his tenure that SanlamAllianz navigated several milestones, including strategic mergers and acquisitions, recapitalization initiatives and the transition from Pan African […]",
         "occurredAt": "2026-06-05T16:24:31.000Z",
         "countryCodes": [
           "KE"
@@ -2603,7 +2727,7 @@
       {
         "id": "evt_jkia_ksh_272_bn_expansion_project_kicks_off_wsm2gk",
         "title": "JKIA KSh 272 Bn Expansion Project Kicks Off this Month",
-        "summary": "JKIA (Jomo Kenyatta International Airport) expansion and modernization construction works projected to cost some KSh 272 billion are set to begin this month after the completion of the procurement process. The JKIA project, which is part of a 20-year master plan, will be the first to be financed under the National Infrastructure Fund Act. President [&#8230;]",
+        "summary": "JKIA (Jomo Kenyatta International Airport) expansion and modernization construction works projected to cost some KSh 272 billion are set to begin this month after the completion of the procurement process. The JKIA project, which is part of a 20-year master plan, will be the first to be financed under the National Infrastructure Fund Act. President […]",
         "occurredAt": "2026-06-05T15:30:06.000Z",
         "countryCodes": [],
         "topic": "jkia ksh 272 bn expansion project kicks off",
@@ -2621,8 +2745,8 @@
       },
       {
         "id": "evt_ssnit_pension_scheme_is_sustainable_can_pay_benefits_1axopbk",
-        "title": "SSNIT pension scheme is sustainable, can pay benefits for next 40 years &#8211; Director General",
-        "summary": "The Director General of the Social Security and National Insurance Trust (SSNIT), Kwesi Afreh Biney, has revealed that the pension scheme is sustainable and can even pay benefits for the next 40 years. Mr. Biney noted that this is based on the latest actuarial report carried out by the UK Government Department of Actuarial Services [&#8230;]",
+        "title": "SSNIT pension scheme is sustainable, can pay benefits for next 40 years – Director General",
+        "summary": "The Director General of the Social Security and National Insurance Trust (SSNIT), Kwesi Afreh Biney, has revealed that the pension scheme is sustainable and can even pay benefits for the next 40 years. Mr. Biney noted that this is based on the latest actuarial report carried out by the UK Government Department of Actuarial Services […]",
         "occurredAt": "2026-06-05T15:07:59.000Z",
         "countryCodes": [],
         "topic": "ssnit pension scheme is sustainable can pay benefits",
@@ -2740,7 +2864,7 @@
       {
         "id": "evt_ghana_wastes_up_to_45_of_its_tomatoes_1dsceag",
         "title": "Ghana wastes up to 45% of its tomatoes. A homegrown brand thinks it has the answer.",
-        "summary": "With domestic demand nearly double local production, and nearly half the harvest never reaching consumers, the tomato sector’s losses represent both a national crisis and an industrial opportunity. Ghana produces approximately 380,000 tonnes of tomatoes annually. It needs more than 800,000. And between 30 and 45 percent of what it does grow spoils before it [&#8230;]",
+        "summary": "With domestic demand nearly double local production, and nearly half the harvest never reaching consumers, the tomato sector’s losses represent both a national crisis and an industrial opportunity. Ghana produces approximately 380,000 tonnes of tomatoes annually. It needs more than 800,000. And between 30 and 45 percent of what it does grow spoils before it […]",
         "occurredAt": "2026-06-05T14:47:23.000Z",
         "countryCodes": [
           "GH"
@@ -2822,7 +2946,7 @@
       {
         "id": "evt_ghana_signs_1_5bn_agriconnect_compact_with_world_187rxyp",
         "title": "Ghana signs $1.5bn AgriConnect Compact with World Bank and IFAD to create 2.6m jobs",
-        "summary": "The Ministry Food and Agriculture Ghana has secured a major boost for its agricultural transformation agenda after signing a $1.5 billion Ghana AgriConnect Compact with the World Bank, the International Fund for Agricultural Development (IFAD), the International Finance Corporation (IFC), and other development partners. The compact is expected to create more than 2.6 million jobs [&#8230;]",
+        "summary": "The Ministry Food and Agriculture Ghana has secured a major boost for its agricultural transformation agenda after signing a $1.5 billion Ghana AgriConnect Compact with the World Bank, the International Fund for Agricultural Development (IFAD), the International Finance Corporation (IFC), and other development partners. The compact is expected to create more than 2.6 million jobs […]",
         "occurredAt": "2026-06-05T14:32:32.000Z",
         "countryCodes": [
           "GH"
@@ -2864,7 +2988,7 @@
       {
         "id": "evt_budget_2026_water_energy_health_and_education_win_lvcx4",
         "title": "Budget 2026: Water, Energy, Health and Education Win Big as Treasury Cuts Spending in Push for Fiscal Discipline",
-        "summary": "The government has unveiled a budget strategy that significantly increases funding for water, energy, healthcare, education and agriculture while reducing allocations to several ministries and agencies as part of efforts to tighten public spending and focus resources on sectors considered critical to economic growth and household welfare. According to the Budget 2026, the spending plan [&#8230;]",
+        "summary": "The government has unveiled a budget strategy that significantly increases funding for water, energy, healthcare, education and agriculture while reducing allocations to several ministries and agencies as part of efforts to tighten public spending and focus resources on sectors considered critical to economic growth and household welfare. According to the Budget 2026, the spending plan […]",
         "occurredAt": "2026-06-05T14:12:26.000Z",
         "countryCodes": [],
         "topic": "budget 2026 water energy health and education win",
@@ -2902,12 +3026,12 @@
         }
       },
       {
-        "id": "evt_28_million_fingerlings_a_year_inside_govt_8217_71q0jo",
-        "title": "28 Million Fingerlings a Year: Inside Govt&#8217;s Plan to Rebuild Lake Victoria Economy",
-        "summary": "The government has intensified efforts to revive the Lake Victoria economy through major investments in the Blue Economy sector, with a new fisheries and aquaculture training hub in Kisumu expected to boost fish production, create jobs and restore livelihoods for thousands of families dependent on the lake. In a statement, Principal Secretary for Internal Security [&#8230;]",
+        "id": "evt_28_million_fingerlings_a_year_inside_govt_s_71q0jo",
+        "title": "28 Million Fingerlings a Year: Inside Govt’s Plan to Rebuild Lake Victoria Economy",
+        "summary": "The government has intensified efforts to revive the Lake Victoria economy through major investments in the Blue Economy sector, with a new fisheries and aquaculture training hub in Kisumu expected to boost fish production, create jobs and restore livelihoods for thousands of families dependent on the lake. In a statement, Principal Secretary for Internal Security […]",
         "occurredAt": "2026-06-05T13:54:26.000Z",
         "countryCodes": [],
-        "topic": "28 million fingerlings a year inside govt 8217",
+        "topic": "28 million fingerlings a year inside govt s",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -3041,12 +3165,12 @@
         }
       },
       {
-        "id": "evt_8216_our_engagements_continue_8217_8211_pick_n_5f5gs0",
-        "title": "&#8216;Our engagements continue&#8217; &#8211; Pick n Pay on halting retrenchments of 22,000 workers",
+        "id": "evt_our_engagements_continue_pick_n_pay_on_halting_5f5gs0",
+        "title": "‘Our engagements continue’ – Pick n Pay on halting retrenchments of 22,000 workers",
         "summary": "Retrenchments are not completely off the table.",
         "occurredAt": "2026-06-05T13:16:20.000Z",
         "countryCodes": [],
-        "topic": "8216 our engagements continue 8217 8211 pick n",
+        "topic": "our engagements continue pick n pay on halting",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -3222,7 +3346,7 @@
       {
         "id": "evt_abigail_cudjoe_of_deloitte_sweeps_top_honours_at_16kkfwe",
         "title": "Abigail Cudjoe of Deloitte sweeps top honours at CITG February 2026 graduation",
-        "summary": "An Associate at Deloitte Ghana, Abigail Cudjoe, has been adjudged the Overall Best Student in the February 2026 graduating class of the Chartered Institute of Taxation Ghana (CITG). Not only was she adjudged the Overall Best Student, but she also emerged as the Best Student in Advanced Taxation Practice and the Best Student in Tax [&#8230;]",
+        "summary": "An Associate at Deloitte Ghana, Abigail Cudjoe, has been adjudged the Overall Best Student in the February 2026 graduating class of the Chartered Institute of Taxation Ghana (CITG). Not only was she adjudged the Overall Best Student, but she also emerged as the Best Student in Advanced Taxation Practice and the Best Student in Tax […]",
         "occurredAt": "2026-06-05T12:17:27.000Z",
         "countryCodes": [
           "GH"
@@ -3581,7 +3705,7 @@
       },
       {
         "id": "evt_we_have_built_required_reserves_to_withstand_oil_1pmgmxe",
-        "title": "We have built required reserves to withstand oil price shocks  &#8211; BoG Governor",
+        "title": "We have built required reserves to withstand oil price shocks  – BoG Governor",
         "summary": "Asked about what will happen if the current shocks should drag, Dr. Asiama said “if it should continue, then the outlook could be impacted”.",
         "occurredAt": "2026-06-05T11:46:01.000Z",
         "countryCodes": [],
@@ -3641,7 +3765,7 @@
       {
         "id": "evt_rising_illness_burden_among_elderly_and_children_deepens_en5dsm",
         "title": "Rising Illness Burden Among Elderly and Children Deepens Kenya’s Health Financing Gap",
-        "summary": "NAIROBI,Kenya,June 5-Kenya’s healthcare financing challenge is increasingly being shaped by the needs of school-going children and older adults, with new expert views suggesting that healthcare products and coverage models have not kept pace with the distinct risks facing the country’s youngest and oldest populations. The findings point to mounting pressure on households already grappling with [&#",
+        "summary": "NAIROBI,Kenya,June 5-Kenya’s healthcare financing challenge is increasingly being shaped by the needs of school-going children and older adults, with new expert views suggesting that healthcare products and coverage models have not kept pace with the distinct risks facing the country’s youngest and oldest populations. The findings point to mounting pressure on households already grappling with […]",
         "occurredAt": "2026-06-05T11:36:09.000Z",
         "countryCodes": [
           "KE"
@@ -3803,7 +3927,7 @@
       {
         "id": "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1umgz7h",
         "title": "Ghana Link rejects claims against ICUMS, demands evidence of system downtime",
-        "summary": "Ghana Link Network Services Limited has refuted allegations that the Integrated Customs Management System (ICUMS) is experiencing frequent downtime. According to the company, the claims are false, misleading and unsupported by evidence. In a statement, Ghana Link said recent assertions by some groups identifying themselves as civil society organisations failed to provide any verifiable proof [&#82",
+        "summary": "Ghana Link Network Services Limited has refuted allegations that the Integrated Customs Management System (ICUMS) is experiencing frequent downtime. According to the company, the claims are false, misleading and unsupported by evidence. In a statement, Ghana Link said recent assertions by some groups identifying themselves as civil society organisations failed to provide any verifiable proof […]",
         "occurredAt": "2026-06-05T11:08:59.000Z",
         "countryCodes": [
           "GH"
@@ -3862,12 +3986,12 @@
         }
       },
       {
-        "id": "evt_bmw_sa_8217_s_8216_hidden_gem_8217_1v5kxhv",
-        "title": "BMW SA&#8217;s &#8216;hidden gem&#8217; business unit employs more staff than Rosslyn plant",
+        "id": "evt_bmw_sa_s_hidden_gem_business_unit_employs_1v5kxhv",
+        "title": "BMW SA’s ‘hidden gem’ business unit employs more staff than Rosslyn plant",
         "summary": "BMW IT Hub is projected to contribute R4bn to the SA economy this year.",
         "occurredAt": "2026-06-05T11:03:03.000Z",
         "countryCodes": [],
-        "topic": "bmw sa 8217 s 8216 hidden gem 8217",
+        "topic": "bmw sa s hidden gem business unit employs",
         "status": "corroborated",
         "corroboration": {
           "newsItemIds": [
@@ -4045,7 +4169,7 @@
       {
         "id": "evt_nssf_defends_pension_system_after_court_rejects_stay_12e99nm",
         "title": "NSSF Defends Pension System After Court Rejects Stay Application",
-        "summary": "Employers and workers across Kenya have been told to continue making pension contributions under the current National Social Security Fund (NSSF) rates, even as court battles over the 2013 pension reforms continue to unfold. The Fund has moved to calm growing confusion in the labour market after reports suggested a return to the old system [&#8230;]",
+        "summary": "Employers and workers across Kenya have been told to continue making pension contributions under the current National Social Security Fund (NSSF) rates, even as court battles over the 2013 pension reforms continue to unfold. The Fund has moved to calm growing confusion in the labour market after reports suggested a return to the old system […]",
         "occurredAt": "2026-06-05T10:47:02.000Z",
         "countryCodes": [
           "KE"
@@ -4161,7 +4285,7 @@
       {
         "id": "evt_pay_smes_in_30_days_or_admit_you_4h2raf",
         "title": "Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy",
-        "summary": "Delayed payments by government agencies, counties and big brands are not an accounting inconvenience; they are an economic crime against &#8230; ContinuedThe post Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy appeared first on Soko Directory.",
+        "summary": "Delayed payments by government agencies, counties and big brands are not an accounting inconvenience; they are an economic crime against … ContinuedThe post Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T10:01:10.000Z",
         "countryCodes": [
           "KE"
@@ -4203,7 +4327,7 @@
       {
         "id": "evt_yango_group_hosts_innovation_day_2026_in_abidjan_1o3z1jt",
         "title": "Yango Group hosts Innovation Day 2026 in Abidjan",
-        "summary": "Yango Group, a UAE-based technology company,&#160; brought together more than 200 representatives from business, government and the technology sector for Innovation Day 2026 in Abidjan. The event featured demonstrations of technologies used across Yango Group’s markets globally, discussions on the development of digital services for African cities, the signing of a partnership agreement with GUDE-",
+        "summary": "Yango Group, a UAE-based technology company,  brought together more than 200 representatives from business, government and the technology sector for Innovation Day 2026 in Abidjan. The event featured demonstrations of technologies used across Yango Group’s markets globally, discussions on the development of digital services for African cities, the signing of a partnership agreement with GUDE-PME, ",
         "occurredAt": "2026-06-05T10:00:00.000Z",
         "countryCodes": [],
         "topic": "yango group hosts innovation day 2026 in abidjan",
@@ -4428,7 +4552,7 @@
       {
         "id": "evt_world_cup_warning_for_france_ivory_coast_upset_1oo8j84",
         "title": "World Cup Warning for France: Ivory Coast Upset Exposes Cracks Ahead of Senegal Clash",
-        "summary": "The result may have come in a friendly match, but France&#8217;s 2-1 defeat to Ivory Coast has provided an important &#8230; ContinuedThe post World Cup Warning for France: Ivory Coast Upset Exposes Cracks Ahead of Senegal Clash appeared first on Soko Directory.",
+        "summary": "The result may have come in a friendly match, but France’s 2-1 defeat to Ivory Coast has provided an important … ContinuedThe post World Cup Warning for France: Ivory Coast Upset Exposes Cracks Ahead of Senegal Clash appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T09:27:30.000Z",
         "countryCodes": [],
         "topic": "world cup warning for france ivory coast upset",
@@ -4447,7 +4571,7 @@
       {
         "id": "evt_how_cooking_oil_sugar_salt_bread_and_everyday_1017910",
         "title": "How Cooking Oil, Sugar, Salt, Bread and Everyday Household Essentials Are Quietly Crushing the Purchasing Power of Kenyans",
-        "summary": "For many Kenyan households, the cost-of-living crisis does not begin at the Central Bank. It begins at the shopkeeper’s counter. &#8230; ContinuedThe post How Cooking Oil, Sugar, Salt, Bread and Everyday Household Essentials Are Quietly Crushing the Purchasing Power of Kenyans appeared first on Soko Directory.",
+        "summary": "For many Kenyan households, the cost-of-living crisis does not begin at the Central Bank. It begins at the shopkeeper’s counter. … ContinuedThe post How Cooking Oil, Sugar, Salt, Bread and Everyday Household Essentials Are Quietly Crushing the Purchasing Power of Kenyans appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T09:14:50.000Z",
         "countryCodes": [
           "KE"
@@ -4487,7 +4611,7 @@
       {
         "id": "evt_a_researched_comparison_of_kenya_s_supermarkets_and_3hg8ef",
         "title": "A Researched Comparison Of Kenya’s Supermarkets and the Most Pocket-Friendly Places to Shop",
-        "summary": "The Kenyan shopper is no longer choosing a supermarket by beauty, lighting, music, parking space or brand name alone. The &#8230; ContinuedThe post A Researched Comparison Of Kenya’s Supermarkets and the Most Pocket-Friendly Places to Shop appeared first on Soko Directory.",
+        "summary": "The Kenyan shopper is no longer choosing a supermarket by beauty, lighting, music, parking space or brand name alone. The … ContinuedThe post A Researched Comparison Of Kenya’s Supermarkets and the Most Pocket-Friendly Places to Shop appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T08:59:51.000Z",
         "countryCodes": [
           "KE"
@@ -4530,7 +4654,7 @@
       {
         "id": "evt_how_the_ready_to_drink_revolution_is_redefining_q6zn0v",
         "title": "How the Ready-to-Drink Revolution is Redefining Kenya’s Social Spaces",
-        "summary": "Kenya&#8217;s ready-to-drink (RTD) category is evolving in step with a broader shift in how people connect: social moments are becoming &#8230; ContinuedThe post How the Ready-to-Drink Revolution is Redefining Kenya’s Social Spaces appeared first on Soko Directory.",
+        "summary": "Kenya’s ready-to-drink (RTD) category is evolving in step with a broader shift in how people connect: social moments are becoming … ContinuedThe post How the Ready-to-Drink Revolution is Redefining Kenya’s Social Spaces appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T08:40:38.000Z",
         "countryCodes": [
           "KE"
@@ -4593,7 +4717,7 @@
       {
         "id": "evt_when_geniuses_hesitate_fools_take_the_throne_omdpoe",
         "title": "When Geniuses Hesitate, Fools Take the Throne",
-        "summary": "Every nation has a moment when its future stops depending on resources, slogans, manifestos, or speeches, and starts depending on &#8230; ContinuedThe post When Geniuses Hesitate, Fools Take the Throne appeared first on Soko Directory.",
+        "summary": "Every nation has a moment when its future stops depending on resources, slogans, manifestos, or speeches, and starts depending on … ContinuedThe post When Geniuses Hesitate, Fools Take the Throne appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T08:34:20.000Z",
         "countryCodes": [],
         "topic": "when geniuses hesitate fools take the throne",
@@ -4612,7 +4736,7 @@
       {
         "id": "evt_why_elon_musk_s_ad_astra_experiment_should_1mt7pr2",
         "title": "Why Elon Musk’s Ad Astra Experiment Should Terrify Kenya Into Rethinking Education Before AI, Automation and a New Economy Leave Our Children Behind",
-        "summary": "Elon Musk’s children did not simply leave a normal school. They became part of a private experiment in what education &#8230; ContinuedThe post Why Elon Musk’s Ad Astra Experiment Should Terrify Kenya Into Rethinking Education Before AI, Automation and a New Economy Leave Our Children Behind appeared first on Soko Directory.",
+        "summary": "Elon Musk’s children did not simply leave a normal school. They became part of a private experiment in what education … ContinuedThe post Why Elon Musk’s Ad Astra Experiment Should Terrify Kenya Into Rethinking Education Before AI, Automation and a New Economy Leave Our Children Behind appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T08:30:44.000Z",
         "countryCodes": [
           "KE"
@@ -4650,12 +4774,12 @@
         }
       },
       {
-        "id": "evt_isaac_kusi_8217_s_shea_revolution_empowering_women_1pm5vvq",
-        "title": "Isaac Kusi&#8217;s Shea Revolution: Empowering women and transforming an industry on the global stage",
-        "summary": "Long before shea butter became a staple in beauty stores, luxury skincare brands, and household medicine cabinets across North America and Europe, very few people outside Africa had ever heard of it. There were no celebrity endorsements. No multinational marketing campaigns. No billion-dollar beauty industry built around its name. Just one determined African entrepreneur carrying [&#8230;]",
+        "id": "evt_isaac_kusi_s_shea_revolution_empowering_women_and_1pm5vvq",
+        "title": "Isaac Kusi’s Shea Revolution: Empowering women and transforming an industry on the global stage",
+        "summary": "Long before shea butter became a staple in beauty stores, luxury skincare brands, and household medicine cabinets across North America and Europe, very few people outside Africa had ever heard of it. There were no celebrity endorsements. No multinational marketing campaigns. No billion-dollar beauty industry built around its name. Just one determined African entrepreneur carrying […]",
         "occurredAt": "2026-06-05T08:27:39.000Z",
         "countryCodes": [],
-        "topic": "isaac kusi 8217 s shea revolution empowering women",
+        "topic": "isaac kusi s shea revolution empowering women and",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -4772,7 +4896,7 @@
       {
         "id": "evt_ecobank_to_lead_200_million_loan_syndication_for_1870rvo",
         "title": "Ecobank to Lead $200 Million Loan Syndication for Sentuo Refinery Expansion",
-        "summary": "Ecobank Ghana PLC has been appointed as the Lead Arranger and Book Runner for a US$200 million medium-term loan facility to support the second phase expansion of the Sentuo Oil Refinery. The move is expected to bolster Ghana’s energy security and accelerate industrial development. The agreement was formalized through the signing of a Memorandum of [&#8230;]",
+        "summary": "Ecobank Ghana PLC has been appointed as the Lead Arranger and Book Runner for a US$200 million medium-term loan facility to support the second phase expansion of the Sentuo Oil Refinery. The move is expected to bolster Ghana’s energy security and accelerate industrial development. The agreement was formalized through the signing of a Memorandum of […]",
         "occurredAt": "2026-06-05T08:07:56.000Z",
         "countryCodes": [
           "GH"
@@ -4877,7 +5001,7 @@
       {
         "id": "evt_the_housing_levy_has_become_a_payslip_heist_syn51k",
         "title": "The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages",
-        "summary": "The housing levy was sold to Kenyans as a national answer to a real problem: the shortage of decent and &#8230; ContinuedThe post The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages appeared first on Soko Directory.",
+        "summary": "The housing levy was sold to Kenyans as a national answer to a real problem: the shortage of decent and … ContinuedThe post The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T07:11:38.000Z",
         "countryCodes": [
           "KE"
@@ -4897,8 +5021,8 @@
       },
       {
         "id": "evt_kenya_urgently_needs_a_three_week_national_pause_tiemw2",
-        "title": "Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely &#038; Burn The Country",
-        "summary": "Kenya does not need a one-week school break. Kenya needs a serious three-week national pause, because what is happening in &#8230; ContinuedThe post Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely &#038; Burn The Country appeared first on Soko Directory.",
+        "title": "Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely & Burn The Country",
+        "summary": "Kenya does not need a one-week school break. Kenya needs a serious three-week national pause, because what is happening in … ContinuedThe post Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely & Burn The Country appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T06:57:52.000Z",
         "countryCodes": [
           "KE"
@@ -4940,7 +5064,7 @@
       {
         "id": "evt_second_term_unrest_list_of_over_30_schools_1obg2g4",
         "title": "Second term unrest: List of over 30 schools closed indefinitely",
-        "summary": "A fresh wave of student unrest has swept across Kenyan secondary schools since the beginning of the second term, disrupting learning, destroying property, and forcing the indefinite closure of several institutions across the country. The disturbances, which have been reported in schools in various regions, have manifested in different forms, including dormitory fires, arson attacks, [&#8230;]\nSeco",
+        "summary": "A fresh wave of student unrest has swept across Kenyan secondary schools since the beginning of the second term, disrupting learning, destroying property, and forcing the indefinite closure of several institutions across the country. The disturbances, which have been reported in schools in various regions, have manifested in different forms, including dormitory fires, arson attacks, […]\nSecond ter",
         "occurredAt": "2026-06-05T06:54:55.000Z",
         "countryCodes": [
           "KE"
@@ -4961,7 +5085,7 @@
       {
         "id": "evt_government_targets_herbal_and_flavored_shisha_in_expanded_bsr498",
         "title": "Government Targets Herbal and Flavored Shisha in Expanded Tobacco Crackdown",
-        "summary": "NAIROBI, Kenya, June 5-The Ministry of Health has initiated a fresh push to tighten Kenya’s tobacco control framework with proposed rules that would completely ban shisha smoking and all waterpipe tobacco products, citing emerging public health risks and new product variations that have outpaced existing regulations. In a public notice, the Ministry says the draft [&#8230;]",
+        "summary": "NAIROBI, Kenya, June 5-The Ministry of Health has initiated a fresh push to tighten Kenya’s tobacco control framework with proposed rules that would completely ban shisha smoking and all waterpipe tobacco products, citing emerging public health risks and new product variations that have outpaced existing regulations. In a public notice, the Ministry says the draft […]",
         "occurredAt": "2026-06-05T06:54:01.000Z",
         "countryCodes": [
           "KE"
@@ -5024,7 +5148,7 @@
       {
         "id": "evt_the_second_liberation_for_africa_must_not_become_2s2nyr",
         "title": "The Second Liberation For Africa Must Not Become The New Betrayal",
-        "summary": "Africa is living through a painful historical moment. The continent is no longer merely asking why it is poor despite &#8230; ContinuedThe post The Second Liberation For Africa Must Not Become The New Betrayal appeared first on Soko Directory.",
+        "summary": "Africa is living through a painful historical moment. The continent is no longer merely asking why it is poor despite … ContinuedThe post The Second Liberation For Africa Must Not Become The New Betrayal appeared first on Soko Directory.",
         "occurredAt": "2026-06-05T06:40:41.000Z",
         "countryCodes": [],
         "topic": "the second liberation for africa must not become",
@@ -5063,12 +5187,12 @@
         }
       },
       {
-        "id": "evt_digital_must_be_default_8211_ssnit_pushes_members_k2i5kd",
-        "title": "Digital must be default &#8211; SSNIT pushes members online to end long queues",
+        "id": "evt_digital_must_be_default_ssnit_pushes_members_online_k2i5kd",
+        "title": "Digital must be default – SSNIT pushes members online to end long queues",
         "summary": "The Director-General of SSNIT, Kwasi Afreh Biney, says the pension scheme is aggressively pursuing digital service delivery to eliminate long queues, reduce paperwork, and improve efficiency.",
         "occurredAt": "2026-06-05T06:31:25.000Z",
         "countryCodes": [],
-        "topic": "digital must be default 8211 ssnit pushes members",
+        "topic": "digital must be default ssnit pushes members online",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -5147,7 +5271,7 @@
       {
         "id": "evt_nssf_defends_pension_system_after_court_refuses_stay_e1xws1",
         "title": "NSSF Defends Pension System After Court Refuses Stay Bid",
-        "summary": "NAIROBI, Kenya, June 5 – The National Social Security Fund (NSSF) has moved to reassure employers that current pension contribution rates remain in force, dismissing calls to revert to the previous Sh200 employee and Sh200 employer deductions despite ongoing court disputes over the NSSF Act, 2013. In a public statement, the Fund said the Act [&#8230;]",
+        "summary": "NAIROBI, Kenya, June 5 – The National Social Security Fund (NSSF) has moved to reassure employers that current pension contribution rates remain in force, dismissing calls to revert to the previous Sh200 employee and Sh200 employer deductions despite ongoing court disputes over the NSSF Act, 2013. In a public statement, the Fund said the Act […]",
         "occurredAt": "2026-06-05T06:10:38.000Z",
         "countryCodes": [
           "KE"
@@ -5187,7 +5311,7 @@
       {
         "id": "evt_teaching_career_how_much_do_tsc_teachers_earn_3xg6r8",
         "title": "Teaching career: How much do TSC teachers earn in Kenya?",
-        "summary": "Teaching remains one of the most sought-after professions in Kenya, playing a critical role in shaping the country&#8217;s future through education and skills development. Teachers serve as the backbone of the education system, nurturing learners, imparting knowledge, and helping prepare the next generation of leaders, professionals, and innovators. Beyond the classroom, teachers contribute signif",
+        "summary": "Teaching remains one of the most sought-after professions in Kenya, playing a critical role in shaping the country’s future through education and skills development. Teachers serve as the backbone of the education system, nurturing learners, imparting knowledge, and helping prepare the next generation of leaders, professionals, and innovators. Beyond the classroom, teachers contribute significantl",
         "occurredAt": "2026-06-05T06:02:26.000Z",
         "countryCodes": [
           "KE"
@@ -5591,12 +5715,12 @@
         }
       },
       {
-        "id": "evt_gov_8217_t_launches_agriconnect_compact_to_strengthen_hn1yl9",
-        "title": "Gov&#8217;t launches AgriConnect Compact to strengthen food security, create jobs, and mobilise investment",
+        "id": "evt_gov_t_launches_agriconnect_compact_to_strengthen_food_hn1yl9",
+        "title": "Gov’t launches AgriConnect Compact to strengthen food security, create jobs, and mobilise investment",
         "summary": "The government, with support from the World Bank Group and development partners, has launched its AgriConnect Compact.",
         "occurredAt": "2026-06-05T04:08:00.000Z",
         "countryCodes": [],
-        "topic": "gov 8217 t launches agriconnect compact to strengthen",
+        "topic": "gov t launches agriconnect compact to strengthen food",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -5674,7 +5798,7 @@
       },
       {
         "id": "evt_the_world_s_mining_winners_don_t_sit_imbxun",
-        "title": "The world’s mining winners don’t sit back &#8211; Steve Manteaw backs bigger Ghanaian stake in mining",
+        "title": "The world’s mining winners don’t sit back – Steve Manteaw backs bigger Ghanaian stake in mining",
         "summary": "Policy analyst and Extractive Industries Transparency Initiative (EITI) expert Dr Steve Manteaw has thrown his support behind efforts to increase Ghanaian participation in the mining sector.",
         "occurredAt": "2026-06-05T03:59:00.000Z",
         "countryCodes": [
@@ -5736,14 +5860,14 @@
         }
       },
       {
-        "id": "evt_ghanaians_feel_shortchanged_8211_steve_manteaw_explains_growing_lvylsi",
-        "title": "Ghanaians feel shortchanged &#8211; Steve Manteaw explains growing backlash over Gold Fields lease",
+        "id": "evt_ghanaians_feel_shortchanged_steve_manteaw_explains_growing_backlash_lvylsi",
+        "title": "Ghanaians feel shortchanged – Steve Manteaw explains growing backlash over Gold Fields lease",
         "summary": "Policy analyst and extractive governance expert Dr Steve Manteaw says the fierce public interest surrounding the renewal of Gold Fields’ Tarkwa mining lease reflects a growing belief among many Ghanaians that the country is not receiving enough value from its natural resources.",
         "occurredAt": "2026-06-05T03:40:00.000Z",
         "countryCodes": [
           "GH"
         ],
-        "topic": "ghanaians feel shortchanged 8211 steve manteaw explains growing",
+        "topic": "ghanaians feel shortchanged steve manteaw explains growing backlash",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -6035,7 +6159,7 @@
       },
       {
         "id": "evt_ssnit_s_biggest_challenge_isn_t_technology_it_a3wrnf",
-        "title": "SSNIT’s biggest challenge isn’t technology, it’s getting Ghanaians to use it &#8211; Kwasi Afreh Biney",
+        "title": "SSNIT’s biggest challenge isn’t technology, it’s getting Ghanaians to use it – Kwasi Afreh Biney",
         "summary": "The Director-General of SSNIT, Kwasi Afreh Biney, says the pension scheme’s biggest challenge is no longer technology but getting more Ghanaians to embrace the digital platforms designed to make services faster and more convenient.",
         "occurredAt": "2026-06-05T00:42:00.000Z",
         "countryCodes": [
@@ -6509,8 +6633,8 @@
       },
       {
         "id": "evt_kenya_safari_by_season_the_best_time_to_1sugqbw",
-        "title": "Kenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration &#038; Perfect Weather",
-        "summary": "So you have decided Kenya is your next adventure. Smart choice. But now comes the question that trips up almost every traveller: When exactly should you go? The truth is, Kenya does not have a bad time to visit. What it has is different seasons that each deliver a completely different experience. Your job is [&#8230;]\nKenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration &#0",
+        "title": "Kenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration & Perfect Weather",
+        "summary": "So you have decided Kenya is your next adventure. Smart choice. But now comes the question that trips up almost every traveller: When exactly should you go? The truth is, Kenya does not have a bad time to visit. What it has is different seasons that each deliver a completely different experience. Your job is […]\nKenya Safari by Season: The Best Time to Visit Kenya for Wildlife, Migration & Perfect",
         "occurredAt": "2026-06-04T18:57:15.000Z",
         "countryCodes": [
           "KE"
@@ -6550,7 +6674,7 @@
       {
         "id": "evt_patrick_analo_akivaga_man_busted_with_sh65_million_1u4x7h3",
         "title": "Patrick Analo Akivaga: Man busted with Sh65 million cash at his home",
-        "summary": "Nairobi County chief officer Patrick Analo Akivaga was on Thursday busted by detectives from the Ethics and Anti-Corruption Commission (EACC) with millions of cash at his home. Analo was busted with Sh65.3 million at his residence in Syokimau, Machakos County. According to the EACC, the money was in batches of Sh51,300,000 and USD130,000 (equivalent to Sh14,605,250). [&#8230;]\nPatrick Analo Akivag",
+        "summary": "Nairobi County chief officer Patrick Analo Akivaga was on Thursday busted by detectives from the Ethics and Anti-Corruption Commission (EACC) with millions of cash at his home. Analo was busted with Sh65.3 million at his residence in Syokimau, Machakos County. According to the EACC, the money was in batches of Sh51,300,000 and USD130,000 (equivalent to Sh14,605,250). […]\nPatrick Analo Akivaga: Man",
         "occurredAt": "2026-06-04T17:58:15.000Z",
         "countryCodes": [
           "KE"
@@ -6818,7 +6942,7 @@
       {
         "id": "evt_building_economic_resilience_how_filma_is_creating_dignified_14qk8tc",
         "title": "Building Economic Resilience: How FILMA is creating dignified livelihoods in rural Ghana",
-        "summary": "In the landscape of rural development, the transition from subsistence to sustainability is often cited as a goal; however, it is rarely measured with the precision of a fintech operation. Reflecting on the insights shared during the inaugural Financial Inclusion for Last Mile Actors (FILMA) Learning Event at the Accra Marriott Hotel, which hosted over [&#8230;]",
+        "summary": "In the landscape of rural development, the transition from subsistence to sustainability is often cited as a goal; however, it is rarely measured with the precision of a fintech operation. Reflecting on the insights shared during the inaugural Financial Inclusion for Last Mile Actors (FILMA) Learning Event at the Accra Marriott Hotel, which hosted over […]",
         "occurredAt": "2026-06-04T14:56:37.000Z",
         "countryCodes": [
           "GH"
@@ -6839,7 +6963,7 @@
       {
         "id": "evt_fao_strengthens_approach_to_accelerate_agrifood_systems_transformation_1e6rfka",
         "title": "FAO strengthens approach to accelerate agrifood systems transformation in Africa",
-        "summary": "Senior leaders of the Food and Agriculture Organization of the United Nations (FAO) from across Africa gathered in Accra for the opening of the 15th FAO Regional Management Team (RMT15) Meeting, with a strong focus on innovation, improving efficiency, accelerating delivery and scaling impact for Members across the continent. Held under the theme “Driving Efficiency [&#8230;]",
+        "summary": "Senior leaders of the Food and Agriculture Organization of the United Nations (FAO) from across Africa gathered in Accra for the opening of the 15th FAO Regional Management Team (RMT15) Meeting, with a strong focus on innovation, improving efficiency, accelerating delivery and scaling impact for Members across the continent. Held under the theme “Driving Efficiency […]",
         "occurredAt": "2026-06-04T14:43:30.000Z",
         "countryCodes": [
           "GH"
@@ -6976,14 +7100,14 @@
         }
       },
       {
-        "id": "evt_maritime_development_key_to_africa_8217_s_economic_1773iic",
-        "title": "Maritime development key to Africa&#8217;s economic transformation – GEXIM",
+        "id": "evt_maritime_development_key_to_africa_s_economic_transformation_1773iic",
+        "title": "Maritime development key to Africa’s economic transformation – GEXIM",
         "summary": "Mr Mensah made the remarks in a speech delivered on behalf of the Chief Executive Officer of GEXIM, Sylvester Adinam Mensah, at the opening of the Maritime Trade Fair in Accra on the theme: \"Shaping Africa's Maritime Future: Maritime, Technology and Finance.\"",
         "occurredAt": "2026-06-04T13:39:43.000Z",
         "countryCodes": [
           "GH"
         ],
-        "topic": "maritime development key to africa 8217 s economic",
+        "topic": "maritime development key to africa s economic transformation",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -7081,7 +7205,7 @@
       {
         "id": "evt_kenyatta_family_ndegwa_family_to_pocket_sh21_9_1bgcp0j",
         "title": "Kenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal",
-        "summary": "The prominent Kenyatta family and the family of former Central Bank of Kenya Governor Philip Ndegwa are set to receive up to Sh21.9 billion from a trading deal involving the sale of NCBA Group to South Africa’s Nedbank Group. In the deal, the Kenyatta family and the Ndegwa family have agreed to sell 66 percent [&#8230;]\nKenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal first app",
+        "summary": "The prominent Kenyatta family and the family of former Central Bank of Kenya Governor Philip Ndegwa are set to receive up to Sh21.9 billion from a trading deal involving the sale of NCBA Group to South Africa’s Nedbank Group. In the deal, the Kenyatta family and the Ndegwa family have agreed to sell 66 percent […]\nKenyatta family, Ndegwa family to pocket Sh21.9 billion in mega deal first appeared ",
         "occurredAt": "2026-06-04T12:48:27.000Z",
         "countryCodes": [
           "KE",
@@ -7144,7 +7268,7 @@
       },
       {
         "id": "evt_bog_s_reforms_on_community_banking_aims_to_zld0wl",
-        "title": "BoG’s reforms on community banking aims to build well-capitalised banks &#8211; ARB Apex Bank MD",
+        "title": "BoG’s reforms on community banking aims to build well-capitalised banks – ARB Apex Bank MD",
         "summary": "The Acting Managing Director of ARB Apex Bank, Curtis William Brantuo, says community banking sector is currently undergoing major reforms under the leadership of the Bank of Ghana (BoG) to build stronger, resilient, and well-capitalized banks capable of safeguarding depositor funds and supporting local economic development.",
         "occurredAt": "2026-06-04T12:01:01.000Z",
         "countryCodes": [
@@ -7269,7 +7393,7 @@
       {
         "id": "evt_ecowas_rice_forum_ends_with_agriconnect_compact_renewed_je0mq8",
         "title": "ECOWAS Rice Forum Ends with AgriConnect Compact, Renewed Push for Rice Self-Sufficiency",
-        "summary": "A two-day West Africa Rice Investment Roundtable in Accra ended with a renewed push to boost local rice production, as Ghana unveiled a new import quota policy and development partners signed a financing agreement aimed at accelerating investment in the sector. The forum brought together governments, development institutions and private investors from across the region [&#8230;]",
+        "summary": "A two-day West Africa Rice Investment Roundtable in Accra ended with a renewed push to boost local rice production, as Ghana unveiled a new import quota policy and development partners signed a financing agreement aimed at accelerating investment in the sector. The forum brought together governments, development institutions and private investors from across the region […]",
         "occurredAt": "2026-06-04T11:14:13.000Z",
         "countryCodes": [
           "GH"
@@ -7391,14 +7515,14 @@
         }
       },
       {
-        "id": "evt_inside_east_africa_8217_s_2025_trade_boom_12klsmo",
-        "title": "Inside East Africa&#8217;s 2025 trade boom: Key takeaways from the NCBA forum",
+        "id": "evt_inside_east_africa_s_2025_trade_boom_key_12klsmo",
+        "title": "Inside East Africa’s 2025 trade boom: Key takeaways from the NCBA forum",
         "summary": "NCBA convened diplomatic trade commissioners and ambassadors from over 20 countries and missions, alongside development partners and investors, for a high-level forum in Nairobi aimed at deepening trade and investment across East Africa. The engagement underscored the importance of coordinated action in unlocking economic growth, expanding market access, and supporting East African businesses in n",
         "occurredAt": "2026-06-04T10:45:46.000Z",
         "countryCodes": [
           "KE"
         ],
-        "topic": "inside east africa 8217 s 2025 trade boom",
+        "topic": "inside east africa s 2025 trade boom key",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -7650,86 +7774,6 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_investors_thump_absa_with_astounding_43_vote_against_uvk85l",
-        "title": "Investors thump Absa, with astounding 43% vote against exec pay",
-        "summary": "This would've needed most of its top 10 shareholders to vote against it.",
-        "occurredAt": "2026-06-04T09:42:38.000Z",
-        "countryCodes": [],
-        "topic": "investors thump absa with astounding 43 vote against",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:51pf16"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ncba_diplomats_map_trade_linked_sector_entry_strategies_d39jbw",
-        "title": "NCBA, diplomats map trade-linked sector entry strategies across East Africa",
-        "summary": "NAIROBI, Kenya, June 4-NCBA Group, alongside diplomatic trade commissioners, ambassadors and investors from more than 20 countries are exploring sector-driven entry strategies into East Africa’s fast-expanding trade economy, with discussions focusing on agribusiness, energy, manufacturing, fintech, technology, healthcare and education as key investment entry points. The deliberations focused on ho",
-        "occurredAt": "2026-06-04T09:41:43.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "ncba diplomats map trade linked sector entry strategies",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:1ehg0sx"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_rwc_will_be_on_supersport_and_we_didn_1amr8x9",
-        "title": "RWC will be on SuperSport, and we didn&#8217;t cancel Winter Olympics &#8211; Canal+ CEO",
-        "summary": "As group lists, Saada is 'absolutely and totally confident' it will turn around ailing MultiChoice.",
-        "occurredAt": "2026-06-04T09:24:00.000Z",
-        "countryCodes": [],
-        "topic": "rwc will be on supersport and we didn",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:12tfjya"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ghana_s_pe_backed_firms_need_stronger_corporate_1l5ovcy",
-        "title": "Ghana’s Pe-Backed Firms need stronger corporate governance",
-        "summary": "In private equity (PE), corporate governance is more than a compliance mechanism. It is a strategic driver of value creation and exit readiness. In Ghana’s PE market, where exit routes remain limited and institutional weaknesses are more pronounced, stronger governance has become even more essential. Recent market data underscores why this matters. Ghana’s private capital [&#8230;]\nThe post Ghana’",
-        "occurredAt": "2026-06-04T09:11:06.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ghana s pe backed firms need stronger corporate",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1ru9v5f"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

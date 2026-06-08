@@ -4,6 +4,7 @@ import { fetchWorldBankIndicator } from '../server/connectors/worldBank'
 import { fetchBrentEia } from '../server/connectors/marketData'
 import { fetchGdelt } from '../server/connectors/gdelt'
 import { fetchRss, parseRss } from '../server/connectors/rss'
+import { defaultLiveConnectors } from '../server/ingestion/liveConnectors'
 import type { ConnectorContext } from '../server/connectors/types'
 import type { AppConfig } from '../server/config'
 
@@ -114,6 +115,55 @@ describe('connectors', () => {
 
   it('gdelt returns [] on a 200 with no articles (a legitimate empty, not a failure)', async () => {
     expect(await fetchGdelt(ctxWith({ articles: [] }), 'oil')).toEqual([])
+  })
+
+  it('gdelt passes a parenthesized OR query through to the DOC API (the canonical syntax)', async () => {
+    // Live probe (2026-06-08) confirmed GDELT DOC API rejects unparenthesized OR groups
+    // with HTTP 200 + text/html "Queries containing OR'd terms must be surrounded by ()."
+    // Wrapping the OR group in parens is the canonical syntax. JavaScript's
+    // encodeURIComponent leaves "(" and ")" as literal characters (per the RFC 3986
+    // sub-delims rule), so both literal "(A OR B)" and "%28A%20OR%20B%29" are valid on
+    // the wire and both decode to the same query value; the assertion checks the DECODED
+    // query so either form passes.
+    const fetch = vi.fn<(url: string) => Promise<Response>>(
+      async () =>
+        ({
+          ok: true,
+          status: 200,
+          json: async () => ({ articles: [] }),
+          text: async () => '',
+        }) as unknown as Response,
+    )
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep: async () => {} }
+    await fetchGdelt(ctx, '(A OR B)')
+    expect(fetch).toHaveBeenCalledTimes(1)
+    const calledUrl = new URL(fetch.mock.calls[0][0])
+    expect(calledUrl.searchParams.get('query')).toBe('(A OR B)')
+  })
+
+  it("defaultLiveConnectors's GDELT connector ships a parenthesized OR query", async () => {
+    // Regression for the production-blocking query bug: the default newsQuery must wrap
+    // its OR group in parens. We exercise the actual default-arg by invoking the GDELT
+    // NewsConnector returned by defaultLiveConnectors() (no args) against a captured fetch
+    // and asserting the decoded ?query= value matches the expected parenthesized form.
+    const { newsConnectors } = defaultLiveConnectors()
+    const gdelt = newsConnectors.find((c) => c.id === 'src.gdelt')
+    expect(gdelt).toBeDefined()
+    const fetch = vi.fn<(url: string) => Promise<Response>>(
+      async () =>
+        ({
+          ok: true,
+          status: 200,
+          json: async () => ({ articles: [] }),
+          text: async () => '',
+        }) as unknown as Response,
+    )
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep: async () => {} }
+    await gdelt!.run(ctx)
+    const calledUrl = new URL(fetch.mock.calls[0][0])
+    expect(calledUrl.searchParams.get('query')).toBe(
+      '(Africa economy OR Africa currency OR Africa oil)',
+    )
   })
 
   it('rss fails loud on a non-OK response', async () => {

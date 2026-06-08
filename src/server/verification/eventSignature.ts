@@ -219,3 +219,124 @@ export function sameEvent(a: NewsItem, b: NewsItem, opts: SameEventOptions = {})
   if (jaccard(ta, tb) < o.minJaccard) return false
   return true
 }
+
+// ---------------------------------------------------------------------------
+// Path B (overlap-coefficient bridge) - SHADOW MODE ONLY.
+//
+// Path A (sameEvent) is symmetric and length-sensitive: two genuine reports of one event
+// whose headlines differ in length share many tokens yet fall under the Jaccard floor. The
+// overlap coefficient (intersection / min set size) is length-robust and bridges those, but
+// over-merges on its own, so it is gated behind a shared-entity-anchor floor and cross-org
+// eligibility. pathBBridge is deliberately NOT called by sameEvent / corroborateEvents:
+// emitted events are unchanged. It exists so a shadow replay can quantify would-be bridges
+// (precision and recall) BEFORE activation, which is a separate, explicitly-approved step.
+// ---------------------------------------------------------------------------
+
+// Explicit, reviewable thresholds - no buried magic numbers.
+export const PATH_B_MIN_SHARED = 4
+export const PATH_B_MIN_OVERLAP = 0.5
+// Path B requires at least this many shared ENTITY anchors (see entityAnchors): one
+// discriminating named entity/role is enough, but a pair sharing only generic calendar /
+// observance framing has zero and is rejected.
+export const PATH_B_MIN_ENTITY_ANCHORS = 1
+
+// Generic title tokens that LOOK like anchors (capitalized / numeric) but do not pin a report
+// to a specific occurrence: calendar words, weekday / month names, and recurring-observance
+// framing. Excluded from Path B eligibility anchors so a shared "World Environment Day 2026"
+// cannot bridge two unrelated stories.
+const GENERIC_ANCHOR_TOKENS = new Set<string>([
+  'day',
+  'days',
+  'week',
+  'weeks',
+  'month',
+  'months',
+  'year',
+  'years',
+  'today',
+  'tomorrow',
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday',
+  'sunday',
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+  'world',
+  'international',
+  'national',
+  'global',
+  'annual',
+  'summit',
+  'forum',
+  'expo',
+  'conference',
+  'festival',
+  'edition',
+  'anniversary',
+  'environment',
+  'happy',
+  'awards',
+])
+
+// Path B ELIGIBILITY anchors: discriminating named entities only. Starts from the generic
+// anchorTokens (acronyms / proper nouns / numbers) and drops anything not entity-like for
+// matching - tokens containing digits (dates / years / quantities / percentages) and the
+// GENERIC_ANCHOR_TOKENS denylist. So a recurring observance yields NO eligibility anchor,
+// while a real entity or role (CBN, MTN, Governor, Minister) survives. Kept separate from
+// anchorTokens, which stays the broad diagnostics helper.
+export function entityAnchors(title: string): Set<string> {
+  const out = new Set<string>()
+  for (const a of anchorTokens(title)) {
+    if (/\d/.test(a)) continue
+    if (GENERIC_ANCHOR_TOKENS.has(a)) continue
+    out.add(a)
+  }
+  return out
+}
+
+export interface PathBOptions extends SameEventOptions {
+  /** Map a sourceId to its independent organisation id (defaults to identity). */
+  organisationOf?: (sourceId: string) => string
+}
+
+// Szymkiewicz-Simpson overlap coefficient: intersection / min(|a|, |b|). Length-robust where
+// Jaccard is not - a short headline fully covered by a longer one scores high.
+export function overlapCoefficient(a: Set<string>, b: Set<string>): number {
+  if (a.size === 0 || b.size === 0) return 0
+  return sharedCount(a, b) / Math.min(a.size, b.size)
+}
+
+function sharedEntityAnchorCount(titleA: string, titleB: string): number {
+  return sharedCount(entityAnchors(titleA), entityAnchors(titleB))
+}
+
+// Whether the relaxed overlap bridge WOULD accept two reports as the same event. SHADOW
+// MODE: this is not an acceptance path in sameEvent; it only reports a would-be bridge.
+// Requires cross-org eligibility (a bridge may only ADD an independent source) and the same
+// country + time-window hard guards as Path A, then the overlap + shared-ENTITY-anchor floors.
+export function pathBBridge(a: NewsItem, b: NewsItem, opts: PathBOptions = {}): boolean {
+  const o = { ...DEFAULTS, ...opts }
+  const orgOf = opts.organisationOf ?? ((s: string) => s)
+  if (orgOf(a.sourceId) === orgOf(b.sourceId)) return false
+  if (disjointCountries(a.countryCodes, b.countryCodes)) return false
+  if (!withinWindow(a, b, o.windowMs)) return false
+  const ta = signatureTokens(a, o.minShared)
+  const tb = signatureTokens(b, o.minShared)
+  if (sharedCount(ta, tb) < PATH_B_MIN_SHARED) return false
+  if (overlapCoefficient(ta, tb) < PATH_B_MIN_OVERLAP) return false
+  if (sharedEntityAnchorCount(a.title, b.title) < PATH_B_MIN_ENTITY_ANCHORS) return false
+  return true
+}

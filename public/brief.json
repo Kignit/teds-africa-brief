@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T11:34:26.025Z",
+  "generatedAt": "2026-06-08T12:14:14.184Z",
   "brief": {
     "id": "live_2026-06-08",
     "date": "2026-06-08",
@@ -282,6 +282,417 @@
     ],
     "events": [
       {
+        "id": "evt_uba_foundation_marks_world_environment_day_2026_with_qbcw1w",
+        "title": "UBA Foundation marks World Environment Day 2026 with Tree-Planting Initiative in Iconic Lagos Schools",
+        "summary": "In commemoration of World Environment Day 2026, the UBA Foundation, the Corporate Social Responsibility arm of United Bank for Africa (UBA) Group, has reinforced its commitment to environmental sustainability through a tree-planting exercise at two of Lagos’ most iconic educational institutions – King’s College, Lagos, and CMS Grammar School, Bariga. The exercise marks the commencement […]\nThe pos",
+        "occurredAt": "2026-06-08T12:15:44.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "uba foundation marks world environment day 2026 with",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:nx2gtc",
+            "src.nairametrics_ng:kfatyd",
+            "src.biznakenya_ke:1bzt95w"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng",
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bolt_food_and_quickmart_join_forces_to_bring_uexc6r",
+        "title": "Bolt Food and Quickmart Join Forces to Bring More Than 12,000 Products to Kenyan Doorsteps",
+        "summary": "Bolt Food has announced its entry into on-demand retail through a strategic partnership with Quickmart Supermarkets, giving customers access to … ContinuedThe post Bolt Food and Quickmart Join Forces to Bring More Than 12,000 Products to Kenyan Doorsteps appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T12:14:49.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "bolt food and quickmart join forces to bring",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1ms5hjw"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_president_mahama_must_demand_quarterly_kpi_reports_from_86yewa",
+        "title": "President Mahama must demand quarterly KPI reports from all institutions to drive the 24-Hour Economy Agenda",
+        "summary": "By Elikem Desewu “Without institutional accountability, the 24-Hour Economy risks becoming another national slogan rather than a national transformation agenda” Ghana Has Achieved Stability. Now Every Institution Must Be Measured on Productivity, Jobs and Growth. Ghana stands at an important turning point. After years of economic turbulence, painful reforms, and difficult sacrifices by businesses ",
+        "occurredAt": "2026-06-08T12:05:22.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "president mahama must demand quarterly kpi reports from",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:ols25c"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_watra_urges_nigeria_to_shift_focus_from_telecom_rw5odx",
+        "title": "WATRA urges Nigeria to shift focus from telecom expansion to digital transformation",
+        "summary": "The Executive Secretary of the West Africa Telecommunications Regulators Assembly (WATRA), Aliyu Yusuf Aboki, has urged Nigeria to build on the gains of its telecommunications reforms by focusing on economy-wide digital transformation as the next phase of development. \nThe post WATRA urges Nigeria to shift focus from telecom expansion to digital transformation appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T12:04:39.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "watra urges nigeria to shift focus from telecom",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1ggaohh"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kagwe_pushes_for_tougher_action_against_fake_farm_1na9gvr",
+        "title": "Kagwe pushes for tougher action against fake farm inputs",
+        "summary": "Agriculture and Livestock Development Cabinet Secretary Mutahi Kagwe said developing countries should not become destinations for agrochemicals that have been deemed unsafe elsewhere.",
+        "occurredAt": "2026-06-08T12:00:28.000Z",
+        "countryCodes": [],
+        "topic": "kagwe pushes for tougher action against fake farm",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:10yaiup"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_looming_job_losses_as_kenya_power_phases_out_x4jtgx",
+        "title": "Looming Job Losses as Kenya Power Phases Out Payment Counters",
+        "summary": "Kenya Power has announced plans to progressively close all remaining payment counters in its banking halls by June 2027 following a sharp rise in the use of digital platforms",
+        "occurredAt": "2026-06-08T11:59:35.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "looming job losses as kenya power phases out",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:o3es0w"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_gas_investors_need_stable_regulations_infrastructure_to_unlock_69lua6",
+        "title": "Gas investors need stable regulations, infrastructure to unlock supply – AGPC boss",
+        "summary": "Nigeria must address regulatory uncertainty, infrastructure deficits and weak contract enforcement to unlock greater investment and gas supply to the\nread more Gas investors need stable regulations, infrastructure to unlock supply – AGPC boss",
+        "occurredAt": "2026-06-08T11:59:24.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "gas investors need stable regulations infrastructure to unlock",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:zlxmpc"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_carrefour_open_padel_tournament_signals_bright_future_for_u74jut",
+        "title": "Carrefour Open Padel Tournament Signals Bright Future for Kenya’s Fast-Growing Sport",
+        "summary": "The Carrefour Open Padel Tournament held in Gigiri from June 4 to 6 was more than just a competition. It … ContinuedThe post Carrefour Open Padel Tournament Signals Bright Future for Kenya’s Fast-Growing Sport appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T11:54:38.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "carrefour open padel tournament signals bright future for",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1me12ih"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kakamega_launches_digital_platform_to_streamline_development_approvals_1pp7oki",
+        "title": "Kakamega launches digital platform to streamline development approvals",
+        "summary": "The platform enables developers to submit applications, track approvals, and access services online, significantly improving efficiency, transparency, and accountability in service delivery.",
+        "occurredAt": "2026-06-08T11:52:50.000Z",
+        "countryCodes": [],
+        "topic": "kakamega launches digital platform to streamline development approvals",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.standardmedia_ke:mhf593"
+          ],
+          "sourceIds": [
+            "src.standardmedia_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_floods_waterways_and_our_culture_of_indiscipline_r8g0h5",
+        "title": "Floods, waterways and our ‘culture’ of indiscipline",
+        "summary": "By Charles Benoni OKINE A few days ago, the Ga Mantse, King Tackie Teiko Tsuru II, toured some flood-prone communities in Accra. One of the areas he visited was Weija, where the spillage of the Weija Dam by the Ghana Water Company Limited (GWCL), has once again left many homes submerged and roads impassable. Standing […]\nThe post Floods, waterways and our ‘culture’ of indiscipline appeared first o",
+        "occurredAt": "2026-06-08T11:50:06.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "floods waterways and our culture of indiscipline",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:13ms3ec"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_biznews_power_lunch_markets_don_t_reward_good_1wbd4ht",
+        "title": "BizNews Power Lunch: Markets don't reward good results — they reward surprises",
+        "summary": "",
+        "occurredAt": "2026-06-08T11:48:06.000Z",
+        "countryCodes": [],
+        "topic": "biznews power lunch markets don t reward good",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:w89k42"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_zedvance_to_triple_lending_after_disbursing_n120bn_to_yr7x92",
+        "title": "Zedvance To Triple Lending after Disbursing N120bn To SME’s in 2025",
+        "summary": "The Group Managing Director of Zedcrest, parent company of Zedvance, Adedayo Amzat, has announced a strategic shift in the firm’s asset deployment, committing 100 per cent of its active loan portfolio to small and medium enterprises and critical ecosystem enablers. This is in a major move to address the financing constraints plaguing Nigeria’s mid-market enterprises. […]\nThe post Zedvance To Tripl",
+        "occurredAt": "2026-06-08T11:47:09.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "zedvance to triple lending after disbursing n120bn to",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1w8kzyx"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_arm_harith_raises_76m_first_close_for_africa_1jcj998",
+        "title": "ARM-Harith raises $76m first close for Africa’s pioneer multi-currency climate fund",
+        "summary": "ARM-Harith Infrastructure Investments Ltd. has secured a first close of about $76 million for a climate transition fund aimed at\nread more ARM-Harith raises $76m first close for Africa’s pioneer multi-currency climate fund",
+        "occurredAt": "2026-06-08T11:45:04.000Z",
+        "countryCodes": [],
+        "topic": "arm harith raises 76m first close for africa",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1ip0b3j",
+            "src.nairametrics_ng:1bi034n"
+          ],
+          "sourceIds": [
+            "src.businessday_ng",
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fcmb_q1_2026_profit_jumps_to_n87_billion_3y08k1",
+        "title": "FCMB Q1 2026 profit jumps to N87 billion as earnings surge 26.72%",
+        "summary": "FCMB Group Plc has reported a profit before tax of N86.987 billion for the first quarter ended 31 March 2026, according to its unaudited financial statements.\nThe post FCMB Q1 2026 profit jumps to N87 billion as earnings surge 26.72% appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T11:43:45.000Z",
+        "countryCodes": [],
+        "topic": "fcmb q1 2026 profit jumps to n87 billion",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:14tamjh"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_shuttlers_integrates_google_maps_transit_by_mass_transit_16rgjwt",
+        "title": "Shuttlers integrates Google Maps transit by mass transit network routing",
+        "summary": "Shuttlers, a technology-enabled shared mobility platform, has officially integrated Google Maps to enable commuters to search for transit directions, view\nread more Shuttlers integrates Google Maps transit by mass transit network routing",
+        "occurredAt": "2026-06-08T11:42:26.000Z",
+        "countryCodes": [],
+        "topic": "shuttlers integrates google maps transit by mass transit",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:30v1de"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_s_private_sector_hits_rough_patch_as_w6rnbu",
+        "title": "Kenya’s Private Sector Hits Rough Patch as Rising Costs Squeeze Demand",
+        "summary": "Kenya’s private sector endured one of its most difficult months in nearly two years in May, as businesses grappled with … ContinuedThe post Kenya’s Private Sector Hits Rough Patch as Rising Costs Squeeze Demand appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T11:42:26.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya s private sector hits rough patch as",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:14q3wh"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_s_business_recovery_falters_as_more_economies_195j3o5",
+        "title": "Africa’s business recovery falters as more economies contract",
+        "summary": "…five of eight major economies contract as inflation, external shocks bite Africa’s private-sector recovery is showing signs of strain as\nread more Africa’s business recovery falters as more economies contract",
+        "occurredAt": "2026-06-08T11:42:07.000Z",
+        "countryCodes": [],
+        "topic": "africa s business recovery falters as more economies",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1jqvtyl"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_can_you_handle_lagos_wahala_indrive_launches_search_158qf0h",
+        "title": "Can you handle Lagos wahala? inDrive launches search for city’s first Chief Wahala Officer",
+        "summary": "If there is one qualification many Lagosians already have, it is surviving wahala. Every day, millions of residents navigate gridlocked\nread more Can you handle Lagos wahala? inDrive launches search for city’s first Chief Wahala Officer",
+        "occurredAt": "2026-06-08T11:40:05.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "can you handle lagos wahala indrive launches search",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1bk6qbb"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_lagos_to_market_fintech_dominance_to_global_investors_p582gh",
+        "title": "Lagos to market fintech dominance to global investors at Invest Lagos 3.0",
+        "summary": "Lagos State will spotlight fintech and technology as its unique selling point at the Invest Lagos 3.0 summit. \nThe post Lagos to market fintech dominance to global investors at Invest Lagos 3.0 appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T11:40:03.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "lagos to market fintech dominance to global investors",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:ncurd9"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_airtel_kenya_strengthens_presence_in_key_growth_areas_11bxo2e",
+        "title": "Airtel Kenya Strengthens Presence in Key Growth Areas in Nairobi",
+        "summary": "As demand for mobile connectivity, digital services and mobile financial solutions grows, Airtel Kenya has expanded its customer access network across Nairobi with four new customer touch-points.",
+        "occurredAt": "2026-06-08T11:38:35.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "airtel kenya strengthens presence in key growth areas",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:vmoss6"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_business_draws_a_line_in_the_sand_over_ngqxe7",
         "title": "Business draws a line in the sand over Joburg’s collapse",
         "summary": "SA helped develop a game-changer HIV drug, so why is access so limited? From day zero to El Niño, the next drought could be worse than we think. And why more of SA’s top matrics are opting for British universities over American Ivy Leagues.",
@@ -295,25 +706,6 @@
           ],
           "sourceIds": [
             "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_arm_harith_achieves_us_76_million_first_close_pj4lij",
-        "title": "ARM-Harith Achieves US$76 Million First Close for its Climate Transition Fund",
-        "summary": "ARM-Harith Infrastructure Investments Limited (“ARM-Harith”), a leading pan-African private equity fund manager focused on sustainable energy and infrastructure investment, has announced the first close of its Successor Fund, a climate transition Fund (the “Fund”) at ~US$76 million equivalent. The Fund is the first integrated multi-currency blended finance platform purpose-built for African instit",
-        "occurredAt": "2026-06-08T11:32:04.000Z",
-        "countryCodes": [],
-        "topic": "arm harith achieves us 76 million first close",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1bi034n"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -335,6 +727,27 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenyan_stocks_rally_despite_economic_headwinds_as_investors_1lpmh8x",
+        "title": "Kenyan Stocks Rally Despite Economic Headwinds As Investors Position For Key Monetary Policy Decision",
+        "summary": "The Nairobi Securities Exchange (NSE) ended the first week of June on a positive note, with major indices posting strong … ContinuedThe post Kenyan Stocks Rally Despite Economic Headwinds As Investors Position For Key Monetary Policy Decision appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T11:27:04.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenyan stocks rally despite economic headwinds as investors",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:g1subc"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -396,6 +809,27 @@
           ],
           "sourceIds": [
             "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_oraimo_hosts_innovation_gala_2026_in_nairobi_unveils_1p3nfat",
+        "title": "oraimo Hosts Innovation Gala 2026 in Nairobi: Unveils Expanded Smart Tech Ecosystem",
+        "summary": "oraimo, the premier smart accessory brand in Africa, has officially hosted the highly anticipated oraimo Innovation Gala 2026 at the … ContinuedThe post oraimo Hosts Innovation Gala 2026 in Nairobi: Unveils Expanded Smart Tech Ecosystem appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T11:09:39.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "oraimo hosts innovation gala 2026 in nairobi unveils",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:lv52bl"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -889,29 +1323,6 @@
             "src.businessday_ng"
           ],
           "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_uba_foundation_marks_world_environment_day_2026_with_23drn4",
-        "title": "UBA Foundation Marks World Environment Day 2026 with Tree-Planting Initiative in Iconic Lagos Schools",
-        "summary": "In commemoration of World Environment Day 2026, the UBA Foundation, the Corporate Social Responsibility arm of United Bank for Africa (UBA) Group, has reinforced its commitment to environmental sustainability through a tree-planting exercise at two of Lagos’ most historic educational institutions – King’s College, Lagos, and CMS Grammar School, Bariga. The exercise marks the commencement […]\nThe p",
-        "occurredAt": "2026-06-08T09:18:58.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "uba foundation marks world environment day 2026 with",
-        "status": "corroborated",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:kfatyd",
-            "src.biznakenya_ke:1bzt95w"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng",
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -7333,446 +7744,6 @@
           ],
           "sourceIds": [
             "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_talstack_joins_idice_startup_bridge_founders_lab_as_uw1ook",
-        "title": "Talstack Joins iDICE Startup Bridge Founders Lab as Learning Platform Partner",
-        "summary": "Talstack has joined the iDICE Startup Bridge Founders Lab as its learning platform partner, providing the learning infrastructure and curriculum expertise to support a 12-week structured entrepreneurship programme for 185 early-stage Nigerian founders. The first cohort commenced in May 2026. The Founders Lab is designed for founders at the idea, prototype or early-MVP stage who […]\nThe post ",
-        "occurredAt": "2026-06-05T12:18:00.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "talstack joins idice startup bridge founders lab as",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:zgzgqa"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_abigail_cudjoe_of_deloitte_sweeps_top_honours_at_16kkfwe",
-        "title": "Abigail Cudjoe of Deloitte sweeps top honours at CITG February 2026 graduation",
-        "summary": "An Associate at Deloitte Ghana, Abigail Cudjoe, has been adjudged the Overall Best Student in the February 2026 graduating class of the Chartered Institute of Taxation Ghana (CITG). Not only was she adjudged the Overall Best Student, but she also emerged as the Best Student in Advanced Taxation Practice and the Best Student in Tax […]",
-        "occurredAt": "2026-06-05T12:17:27.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "abigail cudjoe of deloitte sweeps top honours at",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:ehxpld"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_arla_foods_marks_world_milk_day_with_nutrition_ss3mr6",
-        "title": "Arla Foods marks World Milk Day with Nutrition drive",
-        "summary": "For the hundreds of students who gathered at the Aggrey Memorial AME Zion Senior High School in Cape Coast, this year’s World Milk Day celebration was more than a ceremony. It was a reminder of the important role nutrition plays in helping young people learn, grow and achieve their dreams. Observed globally on June 1, […]\nThe post Arla Foods marks World Milk Day with Nutrition drive appeared",
-        "occurredAt": "2026-06-05T12:16:15.000Z",
-        "countryCodes": [],
-        "topic": "arla foods marks world milk day with nutrition",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:187xo8c"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_artificial_intelligence_in_the_data_driven_world_317v1n",
-        "title": "Artificial Intelligence in the data driven world",
-        "summary": "By Prof. Samuel LARTEY, www.pefghana.org Artificial Intelligence has become one of the most powerful forces shaping the contemporary digital era. It represents a major shift in human civilisation where machines are no longer limited to executing instructions but are increasingly capable of learning, reasoning and adapting. Artificial Intelligence refers to the simulation of human intelligence in [",
-        "occurredAt": "2026-06-05T12:13:53.000Z",
-        "countryCodes": [],
-        "topic": "artificial intelligence in the data driven world",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:f1wrkp"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_today_is_world_environment_day_d9ytlz",
-        "title": "Today is World Environment Day",
-        "summary": "By Ama Kudom-Agyemang As Ghana joins the global community to mark World Environment Day – TODAY, focusing on climate change, Adenta’s natural water holes, the municipality’s hidden climate asserts come into context. This context highlights a known or unknown test the Assembly is currently facing of whether these water holes can be preserved as shields […]\nThe post Today is World Environment ",
-        "occurredAt": "2026-06-05T12:07:17.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "today is world environment day",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:zf06bw"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bopp_spends_gh_107mi_on_3_030_hectares_g3ud1a",
-        "title": "BOPP spends GH¢107mi on 3,030 hectares, retains RSPO Certification",
-        "summary": "By Juliet Aguiar DUGBARTEY, Takoradi Benso Oil Palm Plantation PLC has invested GH¢107 million in the development of a 3,030-hectare Smallholder and Outgrower oil palm project. Out of the total hectares planted, 1,630 hectares have reached maturity stage, with the remaining 1,400 expected to reach maturity by the end of 2026. The Outgrower Value Chain […]\nThe post BOPP spends GH¢107mi on 3,0",
-        "occurredAt": "2026-06-05T12:04:42.000Z",
-        "countryCodes": [],
-        "topic": "bopp spends gh 107mi on 3 030 hectares",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:bpg27"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_from_import_dependency_to_food_sovereignty_1hsjo2h",
-        "title": "From import dependency to food sovereignty",
-        "summary": "By Ben Brako (koBENa BRAKO) Ghana currently finds itself at a critical crossroads regarding its food security and economic stability. Nowhere is this more evident than in the rice sector. Despite favorable ecological conditions and a robust workforce of dedicated farmers, the nation is ensnared in a “paradox of plenty”. While local warehouses and farm […]\nThe post From import dep",
-        "occurredAt": "2026-06-05T12:04:00.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "from import dependency to food sovereignty",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1m4148v"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_future_of_the_pension_system_sustainability_or_t0b4a9",
-        "title": "The future of the pension System: Sustainability or crisis?",
-        "summary": "By Nana Sifa TWUM, PhD Ghana’s pension system stands at a critical crossroads. As the nation grapples with economic uncertainty, demographic shifts, evolving labour market dynamics, and rising expectations among retirees, an important question emerges: Is Ghana’s pension system sustainable, or is it heading towards a crisis? The answer lies somewhere between the two extremes. […]\nThe post Th",
-        "occurredAt": "2026-06-05T12:03:57.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "the future of the pension system sustainability or",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:17evfmo"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_africa_does_not_suffer_from_excessive_debt_but_1kgrpn3",
-        "title": "Africa does not suffer from excessive debt, but from a deficit of financial strategy",
-        "summary": "By Cheikh Mbacké SENE African debt has become a central topic in international economic debates. The figures are striking: an average public debt ratio approaching 65% of GDP, external debt exceeding $1.1 trillion, and annual debt servicing costs that, in several countries, absorb more resources than health or education budgets. Yet reducing the debate to […]\nThe post Africa does not suffer ",
-        "occurredAt": "2026-06-05T12:03:54.000Z",
-        "countryCodes": [],
-        "topic": "africa does not suffer from excessive debt but",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1qeo5bf"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_digital_future_is_being_built_right_now_1hljhfl",
-        "title": "The digital future is being built right now — and your voice matters",
-        "summary": "By Alain GBEASOR Ghana has poured hundreds of millions of cedis into government technology over the past two decades. Software platforms. Data systems. Digital registries. Connectivity infrastructure. Ask any procurement officer how many of those projects are still running as intended. Then ask any citizen if they can feel the difference. The silence that follows […]\nThe post The digital fut",
-        "occurredAt": "2026-06-05T12:03:22.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "the digital future is being built right now",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1kcw4je"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_grenada_opens_doors_to_nigerians_with_visa_free_181xxdg",
-        "title": "Grenada opens doors to Nigerians with visa-free access, eyes trade, investment boom",
-        "summary": "The Caribbean nation of Grenada has approved visa-free entry for Nigerian passport holders and is awaiting a reciprocal decision from\nread more Grenada opens doors to Nigerians with visa-free access, eyes trade, investment boom",
-        "occurredAt": "2026-06-05T12:01:36.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "grenada opens doors to nigerians with visa free",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1hi8ule"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_why_millions_still_lack_access_to_life_saving_17bbjqu",
-        "title": "Why millions still lack access to life-saving medical tests",
-        "summary": "Artificial intelligence can now detect diseases faster. Genomic technology is making personalised treatment possible. Digital health records are improving patient\nread more Why millions still lack access to life-saving medical tests",
-        "occurredAt": "2026-06-05T11:59:50.000Z",
-        "countryCodes": [],
-        "topic": "why millions still lack access to life saving",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:2sxi9i"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_call_of_my_life_rakes_n396_1m_as_1vy4m0v",
-        "title": "“Call of My Life” rakes N396.1M as Nollywood dominates May Box Office",
-        "summary": "Nollywood films led the Nigerian cinema charts for the weekend of May 29-31, underscoring local productions’ strong audience appeal over\nread more “Call of My Life” rakes N396.1M as Nollywood dominates May Box Office",
-        "occurredAt": "2026-06-05T11:56:58.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "call of my life rakes n396 1m as",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:fv5mil"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_world_media_organisation_editor_in_chief_calls_for_1f2t7i5",
-        "title": "World Media Organisation Editor-in-Chief calls for global action to protect biodiversity",
-        "summary": "By Gautam Karve, Editor-in-Chief, World Media Organisation On the occasion of World Environment Day, I urge citizens across the globe to recognise that biodiversity is the foundation of life on Earth. Every species, ecosystem, and natural habitat plays a vital role in maintaining the balance of our planet. The loss of biodiversity threatens food security, […]\nThe post World Media Organisatio",
-        "occurredAt": "2026-06-05T11:55:40.000Z",
-        "countryCodes": [],
-        "topic": "world media organisation editor in chief calls for",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1ez7i1v"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_nkusi_it_siyasebenza_launches_epwp_smart_track_a_1o7spai",
-        "title": "Nkusi IT Siyasebenza launches EPWP Smart Track, a digital workforce management platform built on Microsoft Power Platform",
-        "summary": "At the heart of the platform is a mobile-first check-in experience built on Microsoft Power Apps.",
-        "occurredAt": "2026-06-05T11:55:33.000Z",
-        "countryCodes": [],
-        "topic": "nkusi it siyasebenza launches epwp smart track a",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:qnoua6"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_hidden_arms_trade_tracking_west_a_frica_13xxzzh",
-        "title": "The hidden arms trade: Tracking West A\\frica’s illicit weapons networks",
-        "summary": "Discussions about the security crisis unfolding across West Africa often focus on terrorism, banditry, insurgency, and organised crime. Yet beneath\nread more The hidden arms trade: Tracking West A\\frica’s illicit weapons networks",
-        "occurredAt": "2026-06-05T11:53:56.000Z",
-        "countryCodes": [],
-        "topic": "the hidden arms trade tracking west a frica",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1a3qs3o"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_lagos_moves_to_shield_public_data_as_ai_1bm3cb1",
-        "title": "Lagos moves to shield public data as AI-driven cyber threats rise",
-        "summary": "The Lagos state government has intensified efforts to protect public data and digital services through a new cybersecurity capacity-building programme\nread more Lagos moves to shield public data as AI-driven cyber threats rise",
-        "occurredAt": "2026-06-05T11:51:55.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "lagos moves to shield public data as ai",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1owxyah"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_yango_group_hosts_innovation_day_2026_in_abidjan_7sje9w",
-        "title": "Yango Group hosts Innovation Day 2026 in Abidjan",
-        "summary": "More than 200 business leaders,  entrepreneurs, policymakers, and technology experts gathered in Abidjan on 4 June for Yango Innovation Day 2026, where Yango Group, a UAE-based technology company, showcased technologies used across its global markets, discussed the future of urban digital services in Africa, announced new local partnerships and recognised graduates of its Fellowship Programme. [&#",
-        "occurredAt": "2026-06-05T11:49:17.000Z",
-        "countryCodes": [],
-        "topic": "yango group hosts innovation day 2026 in abidjan",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:nqju5k"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_nigeria_loses_jobs_billions_to_90_raw_semi_67n1l0",
-        "title": "Nigeria loses jobs, billions to 90% raw, semi-processed leather exports",
-        "summary": "Nigeria continues to lose millions of dollars in potential export earnings and thousands of manufacturing jobs as nearly 90% of\nread more Nigeria loses jobs, billions to 90% raw, semi-processed leather exports",
-        "occurredAt": "2026-06-05T11:46:34.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "nigeria loses jobs billions to 90 raw semi",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:zifqka"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_we_have_built_required_reserves_to_withstand_oil_1pmgmxe",
-        "title": "We have built required reserves to withstand oil price shocks  – BoG Governor",
-        "summary": "Asked about what will happen if the current shocks should drag, Dr. Asiama said “if it should continue, then the outlook could be impacted”.",
-        "occurredAt": "2026-06-05T11:46:01.000Z",
-        "countryCodes": [],
-        "topic": "we have built required reserves to withstand oil",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1mz71o4"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_emperor_the_premium_and_his_vision_q4sav0",
-        "title": "The Emperor, the premium, and his vision",
-        "summary": "Total premium paid in the Nigerian Insurance industry for 2025 stood at about N2. 3 trillion, a 47% increase from the N1.5 trillion it did the previous year. Let me give you some more breakdown. Non-life (general Insurance) contributed approximately 68.4% (N1). 5trillion with the oil and gas, fire and motor insurance driving that. Life […]\nThe post The Emperor, the premium, and his vision ap",
-        "occurredAt": "2026-06-05T11:42:56.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "the emperor the premium and his vision",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1e1z4xg"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_minister_seeks_investigation_into_r70m_lease_deal_for_1ucl1ws",
-        "title": "Minister seeks investigation into R70m lease deal for empty building",
-        "summary": "SA tops Africa’s digital fraud rankings as criminals get smarter. SA companies are spending billions on benefits employees don’t use. And in conversation with author Lidia Rauch on her new book, Apartheid’s Granddaughter.",
-        "occurredAt": "2026-06-05T11:40:46.000Z",
-        "countryCodes": [],
-        "topic": "minister seeks investigation into r70m lease deal for",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:1jrdgrt"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

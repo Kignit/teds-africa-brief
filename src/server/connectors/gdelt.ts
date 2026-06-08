@@ -8,12 +8,17 @@ import { decodeEntities } from './decodeEntities'
 const SOURCE_ID = 'src.gdelt'
 
 // GDELT's free endpoint throttles per IP ("one request every 5 seconds") and on
-// shared CI egress IPs it 429s aggressively — query shape / maxrecords don't change
-// that. We retry a couple of times with backoff (respecting its ~5s window) so the
-// request can succeed if the shared-IP window opens, then FAIL CLOSED. Best-effort:
-// a persistently throttled IP still fails, and that failure is recorded in
-// diagnostics (never silently treated as "no news").
-const RETRY_DELAYS_MS = [5000, 10000]
+// shared CI egress IPs it 429s aggressively even for a well-formed query: the smoke
+// run after the query-syntax fix (PR #36) failed only with persistent HTTP 429, while
+// the artifact still gate-passed - so this is connector availability, not integrity.
+// We retry with an escalating backoff so the request can land if the shared-IP window
+// opens: the leading 5s respects the documented ~5s per-IP minimum, and the 15/30/60s
+// tail spans larger windows where a per-minute shared quota is likely to reset. Five
+// attempts, ~110s worst-case added latency - bounded for a daily cron / manual
+// dispatch, and a persistently throttled IP still FAILS CLOSED (recorded in
+// diagnostics, never silently treated as "no news"). Retry budget only: query shape,
+// maxrecords, and the fail-loud throw are unchanged.
+const RETRY_DELAYS_MS = [5000, 15000, 30000, 60000]
 
 const realSleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms))
 

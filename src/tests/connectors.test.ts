@@ -63,7 +63,7 @@ describe('connectors', () => {
     expect(res.disabled).toBe(true)
   })
 
-  it('gdelt retries a 429 then FAILS CLOSED (never silent-empty), recording attempts', async () => {
+  it('gdelt retries a 429 then FAILS CLOSED, recording attempts + escalating delays', async () => {
     const fetch = vi.fn(
       async () =>
         ({
@@ -73,10 +73,33 @@ describe('connectors', () => {
           text: async () => '',
         }) as unknown as Response,
     )
-    // no-op sleep so the retry/backoff path runs instantly in tests
-    const ctx: ConnectorContext = { fetch, config: {}, now, sleep: async () => {} }
-    await expect(fetchGdelt(ctx, 'oil')).rejects.toThrow(/after 3 attempt\(s\): HTTP 429/)
-    expect(fetch).toHaveBeenCalledTimes(3) // initial + 2 retries
+    // Capture (no-op) sleep so the retry/backoff path runs instantly AND we can assert
+    // the exact escalating delay sequence requested between attempts.
+    const sleep = vi.fn<(ms: number) => Promise<void>>(async () => {})
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep }
+    await expect(fetchGdelt(ctx, 'oil')).rejects.toThrow(/after 5 attempt\(s\): HTTP 429/)
+    expect(fetch).toHaveBeenCalledTimes(5) // initial + 4 retries
+    // Four backoffs between the five attempts, escalating per RETRY_DELAYS_MS.
+    expect(sleep.mock.calls.map((c) => c[0])).toEqual([5000, 15000, 30000, 60000])
+  })
+
+  it('gdelt does NOT retry a non-429 4xx (stops early, fails closed)', async () => {
+    // A 4xx other than 429 will not improve on retry, so the connector must fail closed
+    // after a single attempt with no backoff - unchanged by the wider 429 budget.
+    const fetch = vi.fn(
+      async () =>
+        ({
+          ok: false,
+          status: 400,
+          json: async () => ({}),
+          text: async () => '',
+        }) as unknown as Response,
+    )
+    const sleep = vi.fn<(ms: number) => Promise<void>>(async () => {})
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep }
+    await expect(fetchGdelt(ctx, 'oil')).rejects.toThrow(/after 1 attempt\(s\): HTTP 400/)
+    expect(fetch).toHaveBeenCalledTimes(1)
+    expect(sleep).not.toHaveBeenCalled()
   })
 
   it('gdelt recovers when a retry succeeds (429 then 200)', async () => {
@@ -111,6 +134,45 @@ describe('connectors', () => {
     expect(items).toHaveLength(1)
     expect(items[0].countryCodes).toEqual(['NG'])
     expect(fetch).toHaveBeenCalledTimes(2)
+  })
+
+  it('gdelt recovers on a LATER retry within the extended budget (three 429s then 200)', async () => {
+    // Proves the widened budget is actually reachable: the request lands on the 4th
+    // attempt (after the 5s/15s/30s backoffs) instead of failing closed at attempt 3
+    // as it would have under the old [5000, 10000] budget.
+    let n = 0
+    const fetch = vi.fn(async () => {
+      n += 1
+      if (n < 4)
+        return {
+          ok: false,
+          status: 429,
+          json: async () => ({}),
+          text: async () => '',
+        } as unknown as Response
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({
+          articles: [
+            {
+              title: 'Naira steadies as CBN clears FX backlog',
+              url: 'https://x.test/n',
+              seendate: '20260603T060000Z',
+              language: 'English',
+            },
+          ],
+        }),
+        text: async () => '',
+      } as unknown as Response
+    })
+    const sleep = vi.fn<(ms: number) => Promise<void>>(async () => {})
+    const ctx: ConnectorContext = { fetch, config: {}, now, sleep }
+    const items = await fetchGdelt(ctx, 'naira')
+    expect(items).toHaveLength(1)
+    expect(fetch).toHaveBeenCalledTimes(4)
+    // Only the three backoffs before the successful 4th attempt are used (not the 4th).
+    expect(sleep.mock.calls.map((c) => c[0])).toEqual([5000, 15000, 30000])
   })
 
   it('gdelt returns [] on a 200 with no articles (a legitimate empty, not a failure)', async () => {

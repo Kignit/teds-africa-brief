@@ -2,6 +2,7 @@ import type { BriefDraft } from '../domain/brief'
 import type { Claim } from '../domain/claim'
 import type { Event } from '../domain/event'
 import type { Methodology } from '../domain/methodology'
+import type { CountryProfile, CountryProfileEvidenceField } from '../domain/country'
 import { FigureCard } from '../components/FigureCard'
 import { sourceName } from '../data/sources'
 import { theme } from './theme'
@@ -59,6 +60,75 @@ function claimProvenance(
   return lines
 }
 
+// A country profile's display rows, built ONLY from carried data. A derived field
+// (oilStance, dollarDebtExposure) shows its methodology name (resolved from the carried
+// methodologies, falling back to the id) plus source names; a raw/sourced field shows source
+// names. A field with no value OR no carried evidence is omitted entirely - nothing is
+// defaulted or fabricated. Field order follows the brief's priority.
+function profileRows(
+  profile: CountryProfile,
+  methodologyById: Map<string, Methodology>,
+): { label: string; value: string; sources: string; methodology?: string }[] {
+  const rows: { label: string; value: string; sources: string; methodology?: string }[] = []
+  const ev = profile.evidence
+  const usdB = (n: number) => `$${(n / 1e9).toFixed(1)}B`
+  const sourcesFor = (field: CountryProfileEvidenceField): string =>
+    [...new Set(ev[field]?.sourceIds ?? [])].map(sourceName).join(', ')
+  const methodologyFor = (field: CountryProfileEvidenceField): string | undefined => {
+    const id = ev[field]?.methodologyId
+    return id ? (methodologyById.get(id)?.name ?? id) : undefined
+  }
+
+  if (profile.oilStance && ev.oilStance) {
+    rows.push({
+      label: 'Oil stance',
+      value: profile.oilStance,
+      sources: sourcesFor('oilStance'),
+      methodology: methodologyFor('oilStance'),
+    })
+  }
+  if (profile.petroleumTrade && ev.petroleumTrade) {
+    const pt = profile.petroleumTrade
+    rows.push({
+      label: 'Petroleum trade',
+      value: `exports ${usdB(pt.exportValueUsd)} / imports ${usdB(pt.importValueUsd)} (${pt.refYear})`,
+      sources: sourcesFor('petroleumTrade'),
+    })
+  }
+  if (profile.keyExports?.length && ev.keyExports) {
+    rows.push({
+      label: 'Key exports',
+      value: profile.keyExports.join(', '),
+      sources: sourcesFor('keyExports'),
+    })
+  }
+  if (profile.importDependence?.length && ev.importDependence) {
+    rows.push({
+      label: 'Import dependence',
+      value: profile.importDependence.join(', '),
+      sources: sourcesFor('importDependence'),
+    })
+  }
+  if (profile.externalDebtPctGni !== undefined && ev.externalDebtPctGni) {
+    rows.push({
+      label: 'External debt (% GNI)',
+      value: `${profile.externalDebtPctGni}%`,
+      sources: sourcesFor('externalDebtPctGni'),
+    })
+  }
+  // Derived: rendered ONLY when actually present. Its banding ships draft today, so it is
+  // normally absent and therefore omitted (never fabricated).
+  if (profile.dollarDebtExposure && ev.dollarDebtExposure) {
+    rows.push({
+      label: 'Dollar-debt exposure',
+      value: profile.dollarDebtExposure,
+      sources: sourcesFor('dollarDebtExposure'),
+      methodology: methodologyFor('dollarDebtExposure'),
+    })
+  }
+  return rows
+}
+
 // Runtime shell: renders user-facing facts only when a connector-backed BriefDraft
 // is supplied by the live pipeline. With no brief it shows an empty state, not
 // placeholder figures or analysis.
@@ -89,6 +159,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
   const methodologyById = new Map(
     (brief?.methodologies ?? []).map((m): [string, Methodology] => [m.id, m]),
   )
+  // Country profiles carried by the brief (raw + derived fields with per-field provenance).
+  const profiles = brief?.profiles ?? []
 
   return (
     <div
@@ -321,6 +393,68 @@ export default function App({ brief = null, generatedAt = null, loading = false 
                 })}
               </div>
             </section>
+
+            {profiles.length > 0 && (
+              <section aria-label="Country profiles" style={{ marginTop: 26 }}>
+                <div
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 800,
+                    letterSpacing: 1.2,
+                    textTransform: 'uppercase',
+                    color: theme.accent,
+                    marginBottom: 10,
+                  }}
+                >
+                  Country profiles
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  {profiles.map((p) => {
+                    const rows = profileRows(p, methodologyById)
+                    return (
+                      <div
+                        key={p.code}
+                        style={{
+                          background: theme.card,
+                          borderRadius: 14,
+                          padding: 14,
+                          boxShadow: theme.shadow,
+                        }}
+                      >
+                        <div style={{ fontSize: 14, fontWeight: 700 }}>
+                          {p.name}{' '}
+                          <span style={{ color: theme.muted, fontWeight: 600 }}>({p.code})</span>
+                        </div>
+                        {rows.length > 0 ? (
+                          <div
+                            style={{
+                              marginTop: 8,
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: 6,
+                            }}
+                          >
+                            {rows.map((row) => (
+                              <div key={row.label} style={{ fontSize: 12.5, lineHeight: 1.4 }}>
+                                <span style={{ fontWeight: 700 }}>{row.label}:</span> {row.value}
+                                <div style={{ fontSize: 11, color: theme.muted, marginTop: 1 }}>
+                                  {row.methodology ? `Methodology: ${row.methodology} · ` : ''}
+                                  {row.sources ? `Source: ${row.sources}` : ''}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <div style={{ fontSize: 12, color: theme.muted, marginTop: 4 }}>
+                            No sourced fields carried.
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              </section>
+            )}
           </>
         ) : (
           <section

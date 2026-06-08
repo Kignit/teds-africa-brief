@@ -142,6 +142,65 @@ const DEFAULTS: Required<SameEventOptions> = {
   minJaccard: 0.34,
 }
 
+// Light, deterministic plural/possessive normalization so "renewals"/"renewal" and
+// "licenses"/"license" align. Possessive "'s" is already handled by tokenization (the
+// apostrophe splits it off as a 1-char fragment that is dropped). We never stem a word INTO
+// a stopword (e.g. "news" -> "new"), and never touch -ss/-is/-us endings ("press",
+// "analysis", "census"). Conservative by design: it only collapses obvious variants.
+export function normalizeToken(token: string): string {
+  if (token.length < 4) return token
+  if (/(?:ss|is|us)$/.test(token)) return token
+  let stem = token
+  if (/ies$/.test(token)) stem = `${token.slice(0, -3)}y`
+  else if (/s$/.test(token)) stem = token.slice(0, -1)
+  return STOPWORDS.has(stem) ? token : stem
+}
+
+// Strip known RSS summary boilerplate tails before a summary is allowed to contribute to the
+// signature. These tails ("The post <title> appeared first on <Source>.", "read more",
+// "continue reading") are publisher chrome, not event content, and otherwise inflate the
+// token union and sink Jaccard for genuinely matching reports.
+export function stripBoilerplate(summary: string): string {
+  return summary
+    .replace(/\bthe post\b[\s\S]*$/i, '')
+    .replace(/\bappeared first on\b[\s\S]*$/i, '')
+    .replace(/\bcontinue reading\b[\s\S]*$/i, '')
+    .replace(/\bread more\b[\s\S]*$/i, '')
+    .trim()
+}
+
+// Anchor tokens: acronyms (CBN, MTN), non-sentence-initial proper nouns, and numbers /
+// percentages - the named entities and quantities that pin a report to a SPECIFIC
+// occurrence. Exported for tests and offline diagnostics ONLY; it is deliberately NOT used
+// as an acceptance path here (relaxed bridges are a separate, later-approved lane).
+export function anchorTokens(title: string): Set<string> {
+  const out = new Set<string>()
+  const words = title.match(/[A-Za-z0-9$%.]+/g) ?? []
+  words.forEach((w, i) => {
+    if (/^[A-Z]{2,}$/.test(w)) out.add(w.toLowerCase())
+    else if (/\d/.test(w)) out.add(w.toLowerCase().replace(/[^a-z0-9]/g, ''))
+    else if (i > 0 && /^[A-Z][a-zA-Z]+$/.test(w)) out.add(w.toLowerCase())
+  })
+  return new Set([...out].filter((t) => t.length >= 2))
+}
+
+function normalizedTokens(text: string): Set<string> {
+  return new Set([...significantTokens(text)].map(normalizeToken))
+}
+
+// The matching signature for one report. TITLE-PRIMARY: the normalized title tokens are the
+// signature whenever the title alone carries at least `minTitleTokens` of them. Only when the
+// title is too thin do we fall back to title + boilerplate-stripped summary, so publisher
+// chrome and divergent article bodies cannot dilute (or falsely inflate) a strong title match.
+export function signatureTokens(
+  item: NewsItem,
+  minTitleTokens: number = DEFAULTS.minShared,
+): Set<string> {
+  const title = normalizedTokens(item.title)
+  if (title.size >= minTitleTokens) return title
+  return normalizedTokens(`${item.title} ${stripBoilerplate(item.summary)}`)
+}
+
 // Whether two reports describe the same event. Every guard must pass; any single
 // failure keeps them apart, so unrelated stories never merge into a false
 // corroboration. (Two outlets reporting the same headline → true; the same topic
@@ -150,8 +209,12 @@ export function sameEvent(a: NewsItem, b: NewsItem, opts: SameEventOptions = {})
   const o = { ...DEFAULTS, ...opts }
   if (disjointCountries(a.countryCodes, b.countryCodes)) return false
   if (!withinWindow(a, b, o.windowMs)) return false
-  const ta = significantTokens(`${a.title} ${a.summary}`)
-  const tb = significantTokens(`${b.title} ${b.summary}`)
+  // Title-primary signature (see signatureTokens): the headline is the event identity; the
+  // summary is only a fallback for a too-thin title, with RSS boilerplate stripped and tokens
+  // lightly stemmed. Thresholds (minShared / minJaccard) and the country/window guards are
+  // unchanged - this is Path A only.
+  const ta = signatureTokens(a, o.minShared)
+  const tb = signatureTokens(b, o.minShared)
   if (sharedCount(ta, tb) < o.minShared) return false
   if (jaccard(ta, tb) < o.minJaccard) return false
   return true

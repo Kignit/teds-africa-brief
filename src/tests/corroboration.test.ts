@@ -1,6 +1,13 @@
 import { describe, it, expect } from 'vitest'
 import { corroborateEvents } from '../server/verification/corroborate'
-import { sameEvent, significantTokens } from '../server/verification/eventSignature'
+import {
+  sameEvent,
+  significantTokens,
+  normalizeToken,
+  stripBoilerplate,
+  anchorTokens,
+  signatureTokens,
+} from '../server/verification/eventSignature'
 import { inferCountryCodes } from '../data/countryKeywords'
 import type { NewsItem } from '../domain/news'
 
@@ -192,5 +199,164 @@ describe('corroborateEvents — clustering then status', () => {
     ])
     expect(events).toHaveLength(2)
     expect(events.every((e) => e.status === 'single_source')).toBe(true)
+  })
+})
+
+describe('signature normalization (title-primary, boilerplate, stemming)', () => {
+  it('normalizeToken collapses simple plural variants, with guards', () => {
+    expect(normalizeToken('renewals')).toBe('renewal')
+    expect(normalizeToken('licenses')).toBe('license')
+    expect(normalizeToken('banks')).toBe('bank')
+    expect(normalizeToken('reviews')).toBe('review')
+    expect(normalizeToken('currencies')).toBe('currency')
+    // guards: -ss / -is / -us endings and short tokens are left alone
+    expect(normalizeToken('press')).toBe('press')
+    expect(normalizeToken('analysis')).toBe('analysis')
+    expect(normalizeToken('oil')).toBe('oil')
+    // never stem a word INTO a stopword
+    expect(normalizeToken('news')).toBe('news')
+  })
+
+  it('stripBoilerplate removes known RSS tails but keeps event text', () => {
+    expect(
+      stripBoilerplate('Naira steadies. The post Naira steadies appeared first on Nairametrics.'),
+    ).toBe('Naira steadies.')
+    expect(stripBoilerplate('Cedi gains ground read more')).toBe('Cedi gains ground')
+    expect(stripBoilerplate('No boilerplate here')).toBe('No boilerplate here')
+  })
+
+  it('anchorTokens extracts acronyms, proper nouns and numbers (diagnostics only)', () => {
+    const anchors = anchorTokens('CBN to fine banks N100 million in Lagos')
+    expect(anchors.has('cbn')).toBe(true)
+    expect(anchors.has('lagos')).toBe(true)
+    expect(anchors.has('n100')).toBe(true)
+    expect(anchors.has('fine')).toBe(false) // a lowercase common word is not an anchor
+  })
+
+  it('signatureTokens is title-primary: a rich title ignores the summary', () => {
+    const sig = signatureTokens(
+      item({
+        id: 'sig',
+        sourceId: 'src.bft_gh',
+        title: 'Yango Group hosts Innovation Day 2026 in Abidjan',
+        summary: 'Totally unrelated body text about cocoa exports and rainfall.',
+      }),
+    )
+    expect(sig.has('yango')).toBe(true)
+    expect(sig.has('cocoa')).toBe(false) // summary is not consulted when the title suffices
+  })
+
+  it('TRUE: identical titles still match when RSS boilerplate summaries diverge', () => {
+    const a = item({
+      id: 'y1',
+      sourceId: 'src.bft_gh',
+      title: 'Yango Group hosts Innovation Day 2026 in Abidjan',
+      summary:
+        'Yango Group convened partners across markets. The post Yango Group hosts Innovation Day 2026 in Abidjan appeared first on B&FT Online.',
+    })
+    const b = item({
+      id: 'y2',
+      sourceId: 'src.myjoyonline_gh',
+      title: 'Yango Group hosts Innovation Day 2026 in Abidjan',
+      summary:
+        'The technology group gathered policymakers and founders for a day of demos. read more',
+    })
+    expect(sameEvent(a, b)).toBe(true)
+  })
+
+  it('TRUE: plural/singular variants align after light stemming', () => {
+    // Without stemming these titles share no significant token (banks/bank, licenses/license,
+    // renewals/renewal, reviews/review all differ); with it they match.
+    const a = item({
+      id: 'r1',
+      sourceId: 'src.businessday_ng',
+      title: 'Banks face licenses renewals review',
+      countryCodes: ['NG'],
+    })
+    const b = item({
+      id: 'r2',
+      sourceId: 'src.nairametrics_ng',
+      title: 'Regulator reviews bank license renewal rules',
+      countryCodes: ['NG'],
+    })
+    expect(sameEvent(a, b)).toBe(true)
+  })
+
+  it('FALSE: two distinct CBN stories do not merge (title-primary ignores shared summary vocabulary)', () => {
+    const a = item({
+      id: 'c1',
+      sourceId: 'src.businessday_ng',
+      title: "CBN's new FX manual to raise dollar liquidity, enhance market confidence",
+      summary:
+        'The Central Bank of Nigeria said the foreign exchange market reform aims to deepen liquidity.',
+      countryCodes: ['NG'],
+    })
+    const b = item({
+      id: 'c2',
+      sourceId: 'src.nairametrics_ng',
+      title: 'CBN to fine banks N100 million for inadequate forex documents',
+      summary:
+        'The Central Bank of Nigeria will penalise lenders in the foreign exchange market over documentation.',
+      countryCodes: ['NG'],
+    })
+    expect(sameEvent(a, b)).toBe(false)
+  })
+
+  it('FALSE: identical titles in different countries stay apart (country guard)', () => {
+    const ng = item({
+      id: 'cc1',
+      sourceId: 'src.businessday_ng',
+      title: 'Central bank raises the benchmark policy rate',
+      countryCodes: ['NG'],
+    })
+    const ke = item({
+      id: 'cc2',
+      sourceId: 'src.standardmedia_ke',
+      title: 'Central bank raises the benchmark policy rate',
+      countryCodes: ['KE'],
+    })
+    expect(sameEvent(ng, ke)).toBe(false)
+  })
+
+  it('FALSE: identical titles outside the time window stay apart (window guard)', () => {
+    const a = item({
+      id: 'w1',
+      sourceId: 'src.businessday_ng',
+      title: 'Naira firms as central bank clears FX backlog',
+      publishedAt: '2026-06-03T06:00:00.000Z',
+    })
+    const b = item({
+      id: 'w2',
+      sourceId: 'src.premiumtimes_ng',
+      title: 'Naira firms as central bank clears FX backlog',
+      publishedAt: '2026-05-20T06:00:00.000Z',
+    })
+    expect(sameEvent(a, b)).toBe(false)
+  })
+
+  it('same-source reports cluster but never self-corroborate (needs independentSourceCount >= 2)', () => {
+    // Two reports from the SAME source with divergent boilerplate summaries still cluster into
+    // one event under the normalized title, but stay single_source - normalization must not
+    // create corroboration from a single organisation.
+    const events = corroborateEvents([
+      item({
+        id: 's1',
+        sourceId: 'src.bft_gh',
+        title: 'Yango Group hosts Innovation Day 2026 in Abidjan',
+        summary:
+          'Body one. The post Yango Group hosts Innovation Day 2026 in Abidjan appeared first on B&FT Online.',
+        countryCodes: ['GH'],
+      }),
+      item({
+        id: 's2',
+        sourceId: 'src.bft_gh',
+        title: 'Yango Group hosts Innovation Day 2026 in Abidjan',
+        summary: 'A different body entirely. read more',
+        countryCodes: ['GH'],
+      }),
+    ])
+    expect(events).toHaveLength(1)
+    expect(events[0].status).toBe('single_source')
+    expect(events[0].corroboration.independentSourceCount).toBe(1)
   })
 })

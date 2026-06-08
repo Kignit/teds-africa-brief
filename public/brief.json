@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T10:58:07.918Z",
+  "generatedAt": "2026-06-08T11:34:26.025Z",
   "brief": {
     "id": "live_2026-06-08",
     "date": "2026-06-08",
@@ -14,16 +14,39 @@
         "body": "Deterministic V0 analysis grounded in verified figures, corroborated events and source-backed country profiles.",
         "claimIds": [
           "claim_0_0",
-          "claim_0_1",
-          "claim_0_2",
-          "claim_0_3",
-          "claim_0_4"
+          "claim_1_0",
+          "claim_1_1",
+          "claim_1_2",
+          "claim_1_3",
+          "claim_1_4"
         ]
       }
     ],
     "claims": [
       {
         "id": "claim_0_0",
+        "kind": "causal",
+        "text": "GH: new investment is positive via growth and fiscal revenue",
+        "figureIds": [],
+        "eventIds": [
+          "evt_ghana_makes_strong_investment_pitch_in_london_as_ddihgd"
+        ],
+        "profileFields": [],
+        "profileSourceIds": [],
+        "methodologyIds": [
+          "method.causal.deal_investment_event.v1"
+        ],
+        "countryCode": "GH",
+        "tone": "pos",
+        "channels": [
+          "growth",
+          "fiscal_revenue"
+        ],
+        "shockType": "deal_investment_event",
+        "verified": true
+      },
+      {
+        "id": "claim_1_0",
         "kind": "causal",
         "text": "ET: the oil-price move is negative via the trade balance, inflation, and households",
         "figureIds": [],
@@ -51,7 +74,7 @@
         "verified": true
       },
       {
-        "id": "claim_0_1",
+        "id": "claim_1_1",
         "kind": "causal",
         "text": "KE: the oil-price move is negative via the trade balance, inflation, and households",
         "figureIds": [],
@@ -79,7 +102,7 @@
         "verified": true
       },
       {
-        "id": "claim_0_2",
+        "id": "claim_1_2",
         "kind": "causal",
         "text": "NG: the oil-price move is positive via fiscal revenue and the trade balance",
         "figureIds": [],
@@ -106,7 +129,7 @@
         "verified": true
       },
       {
-        "id": "claim_0_3",
+        "id": "claim_1_3",
         "kind": "causal",
         "text": "GH: the oil-price move is mixed via the trade balance",
         "figureIds": [],
@@ -132,7 +155,7 @@
         "verified": true
       },
       {
-        "id": "claim_0_4",
+        "id": "claim_1_4",
         "kind": "causal",
         "text": "ZA: the oil-price move is negative via the trade balance, inflation, and households",
         "figureIds": [],
@@ -259,6 +282,166 @@
     ],
     "events": [
       {
+        "id": "evt_business_draws_a_line_in_the_sand_over_ngqxe7",
+        "title": "Business draws a line in the sand over Joburg’s collapse",
+        "summary": "SA helped develop a game-changer HIV drug, so why is access so limited? From day zero to El Niño, the next drought could be worse than we think. And why more of SA’s top matrics are opting for British universities over American Ivy Leagues.",
+        "occurredAt": "2026-06-08T11:33:04.000Z",
+        "countryCodes": [],
+        "topic": "business draws a line in the sand over",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:985vjg"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_arm_harith_achieves_us_76_million_first_close_pj4lij",
+        "title": "ARM-Harith Achieves US$76 Million First Close for its Climate Transition Fund",
+        "summary": "ARM-Harith Infrastructure Investments Limited (“ARM-Harith”), a leading pan-African private equity fund manager focused on sustainable energy and infrastructure investment, has announced the first close of its Successor Fund, a climate transition Fund (the “Fund”) at ~US$76 million equivalent. The Fund is the first integrated multi-currency blended finance platform purpose-built for African instit",
+        "occurredAt": "2026-06-08T11:32:04.000Z",
+        "countryCodes": [],
+        "topic": "arm harith achieves us 76 million first close",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1bi034n"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigeria_faces_1_million_bed_student_housing_shortage_sij6ar",
+        "title": "Nigeria faces 1 million-bed student housing shortage – Report",
+        "summary": "Nigeria is facing a 1 million-bed student housing shortage even as it holds Africa’s largest purpose-built student accommodation (PBSA) pipeline, according to a report by Fortren & Company. \nThe post Nigeria faces 1 million-bed student housing shortage – Report appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T11:29:57.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigeria faces 1 million bed student housing shortage",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1hpwa8b"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_guardian_of_the_tides_modernising_the_maritime_law_1l2od5e",
+        "title": "Guardian of the tides: Modernising the maritime law for a resilient blue economy",
+        "summary": "By: True Nana Abraham ​As we celebrate World Ocean Day this June 8th, the sun rises over a Ghanaian coastline that is both a source of immense national pride and a witness to a quiet, legal revolution. For years, our “Blue Economy”,the vast potential of our 550-kilometer coastline and 237,000 square kilometers of maritime space […]\nThe post Guardian of the tides: Modernising the maritime law for a",
+        "occurredAt": "2026-06-08T11:25:57.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "guardian of the tides modernising the maritime law",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.bft_gh:1t0j8vm"
+          ],
+          "sourceIds": [
+            "src.bft_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_i_was_applying_for_hundreds_of_jobs_this_fxx8ii",
+        "title": "I was applying for hundreds of jobs – this tip helped me get one",
+        "summary": "JUNE 8 – Trying to find your first job right now can be a struggle. There is a lack of opportunities to gain experience and the huge number of AI applications can mean neither you nor the employer can find what you’re looking for. Yet plenty of people are finding ways to stand out and […]",
+        "occurredAt": "2026-06-08T11:11:49.000Z",
+        "countryCodes": [],
+        "topic": "i was applying for hundreds of jobs this",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:ek1o5e"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ruto_launches_kenya_benelux_chamber_to_boost_trade_dzyy3p",
+        "title": "Ruto launches Kenya–Benelux Chamber to boost trade, investment",
+        "summary": "Ruto urged investors from the three European countries to expand their presence in Kenya, particularly in manufacturing and value addition sectors.",
+        "occurredAt": "2026-06-08T11:10:52.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "ruto launches kenya benelux chamber to boost trade",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:afj2e7"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_climate_action_is_increasingly_a_business_imperative_by_1ybcg67",
+        "title": "Climate action is increasingly a business imperative By Dinesh Balsingh",
+        "summary": "Every day, millions of Nigerians rely on our network to learn, work, trade, and stay connected. Yet, behind every call, every transaction, and every digital interaction lies a question that every business must now confront: how do we power growth without compromising the future of the environment? I was reminded of this recently while visiting one of […]\nThe post Climate action is increasingly a b",
+        "occurredAt": "2026-06-08T11:07:54.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "climate action is increasingly a business imperative by",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:931jik"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_caps_ministers_imprest_at_n700_000_tightens_42vm9e",
+        "title": "FG caps ministers’ imprest at N700,000, tightens oversight",
+        "summary": "The federal government has introduced stricter controls on the use of imprest funds across ministries, departments and agencies (MDAs), capping\nread more FG caps ministers’ imprest at N700,000, tightens oversight",
+        "occurredAt": "2026-06-08T11:00:25.000Z",
+        "countryCodes": [],
+        "topic": "fg caps ministers imprest at n700 000 tightens",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:uxrvsj"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_the_infrastructure_behind_the_exchange_viabtc_group_s_o7obhy",
         "title": "The Infrastructure Behind the Exchange: ViaBTC Group’s Decade-Long Journey with CoinEx",
         "summary": "As ViaBTC Group celebrates its tenth anniversary with the launch of its “Proof of Decade” campaign, the milestone is not only a reflection on its own evolution, but also an opportunity to revisit the foundational role it has played in shaping CoinEx—one of the Group’s most recognized global brands. For CoinEx, this moment is echoed […]\nThe post The Infrastructure Behind the Exchange: ViaBTC Group’",
@@ -299,6 +482,25 @@
         }
       },
       {
+        "id": "evt_fears_of_wider_war_grow_as_iran_israel_1lbvin7",
+        "title": "Fears of wider war grow as Iran, Israel launch new attacks",
+        "summary": "…Trump calls for a ceasefire Iran and Israel traded fresh attacks on Sunday, shattering months of relative calm and raising\nread more Fears of wider war grow as Iran, Israel launch new attacks",
+        "occurredAt": "2026-06-08T10:56:39.000Z",
+        "countryCodes": [],
+        "topic": "fears of wider war grow as iran israel",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:pgsxs"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_fg_clears_over_n700_billion_owed_to_contractors_novruf",
         "title": "FG clears over N700 billion owed to contractors, approves payments to 1,240 firms",
         "summary": "The Federal Ministry of Finance disclosed that over N700 billion in verified debts owed to local contractors has been processed in recent months, with contractors holding claims of N100 million or less prioritised in the latest round of disbursements.\nThe post FG clears over N700 billion owed to contractors, approves payments to 1,240 firms  appeared first on Nairametrics.",
@@ -312,6 +514,25 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_accion_mfb_completes_n2bn_series_1_commercial_paper_2jpnox",
+        "title": "Accion MfB completes N2bn series 1 commercial paper repayment",
+        "summary": "Accion Microfinance Bank has announced the successful and complete repayment of its N2 billion Series 1 Commercial Paper (CP) issuance,\nread more Accion MfB completes N2bn series 1 commercial paper repayment",
+        "occurredAt": "2026-06-08T10:53:01.000Z",
+        "countryCodes": [],
+        "topic": "accion mfb completes n2bn series 1 commercial paper",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:rqj1lc"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -575,12 +796,12 @@
         }
       },
       {
-        "id": "evt_payaza_gets_a_credit_ratings_from_moody_s_2ixxl9",
-        "title": "Payaza gets ‘A’ credit ratings from Moody’s, Agusto, DataPro, Intelligence Africa",
+        "id": "evt_payaza_gets_a_credit_ratings_from_gcr_moody_2ixxl9",
+        "title": "Payaza gets ‘A’ credit ratings from GCR (Moody’s), Agusto, DataPro, Intelligence Africa",
         "summary": "Payaza Africa Limited has secured upgraded credit ratings from four agencies, signaling growing investor confidence in the fintech company’s financial stability and operational performance. The payment company recorded upgrades across the board, with DataPro raising its rating from A to AA-, Intelligence Africa assigning it an A- investment-grade rating, Agusto upgrading it from BBB to […]\nThe pos",
         "occurredAt": "2026-06-08T09:39:11.000Z",
         "countryCodes": [],
-        "topic": "payaza gets a credit ratings from moody s",
+        "topic": "payaza gets a credit ratings from gcr moody",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
@@ -1552,7 +1773,7 @@
         }
       },
       {
-        "id": "evt_ghana_makes_strong_investment_pitch_in_london_as_1dx7tmx",
+        "id": "evt_ghana_makes_strong_investment_pitch_in_london_as_ddihgd",
         "title": "Ghana makes strong investment pitch in London as Finance Minister, BoG Governor court global investors",
         "summary": "Ghana’s economic managers have mounted a strong case for renewed investor confidence, with Finance Minister and Bank of Ghana Governor Dr Johnson Asiama presenting a coordinated message of stability, reform and investment opportunity to some of the world’s leading financiers in London.",
         "occurredAt": "2026-06-08T07:02:15.000Z",
@@ -1560,15 +1781,17 @@
           "GH"
         ],
         "topic": "ghana makes strong investment pitch in london as",
-        "status": "single_source",
+        "status": "corroborated",
         "corroboration": {
           "newsItemIds": [
-            "src.myjoyonline_gh:tye0k9"
+            "src.myjoyonline_gh:tye0k9",
+            "src.bft_gh:vw2kaw"
           ],
           "sourceIds": [
-            "src.myjoyonline_gh"
+            "src.myjoyonline_gh",
+            "src.bft_gh"
           ],
-          "independentSourceCount": 1,
+          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -2693,27 +2916,6 @@
         }
       },
       {
-        "id": "evt_finance_minister_governor_present_powerful_unified_case_for_bn77dc",
-        "title": "Finance Minister, Governor present powerful, unified case for Ghana to global financiers and investors",
-        "summary": "Finance Minister, Dr. Cassiel Ato Forson and the Governor of the Bank of Ghana (BoG), Dr. Pandit Asiama, used a high-level gathering of international investors, bankers and policymakers in London to present a coordinated case for renewed confidence in the country’s economy, highlighting progress on macroeconomic stabilisation, ongoing reforms and emerging investment opportunities. The breakfast […",
-        "occurredAt": "2026-06-08T02:00:12.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "finance minister governor present powerful unified case for",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:vw2kaw"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
         "id": "evt_gridco_board_calls_on_speaker_of_parliament_seeks_csu3cv",
         "title": "GRIDCo Board calls on Speaker of Parliament, seeks stronger ties on Energy push",
         "summary": "The Board of the Ghana Grid Company (GRIDCo) has held discussions with the Speaker of Parliament, Alban Bagbin, as part of efforts to strengthen engagement with key national stakeholders and deepen collaboration on Ghana’s energy infrastructure agenda. The eight-member board paid a courtesy call on the Speaker to brief him on developments within the company […]\nThe post GRIDCo Board calls on Speak",
@@ -3042,21 +3244,23 @@
         }
       },
       {
-        "id": "evt_openai_plans_biggest_chatgpt_overhaul_targets_superapp_status_l2yybq",
+        "id": "evt_openai_plans_biggest_chatgpt_overhaul_targets_superapp_status_6nxejp",
         "title": "OpenAI plans biggest ChatGPT overhaul, targets “superapp” status ahead of IPO",
         "summary": "OpenAI is planning the biggest redesign of ChatGPT since its 2022 launch, with plans to transform the chatbot into a \"superapp\" combining coding tools, AI agents, and third-party integrations, according to a report by the Financial Times. \nThe post OpenAI plans biggest ChatGPT overhaul, targets “superapp” status ahead of IPO appeared first on Nairametrics.",
         "occurredAt": "2026-06-07T17:29:53.000Z",
         "countryCodes": [],
         "topic": "openai plans biggest chatgpt overhaul targets superapp status",
-        "status": "single_source",
+        "status": "corroborated",
         "corroboration": {
           "newsItemIds": [
-            "src.nairametrics_ng:er7yxe"
+            "src.nairametrics_ng:er7yxe",
+            "src.biznews_za:13opcj7"
           ],
           "sourceIds": [
-            "src.nairametrics_ng"
+            "src.nairametrics_ng",
+            "src.biznews_za"
           ],
-          "independentSourceCount": 1,
+          "independentSourceCount": 2,
           "primarySourceCount": 0
         }
       },
@@ -3400,25 +3604,6 @@
         "corroboration": {
           "newsItemIds": [
             "src.biznews_za:11d9ghd"
-          ],
-          "sourceIds": [
-            "src.biznews_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_openai_plots_biggest_chatgpt_overhaul_since_launch_ncf5bx",
-        "title": "OpenAI plots biggest ChatGPT overhaul since launch",
-        "summary": "",
-        "occurredAt": "2026-06-07T13:29:17.000Z",
-        "countryCodes": [],
-        "topic": "openai plots biggest chatgpt overhaul since launch",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznews_za:13opcj7"
           ],
           "sourceIds": [
             "src.biznews_za"
@@ -6772,7 +6957,7 @@
         }
       },
       {
-        "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_17w67p7",
+        "id": "evt_exim_frozen_foods_association_opposes_proposed_reintroduction_of_1g9xsdq",
         "title": "EXIM Frozen Foods Association opposes proposed reintroduction of Smart Port Note system",
         "summary": "The Exim Frozen Foods Association of Ghana (EFFAG) has urged the Ministry of Transport to reject any attempt to reintroduce the Cargo Tracking Note (CTN), also known as the Smart Port Note (SPN), arguing that the system would impose significant additional costs on businesses and consumers.",
         "occurredAt": "2026-06-05T14:33:36.000Z",
@@ -6780,17 +6965,15 @@
           "GH"
         ],
         "topic": "exim frozen foods association opposes proposed reintroduction of",
-        "status": "corroborated",
+        "status": "single_source",
         "corroboration": {
           "newsItemIds": [
-            "src.myjoyonline_gh:yxfam6",
-            "src.bft_gh:1mdroei"
+            "src.myjoyonline_gh:yxfam6"
           ],
           "sourceIds": [
-            "src.myjoyonline_gh",
-            "src.bft_gh"
+            "src.myjoyonline_gh"
           ],
-          "independentSourceCount": 2,
+          "independentSourceCount": 1,
           "primarySourceCount": 0
         }
       },
@@ -7236,7 +7419,7 @@
         }
       },
       {
-        "id": "evt_today_is_world_environment_day_pstiq2",
+        "id": "evt_today_is_world_environment_day_d9ytlz",
         "title": "Today is World Environment Day",
         "summary": "By Ama Kudom-Agyemang As Ghana joins the global community to mark World Environment Day – TODAY, focusing on climate change, Adenta’s natural water holes, the municipality’s hidden climate asserts come into context. This context highlights a known or unknown test the Assembly is currently facing of whether these water holes can be preserved as shields […]\nThe post Today is World Environment ",
         "occurredAt": "2026-06-05T12:07:17.000Z",
@@ -7247,8 +7430,7 @@
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
-            "src.bft_gh:zf06bw",
-            "src.bft_gh:b3r7mv"
+            "src.bft_gh:zf06bw"
           ],
           "sourceIds": [
             "src.bft_gh"
@@ -7591,206 +7773,6 @@
           ],
           "sourceIds": [
             "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_rising_illness_burden_among_elderly_and_children_deepens_en5dsm",
-        "title": "Rising Illness Burden Among Elderly and Children Deepens Kenya’s Health Financing Gap",
-        "summary": "NAIROBI,Kenya,June 5-Kenya’s healthcare financing challenge is increasingly being shaped by the needs of school-going children and older adults, with new expert views suggesting that healthcare products and coverage models have not kept pace with the distinct risks facing the country’s youngest and oldest populations. The findings point to mounting pressure on households already grappling with […]",
-        "occurredAt": "2026-06-05T11:36:09.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "rising illness burden among elderly and children deepens",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:bqmjos"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_eskom_municipal_takeover_may_expand_to_30_municipalities_4utpaz",
-        "title": "Eskom municipal takeover may expand to 30 municipalities",
-        "summary": "Legal compliance process to be expedited.",
-        "occurredAt": "2026-06-05T11:33:57.000Z",
-        "countryCodes": [
-          "ZA"
-        ],
-        "topic": "eskom municipal takeover may expand to 30 municipalities",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:1r15v3o"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_fg_flags_off_n1_245_trillion_gombe_biu_lhuniq",
-        "title": "FG flags off N1.245 trillion Gombe-Biu Highway reconstruction, awards project to Hi-tech",
-        "summary": "The Federal Government has flagged off the N1.245 trillion reconstruction and dualisation of the 125km Gombe-Biu Highway, awarding the project to Hi-Tech Construction Company. \nThe post FG flags off N1.245 trillion Gombe-Biu Highway reconstruction, awards project to Hi-tech appeared first on Nairametrics.",
-        "occurredAt": "2026-06-05T11:32:18.000Z",
-        "countryCodes": [],
-        "topic": "fg flags off n1 245 trillion gombe biu",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:fn9z98"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_access_bank_strengthens_leadership_team_with_two_executive_3vdw8s",
-        "title": "Access Bank strengthens leadership team with two executive appointments",
-        "summary": "Access Bank (Ghana) Plc has appointed two accomplished banking executives to its senior leadership team, following regulatory approval by the Bank of Ghana. Eugene Ocansey joins the Bank as Executive Director, Retail and SME Banking, and Nana Kwabena Afoom as Executive Director, Wholesale Banking. The appointments underscore the Bank’s commitment to attracting exceptional talent in […]",
-        "occurredAt": "2026-06-05T11:30:19.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "access bank strengthens leadership team with two executive",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:fj5o6t"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_mr_price_posts_record_r6bn_operating_profit_l9wo2c",
-        "title": "Mr Price posts record R6bn operating profit",
-        "summary": "But cost of controversial NKD acquisition weighed on group's earnings.",
-        "occurredAt": "2026-06-05T11:23:41.000Z",
-        "countryCodes": [],
-        "topic": "mr price posts record r6bn operating profit",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:3agup6"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_world_environment_day_green_tax_sparks_debate_ahead_xis065",
-        "title": "World Environment Day: Green Tax sparks debate ahead of July 1 rollout",
-        "summary": "As the world commemorates World Environment Day 2026, Nigeria’s planned implementation of a new Green Tax on motor vehicles has generated widespread debate among environmental advocates, economists, automobile operators, and consumers. \nThe post World Environment Day: Green Tax sparks debate ahead of July 1 rollout  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-05T11:13:59.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "world environment day green tax sparks debate ahead",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1scqh7f"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_sa_business_warn_government_over_xenophobia_backlash_lalc95",
-        "title": "SA business warn government over xenophobia backlash",
-        "summary": "Calls on the state to 'get on top of the situation and restore order'.",
-        "occurredAt": "2026-06-05T11:10:04.000Z",
-        "countryCodes": [],
-        "topic": "sa business warn government over xenophobia backlash",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:3bojj7"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_africa_s_new_path_to_online_income_how_1nj233m",
-        "title": "Africa’s New Path to Online Income: How Affiliate Africa Institute is empowering a generation to earn from web",
-        "summary": "Across the African continent, young people, side hustlers, and aspiring digital entrepreneurs are turning to online income models that don’t require inventory, large start-up capital, or advanced technical skills. At the center of this shift is affiliate marketing — and one campaign driving it forward is Affiliate Africa Institute(AAI).",
-        "occurredAt": "2026-06-05T11:09:00.000Z",
-        "countryCodes": [],
-        "topic": "africa s new path to online income how",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:1ikoh3d"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ghana_link_rejects_claims_against_icums_demands_evidence_1e6urlh",
-        "title": "Ghana Link rejects claims against ICUMS, demands evidence of system downtime",
-        "summary": "Ghana Link Network Services Limited has refuted allegations that the Integrated Customs Management System (ICUMS) is experiencing frequent downtime. According to the company, the claims are false, misleading and unsupported by evidence. In a statement, Ghana Link said recent assertions by some groups identifying themselves as civil society organisations failed to provide any verifiable proof […]",
-        "occurredAt": "2026-06-05T11:08:59.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "ghana link rejects claims against icums demands evidence",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:uksyh6"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_mutual_benefits_unveils_new_website_expanding_digital_access_1blsffn",
-        "title": "Mutual Benefits unveils new website, expanding digital access to insurance solutions",
-        "summary": "Mutual Benefits Assurance Plc has announced the soft launch of its newly redesigned corporate website, marking a significant milestone in\nread more Mutual Benefits unveils new website, expanding digital access to insurance solutions",
-        "occurredAt": "2026-06-05T11:06:53.000Z",
-        "countryCodes": [],
-        "topic": "mutual benefits unveils new website expanding digital access",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1owgvfu"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -8345,6 +8327,23 @@
       }
     ],
     "methodologies": [
+      {
+        "id": "method.causal.deal_investment_event.v1",
+        "name": "Deal / investment mechanism",
+        "version": "1.0.0",
+        "description": "New investment supports growth and revenue.",
+        "kind": "causal",
+        "inputs": [],
+        "bands": [],
+        "shockType": "deal_investment_event",
+        "mechanism": "New investment supports growth and revenue.",
+        "channels": [
+          "growth",
+          "fiscal_revenue"
+        ],
+        "owner": "analysis-team",
+        "status": "approved"
+      },
       {
         "id": "method.oilStance.banding.v1",
         "name": "Oil-stance banding",

@@ -8,11 +8,26 @@ import { theme } from './theme'
 
 export interface AppProps {
   brief?: BriefDraft | null
+  /** The artifact's generatedAt (from the loader); shown as "Updated <time>". */
+  generatedAt?: string | null
+  /** True while the loader is in flight, so the UI shows a distinct loading state. */
+  loading?: boolean
 }
 
 function statusText(brief: BriefDraft | null): string {
   if (!brief) return 'No connector-backed brief loaded'
   return brief.status === 'published' ? 'Live brief published' : 'Live brief awaiting QA'
+}
+
+// Deterministic UTC formatting of the artifact's generatedAt for the "Updated <time>"
+// indicator (UTC + fixed month names, so it is stable across environments and tests). An
+// unparseable value yields an empty string, so the indicator is simply omitted.
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+function formatUpdated(iso: string): string {
+  const d = new Date(iso)
+  if (Number.isNaN(d.getTime())) return ''
+  const p = (n: number) => String(n).padStart(2, '0')
+  return `${p(d.getUTCDate())} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}, ${p(d.getUTCHours())}:${p(d.getUTCMinutes())} UTC`
 }
 
 // A claim's provenance, built ONLY from data the brief already carries: the cited
@@ -47,7 +62,20 @@ function claimProvenance(
 // Runtime shell: renders user-facing facts only when a connector-backed BriefDraft
 // is supplied by the live pipeline. With no brief it shows an empty state, not
 // placeholder figures or analysis.
-export default function App({ brief = null }: AppProps) {
+export default function App({ brief = null, generatedAt = null, loading = false }: AppProps) {
+  // Three explicit views: loading (loader in flight), loaded (a gate-passed brief), or empty.
+  // Loading is distinct from empty so the "no brief" copy never flashes during the fetch.
+  const view: 'loading' | 'loaded' | 'empty' =
+    loading && !brief ? 'loading' : brief ? 'loaded' : 'empty'
+  const updated = brief && generatedAt ? formatUpdated(generatedAt) : ''
+  const bannerText =
+    view === 'loading'
+      ? 'Loading the latest brief...'
+      : view === 'empty'
+        ? statusText(null)
+        : updated
+          ? `${statusText(brief)} · Updated ${updated}`
+          : statusText(brief)
   const figures = brief?.figures ?? []
   // Public runtime presents only corroborated events as intelligence. Single-source
   // and unconfirmed events are segregated into a clearly-labelled watchlist below,
@@ -84,7 +112,7 @@ export default function App({ brief = null }: AppProps) {
             marginBottom: 22,
           }}
         >
-          {statusText(brief)}
+          {bannerText}
         </div>
 
         <header style={{ marginBottom: 18 }}>
@@ -108,7 +136,22 @@ export default function App({ brief = null }: AppProps) {
           </p>
         </header>
 
-        {brief ? (
+        {view === 'loading' ? (
+          <section
+            aria-label="Loading brief"
+            style={{
+              marginTop: 26,
+              padding: 18,
+              border: `1px dashed ${theme.hair}`,
+              borderRadius: 12,
+              color: theme.muted,
+              fontSize: 13,
+              lineHeight: 1.55,
+            }}
+          >
+            Fetching the latest gate-passed brief...
+          </section>
+        ) : view === 'loaded' ? (
           <>
             <section aria-label="Verified market figures">
               <div

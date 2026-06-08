@@ -48,6 +48,13 @@ function isBriefShape(value: unknown): value is BriefDraft {
   )
 }
 
+// The successfully-loaded result: the gate-passed brief plus the artifact's generatedAt
+// (already validated as fresh), so the runtime can show an "Updated <time>" indicator.
+export interface LoadedBrief {
+  brief: BriefDraft
+  generatedAt: string
+}
+
 // Loads the runtime brief from the `{ generatedAt, brief }` artifact and returns it
 // ONLY if the artifact is fresh AND the brief is well-formed AND it re-passes the
 // publish gate. Anything else — missing/404, unparseable, a non-object envelope, a
@@ -60,7 +67,7 @@ export async function loadBrief(
   url: string = DEFAULT_BRIEF_URL,
   fetchImpl: typeof fetch = fetch,
   now: () => number = () => Date.now(),
-): Promise<BriefDraft | null> {
+): Promise<LoadedBrief | null> {
   let payload: unknown
   try {
     const res = await fetchImpl(url)
@@ -74,7 +81,8 @@ export async function loadBrief(
   if (typeof payload !== 'object' || payload === null) return null
   const envelope = payload as { generatedAt?: unknown; brief?: unknown }
   if (typeof envelope.generatedAt !== 'string') return null
-  const generatedAtMs = Date.parse(envelope.generatedAt)
+  const generatedAt = envelope.generatedAt
+  const generatedAtMs = Date.parse(generatedAt)
   if (Number.isNaN(generatedAtMs)) return null
   if (now() - generatedAtMs > MAX_ARTIFACT_AGE_MS) return null // stale → empty state
 
@@ -83,7 +91,7 @@ export async function loadBrief(
   if (!isBriefShape(brief)) return null
   try {
     const gate = runPublishGate(brief, { knownSourceIds: KNOWN_SOURCE_IDS })
-    return gate.passed ? brief : null
+    return gate.passed ? { brief, generatedAt } : null
   } catch {
     return null
   }

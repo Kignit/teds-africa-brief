@@ -10,18 +10,22 @@ const root = createRoot(document.getElementById('root')!)
 // fails the re-run gate all leave the runtime in its empty state. The browser never
 // runs connectors or the ingestion pipeline — it only renders a served, re-validated
 // brief.
+// Initial paint shows a distinct LOADING state (not the empty state), so the empty-state
+// copy is not shown while the artifact is still being fetched and re-validated.
 root.render(
   <StrictMode>
-    <App />
+    <App loading />
   </StrictMode>,
 )
 
-void loadBrief().then((brief) => {
-  if (brief) {
-    root.render(
-      <StrictMode>
-        <App brief={brief} />
-      </StrictMode>,
-    )
-  }
+// After the loader resolves, upgrade to the gate-passed brief (with its generatedAt for the
+// "Updated <time>" indicator), or fall back to the empty state. A null result (no artifact, a
+// load/parse error, a stale or malformed brief, or one that fails the re-run gate) renders the
+// empty state, never stale or partial data.
+void loadBrief().then((loaded) => {
+  root.render(
+    <StrictMode>
+      {loaded ? <App brief={loaded.brief} generatedAt={loaded.generatedAt} /> : <App />}
+    </StrictMode>,
+  )
 })

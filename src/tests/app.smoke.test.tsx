@@ -150,4 +150,19 @@ describe('App', () => {
     // the methodology name, resolved from brief.methodologies
     expect(within(claims).getByText(/Trade-integration mechanism/)).toBeInTheDocument()
   })
+
+  it('shows a distinct loading state (not the empty state) while the loader is in flight', () => {
+    render(<App loading />)
+
+    expect(screen.getByText(/loading the latest brief/i)).toBeInTheDocument()
+    expect(screen.getByRole('region', { name: 'Loading brief' })).toBeInTheDocument()
+    // the empty-state copy must NOT show while loading
+    expect(screen.queryByText(/no connector-backed brief loaded/i)).not.toBeInTheDocument()
+  })
+
+  it('shows "Updated <time>" from the artifact generatedAt when one is supplied', () => {
+    render(<App brief={brief()} generatedAt="2026-06-08T12:14:14.184Z" />)
+
+    expect(screen.getByText(/Updated 08 Jun 2026, 12:14 UTC/)).toBeInTheDocument()
+  })
 })

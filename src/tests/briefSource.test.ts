@@ -57,10 +57,11 @@ function load(body: unknown, ok = true) {
 }
 
 describe('loadBrief — artifact loading', () => {
-  it('returns a fresh, gate-passed brief from the artifact', async () => {
+  it('returns a fresh, gate-passed brief plus its generatedAt from the artifact', async () => {
     const loaded = await load(artifact(gatedBrief()))
     expect(loaded).not.toBeNull()
-    expect(loaded!.figures.map((f) => f.metric)).toContain('fx.NGN_USD')
+    expect(loaded!.brief.figures.map((f) => f.metric)).toContain('fx.NGN_USD')
+    expect(loaded!.generatedAt).toBe(FRESH)
   })
 
   it('returns null when the artifact is absent (404)', async () => {

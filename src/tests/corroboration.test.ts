@@ -7,6 +7,12 @@ import {
   stripBoilerplate,
   anchorTokens,
   signatureTokens,
+  pathBBridge,
+  overlapCoefficient,
+  entityAnchors,
+  PATH_B_MIN_SHARED,
+  PATH_B_MIN_OVERLAP,
+  PATH_B_MIN_ENTITY_ANCHORS,
 } from '../server/verification/eventSignature'
 import { inferCountryCodes } from '../data/countryKeywords'
 import type { NewsItem } from '../domain/news'
@@ -358,5 +364,158 @@ describe('signature normalization (title-primary, boilerplate, stemming)', () =>
     expect(events).toHaveLength(1)
     expect(events[0].status).toBe('single_source')
     expect(events[0].corroboration.independentSourceCount).toBe(1)
+  })
+})
+
+describe('Path B overlap bridge (SHADOW MODE - not wired into sameEvent)', () => {
+  const roadshowA = item({
+    id: 'pb_road_a',
+    sourceId: 'src.myjoyonline_gh',
+    title:
+      'Ghana makes strong investment pitch in London as Finance Minister, BoG Governor court global investors',
+    countryCodes: ['GH'],
+  })
+  const roadshowB = item({
+    id: 'pb_road_b',
+    sourceId: 'src.bft_gh',
+    title:
+      'Finance Minister, Governor present powerful, unified case for Ghana to global financiers and investors',
+    countryCodes: ['GH'],
+  })
+
+  it('exposes explicit thresholds (no buried magic numbers)', () => {
+    expect(PATH_B_MIN_SHARED).toBe(4)
+    expect(PATH_B_MIN_OVERLAP).toBe(0.5)
+    expect(PATH_B_MIN_ENTITY_ANCHORS).toBe(1)
+  })
+
+  it('overlapCoefficient is intersection / min set size (length-robust)', () => {
+    expect(overlapCoefficient(new Set(['a', 'b']), new Set(['a', 'b', 'c', 'd']))).toBe(1)
+    expect(overlapCoefficient(new Set(['a', 'b', 'c']), new Set(['a', 'x', 'y', 'z']))).toBeCloseTo(
+      1 / 3,
+    )
+    expect(overlapCoefficient(new Set(), new Set(['a']))).toBe(0)
+  })
+
+  it('entityAnchors keeps named entities/roles but drops dates and observance framing', () => {
+    const env = entityAnchors('UBA Foundation Marks World Environment Day 2026 in Ikoyi')
+    expect(env.has('uba')).toBe(true) // acronym entity kept
+    expect(env.has('foundation')).toBe(true) // proper noun kept
+    expect(env.has('2026')).toBe(false) // pure number dropped
+    expect(env.has('world')).toBe(false) // observance framing dropped
+    expect(env.has('environment')).toBe(false)
+    expect(env.has('day')).toBe(false) // calendar token dropped
+    const road = entityAnchors('Finance Minister, BoG Governor court global investors')
+    expect(road.has('governor')).toBe(true) // a role survives as an entity anchor
+    expect(road.has('minister')).toBe(true)
+    // generic anchorTokens still includes the calendar number (the two sets are separate)
+    expect(anchorTokens('World Environment Day 2026').has('2026')).toBe(true)
+  })
+
+  it('TRUE: bridges the Ghana London roadshow (length-asymmetric; entity anchors governor/minister)', () => {
+    expect(pathBBridge(roadshowA, roadshowB)).toBe(true)
+  })
+
+  it('TRUE: bridges a genuine second pair via a single strong entity anchor (OpenAI/ChatGPT)', () => {
+    // Cross-org, length-asymmetric headlines of the same event, bridged by the shared entity
+    // anchor "chatgpt" (no country tag, so it corroborates as evidence but yields no claim).
+    const a = item({
+      id: 'pb_oai_a',
+      sourceId: 'src.nairametrics_ng',
+      title: 'OpenAI plans biggest ChatGPT overhaul, targets superapp status ahead of IPO',
+    })
+    const b = item({
+      id: 'pb_oai_b',
+      sourceId: 'src.biznews_za',
+      title: 'OpenAI plots biggest ChatGPT overhaul since launch',
+    })
+    expect(pathBBridge(a, b)).toBe(true)
+  })
+
+  it('SHADOW: a Path-B-only pair is still NOT a Path A match (emitted events unchanged)', () => {
+    // The point of shadow mode: pathBBridge may report a bridge, but sameEvent (the acceptance
+    // path corroborateEvents uses) still rejects it, so corroboration is unchanged.
+    expect(sameEvent(roadshowA, roadshowB)).toBe(false)
+  })
+
+  it('FALSE: two distinct CBN stories are not bridged (overlap far below floor)', () => {
+    const a = item({
+      id: 'pb_cbn_a',
+      sourceId: 'src.businessday_ng',
+      title: "CBN's new FX manual to raise dollar liquidity, enhance market confidence",
+      countryCodes: ['NG'],
+    })
+    const b = item({
+      id: 'pb_cbn_b',
+      sourceId: 'src.nairametrics_ng',
+      title: 'CBN to fine banks N100 million for inadequate forex documents',
+      countryCodes: ['NG'],
+    })
+    expect(pathBBridge(a, b)).toBe(false)
+  })
+
+  it('FALSE: cross-country pairs are rejected by the country guard', () => {
+    const ng = item({
+      id: 'pb_cc_ng',
+      sourceId: 'src.businessday_ng',
+      title: 'Finance Minister, Governor present unified case for Ghana to global investors',
+      countryCodes: ['NG'],
+    })
+    const ke = item({
+      id: 'pb_cc_ke',
+      sourceId: 'src.standardmedia_ke',
+      title: 'Finance Minister, Governor present unified case for Ghana to global investors',
+      countryCodes: ['KE'],
+    })
+    expect(pathBBridge(ng, ke)).toBe(false)
+  })
+
+  it('FALSE: out-of-window pairs are rejected by the time guard', () => {
+    expect(pathBBridge(roadshowA, { ...roadshowB, publishedAt: '2026-05-20T06:00:00.000Z' })).toBe(
+      false,
+    )
+  })
+
+  it('FALSE: same-organisation pairs are rejected by cross-org eligibility', () => {
+    expect(pathBBridge(roadshowA, { ...roadshowB, sourceId: 'src.myjoyonline_gh' })).toBe(false)
+  })
+
+  // --- documented findings: precision gap now FIXED; recall gap remains (still shadow-only) ---
+
+  it('FALSE: recurring calendar observance does not bridge (no shared ENTITY anchor)', () => {
+    // The earlier precision blocker: "World Environment Day 2026" shares only generic calendar /
+    // observance tokens (world/environment/day/2026). entityAnchors excludes those, so the two
+    // DIFFERENT stories have zero shared entity anchors and Path B now rejects them.
+    const a = item({
+      id: 'pb_env_a',
+      sourceId: 'src.nairametrics_ng',
+      title:
+        'UBA Foundation Marks World Environment Day 2026 with Tree-Planting Initiative in Ikoyi',
+    })
+    const b = item({
+      id: 'pb_env_b',
+      sourceId: 'src.bft_gh',
+      title: 'World Environment Day 2026: Happy World Environment Day',
+    })
+    expect(pathBBridge(a, b)).toBe(false)
+  })
+
+  it('KNOWN RECALL GAP: a lexically-divergent genuine same-event is NOT bridged', () => {
+    // The Ghana T-bill auction reported by two outlets shares only {bill, auction} after
+    // normalization (overlap 0.4, 0 shared anchors). Path B (lexical overlap) cannot bridge it;
+    // this is a semantic-match case beyond Path B (see PR description).
+    const a = item({
+      id: 'pb_tbill_a',
+      sourceId: 'src.myjoyonline_gh',
+      title: 'T-bills auction: Government exceeds target by 11.9%, but interest rates surge',
+      countryCodes: ['GH'],
+    })
+    const b = item({
+      id: 'pb_tbill_b',
+      sourceId: 'src.norvanreports_gh',
+      title: 'T-Bill Auction Oversubscribed as 91-Day Bill Clears at 5.01%',
+      countryCodes: ['GH'],
+    })
+    expect(pathBBridge(a, b)).toBe(false)
   })
 })

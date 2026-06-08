@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T09:32:48.022Z",
+  "generatedAt": "2026-06-08T10:40:41.717Z",
   "brief": {
     "id": "live_2026-06-08",
     "date": "2026-06-08",
@@ -259,6 +259,200 @@
     ],
     "events": [
       {
+        "id": "evt_ppc_sees_earnings_jump_despite_muted_demand_in_157oomh",
+        "title": "PPC sees earnings jump despite muted demand in SA",
+        "summary": "With the group's turnaround strategy proving positive.",
+        "occurredAt": "2026-06-08T10:31:33.000Z",
+        "countryCodes": [],
+        "topic": "ppc sees earnings jump despite muted demand in",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:15olc2k"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenneth_rogoff_on_biznews_ai_gold_rush_has_1wtxj97",
+        "title": "Kenneth Rogoff on BizNews: AI gold rush has winners and losers — Africa not in the running",
+        "summary": "",
+        "occurredAt": "2026-06-08T10:29:57.000Z",
+        "countryCodes": [],
+        "topic": "kenneth rogoff on biznews ai gold rush has",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:vwpcne"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_hartford_the_struggle_generation_that_built_non_racial_1c1leap",
+        "title": "Hartford: The struggle generation that built non-racial SA — and the movement that betrayed it",
+        "summary": "",
+        "occurredAt": "2026-06-08T10:28:37.000Z",
+        "countryCodes": [],
+        "topic": "hartford the struggle generation that built non racial",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1i6tw3c"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_old_mutual_seeks_balance_sheet_overhaul_to_boost_1bf69hw",
+        "title": "Old Mutual seeks balance sheet overhaul to boost future dividends",
+        "summary": "Old Mutual intends to reduce its share premium account and apply the amount toward accumulated losses currently reflected on its balance sheet. The move is designed to strengthen the Group's financial position and improve flexibility for future shareholder returns.",
+        "occurredAt": "2026-06-08T10:12:55.000Z",
+        "countryCodes": [],
+        "topic": "old mutual seeks balance sheet overhaul to boost",
+        "status": "corroborated",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:izp5pt",
+            "src.businesstoday_ke:8683ji"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke",
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kenya_targets_first_oil_by_end_of_2026_1w79a5d",
+        "title": "Kenya Targets First Oil by End of 2026 as Sh1.7 Trillion Turkana Project Gains New Investor Backing",
+        "summary": "Kenya is positioning itself for a long-awaited entry into the ranks of oil-producing nations after securing a new investor and approving a revised development blueprint for the South Lokichar oil fields, a project expected to attract more than Sh1.7 trillion in investment and operating expenditure over its lifetime. Energy and Petroleum Cabinet Secretary Opiyo Wandayi […]",
+        "occurredAt": "2026-06-08T10:01:58.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "kenya targets first oil by end of 2026",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businesstoday_ke:1bju4s4"
+          ],
+          "sourceIds": [
+            "src.businesstoday_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_balwin_backs_mooikloof_growth_with_r100m_road_investment_13h77ch",
+        "title": "Balwin backs Mooikloof growth with R100m road investment",
+        "summary": "New road connection between Atterbury and Garsfontein roads is designed to improve traffic flow and support urban expansion.",
+        "occurredAt": "2026-06-08T09:51:08.000Z",
+        "countryCodes": [],
+        "topic": "balwin backs mooikloof growth with r100m road investment",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:11ywcqo"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_oil_prices_climb_more_than_4_after_israeli_18fe2rn",
+        "title": "Oil prices climb more than $4 after Israeli strikes on Iran and Lebanon",
+        "summary": "Oil prices jumped more than $4 on Monday, with investors spooked by fresh Israeli strikes ‌on Iran as well as\nread more Oil prices climb more than $4 after Israeli strikes on Iran and Lebanon",
+        "occurredAt": "2026-06-08T09:48:15.000Z",
+        "countryCodes": [],
+        "topic": "oil prices climb more than 4 after israeli",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:5a807b"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_kwara_vows_to_deepen_business_reforms_attract_more_19jaxt0",
+        "title": "Kwara vows to deepen business reforms, attract more investors",
+        "summary": "The Kwara State Government has reaffirmed its commitment to working closely with the Presidential Enabling Business Environment Council (PEBEC) to\nread more Kwara vows to deepen business reforms, attract more investors",
+        "occurredAt": "2026-06-08T09:41:54.000Z",
+        "countryCodes": [],
+        "topic": "kwara vows to deepen business reforms attract more",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1kkxfmf"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_payaza_gets_a_credit_ratings_from_moody_s_2ixxl9",
+        "title": "Payaza gets ‘A’ credit ratings from Moody’s, Agusto, DataPro, Intelligence Africa",
+        "summary": "Payaza Africa Limited has secured upgraded credit ratings from four agencies, signaling growing investor confidence in the fintech company’s financial stability and operational performance. The payment company recorded upgrades across the board, with DataPro raising its rating from A to AA-, Intelligence Africa assigning it an A- investment-grade rating, Agusto upgrading it from BBB to […]\nThe pos",
+        "occurredAt": "2026-06-08T09:39:11.000Z",
+        "countryCodes": [],
+        "topic": "payaza gets a credit ratings from moody s",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:11teo92"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_embrace_entrepreneurship_innovation_to_become_employers_of_labour_ksdzx",
+        "title": "Embrace entrepreneurship, innovation to become employers of labour, Lead City tells students",
+        "summary": "Lead City University, Ibadan, Oyo State has charged its students to embrace entrepreneurship and innovation with a view to becoming\nread more Embrace entrepreneurship, innovation to become employers of labour, Lead City tells students",
+        "occurredAt": "2026-06-08T09:36:18.000Z",
+        "countryCodes": [],
+        "topic": "embrace entrepreneurship innovation to become employers of labour",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:nlhxu0"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_uba_wins_2026_banker_technology_award_for_ai_vcivvf",
         "title": "UBA Wins 2026 Banker Technology Award for AI Innovation, Launches Upgraded Mobile App",
         "summary": "Africa’s global bank, United Bank for Africa (UBA) Plc, has been named the winner of the African category at the 2026 Banker Technology Awards, recognised for its innovations in digital payments, e-business, and the use of artificial intelligence to drive seamless cross-border banking across more than 20 African markets. The Banker Technology Awards received close […]\nThe post UBA Wins 2026 Banker",
@@ -278,19 +472,40 @@
         }
       },
       {
-        "id": "evt_old_mutual_seeks_shareholders_nod_for_balance_sheet_73vz2o",
-        "title": "Old Mutual Seeks Shareholders’ Nod For Balance Sheet Restructuring",
-        "summary": "Old Mutual Holdings will seek shareholder approval for a balance sheet restructuring aimed at strengthening its ability to distribute dividends and create long-term shareholder value.",
-        "occurredAt": "2026-06-08T09:29:42.000Z",
-        "countryCodes": [],
-        "topic": "old mutual seeks shareholders nod for balance sheet",
+        "id": "evt_bayelsa_farmers_to_win_big_in_1_96bn_1857ip3",
+        "title": "Bayelsa farmers to win big in $1.96bn Nigeria’s seafood market",
+        "summary": "…as NEPC preps, point farmers’ attention to economic benefits of aquaculture The Nigerian Export Promotion Council (NEPC) is preparing stakeholders\nread more Bayelsa farmers to win big in $1.96bn Nigeria’s seafood market",
+        "occurredAt": "2026-06-08T09:31:31.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "bayelsa farmers to win big in 1 96bn",
         "status": "single_source",
         "corroboration": {
           "newsItemIds": [
-            "src.businesstoday_ke:8683ji"
+            "src.businessday_ng:1ho6zml"
           ],
           "sourceIds": [
-            "src.businesstoday_ke"
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_anambra_traders_blame_flooding_for_tomato_shortage_price_17lcyo",
+        "title": "Anambra traders blame flooding for tomato shortage, price hike",
+        "summary": "Anambra State traders say the sharp increase in tomato prices across major markets in the State resulted from a decline\nread more Anambra traders blame flooding for tomato shortage, price hike",
+        "occurredAt": "2026-06-08T09:22:54.000Z",
+        "countryCodes": [],
+        "topic": "anambra traders blame flooding for tomato shortage price",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:ovy2k7"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -525,6 +740,25 @@
         }
       },
       {
+        "id": "evt_bregret_now_uk_s_majority_view_so_why_1ehkcxu",
+        "title": "Bregret now UK's majority view — so why won't anyone call another Brexit referendum?",
+        "summary": "",
+        "occurredAt": "2026-06-08T08:50:33.000Z",
+        "countryCodes": [],
+        "topic": "bregret now uk s majority view so why",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:1lyv1y2"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_auditor_s_role_in_fraud_prevention_and_early_4okqik",
         "title": "Auditor’s role in fraud prevention and early detection: Emerging Trends",
         "summary": "Fraud remains one of the most significant threats to a business’s long-term sustainability. It occurs in both public and private sector entities. The International Standard on Auditing (ISA) defines fraud as “an intentional act by one or more individuals among management, those charged with governance, employees, or third parties, involving the use of deception to […]\nThe post Auditor’s role in fr",
@@ -544,6 +778,46 @@
         }
       },
       {
+        "id": "evt_is_the_ai_arms_race_about_to_outrun_npx4s7",
+        "title": "Is the AI arms race about to outrun human judgment? The Economist thinks so",
+        "summary": "",
+        "occurredAt": "2026-06-08T08:49:39.000Z",
+        "countryCodes": [],
+        "topic": "is the ai arms race about to outrun",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:14ibfs0"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_riots_evacuations_and_trade_threats_how_south_africa_1pf73vh",
+        "title": "Riots, evacuations and trade threats: How South Africa's migrant crisis went regional",
+        "summary": "",
+        "occurredAt": "2026-06-08T08:48:58.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "riots evacuations and trade threats how south africa",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:gcn6cl"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_mobilemoney_fintech_calls_extraordinary_general_meeting_for_june_1ndih9j",
         "title": "MobileMoney Fintech calls Extraordinary General Meeting for June 12",
         "summary": "MobileMoney Fintech Ltd (MMFL) has announced an Extraordinary General Meeting (EGM) for shareholders on Friday, June 12, 2026, at 11:00 a.m.",
@@ -557,6 +831,25 @@
           ],
           "sourceIds": [
             "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_storms_no_cover_no_comeback_why_sa_agriculture_12i3l1c",
+        "title": "Storms, no cover, no comeback: Why SA agriculture is sitting on a ticking time bomb",
+        "summary": "",
+        "occurredAt": "2026-06-08T08:47:49.000Z",
+        "countryCodes": [],
+        "topic": "storms no cover no comeback why sa agriculture",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznews_za:87z6av"
+          ],
+          "sourceIds": [
+            "src.biznews_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -7045,23 +7338,21 @@
         }
       },
       {
-        "id": "evt_yango_group_hosts_innovation_day_2026_in_abidjan_1xtcc5t",
+        "id": "evt_yango_group_hosts_innovation_day_2026_in_abidjan_7sje9w",
         "title": "Yango Group hosts Innovation Day 2026 in Abidjan",
         "summary": "More than 200 business leaders,  entrepreneurs, policymakers, and technology experts gathered in Abidjan on 4 June for Yango Innovation Day 2026, where Yango Group, a UAE-based technology company, showcased technologies used across its global markets, discussed the future of urban digital services in Africa, announced new local partnerships and recognised graduates of its Fellowship Programme. [&#",
         "occurredAt": "2026-06-05T11:49:17.000Z",
         "countryCodes": [],
         "topic": "yango group hosts innovation day 2026 in abidjan",
-        "status": "corroborated",
+        "status": "single_source",
         "corroboration": {
           "newsItemIds": [
-            "src.bft_gh:nqju5k",
-            "src.myjoyonline_gh:1jrpmes"
+            "src.bft_gh:nqju5k"
           ],
           "sourceIds": [
-            "src.bft_gh",
-            "src.myjoyonline_gh"
+            "src.bft_gh"
           ],
-          "independentSourceCount": 2,
+          "independentSourceCount": 1,
           "primarySourceCount": 0
         }
       },
@@ -7559,227 +7850,6 @@
           ],
           "sourceIds": [
             "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_dell_takes_aim_at_apple_with_a_699_lhazul",
-        "title": "Dell takes aim at Apple with a $699 touch-screen laptop",
-        "summary": "",
-        "occurredAt": "2026-06-05T10:41:53.000Z",
-        "countryCodes": [],
-        "topic": "dell takes aim at apple with a 699",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznews_za:1150dp4"
-          ],
-          "sourceIds": [
-            "src.biznews_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_michael_saylor_s_bitcoin_strategy_is_unravelling_1k668ya",
-        "title": "Michael Saylor's Bitcoin strategy is unravelling",
-        "summary": "",
-        "occurredAt": "2026-06-05T10:41:21.000Z",
-        "countryCodes": [],
-        "topic": "michael saylor s bitcoin strategy is unravelling",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznews_za:1xyxk0m"
-          ],
-          "sourceIds": [
-            "src.biznews_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_when_entitlement_replaces_enterprise_the_gen_z_economic_1oo8hlu",
-        "title": "When entitlement replaces enterprise: The Gen-Z economic threat",
-        "summary": "",
-        "occurredAt": "2026-06-05T10:39:19.000Z",
-        "countryCodes": [],
-        "topic": "when entitlement replaces enterprise the gen z economic",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznews_za:epm3de"
-          ],
-          "sourceIds": [
-            "src.biznews_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_shoprite_ups_the_ante_on_customer_loyalty_with_12a9cur",
-        "title": "Shoprite ups the ante on customer loyalty with free pet insurance",
-        "summary": "",
-        "occurredAt": "2026-06-05T10:38:01.000Z",
-        "countryCodes": [],
-        "topic": "shoprite ups the ante on customer loyalty with",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznews_za:6i2tbp"
-          ],
-          "sourceIds": [
-            "src.biznews_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_pay_smes_in_30_days_or_admit_you_4h2raf",
-        "title": "Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy",
-        "summary": "Delayed payments by government agencies, counties and big brands are not an accounting inconvenience; they are an economic crime against … ContinuedThe post Pay SMEs in 30 Days or Admit You Are Killing Kenya’s Economy appeared first on Soko Directory.",
-        "occurredAt": "2026-06-05T10:01:10.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "pay smes in 30 days or admit you",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.sokodirectory_ke:16xfzq5"
-          ],
-          "sourceIds": [
-            "src.sokodirectory_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_telecel_invests_us_5m_in_1m_coders_programme_q7100w",
-        "title": "Telecel invests US$5m in 1m coders programme",
-        "summary": "By Elizabeth PUNSU, Kumasi Telecommunications giant Telecel Ghana has committed US$5million to support government’s flagship One Million Coders initiative, undertaking to train 100,000 beneficiaries under the programme as part of efforts to accelerate digital skills development and enhance employability. The company’s Director of External Affairs Manager, Komla Buami, disclosed this du",
-        "occurredAt": "2026-06-05T10:00:57.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "telecel invests us 5m in 1m coders programme",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:11gpa0x"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_africa_s_ai_growth_must_priorities_disability_access_kc4xmh",
-        "title": "Africa’s AI Growth Must Priorities Disability Access, Experts Tell Inclusive Tech Summit",
-        "summary": "NAIROBI, Kenya, June 5 – Global technology leaders and disability rights advocates at the 2026 Inclusive Africa Conference (IAC) have called for urgent reforms to ensure Artificial Intelligence (AI) and digital technologies are designed to include persons with disabilities, warning that Africa’s rapid digital transformation could deepen inequality if inclusivity is not prioritized. Stakeholders sa",
-        "occurredAt": "2026-06-05T09:56:09.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "africa s ai growth must priorities disability access",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:nri40t"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_simon_s_weekly_wrap_emerging_markets_ai_and_15acwpg",
-        "title": "Simon’s weekly wrap: Emerging markets, AI and SA’s tokenised stock boom",
-        "summary": "This week on MoneywebNOW we looked at whether emerging markets are emerging as the new safe haven for investors, how AI is helping banks assess excluded clients, the growth of tokenised stocks in SA, and the SA Reit Association accounting and JSE committee ensuring best practice in Reit reporting.",
-        "occurredAt": "2026-06-05T09:55:10.000Z",
-        "countryCodes": [],
-        "topic": "simon s weekly wrap emerging markets ai and",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.moneyweb_za:176i9ek"
-          ],
-          "sourceIds": [
-            "src.moneyweb_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_unlocking_diaspora_remittances_for_investment_growth_1myjr2w",
-        "title": "Unlocking diaspora remittances for investment growth",
-        "summary": "By Dr. Richmond Akwasi Atuahene Diaspora remittances have become one of Africa’s most important sources of external financing, exceeding foreign direct investment (FDI) and official development assistance (ODA) in several countries, including Ghana. According to World Bank estimates, formal remittances to Africa reached about US$86 billion in 2019, while broader estimates including informal and in",
-        "occurredAt": "2026-06-05T09:44:01.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "unlocking diaspora remittances for investment growth",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1vo8l9s"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_thailand_donates_22_000_worth_of_rice_to_rlieln",
-        "title": "Thailand donates $22,000 worth of rice to tackle food insecurity in Nigeria",
-        "summary": "Thailand has donated 12 metric tonnes of rice valued at $22,000 to support communities affected by food insecurity in Nigeria, as humanitarian agencies warn of worsening hunger conditions across the country. \nThe post Thailand donates $22,000 worth of rice to tackle food insecurity in Nigeria   appeared first on Nairametrics.",
-        "occurredAt": "2026-06-05T09:43:38.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "thailand donates 22 000 worth of rice to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1ft7i5y"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_cooler_city_why_lagos_cannot_afford_to_1annuqb",
-        "title": "The cooler city: Why Lagos cannot afford to wait",
-        "summary": "At 2 A.M. on a dry-season night in Lagos, the air in Mushin does not cool. The asphalt on Agege\nread more The cooler city: Why Lagos cannot afford to wait",
-        "occurredAt": "2026-06-05T09:38:33.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "the cooler city why lagos cannot afford to",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1o9eu4p"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

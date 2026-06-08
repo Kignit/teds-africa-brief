@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T10:40:41.717Z",
+  "generatedAt": "2026-06-08T10:58:07.918Z",
   "brief": {
     "id": "live_2026-06-08",
     "date": "2026-06-08",
@@ -259,6 +259,124 @@
     ],
     "events": [
       {
+        "id": "evt_the_infrastructure_behind_the_exchange_viabtc_group_s_o7obhy",
+        "title": "The Infrastructure Behind the Exchange: ViaBTC Group’s Decade-Long Journey with CoinEx",
+        "summary": "As ViaBTC Group celebrates its tenth anniversary with the launch of its “Proof of Decade” campaign, the milestone is not only a reflection on its own evolution, but also an opportunity to revisit the foundational role it has played in shaping CoinEx—one of the Group’s most recognized global brands. For CoinEx, this moment is echoed […]\nThe post The Infrastructure Behind the Exchange: ViaBTC Group’",
+        "occurredAt": "2026-06-08T11:00:06.000Z",
+        "countryCodes": [],
+        "topic": "the infrastructure behind the exchange viabtc group s",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1a0cdv5"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_knut_rules_out_school_calendar_review_amid_nationwide_1lrjcj1",
+        "title": "KNUT Rules Out School Calendar Review Amid Nationwide Student Unrest",
+        "summary": "The Kenya National Union of Teachers (KNUT) has firmly opposed growing calls to alter the second-term school calendar despite a … ContinuedThe post KNUT Rules Out School Calendar Review Amid Nationwide Student Unrest appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T10:58:59.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "knut rules out school calendar review amid nationwide",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:g5cpsa"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_fg_clears_over_n700_billion_owed_to_contractors_novruf",
+        "title": "FG clears over N700 billion owed to contractors, approves payments to 1,240 firms",
+        "summary": "The Federal Ministry of Finance disclosed that over N700 billion in verified debts owed to local contractors has been processed in recent months, with contractors holding claims of N100 million or less prioritised in the latest round of disbursements.\nThe post FG clears over N700 billion owed to contractors, approves payments to 1,240 firms  appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T10:53:05.000Z",
+        "countryCodes": [],
+        "topic": "fg clears over n700 billion owed to contractors",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:kc356i"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_chilean_wine_frontera_launches_the_new_frontera_frutal_xct91w",
+        "title": "Chilean Wine Frontera Launches the New ‘Frontera Frutal ‘Collection",
+        "summary": "Frontera, the world-renowned Chilean wine brand known for its approachable and expressive character, is officially turning up the color on … ContinuedThe post Chilean Wine Frontera Launches the New ‘Frontera Frutal ‘Collection appeared first on Soko Directory.",
+        "occurredAt": "2026-06-08T10:52:35.000Z",
+        "countryCodes": [],
+        "topic": "chilean wine frontera launches the new frontera frutal",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.sokodirectory_ke:1sxfdr6"
+          ],
+          "sourceIds": [
+            "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_imf_military_coups_slash_investment_by_14_3_p8otfy",
+        "title": "IMF: Military coups slash investment by 14.3%, weaken growth across Sub-Saharan Africa",
+        "summary": "Military coups continue to impose significant economic costs on countries across Sub-Saharan Africa, undermining investment, slowing economic growth, disrupting trade, and weakening long-term development prospects. \nThe post IMF: Military coups slash investment by 14.3%, weaken growth across Sub-Saharan Africa appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T10:43:10.000Z",
+        "countryCodes": [],
+        "topic": "imf military coups slash investment by 14 3",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1c5ma7x"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_nigeria_needs_47_6bn_annually_to_sustain_reform_5hcr34",
+        "title": "Nigeria needs $47.6bn annually to sustain reform gains – NESG",
+        "summary": "Nigeria must mobilise an estimated $47.6 billion annually to finance its transition from economic stabilisation to sustainable growth, according to\nread more Nigeria needs $47.6bn annually to sustain reform gains – NESG",
+        "occurredAt": "2026-06-08T10:33:23.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "nigeria needs 47 6bn annually to sustain reform",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:xy03o7"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_ppc_sees_earnings_jump_despite_muted_demand_in_157oomh",
         "title": "PPC sees earnings jump despite muted demand in SA",
         "summary": "With the group's turnaround strategy proving positive.",
@@ -316,6 +434,27 @@
         }
       },
       {
+        "id": "evt_swoop_s_nigeria_gamble_winning_lagos_before_conquering_1eg2mca",
+        "title": "Swoop’s Nigeria gamble: Winning Lagos before conquering Africa",
+        "summary": "Food delivery startup Swoop is making an ambitious bet on Nigeria, positioning Africa’s largest city as the launchpad for its\nread more Swoop’s Nigeria gamble: Winning Lagos before conquering Africa",
+        "occurredAt": "2026-06-08T10:16:53.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "swoop s nigeria gamble winning lagos before conquering",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1w9j12f"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_old_mutual_seeks_balance_sheet_overhaul_to_boost_1bf69hw",
         "title": "Old Mutual seeks balance sheet overhaul to boost future dividends",
         "summary": "Old Mutual intends to reduce its share premium account and apply the amount toward accumulated losses currently reflected on its balance sheet. The move is designed to strengthen the Group's financial position and improve flexibility for future shareholder returns.",
@@ -333,6 +472,27 @@
             "src.businesstoday_ke"
           ],
           "independentSourceCount": 2,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_inside_tatum_bank_s_plan_to_build_nigeria_17cxd2v",
+        "title": "Inside Tatum Bank’s plan to build Nigeria’s next SME banking powerhouse",
+        "summary": "In an industry where scale often determines survival, Tatum Bank is pursuing a different path. Rather than competing head-on with\nread more Inside Tatum Bank’s plan to build Nigeria’s next SME banking powerhouse",
+        "occurredAt": "2026-06-08T10:06:10.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "inside tatum bank s plan to build nigeria",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:48uz5o"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
           "primarySourceCount": 0
         }
       },
@@ -7631,225 +7791,6 @@
           ],
           "sourceIds": [
             "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_bmw_sa_s_hidden_gem_business_unit_employs_1k11lyl",
-        "title": "BMW SA’s ‘hidden gem’ business unit employs more staff than Rosslyn plant",
-        "summary": "BMW IT Hub is projected to contribute R4bn to the SA economy this year.",
-        "occurredAt": "2026-06-05T11:03:03.000Z",
-        "countryCodes": [],
-        "topic": "bmw sa s hidden gem business unit employs",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:hsjgwj"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_norfund_backs_ventures_platform_fund_ii_deepens_startup_6cpnzm",
-        "title": "Norfund backs Ventures Platform Fund II, deepens startup investment in Nigeria",
-        "summary": "The Norwegian Investment Fund for developing countries (Norfund) has committed capital to Ventures Platform Pan-African Fund II (VP PAF II),\nread more Norfund backs Ventures Platform Fund II, deepens startup investment in Nigeria",
-        "occurredAt": "2026-06-05T11:00:56.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "norfund backs ventures platform fund ii deepens startup",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:zrmqs5"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_top_10_most_expensive_private_universities_in_nigeria_wksmvr",
-        "title": "Top 10 most expensive private universities in Nigeria for 2025/2026",
-        "summary": "Across the sector, several institutions recorded updated fee structures for the current session, with variations across programmes and colleges. The figures reflect published undergraduate tuition rates for the 2025/2026 academic year. \nThe post Top 10 most expensive private universities in Nigeria for 2025/2026  appeared first on Nairametrics.",
-        "occurredAt": "2026-06-05T10:59:32.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "top 10 most expensive private universities in nigeria",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1qe9hyf"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_social_listening_5_june_2026_1bifkfl",
-        "title": "Social listening 5 June 2026",
-        "summary": "1. Controversy and irony in the arrest of Ifechukwu Dennis as a whistleblower now claim the IGP arrested the wrong\nread more Social listening 5 June 2026",
-        "occurredAt": "2026-06-05T10:56:22.000Z",
-        "countryCodes": [],
-        "topic": "social listening 5 june 2026",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:1oqdo29"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_shoe_brand_bathu_in_hot_water_gauteng_mall_7zl1fs",
-        "title": "Shoe brand Bathu in hot water: Gauteng Mall approaches court over unpaid rent",
-        "summary": "Owners of Springs Mall are seeking more than R1 million for a breach of contract by Bathu.",
-        "occurredAt": "2026-06-05T10:53:40.000Z",
-        "countryCodes": [],
-        "topic": "shoe brand bathu in hot water gauteng mall",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.citizen_za:1wc8ac7"
-          ],
-          "sourceIds": [
-            "src.citizen_za"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_euro_tumbles_below_n1_585_1_on_strong_vu3sr9",
-        "title": "Euro tumbles below N1,585/€1 on strong naira rally",
-        "summary": "The Nigerian naira strengthened against major European currencies during the week’s fourth trading session.  \nThe post Euro tumbles below N1,585/€1 on strong naira rally appeared first on Nairametrics.",
-        "occurredAt": "2026-06-05T10:52:00.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "euro tumbles below n1 585 1 on strong",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.nairametrics_ng:1oqh38y"
-          ],
-          "sourceIds": [
-            "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_editorial_when_the_environment_speaks_and_we_cover_96jfum",
-        "title": "Editorial: When the environment speaks and we cover our ears",
-        "summary": "Today, the world observes World Environment Day under the stirring theme, ‘Inspired by Nature. For Climate. For Our Future’. For Our Future. Governments will issue statements. Ministers will appear at podiums, freshly suited, to denounce environmental degradation with the conviction of men who have never signed a mining lease. Officials will plant trees for the […]\nThe post Editorial: When t",
-        "occurredAt": "2026-06-05T10:50:36.000Z",
-        "countryCodes": [],
-        "topic": "editorial when the environment speaks and we cover",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:s1huvi"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_sath_foundation_targets_youth_innovation_with_new_initiative_3z2mke",
-        "title": "SATH Foundation targets youth innovation with new initiative",
-        "summary": "Across Nigeria, thousands of young people are eager to participate in the digital economy, build technology solutions, and contribute to\nread more SATH Foundation targets youth innovation with new initiative",
-        "occurredAt": "2026-06-05T10:49:44.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "sath foundation targets youth innovation with new initiative",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:w57g9u"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_innovation_key_to_emerging_economies_says_creditpro_md_1us2vgl",
-        "title": "Innovation key to emerging economies, says CreditPRO MD",
-        "summary": "Innovation has been identified as a critical driver of growth and sustainable development in emerging economies, with stakeholders urged to\nread more Innovation key to emerging economies, says CreditPRO MD",
-        "occurredAt": "2026-06-05T10:47:53.000Z",
-        "countryCodes": [],
-        "topic": "innovation key to emerging economies says creditpro md",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:dff9fb"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_nssf_defends_pension_system_after_court_rejects_stay_12e99nm",
-        "title": "NSSF Defends Pension System After Court Rejects Stay Application",
-        "summary": "Employers and workers across Kenya have been told to continue making pension contributions under the current National Social Security Fund (NSSF) rates, even as court battles over the 2013 pension reforms continue to unfold. The Fund has moved to calm growing confusion in the labour market after reports suggested a return to the old system […]",
-        "occurredAt": "2026-06-05T10:47:02.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "nssf defends pension system after court rejects stay",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businesstoday_ke:z7fgjv"
-          ],
-          "sourceIds": [
-            "src.businesstoday_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_russia_africa_dialogue_untapped_prospects_for_economic_cooperation_8q8ij1",
-        "title": "Russia-Africa Dialogue: Untapped prospects for economic cooperation",
-        "summary": "By Kestér Kenn KLOMEGÂH At the St Petersburg International Economic Forum 2026, featured the traditional “Russia-Africa Business Dialogue”, which was initiated since 2016, to deliberate aspects of forging economic cooperation between Russia and African countries. For a decade since its creation, this platform has practically discussed most pertinent roadblocks, highlighted the economic",
-        "occurredAt": "2026-06-05T10:46:15.000Z",
-        "countryCodes": [],
-        "topic": "russia africa dialogue untapped prospects for economic cooperation",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:r2soyj"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

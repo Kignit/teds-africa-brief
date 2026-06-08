@@ -367,7 +367,7 @@ describe('signature normalization (title-primary, boilerplate, stemming)', () =>
   })
 })
 
-describe('Path B overlap bridge (SHADOW MODE - not wired into sameEvent)', () => {
+describe('Path B overlap bridge (pathBBridge)', () => {
   const roadshowA = item({
     id: 'pb_road_a',
     sourceId: 'src.myjoyonline_gh',
@@ -432,9 +432,9 @@ describe('Path B overlap bridge (SHADOW MODE - not wired into sameEvent)', () =>
     expect(pathBBridge(a, b)).toBe(true)
   })
 
-  it('SHADOW: a Path-B-only pair is still NOT a Path A match (emitted events unchanged)', () => {
-    // The point of shadow mode: pathBBridge may report a bridge, but sameEvent (the acceptance
-    // path corroborateEvents uses) still rejects it, so corroboration is unchanged.
+  it('Path A alone does NOT match the roadshow (Path B is the bridge that corroborates it)', () => {
+    // Path A's Jaccard floor rejects the length-asymmetric roadshow pair; pathBBridge is what
+    // bridges it, now wired into corroborateEvents (see the activation tests below).
     expect(sameEvent(roadshowA, roadshowB)).toBe(false)
   })
 
@@ -480,7 +480,7 @@ describe('Path B overlap bridge (SHADOW MODE - not wired into sameEvent)', () =>
     expect(pathBBridge(roadshowA, { ...roadshowB, sourceId: 'src.myjoyonline_gh' })).toBe(false)
   })
 
-  // --- documented findings: precision gap now FIXED; recall gap remains (still shadow-only) ---
+  // --- documented findings: precision gap now FIXED; recall gap remains (Path B active, still lexical) ---
 
   it('FALSE: recurring calendar observance does not bridge (no shared ENTITY anchor)', () => {
     // The earlier precision blocker: "World Environment Day 2026" shares only generic calendar /
@@ -517,5 +517,89 @@ describe('Path B overlap bridge (SHADOW MODE - not wired into sameEvent)', () =>
       countryCodes: ['GH'],
     })
     expect(pathBBridge(a, b)).toBe(false)
+  })
+})
+
+describe('Path B activation (wired into corroborateEvents)', () => {
+  it('Ghana London roadshow now clusters and corroborates via Path B', () => {
+    const events = corroborateEvents([
+      item({
+        id: 'act_road_a',
+        sourceId: 'src.myjoyonline_gh',
+        title:
+          'Ghana makes strong investment pitch in London as Finance Minister, BoG Governor court global investors',
+        countryCodes: ['GH'],
+      }),
+      item({
+        id: 'act_road_b',
+        sourceId: 'src.bft_gh',
+        title:
+          'Finance Minister, Governor present powerful, unified case for Ghana to global financiers and investors',
+        countryCodes: ['GH'],
+      }),
+    ])
+    expect(events).toHaveLength(1)
+    expect(events[0].status).toBe('corroborated')
+    expect(events[0].corroboration.independentSourceCount).toBe(2)
+  })
+
+  it('World Environment Day false pair remains split (no shared entity anchor)', () => {
+    const events = corroborateEvents([
+      item({
+        id: 'act_env_a',
+        sourceId: 'src.nairametrics_ng',
+        title:
+          'UBA Foundation Marks World Environment Day 2026 with Tree-Planting Initiative in Ikoyi',
+      }),
+      item({
+        id: 'act_env_b',
+        sourceId: 'src.bft_gh',
+        title: 'World Environment Day 2026: Happy World Environment Day',
+      }),
+    ])
+    expect(events).toHaveLength(2)
+    expect(events.every((e) => e.status === 'single_source')).toBe(true)
+  })
+
+  it('Ghana T-bill pair remains split (lexically divergent recall gap)', () => {
+    const events = corroborateEvents([
+      item({
+        id: 'act_tbill_a',
+        sourceId: 'src.myjoyonline_gh',
+        title: 'T-bills auction: Government exceeds target by 11.9%, but interest rates surge',
+        countryCodes: ['GH'],
+      }),
+      item({
+        id: 'act_tbill_b',
+        sourceId: 'src.norvanreports_gh',
+        title: 'T-Bill Auction Oversubscribed as 91-Day Bill Clears at 5.01%',
+        countryCodes: ['GH'],
+      }),
+    ])
+    expect(events).toHaveLength(2)
+    expect(events.every((e) => e.status === 'single_source')).toBe(true)
+  })
+
+  it('a same-source Path-B-like pair does not self-corroborate', () => {
+    // Same organisation: pathBBridge's cross-org guard rejects the bridge and Path A does not
+    // match the length-asymmetric pair, so the two reports stay separate single_source events.
+    const events = corroborateEvents([
+      item({
+        id: 'act_same_a',
+        sourceId: 'src.myjoyonline_gh',
+        title:
+          'Ghana makes strong investment pitch in London as Finance Minister, BoG Governor court global investors',
+        countryCodes: ['GH'],
+      }),
+      item({
+        id: 'act_same_b',
+        sourceId: 'src.myjoyonline_gh',
+        title:
+          'Finance Minister, Governor present powerful, unified case for Ghana to global financiers and investors',
+        countryCodes: ['GH'],
+      }),
+    ])
+    expect(events).toHaveLength(2)
+    expect(events.every((e) => e.status === 'single_source')).toBe(true)
   })
 })

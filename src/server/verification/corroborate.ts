@@ -1,6 +1,6 @@
 import type { NewsItem } from '../../domain/news'
 import type { Event, EventStatus } from '../../domain/event'
-import { sameEvent, type SameEventOptions } from './eventSignature'
+import { sameEvent, pathBBridge, type SameEventOptions } from './eventSignature'
 
 // Topic key for human-readable ids/topic: first few normalized words of a headline.
 function topicKey(title: string): string {
@@ -27,7 +27,8 @@ export interface CorroborateOptions extends SameEventOptions {
   primarySourceIds?: Set<string>
 }
 
-// Group NewsItems into Events by the STRICT same-event test (eventSignature), using
+// Group NewsItems into Events by the same-event tests in eventSignature (the strict Path A
+// sameEvent, plus the additional cross-org Path B overlap bridge pathBBridge), using
 // union-find so the grouping is transitive and order-independent. An Event is
 // 'corroborated' only when reported by >= 2 independent registered sources;
 // otherwise it is explicitly 'single_source'. Independence is counted over
@@ -56,7 +57,15 @@ export function corroborateEvents(items: NewsItem[], opts: CorroborateOptions = 
 
   for (let i = 0; i < items.length; i++) {
     for (let j = i + 1; j < items.length; j++) {
-      if (sameEvent(items[i], items[j], opts)) union(i, j)
+      // Path A (sameEvent) is unchanged. Path B (pathBBridge) is an ADDITIONAL acceptance
+      // path: a length-robust overlap bridge gated by cross-org eligibility + a shared entity
+      // anchor. The status logic below is unchanged - a cluster becomes 'corroborated' only at
+      // independentSourceCount >= 2, and pathBBridge only ever unions cross-org pairs, so a
+      // bridge adds a genuine independent source and never self-corroborates. opts carries
+      // organisationOf + the shared window/threshold options to both paths.
+      if (sameEvent(items[i], items[j], opts) || pathBBridge(items[i], items[j], opts)) {
+        union(i, j)
+      }
     }
   }
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T06:25:39.864Z",
+  "generatedAt": "2026-06-08T07:13:18.458Z",
   "brief": {
     "id": "live_2026-06-08",
     "date": "2026-06-08",
@@ -115,6 +115,255 @@
     ],
     "events": [
       {
+        "id": "evt_united_capital_secures_license_to_operate_investment_banking_xnpknq",
+        "title": "United Capital secures license to operate investment banking in Ethiopia",
+        "summary": "Nigeria’s United Capital Group has received approval from the Ethiopian Capital Market Authority (ECMA) to operate investment banking in Ethiopia.  \nThe post United Capital secures license to operate investment banking in Ethiopia appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T07:09:02.000Z",
+        "countryCodes": [
+          "NG",
+          "ET"
+        ],
+        "topic": "united capital secures license to operate investment banking",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1u02k50"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_to_invest_in_spacex_ipo_from_nigeria_yrc5vu",
+        "title": "How to invest in SpaceX IPO from Nigeria",
+        "summary": "SpaceX will launch its blockbuster US IPO on Friday, June 12th 2026, and could list at above $1.7 trillion, with Anthropic, OpenAI, and Stripe also in the race.\nThe post How to invest in SpaceX IPO from Nigeria appeared first on Nairametrics.",
+        "occurredAt": "2026-06-08T07:08:05.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "how to invest in spacex ipo from nigeria",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.nairametrics_ng:1w8t36y"
+          ],
+          "sourceIds": [
+            "src.nairametrics_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_ghana_makes_strong_investment_pitch_in_london_as_1dx7tmx",
+        "title": "Ghana makes strong investment pitch in London as Finance Minister, BoG Governor court global investors",
+        "summary": "Ghana’s economic managers have mounted a strong case for renewed investor confidence, with Finance Minister and Bank of Ghana Governor Dr Johnson Asiama presenting a coordinated message of stability, reform and investment opportunity to some of the world’s leading financiers in London.",
+        "occurredAt": "2026-06-08T07:02:15.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "ghana makes strong investment pitch in london as",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:tye0k9"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_prudential_aiico_insurance_c_i_leasing_top_xirdv2",
+        "title": "Africa Prudential, AIICO Insurance, C & I Leasing top stock pick this week",
+        "summary": "This is not a buy, sell or hold recommendation but a stock investment guide. You may need to involve your financial advisor before taking investment decisions.\nThe post Africa Prudential, AIICO Insurance, C & I Leasing top stock pick this week appeared first on Premium Times Nigeria.",
+        "occurredAt": "2026-06-08T07:01:50.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "africa prudential aiico insurance c i leasing top",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.premiumtimes_ng:1c8hk9y"
+          ],
+          "sourceIds": [
+            "src.premiumtimes_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_announcing_the_2026_global_theme_world_business_angels_1ux1nwc",
+        "title": "Announcing the 2026 Global Theme: World Business Angels Investors week 2026; Fostering Diversity and Inclusion in Entrepreneurship for Financial Inclusion",
+        "summary": "Event Details Venue: Federal Palace Hotel, Ahmadu Bello Way, Victoria Island, Lagos, Nigeria. Date: Thursday, June 18th, 2026 Time: 09:00\nread more Announcing the 2026 Global Theme: World Business Angels Investors week 2026; Fostering Diversity and Inclusion in Entrepreneurship for Financial Inclusion",
+        "occurredAt": "2026-06-08T07:00:43.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "announcing the 2026 global theme world business angels",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:dog9l7"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_the_future_of_corporate_actions_in_nigeria_speed_19d1uli",
+        "title": "The Future of Corporate Actions in Nigeria: Speed, Transparency, Trust",
+        "summary": "Corporate actions play a critical role in shaping investor confidence, liquidity, and market efficiency within the Nigerian Capital Market. The\nread more The Future of Corporate Actions in Nigeria: Speed, Transparency, Trust",
+        "occurredAt": "2026-06-08T07:00:40.000Z",
+        "countryCodes": [
+          "NG"
+        ],
+        "topic": "the future of corporate actions in nigeria speed",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:1kb090y"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_turn_everyday_spending_into_real_value_with_sbm_1qgc0z9",
+        "title": "Turn Everyday Spending into Real Value with SBM Rewards Program",
+        "summary": "NAIROBI, Kenya, June 8 – Customers today expect more from their banks than traditional financial services. They are looking for value, relevance, and tangible benefits in their everyday interactions. SBM Bank continues to stay ahead of this shift, leading with innovation that responds directly to evolving customer needs. This is the spirit behind the SBM […]",
+        "occurredAt": "2026-06-08T07:00:11.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "turn everyday spending into real value with sbm",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.capitalfm_ke:17q1u9e"
+          ],
+          "sourceIds": [
+            "src.capitalfm_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_how_construction_loans_are_helping_kenyans_build_their_1vnbk6r",
+        "title": "How construction loans are helping Kenyans build their dream homes",
+        "summary": "Owning a home remains one of the greatest life aspirations for most individuals. Beyond providing shelter, a home offers security, stability, dignity, and a lasting investment for future generations, privileges that most people yearn to have. However, for thousands of families, that dream remains far out of reach primarily due to cost. Rising construction costs, […]\nHow construction loans are help",
+        "occurredAt": "2026-06-08T06:52:52.000Z",
+        "countryCodes": [
+          "KE"
+        ],
+        "topic": "how construction loans are helping kenyans build their",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.biznakenya_ke:t8dkov"
+          ],
+          "sourceIds": [
+            "src.biznakenya_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_johannesburg_s_decline_since_the_2010_world_cup_1g54rn5",
+        "title": "Johannesburg’s decline since the 2010 World Cup is stark",
+        "summary": "Even after accounting for inflation, the city's budget announced two weeks ago is more than 60% higher than it was in 2010, yet property values are 21% lower.",
+        "occurredAt": "2026-06-08T06:49:51.000Z",
+        "countryCodes": [
+          "ZA"
+        ],
+        "topic": "johannesburg s decline since the 2010 world cup",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:tgi44u"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_french_billionaire_wants_to_give_his_1_4bn_14gqyg",
+        "title": "French billionaire wants to give his $1.4bn fortune to charity, disinherits five children",
+        "summary": "Pierre-Edouard Sterin has told the French Senate he wants to disinherit his five children entirely. The law won’t let him.\nread more French billionaire wants to give his $1.4bn fortune to charity, disinherits five children",
+        "occurredAt": "2026-06-08T06:38:10.000Z",
+        "countryCodes": [],
+        "topic": "french billionaire wants to give his 1 4bn",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.businessday_ng:q3becb"
+          ],
+          "sourceIds": [
+            "src.businessday_ng"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_africa_must_build_its_own_ai_future_not_ww5mo6",
+        "title": "Africa must build its own AI future, not merely consume it – Ace Ankomah",
+        "summary": "Prominent Ghanaian lawyer Ace Anan Ankomah has called on African countries to move beyond being passive consumers of technology and become active creators of the artificial intelligence systems that will shape the future, warning that the continent risks being left behind if it fails to assert itself in the emerging AI revolution.\n\nDelivering the 2026 Commencement Address at SOS-Hermann Gmeiner In",
+        "occurredAt": "2026-06-08T06:34:36.000Z",
+        "countryCodes": [
+          "GH"
+        ],
+        "topic": "africa must build its own ai future not",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.myjoyonline_gh:11cpkdw"
+          ],
+          "sourceIds": [
+            "src.myjoyonline_gh"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_bitcoin_steadies_after_60_000_breach_as_saylor_nncfzo",
+        "title": "Bitcoin steadies after $60 000 breach as Saylor hints at buying",
+        "summary": "The original cryptocurrency climbed as much as 3.8% to nearly $64 200 and was trading around $63 000 at noon in Singapore.",
+        "occurredAt": "2026-06-08T06:30:32.000Z",
+        "countryCodes": [],
+        "topic": "bitcoin steadies after 60 000 breach as saylor",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:8c77sj"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
         "id": "evt_anyone_who_helps_you_make_money_is_family_1m1r6d8",
         "title": "Anyone Who Helps You Make Money Is Family",
         "summary": "Some people love you with words, and then some people love you with access. They mention your name in rooms … ContinuedThe post Anyone Who Helps You Make Money Is Family appeared first on Soko Directory.",
@@ -128,6 +377,25 @@
           ],
           "sourceIds": [
             "src.sokodirectory_ke"
+          ],
+          "independentSourceCount": 1,
+          "primarySourceCount": 0
+        }
+      },
+      {
+        "id": "evt_powerful_philippine_quake_kills_three_people_destroys_buildings_14uc89o",
+        "title": "Powerful Philippine quake kills three people, destroys buildings",
+        "summary": "The tremor is the most powerful to rock the Southeast Asian nation since 1976, and the strongest globally this year, based on USGS data.",
+        "occurredAt": "2026-06-08T06:15:49.000Z",
+        "countryCodes": [],
+        "topic": "powerful philippine quake kills three people destroys buildings",
+        "status": "single_source",
+        "corroboration": {
+          "newsItemIds": [
+            "src.moneyweb_za:168e4wc"
+          ],
+          "sourceIds": [
+            "src.moneyweb_za"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0
@@ -7175,213 +7443,6 @@
           ],
           "sourceIds": [
             "src.nairametrics_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_housing_levy_has_become_a_payslip_heist_syn51k",
-        "title": "The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages",
-        "summary": "The housing levy was sold to Kenyans as a national answer to a real problem: the shortage of decent and … ContinuedThe post The Housing Levy Has Become A Payslip Heist: Why Kenyans Must Reject This Permanent Raid On Their Wages appeared first on Soko Directory.",
-        "occurredAt": "2026-06-05T07:11:38.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "the housing levy has become a payslip heist",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.sokodirectory_ke:1jq2puk"
-          ],
-          "sourceIds": [
-            "src.sokodirectory_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_kenya_urgently_needs_a_three_week_national_pause_tiemw2",
-        "title": "Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely & Burn The Country",
-        "summary": "Kenya does not need a one-week school break. Kenya needs a serious three-week national pause, because what is happening in … ContinuedThe post Kenya Urgently Needs A Three-Week National Pause Before We Lose Our Children Completely & Burn The Country appeared first on Soko Directory.",
-        "occurredAt": "2026-06-05T06:57:52.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "kenya urgently needs a three week national pause",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.sokodirectory_ke:1m80ylm"
-          ],
-          "sourceIds": [
-            "src.sokodirectory_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_10th_beauty_cosmetics_and_wellness_west_africa_exhibition_1l7mrzd",
-        "title": "10th Beauty, Cosmetics and Wellness West Africa exhibition expected to deepen trade links, support industry growth",
-        "summary": "The 10th Beauty, Cosmetics and Wellness West Africa Ghana exhibition organised by the Ace Group has brought together exhibitors and industry players from more than 10 countries. A move aimed at highlighting growing opportunities in Ghana’s beauty and cosmetics sector. The three-day international exhibition, being held at the University of Professional Studies (UPSA) Auditorium in […]\nThe pos",
-        "occurredAt": "2026-06-05T06:57:39.000Z",
-        "countryCodes": [
-          "GH"
-        ],
-        "topic": "10th beauty cosmetics and wellness west africa exhibition",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.bft_gh:1rwidph"
-          ],
-          "sourceIds": [
-            "src.bft_gh"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_second_term_unrest_list_of_over_30_schools_1obg2g4",
-        "title": "Second term unrest: List of over 30 schools closed indefinitely",
-        "summary": "A fresh wave of student unrest has swept across Kenyan secondary schools since the beginning of the second term, disrupting learning, destroying property, and forcing the indefinite closure of several institutions across the country. The disturbances, which have been reported in schools in various regions, have manifested in different forms, including dormitory fires, arson attacks, […]\nSecond ter",
-        "occurredAt": "2026-06-05T06:54:55.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "second term unrest list of over 30 schools",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.biznakenya_ke:cggcs6"
-          ],
-          "sourceIds": [
-            "src.biznakenya_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_government_targets_herbal_and_flavored_shisha_in_expanded_bsr498",
-        "title": "Government Targets Herbal and Flavored Shisha in Expanded Tobacco Crackdown",
-        "summary": "NAIROBI, Kenya, June 5-The Ministry of Health has initiated a fresh push to tighten Kenya’s tobacco control framework with proposed rules that would completely ban shisha smoking and all waterpipe tobacco products, citing emerging public health risks and new product variations that have outpaced existing regulations. In a public notice, the Ministry says the draft […]",
-        "occurredAt": "2026-06-05T06:54:01.000Z",
-        "countryCodes": [
-          "KE"
-        ],
-        "topic": "government targets herbal and flavored shisha in expanded",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.capitalfm_ke:1d2rdqr"
-          ],
-          "sourceIds": [
-            "src.capitalfm_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_parthian_s_i_invest_broadens_offering_with_asset_25kceb",
-        "title": "Parthian’s i-invest broadens offering with asset-backed loans",
-        "summary": "i-invest, Nigeria’s digital investment platform, has unveiled a significantly enhanced platform experience designed to make investing more intuitive, accessible, and\nread more Parthian’s i-invest broadens offering with asset-backed loans",
-        "occurredAt": "2026-06-05T06:45:15.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "parthian s i invest broadens offering with asset",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:qx2zoo"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_ncr_nigeria_returns_to_profitability_after_four_years_5dj6r5",
-        "title": "NCR Nigeria returns to profitability after four years of losses",
-        "summary": "NCR Nigeria Plc has returned to profitability in its full-year financial statement of 2025, after four straight years of losses.\nread more NCR Nigeria returns to profitability after four years of losses",
-        "occurredAt": "2026-06-05T06:41:18.000Z",
-        "countryCodes": [
-          "NG"
-        ],
-        "topic": "ncr nigeria returns to profitability after four years",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:xr0e9g"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_the_second_liberation_for_africa_must_not_become_2s2nyr",
-        "title": "The Second Liberation For Africa Must Not Become The New Betrayal",
-        "summary": "Africa is living through a painful historical moment. The continent is no longer merely asking why it is poor despite … ContinuedThe post The Second Liberation For Africa Must Not Become The New Betrayal appeared first on Soko Directory.",
-        "occurredAt": "2026-06-05T06:40:41.000Z",
-        "countryCodes": [],
-        "topic": "the second liberation for africa must not become",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.sokodirectory_ke:13fhr0y"
-          ],
-          "sourceIds": [
-            "src.sokodirectory_ke"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_sustyvibes_targets_250_000_funding_unveils_expansion_into_3w7yrz",
-        "title": "SustyVibes targets $250,000 funding, unveils expansion into Ghana, UK, US",
-        "summary": "Nigerian sustainability organisation SustyVibes has unveiled plans to expand its operations into Ghana, the United Kingdom and the United States,\nread more SustyVibes targets $250,000 funding, unveils expansion into Ghana, UK, US",
-        "occurredAt": "2026-06-05T06:32:59.000Z",
-        "countryCodes": [
-          "NG",
-          "GH"
-        ],
-        "topic": "sustyvibes targets 250 000 funding unveils expansion into",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.businessday_ng:un1lsz"
-          ],
-          "sourceIds": [
-            "src.businessday_ng"
-          ],
-          "independentSourceCount": 1,
-          "primarySourceCount": 0
-        }
-      },
-      {
-        "id": "evt_digital_must_be_default_ssnit_pushes_members_online_k2i5kd",
-        "title": "Digital must be default – SSNIT pushes members online to end long queues",
-        "summary": "The Director-General of SSNIT, Kwasi Afreh Biney, says the pension scheme is aggressively pursuing digital service delivery to eliminate long queues, reduce paperwork, and improve efficiency.",
-        "occurredAt": "2026-06-05T06:31:25.000Z",
-        "countryCodes": [],
-        "topic": "digital must be default ssnit pushes members online",
-        "status": "single_source",
-        "corroboration": {
-          "newsItemIds": [
-            "src.myjoyonline_gh:5wpeal"
-          ],
-          "sourceIds": [
-            "src.myjoyonline_gh"
           ],
           "independentSourceCount": 1,
           "primarySourceCount": 0

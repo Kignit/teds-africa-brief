@@ -171,8 +171,8 @@ export function stripBoilerplate(summary: string): string {
 
 // Anchor tokens: acronyms (CBN, MTN), non-sentence-initial proper nouns, and numbers /
 // percentages - the named entities and quantities that pin a report to a SPECIFIC
-// occurrence. Exported for tests and offline diagnostics ONLY; it is deliberately NOT used
-// as an acceptance path here (relaxed bridges are a separate, later-approved lane).
+// occurrence. Exported for tests and diagnostics; anchorTokens itself is not an acceptance
+// path - Path B eligibility uses the narrower entityAnchors derived from it.
 export function anchorTokens(title: string): Set<string> {
   const out = new Set<string>()
   const words = title.match(/[A-Za-z0-9$%.]+/g) ?? []
@@ -221,15 +221,16 @@ export function sameEvent(a: NewsItem, b: NewsItem, opts: SameEventOptions = {})
 }
 
 // ---------------------------------------------------------------------------
-// Path B (overlap-coefficient bridge) - SHADOW MODE ONLY.
+// Path B (overlap-coefficient bridge) - an ADDITIONAL acceptance path.
 //
 // Path A (sameEvent) is symmetric and length-sensitive: two genuine reports of one event
 // whose headlines differ in length share many tokens yet fall under the Jaccard floor. The
 // overlap coefficient (intersection / min set size) is length-robust and bridges those, but
 // over-merges on its own, so it is gated behind a shared-entity-anchor floor and cross-org
-// eligibility. pathBBridge is deliberately NOT called by sameEvent / corroborateEvents:
-// emitted events are unchanged. It exists so a shadow replay can quantify would-be bridges
-// (precision and recall) BEFORE activation, which is a separate, explicitly-approved step.
+// eligibility. pathBBridge is called by corroborateEvents alongside sameEvent (their results
+// are OR'd); sameEvent itself stays Path A only and its thresholds are unchanged. Activation
+// lives ONLY in corroborateEvents - a cluster still becomes 'corroborated' solely via
+// independentSourceCount >= 2.
 // ---------------------------------------------------------------------------
 
 // Explicit, reviewable thresholds - no buried magic numbers.
@@ -323,10 +324,11 @@ function sharedEntityAnchorCount(titleA: string, titleB: string): number {
   return sharedCount(entityAnchors(titleA), entityAnchors(titleB))
 }
 
-// Whether the relaxed overlap bridge WOULD accept two reports as the same event. SHADOW
-// MODE: this is not an acceptance path in sameEvent; it only reports a would-be bridge.
-// Requires cross-org eligibility (a bridge may only ADD an independent source) and the same
-// country + time-window hard guards as Path A, then the overlap + shared-ENTITY-anchor floors.
+// Additional Path B acceptance helper, called by corroborateEvents alongside sameEvent;
+// sameEvent itself remains Path A only. Returns whether the relaxed overlap bridge accepts
+// two reports as the same event. Requires cross-org eligibility (a bridge may only ADD an
+// independent source) and the same country + time-window hard guards as Path A, then the
+// overlap + shared-ENTITY-anchor floors.
 export function pathBBridge(a: NewsItem, b: NewsItem, opts: PathBOptions = {}): boolean {
   const o = { ...DEFAULTS, ...opts }
   const orgOf = opts.organisationOf ?? ((s: string) => s)

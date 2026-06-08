@@ -47,7 +47,11 @@ const OUT_FILE = `${OUT_DIR}/brief.json`
 // source-backed news items so corroboration can accumulate across runs.
 const STORE_DIR = 'data'
 const STORE_FILE = `${STORE_DIR}/news-window.json`
-const NEWS_QUERY = 'Africa economy OR Africa currency OR Africa oil'
+// GDELT DOC API rejects unparenthesized OR groups with HTTP 200 + text/html body
+// `Queries containing OR'd terms must be surrounded by ().` - which the connector's
+// res.json() then throws on. Wrapping the OR group in parens is the canonical syntax
+// and the only thing needed to make the query accepted.
+const NEWS_QUERY = '(Africa economy OR Africa currency OR Africa oil)'
 
 // Surface the ingestion audit trail to the run log so a thin or null brief is
 // diagnosable from the workflow output: which connectors FAILED (e.g. a GDELT 429 —

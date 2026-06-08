@@ -84,7 +84,10 @@ export function countryProfileConnector(
 // Keyed connectors (EIA/FRED) and RSS feeds are added by a caller that has the
 // credentials and feed URLs.
 export function defaultLiveConnectors(
-  newsQuery = 'Africa economy OR Africa currency OR Africa oil',
+  // GDELT DOC API requires OR'd terms to be wrapped in parens; without them it returns
+  // HTTP 200 + text/html "Queries containing OR'd terms must be surrounded by ()." which
+  // the connector then throws on at res.json(). See scripts/generateBrief.ts NEWS_QUERY.
+  newsQuery = '(Africa economy OR Africa currency OR Africa oil)',
 ): {
   figureConnectors: FigureConnector[]
   newsConnectors: NewsConnector[]

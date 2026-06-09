@@ -165,14 +165,23 @@ export default function App({ brief = null, generatedAt = null, loading = false 
   return (
     <div
       style={{
-        minHeight: '100vh',
+        minHeight: '100dvh',
         background: theme.bg,
         color: theme.ink,
         fontFamily: theme.sans,
         WebkitFontSmoothing: 'antialiased',
       }}
     >
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '24px 18px 48px' }}>
+      <div
+        style={{
+          maxWidth: 760,
+          margin: '0 auto',
+          paddingTop: 'calc(24px + env(safe-area-inset-top))',
+          paddingRight: 'max(18px, env(safe-area-inset-right))',
+          paddingBottom: 'calc(48px + env(safe-area-inset-bottom))',
+          paddingLeft: 'max(18px, env(safe-area-inset-left))',
+        }}
+      >
         <div
           style={{
             background: theme.warnBg,
@@ -199,7 +208,14 @@ export default function App({ brief = null, generatedAt = null, loading = false 
           >
             Intelligence
           </div>
-          <h1 style={{ fontFamily: theme.serif, fontSize: 28, fontWeight: 600, margin: '6px 0 0' }}>
+          <h1
+            style={{
+              fontFamily: theme.serif,
+              fontSize: 'clamp(23px, 6.4vw, 28px)',
+              fontWeight: 600,
+              margin: '6px 0 0',
+            }}
+          >
             Ted&apos;s Africa Brief
           </h1>
           <p style={{ fontSize: 13, color: theme.muted, margin: '6px 0 0', lineHeight: 1.5 }}>

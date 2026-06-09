@@ -1,0 +1,35 @@
+{
+  "name": "Ted's Africa Brief",
+  "short_name": "Africa Brief",
+  "description": "Trust-gated intelligence brief for African markets: Ethiopia, Kenya, Nigeria, Ghana, and South Africa.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "background_color": "#EEF1F5",
+  "theme_color": "#EEF1F5",
+  "categories": ["news", "finance"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

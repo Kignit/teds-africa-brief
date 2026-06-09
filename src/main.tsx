@@ -29,3 +29,13 @@ void loadBrief().then((loaded) => {
     </StrictMode>,
   )
 })
+
+// Register the offline app shell in production only (skipped in dev so it cannot cache the
+// module graph during HMR). The worker caches the static shell and serves the brief artifact
+// network-first; freshness is still enforced by loadBrief's 36h gate on every load, so the
+// worker can never present a stale brief as current.
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    void navigator.serviceWorker.register('/sw.js')
+  })
+}

@@ -4,6 +4,7 @@ import type { Event } from '../domain/event'
 import type { Methodology } from '../domain/methodology'
 import type { CountryProfile, CountryProfileEvidenceField } from '../domain/country'
 import { FigureCard } from '../components/FigureCard'
+import { SectionHead } from '../components/SectionHead'
 import { sourceName } from '../data/sources'
 import { theme } from './theme'
 
@@ -129,6 +130,19 @@ function profileRows(
   return rows
 }
 
+// Distinct sources actually backing the brief - the union of every sourceId across
+// figures, corroborated events, claim profile fields, and country-profile evidence.
+// Feeds the masthead provenance line; derived only from the artifact, never fabricated.
+function distinctSourceCount(brief: BriefDraft): number {
+  const ids = new Set<string>()
+  for (const f of brief.figures) for (const s of f.sourceIds) ids.add(s)
+  for (const e of brief.events) for (const s of e.corroboration.sourceIds) ids.add(s)
+  for (const c of brief.claims) for (const s of c.profileSourceIds) ids.add(s)
+  for (const p of brief.profiles)
+    for (const ev of Object.values(p.evidence)) for (const s of ev?.sourceIds ?? []) ids.add(s)
+  return ids.size
+}
+
 // Runtime shell: renders user-facing facts only when a connector-backed BriefDraft
 // is supplied by the live pipeline. With no brief it shows an empty state, not
 // placeholder figures or analysis.
@@ -138,14 +152,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
   const view: 'loading' | 'loaded' | 'empty' =
     loading && !brief ? 'loading' : brief ? 'loaded' : 'empty'
   const updated = brief && generatedAt ? formatUpdated(generatedAt) : ''
-  const bannerText =
-    view === 'loading'
-      ? 'Loading the latest brief...'
-      : view === 'empty'
-        ? statusText(null)
-        : updated
-          ? `${statusText(brief)} · Updated ${updated}`
-          : statusText(brief)
+  const editionLabel = brief?.edition === 'weekly' ? 'Weekly brief' : 'Daily brief'
+  const sourceCount = brief ? distinctSourceCount(brief) : 0
   const figures = brief?.figures ?? []
   // Public runtime presents only corroborated events as intelligence. Single-source
   // and unconfirmed events are segregated into a clearly-labelled watchlist below,
@@ -182,46 +190,129 @@ export default function App({ brief = null, generatedAt = null, loading = false 
           paddingLeft: 'max(18px, env(safe-area-inset-left))',
         }}
       >
-        <div
-          style={{
-            background: theme.warnBg,
-            color: theme.warnInk,
-            borderRadius: 12,
-            padding: '10px 14px',
-            fontSize: 12.5,
-            fontWeight: 600,
-            marginBottom: 22,
-          }}
-        >
-          {bannerText}
-        </div>
-
-        <header style={{ marginBottom: 18 }}>
-          <div
-            style={{
-              fontSize: 11,
-              fontWeight: 800,
-              letterSpacing: 1.2,
-              textTransform: 'uppercase',
-              color: theme.accent,
-            }}
-          >
-            Intelligence
+        <header style={{ marginBottom: 6 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <div
+              style={{
+                width: 42,
+                height: 42,
+                borderRadius: 13,
+                background: theme.accent,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                boxShadow: '0 4px 12px rgba(61,78,232,.35)',
+              }}
+            >
+              <span style={{ color: '#fff', fontWeight: 800, fontSize: 17, letterSpacing: -1 }}>
+                tab
+              </span>
+            </div>
+            <div style={{ minWidth: 0, flex: 1 }}>
+              <h1
+                style={{
+                  fontFamily: theme.serif,
+                  fontSize: 'clamp(22px, 6vw, 27px)',
+                  fontWeight: 600,
+                  letterSpacing: -0.3,
+                  lineHeight: 1.1,
+                  margin: 0,
+                }}
+              >
+                Ted&apos;s Africa Brief
+              </h1>
+              <div style={{ fontSize: 12.5, color: theme.muted, marginTop: 3 }}>
+                {view === 'loading' ? (
+                  'Loading the latest brief...'
+                ) : view === 'empty' ? (
+                  statusText(null)
+                ) : updated ? (
+                  <>
+                    {editionLabel}
+                    <span
+                      aria-hidden="true"
+                      style={{
+                        display: 'inline-block',
+                        width: 3,
+                        height: 3,
+                        borderRadius: 3,
+                        background: 'currentColor',
+                        opacity: 0.5,
+                        margin: '0 7px',
+                        verticalAlign: 'middle',
+                      }}
+                    />
+                    <span>Updated {updated}</span>
+                  </>
+                ) : (
+                  editionLabel
+                )}
+              </div>
+            </div>
           </div>
-          <h1
-            style={{
-              fontFamily: theme.serif,
-              fontSize: 'clamp(23px, 6.4vw, 28px)',
-              fontWeight: 600,
-              margin: '6px 0 0',
-            }}
-          >
-            Ted&apos;s Africa Brief
-          </h1>
-          <p style={{ fontSize: 13, color: theme.muted, margin: '6px 0 0', lineHeight: 1.5 }}>
-            Runtime screen for gated connector output. No hardcoded figures, events, country
-            profiles, or analysis are rendered here.
-          </p>
+          {view === 'loaded' && (
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 14,
+                flexWrap: 'wrap',
+                marginTop: 12,
+              }}
+            >
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                  fontSize: 11,
+                  fontWeight: 700,
+                  color: theme.muted,
+                }}
+              >
+                <span
+                  style={{
+                    width: 7,
+                    height: 7,
+                    borderRadius: 7,
+                    background: brief?.status === 'published' ? theme.pos : theme.accent,
+                  }}
+                />
+                {statusText(brief)}
+              </span>
+              {sourceCount > 0 && (
+                <span
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 6,
+                    fontSize: 11,
+                    fontWeight: 600,
+                    color: theme.muted,
+                  }}
+                >
+                  <svg width="12" height="13" viewBox="0 0 12 13" aria-hidden="true">
+                    <path
+                      d="M6 1l4.5 1.8v3.4c0 2.7-1.9 5-4.5 5.8C3.4 11.2 1.5 8.9 1.5 6.2V2.8L6 1z"
+                      fill="none"
+                      stroke={theme.muted}
+                      strokeWidth="1.1"
+                    />
+                    <path
+                      d="M4 6.4l1.4 1.4L8.3 5"
+                      stroke={theme.muted}
+                      strokeWidth="1.2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  AI-drafted from {sourceCount} source{sourceCount === 1 ? '' : 's'}
+                </span>
+              )}
+            </div>
+          )}
         </header>
 
         {view === 'loading' ? (
@@ -242,6 +333,7 @@ export default function App({ brief = null, generatedAt = null, loading = false 
         ) : view === 'loaded' ? (
           <>
             <section aria-label="Verified market figures">
+              <SectionHead kicker="Markets" />
               <div
                 style={{
                   display: 'grid',
@@ -255,19 +347,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
               </div>
             </section>
 
-            <section aria-label="Events" style={{ marginTop: 26 }}>
-              <div
-                style={{
-                  fontSize: 11,
-                  fontWeight: 800,
-                  letterSpacing: 1.2,
-                  textTransform: 'uppercase',
-                  color: theme.accent,
-                  marginBottom: 10,
-                }}
-              >
-                Events
-              </div>
+            <section aria-label="Events">
+              <SectionHead kicker="Events" title="What moved" />
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {events.map((e) => (
                   <div
@@ -297,19 +378,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
             </section>
 
             {watchlistEvents.length > 0 && (
-              <section aria-label="Watchlist" style={{ marginTop: 26 }}>
-                <div
-                  style={{
-                    fontSize: 11,
-                    fontWeight: 800,
-                    letterSpacing: 1.2,
-                    textTransform: 'uppercase',
-                    color: theme.warnInk,
-                    marginBottom: 6,
-                  }}
-                >
-                  Watchlist · unverified — not intelligence
-                </div>
+              <section aria-label="Watchlist">
+                <SectionHead kicker="Watchlist - unverified" color={theme.warnInk} />
                 <p
                   style={{ fontSize: 12, color: theme.muted, margin: '0 0 10px', lineHeight: 1.5 }}
                 >
@@ -354,19 +424,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
               </section>
             )}
 
-            <section aria-label="Claims" style={{ marginTop: 26 }}>
-              <div
-                style={{
-                  fontSize: 11,
-                  fontWeight: 800,
-                  letterSpacing: 1.2,
-                  textTransform: 'uppercase',
-                  color: theme.accent,
-                  marginBottom: 10,
-                }}
-              >
-                Claims
-              </div>
+            <section aria-label="Claims">
+              <SectionHead kicker="Claims" />
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {claims.map((claim) => {
                   const provenance = claimProvenance(claim, eventById, methodologyById)
@@ -411,19 +470,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
             </section>
 
             {profiles.length > 0 && (
-              <section aria-label="Country profiles" style={{ marginTop: 26 }}>
-                <div
-                  style={{
-                    fontSize: 11,
-                    fontWeight: 800,
-                    letterSpacing: 1.2,
-                    textTransform: 'uppercase',
-                    color: theme.accent,
-                    marginBottom: 10,
-                  }}
-                >
-                  Country profiles
-                </div>
+              <section aria-label="Country profiles">
+                <SectionHead kicker="Country profiles" />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {profiles.map((p) => {
                     const rows = profileRows(p, methodologyById)
@@ -485,7 +533,8 @@ export default function App({ brief = null, generatedAt = null, loading = false 
               lineHeight: 1.55,
             }}
           >
-            No publish-gated connector output is available in this runtime yet.
+            No gate-passed brief is live right now. This screen stays empty until a verified brief
+            is published - it never shows placeholder figures, events, or analysis.
           </section>
         )}
       </div>

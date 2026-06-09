@@ -166,3 +166,84 @@ describe('App', () => {
     expect(screen.getByText(/Updated 08 Jun 2026, 12:14 UTC/)).toBeInTheDocument()
   })
 })
+
+describe('App: country profiles', () => {
+  // A brief carrying one profile with a derived label (oilStance + its methodology) and
+  // raw/sourced fields, but NO dollarDebtExposure / importDependence / externalDebtPctGni,
+  // so the absent-field omission can be asserted.
+  function briefWithProfile(): BriefDraft {
+    const b = brief()
+    b.methodologies.push({
+      id: 'method.oilStance.banding.v1',
+      name: 'Oil-stance banding',
+      version: '1.0.0',
+      description: 'test',
+      kind: 'banding',
+      inputs: ['petroleumTrade'],
+      bands: [],
+      owner: 'analysis-team',
+      status: 'approved',
+    })
+    b.profiles.push({
+      code: 'NG',
+      name: 'Nigeria',
+      oilStance: 'exporter',
+      petroleumTrade: {
+        exportValueUsd: 50_000_000_000,
+        importValueUsd: 10_000_000_000,
+        refYear: 2022,
+      },
+      keyExports: ['Crude petroleum'],
+      evidence: {
+        oilStance: {
+          sourceIds: ['src.oec'],
+          asOf: '2026-05-29T06:00:00.000Z',
+          methodologyId: 'method.oilStance.banding.v1',
+        },
+        petroleumTrade: {
+          sourceIds: ['src.oec'],
+          asOf: '2026-05-29T06:00:00.000Z',
+          classification: 'HS',
+          productCodes: ['27'],
+          refYear: 2022,
+        },
+        keyExports: { sourceIds: ['src.worldbank'], asOf: '2026-05-29T06:00:00.000Z' },
+      },
+    })
+    return b
+  }
+
+  it('renders the country profiles section from brief.profiles', () => {
+    render(<App brief={briefWithProfile()} />)
+    const region = screen.getByRole('region', { name: 'Country profiles' })
+    expect(region).toHaveTextContent('Nigeria')
+    expect(region).toHaveTextContent('(NG)')
+  })
+
+  it('renders a derived oilStance label with its methodology provenance', () => {
+    render(<App brief={briefWithProfile()} />)
+    const region = screen.getByRole('region', { name: 'Country profiles' })
+    expect(region).toHaveTextContent(/Oil stance:\s*exporter/)
+    expect(region).toHaveTextContent(/Methodology:\s*Oil-stance banding/)
+  })
+
+  it('renders source provenance resolved from profile field evidence', () => {
+    render(<App brief={briefWithProfile()} />)
+    const region = screen.getByRole('region', { name: 'Country profiles' })
+    // keyExports evidence cites src.worldbank -> readable source name
+    expect(region).toHaveTextContent(/Source:\s*World Bank Open Data/)
+  })
+
+  it('omits absent fields and never fabricates a dollar-debt exposure', () => {
+    render(<App brief={briefWithProfile()} />)
+    const region = screen.getByRole('region', { name: 'Country profiles' })
+    expect(region).not.toHaveTextContent(/Dollar-debt exposure/i)
+    expect(region).not.toHaveTextContent(/External debt/i)
+    expect(region).not.toHaveTextContent(/Import dependence/i)
+  })
+
+  it('renders no country profiles section when brief.profiles is empty', () => {
+    render(<App brief={brief()} />)
+    expect(screen.queryByRole('region', { name: 'Country profiles' })).not.toBeInTheDocument()
+  })
+})

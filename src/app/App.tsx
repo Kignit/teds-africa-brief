@@ -5,7 +5,9 @@ import type { Methodology } from '../domain/methodology'
 import type { CountryProfile, CountryProfileEvidenceField } from '../domain/country'
 import { FigureCard } from '../components/FigureCard'
 import { SectionHead } from '../components/SectionHead'
+import { SourceLinks, type SourceRef } from '../components/SourceLinks'
 import { sourceName } from '../data/sources'
+import { isHttpUrl } from '../domain/url'
 import { theme } from './theme'
 
 export interface AppProps {
@@ -32,33 +34,51 @@ function formatUpdated(iso: string): string {
   return `${p(d.getUTCDate())} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}, ${p(d.getUTCHours())}:${p(d.getUTCMinutes())} UTC`
 }
 
-// A claim's provenance, built ONLY from data the brief already carries: the cited
-// corroborated event title(s), the source names behind those events plus the claim's
-// profile fields, and the methodology names (falling back to the id when no name is
-// carried). A category with no data is omitted; nothing is invented, and nothing is
-// labelled "cross-checked" (that would need an existing corroboration/source count).
+interface ClaimProvenance {
+  events: string[]
+  sources: SourceRef[]
+  methodologies: string[]
+}
+
+// A claim's provenance, built ONLY from data the brief already carries: the cited corroborated
+// event title(s), the sources behind those events plus the claim's profile fields, and the
+// methodology names (falling back to the id when no name is carried). Article URLs come ONLY
+// from a cited event's own source links (first per source); profile/data sources (World Bank,
+// Comtrade, etc.) carry none and so render as text. Nothing is invented.
 function claimProvenance(
   claim: Claim,
   eventById: Map<string, Event>,
   methodologyById: Map<string, Methodology>,
-): { label: string; value: string }[] {
-  const lines: { label: string; value: string }[] = []
-
+): ClaimProvenance {
   const citedEvents = claim.eventIds.map((id) => eventById.get(id)).filter((e): e is Event => !!e)
-  if (citedEvents.length) {
-    lines.push({ label: 'Event', value: citedEvents.map((e) => e.title).join('; ') })
+
+  const urlBySource = new Map<string, string>()
+  for (const e of citedEvents) {
+    for (const s of e.corroboration.sources ?? []) {
+      // First VALID url per source wins; an invalid earlier url never blocks a later valid one.
+      if (isHttpUrl(s.url) && !urlBySource.has(s.sourceId)) urlBySource.set(s.sourceId, s.url)
+    }
   }
 
   const eventSourceIds = citedEvents.flatMap((e) => e.corroboration.sourceIds)
-  const sourceNames = [...new Set([...eventSourceIds, ...claim.profileSourceIds])].map(sourceName)
-  if (sourceNames.length) lines.push({ label: 'Sources', value: sourceNames.join(', ') })
+  const sourceIds = [...new Set([...eventSourceIds, ...claim.profileSourceIds])]
 
-  const methodologyNames = claim.methodologyIds.map((id) => methodologyById.get(id)?.name ?? id)
-  if (methodologyNames.length) {
-    lines.push({ label: 'Methodology', value: methodologyNames.join(', ') })
+  return {
+    events: citedEvents.map((e) => e.title),
+    sources: sourceIds.map((id) => ({ sourceId: id, url: urlBySource.get(id) })),
+    methodologies: claim.methodologyIds.map((id) => methodologyById.get(id)?.name ?? id),
   }
+}
 
-  return lines
+// Distinct sources for an event, each carrying the first real article URL for that source when
+// one exists (text fallback otherwise). Drives the event card's clickable Sources line.
+function eventSourceRefs(event: Event): SourceRef[] {
+  const urlBySource = new Map<string, string>()
+  for (const s of event.corroboration.sources ?? []) {
+    // First VALID url per source wins; an invalid earlier url never blocks a later valid one.
+    if (isHttpUrl(s.url) && !urlBySource.has(s.sourceId)) urlBySource.set(s.sourceId, s.url)
+  }
+  return event.corroboration.sourceIds.map((id) => ({ sourceId: id, url: urlBySource.get(id) }))
 }
 
 // A country profile's display rows, built ONLY from carried data. A derived field
@@ -372,6 +392,12 @@ export default function App({ brief = null, generatedAt = null, loading = false 
                       {e.status} · {e.corroboration.independentSourceCount} independent source
                       {e.corroboration.independentSourceCount === 1 ? '' : 's'}
                     </div>
+                    {e.corroboration.sourceIds.length > 0 && (
+                      <div style={{ fontSize: 11, color: theme.muted, marginTop: 5 }}>
+                        <span style={{ fontWeight: 700 }}>Sources:</span>{' '}
+                        <SourceLinks sources={eventSourceRefs(e)} />
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
@@ -428,7 +454,11 @@ export default function App({ brief = null, generatedAt = null, loading = false 
               <SectionHead kicker="Claims" />
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {claims.map((claim) => {
-                  const provenance = claimProvenance(claim, eventById, methodologyById)
+                  const prov = claimProvenance(claim, eventById, methodologyById)
+                  const hasProvenance =
+                    prov.events.length > 0 ||
+                    prov.sources.length > 0 ||
+                    prov.methodologies.length > 0
                   return (
                     <div
                       key={claim.id}
@@ -442,7 +472,7 @@ export default function App({ brief = null, generatedAt = null, loading = false 
                       }}
                     >
                       <div>{claim.text}</div>
-                      {provenance.length > 0 && (
+                      {hasProvenance && (
                         <div
                           style={{
                             marginTop: 8,
@@ -453,14 +483,24 @@ export default function App({ brief = null, generatedAt = null, loading = false 
                             gap: 2,
                           }}
                         >
-                          {provenance.map((line) => (
-                            <div
-                              key={line.label}
-                              style={{ fontSize: 11, color: theme.muted, lineHeight: 1.4 }}
-                            >
-                              <span style={{ fontWeight: 700 }}>{line.label}:</span> {line.value}
+                          {prov.events.length > 0 && (
+                            <div style={{ fontSize: 11, color: theme.muted, lineHeight: 1.4 }}>
+                              <span style={{ fontWeight: 700 }}>Event:</span>{' '}
+                              {prov.events.join('; ')}
                             </div>
-                          ))}
+                          )}
+                          {prov.sources.length > 0 && (
+                            <div style={{ fontSize: 11, color: theme.muted, lineHeight: 1.4 }}>
+                              <span style={{ fontWeight: 700 }}>Sources:</span>{' '}
+                              <SourceLinks sources={prov.sources} />
+                            </div>
+                          )}
+                          {prov.methodologies.length > 0 && (
+                            <div style={{ fontSize: 11, color: theme.muted, lineHeight: 1.4 }}>
+                              <span style={{ fontWeight: 700 }}>Methodology:</span>{' '}
+                              {prov.methodologies.join(', ')}
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>

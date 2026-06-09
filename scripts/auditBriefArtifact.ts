@@ -75,6 +75,7 @@ export interface AuditReport {
     profiles: number
     methodologies: number
     windowItems: number
+    sourceLinks: number
   }
   validator: {
     failures: number
@@ -156,6 +157,12 @@ export function buildAuditReport(
   const corroboratedEvents = events.filter(
     (e): e is Record<string, unknown> => isObject(e) && e.status === 'corroborated',
   ).length
+  // Total source-article links carried across events (raw count; the validator above flags any
+  // malformed URL or unresolved newsItemId/sourceId, so those surface in validator.issues).
+  const sourceLinks = events.reduce((n: number, e) => {
+    if (!isObject(e) || !isObject(e.corroboration)) return n
+    return n + asArray((e.corroboration as Record<string, unknown>).sources).length
+  }, 0)
   const verifiedClaimObjects = claims.filter(
     (c): c is Record<string, unknown> => isObject(c) && c.verified === true,
   )
@@ -251,6 +258,7 @@ export function buildAuditReport(
       profiles: profiles.length,
       methodologies: methodologies.length,
       windowItems: windowItems.length,
+      sourceLinks,
     },
     validator: { failures, warnings, issues },
     oilStance,

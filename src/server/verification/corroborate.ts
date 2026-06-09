@@ -1,6 +1,7 @@
 import type { NewsItem } from '../../domain/news'
 import type { Event, EventStatus } from '../../domain/event'
 import { sameEvent, pathBBridge, type SameEventOptions } from './eventSignature'
+import { isHttpUrl } from '../../domain/url'
 
 // Topic key for human-readable ids/topic: first few normalized words of a headline.
 function topicKey(title: string): string {
@@ -88,6 +89,11 @@ export function corroborateEvents(items: NewsItem[], opts: CorroborateOptions = 
     const status: EventStatus = independentSourceCount >= 2 ? 'corroborated' : 'single_source'
     const first = group[0]
     const key = topicKey(first.title) || 'event'
+    // Real source-article links: one per clustered item whose URL is a valid http/https URL,
+    // in news-item order. Omitted when none qualify (never fabricated, never a homepage).
+    const sourceLinks = group
+      .filter((g) => isHttpUrl(g.url))
+      .map((g) => ({ newsItemId: g.id, sourceId: g.sourceId, url: g.url }))
     events.push({
       // Title-derived slug + a stable hash of the member ids keeps ids readable yet
       // unique across distinct clusters that happen to share a leading headline.
@@ -108,6 +114,7 @@ export function corroborateEvents(items: NewsItem[], opts: CorroborateOptions = 
         sourceIds: [...new Set(group.map((g) => g.sourceId))],
         independentSourceCount,
         primarySourceCount,
+        ...(sourceLinks.length > 0 ? { sources: sourceLinks } : {}),
       },
     })
   }

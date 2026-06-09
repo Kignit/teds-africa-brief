@@ -3,10 +3,12 @@ import type { Methodology } from '../../domain/methodology'
 import { applyBands } from '../../domain/methodology'
 import type { ShockType, TransmissionChannel } from '../../domain/analysis'
 
-// The dollar-debt exposure banding rule, expressed as explicit, versioned,
-// owned methodology — NOT as thresholds hidden in connector/engine code. It
-// ships as 'draft': until a human approves it, no high/medium/low label is
-// emitted, and the engine works without an exposure conclusion (never guessing).
+// The dollar-debt exposure banding rule: bands the raw World Bank external-debt (% of GNI)
+// figure into low/medium/high dollar-debt exposure, as explicit, versioned, owned methodology -
+// thresholds live here, not hidden in connector/engine code. APPROVED as of the debt-exposure
+// approval PR, with thresholds reviewed against the current World Bank external-debt-%-GNI data
+// (NG high; GH/ZA/KE medium; ET omitted, no value). It now emits high/medium/low and unlocks
+// dollar_rates_shock for any profile carrying a contract-valid externalDebtPctGni.
 export const DEBT_EXPOSURE_BANDING_V1: Methodology = {
   id: 'method.dollarDebtExposure.banding.v1',
   name: 'Dollar-debt exposure banding',
@@ -21,7 +23,7 @@ export const DEBT_EXPOSURE_BANDING_V1: Methodology = {
     { label: 'low', lt: 25 },
   ],
   owner: 'analysis-team',
-  status: 'draft',
+  status: 'approved',
 }
 
 // The oil-stance banding rule: derives a country's exporter / neutral / importer stance

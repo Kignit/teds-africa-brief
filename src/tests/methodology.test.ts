@@ -68,16 +68,15 @@ describe('methodology-gated derivation', () => {
     expect(applyBands(10, DEBT_EXPOSURE_BANDING_V1.bands)).toBe('low')
   })
 
-  it('emits no high/medium/low exposure label without an approved methodology', () => {
-    // The shipped methodologies are all draft.
+  it('bands from the shipped (approved) methodology, but not from a draft or none', () => {
+    // The shipped registry now approves the banding, so the raw figure is banded.
     const [shipped] = deriveCountryProfiles([rawProfile()], METHODOLOGIES)
-    expect(shipped.dollarDebtExposure).toBeUndefined()
+    expect(shipped.dollarDebtExposure).toBe('high') // externalDebtPctGni 60 -> high
     expect(shipped.externalDebtPctGni).toBe(60) // raw value remains
 
-    // Explicit draft, and none at all.
-    expect(
-      deriveCountryProfiles([rawProfile()], [DEBT_EXPOSURE_BANDING_V1])[0].dollarDebtExposure,
-    ).toBeUndefined()
+    // A draft (unapproved) copy, or no methodology at all, derives nothing.
+    const draftDebt: Methodology = { ...DEBT_EXPOSURE_BANDING_V1, status: 'draft' }
+    expect(deriveCountryProfiles([rawProfile()], [draftDebt])[0].dollarDebtExposure).toBeUndefined()
     expect(deriveCountryProfiles([rawProfile()], [])[0].dollarDebtExposure).toBeUndefined()
   })
 
@@ -100,6 +99,12 @@ describe('methodology-gated derivation', () => {
   })
 
   it('fails verification when the referenced methodology is not approved', () => {
+    // A draft (unapproved) copy, distinct from the approved shipped registry entry.
+    const draftDebt: Methodology = {
+      ...DEBT_EXPOSURE_BANDING_V1,
+      id: 'method.dollarDebtExposure.banding.draft',
+      status: 'draft',
+    }
     const base = rawProfile()
     const draftBacked: CountryProfile = {
       ...base,
@@ -109,19 +114,19 @@ describe('methodology-gated derivation', () => {
         dollarDebtExposure: {
           sourceIds: ['src.worldbank'],
           asOf: AS_OF,
-          methodologyId: DEBT_EXPOSURE_BANDING_V1.id,
+          methodologyId: draftDebt.id,
         },
       },
-      methodologies: [DEBT_EXPOSURE_BANDING_V1], // draft
+      methodologies: [draftDebt],
     }
     expect(countryProfileEvidenceReasons(draftBacked).some((r) => /not approved/i.test(r))).toBe(
       true,
     )
   })
 
-  it('makes no debt-exposure claim from a raw value alone (no approved methodology)', () => {
+  it('makes no debt-exposure claim from a raw value alone (no derived label)', () => {
     const profile = rawProfile()
-    // a raw-only profile is itself valid
+    // a raw-only profile (external debt figure but no derived exposure label) is itself valid
     expect(verifiedCountryProfiles([profile], known).rejected).toHaveLength(0)
 
     const draft = composeAnalysisDraft({

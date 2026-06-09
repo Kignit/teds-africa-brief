@@ -151,7 +151,54 @@ describe('buildAuditReport - clean artifact with one verified claim', () => {
       profiles: 1,
       methodologies: 1,
       windowItems: 1,
+      sourceLinks: 0,
     })
+  })
+
+  it('counts source-article links and stays clean when they are well-formed', () => {
+    const event = mkEvent({
+      id: 'evt-known',
+      corroboration: {
+        newsItemIds: ['n1', 'n2'],
+        sourceIds: ['src.a', 'src.b'],
+        independentSourceCount: 2,
+        primarySourceCount: 0,
+        sources: [
+          { newsItemId: 'n1', sourceId: 'src.a', url: 'https://x.test/a' },
+          { newsItemId: 'n2', sourceId: 'src.b', url: 'https://x.test/b' },
+        ],
+      },
+    })
+    const brief = mkBrief({
+      events: [event],
+      methodologies: [mkMethodology('method.causal.trade_integration_event.v1')],
+      profiles: [mkProfile('XX', 'exporter')],
+      claims: [
+        mkClaim({
+          id: 'c-known',
+          eventIds: ['evt-known'],
+          methodologyIds: ['method.causal.trade_integration_event.v1'],
+        }),
+      ],
+    })
+    const report = buildAuditReport(mkEnvelope(brief), mkWindow([mkWindowItem()]), paths())
+    expect(report.counts.sourceLinks).toBe(2)
+    expect(report.validator.failures).toBe(0)
+  })
+
+  it('surfaces a malformed source-link URL as a validator failure in the audit', () => {
+    const event = mkEvent({
+      corroboration: {
+        newsItemIds: ['n1'],
+        sourceIds: ['src.a'],
+        independentSourceCount: 2,
+        primarySourceCount: 0,
+        sources: [{ newsItemId: 'n1', sourceId: 'src.a', url: 'not-a-url' }],
+      },
+    })
+    const report = buildAuditReport(mkEnvelope(mkBrief({ events: [event] })), mkWindow([]), paths())
+    expect(report.validator.failures).toBeGreaterThan(0)
+    expect(report.validator.issues.some((i) => i.rule === 'event_source_link')).toBe(true)
   })
 
   it('reports oilStance labels straight from the artifact profiles (no hardcoded countries)', () => {

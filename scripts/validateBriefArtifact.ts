@@ -2,6 +2,7 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import process from 'node:process'
+import { isHttpUrl } from '../src/domain/url'
 
 // Pre-production validator for public/brief.json and data/news-window.json. This is a
 // READ-ONLY audit that runs after artifact generation: it never regenerates, never edits the
@@ -227,6 +228,58 @@ export function validateEvents(events: unknown[]): Issue[] {
         issues.push(
           fail('event_shape', 'event.corroboration.primarySourceCount must be a number', id),
         )
+      }
+      // Optional source-article links. When present, each must be a well-formed link whose
+      // newsItemId/sourceId resolve to this event's own corroboration ids - an unresolved
+      // reference or a non-http(s) URL is a failure. Absent sources (pre-existing artifacts)
+      // are valid: the field is omitted, not empty.
+      if (c.sources !== undefined) {
+        if (!Array.isArray(c.sources)) {
+          issues.push(
+            fail('event_shape', 'event.corroboration.sources must be an array when present', id),
+          )
+        } else {
+          const knownNewsItemIds = new Set(
+            Array.isArray(c.newsItemIds) ? c.newsItemIds.filter(isString) : [],
+          )
+          const knownSourceIds = new Set(
+            Array.isArray(c.sourceIds) ? c.sourceIds.filter(isString) : [],
+          )
+          c.sources.forEach((s, j) => {
+            const sref = `${id} sources[${j}]`
+            if (!isObject(s)) {
+              issues.push(fail('event_source_link', 'source link is not an object', sref))
+              return
+            }
+            if (!isHttpUrl(s.url)) {
+              issues.push(
+                fail(
+                  'event_source_link',
+                  `source link url is not a valid http(s) URL (got ${JSON.stringify(s.url)})`,
+                  sref,
+                ),
+              )
+            }
+            if (!isString(s.newsItemId) || !knownNewsItemIds.has(s.newsItemId)) {
+              issues.push(
+                fail(
+                  'event_source_link',
+                  `source link newsItemId ${JSON.stringify(s.newsItemId)} is not in corroboration.newsItemIds`,
+                  sref,
+                ),
+              )
+            }
+            if (!isString(s.sourceId) || !knownSourceIds.has(s.sourceId)) {
+              issues.push(
+                fail(
+                  'event_source_link',
+                  `source link sourceId ${JSON.stringify(s.sourceId)} is not in corroboration.sourceIds`,
+                  sref,
+                ),
+              )
+            }
+          })
+        }
       }
     }
   })

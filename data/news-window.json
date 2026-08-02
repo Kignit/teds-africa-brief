@@ -1,12 +1,574 @@
 {
-  "updatedAt": "2026-08-01T08:21:07.776Z",
+  "updatedAt": "2026-08-02T08:24:22.603Z",
   "windowMs": 259200000,
   "items": [
     {
+      "id": "src.myjoyonline_gh:we54kh",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "OMCs increase fuel prices; Star Oil sells petrol at GH¢14.53 and diesel GH¢18.77",
+      "summary": "OMCs increase fuel prices; Star Oil sells petrol at GH¢14.53 and diesel GH¢18.77 Some Oil Marketing Companies (OMCs) have begun increasing fuel prices at the pumps, in line with industry projections.  The increase is in line with the industry’s bi-weekly fuel price review mechanism under the petroleum price deregulation policy. Major market player, Star Oil […]",
+      "url": "https://www.myjoyonline.com/omcs-increase-fuel-prices-star-oil-sells-petrol-at-gh%c2%a214-53-and-diesel-gh%c2%a218-77/",
+      "publishedAt": "2026-08-02T08:05:34.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.businessday_ng:1x7fssc",
+      "sourceId": "src.businessday_ng",
+      "title": "Fire outbreak hits Lagos airport terminal 2, FAAN confirms zero casualties",
+      "summary": "Emergency responders at the Murtala Muhammed International Airport (MMIA) in Lagos are currently battling a fire outbreak that erupted at\nread more Fire outbreak hits Lagos airport terminal 2, FAAN confirms zero casualties",
+      "url": "https://businessday.ng/news/article/fire-outbreak-hits-lagos-airport-terminal-2-faan-confirms-zero-casualties/",
+      "publishedAt": "2026-08-02T07:57:02.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.standardmedia_ke:mp5e1v",
+      "sourceId": "src.standardmedia_ke",
+      "title": "Safaricom halves M-Pesa merchant fees in CBK-led move",
+      "summary": "Safaricom has slashed charges on transferring funds from business tills to mobile wallets and Paybill numbers.",
+      "url": "https://www.standardmedia.co.ke/business/article/2001554316/safaricom-halves-m-pesa-merchant-fees-in-cbk-led-move",
+      "publishedAt": "2026-08-02T07:45:00.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.businessday_ng:1rq4ydp",
+      "sourceId": "src.businessday_ng",
+      "title": "Super Falcons boost WAFCON title defence with Zambia victory",
+      "summary": "Nigeria’s Super Falcons revived their Women’s Africa Cup of Nations (WAFCON) campaign with a resilient 1-0 victory over Zambia, overcoming\nread more Super Falcons boost WAFCON title defence with Zambia victory",
+      "url": "https://businessday.ng/sports/article/super-falcons-boost-wafcon-title-defence-with-zambia-victory/",
+      "publishedAt": "2026-08-02T07:12:29.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businessday_ng:1ldkwza",
+      "sourceId": "src.businessday_ng",
+      "title": "Trump calls off massive attack on Iran claiming allies have reached outline of deal to end war",
+      "summary": "President Donald Trump in a Saturday evening social media post claimed that Mideast allies have reached the parameters of a\nread more Trump calls off massive attack on Iran claiming allies have reached outline of deal to end war",
+      "url": "https://businessday.ng/world/article/trump-calls-off-massive-attack-on-iran-claiming-allies-have-reached-outline-of-deal-to-end-war/",
+      "publishedAt": "2026-08-02T07:05:49.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.nairametrics_ng:1nq4w18",
+      "sourceId": "src.nairametrics_ng",
+      "title": "7 factors that could jolt Nigerian economy before 2026 ends",
+      "summary": "Nigeria’s economy has entered a new phase where the focus is shifting from stabilising key economic indicators to delivering real improvements in investment, productivity and living standards, according to FirstBank’s “Reading the Signals | The Next Half” Mid-Year Economic & Market Outlook 2026.\nThe post 7 factors that could jolt Nigerian economy before 2026 ends appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/02/7-factors-that-could-jolt-nigerian-economy-before-2026-ends/",
+      "publishedAt": "2026-08-02T07:03:19.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businessday_ng:2wj7zo",
+      "sourceId": "src.businessday_ng",
+      "title": "Aptech, Middlesex University deepen partnership to expand UK degree for Nigerian",
+      "summary": "AS demand for technology professionals continues to rise across Nigeria’s fast-growing digital economy, Aptech Computer Education has unveiled\nread more Aptech, Middlesex University deepen partnership to expand UK degree for Nigerian",
+      "url": "https://businessday.ng/life/article/aptech-middlesex-university-deepen-partnership-to-expand-uk-degree-for-nigerian/",
+      "publishedAt": "2026-08-02T06:45:32.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businessday_ng:14wy9ia",
+      "sourceId": "src.businessday_ng",
+      "title": "CBN cuts government financing as assets top N138trn",
+      "summary": "The Central Bank of Nigeria (CBN) reduced its exposure to financing the gederal government in 2025 while expanding its balance\nread more CBN cuts government financing as assets top N138trn",
+      "url": "https://businessday.ng/news/article/cbn-cuts-government-financing-as-assets-top-n138trn/",
+      "publishedAt": "2026-08-02T06:42:45.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.standardmedia_ke:1t5ttca",
+      "sourceId": "src.standardmedia_ke",
+      "title": "Strain on households mounts as inflation holds stubbornly above 6pc",
+      "summary": "Kenyan households are facing mounting financial pressure as annual inflation accelerated to 6.5 per cent in July from 6.4 per cent in June.",
+      "url": "https://www.standardmedia.co.ke/business/article/2001554296/strain-on-households-mounts-as-inflation-holds-stubbornly-above-6pc",
+      "publishedAt": "2026-08-02T06:20:00.000Z",
+      "language": "en",
+      "countryCodes": [
+        "KE"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:2huoqs",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Nigeria is adopting AI fast, but foreign firms are winning, Report warns",
+      "summary": "Nigeria is at risk of becoming permanently dependent on foreign artificial intelligence (AI) technologies unless it significantly increases investment in developing indigenous AI models, datasets and computing infrastructure, according to a new report.\nThe post Nigeria is adopting AI fast, but foreign firms are winning, Report warns appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/02/nigeria-is-adopting-ai-fast-but-foreign-firms-are-winning-report-warns/",
+      "publishedAt": "2026-08-02T06:17:11.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:vmqcs1",
+      "sourceId": "src.nairametrics_ng",
+      "title": "SAHCO’s H1 2026 pre-tax profit falls 41% as cost pressures weaken margins",
+      "summary": "Skyway Aviation Handling Company Plc reported pre-tax profit of N5.827 billion for the first half year ended 30 June 2026, representing a 41.49% decline from N9.958 billion recorded in the corresponding period of 2025.\nThe post SAHCO’s H1 2026 pre-tax profit falls 41% as cost pressures weaken margins appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/02/sahcos-h1-2026-pre-tax-profit-falls-41-as-cost-pressures-weaken-margins/",
+      "publishedAt": "2026-08-02T05:42:12.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.nairametrics_ng:if8i7i",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Best performing Nigerian stocks for the week ended July 31, 2026",
+      "summary": "The Nigerian equities market closed the week at losses, with the benchmark All-Share Index slipping 0.03% session-on-session and 0.81% week-on-week to close at 245,283.68 points, down from 245,362.26 points last session, and 247,357.40 points at the start of the week.\nThe post Best performing Nigerian stocks for the week ended July 31, 2026 appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/02/best-performing-nigerian-stocks-for-the-week-ended-july-31-2026/",
+      "publishedAt": "2026-08-02T05:36:52.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.capitalfm_ke:1rwdarg",
+      "sourceId": "src.capitalfm_ke",
+      "title": "Kenya’s forex reserves surge to historic high of $15.4bn",
+      "summary": "The reserve surge, up from 13.85 billion dollars the previous week, was primarily driven by capital inflows from the government's partial divestiture of Safaricom, the country's leading telecommunications company.",
+      "url": "https://capitalfm.africa/kenyas-forex-reserves-surge-to-historic-high-of-15-4bn/",
+      "publishedAt": "2026-08-02T05:00:00.000Z",
+      "language": "en",
+      "countryCodes": [
+        "KE"
+      ]
+    },
+    {
+      "id": "src.citizen_za:swka9u",
+      "sourceId": "src.citizen_za",
+      "title": "Saving does not mean giving something up: Here’s how to put extra money aside",
+      "summary": "Households need to review how their money is allocated.",
+      "url": "https://www.citizen.co.za/business/personal-finance/saving-does-not-mean-giving-something-up-heres-how-to-put-extra-money-aside/",
+      "publishedAt": "2026-08-02T04:55:00.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.addisfortune_et:1imhkfx",
+      "sourceId": "src.addisfortune_et",
+      "title": "Right-sizing Tests Addis Abeba University’s Promise for Autonomy",
+      "summary": "Our subscribers to the print edition are entitled to get a bonus in a form of early access to our digital edition.Use the bank detail...",
+      "url": "https://addisfortune.news/right-sizing-tests-addis-abeba-universitys-promise-for-autonomy",
+      "publishedAt": "2026-08-02T03:00:25.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.addisfortune_et:1somaau",
+      "sourceId": "src.addisfortune_et",
+      "title": "Tax Bills Outrun the Metre, Stalling Ride-hailing Drivers",
+      "summary": "Our subscribers to the print edition are entitled to get a bonus in a form of early access to our digital edition.Use the bank detail...",
+      "url": "https://addisfortune.news/tax-bills-outrun-the-metre-stalling-ride-hailing-drivers",
+      "publishedAt": "2026-08-02T02:59:41.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.addisfortune_et:udiw0t",
+      "sourceId": "src.addisfortune_et",
+      "title": "Shipping Lines Charts Biggest-Ever Fleet Plan After Buying None Planned for the Year",
+      "summary": "Our subscribers to the print edition are entitled to get a bonus in a form of early access to our digital edition.Use the bank detail...",
+      "url": "https://addisfortune.news/shipping-lines-charts-biggest-ever-fleet-plan-after-buying-none-planned-for-the-year",
+      "publishedAt": "2026-08-02T02:57:27.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.addisfortune_et:1go86is",
+      "sourceId": "src.addisfortune_et",
+      "title": "Ethiopian Eyes Bigger on Cargo as Costs Outrun Record Revenue",
+      "summary": "Our subscribers to the print edition are entitled to get a bonus in a form of early access to our digital edition.Use the bank detail...",
+      "url": "https://addisfortune.news/ethiopian-eyes-bigger-on-cargo-as-costs-outrun-record-revenue",
+      "publishedAt": "2026-08-02T02:56:15.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
+      ]
+    },
+    {
+      "id": "src.addisfortune_et:1nk021b",
+      "sourceId": "src.addisfortune_et",
+      "title": "Court Freezes Noah Flats as Buyers Open Second Front",
+      "summary": "Our subscribers to the print edition are entitled to get a bonus in a form of early access to our digital edition.Use the bank detail...",
+      "url": "https://addisfortune.news/court-freezes-noah-flats-as-buyers-open-second-front",
+      "publishedAt": "2026-08-02T02:55:00.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.addisfortune_et:1ibdejz",
+      "sourceId": "src.addisfortune_et",
+      "title": "Addis Abeba Promises an ID Card in a Day, For Triple the Fee",
+      "summary": "Our subscribers to the print edition are entitled to get a bonus in a form of early access to our digital edition.Use the bank detail...",
+      "url": "https://addisfortune.news/addis-abeba-promises-an-id-card-in-a-day-for-triple-the-fee",
+      "publishedAt": "2026-08-02T02:54:23.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:2554ca",
+      "sourceId": "src.moneyweb_za",
+      "title": "Can you become a millionaire on a salary?",
+      "summary": "Consult financial advisor Juan Gebhardt believes you can, but that it takes patience, consistency and a 'millionaire mindset'.",
+      "url": "https://www.moneyweb.co.za/mymoney/moneyweb-personal-finance/can-you-become-a-millionaire-on-a-salary/",
+      "publishedAt": "2026-08-02T02:01:36.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:vtropp",
+      "sourceId": "src.moneyweb_za",
+      "title": "Tariff expiry restores Lesotho’s export lifeline, for now",
+      "summary": "Garment exporters regain duty-free access to the US after months of uncertainty, but Agoa's planned expiry at the end of 2026 still clouds the outlook.",
+      "url": "https://www.moneyweb.co.za/news/africa/tariff-expiry-restores-lesothos-export-lifeline-for-now/",
+      "publishedAt": "2026-08-02T02:00:55.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:hyo1ao",
+      "sourceId": "src.moneyweb_za",
+      "title": "Google unveils Gemini AI for robots struggling with dexterity",
+      "summary": "The new AI model gives robots full-body control, improved reasoning and safer interactions as Google intensifies the robotics race.",
+      "url": "https://www.moneyweb.co.za/news/tech/google-unveils-gemini-ai-for-robots-struggling-with-dexterity/",
+      "publishedAt": "2026-08-02T02:00:55.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:14seact",
+      "sourceId": "src.moneyweb_za",
+      "title": "What really happens to your data when you click ‘delete’?",
+      "summary": "Experts warn that misunderstood deletion processes leave personal information exposed, while AI and cloud storage make permanent erasure even harder.",
+      "url": "https://www.moneyweb.co.za/news/tech/what-really-happens-to-your-data-when-you-click-delete/",
+      "publishedAt": "2026-08-02T02:00:28.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:ine69m",
+      "sourceId": "src.moneyweb_za",
+      "title": "Once you’ve heard ‘luxury voice,’ you can’t unhear it",
+      "summary": "From slower speech to wellness-inspired vocabulary, elite hospitality is reshaping the language of aspiration far beyond five-star hotels.",
+      "url": "https://www.moneyweb.co.za/news/international/once-youve-heard-luxury-voice-you-cant-un-hear-it/",
+      "publishedAt": "2026-08-02T02:00:25.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:1pdu1t3",
+      "sourceId": "src.moneyweb_za",
+      "title": "280 000 Sassa beneficiaries still need new Postbank cards",
+      "summary": "Postbank warns grant payments could be disrupted after 31 August if beneficiaries fail to replace their Sassa Gold Cards.",
+      "url": "https://www.moneyweb.co.za/news/south-africa/sassa-gold-card-280000-people-still-need-to-switch/",
+      "publishedAt": "2026-08-02T02:00:08.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:8kp9ci",
+      "sourceId": "src.moneyweb_za",
+      "title": "The EU has fined Google a billion dollars for ignoring competition rules",
+      "summary": "But will it have any effect?",
+      "url": "https://www.moneyweb.co.za/news/international/the-eu-has-fined-google-a-billion-dollars-for-ignoring-competition-rules/",
+      "publishedAt": "2026-08-02T02:00:04.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.moneyweb_za:1y6tood",
+      "sourceId": "src.moneyweb_za",
+      "title": "Trump crypto tie-up fuelled family windfall, investor losses",
+      "summary": "Shares in former ALT5 collapsed after its high-profile World Liberty Financial partnership failed to deliver on market expectations.",
+      "url": "https://www.moneyweb.co.za/moneyweb-crypto/trump-crypto-tie-up-fuelled-family-windfall-investor-losses/",
+      "publishedAt": "2026-08-02T02:00:00.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.myjoyonline_gh:1smbvjb",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Mahama orders roadmap to expand TOR’s refining capacity to 100,000 barrels a day",
+      "summary": "President John Dramani Mahama has directed the Minister for Energy and Green Transition, John Abdulai Jinapor, together with the Board and management of the Tema Oil Refinery (TOR), to develop a strategic roadmap to expand the refinery's production capacity to 100,000 barrels of crude oil per day.\n\nThe directive was announced on Saturday, August 1, during the commissioning of the refurbished refin",
+      "url": "https://www.myjoyonline.com/mahama-orders-roadmap-to-expand-tors-refining-capacity-to-100000-barrels-a-day/",
+      "publishedAt": "2026-08-01T22:23:52.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.myjoyonline_gh:1v44687",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Bills Micro Credit champions health and culture  at ‘Homowo Health Walk’",
+      "summary": "Speaking at the event, Nuumo Nikoi Amasah II, Klan Wulomo and Vice President of the Ga Adangbe Wulomei Council, thanked the Ga Mantse, King Tackie Teiko Tsuru II, the Ga Traditional Council, Bills Micro Credit and the company's Founder, Richard Nii-Armah Quaye, for their continued support of the annual Health Walk.",
+      "url": "https://www.myjoyonline.com/bills-micro-credit-champions-health-and-culture-at-homowo-health-walk/",
+      "publishedAt": "2026-08-01T22:08:01.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.myjoyonline_gh:170qmp0",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Resetting Ghana: creating jobs, ensuring accountability, and promoting shared prosperity — the role of CIPAC",
+      "summary": "Ghana stands at a defining moment in its national development journey. The country possesses abundant natural resources, a youthful and energetic population, democratic stability, and significant entrepreneurial potential. Yet these strengths continue to be overshadowed by persistent unemployment, stalled development projects, fiscal constraints, governance challenges, and widening socio-economic ",
+      "url": "https://www.myjoyonline.com/resetting-ghana-creating-jobs-ensuring-accountability-and-promoting-shared-prosperity-the-role-of-cipac/",
+      "publishedAt": "2026-08-01T21:54:10.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
+      "id": "src.myjoyonline_gh:13tdgru",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Mahama commissions refurbished TOR Crude Distillation Unit, commends management for turnaround",
+      "summary": "President John Mahama has commissioned the refurbished Crude Distillation Unit (CDU) of the Tema Oil Refinery (TOR), marking a major step in efforts to restore the operations of the state-owned refinery.",
+      "url": "https://www.myjoyonline.com/mahama-commissions-refurbished-tor-crude-distillation-unit-commends-management-for-turnaround/",
+      "publishedAt": "2026-08-01T20:04:54.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.premiumtimes_ng:1k7xhal",
+      "sourceId": "src.premiumtimes_ng",
+      "title": "VFD Group posts twofold jump in half-year profit amid higher investment income",
+      "summary": "Revenue advanced to N53.7 billion from N41.2 billion a year ago, deriving strength largely from investment income, which was up by 102.8 per cent.\nThe post VFD Group posts twofold jump in half-year profit amid higher investment income appeared first on Premium Times Nigeria.",
+      "url": "https://www.premiumtimesng.com/business/business-news/900073-vfd-group-posts-twofold-jump-in-half-year-profit-amid-higher-investment-income.html",
+      "publishedAt": "2026-08-01T17:17:52.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:p7taev",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Building homes or building an economy? Why nigeria’s housing strategy will determine the path to a us$1 trillion economy",
+      "summary": "Nigeria needs approximately 20 million additional homes. Most discussions focus on how quickly those homes can be built....\nThe post Building homes or building an economy? Why nigeria’s housing strategy will determine the path to a us$1 trillion economy appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/building-homes-or-building-an-economy-why-nigerias-housing-strategy-will-determine-the-path-to-a-us1-trillion-economy/",
+      "publishedAt": "2026-08-01T17:00:56.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.capitalfm_ke:1dhvi0z",
+      "sourceId": "src.capitalfm_ke",
+      "title": "IHS Kenya Eyes Growing Middle-Class Demand with Sh1bn Housing Development",
+      "summary": "NAIROBI, Kenya, Aug 1 – International Housing Solutions (IHS) Kenya has launched a Sh1 billion residential development in Tilisi, adding 240 housing units to the market as private developers continue…",
+      "url": "https://capitalfm.africa/ihs-kenya-eyes-growing-middle-class-demand-with-sh1bn-housing-development/",
+      "publishedAt": "2026-08-01T16:21:53.000Z",
+      "language": "en",
+      "countryCodes": [
+        "KE"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:10j4362",
+      "sourceId": "src.nairametrics_ng",
+      "title": "FirstBank: Economic stability alone won’t improve Nigerians’ living standards",
+      "summary": "FirstBank of Nigeria Limited has said Nigeria’s economy has entered a new phase where the priority is no longer restoring macroeconomic...\nThe post FirstBank: Economic stability alone won’t improve Nigerians’ living standards appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/firstbank-economic-stability-alone-wont-improve-nigerians-living-standards/",
+      "publishedAt": "2026-08-01T16:20:57.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:15aa1v7",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Spider-Man: Brand New Day sets N120.4 million preview record in Nigeria",
+      "summary": "Marvel Studios and Sony Pictures' Spider-Man: Brand New Day has set a new record for the biggest preview opening in Nigerian box office...\nThe post Spider-Man: Brand New Day sets N120.4 million preview record in Nigeria appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/spider-man-brand-new-day-sets-n120-4-million-preview-record-in-nigeria/",
+      "publishedAt": "2026-08-01T15:52:00.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:13y55ar",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Nigeria’s N70,000 minimum wage and the cost-of-living reality",
+      "summary": "When the Minister of Finance and Coordinating Minister of the Economy explained that savings from the removal of fuel and foreign exchange...\nThe post Nigeria’s N70,000 minimum wage and the cost-of-living reality appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/nigerias-n70000-minimum-wage-and-the-cost-of-living-reality/",
+      "publishedAt": "2026-08-01T14:40:24.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:j29g49",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Nigeria’s AI boom depends on one thing government hasn’t fixed",
+      "summary": "A new IMF departmental paper puts numbers on a question Nigerian policymakers have largely addressed in broad terms – what AI could actually be worth to the economy and why its current payoff is so limited. Titled Unlocking the Potential: Artificial Intelligence in Sub-Saharan Africa, the paper is led by Martin Schindler and Andrew Tiffin […]\nThe post Nigeria’s AI boom depends on one thing governm",
+      "url": "https://nairametrics.com/2026/08/01/nigerias-ai-boom-depends-on-one-thing-government-hasnt-fixed/",
+      "publishedAt": "2026-08-01T14:25:50.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businesstoday_ke:13jjrkl",
+      "sourceId": "src.businesstoday_ke",
+      "title": "ALP REIT Reports Maiden Interim Results, Eyes First Pipeline Asset",
+      "summary": "ALP REIT, Kenya’s first USD-denominated Income Real Estate Investment Trust (I-REIT), today announced its unaudited interim financial results for the period ended 30 June 2026, representing the REIT’s first financial results since its successful listing on the Nairobi Securities Exchange in March 2026. The REIT closed the period with total assets of USD 45.18 million, […]",
+      "url": "https://businesstoday.co.ke/alp-reit-reports-maiden-interim-results-eyes-first-pipeline-asset/",
+      "publishedAt": "2026-08-01T14:25:33.000Z",
+      "language": "en",
+      "countryCodes": [
+        "KE"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:nqhy30",
+      "sourceId": "src.nairametrics_ng",
+      "title": "MTN nears 100 million subscriptions as Nigeria’s mobile database hits 189.4 million",
+      "summary": "The largest network operator in Nigeria, MTN is now close to the 100 million active subscriptions mark as its database hit 96.9 million in May\nThe post MTN nears 100 million subscriptions as Nigeria’s mobile database hits 189.4 million appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/mtn-nears-100-million-subscriptions-as-nigerias-mobile-database-hits-189-4-million/",
+      "publishedAt": "2026-08-01T14:18:41.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:8ltkme",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Aradel reports N753bn pre-tax profit after blockbuster half-year",
+      "summary": "Aradel Holdings Plc has released its unaudited H1 financial statement, reporting a pre-tax profit of N752.71 billion for the six months ended.\nThe post Aradel reports N753bn pre-tax profit after blockbuster half-year appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/aradel-reports-n753bn-pre-tax-profit-after-blockbuster-half-year/",
+      "publishedAt": "2026-08-01T14:06:11.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.nairametrics_ng:1q153ov",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Top 10 most expensive hotels in Africa 2026",
+      "summary": "Africa's luxury hospitality industry continues to push the boundaries of exclusivity, with a growing number of hotels and safari lodges...\nThe post Top 10 most expensive hotels in Africa 2026 appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/top-10-most-expensive-hotels-in-africa-2026/",
+      "publishedAt": "2026-08-01T13:48:59.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.nairametrics_ng:12mg2jl",
+      "sourceId": "src.nairametrics_ng",
+      "title": "IMF says governments are squeezing savers as debt piles up",
+      "summary": "Financial repression has risen to its highest levels in decades as governments with elevated debt increasingly face constraints in using...\nThe post IMF says governments are squeezing savers as debt piles up appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/imf-says-governments-are-squeezing-savers-as-debt-piles-up/",
+      "publishedAt": "2026-08-01T12:43:59.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.nairametrics_ng:14q21bb",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Cardinal Torch pivots to agro-processing after N10 billion fundraising",
+      "summary": "Indigenous commodity trader Cardinal Torch Company Limited has announced plans to transition into a full-fledged agro-processing in a strategic shift to capture higher margins along Nigeria’s agricultural value chain.\nThe post Cardinal Torch pivots to agro-processing after N10 billion fundraising appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/cardinal-torch-pivots-to-agro-processing-after-n10-billion-fundraising/",
+      "publishedAt": "2026-08-01T11:07:14.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:2yxa8w",
+      "sourceId": "src.nairametrics_ng",
+      "title": "CBN mops up N7.2 trillion in July, but quietly changes its playbook",
+      "summary": "The Central Bank of Nigeria (CBN) sterilized N7.18 trillion from the financial system in July through Open Market Operations (OMO) auctions, a 48.57% decline from the N13.96 trillion mopped up conducted in June.\nThe post CBN mops up N7.2 trillion in July, but quietly changes its playbook appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/cbn-mops-up-n7-2-trillion-in-july-but-quietly-changes-its-playbook/",
+      "publishedAt": "2026-08-01T10:36:08.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.myjoyonline_gh:giiasr",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "MTN, ECG & others celebrated at NPMC & PMEA 2026",
+      "summary": "The loudest applause on the final day of the 2026 National Project Management Conference and Project Management Excellence Awards (NPMC & PMEA) was not for a keynote speaker or an awards recipient. It came from a room full of professionals racing against the clock to solve challenges, complete team tasks and outsmart one another during […]",
+      "url": "https://www.myjoyonline.com/mtn-ecg-others-celebrated-at-npmc-pmea-2026/",
+      "publishedAt": "2026-08-01T10:06:57.000Z",
+      "language": "en",
+      "countryCodes": []
+    },
+    {
+      "id": "src.myjoyonline_gh:1uxh3h4",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Ghanaian banks go global as First Atlantic Bank expands into Liberia",
+      "summary": "Representing President John Dramani Mahama at the official opening of First Atlantic Bank Liberia, Mr. Ampem, who said the bank’s entry into the Liberian market demonstrates the growing capacity of Ghanaian businesses to compete beyond national borders and contribute to Africa’s economic transformation.",
+      "url": "https://www.myjoyonline.com/ghanaian-banks-go-global-as-first-atlantic-bank-expands-into-liberia/",
+      "publishedAt": "2026-08-01T09:57:37.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
+      "id": "src.newbusinessethiopia_et:5zm86f",
+      "sourceId": "src.newbusinessethiopia_et",
+      "title": "Amhara Region of Ethiopia Produced 357 Kilograms Gold",
+      "summary": "The Amhara Region of Ethiopia announced that it has produced and delivered 357 Kilograms of Gold to the National Bank of Ethiopia during the budget year of the country ended July 7, 2026. This is indicated during the Amhara National Regional State Council 12th regular session of the 6th round, 5th year working term. During […]",
+      "url": "https://newbusinessethiopia.com/mining/amhara-region-of-ethiopia-produced-357-kilograms-gold/",
+      "publishedAt": "2026-08-01T08:28:13.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
+      ]
+    },
+    {
+      "id": "src.nairametrics_ng:1uimqpv",
+      "sourceId": "src.nairametrics_ng",
+      "title": "Nigerian stocks set for profit-taking in August, Dangote Refinery in spotlight",
+      "summary": "Nigeria's stocks enter August with the NGX All-Share Index (ASI) hovering around 247,000 index points, approaching record highs.\nThe post Nigerian stocks set for profit-taking in August, Dangote Refinery in spotlight appeared first on Nairametrics.",
+      "url": "https://nairametrics.com/2026/08/01/nigerian-stocks-set-for-profit-taking-in-august-dangote-refinery-in-spotlight/",
+      "publishedAt": "2026-08-01T08:28:12.000Z",
+      "language": "en",
+      "countryCodes": [
+        "NG"
+      ]
+    },
+    {
+      "id": "src.businesstoday_ke:f27czs",
+      "sourceId": "src.businesstoday_ke",
+      "title": "SanlamAllianz Life Insurance Launches Wealth Building Cover",
+      "summary": "SanlamAllianz Life Insurance Kenya has launched Flexi Future Plus, a new savings and life insurance solution to help customers build wealth.",
+      "url": "https://businesstoday.co.ke/sanlamallianz-life-insurance-launches-wealth-building-cover/",
+      "publishedAt": "2026-08-01T08:24:19.000Z",
+      "language": "en",
+      "countryCodes": [
+        "KE"
+      ]
+    },
+    {
       "id": "src.nairametrics_ng:1djgcye",
       "sourceId": "src.nairametrics_ng",
-      "title": "Berger Paints H1 pre-tax profit climbs 27% to N1.20 billion on strong paint sales",
-      "summary": "Berger Paints Nigeria Plc has released its H1 financial statement, reporting a pre-tax profit of N1.20 billion for the six months ended June 30, 2026.\nThe post Berger Paints H1 pre-tax profit climbs 27% to N1.20 billion on strong paint sales appeared first on Nairametrics.",
+      "title": "Berger Paints profit jumps 27% despite rising operating costs",
+      "summary": "Berger Paints Nigeria Plc has released its H1 financial statement, reporting a pre-tax profit of N1.20 billion for the six months ended June 30, 2026.\nThe post Berger Paints profit jumps 27% despite rising operating costs appeared first on Nairametrics.",
       "url": "https://nairametrics.com/2026/08/01/berger-paints-h1-pre-tax-profit-climbs-27-to-n1-20-billion-on-strong-paint-sales/",
       "publishedAt": "2026-08-01T08:07:01.000Z",
       "language": "en",
@@ -149,6 +711,18 @@
       "publishedAt": "2026-08-01T07:12:23.000Z",
       "language": "en",
       "countryCodes": []
+    },
+    {
+      "id": "src.newbusinessethiopia_et:1fksqh4",
+      "sourceId": "src.newbusinessethiopia_et",
+      "title": "Ethiopia Generates 21 Percent More Electricity, Half Generated From GERD",
+      "summary": "The Ethiopian Electric Power (EEP) Generation Business Unit has announced that it generated more than 35,670 gigawatt-hours (GWh) of electricity during the Ethiopian fiscal year ended July 7, 2026. The amount represents 21 percent more than the electricity the country generated the previous year. Out of the total the total, the Grand Ethiopian Renaissance Dam […]",
+      "url": "https://newbusinessethiopia.com/energy/ethiopia-generates-21-percent-more-electricity-half-generated-from-gerd/",
+      "publishedAt": "2026-08-01T07:07:17.000Z",
+      "language": "en",
+      "countryCodes": [
+        "ET"
+      ]
     },
     {
       "id": "src.nairametrics_ng:17oyxt8",
@@ -333,8 +907,8 @@
     {
       "id": "src.moneyweb_za:qw7hzt",
       "sourceId": "src.moneyweb_za",
-      "title": "SA tourism up 12.3% in the first half of 2026",
-      "summary": "International arrivals strengthen despite global uncertainty, boosting SA's visitor economy.",
+      "title": "SA tourism arrivals up 12.3% in the first half of 2026",
+      "summary": "International tourists numbers surge despite global uncertainty, boosting SA's visitor economy.",
       "url": "https://www.moneyweb.co.za/news/south-africa/south-africa-records-12-3-rise-of-tourism-mid-2026/",
       "publishedAt": "2026-08-01T02:00:52.000Z",
       "language": "en",
@@ -351,16 +925,6 @@
       "countryCodes": []
     },
     {
-      "id": "src.moneyweb_za:1blis0s",
-      "sourceId": "src.moneyweb_za",
-      "title": "Trump’s court losses leave taxpayers facing millions in legal fees",
-      "summary": "The US made 88 payments worth $15m in 2025, Bloomberg found.",
-      "url": "https://www.moneyweb.co.za/news/international/trumps-court-losses-leave-taxpayers-facing-millions-in-legal-fees/",
-      "publishedAt": "2026-08-01T02:00:44.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
       "id": "src.norvanreports_gh:qht2um",
       "sourceId": "src.norvanreports_gh",
       "title": "DDEP Bond Activity Drops 54.06% as Ghana Fixed-Income Trading Shifts to T-Bills",
@@ -371,6 +935,16 @@
       "countryCodes": [
         "GH"
       ]
+    },
+    {
+      "id": "src.moneyweb_za:1blis0s",
+      "sourceId": "src.moneyweb_za",
+      "title": "Trump’s court losses leave taxpayers facing millions in legal fees",
+      "summary": "The US made 88 payments worth $15m in 2025, Bloomberg found.",
+      "url": "https://www.moneyweb.co.za/news/international/trumps-court-losses-leave-taxpayers-facing-millions-in-legal-fees/",
+      "publishedAt": "2026-08-01T02:00:44.000Z",
+      "language": "en",
+      "countryCodes": []
     },
     {
       "id": "src.moneyweb_za:my50wq",
@@ -689,6 +1263,18 @@
       "summary": "The Finance Ministry has given assurance that Ghana will meet its revenue target for 2026. The ministry’s optimism stems from the work that the government has done with ongoing reforms, administrative measures and the fact that mobilisation normally picks up strongly in the 3rd and 4th quarters of each year. The Technical Advisor to the […]",
       "url": "https://www.myjoyonline.com/we-will-meet-end-year-revenue-target-finance-ministry-assures/",
       "publishedAt": "2026-07-31T14:30:48.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
+      "id": "src.myjoyonline_gh:58pbaa",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Absa partners Mantrac to expand financing support for mining and construction sectors",
+      "summary": "Absa Bank Ghana has partnered with Mantrac Ghana to expand access to tailored financing solutions that enable businesses to acquire world-class equipment, invest in productive assets and unlock new opportunities for growth.",
+      "url": "https://www.myjoyonline.com/absa-partners-mantrac-to-expand-financing-support-for-mining-and-construction-sectors/",
+      "publishedAt": "2026-07-31T14:24:00.000Z",
       "language": "en",
       "countryCodes": [
         "GH"
@@ -1317,6 +1903,18 @@
       ]
     },
     {
+      "id": "src.myjoyonline_gh:1qnbhko",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "World Bank downgrades Ghana’s energy recovery programme to ‘Unsatisfactory’, cites Finance Ministry fiscal controls and election-related delays",
+      "summary": "The World Bank has downgraded Ghana’s Energy Sector Recovery Programme from “Moderately Satisfactory” to “Unsatisfactory”, saying implementation has fallen behind schedule because of financing constraints, election-related disruptions, new procurement controls and delays by implementing agencies. In its latest implementation report dated June 30, 2026, the Bank said a lack of Commitment Authorizat",
+      "url": "https://www.myjoyonline.com/world-bank-downgrades-ghanas-energy-recovery-programme-to-unsatisfactory-cites-finance-ministry-fiscal-controls-and-election-related-delays/",
+      "publishedAt": "2026-07-31T07:02:04.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
+    },
+    {
       "id": "src.capitalfm_ke:1lm67v5",
       "sourceId": "src.capitalfm_ke",
       "title": "Ex-CBK Governor Ndung’u reveals M-Pesa faced initial resistance",
@@ -1387,6 +1985,18 @@
       "publishedAt": "2026-07-31T05:54:44.000Z",
       "language": "en",
       "countryCodes": []
+    },
+    {
+      "id": "src.myjoyonline_gh:bk72k5",
+      "sourceId": "src.myjoyonline_gh",
+      "title": "Chinese takeover of Atlantic Lithium threatens key pillars of Ghanaian participation in Ewoyaa",
+      "summary": "On May 7, 2026, Chinese battery materials giant Zhejiang Huayou Cobalt announced plans to acquire Atlantic Lithium in a proposed $210 million transaction that could significantly reshape the future of Ghana’s Ewoyaa Lithium Project. If completed, the deal would further deepen China’s growing influence in Ghana’s large-scale mining sector. Five days later, Huayou agreed to […]",
+      "url": "https://www.myjoyonline.com/chinese-bid-for-atlantic-lithium-puts-ghanas-local-ownership-model-at-ewoyaa-to-the-test/",
+      "publishedAt": "2026-07-31T05:49:25.000Z",
+      "language": "en",
+      "countryCodes": [
+        "GH"
+      ]
     },
     {
       "id": "src.capitalfm_ke:9luv0d",
@@ -2399,1292 +3009,6 @@
       "summary": "Kenya Re-Insurance Corporation has been in the limelight in recent weeks following its ugly boardroom fights, coupled with state meddling as the majority shareholder, all the while investors watching helplessly as the unfortunate events unfold. The question remains whether these happenings poses any material risk to the investment case. According to market watchers, the market […]",
       "url": "https://businesstoday.co.ke/kenya-re-boardroom-fights-and-market-reactions/",
       "publishedAt": "2026-07-30T09:13:31.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.capitalfm_ke:1ii07fb",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Treasury to centralize public debt data on single platform",
-      "summary": "The National Treasury said the Public Debt Data Warehouse will consolidate debt information from multiple systems into a secure, centralized platform.",
-      "url": "https://capitalfm.africa/treasury-to-centralize-public-debt-data-on-single-platform/",
-      "publishedAt": "2026-07-30T08:23:35.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.moneyweb_za:idps62",
-      "sourceId": "src.moneyweb_za",
-      "title": "Qatar sends first LNG shipment through Hormuz in three weeks",
-      "summary": "The tanker is signalling Pakistan as its next destination.",
-      "url": "https://www.moneyweb.co.za/news/international/qatar-sends-first-lng-shipment-through-hormuz-in-three-weeks/",
-      "publishedAt": "2026-07-30T08:00:52.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.nairametrics_ng:kfgun3",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Real Madrid becomes first sports club to hit €1.2 billion revenue",
-      "summary": "Real Madrid has become the first sports organisation to generate more than €1.2 billion in annual operating revenue, posting a record €1.221 billion for the 2025–2026 financial year despite ending the season without winning a major trophy.\nThe post Real Madrid becomes first sports club to hit €1.2 billion revenue appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/30/real-madrid-becomes-first-sports-club-to-hit-e1-2-billion-revenue/",
-      "publishedAt": "2026-07-30T07:52:25.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.moneyweb_za:15jms24",
-      "sourceId": "src.moneyweb_za",
-      "title": "Fresh insights into SA’s R109bn liquor retail market",
-      "summary": "Andrea Slabber from Trade Intelligence considers the steep rise in online gambling a big factor curbing growth over the past year.",
-      "url": "https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-now/fresh-insights-into-sas-r109bn-liquor-retail-market/",
-      "publishedAt": "2026-07-30T07:50:10.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.capitalfm_ke:fru2e6",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Ugandan officials join KPC Board after UNOC acquires 20pc stake",
-      "summary": "The new directors are Ramathan Ggoobi, Uganda's Permanent Secretary and Secretary to the Treasury, and Irene Pauline Bateebe, Permanent Secretary at the Ministry of Energy and Mineral Development.",
-      "url": "https://capitalfm.africa/ugandan-officials-join-kpc-board-after-unoc-acquires-20pc-stake/",
-      "publishedAt": "2026-07-30T07:40:35.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:qx7t9e",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Shell profits double as oil prices rise due to Iran war",
-      "summary": "Shell's profits for the second quarter of the year have more than doubled after the Iran war pushed up oil prices.",
-      "url": "https://www.myjoyonline.com/shell-profits-double-as-oil-prices-rise-due-to-iran-war/",
-      "publishedAt": "2026-07-30T07:38:59.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.moneyweb_za:mx2vvh",
-      "sourceId": "src.moneyweb_za",
-      "title": "Anglo American posts profit jump",
-      "summary": "Raised its dividend as it joined rival miners in cashing in on record copper prices.",
-      "url": "https://www.moneyweb.co.za/news/companies-and-deals/anglo-american-posts-profit-jump/",
-      "publishedAt": "2026-07-30T07:32:49.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.moneyweb_za:i83738",
-      "sourceId": "src.moneyweb_za",
-      "title": "Meta’s Zuckerberg defends AI bets to sceptical investors",
-      "summary": "The social media giant also reported the lowest free cash flow in years, a sign of ballooning expenses for AI bets, including data centres and smart glasses, which could amount to $145bn this year.",
-      "url": "https://www.moneyweb.co.za/news-fast-news/metas-zuckerberg-defends-ai-bets-to-sceptical-investors/",
-      "publishedAt": "2026-07-30T07:30:12.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.capitalfm_ke:xkoe95",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Beyond Nairobi: The rise of Kenya’s regional economic hubs",
-      "summary": "Fifteen years after the adoption of the 2010 Constitution, devolution, improved infrastructure and county-led investment promotion are encouraging businesses to look beyond Nairobi.",
-      "url": "https://capitalfm.africa/beyond-nairobi-the-rise-of-kenyas-regional-economic-hubs/",
-      "publishedAt": "2026-07-30T07:30:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.biznakenya_ke:xqulss",
-      "sourceId": "src.biznakenya_ke",
-      "title": "HELB opens applications for 2026/27 postgraduate scholarships",
-      "summary": "The Higher Education Loans Board (HELB) has opened applications for its 2026/2027 partial postgraduate scholarship programme, offering financial support of up to Sh450,000 to eligible Kenyan students pursuing Master’s and Doctor of Philosophy (PhD) studies. The scholarship programme is designed to ease the financial burden of advanced university education while supporting the country’s investment ",
-      "url": "https://biznakenya.com/helb-applications-for-2026-27-postgraduate/",
-      "publishedAt": "2026-07-30T07:28:58.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:cugb4i",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Top 10 African countries with the highest minimum wages in 2026",
-      "summary": "To find out which countries offer the highest statutory minimum wages in dollar terms, the Nairametrics research team analysed official minimum wage data from labour authorities and government gazettes across Africa, converting local currency wages using exchange rates as of July 24, 2026.\nThe post Top 10 African countries with the highest minimum wages in 2026 appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/30/top-10-african-countries-with-the-highest-minimum-wages-in-2026/",
-      "publishedAt": "2026-07-30T07:21:24.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.capitalfm_ke:x3t1ci",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Experts: Kenya needs a stable tax regime to attract long-term investment",
-      "summary": "Experts say predictable tax policies—not just incentives—are critical to attracting long-term investment and restoring business confidence in Kenya.",
-      "url": "https://capitalfm.africa/experts-kenya-needs-a-stable-tax-regime-to-attract-long-term-investment/",
-      "publishedAt": "2026-07-30T07:19:19.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:13icmm3",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Fraud watchlist expands by 38% as banks flag 13,117 BVNs in 2025",
-      "summary": "Nigeria's banking sector strengthened its fraud detection framework in 2025, with the number of Bank Verification Numbers (BVNs) on the industry's fraud watchlist rising by 38.4% to 13,117, according to the Central Bank of Nigeria's 2025 Annual Report.\nThe post Fraud watchlist expands by 38% as banks flag 13,117 BVNs in 2025 appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/30/fraud-watchlist-expands-by-38-as-banks-flag-13117-bvns-in-2025/",
-      "publishedAt": "2026-07-30T07:03:15.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.moneyweb_za:14yo657",
-      "sourceId": "src.moneyweb_za",
-      "title": "Ebola vaccine race accelerates as Congo outbreak outpaces response",
-      "summary": "'The epidemic is fast becoming a humanitarian crisis,' CEPI Chief Executive Officer Richard Hatchett said. 'This vaccine candidate could become an important tool for Bundibugyo outbreak control and response.'",
-      "url": "https://www.moneyweb.co.za/news-fast-news/ebola-vaccine-race-accelerates-as-congo-outbreak-outpaces-response/",
-      "publishedAt": "2026-07-30T07:00:55.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.businessday_ng:3xo57l",
-      "sourceId": "src.businessday_ng",
-      "title": "FROM CHINA TO THE CARIBBEAN: Nigerian Wealth and Leadership Expert Ugochukwu Omeogu Earns International Recognition as Grenada Pursues  Continued Executive Leadership Partnership",
-      "summary": "A relationship sparked at a global executive masterclass in China culminates in a highlevel leadership engagement attended by Grenada’s Prime\nread more FROM CHINA TO THE CARIBBEAN: Nigerian Wealth and Leadership Expert Ugochukwu Omeogu Earns International Recognition as Grenada Pursues  Continued Executive Leadership Partnership",
-      "url": "https://businessday.ng/brands-advertising/article/from-china-to-the-caribbean-nigerian-wealth-and-leadership-expert-ugochukwu-omeogu-earns-international-recognition-as-grenada-pursues-continued-executive-leadership-partnership/",
-      "publishedAt": "2026-07-30T07:00:45.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.capitalfm_ke:hdn3lr",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Experts urge Kenya to deepen capital markets to close SME financing gap",
-      "summary": "Experts are urging Kenya to deepen its capital markets and unlock long-term financing for SMEs by moving beyond traditional bank lending.",
-      "url": "https://capitalfm.africa/experts-urge-kenya-to-deepen-capital-markets-to-close-sme-financing-gap/",
-      "publishedAt": "2026-07-30T06:52:36.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.biznakenya_ke:l5nvkl",
-      "sourceId": "src.biznakenya_ke",
-      "title": "KNEC sets strict Grade 10 subject selection rules for schools",
-      "summary": "The Kenya National Examinations Council (KNEC) has issued new directives requiring schools to strictly follow prescribed subject selection guidelines during the ongoing registration of Grade 10 learners. In a circular dated July 27, the examinations council instructed schools to register learners only after confirming their selected career pathways and subject combinations, emphasizing that all en",
-      "url": "https://biznakenya.com/knec-sets-strict-grade-10-subject-selection-rules/",
-      "publishedAt": "2026-07-30T06:51:18.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:tpgute",
-      "sourceId": "src.nairametrics_ng",
-      "title": "CBN lowers T-bill yield as oversubscription jumps sevenfold",
-      "summary": "Investors poured a massive N3.38 trillion into the 364-day Nigerian Treasury Bill at the Central Bank of Nigeria’s (CBN) primary market auction on Wednesday, July 29, 2026 — nearly seven times the N500 billion on offer.\nThe post CBN lowers T-bill yield as oversubscription jumps sevenfold appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/30/cbn-lowers-t-bill-yield-as-oversubscription-jumps-sevenfold/",
-      "publishedAt": "2026-07-30T06:50:11.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.capitalfm_ke:1my73wz",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Kenya eyes China’s zero-tariff market to cut Sh1.14tn trade gap",
-      "summary": "The policy, which took effect on May 1, 2026, was the focus of the \"Zero Tariffs, Infinite Opportunities\" symposium in Nairobi, where government officials, business leaders and exporters discussed strategies to boost Kenyan exports to the Chinese market.",
-      "url": "https://capitalfm.africa/kenya-eyes-chinas-zero-tariff-market-to-cut-sh1-14tn-trade-gap/",
-      "publishedAt": "2026-07-30T06:48:04.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.businessday_ng:18h401b",
-      "sourceId": "src.businessday_ng",
-      "title": "FG seeks private sector investment to drive digital healthcare solutions",
-      "summary": "The federal government has called on private sector including entrepreneurs and technology innovators to invest in Nigeria’s digital health system\nread more FG seeks private sector investment to drive digital healthcare solutions",
-      "url": "https://businessday.ng/health/article/fg-seeks-private-sector-investment-to-drive-digital-healthcare-solutions/",
-      "publishedAt": "2026-07-30T06:47:12.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.moneyweb_za:1lez4en",
-      "sourceId": "src.moneyweb_za",
-      "title": "Gold holds modest gain after Federal Reserve keeps rates steady",
-      "summary": "Spot gold edged down 0.3% to $4 056.50 an ounce at 11:25 a.m. in Singapore.",
-      "url": "https://www.moneyweb.co.za/mineweb/gold-holds-modest-gain-after-federal-reserve-keeps-rates-steady/",
-      "publishedAt": "2026-07-30T06:45:39.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.businessday_ng:1j4efd5",
-      "sourceId": "src.businessday_ng",
-      "title": "Nigeria, Canada step up talks on direct flights, air services agreement",
-      "summary": "The Federal Government has reaffirmed its commitment to deepening aviation cooperation with Canada as both countries intensify discussions on establishing\nread more Nigeria, Canada step up talks on direct flights, air services agreement",
-      "url": "https://businessday.ng/aviation/article/nigeria-canada-step-up-talks-on-direct-flights-air-services-agreement/",
-      "publishedAt": "2026-07-30T06:44:06.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.capitalfm_ke:1ahdfpw",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Kenya must curb public spending, deliver policy certainty to unlock investment: experts",
-      "summary": "The panelists argued that while the economy is showing signs of recovery, persistent structural challenges continue to limit growth and investor confidence.",
-      "url": "https://capitalfm.africa/kenya-must-curb-public-spending-deliver-policy-certainty-to-unlock-investment-experts/",
-      "publishedAt": "2026-07-30T06:43:48.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:50b25o",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Nigerian equities lose N648 billion as TIP, NREIT lead broad mid-week sell-off",
-      "summary": "The Nigerian equities market reversed Tuesday's gains on Wednesday, with investors losing approximately N648 billion as renewed profit-taking across banking, consumer goods and industrial counters triggered a broad-based sell-off, outweighing targeted buying interest in selected stocks.\nThe post Nigerian equities lose N648 billion as TIP, NREIT lead broad mid-week sell-off appeared first on Nairam",
-      "url": "https://nairametrics.com/2026/07/30/nigerian-equities-lose-n648-billion-as-tip-nreit-lead-broad-mid-week-sell-off/",
-      "publishedAt": "2026-07-30T06:39:49.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1sj0j1t",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Nigeria’s rate hikes may be hurting growth more than prices, Fasua warns",
-      "summary": "Presidential aide Tope Fasua has called for a rethink of Nigeria’s tight monetary policy framework, warning that prolonged high interest rates could slow economic growth without delivering the desired reduction in inflation. Fasua, Special Adviser to President Bola Tinubu on Economic Affairs, spoke on Wednesday at the seventh Africa Emerging Markets Forum in Abuja. He […]\nThe post Nigeria’s rate h",
-      "url": "https://nairametrics.com/2026/07/30/nigerias-rate-hikes-may-be-hurting-growth-more-than-prices-fasua-warns/",
-      "publishedAt": "2026-07-30T06:32:39.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.businessday_ng:f3cm6g",
-      "sourceId": "src.businessday_ng",
-      "title": "Africa to launch first continental ratings agency in October as global firms race for local expertise",
-      "summary": "Africa’s first continental credit rating agency will launch in Mauritius on October 6, marking a major step in the continent’s\nread more Africa to launch first continental ratings agency in October as global firms race for local expertise",
-      "url": "https://businessday.ng/africa/article/africa-to-launch-first-continental-ratings-agency-in-october-as-global-firms-race-for-local-expertise/",
-      "publishedAt": "2026-07-30T06:31:57.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.businessday_ng:1rzie6l",
-      "sourceId": "src.businessday_ng",
-      "title": "UAC’s half-year profit nearly triples on CHI acquisition",
-      "summary": "UAC of Nigeria Plc grew profit for the first half of 2026 by 172 percent to N20 billion, as its\nread more UAC’s half-year profit nearly triples on CHI acquisition",
-      "url": "https://businessday.ng/companies/article/uacs-half-year-profit-nearly-triples-on-chi-acquisition/",
-      "publishedAt": "2026-07-30T06:31:04.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.capitalfm_ke:1exs8e",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Policy certainty key to success of Kenya’s SEZs, says Capital FM MD",
-      "summary": "Bargurei said Kenya has laid many of the foundations investors seek, but warned that long-term competitiveness will depend on policy certainty.",
-      "url": "https://capitalfm.africa/policy-certainty-key-to-success-of-kenyas-sezs-says-capital-fm-md/",
-      "publishedAt": "2026-07-30T06:08:14.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.moneyweb_za:ftupqu",
-      "sourceId": "src.moneyweb_za",
-      "title": "AB InBev volume growth just misses despite world cup sales boost",
-      "summary": "The world’s largest brewer reported organic volume growth of 0.9% in the second quarter, just below analysts’ estimates of 0.96%.",
-      "url": "https://www.moneyweb.co.za/news/companies-and-deals/ab-inbev-volume-growth-just-misses-despite-world-cup-sales-boost/",
-      "publishedAt": "2026-07-30T05:53:15.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.biznakenya_ke:p8r0nt",
-      "sourceId": "src.biznakenya_ke",
-      "title": "Redefining self-care: The timeless experience at All Things Hamsini Beauty Spa",
-      "summary": "In today’s fast-paced world, where demanding work schedules, family responsibilities and the constant pressures of modern life often take center stage, finding time to recharge has become more important than ever. Beauty and wellness spas have evolved beyond places of luxury to become essential sanctuaries where individuals invest in both their physical appearance and mental […]\nRedefining self-ca",
-      "url": "https://biznakenya.com/my-experience-at-all-things-hamsini-beauty-spa/",
-      "publishedAt": "2026-07-30T05:51:40.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.moneyweb_za:v6ax1j",
-      "sourceId": "src.moneyweb_za",
-      "title": "Oil edges lower as US wraps up strikes on Iran military targets",
-      "summary": "Brent for September settlement fell 1.6% to $89.30 a barrel at 10:41 a.m. in Singapore.",
-      "url": "https://www.moneyweb.co.za/news-fast-news/oil-edges-lower-as-us-wraps-up-strikes-on-iran-military-targets/",
-      "publishedAt": "2026-07-30T05:47:01.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.capitalfm_ke:rpznnn",
-      "sourceId": "src.capitalfm_ke",
-      "title": "Govt defends instant traffic fines as road crash losses hit Sh1.36tn",
-      "summary": "In a submission to the National Assembly's Departmental Committee on Transport and Infrastructure, the Ministry of Roads and Transport said road traffic crashes cost Kenya an estimated Sh1.356 trillion in 2024, equivalent to 8.2 percent of Gross Domestic Product, highlighting the urgent need for stronger traffic law enforcement.",
-      "url": "https://capitalfm.africa/govt-defends-instant-traffic-fines-as-road-crash-losses-hit-sh1-36tn/",
-      "publishedAt": "2026-07-30T05:28:22.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.moneyweb_za:5lkf2u",
-      "sourceId": "src.moneyweb_za",
-      "title": "Valterra proves best-in-class among PGM miners",
-      "summary": "Analysis of Valterra’s strong results despite softer PGM prices, alongside a look at the latest developments in SA’s R109bn liquor retail market.",
-      "url": "https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-now/valterra-proves-best-in-class-among-pgm-miners/",
-      "publishedAt": "2026-07-30T05:23:22.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:12roued",
-      "sourceId": "src.standardmedia_ke",
-      "title": "State suspends century-old Tata Chemicals Magadi, putting jobs at risk",
-      "summary": "The President William Ruto government has ordered the immediate suspension of all mining operations by Tata Chemicals Magadi Limited, in a dramatic escalation of regulatory dispute",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554083/state-suspends-century-old-tata-chemicals-magadi-putting-jobs-at-risk",
-      "publishedAt": "2026-07-30T05:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:cwrst6",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Auditor General, budget boss flag growing appetite for public debt",
-      "summary": "The Auditor General and Controller of Budget have raised concern over the escalating debt burden in the country, amid the Government's growing reliance on borrowing to finance its budget.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554102/auditor-general-budget-boss-flag-growing-appetite-for-public-debt",
-      "publishedAt": "2026-07-30T05:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.moneyweb_za:1gx2liv",
-      "sourceId": "src.moneyweb_za",
-      "title": "RMB crowned Africa’s best investment bank",
-      "summary": "RMB has been named Africa's Best Investment Bank at the 2026 Euromoney Awards for Excellence, collecting six prestigious awards across investment banking, mergers and acquisitions, ESG and corporate banking.",
-      "url": "https://www.moneyweb.co.za/in-depth/rmb-crowned-africas-best-investment-bank/",
-      "publishedAt": "2026-07-30T04:47:56.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:156pwi9",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Giant seafarer lobbies in pact to better members' welfare",
-      "summary": "Kenyan seafarers have penned a Memorandum of Understanding (MoU) that signals one of the most consequential developments in the country's maritime labour movement in recent times.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554095/giant-seafarer-lobbies-in-pact-to-better-members-welfare",
-      "publishedAt": "2026-07-30T03:30:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.standardmedia_ke:1awk4x6",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Calls for Lamu Port modernisation grow amid cargo growth",
-      "summary": "After a recent major lift from being a dormant facility, stakeholders are pushing the Kenya Ports Authority (KPA) and other government agencies to prioritise the modernisation of Lamu Port.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554098/calls-for-lamu-port-modernisation-grow-amid-cargo-growth",
-      "publishedAt": "2026-07-30T03:30:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:vufr62",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "OpenAI says its rogue AI tried to hack other companies",
-      "summary": "OpenAI has revealed that a cyberattack carried out by rogue ChatGPT agents affected more than one company.",
-      "url": "https://www.myjoyonline.com/openai-says-its-rogue-ai-tried-to-hack-other-companies/",
-      "publishedAt": "2026-07-30T03:09:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.norvanreports_gh:18vmkoj",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Has Faster Money Supply Growth Reignited Inflation in Ghana?",
-      "summary": "Has Faster Money Supply Growth Reignited Inflation in Ghana? The Bank of Ghana (BoG) has engineered one of the most unusual monetary policy combinations in Ghana’s recent history. Since July 2025, the central bank has steadily reduced its benchmark Monetary Policy Rate (MPR), signaling confidence that inflationary pressures had been decisively contained. Yet this monetary […]",
-      "url": "https://norvanreports.com/has-faster-money-supply-growth-reignited-inflation-in-ghana/",
-      "publishedAt": "2026-07-30T03:00:19.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.standardmedia_ke:4frlhj",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Valuers seek suspension of draft valuation policy amid calls for review",
-      "summary": "Valuers have rejected the government's plan to start valuing national assets this month, using the proposed Public Assets Valuation Policy Framework for the public sector.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554073/valuers-seek-suspension-of-draft-valuation-policy-amid-calls-for-review",
-      "publishedAt": "2026-07-30T03:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:1i3ygf0",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Creditors demand removal of United Insurance liquidator",
-      "summary": "The liquidator appointed by the High Court to manage the folding of United Insurance was yesterday asked to explain the expenditures incurred during his tenure.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554079/creditors-demand-removal-of-united-insurance-liquidator",
-      "publishedAt": "2026-07-30T03:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:1p58uh3",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Australia begins legal action against Telegram over alleged pro-terror material",
-      "summary": "Australia's internet regulator said on Thursday it ​had begun legal action against messaging platform Telegram ‌over alleged failings to tackle pro-terror posts.",
-      "url": "https://www.myjoyonline.com/australia-begins-legal-action-against-telegram-over-alleged-pro-terror-material/",
-      "publishedAt": "2026-07-30T03:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.norvanreports_gh:1iha016",
-      "sourceId": "src.norvanreports_gh",
-      "title": "BoG Mops up GH¢11.64bn in 14-Day Bills",
-      "summary": "BoG Mops up GH¢11.64bn in 14-Day Bills The Bank of Ghana sold GH¢11.64 billion in 14-day bills at its latest auction, maintaining the return on the short-term securities close to 10.50% as the central bank continued to absorb liquidity from the financial system. Results of Tender 872, held on July 29, 2026, showed that the […]",
-      "url": "https://norvanreports.com/bog-mops-up-gh%c2%a211-64bn-in-14-day-bills/",
-      "publishedAt": "2026-07-30T02:55:44.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.norvanreports_gh:v67wbn",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Private-Sector Credit Growth Accelerates to 41.20% as Liquidity Expands",
-      "summary": "Private-Sector Credit Growth Accelerates to 41.20% as Liquidity Expands Credit to Ghana’s private sector expanded sharply in the first half of 2026 as stronger liquidity within the financial system and declining interest rates encouraged banks to increase lending to businesses and households. The Bank of Ghana’s July 2026 Summary of Economic and Financial Data showed […]",
-      "url": "https://norvanreports.com/private-sector-credit-growth-accelerates-to-41-20-as-liquidity-expands/",
-      "publishedAt": "2026-07-30T02:50:56.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.norvanreports_gh:1f5qk0i",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Ghana Lending Rates Fall to 15.64% as Treasury Yields Begin to Edge Higher – BoG Report",
-      "summary": "Ghana Lending Rates Fall to 15.64% as Treasury Yields Begin to Edge Higher – BoG Report Ghana’s average lending rate declined sharply to 15.64% in June 2026, extending a broad reduction in borrowing costs over the past year, although renewed increases in Treasury bill and government bond yields point to emerging pressure within the domestic […]",
-      "url": "https://norvanreports.com/ghana-lending-rates-fall-to-15-64-as-treasury-yields-begin-to-edge-higher-bog-report/",
-      "publishedAt": "2026-07-30T02:45:56.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.norvanreports_gh:19dk5jq",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Hannah Tetteh Calls for Common African Strategy on Trade, AI and Global Finance",
-      "summary": "Hannah Tetteh Calls for Common African Strategy on Trade, AI and Global Finance United Nations Special Representative Hannah Tetteh has urged the African Union to concentrate its emerging continental foreign policy on trade integration, financial reform, artificial intelligence governance, climate-linked development and conflict resolution. Speaking at the 21st Kronti ne Akwamu Public Lecture, Ms ",
-      "url": "https://norvanreports.com/hannah-tetteh-calls-for-common-african-strategy-on-trade-ai-and-global-finance/",
-      "publishedAt": "2026-07-30T02:45:24.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.norvanreports_gh:bzneg8",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Ghana Has Stabilised but Not Yet Transformed Its Economy — PwC",
-      "summary": "Ghana Has Stabilised but Not Yet Transformed Its Economy — PwC Ghana’s economic recovery has become increasingly credible, but the country has not yet converted macroeconomic stability into broad-based structural transformation, according to PwC. In its assessment of the 2026 Mid-Year Budget Review, the accounting and advisory firm said the government had made a persuasive […]",
-      "url": "https://norvanreports.com/ghana-has-stabilised-but-not-yet-transformed-its-economy-pwc/",
-      "publishedAt": "2026-07-30T02:38:44.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.norvanreports_gh:l06lux",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Letshego Ghana’s Profit Nearly Triples as Digital Lending Fuels Strong First-Half Growth",
-      "summary": "Letshego Ghana’s Profit Nearly Triples as Digital Lending Fuels Strong First-Half Growth Letshego Ghana Savings and Loans PLC has announced a strong financial performance for the half year ended 30 June 2026 during its “Facts Behind the Figures” engagement with the Ghana Stock Exchange. The results were underpinned by growth in lending, improved margins, disciplined […]",
-      "url": "https://norvanreports.com/letshego-ghanas-profit-nearly-triples-as-digital-lending-fuels-strong-first-half-growth/",
-      "publishedAt": "2026-07-30T02:38:17.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.norvanreports_gh:1w3lho8",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Societe Generale Ghana’s Half-Year Profit Falls 47.69% to GH¢128.21m",
-      "summary": "Societe Generale Ghana’s Half-Year Profit Falls 47.69% to GH¢128.21m Societe Generale Ghana Plc reported a sharp decline in profitability during the first half of 2026 as weaker interest earnings and trading revenue outweighed growth in customer loans, deposits and operating cash flow. The Ghana Stock Exchange-listed bank recorded a profit after tax of GH¢128.21 million […]",
-      "url": "https://norvanreports.com/societe-generale-ghanas-half-year-profit-falls-47-69-to-gh%c2%a2128-21m/",
-      "publishedAt": "2026-07-30T02:35:33.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:jnaklc",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "The Chinese robot army transforming the UK’s retail industry",
-      "summary": "At Geek+'s factory in the eastern Chinese city of Hefei, which the BBC visited, fleets of the robots are built and tested before being shipped to warehouses around the world.",
-      "url": "https://www.myjoyonline.com/the-chinese-robot-army-transforming-the-uks-retail-industry/",
-      "publishedAt": "2026-07-30T02:33:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:27nhlg",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Trump considering AI controls after OpenAI hacking incidents",
-      "summary": "US President Donald Trump said on Wednesday that his administration is considering asserting greater authority over artificial intelligence (AI) tools following recent cybersecurity incidents.",
-      "url": "https://www.myjoyonline.com/trump-considering-ai-controls-after-openai-hacking-incidents/",
-      "publishedAt": "2026-07-30T02:24:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.norvanreports_gh:houfwa",
-      "sourceId": "src.norvanreports_gh",
-      "title": "NPA Raises Diesel Price Floor by 18.30%, Signalling Fresh Inflation Risks",
-      "summary": "NPA Raises Diesel Price Floor by 18.30%, Signalling Fresh Inflation Risks Ghana faces renewed fuel-driven inflationary pressure after the National Petroleum Authority approved sharp increases in the minimum retail price floors for petroleum products, led by an 18.30% rise in diesel prices for the first pricing window of August. The revised schedule raises the minimum […]",
-      "url": "https://norvanreports.com/npa-raises-diesel-price-floor-by-18-30-signalling-fresh-inflation-risks/",
-      "publishedAt": "2026-07-30T02:23:22.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.norvanreports_gh:1j7rrzv",
-      "sourceId": "src.norvanreports_gh",
-      "title": "Clydestone Rallies 3.56% as Mobile Money Lawsuit Draws Investor Attention",
-      "summary": "Clydestone Rallies 3.56% as Mobile Money Lawsuit Draws Investor Attention Turnover on the Ghana Stock Exchange climbed to GH¢121.57 million on Wednesday as a large block of MTN Ghana shares dominated trading and selective gains in Clydestone, Intravenous Infusions and CalBank supported market activity. A total of 18,390,399 shares changed hands during the July 29, […]",
-      "url": "https://norvanreports.com/clydestone-rallies-3-56-as-mobile-money-lawsuit-draws-investor-attention/",
-      "publishedAt": "2026-07-30T02:20:31.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.businesstoday_ke:1agszt7",
-      "sourceId": "src.businesstoday_ke",
-      "title": "Inside KQ’s Ambitious Plan to Triple Fleet to 100 Aircraft",
-      "summary": "Kenya Airways (KQ) is preparing for one of the biggest expansions in its history, unveiling a long-term plan that could transform the airline into one of Africa’s largest carriers over the next decade. The national airline wants to grow its fleet to 100 aircraft by 2035, a move that reflects renewed confidence after years of […]",
-      "url": "https://businesstoday.co.ke/kqs-ambitious-plan-to-triple-fleet/",
-      "publishedAt": "2026-07-30T02:15:33.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:1tghyes",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Meta shares fall as frustration grows over AI spending plans",
-      "summary": "Meta shares plunged on Wednesday as investors baulked at its promise to maintain spending on artificial intelligence (AI) projects even as profits dwindle.",
-      "url": "https://www.myjoyonline.com/meta-shares-fall-as-frustration-grows-over-ai-spending-plans/",
-      "publishedAt": "2026-07-30T02:15:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.nairametrics_ng:8o2icp",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Sterling Bank’s profit climbs 22%, but loan losses are rising faster",
-      "summary": "Sterling Bank has reported a pre-tax profit of N55.53 billion for the six months ended 30 June 2026, representing an increase of 21.92% from N45.55 billion in the corresponding period of 2025.\nThe post Sterling Bank’s profit climbs 22%, but loan losses are rising faster appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/sterling-banks-profit-climbs-22-but-loan-losses-are-rising-faster/",
-      "publishedAt": "2026-07-29T21:20:53.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.nairametrics_ng:136v6kn",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Wema Bank posts N154.56 billion H1 2026 pretax profit, up 53.65% YoY",
-      "summary": "Wema Bank Plc reported a pre-tax profit of N154.56 billion for the six months ended June 30, 2026, representing a 53.65% increase year-on-year from N100.59 billion in the corresponding period of 2025.\nThe post Wema Bank posts N154.56 billion H1 2026 pretax profit, up 53.65% YoY appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/wema-bank-posts-n154-56-billion-h1-2026-pretax-profit-up-53-65-yoy/",
-      "publishedAt": "2026-07-29T21:00:14.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:15xdq8b",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Satellite towns: Magnet for property investors seeking affordable land",
-      "summary": "Rising land costs in major urban centres and growing demand for housing are pushing property investors and home buyers to emerging satellite towns",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554074/satellite-towns-magnet-for-property-investors-seeking-affordable-land",
-      "publishedAt": "2026-07-29T21:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:5czhjz",
-      "sourceId": "src.standardmedia_ke",
-      "title": "KEBS opens Sh100m testing facility in Meru to strengthen fight against substandard goods",
-      "summary": "Farmers and manufacturers in Mt Kenya region is expected to benefit from faster product testing and certification following the operationalisation of a Sh100 million KEBS laboratory",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554080/kebs-opens-sh100m-testing-facility-in-meru-to-strengthen-fight-against-substandard-goods",
-      "publishedAt": "2026-07-29T21:00:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.standardmedia_ke:163y9ws",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Here's why your roof faded fast",
-      "summary": "Research on social media indicates a proliferation of roofing material companies, and their popularity has been growing due to their intensive marketing.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554084/here-s-why-your-roof-faded-fast",
-      "publishedAt": "2026-07-29T21:00:00.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:1ekg4e9",
-      "sourceId": "src.standardmedia_ke",
-      "title": "New continental competition rules set for December",
-      "summary": "Kenya's budding fintech and banking sectors are among the areas the country will consider as it seeks to domesticate continental competition rules in line with the implementation of the AfCFTA",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554086/new-continental-competition-rules-set-for-december",
-      "publishedAt": "2026-07-29T21:00:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.standardmedia_ke:l5oz2j",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Auto industry shifts gears as locally assembled vehicles demand rises",
-      "summary": "Kenya's automotive industry is gradually shifting towards locally assembled brand-new vehicles, driven by increased investment in manufacturing, and expanding transport infrastructure.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554099/auto-industry-shifts-gears-as-locally-assembled-vehicles-demand-rises",
-      "publishedAt": "2026-07-29T21:00:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1lmel7l",
-      "sourceId": "src.nairametrics_ng",
-      "title": "NASCON grew sales 4%, profit jumped 28%. Something changed",
-      "summary": "NASCON Allied Industries Plc reported a profit before tax of N29.70 billion for the first half of 2026, representing a 27.59% year-on-year increase, as stronger operating margins, higher finance income and lower borrowing costs boosted an otherwise modest revenue growth.\nThe post NASCON grew sales 4%, profit jumped 28%. Something changed appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/nascon-grew-sales-4-profit-jumped-28-something-changed/",
-      "publishedAt": "2026-07-29T20:56:41.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:fez0ol",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Pay close attention to monthly inflation, changes in T-bills, lending rates – PwC to CEOs, Boards",
-      "summary": "The professional services firm said Ghana’s second-half year outlook is increasingly exposed to the global energy and geopolitical cycle",
-      "url": "https://www.myjoyonline.com/pay-close-attention-to-monthly-inflation-changes-in-t-bills-lending-rates-pwc-to-ceos-boards/",
-      "publishedAt": "2026-07-29T19:44:55.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:dsgk94",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Mid-Year Budget Review: Government’s narrative more persuasive on stabilisation than transformation – PwC",
-      "summary": "It argued that Ghana has clearly moved away from crisis conditions, but stronger macro stability is not the same as a fully repaired growth model.",
-      "url": "https://www.myjoyonline.com/mid-year-budget-governments-narrative-more-persuasive-on-stabilisation-than-transformation-pwc/",
-      "publishedAt": "2026-07-29T19:04:15.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:u2mdb0",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Mid-Year Budget Review: Half-year economic performance genuinely strong, but risks remain – PwC",
-      "summary": "In its assessment of the Mid-Year Budget Review, it said some of the improvement reflects disciplined fiscal control and debt restructuring progress, highlighting that some are the result of favourable base effects, delayed expenditure execution, lower domestic interest rates, stronger reserves, and relatively favourable first-half financial conditions.",
-      "url": "https://www.myjoyonline.com/mid-year-budget-review-half-year-economic-performance-genuinely-strong-but-risks-remain-pwc/",
-      "publishedAt": "2026-07-29T18:33:11.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.capitalethiopia_et:1xgibmq",
-      "sourceId": "src.capitalethiopia_et",
-      "title": "Geopolitical Tensions in the Gulf and Fuel Surges Drive 25% Increase in Airline Operating Costs",
-      "summary": "Escalating geopolitical tensions in the Gulf region and soaring global fuel prices have created severe operational hurdles for Ethiopian Airlines, causing overall operating costs to surge by 25%. According to Ethiopian Airlines Group CEO Mesfin Tasew, ongoing conflicts in the Middle East have significantly disrupted regional logistics, directly undermining the carrier’s fuel procurement networks a",
-      "url": "https://capitalethiopia.com/2026/07/29/geopolitical-tensions-in-the-gulf-and-fuel-surges-drive-25-increase-in-airline-operating-costs/",
-      "publishedAt": "2026-07-29T18:27:21.000Z",
-      "language": "en",
-      "countryCodes": [
-        "ET"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1qr9yfx",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Royal Exchange pre-tax profit declines 94.2% in H1 2026",
-      "summary": "Royal Exchange Plc has released its H1 2026 financial statement, reporting a sharp decline of 94.2% in pre-tax profit.\nThe post Royal Exchange pre-tax profit declines 94.2% in H1 2026 appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/royal-exchange-pre-tax-profit-declines-94-2-in-h1-2026/",
-      "publishedAt": "2026-07-29T18:23:13.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.premiumtimes_ng:10co9qp",
-      "sourceId": "src.premiumtimes_ng",
-      "title": "FCCPC, Lagos consumer agency warn businesses on price tags, refunds, product labelling",
-      "summary": "“Consumers must be confident that the price they see is the price they will pay.”\nThe post FCCPC, Lagos consumer agency warn businesses on price tags, refunds, product labelling appeared first on Premium Times Nigeria.",
-      "url": "https://www.premiumtimesng.com/business/business-news/899229-fccpc-lagos-consumer-agency-warn-businesses-on-price-tags-refunds-product-labelling.html",
-      "publishedAt": "2026-07-29T18:09:40.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.businesstoday_ke:1h4qjhy",
-      "sourceId": "src.businesstoday_ke",
-      "title": "KRA Customs Beats Target After Collecting Record Ksh988.8B",
-      "summary": "The Kenya Revenue Authority (KRA) has announced that its Customs and Border Control Department collected a record Ksh 988.78 billion during the 2025/26 financial year, surpassing its annual revenue target and marking the fifth consecutive year of growth in customs collections. The department exceeded its target of Ksh 980.79 billion by achieving a performance rate […]",
-      "url": "https://businesstoday.co.ke/kra-customs-collects-record-ksh988-8b/",
-      "publishedAt": "2026-07-29T17:53:38.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1p9n1iw",
-      "sourceId": "src.nairametrics_ng",
-      "title": "PwC, EY jointly command an estimated 35.9% of Nigeria’s corporate audit market in 2025`",
-      "summary": "PricewaterhouseCoopers (PwC) and Ernst & Young (EY) emerged as the leading auditors among 128 major Nigerian companies reviewed in 2025, with each firm auditing 23 companies, representing 17.97% of the total.\nThe post PwC, EY jointly command an estimated 35.9% of Nigeria’s corporate audit market in 2025` appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/pwc-ey-jointly-command-an-estimated-35-9-of-nigerias-corporate-audit-market-in-2025/",
-      "publishedAt": "2026-07-29T17:00:13.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1t6c80z",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Flutterwave Named to CNBC and Statista’s World’s Top Fintech Companies List",
-      "summary": "Flutterwave, Africa’s leading payments technology company, has been named to CNBC and Statista’s 2025 World’s Top Fintech Companies list. The recognition highlights Flutterwave’s continued commitment to innovation, operational excellence, and building technology that powers seamless payments and cross-border commerce across Africa and beyond. The CNBC World’s Top Fintech Companies list is an annua",
-      "url": "https://nairametrics.com/2026/07/29/flutterwave-named-to-cnbc-and-statistas-worlds-top-fintech-companies-list/",
-      "publishedAt": "2026-07-29T16:59:33.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.nairametrics_ng:i26bgs",
-      "sourceId": "src.nairametrics_ng",
-      "title": "NITDA to license tech firms for software testing under new framework",
-      "summary": "The National Information Technology Development Agency (NITDA) is set to license tech firms for software testing as it seeks to standardize IT project implementation across government and regulated private sector entities.\nThe post NITDA to license tech firms for software testing under new framework appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/nitda-to-license-tech-firms-for-software-testing-under-new-framework/",
-      "publishedAt": "2026-07-29T16:10:05.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.businesstoday_ke:1ww713t",
-      "sourceId": "src.businesstoday_ke",
-      "title": "Eaagads Net Profit Up 132.9% to KSh27.6Mn",
-      "summary": "Eaagads Limited, a listed coffee firm with its headquarters in Kiambu County, saw its Net Profit surge 132.9% to KSh 27.6 million for the full year period ended 31st March 2026. Eaagads was established in 1946 as a grower of coffee before being incorporated as a private limited liability company, then admitted to the Nairobi […]",
-      "url": "https://businesstoday.co.ke/eaagads-net-profit-up-132-9-to-ksh-27-6mn/",
-      "publishedAt": "2026-07-29T16:09:39.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:12n5r4o",
-      "sourceId": "src.nairametrics_ng",
-      "title": "These professional certifications are quietly transforming careers across Nigeria",
-      "summary": "Professional certifications are becoming one of the clearest ways Nigerian professionals are distinguishing themselves in an increasingly competitive job market, as employers place greater value on verified expertise and workers seek skills that remain relevant in the age of artificial intelligence.\nThe post These professional certifications are quietly transforming careers across Nigeria appeared",
-      "url": "https://nairametrics.com/2026/07/29/these-professional-certifications-are-quietly-transforming-careers-across-nigeria/",
-      "publishedAt": "2026-07-29T15:48:57.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.standardmedia_ke:h8f08y",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Moody's gives Kenya Re stable outlook",
-      "summary": "Moody's has affirmed Kenya Re international and national scale financial strength ratings at B and AA+(KE) respectively, which carry a stable outlook for the business.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554082/moody-s-gives-kenya-re-stable-outlook",
-      "publishedAt": "2026-07-29T15:33:35.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.premiumtimes_ng:1d0t7lu",
-      "sourceId": "src.premiumtimes_ng",
-      "title": "Currency in circulation rose to N5.73 trillion as FX inflows hit $109.86bn in 2025 – CBN",
-      "summary": "The CBN report also stated that aggregate foreign exchange inflows into the economy rose to $109.86 billion in 2025 from $96.53 billion in the previous year.\nThe post Currency in circulation rose to N5.73 trillion as FX inflows hit $109.86bn in 2025 – CBN appeared first on Premium Times Nigeria.",
-      "url": "https://www.premiumtimesng.com/business/business-news/899182-currency-in-circulation-rose-to-n5-73-trillion-as-fx-inflows-hit-109-86bn-in-2025-cbn.html",
-      "publishedAt": "2026-07-29T15:18:56.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:15akl9w",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Nigeria’s First SEC-Licensed Exchange, Quidax, Expands Stablecoin Infrastructure to Over 21 Countries",
-      "summary": "Quidax, the first digital assets exchange to receive a provisional licence from Nigeria’s Securities and Exchange Commission (SEC), today announced the expansion of its stablecoin infrastructure to more than 21 countries and 14 currencies, enabling startups, fintechs, and global enterprises to move value seamlessly across Africa and key international markets. Africa loses an estimated $5 […]\nThe p",
-      "url": "https://nairametrics.com/2026/07/29/nigerias-first-sec-licensed-exchange-quidax-expands-stablecoin-infrastructure-to-over-21-countries/",
-      "publishedAt": "2026-07-29T15:00:50.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:157znel",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Electroland Ghana Limited opens premium showroom in Madina to enhance customer experience",
-      "summary": "Electroland Ghana has expanded its retail footprint with the opening of a new premium showroom in Madina, a move aimed at bringing customers closer to a wide range of high-quality home appliances and electronics. The new facility is expected to provide customers with an enhanced shopping experience, offering access to some of Electroland Ghana’s leading […]",
-      "url": "https://www.myjoyonline.com/electroland-ghana-limited-opens-premium-showroom-in-madina-to-enhance-customer-experience/",
-      "publishedAt": "2026-07-29T14:55:28.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:j8flmb",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Women’s Development Bank: Bold steps, real progress",
-      "summary": "The establishment of the Women’s Development Bank represents a significant milestone in Ghana’s journey towards building an inclusive, resilient, and sustainable financial ecosystem. The bold decision by the government to incorporate the Women’s Development Bank and commence the process of securing the necessary regulatory approval from the Bank of Ghana demonstrates a strong commitment to […]",
-      "url": "https://www.myjoyonline.com/womens-development-bank-bold-steps-real-progress/",
-      "publishedAt": "2026-07-29T14:54:59.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1fni5o2",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Nigeria’s $1 trillion target: What the numbers really mean for business",
-      "summary": "The opportunity in Nigeria is less about a small number of wealthy consumers and more about the rising incomes of a very large population.\nThe post Nigeria’s $1 trillion target: What the numbers really mean for business appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/nigerias-1-trillion-target-what-the-numbers-really-mean-for-business/",
-      "publishedAt": "2026-07-29T14:47:29.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:1ccvama",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Trust is cracking in Nigeria’s N1.07 quadrillion payment system",
-      "summary": "Nigeria's digital financial ecosystem processes over N1.07 quadrillion in electronic payment transactions annually, but the rapid growth has not translated into stronger public confidence in the system.\nThe post Trust is cracking in Nigeria’s N1.07 quadrillion payment system appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/trust-is-cracking-in-nigerias-n1-07-quadrillion-payment-system/",
-      "publishedAt": "2026-07-29T14:17:13.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.nairametrics_ng:ya4amc",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Presco’s pre-tax profit hits N122.2 billion in H1 2026",
-      "summary": "Presco Plc has released its unaudited financial statement for H1 2026 , reporting a profit before tax of N122.2 billion for the six months ended 30 June 2026.\nThe post Presco’s pre-tax profit hits N122.2 billion in H1 2026 appeared first on Nairametrics.",
-      "url": "https://nairametrics.com/2026/07/29/prescos-pre-tax-profit-hits-n122-2-billion-in-h1-2026/",
-      "publishedAt": "2026-07-29T13:56:45.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.nairametrics_ng:1szwyaz",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Presco Plc delivers 9.3% PBT growth to N122.2 billion in H1 2026; board proposes N10 interim dividend",
-      "summary": "Presco Plc (Bloomberg: PRESCO:NL | Reuters: PRESCO.LG | NGX: PRESCO), Nigeria’s leading fully integrated agro-industrial company,  today released its unaudited financial results for the half-year ended 30 June 2026 (“H1 2026”). The Board has proposed an interim dividend of ₦10 per ordinary share. Key Financial Highlights (H1 2026 vs H1 2025): Profit Before Tax (PBT): ₦122.2 […]\nThe post Presco Plc",
-      "url": "https://nairametrics.com/2026/07/29/presco-plc-delivers-9-3-pbt-growth-to-n122-2-billion-in-h1-2026-board-proposes-n10-interim-dividend/",
-      "publishedAt": "2026-07-29T13:55:29.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.newbusinessethiopia_et:jo3xcd",
-      "sourceId": "src.newbusinessethiopia_et",
-      "title": "Development Bank of Ethiopia to Provide €31 Million in Loans to MSMEs",
-      "summary": "With the help of KfW Development Bank, the German government’s official development bank, Ethiopia’s state owned financial institution – the Development Bank of Ethiopia (DBE) is set to provide €31 million in loans to support micro, small, and medium-sized enterprises (MSMEs) operating in conflict-affected areas. The concessional loan facility has been made possible through €31 […]",
-      "url": "https://newbusinessethiopia.com/finance/development-bank-of-ethiopia-to-provide-e31-million-in-loans-to-msmes/",
-      "publishedAt": "2026-07-29T13:53:58.000Z",
-      "language": "en",
-      "countryCodes": [
-        "ET"
-      ]
-    },
-    {
-      "id": "src.newbusinessethiopia_et:1apicwr",
-      "sourceId": "src.newbusinessethiopia_et",
-      "title": "Ethiopian Airlines Concludes Nine New Passenger Aircraft Purchases",
-      "summary": "Ethiopian Airlines Group Chief Executive Officer Mesfin Tasew announced that the purchase of nine new passenger aircrafts was completed during the Ethiopian budget year concluded July 7, 2026. In a briefing regarding the airline’s 2018 budget year performance, the CEO stated that 897,000 metric tons of cargo were transported through the airline’s cargo services during […]",
-      "url": "https://newbusinessethiopia.com/travel/ethiopian-airlines-concludes-nine-new-passenger-aircraft-purchases/",
-      "publishedAt": "2026-07-29T13:42:56.000Z",
-      "language": "en",
-      "countryCodes": [
-        "ET"
-      ]
-    },
-    {
-      "id": "src.citizen_za:1f2h48i",
-      "sourceId": "src.citizen_za",
-      "title": "‘I dream of a speed train to Limpopo, driven by a young lady from Thembisa’ – Lesufi",
-      "summary": "'You might have ambitions to eliminate unemployment, but when jobs are created and the skills are not there, unemployment will be permanent.'",
-      "url": "https://www.citizen.co.za/business/i-dream-of-a-speed-train-to-limpopo-driven-by-a-young-lady-from-thembisa-lesufi/",
-      "publishedAt": "2026-07-29T13:32:32.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.nairametrics_ng:1uovm70",
-      "sourceId": "src.nairametrics_ng",
-      "title": "Your pension took a hit in June as stocks erased N623 billion",
-      "summary": "Nigeria’s pension fund industry closed the first half of 2026 with a decline in total assets under management, as a pullback in domestic equities, FGN securities and money market instruments weighed on the overall portfolio, despite growth in alternative investments and selected pension fund categories.\nThe post Your pension took a hit in June as stocks erased N623 billion appeared first on Nairam",
-      "url": "https://nairametrics.com/2026/07/29/your-pension-took-a-hit-in-june-as-stocks-erased-n623-billion/",
-      "publishedAt": "2026-07-29T13:31:32.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.capitalfm_ke:785dkw",
-      "sourceId": "src.capitalfm_ke",
-      "title": "KRA customs revenue beats target by Sh8bn",
-      "summary": "The department had set a revenue target of Sh980.79 billion, meaning collections surpassed the goal by approximately Sh8 billion.",
-      "url": "https://capitalfm.africa/kra-customs-revenue-beats-target-by-sh8bn/",
-      "publishedAt": "2026-07-29T13:10:21.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:14e3oyf",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Somali blueprint becomes survival guide for Kenyan NGOs amid aid exodus",
-      "summary": "As USAID cuts and shrinking Western donor funding reduce global aid, Kenyan civil society organisations are turning to locally driven funding models championed by Adeso.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554059/somali-blueprint-becomes-survival-guide-for-kenyan-ngos-amid-aid-exodus",
-      "publishedAt": "2026-07-29T13:05:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.myjoyonline_gh:cbw5kz",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Mid-Year Budget Review: Economy makes remarkable progress, but overall success depends on maintaining fiscal discipline",
-      "summary": "It argued that the overall success will depend on maintaining fiscal discipline, deepening revenue administration reforms, addressing energy sector liabilities and building buffers against future shocks.",
-      "url": "https://www.myjoyonline.com/mid-year-budget-review-economy-makes-remarkable-progress-but-overall-success-depends-on-maintaining-fiscal-discipline/",
-      "publishedAt": "2026-07-29T13:02:16.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.businesstoday_ke:m7qala",
-      "sourceId": "src.businesstoday_ke",
-      "title": "Govt Orders Crackdown On Drug Trafficking In Mombasa",
-      "summary": "The government has intensified its grassroots security operations in Mombasa, directing National Government Administrative Officers (NGAOs) to step up the fight against drug trafficking, organised crime and violent extremism while expanding access to government services. Speaking during a meeting with NGAOs in Mombasa on Wednesday, July 29, 2026, Principal Secretary for Internal Security and Natio",
-      "url": "https://businesstoday.co.ke/govt-crackdown-on-drug-trafficking-in-mombasa/",
-      "publishedAt": "2026-07-29T12:47:15.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.capitalethiopia_et:1po7cmf",
-      "sourceId": "src.capitalethiopia_et",
-      "title": "Zijin Gold acquisition of Allied Gold falls through, invests US$295 million instead",
-      "summary": "The planned acquisition of Canada’s Allied Gold Corporation by China’s Zijin Gold International has officially been terminated after both companies concluded that the conditions required to complete the transaction could not be met by the July 29 deadline or within a reasonable timeframe. Instead, the two companies have agreed on a strategic investment under which […]",
-      "url": "https://capitalethiopia.com/2026/07/29/zijin-gold-acquisition-of-allied-gold-falls-through-invests-us295-million-instead/",
-      "publishedAt": "2026-07-29T12:29:46.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.standardmedia_ke:1y4vmhx",
-      "sourceId": "src.standardmedia_ke",
-      "title": "Millie Odhiambo urges women engineers to pursue leadership and political office",
-      "summary": "Women engineers have been challenged to actively pursue leadership and political positions to ensure their expertise shapes national development and public policy.",
-      "url": "https://www.standardmedia.co.ke/business/article/2001554057/millie-odhiambo-urges-women-engineers-to-pursue-leadership-and-political-office",
-      "publishedAt": "2026-07-29T12:27:04.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:1aerrnt",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Mid-Year Budget Review: Deloitte commends government for encouraging domestic revenue performance",
-      "summary": "“Revenue growth appears to be increasingly driven by improved compliance, administrative efficiency and technology-enabled tax collection rather than higher tax rates. This is a positive development for businesses and investors”.",
-      "url": "https://www.myjoyonline.com/mid-year-budget-review-deloitte-commends-government-for-encouraging-domestic-revenue-performance/",
-      "publishedAt": "2026-07-29T12:17:45.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:1i8cl30",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Mid-Year Budget Review: Energy sector remains a significant fiscal risk to economy – Deloitte",
-      "summary": "“Without meaningful reforms, losses within the sector could eventually migrate onto the government's balance sheet and undermine hard-won gains in debt sustainability”, it explained.",
-      "url": "https://www.myjoyonline.com/mid-year-budget-review-energy-sector-remains-a-significant-fiscal-risk-to-economy-deloitte/",
-      "publishedAt": "2026-07-29T11:58:28.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.businesstoday_ke:1q3ins7",
-      "sourceId": "src.businesstoday_ke",
-      "title": "Kenya’s Sugar Sector Reforms Revive Industry as Production Rises and Export Prospects Emerge",
-      "summary": "Kenya’s sugar industry is showing signs of recovery following a series of reforms introduced by the government, with stakeholders reporting improved governance, increased farmer support, higher production and growing prospects for sugar exports. Industry players say the turning point came with the enactment of the Sugar Act, 2024, which restored a dedicated legal framework for […]",
-      "url": "https://businesstoday.co.ke/kenyas-sugar-sector-reforms-revive-industry-as-export-prospects-emerge/",
-      "publishedAt": "2026-07-29T11:58:21.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.businesstoday_ke:1023pt5",
-      "sourceId": "src.businesstoday_ke",
-      "title": "KEBS Explains Controversial Sugar Import Clearance as MPs Demand Tougher Checks",
-      "summary": "The ongoing parliamentary investigation into a controversial shipment of imported raw sugar took a new turn after the Kenya Bureau of Standards (KEBS) defended its role in clearing the consignment, saying all the required quality checks had been completed before the cargo left the exporting country. KEBS officials appeared before the National Assembly Departmental Committee […]",
-      "url": "https://businesstoday.co.ke/kebs-explains-controversial-sugar-import-clearance-as-mps-demand-tougher-checks/",
-      "publishedAt": "2026-07-29T11:54:15.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.businesstoday_ke:1msug3k",
-      "sourceId": "src.businesstoday_ke",
-      "title": "Joho Suspends Tata Chemicals Magadi Mining Operations Over Compliance Breaches",
-      "summary": "Mining, Blue Economy and Maritime Affairs Cabinet Secretary Hassan Ali Joho has suspended Tata Chemicals Magadi’s mining operations after the government found the company had failed to meet several legal and regulatory requirements under Kenya’s mining laws. The suspension comes after the Ministry of Mining carried out a compliance review that identified a number of […]",
-      "url": "https://businesstoday.co.ke/joho-suspends-tata-chemicals-magadi-mining/",
-      "publishedAt": "2026-07-29T11:48:55.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.newbusinessethiopia_et:q806bx",
-      "sourceId": "src.newbusinessethiopia_et",
-      "title": "Hundreds of Ethiopian Women Rescued from Misery in Saudi Arabia",
-      "summary": "Hundreds of Ethiopian women immigrants are rescued from misery in Saudi Arabia. A total of 1,834 Ethiopian nationals who had been living in difficult circumstances in Saudi Arabia have returned to Ethiopia, says Ministry of Women and Social Affairs of Ethiopia. The returnees arrived during the week on eight repatriation flights. They included 1,604 men, […]",
-      "url": "https://newbusinessethiopia.com/tragedy/hundreds-of-ethiopian-women-rescued-from-misery-in-saudi-arabia/",
-      "publishedAt": "2026-07-29T11:43:03.000Z",
-      "language": "en",
-      "countryCodes": [
-        "ET"
-      ]
-    },
-    {
-      "id": "src.biznakenya_ke:3ju9kz",
-      "sourceId": "src.biznakenya_ke",
-      "title": "Renovating Like an Entrepreneur: 10 Business Principles for a Smarter Home Remodel",
-      "summary": "Renovating your home can feel overwhelming because the project combines design choices, contracts, budgets, schedules, and unexpected conditions. A more disciplined approach is to treat the remodel as a major investment: define the result, plan the work, choose qualified partners, document decisions, and measure whether the finished space delivers lasting value. These business principles can […]\nR",
-      "url": "https://biznakenya.com/renovating-like-an-entrepreneur/",
-      "publishedAt": "2026-07-29T11:15:40.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:1cp69ce",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "Dome-Kwabenya MP condemns road encroachment, illegal development during inspection tour",
-      "summary": "The concerns were raised on Tuesday, July 28, during an inspection of ongoing road rehabilitation projects with the Municipal Chief Executive (MCE) for Ga East, Edmund Agboh, officials of the Ga East Municipal Assembly and project engineers.",
-      "url": "https://www.myjoyonline.com/dome-kwabenya-mp-condemns-road-encroachment-illegal-development-during-inspection-tour/",
-      "publishedAt": "2026-07-29T11:00:45.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:1v6a4oe",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "VALCO needs strategic investor to survive, GIADEC confirms",
-      "summary": "The Volta Aluminium Company (VALCO) has lost more than a quarter of its already limited operating capacity since June this year, the Ghana Integrated Aluminium Development Corporation (GIADEC) has confirmed, intensifying the urgency behind Cabinet’s push to bring in a strategic equity investor. The smelter began 2026 with an ambitious plan to ramp up from […]",
-      "url": "https://www.myjoyonline.com/valco-needs-strategic-investor-to-survive-giadec-confirms/",
-      "publishedAt": "2026-07-29T10:58:23.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.citizen_za:vrnn43",
-      "sourceId": "src.citizen_za",
-      "title": "Sanral scraps panel procurement system after court ruling",
-      "summary": "Admits to 'indefensible' processes, reverts to open tender system for routine road maintenance contractors and engineering consultants.",
-      "url": "https://www.citizen.co.za/business/sanral-scraps-panel-procurement-system-after-court-ruling/",
-      "publishedAt": "2026-07-29T10:48:45.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.citizen_za:1c1pq13",
-      "sourceId": "src.citizen_za",
-      "title": "WesBank defeated in court by family-owned dealership",
-      "summary": "The purchaser of a Ford Ranger made three payments, then absconded with the vehicle. Wesbank tried to claim from the dealer.",
-      "url": "https://www.citizen.co.za/business/wesbank-defeated-in-court-by-family-owned-dealership/",
-      "publishedAt": "2026-07-29T10:33:30.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.biznakenya_ke:1xx86lp",
-      "sourceId": "src.biznakenya_ke",
-      "title": "The World Cup ends, Football never stops on SuperSport",
-      "summary": "The final whistle has blown on a spectacular 2026 FIFA World Cup, where Spain and Argentina battled for global supremacy in a tournament that captivated millions. SuperSport brought fans every single moment, delivering all 104 matches live – every goal, every twist, every defining moment. Now, without missing a beat, the focus shifts from the […]\nThe World Cup ends, Football never stops on SuperSp",
-      "url": "https://biznakenya.com/the-world-cup-ends-football-never-stops-on-supersport/",
-      "publishedAt": "2026-07-29T10:18:08.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.newbusinessethiopia_et:15qebxg",
-      "sourceId": "src.newbusinessethiopia_et",
-      "title": "Ethiopia Plans to Boost Manufactured Goods Export Income to One Billion USD",
-      "summary": "Ethiopia, whose export trade is heavily reliant on raw agricultural commodities and minerals, aims to increase its income from manufactured goods export to one billion USD next year. This is indicated by the Minister of Industry Melaku Alebel, who spoke at a discussion is currently being held with manufacturers that recorded strong export performance during […]",
-      "url": "https://newbusinessethiopia.com/trade/ethiopia-plans-to-boost-manufactured-goods-export-income-to-one-billion-usd/",
-      "publishedAt": "2026-07-29T10:06:26.000Z",
-      "language": "en",
-      "countryCodes": [
-        "ET"
-      ]
-    },
-    {
-      "id": "src.premiumtimes_ng:hlsksk",
-      "sourceId": "src.premiumtimes_ng",
-      "title": "FG approves ₦46 billion for Kano airport runway rehabilitation",
-      "summary": "The project is part of the Federal Government’s ongoing efforts to modernise airport infrastructure and improve safety, operational efficiency, and passenger experience.\nThe post FG approves ₦46 billion for Kano airport runway rehabilitation appeared first on Premium Times Nigeria.",
-      "url": "https://www.premiumtimesng.com/business/business-news/899072-fg-approves-%e2%82%a646-billion-for-kano-airport-runway-rehabilitation.html",
-      "publishedAt": "2026-07-29T10:06:00.000Z",
-      "language": "en",
-      "countryCodes": [
-        "NG"
-      ]
-    },
-    {
-      "id": "src.biznews_za:ciilpn",
-      "sourceId": "src.biznews_za",
-      "title": "Paul Hoffman: Scrap IDAC now - it's unconstitutional by design",
-      "summary": "",
-      "url": "https://www.biznews.com/rational-perspective/paul-hoffman-scrap-idac-now",
-      "publishedAt": "2026-07-29T09:56:10.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.citizen_za:1tl1yo7",
-      "sourceId": "src.citizen_za",
-      "title": "Huawei Pura 90s Series unlocks the ultimate 200MP smart imaging experience",
-      "summary": "Huawei unveils the Pura 90s Series with a 200MP telephoto camera, intelligent AI imaging and premium design",
-      "url": "https://www.citizen.co.za/business/huawei-pura-90s-series-unlocks-the-ultimate-200mp-smart-imaging-experience/",
-      "publishedAt": "2026-07-29T09:40:43.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.newbusinessethiopia_et:15q6ebb",
-      "sourceId": "src.newbusinessethiopia_et",
-      "title": "Ethiopia – US Security Partnerships Can Lead to Commercial Opportunities, Says AFRICOM",
-      "summary": "The African Communications and Logistics Symposium (ALCS) 2026 brought together military leaders, government officials, industry representatives, and delegates from more than 40 countries at the Hilton Hotel Addis Ababa, Ethiopia. During the event, New Business Ethiopia’s Reporter Yordanos Tadesse, talked to AFRICOM Chief Media Engagement Division, Patrick Foughty, who argues that Ethiopia – US se",
-      "url": "https://newbusinessethiopia.com/trade/ethiopia-us-security-partnerships-can-lead-to-commercial-opportunities-says-africom/",
-      "publishedAt": "2026-07-29T09:35:19.000Z",
-      "language": "en",
-      "countryCodes": [
-        "ET"
-      ]
-    },
-    {
-      "id": "src.citizen_za:2ccsgb",
-      "sourceId": "src.citizen_za",
-      "title": "June 2026 marks MultiChoice’s best month for new subscribers in SA in a decade",
-      "summary": "Canal+ reports that MultiChoice's turnaround strategy is underway.",
-      "url": "https://www.citizen.co.za/business/june-2026-marks-multichoices-best-month-for-new-subscribers-in-sa-in-a-decade/",
-      "publishedAt": "2026-07-29T09:30:51.000Z",
-      "language": "en",
-      "countryCodes": []
-    },
-    {
-      "id": "src.myjoyonline_gh:15m7ie1",
-      "sourceId": "src.myjoyonline_gh",
-      "title": "MTN Ghana completes Mobile Money business spinoff to scale Fintech unit",
-      "summary": "MTN Ghana has formally separated its Mobile Money operations in Ghana from its core telecommunications business, creating Mobile Money Fintech Ltd. (MMFL) as a standalone growth unit.",
-      "url": "https://www.myjoyonline.com/mtn-ghana-completes-mobile-money-business-spinoff-to-scale-fintech-unit/",
-      "publishedAt": "2026-07-29T09:19:37.000Z",
-      "language": "en",
-      "countryCodes": [
-        "GH"
-      ]
-    },
-    {
-      "id": "src.businesstoday_ke:ssn6ov",
-      "sourceId": "src.businesstoday_ke",
-      "title": "De La Rue taps Ex-Safaricom Boss Michael Joseph to Join its Board",
-      "summary": "De La Rue EPZ Kenya Limited, a cash minting business that is majority owned by Switzerland-based Thomas De Rue AG, has picked on Michael Joseph, former top executive and board chairman at Safaricom and Kenya Airways, to sit in its Boardroom. De La Rue has undergone a c-suite retooling process that has seen its majority […]",
-      "url": "https://businesstoday.co.ke/de-la-rue-taps-michael-joseph-to-its-board/",
-      "publishedAt": "2026-07-29T08:45:05.000Z",
-      "language": "en",
-      "countryCodes": [
-        "KE"
-      ]
-    },
-    {
-      "id": "src.sokodirectory_ke:vm0534",
-      "sourceId": "src.sokodirectory_ke",
-      "title": "Maize Prices Ease Across East Africa, But Kenya Still Tops The Price",
-      "summary": "Maize prices are coming down across East Africa, offering some breathing room to households and traders after months of tight … ContinuedThe post Maize Prices Ease Across East Africa, But Kenya Still Tops The Price appeared first on Soko Directory.",
-      "url": "https://sokodirectory.com/2026/07/maize-prices-ease-across-east-africa-but-kenya-still-tops-the-price/",
-      "publishedAt": "2026-07-29T08:40:08.000Z",
       "language": "en",
       "countryCodes": [
         "KE"
